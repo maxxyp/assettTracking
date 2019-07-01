@@ -1,0 +1,9 @@
+{
+    "capabilities": [
+        "location",
+        "privateNetworkClientServer"
+    ],
+	"uapCapabilities": [
+        "enterpriseAuthentication"
+	]
+}

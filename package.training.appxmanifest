@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+  IgnorableNamespaces="uap mp">
+  <Identity Name="ewbTraining" Version="8.0.0.0" Publisher="CN=BGFieldApps" />
+  <mp:PhoneIdentity PhoneProductId="a45ee7a6-a518-d2f7-f5ca-b5aa112ec88c" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Engineer Workbench Training</DisplayName>
+    <PublisherDisplayName>Centrica</PublisherDisplayName>
+    <Logo>res\res-training\windows\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" /> </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" /> </Resources>
+  <Applications>
+    <Application Id="App" StartPage="ms-appx-web://ewbTraining/www/index.html">
+      <uap:VisualElements DisplayName="Engineer Workbench Training" Description="Engineer Workbench Training" BackgroundColor="transparent" Square150x150Logo="res\res-training\windows\Square150x150Logo.png" Square44x44Logo="res\res-training\windows\Square44x44Logo.png">
+        <uap:LockScreen Notification="badge" BadgeLogo="res\res-training\windows\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="res\res-training\windows\Wide310x150Logo.png" Square71x71Logo="res\res-training\windows\Square71x71Logo.png" Square310x310Logo="res\res-training\windows\Square310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" /> </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="res\res-training\windows\SplashScreen.png" /> </uap:VisualElements>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="ms-appx-web://ewbTraining" Type="include" WindowsRuntimeAccess="all" /> </uap:ApplicationContentUriRules>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ewb">
+            <uap:DisplayName>ewb</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="enterpriseAuthentication" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
