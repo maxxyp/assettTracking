@@ -1,0 +1,14 @@
+# carbon: node v8
+FROM node:carbon-alpine
+
+RUN mkdir -p /usr/src/app/
+
+WORKDIR /usr/src/app/
+
+COPY ./. .
+
+RUN yarn
+
+EXPOSE 3000
+
+ENTRYPOINT ["yarn", "start"]

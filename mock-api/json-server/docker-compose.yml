@@ -1,0 +1,19 @@
+version: '3.3'
+
+services:
+
+  demoapi:
+    container_name: api
+    image: inohub.azurecr.io/api
+    hostname: localhost
+    build:
+      context:  .
+      dockerfile: ./dockerfile
+    ports:
+      - 3000:3000
+    networks:
+      - ewblite-network      
+
+networks:
+  ewblite-network:
+    driver: bridge

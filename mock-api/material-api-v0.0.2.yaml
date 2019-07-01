@@ -1,0 +1,465 @@
+---
+openapi: 3.0.0
+info:
+  title: Material API
+  description: Material API
+  contact:
+    email: APIHubDevTeam@centrica.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.2
+servers:
+- url: https://virtserver.swaggerhub.com/pulse.centrica.com/material-api/0.0.2
+  description: SwaggerHub API Auto Mocking
+- url: https://virtserver.swaggerhub.com/pulse.centrica.com/material/0.0.2
+  description: SwaggerHub API Auto Mocking
+tags:
+- name: centrica app
+  description: Secured cantrica app-only calls
+paths:
+  /material/{materialCode}:
+    get:
+      tags:
+      - centrica app
+      summary: Search for material within a geographical area.
+      description: Serach material within a geographical area.
+      operationId: undateReservation
+      parameters:
+      - name: X-Request-ID
+        in: header
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          $ref: '#/components/schemas/Guid'
+      - name: X-Pagination-Count
+        in: header
+        description: Total count of items
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: X-Pagination-Page
+        in: header
+        description: page number
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: X-Pagination-Limit
+        in: header
+        description: limit to the number of items per page
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      - name: lat
+        in: query
+        description: Latitude
+        required: true
+        style: FORM
+        explode: true
+        schema:
+          $ref: '#/components/schemas/Latitude'
+      - name: lon
+        in: query
+        description: Longitude
+        required: true
+        style: FORM
+        explode: true
+        schema:
+          $ref: '#/components/schemas/Longitude'
+      responses:
+        200:
+          description: Json array of materials
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  allOf:
+                  - $ref: '#/components/schemas/Material'
+                  - required:
+                    - distance
+                    type: object
+                    properties:
+                      distance:
+                        type: number
+                        format: float
+        400:
+          description: invalid input, object invalid
+        404:
+          description: material not found
+  /material/{materialCode}/reservation:
+    put:
+      tags:
+      - centrica app
+      summary: Update a reservation. However currently only supports unreserve due to limitation in Calidus. To unreserve i.e. set material/quantity = 0
+      description: Unreserve i.e. Delete a reservation.
+      operationId: undateReservation
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Material reservation to add
+        content:
+          application/json:
+            schema:
+              allOf:
+              - $ref: '#/components/schemas/Reservation'
+              - required:
+                - updatedDate
+                - updatedTime
+                type: object
+                properties:
+                  updatedDate:
+                    $ref: '#/components/schemas/Date'
+                  updatedTime:
+                    $ref: '#/components/schemas/Time'
+      responses:
+        200:
+          description: reservation updated/unreserved
+        400:
+          description: invalid input, object invalid
+        404:
+          description: Material reservation not found
+    post:
+      tags:
+      - centrica app
+      summary: adds a reservation
+      description: Adds an item to the system
+      operationId: addReservation
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Inventory item to add
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Reservation'
+      responses:
+        201:
+          description: reservation created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing reservation already exists
+  /material/{materialCode}/transfer:
+    post:
+      tags:
+      - centrica app
+      summary: add material transfer
+      description: Adds a transfer of material
+      operationId: addMaterialTransfer
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Material transfer between engineers
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Transfer'
+      responses:
+        201:
+          description: Material Transfer created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing transfer already exists
+  /material/{materialCode}/consumption:
+    post:
+      tags:
+      - centrica app
+      summary: add material consumption
+      description: Adds a transfer of material
+      operationId: addMaterialConsumption
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Material consumption by engineer to add
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Consumption'
+      responses:
+        201:
+          description: Material consumtion created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing material consumption already exists
+  /material/{materialCode}/receipt:
+    post:
+      tags:
+      - centrica app
+      summary: add material receipt
+      description: Adds a receipt of material
+      operationId: addMaterialReceipt
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Material receipt by engineer to add
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Receipt'
+      responses:
+        201:
+          description: Material Receipt created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing Receipt already exists
+  /material/{materialCode}/return:
+    post:
+      tags:
+      - centrica app
+      summary: add material return
+      description: Adds a receipt of material
+      operationId: addMaterialReturn
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Material Return by engineer to add
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Return'
+      responses:
+        201:
+          description: Material Return created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: an existing Material return already exists
+  /material/{materialCode}/zone:
+    put:
+      tags:
+      - centrica app
+      summary: update material zone
+      description: Adds a storage zone for material
+      operationId: addMaterialStorageZone
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Storage Zone for the material to update
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Zone'
+      responses:
+        200:
+          description: Material storage Zone created
+        400:
+          description: Invalid input, object invalid
+        404:
+          description: Storage Zone for the material not found
+    post:
+      tags:
+      - centrica app
+      summary: add material zone
+      description: Adds a storage zone for material
+      operationId: addMaterialStorageZone
+      parameters:
+      - name: materialCode
+        in: path
+        description: Unique code identifying material
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      requestBody:
+        description: Storage Zone for the material to add
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Zone'
+      responses:
+        201:
+          description: Material storage Zone created
+        400:
+          description: invalid input, object invalid
+        409:
+          description: storage zone for the material already exists
+components:
+  schemas:
+    Reservation:
+      properties:
+        requestingEngineer:
+          $ref: '#/components/schemas/EngineerId'
+      allOf:
+      - $ref: '#/components/schemas/MaterialRequestBase'
+      - required:
+        - requestingEngineer
+        type: object
+    Transfer:
+      allOf:
+      - $ref: '#/components/schemas/MaterialRequestBase'
+      - required:
+        - destinationEngineer
+        type: object
+        properties:
+          destinationEngineer:
+            $ref: '#/components/schemas/EngineerId'
+    Receipt:
+      allOf:
+      - $ref: '#/components/schemas/MaterialRequestBase'
+      - required:
+        - receiptQuantity
+        type: object
+        properties:
+          receiptQuantity:
+            type: integer
+            format: int32
+    Consumption:
+      allOf:
+      - $ref: '#/components/schemas/MaterialRequestBase'
+      - type: object
+    Return:
+      allOf:
+      - $ref: '#/components/schemas/MaterialRequestBase'
+      - required:
+        - reason
+        type: object
+        properties:
+          reason:
+            type: string
+    Zone:
+      allOf:
+      - $ref: '#/components/schemas/Material'
+      - required:
+        - storageZone
+        type: object
+    MaterialRequestBase:
+      required:
+      - date
+      - guid
+      - material
+      - time
+      type: object
+      properties:
+        guid:
+          $ref: '#/components/schemas/Guid'
+        material:
+          $ref: '#/components/schemas/Material'
+        date:
+          $ref: '#/components/schemas/Date'
+        time:
+          $ref: '#/components/schemas/Time'
+    Guid:
+      type: string
+      description: UUID E.g. - '77e1c83b-7bb0-437b-bc50-a7a58e5660ac' ref - RFC 4122
+      format: uuid
+    Date:
+      type: integer
+      format: YYYYMMDD
+    Time:
+      type: integer
+      format: HHMMSSSS
+    Latitude:
+      maximum: 90
+      minimum: -90
+      type: number
+    Longitude:
+      maximum: 180
+      minimum: -180
+      type: number
+    Material:
+      required:
+      - engineer
+      - materialCode
+      - owner
+      - quantity
+      type: object
+      properties:
+        materialCode:
+          type: string
+          format: uuid
+        description:
+          type: string
+          description: Description of material.
+        engineer:
+          $ref: '#/components/schemas/EngineerId'
+        owner:
+          type: string
+        quantity:
+          type: integer
+          format: int32
+        storageZone:
+          type: string
+    EngineerId:
+      type: string
+  extensions: {}

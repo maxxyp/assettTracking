@@ -1,0 +1,223 @@
+---
+openapi: 3.0.0
+info:
+  title: Engineer API
+  description: Engineer API
+  contact:
+    email: APIHubDevTeam@centrica.com
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 0.0.1
+servers:
+- url: https://virtserver.swaggerhub.com/pulse.centrica.com/engineer-api/0.0.1
+  description: SwaggerHub API Auto Mocking
+- url: https://virtserver.swaggerhub.com/pulse.centrica.com/engineer/0.0.1
+  description: SwaggerHub API Auto Mocking
+tags:
+- name: centrica app
+  description: Secured cantrica app-only calls
+paths:
+  /engineer/{engineerId}/materials:
+    get:
+      tags:
+      - centrica app
+      summary: Retrieve van stock.
+      description: Retrieve van stock.
+      operationId: retrieveVanStock
+      parameters:
+      - name: ETag
+        in: header
+        description: ETag returned in previous response header.
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: string
+      - name: X-Request-ID
+        in: header
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          $ref: '#/components/schemas/Guid'
+      - name: X-Pagination-Count
+        in: header
+        description: Total count of items
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: X-Pagination-Page
+        in: header
+        description: page number
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: X-Pagination-Limit
+        in: header
+        description: limit to the number of items per page
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: integer
+          format: int32
+      - name: engineerId
+        in: path
+        description: Unique code identifying an Engineer
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      responses:
+        200:
+          description: Json array of materials
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  allOf:
+                  - $ref: '#/components/schemas/Material'
+                  - required:
+                    - expectedReceiptQuantity
+                    - expectedReturnQuantity
+                    - reservedQuantity
+                    type: object
+                    properties:
+                      expectedReturnQuantity:
+                        type: integer
+                        format: int32
+                      expectedReceiptQuantity:
+                        type: integer
+                        format: int32
+                      reservedQuantity:
+                        type: integer
+                        format: int32
+                      storageZone:
+                        type: string
+        400:
+          description: invalid input, object invalid.
+        404:
+          description: material not found
+  /engineer/{engineerId}/actions:
+    get:
+      tags:
+      - centrica app
+      summary: Retrieve actions for Engineer with regards to materials.
+      description: Retrieve a list materials reserved (inbound/outbound) and dispatched for collection by Engineer.
+      operationId: retrieveActions
+      parameters:
+      - name: ETag
+        in: header
+        description: ETag returned in previous response header.
+        required: false
+        style: SIMPLE
+        explode: false
+        schema:
+          type: string
+      - name: X-Request-ID
+        in: header
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          $ref: '#/components/schemas/Guid'
+      - name: engineerId
+        in: path
+        description: Unique code identifying an Engineer
+        required: true
+        style: SIMPLE
+        explode: false
+        schema:
+          minimum: 1
+          type: string
+      responses:
+        200:
+          description: Json array of dispatched materials
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/inline_response_200'
+        400:
+          description: invalid input, object invalid.
+        404:
+          description: material not found
+components:
+  schemas:
+    Guid:
+      type: string
+      format: uuid
+    Date:
+      type: integer
+      format: YYYYMMDD
+    Time:
+      type: integer
+      format: HHMMSSSS
+    Material:
+      required:
+      - description
+      - materialCode
+      - owner
+      - quantity
+      type: object
+      properties:
+        materialCode:
+          type: string
+          format: uuid
+        description:
+          type: string
+          description: Description of material.
+        owner:
+          type: string
+        quantity:
+          type: integer
+          description: Total count of van stock.
+          format: int32
+    DispatchMaterial:
+      allOf:
+      - $ref: '#/components/schemas/Material'
+      - required:
+        - jobIndicator
+        type: object
+        properties:
+          jobIndicator:
+            type: boolean
+          orderRef:
+            type: string
+    ReserveMaterial:
+      allOf:
+      - $ref: '#/components/schemas/Material'
+      - required:
+        - engineerId
+        - inbound
+        type: object
+        properties:
+          engineerId:
+            type: string
+          inbound:
+            type: boolean
+          reservationDate:
+            $ref: '#/components/schemas/Date'
+          reservationTime:
+            $ref: '#/components/schemas/Time'
+    inline_response_200:
+      type: object
+      properties:
+        dispatchedMaterials:
+          type: array
+          items:
+            $ref: '#/components/schemas/DispatchMaterial'
+        reservedMaterials:
+          type: array
+          items:
+            $ref: '#/components/schemas/ReserveMaterial'
+  extensions: {}
