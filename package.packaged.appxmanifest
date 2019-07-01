@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" 
+  IgnorableNamespaces="uap mp">
+  <Identity Name="ewb" Version="8.0.0.0" Publisher="CN=BGFieldApps" />
+  <mp:PhoneIdentity PhoneProductId="90b1a466-afa2-f0d6-3045-dde8d6f7252e" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Engineer Workbench</DisplayName>
+    <PublisherDisplayName>Centrica</PublisherDisplayName>
+    <Logo>res\windows\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" /> </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" /> </Resources>
+  <Applications>
+    <Application Id="App" StartPage="ms-appx-web://ewb/www/index.html">
+      <uap:VisualElements DisplayName="Engineer Workbench" Description="Engineer Workbench." BackgroundColor="transparent" Square150x150Logo="res\windows\Square150x150Logo.png" Square44x44Logo="res\windows\Square44x44Logo.png">
+        <uap:LockScreen Notification="badge" BadgeLogo="res\windows\BadgeLogo.png" />
+        <uap:DefaultTile Wide310x150Logo="res\windows\Wide310x150Logo.png" Square71x71Logo="res\windows\Square71x71Logo.png" Square310x310Logo="res\windows\Square310x310Logo.png">
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+            <uap:ShowOn Tile="wide310x150Logo" />
+            <uap:ShowOn Tile="square310x310Logo" /> </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+        <uap:SplashScreen Image="res\windows\SplashScreen.png" /> </uap:VisualElements>
+      <uap:ApplicationContentUriRules>
+        <uap:Rule Match="ms-appx-web://ewb" Type="include" WindowsRuntimeAccess="all" /> </uap:ApplicationContentUriRules>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="ewb">
+            <uap:DisplayName>ewb</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+    <Capability Name="privateNetworkClientServer" />
+    <uap:Capability Name="removableStorage" />
+    <uap:Capability Name="enterpriseAuthentication" />
+    <DeviceCapability Name="location" />
+  </Capabilities>
+</Package>
