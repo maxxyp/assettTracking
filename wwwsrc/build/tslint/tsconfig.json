@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+		"target": "es5",
+        "module": "commonjs",
+        "noImplicitAny": true,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+		"noLib": false
+    }
+    // "include": [
+    //   "*.ts",
+    //   "../../node_modules/typescript/lib/lib.d.ts",
+    //   "../../node_modules/tslint/lib/index.d.ts"
+    // ]
+}

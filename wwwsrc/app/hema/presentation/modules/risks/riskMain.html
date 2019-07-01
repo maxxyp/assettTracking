@@ -1,0 +1,14 @@
+<template>
+    <require from="../../../../common/ui/attributes/swipe"></require>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+         <div swipe="callback.bind: swipeFunction; scope.bind: $this;" class="swipeable" ref="card">
+        <div class="job-details-header">
+            <span class="title">${labels.title}</span>
+            <prev-next-buttons values.bind="riskIds" param-id="riskId"/>
+        </div>
+        <div class="details-card">
+            <router-view></router-view>
+        </div>
+        </div>
+    </view-state>
+</template>

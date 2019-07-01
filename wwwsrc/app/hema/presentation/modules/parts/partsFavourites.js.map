@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/presentation/modules/parts/partsFavourites.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAEA,CAAC;QAAD,sBAAC;IAAD,CAFA,AAEC,IAAA;IAFY,0CAAe","file":"partsFavourites.js","sourcesContent":["export class PartsFavourites {\n    \n}\n"],"sourceRoot":"../../../.."}

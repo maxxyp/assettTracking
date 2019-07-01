@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IConsumableType.ts"],"names":[],"mappings":"","file":"IConsumableType.js","sourcesContent":["export interface IConsumableType {\n   stockReferenceId: string;\n   consumableTypeDescription: string;\n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/ISafetyDetail.ts"],"names":[],"mappings":"","file":"ISafetyDetail.js","sourcesContent":["export interface ISafetyDetail {\n    lastGasVisitDate: string;\n    lastElectricVisitDate: string;\n    safetyNoticeNotLeftReason: string;\n}\n"],"sourceRoot":"../../../../.."}

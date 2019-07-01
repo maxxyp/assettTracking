@@ -1,0 +1,74 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-07T17:22:58Z",
+      "modifiedTimestamp": "2017-08-09T11:14:01Z"
+    },
+    "data": {
+      "job": {
+        "id": "1383355001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022201301",
+          "lastName": "Mrs Test Test",
+          "address": {
+            "houseNumber": "87",
+            "line": [
+              "Althorpe Drive"
+            ],
+            "county": "Loughborough",
+            "postCodeIn": "4QT",
+            "postCodeOut": "LE11"
+          }
+        },
+        "premises": {
+          "id": "L270833",
+          "address": {
+            "houseNumber": "87",
+            "line": [
+              "Althorpe Drive"
+            ],
+            "county": "Loughborough",
+            "postCodeIn": "4QT",
+            "postCodeOut": "LE11"
+          },
+          "previousVisitCount": 66,
+          "chirpAICode": "202223482",
+          "contact": {
+            "id": "022201301",
+            "initials": " ",
+            "lastName": "Mrs Test Test"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2019-02-21"
+          }
+        },
+        "visit": {
+          "id": "WMW00060136",
+          "date": "2019-02-22T00:00:00Z",
+          "earliestStartTime": "2019-02-22T08:00:00Z",
+          "latestStartTime": "2019-02-22T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1383355001001",
+            "jobType": "IB",
+            "applianceType": "BBF",
+            "chargeType": "NCH3SIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

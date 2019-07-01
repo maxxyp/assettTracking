@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/IAmIContractEngineerResponse.ts"],"names":[],"mappings":"","file":"IAmIContractEngineerResponse.js","sourcesContent":["import {IAmIContractEngineer} from \"./IAmIContractEngineer\";\nexport interface IAmIContractEngineerResponse {\n    data: IAmIContractEngineer;\n}\n"],"sourceRoot":"../../../../.."}

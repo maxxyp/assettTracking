@@ -1,0 +1,20 @@
+[
+	{
+		"key": 1,
+		"id": "ELECTRICAL",
+		"description": "Electrical",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 2,
+		"id": "WHITEGOODS",
+		"description": "White goods",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 3,
+		"id": "MICROWAVE",
+		"description": "Microwave",
+		"ctlgEntDelnMkr": "N"
+	}
+]

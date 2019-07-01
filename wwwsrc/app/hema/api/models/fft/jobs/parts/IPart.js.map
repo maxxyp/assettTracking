@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/parts/IPart.ts"],"names":[],"mappings":"","file":"IPart.js","sourcesContent":["export interface IPart {\n    stockReferenceId: string;\n    description: string;\n    quantity: string;\n}\n"],"sourceRoot":"../../../../../.."}

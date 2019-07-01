@@ -1,0 +1,604 @@
+[
+	{
+		"key": "1",
+		"code": "ARC",
+		"fieldAppCode": "ACCOM RADS",
+		"description": "Bulk Accommodation Radiators",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"code": "AGA",
+		"fieldAppCode": "AGA",
+		"description": "AGA",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"code": "BBC",
+		"fieldAppCode": "BK BLR CIR",
+		"description": "Back Boiler Circulator ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"code": "BBF",
+		"fieldAppCode": "BK BLR FRE",
+		"description": "Back Boiler Fire",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"code": "BCO",
+		"fieldAppCode": "BULK COD",
+		"description": "Bulk CO Detector",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"code": "CHB",
+		"fieldAppCode": "C/HEAT BLR",
+		"description": "Central Heating Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"code": "CIR",
+		"fieldAppCode": "CIRCULATOR",
+		"description": "Bulk Circulator",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"code": "WAC",
+		"fieldAppCode": "CIRC-WAU",
+		"description": "Warm Air Unit - Water Circulator (Child Appliance)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"code": "COD",
+		"fieldAppCode": "CO DETECT",
+		"description": "Carbon Monoxide Detector",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "10",
+		"code": "DW",
+		"fieldAppCode": "DISHWASHER",
+		"description": "Dishwasher",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "11",
+		"code": "DRA",
+		"fieldAppCode": "DRAINAGE",
+		"description": "Drainage Job (Dyno visit request)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "12",
+		"code": "DFC",
+		"fieldAppCode": "DUAL F CKR",
+		"description": "Duel Fuel Cooker",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "13",
+		"code": "DAM",
+		"fieldAppCode": "DYNO ALERT",
+		"description": "HEC Dyno Alert",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "14",
+		"code": "HGE",
+		"fieldAppCode": "E&G HOB",
+		"description": "Electric and Gas Hob",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "15",
+		"code": "EHS",
+		"fieldAppCode": "ELC HTG SY",
+		"description": "Electric Heating System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "16",
+		"code": "CGE",
+		"fieldAppCode": "ELC/GAS CK",
+		"description": "Gas and Electric Cooker",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "17",
+		"code": "ELB",
+		"fieldAppCode": "ELEC BLR",
+		"description": "Electric Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "18",
+		"code": "EBD",
+		"fieldAppCode": "ELEC BLR D",
+		"description": "Electric Domestic Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "19",
+		"code": "CKE",
+		"fieldAppCode": "ELEC CKR",
+		"description": "Electric Cooker",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "20",
+		"code": "EF",
+		"fieldAppCode": "ELEC FIRE",
+		"description": "Electric Fire (Child Appliance for Condensing BBU)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "21",
+		"code": "EHO",
+		"fieldAppCode": "ELEC HOB",
+		"description": "Electric Hob",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "22",
+		"code": "ECH",
+		"fieldAppCode": "ELEC HOOD",
+		"description": "Cooker Hood",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "23",
+		"code": "EOV",
+		"fieldAppCode": "ELEC OVEN",
+		"description": "Electric Oven",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "24",
+		"code": "SHE",
+		"fieldAppCode": "ELEC SHOWR",
+		"description": "Electric Shower",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "25",
+		"code": "EWR",
+		"fieldAppCode": "ELEC WIRNG",
+		"description": "Electrical Wiring",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "26",
+		"code": "ESP",
+		"fieldAppCode": "ES SOLAR",
+		"description": "Solar Panel",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "27",
+		"code": "EXL",
+		"fieldAppCode": "EXT LIGHT",
+		"description": "Electric External Light",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "28",
+		"code": "FAB",
+		"fieldAppCode": "FABRIC",
+		"description": "Fabric",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "29",
+		"code": "FRE",
+		"fieldAppCode": "FIRE",
+		"description": "Fire",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "30",
+		"code": "FRB",
+		"fieldAppCode": "FIRE-BBF",
+		"description": "Gas Fire front for a Back Boiler Unit (Child Appliance Only)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "31",
+		"code": "FRC",
+		"fieldAppCode": "FIRE-CIRC",
+		"description": "Gas Fire front for a water heater (Child Appliance Only)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "32",
+		"code": "FLR",
+		"fieldAppCode": "FLUE LNR",
+		"description": "Flue Liner",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "33",
+		"code": "FZR",
+		"fieldAppCode": "FREEZER",
+		"description": "Freezer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "34",
+		"code": "FFR",
+		"fieldAppCode": "FRI/FREZER",
+		"description": "Fridge Freezer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "35",
+		"code": "FRI",
+		"fieldAppCode": "FRIDGE",
+		"description": "Fridge",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "36",
+		"code": "GH",
+		"fieldAppCode": "G/HSE HTR",
+		"description": "Green House Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "37",
+		"code": "CKR",
+		"fieldAppCode": "GAS COOKER",
+		"description": "Gas Cooker",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "38",
+		"code": "GL",
+		"fieldAppCode": "GAS LAMP",
+		"description": "Gas Lamp",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "39",
+		"code": "OVN",
+		"fieldAppCode": "GAS OVEN",
+		"description": "Gas Oven",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "40",
+		"code": "GRL",
+		"fieldAppCode": "GRILL",
+		"description": "Gas Grill",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "41",
+		"code": "HAZ",
+		"fieldAppCode": "HAZARDOUS",
+		"description": "possible ASBESTOS identified",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "42",
+		"code": "TCA",
+		"fieldAppCode": "HC400 N/C",
+		"description": "HC400 Trace and Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "43",
+		"code": "HEA",
+		"fieldAppCode": "HEARTH",
+		"description": "Fire Hearth",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "44",
+		"code": "HOB",
+		"fieldAppCode": "HOB",
+		"description": "Gas Hob",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "45",
+		"code": "SEC",
+		"fieldAppCode": "HOME SECUR",
+		"description": "No Active Job Codes",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "46",
+		"code": "HIW",
+		"fieldAppCode": "INS WIRING",
+		"description": "Home Installation Wiring",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "47",
+		"code": "INS",
+		"fieldAppCode": "INST/PREM",
+		"description": "Landlords work/Installation",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "48",
+		"code": "KAC",
+		"fieldAppCode": "KIT APPL",
+		"description": "Kitchen Appliance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "49",
+		"code": "LPG",
+		"fieldAppCode": "LPG BLR",
+		"description": "Bulk LPG Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "50",
+		"code": "LB",
+		"fieldAppCode": "LRGE BLR",
+		"description": "Large Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "51",
+		"code": "MWO",
+		"fieldAppCode": "MICRO+OVN",
+		"description": "Microwave and Oven",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "52",
+		"code": "MW",
+		"fieldAppCode": "MICROWAVE",
+		"description": "Microwave",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "53",
+		"code": "MWH",
+		"fieldAppCode": "MULT.W/HTR",
+		"description": "Multi Point Water Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "54",
+		"code": "OIL",
+		"fieldAppCode": "OIL BOILER",
+		"description": "Bulk Oil Boiler",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "55",
+		"code": "HEU",
+		"fieldAppCode": "PLATE H/EX",
+		"description": "Bulk Plate Heat Exchanger",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "56",
+		"code": "PLB",
+		"fieldAppCode": "PLUMB INST",
+		"description": "Plumbing Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "57",
+		"code": "SPE",
+		"fieldAppCode": "PWR SHWR E",
+		"description": "Electric Power Shower",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "58",
+		"code": "SFA",
+		"fieldAppCode": "S FUEL APP",
+		"description": "Bulk Solid Fuel Appliance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "59",
+		"code": "SWH",
+		"fieldAppCode": "S.PT.W/HTR",
+		"description": "Single Point Water Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "60",
+		"code": "SLC",
+		"fieldAppCode": "S/LVL CKR",
+		"description": "Split Level Cooker",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "61",
+		"code": "WS",
+		"fieldAppCode": "S/WTR/HTR",
+		"description": "Sink Water Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "62",
+		"code": "SCA",
+		"fieldAppCode": "SCALE RED.",
+		"description": "Hydroflow - Scale Reducer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "63",
+		"code": "SHO",
+		"fieldAppCode": "SHOWER",
+		"description": "Shower",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "64",
+		"code": "SA",
+		"fieldAppCode": "SMOKE ALM",
+		"description": "Bulk Smoke Alarm",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "65",
+		"code": "SOL",
+		"fieldAppCode": "SOLAR PANL",
+		"description": "Solar Panel",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "66",
+		"code": "SD",
+		"fieldAppCode": "SPIN DRYER",
+		"description": "Spin Dryer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "67",
+		"code": "SUR",
+		"fieldAppCode": "SURROUND",
+		"description": "Surround",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "68",
+		"code": "SYS",
+		"fieldAppCode": "SYSTEM",
+		"description": "System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "69",
+		"code": "TCG",
+		"fieldAppCode": "T&R CHARGE",
+		"description": "Trace and Repair (Chargeable)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "70",
+		"code": "TDE",
+		"fieldAppCode": "T/DRY ELEC",
+		"description": "Electric Tumble Dryer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "71",
+		"code": "TDG",
+		"fieldAppCode": "T/DRY GAS",
+		"description": "Gas Tumble Dryer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "72",
+		"code": "TRA",
+		"fieldAppCode": "TRAVEL",
+		"description": "Travel Allowance for LL Key Collect",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "73",
+		"code": "UPG",
+		"fieldAppCode": "UPGRADE",
+		"description": "None Contract Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "74",
+		"code": "WSU",
+		"fieldAppCode": "W SOFT UNT",
+		"description": "Water Softening Unit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "75",
+		"code": "WAW",
+		"fieldAppCode": "W/AIR & WH",
+		"description": "Warm Air Unit with Water",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "76",
+		"code": "WAU",
+		"fieldAppCode": "W/AIR UNIT",
+		"description": "Warm Air Unit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "77",
+		"code": "WM",
+		"fieldAppCode": "W/MACHINE",
+		"description": "Washing Machine",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "78",
+		"code": "WAE",
+		"fieldAppCode": "WAL HTR EL",
+		"description": "Electric Water Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "79",
+		"code": "WAL",
+		"fieldAppCode": "WALL HTR",
+		"description": "Wall Heater – Gas or Electric wall mounted room heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "80",
+		"code": "WD",
+		"fieldAppCode": "WASH/DRYER",
+		"description": "Washer Dryer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "81",
+		"code": "WFP",
+		"fieldAppCode": "WATER FILT",
+		"description": "Water Purifier ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "82",
+		"code": "WH",
+		"fieldAppCode": "WATER HTR",
+		"description": "Single Point Water Heater",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "83",
+		"code": "WRD",
+		"fieldAppCode": "WIRED ALM",
+		"description": "Wired Alarm",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "84",
+		"code": "WMO",
+		"fieldAppCode": "WM OLD",
+		"description": "Old Style Washing Machine",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "85",
+		"code": "WMT",
+		"fieldAppCode": "WM/TWINTUB",
+		"description": "Washing Machine - Twin Tub",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "86",
+		"code": "LBX",
+		"fieldAppCode": "X LRGE BLR",
+		"description": "Extra Large Boiler",
+		"ctlgEntDelnMkr": "N"
+	}
+]

@@ -1,0 +1,96 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-29T11:42:37Z",
+      "modifiedTimestamp": "2017-09-29T12:25:22Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1380097001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS2FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1380097001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1382177001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS2FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1382177001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202234130",
+          "gcCode": "4107939",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-07-23",
+          "applianceType": "CHB",
+          "description": "6F3",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-24"
+          }
+        },
+        {
+          "id": "202234130",
+          "gcCode": "4107939",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-07-23",
+          "applianceType": "CHB",
+          "description": "6F3",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-24"
+          }
+        }
+      ]
+    }
+  }
+}

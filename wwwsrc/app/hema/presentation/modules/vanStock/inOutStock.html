@@ -1,0 +1,339 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card details-list">
+            <br />
+
+            <div class="row">
+                <div class="col-xs-4">
+                    <text-box value.bind="searchText" placeholder.bind="'Enter six figure Stock Reference ID'" max-length="6"></text-box>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        class="btn btn-block
+                            ${
+                                searchText.length !== 6 || materialSearchResult
+                                    ? 'disabled'
+                                    : ''
+                            }
+                            ${
+                                materialSearchResult
+                                    ? 'btn-secondary'
+                                    : 'btn-primary'
+                            }
+                        "
+                        click.trigger="search()"
+                        disabled.bind="searchText.length !== 6 || materialSearchResult">
+                        Search
+                    </button>
+                </div>
+                <div class="col-xs-2">
+                    <button
+                        class="btn btn-block btn-secondary
+                            ${
+                                materialSearchResult
+                                ? 'disabled'
+                                : 'btn-secondary'
+                            }
+                        "
+                        click.trigger="openhvt()"
+                        disabled.bind="materialSearchResult">
+                        Tools Lookup
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="card-block hook-list-data-container" if.bind="materialSearchResult">
+
+                <div class="row">
+                    <div class="col-xs-10">
+                        <h1>
+                            ${materialSearchResult.stockReferenceId} ${materialSearchResult.description}
+                        </h1>
+                    </div>
+                </div>
+
+
+                <div class="row" if.bind="materialSearchResult.local">
+                    <div class="col-xs-4">
+                        <span if.bind="materialSearchResult.local.completionStatus === 'FOUND'">
+                            <b>${materialSearchResult.local.material.quantity}</b>
+                            item${materialSearchResult.local.material.quantity > 1 ? 's' : ''} available on my van.
+                        </span>
+
+                        <span if.bind="materialSearchResult.local.completionStatus === 'NOT_FOUND'">
+                            No van stock items available on my van.
+                        </span>
+                    </div>
+                </div>
+
+                <div class="row" if.bind="materialSearchResult.online">
+                    <div class="col-xs-4">
+                        <span if.bind="materialSearchResult.online.completionStatus === undefined">
+                            Searching nearby ...
+                        </span>
+                        <span if.bind="materialSearchResult.online.completionStatus === 'NOT_FOUND_OFFLINE'">
+                            Unable to complete the search.
+                        </span>
+                        <span if.bind="materialSearchResult.online.completionStatus === 'NOT_FOUND'">
+                            No parts available nearby.
+                        </span>
+                        <span if.bind="materialSearchResult.online.completionStatus === 'FOUND'">
+                            <b>${materialSearchResult.online.summary.totalParts}</b>
+                            part${materialSearchResult.online.summary.totalParts > 1 ? 's' : ''} available nearby.
+
+                            ${materialSearchResult.online.summary.totalParts > 1 ? 'Closest' : 'Item'} is
+                            <span if.bind="materialSearchResult.online.summary.nearestDistance === 'UNKNOWN'"">
+                                an unknown distance away.
+                            </span>
+                            <span if.bind="materialSearchResult.online.summary.nearestDistance !== 'UNKNOWN'"">
+                                <b>${materialSearchResult.online.summary.nearestDistance} miles</b> away.
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-xs-2" if.bind="materialSearchResult.online.completionStatus === 'FOUND'">
+                        <button class="btn btn-block btn-primary" click.trigger="view(materialSearchResult)">
+                            View
+                        </button>
+                    </div>
+                    <div class="col-xs-2" if.bind="materialSearchResult.online.completionStatus !== 'SEARCHING'">
+                        <button class="btn btn-block btn-secondary" click.trigger='searchText = ""'>
+                            Start again
+                        </button>
+                    </div>
+                </div>
+
+                <div class="row" if.bind="materialSearchResult.online.completionStatus === 'SEARCHING'">
+                    <div class="col-xs-12 text-xs-center">
+                        <span class="fa fa-circle-o-notch fa-spin fa-2x spinner"></span>
+                    </div>
+                </div>
+
+            </div>
+            <hr />
+            <div class="card-block hook-list-data-container">
+                <h2>
+                    <strong>Items Coming Into My Van</strong>
+                </h2>
+                <div class="details-list-item details-list-item-header" if.bind="inboundMaterials.length > 0">
+                    <div class="col-xs-1">Stock Ref.</div>
+                    <div class="col-xs-3">Description</div>
+                    <div class="col-xs-1 text-xs-center">Quantity</div>
+                    <div class="col-xs-2">Engineer</div>
+                    <div class="col-xs-2">Confirm Action/Status</div>
+                    <div class="col-xs-2">Date & Time</div>
+                    <div class="col-xs-1 text-xs-center">Sync &nbsp;<i class="fa fa-wifi" style.bind="statusFlag.isActionsEndpointOk ? 'color: #005882' : 'color: #dddddd'"></i></div>
+                </div>
+                <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container" style="min-height: 60px;"
+                    repeat.for="part of inboundMaterials">
+
+                    <div class="col-xs-1  details-list-item-col">
+                        ${part.stockReferenceId}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${part.description}
+                    </div>
+                    <div class="col-xs-1 details-list-item-col text-xs-center">
+                        ${part.quantity}
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        <div style="width: 85%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="pull-left">
+                            ${part.engineerName}
+                        </div>
+                        <div style="width: 15%" class="pull-right">
+                            <help-tip><small>Payroll: ${part.engineerId} <br/> Phone: ${part.engineerPhone}</small></help-tip>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-2  details-list-item-col">
+
+                        <span if.bind="part.status === 'PENDING' && part.isSyncedToServer">
+                            <btn class="btn btn-secondary" click.trigger="collect(part)">Collect</btn>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <btn class="btn btn-tertiary cross-blue" click.trigger="cancelCollection(part)">Cancel</btn>
+                        </span>
+
+                        <span if.bind="part.status === 'PENDING' && !part.isSyncedToServer">
+                            &nbsp; &nbsp; Confirming, please wait...
+                        </span>
+
+                        <span if.bind="part.status === 'COMPLETE'">
+                            &nbsp; &nbsp; Collected
+                        </span>
+
+                        <span if.bind="part.status === 'WITHDRAWN'">
+                            &nbsp; &nbsp; Cancelled
+                        </span>
+
+                        <span if.bind="part.status === 'REJECTED'">
+                            &nbsp; &nbsp; Reserved by another engineer
+                        </span>
+                    </div>
+                    
+                    <div class="col-xs-2">
+                        ${getDateTime(part.date, part.time)}
+                    </div>
+
+                    <div class="col-xs-1 text-xs-center details-list-item-col">
+                        <i class="fa fa-check" if.bind="part.isSyncedToServer"></i>
+                    </div>
+                </div>
+                <div if.bind="inboundMaterials.length === 0">
+                    <div class="row">
+                            <div class="col-xs-12">
+                                <p>
+                                    No records
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-block hook-list-data-container">
+                <h2>
+                    <strong>Items Going Out From My Van</strong>
+                </h2>
+                <div class="details-list-item details-list-item-header" if.bind="outboundMaterials.length > 0">
+                    <div class="col-xs-1">Stock Ref.</div>
+                    <div class="col-xs-3">Description</div>
+                    <div class="col-xs-1 text-xs-center">Quantity</div>
+                    <div class="col-xs-2">Engineer</div>
+                    <div class="col-xs-2">Status</div>
+                    <div class="col-xs-2">Date & Time</div>
+                    <div class="col-xs-1 text-xs-center">Sync &nbsp;<i class="fa fa-wifi" style.bind="statusFlag.isActionsEndpointOk ? 'color: #005882' : 'color: #dddddd'"></i></div>
+                </div>
+                <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container"
+                    repeat.for="part of outboundMaterials"  style="min-height: 60px;">
+
+                    <div class="col-xs-1  details-list-item-col">
+                        ${part.stockReferenceId}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${part.description}
+                    </div>
+                    <div class="col-xs-1 details-list-item-col text-xs-center">
+                        ${part.quantity}
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        <div style="width: 85%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;" class="pull-left">
+                            ${part.engineerName}
+                        </div>
+                        <div style="width: 15%" class="pull-right">
+                            <help-tip><small>Payroll: ${part.engineerId} <br/> Phone: ${part.engineerPhone}</small></help-tip>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-2  details-list-item-col">
+                        <span if.bind="part.status === 'PENDING'">Pending</span>
+                        <span if.bind="part.status === 'COMPLETE'">Collected</span>
+                        <span if.bind="part.status === 'WITHDRAWN'">Cancelled</span>
+                        <span if.bind="part.status === 'REJECTED'">Rejected by server</span>
+                    </div>
+                    
+                    <div class="col-xs-2">
+                        ${getDateTime(part.date, part.time)}
+                    </div>
+
+                    <div class="col-xs-1 text-xs-center details-list-item-col">
+                        <i class="fa fa-check" if.bind="part.isSyncedToServer"></i>
+                    </div>
+
+                </div>
+                <div if.bind="outboundMaterials.length === 0">
+                    <div class="row">
+                            <div class="col-xs-12">
+                                <p>
+                                    No records
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-block hook-list-data-container">
+                <h2>
+                    <strong>Items Collected Today</strong>
+                </h2>
+                <div class="details-list-item details-list-item-header" if.bind="materialCollected.length > 0">
+                    <div class="col-xs-1">Stock Ref.</div>
+                    <div class="col-xs-3">Description</div>
+                    <div class="col-xs-1 text-xs-center">Collected</div>
+                    <div class="col-xs-3">W/R No.</div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container"
+                    repeat.for="part of materialCollected"  style="min-height: 60px;">
+
+                    <div class="col-xs-1  details-list-item-col">
+                        ${part.stockReferenceId}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${part.description}
+                    </div>
+                    <div class="col-xs-1  details-list-item-col text-xs-center">
+                        ${part.quantityCollected} of ${part.quantity}
+                    </div>
+                    <div class="col-xs-3 details-list-item-col">
+                        ${part.jobId}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col "></div>
+                    <div class="col-xs-1 details-list-item-col "></div>
+                </div>
+                <div if.bind="materialCollected.length === 0">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <p>
+                                No records
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-block hook-list-data-container">
+                <h2>
+                    <strong>Items Returns</strong>
+                </h2>
+                <div class="details-list-item details-list-item-header" if.bind="returns.length > 0">
+                    <div class="col-xs-1">Stock Ref.</div>
+                    <div class="col-xs-3">Description</div>
+                    <div class="col-xs-1 text-xs-center">Quantity</div>
+                    <div class="col-xs-3">W/R No.</div>
+                    <div class="col-xs-3"></div>
+                    <div class="col-xs-1"></div>
+                </div>
+                <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container"
+                    repeat.for="part of returns"  style="min-height: 60px;">
+
+                    <div class="col-xs-1  details-list-item-col">
+                        ${part.stockReferenceId}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${part.description}
+                    </div>
+                    <div class="col-xs-1 details-list-item-col text-xs-center">
+                        ${part.quantity}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col ">
+                        ${part.jobId}
+                    </div>
+                    <div class="col-xs-3 details-list-item-col "></div>
+                    <div class="col-xs-1 details-list-item-col "></div>
+                </div>
+                <div if.bind="returns.length === 0">
+                    <div class="row">
+                            <div class="col-xs-12">
+                                <p>
+                                    No records
+                                </p>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

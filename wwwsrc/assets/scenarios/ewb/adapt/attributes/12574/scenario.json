@@ -1,0 +1,59 @@
+{
+  "status" : 200,
+  "data" : {
+    "attributes": [
+      {
+        "attributeType": "GCNumber",
+        "attributeValue": "44-000-00"
+      },
+      {
+        "attributeType": "appType",
+        "attributeValue": "Gas Central Heating "
+      },
+      {
+        "attributeType": "appSubType",
+        "attributeValue": "Wall & Floor Mounted Boilers"
+      },
+      {
+        "attributeType": "appFuel",
+        "attributeValue": "Gas Appliances"
+      },
+      {
+        "attributeType": "GCVariant",
+        "attributeValue": "A"
+      },
+      {
+        "attributeType": "appVersionStatus",
+        "attributeValue": "Issued"
+      },
+      {
+        "attributeType": "includeInSIS",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "XSol",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "serviceListed",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "SEDBUKRating",
+        "attributeValue": "A"
+      },
+      {
+        "attributeType": "publishedEfficiency",
+        "attributeValue": "90"
+      },
+      {
+        "attributeType": "sourceID",
+        "attributeValue": "11156"
+      },
+      {
+        "attributeType": "optidescription",
+        "attributeValue": "greenstar24ri"
+      }
+    ]
+  }
+}

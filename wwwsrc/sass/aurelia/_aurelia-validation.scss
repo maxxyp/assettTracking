@@ -1,0 +1,8 @@
+.aurelia-validation-message {
+  display: inline;
+  margin-left: 5px;
+
+  :empty {
+    display: none;
+  }
+}

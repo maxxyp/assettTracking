@@ -1,0 +1,26 @@
+[
+	{
+		"key": "1",
+		"id": "Y",
+		"description": "Yes",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "N",
+		"description": "No",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "C",
+		"description": "Not Checked",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "X",
+		"description": "N/A",
+		"ctlgEntDelnMkr": "N"
+	}
+]

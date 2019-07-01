@@ -1,0 +1,2918 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+        "type": "jobHistory",
+        "createdTimestamp": "2018-08-14T05:00:24Z",
+        "modifiedTimestamp": "2018-08-14T05:00:24Z"
+    },
+    "data": {
+        "tasks": [
+            {
+                "id": "1363315001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE",
+                        "report": "vfghghgjghsfdgdfhgfhgf"
+                    }
+                ]
+            },
+            {
+                "id": "1343315001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1343325001001",
+                "jobType": "WU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1343325001002",
+                "jobType": "SD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "SLO3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1343325001003",
+                "jobType": "LJ",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1343325001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1353325001001",
+                "jobType": "WU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1363325001001",
+                "jobType": "WU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1363325001002",
+                "jobType": "SD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "SLO3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1363325001003",
+                "jobType": "LD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1363325001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373325001001",
+                "jobType": "WU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373325001002",
+                "jobType": "SD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "SLO3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373325001003",
+                "jobType": "CU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373325001004",
+                "jobType": "OD",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "SLO1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373215001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "fOR testing pURPOSE"
+                    }
+                ]
+            },
+            {
+                "id": "1373215001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1373215001003",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1373215001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1373215001005",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001003",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001004",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001006",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327615001007",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1353315001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE",
+                        "report": "hdhdbdbcjdcn"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE",
+                        "report": "fdgfhdgjgukhjmkghnxdgfbfgbsd"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001005",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001006",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1333315001007",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE",
+                        "report": "vdfvdfbdfbgfbgfd"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001004",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001005",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001006",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1323315001007",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001003",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001004",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001006",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1384315001007",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001004",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001005",
+                "jobType": "IB",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1302315001006",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1372325001001",
+                "jobType": "RH",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCF3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-02",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "Complete the first RFA"
+                    }
+                ]
+            },
+            {
+                "id": "1372325001002",
+                "jobType": "OD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "SLO3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-02",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "Complete the 2nd RFA",
+                        "parts": [
+                            {
+                                "status": "CP",
+                                "description": "Pcb-Ignition",
+                                "quantity": 1,
+                                "stockReferenceId": "E01561"
+                            },
+                            {
+                                "status": "UP",
+                                "description": "Pcb-Ignition",
+                                "quantity": 1,
+                                "stockReferenceId": "E01561"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1372325001003",
+                "jobType": "HU",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-02",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "Complete the 3rd RFA"
+                    }
+                ]
+            },
+            {
+                "id": "1373515001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373515001002",
+                "jobType": "FV",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373515001003",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373515001004",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373515001005",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001003",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001004",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001006",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1373315001007",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001001",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "DSDSDSDSSSSSSSSSSS"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001002",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001003",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001005",
+                "jobType": "AS",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "NCH3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001006",
+                "jobType": "AS",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1305615001007",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1"
+                    }
+                ]
+            },
+            {
+                "id": "1359615001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": ":)))))))))):(((((((^^^^^^^^^^^^**********************************************$$$$$$$$$$$$$$$$$$$$$@@"
+                    }
+                ]
+            },
+            {
+                "id": "1355225001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY",
+                        "report": "tfghtfyrfrdeyd"
+                    }
+                ]
+            },
+            {
+                "id": "1355225001002",
+                "jobType": "FV",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1355225001003",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1355225001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1355225001005",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1385225001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY",
+                        "report": "bdtedbwgedtes"
+                    }
+                ]
+            },
+            {
+                "id": "1385225001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1354225001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1354225001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1357615001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "NA",
+                        "engineerName": "AMEND",
+                        "report": "For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1380325001001",
+                "jobType": "RH",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCF3ST",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1374615001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1345615001001",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "GEORGE",
+                        "report": "ddddddddddddddddddddddddddddddddddddd"
+                    }
+                ]
+            },
+            {
+                "id": "1345615001002",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1345615001003",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "NA",
+                        "engineerName": "GEORGE"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001002",
+                "jobType": "AS",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001003",
+                "jobType": "AS",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "NCH3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001005",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001006",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1385615001007",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1336215001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1346215001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1356215001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1366215001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "asddfddfffff"
+                    }
+                ]
+            },
+            {
+                "id": "1366215001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1366215001003",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1366215001004",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1366215001005",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-06-29",
+                        "status": "NA",
+                        "engineerName": "EMPLOYEE 2"
+                    }
+                ]
+            },
+            {
+                "id": "1327225001001",
+                "jobType": "RH",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCF3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327225001002",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327225001003",
+                "jobType": "LJ",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1327225001004",
+                "jobType": "RI",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "SLF3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1347225001001",
+                "jobType": "RH",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCF3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1347225001002",
+                "jobType": "LJ",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1347225001003",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1347225001004",
+                "jobType": "SM",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1339125001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "IP",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Kimunhbgcfcrcfv",
+                        "parts": [
+                            {
+                                "status": "OP",
+                                "description": "Timer Mechanical EMT 2 TOTE",
+                                "quantity": 1,
+                                "stockReferenceId": "555123"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1339125001002",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "IP",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Dcfvybmkmknubgv",
+                        "parts": [
+                            {
+                                "status": "OP",
+                                "description": "British/Scottish Gas Alpha 2 Pump",
+                                "quantity": 1,
+                                "stockReferenceId": "555558"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1339125001003",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "IP",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Oknbyvtvynunyvrctbu",
+                        "parts": [
+                            {
+                                "status": "OP",
+                                "description": "Isolator Valve 15mm - Bemasan",
+                                "quantity": 1,
+                                "stockReferenceId": "E72938"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1340515001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY",
+                        "report": "Knunhvgcfcdcd"
+                    }
+                ]
+            },
+            {
+                "id": "1340515001002",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1360515001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY",
+                        "report": "5r5ucv6cu5rvytcru"
+                    }
+                ]
+            },
+            {
+                "id": "1360515001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1360515001003",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1360515001004",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1360515001005",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY"
+                    }
+                ]
+            },
+            {
+                "id": "1390515001001",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "I",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "NA",
+                        "engineerName": "JOHN HENRY",
+                        "report": "Ybybybgbgbbgbg"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001003",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "I",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001004",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "I",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "I",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1307415001006",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "I",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "status": "D"
+                    }
+                ]
+            },
+            {
+                "id": "1399325001001",
+                "jobType": "RH",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCF3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-07",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE TVtcruhygvtuhyh"
+                    }
+                ]
+            },
+            {
+                "id": "1399325001002",
+                "jobType": "HU",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "ALP3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-07",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE MJnubybgvgv"
+                    }
+                ]
+            },
+            {
+                "id": "1399325001003",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-07",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE UNbvgvgbhbybgvt"
+                    }
+                ]
+            },
+            {
+                "id": "1367325001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-06",
+                        "status": "IP",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE KJJNIBYGVHTCDXDX",
+                        "parts": [
+                            {
+                                "status": "AP",
+                                "description": "Timer Mechanical EMT 2 TOTE",
+                                "quantity": 1,
+                                "stockReferenceId": "555123"
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2018-08-06",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE ytgytgcyftcdgnoj",
+                        "parts": [
+                            {
+                                "status": "FP",
+                                "description": "Timer Mechanical EMT 2 TOTE",
+                                "quantity": 1,
+                                "stockReferenceId": "555123"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1367325001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-08-06",
+                        "status": "IP",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE hyuigtufyrftrdet",
+                        "parts": [
+                            {
+                                "status": "AP",
+                                "description": "British/Scottish Gas Alpha 2 Pump",
+                                "quantity": 1,
+                                "stockReferenceId": "555558"
+                            }
+                        ]
+                    },
+                    {
+                        "date": "2018-08-06",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE tgntftrdetdste",
+                        "parts": [
+                            {
+                                "status": "FP",
+                                "description": "British/Scottish Gas Alpha 2 Pump",
+                                "quantity": 1,
+                                "stockReferenceId": "555558"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1367225001001",
+                "jobType": "RI",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "SLF3ST",
+                "activities": [
+                    {
+                        "date": "2018-08-01",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Buybcebfbeufbuebe",
+                        "parts": [
+                            {
+                                "status": "UP",
+                                "description": "Pcb-Ignition",
+                                "quantity": 2,
+                                "stockReferenceId": "E01561"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "id": "1329125001001",
+                "jobType": "SD",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "SLO1S",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Nubybgvtvgbnj"
+                    }
+                ]
+            },
+            {
+                "id": "1329125001002",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Jinuhugtrxxrc"
+                    }
+                ]
+            },
+            {
+                "id": "1329125001003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-30",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Omnuhyvrxexdcgunmo,onubtv"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001003",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001004",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001006",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "C",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1328615001007",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "AMEND",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1360715001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Hubyvrcrrnui"
+                    }
+                ]
+            },
+            {
+                "id": "1360715001002",
+                "jobType": "FV",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "NCH3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-18",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Kkkmmnmiinijun"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001002",
+                "jobType": "AS",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001003",
+                "jobType": "AS",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "NCH3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001005",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "C",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001006",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1306615001007",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-17",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1323515001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-12",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Ughgcdcgbhnjm"
+                    }
+                ]
+            },
+            {
+                "id": "1323515001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-12",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE minimnhbhnnm"
+                    }
+                ]
+            },
+            {
+                "id": "1323515001003",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-12",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE wzwzzsxdxdxe"
+                    }
+                ]
+            },
+            {
+                "id": "1329415001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "54CODE First landlord job"
+                    }
+                ]
+            },
+            {
+                "id": "1329415001002",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "62CODE Second landlord job"
+                    }
+                ]
+            },
+            {
+                "id": "1329415001003",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "71CODE Third landlord job"
+                    }
+                ]
+            },
+            {
+                "id": "1329415001004",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "C",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "71CODE Fourth landlord job"
+                    }
+                ]
+            },
+            {
+                "id": "1329415001005",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "X",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "report": "No Visit Details"
+                    }
+                ]
+            },
+            {
+                "id": "1389415001001",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "54CODE Testing the PL 1 job"
+                    }
+                ]
+            },
+            {
+                "id": "1389415001002",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 1",
+                        "report": "62CODE Testing the PL 2 job"
+                    }
+                ]
+            },
+            {
+                "id": "1321515001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Jbhbvtrccfvgv"
+                    }
+                ]
+            },
+            {
+                "id": "1321515001002",
+                "jobType": "FV",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "NCHCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Oknihygvfcrccrct"
+                    }
+                ]
+            },
+            {
+                "id": "1321515001003",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Lplplplplplplpl"
+                    }
+                ]
+            },
+            {
+                "id": "1321515001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Crxezezezeexr"
+                    }
+                ]
+            },
+            {
+                "id": "1321515001005",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-11",
+                        "status": "C",
+                        "engineerName": "JOHN HENRY",
+                        "report": "54CODE Ubbyvtcxeesezwsws"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001003",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001004",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001005",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001006",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "C",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1383315001007",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "71CODE For Testing Purpose"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODE4 fghgfghtgggggg"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001002",
+                "jobType": "AS",
+                "applianceType": "CKR",
+                "status": "C",
+                "chargeType": "NCHLIG",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODEAA hjgfgfxfxcghcv"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001003",
+                "jobType": "IB",
+                "applianceType": "BBF",
+                "status": "C",
+                "chargeType": "EXS3FIS",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODE4 kjgghcgfcgfcgfc"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001004",
+                "jobType": "AS",
+                "applianceType": "OVN",
+                "status": "C",
+                "chargeType": "NCH1S",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODE4 kihjfgsresdf"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001005",
+                "jobType": "AS",
+                "applianceType": "FRE",
+                "status": "C",
+                "chargeType": "NCH2API",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODE4 bnjkbhhjhjgyu"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001006",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "status": "C",
+                "chargeType": "EXSCNI2",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODEAA opjjiljkkopkopkop"
+                    }
+                ]
+            },
+            {
+                "id": "1393315001007",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [
+                    {
+                        "date": "2018-07-05",
+                        "status": "C",
+                        "engineerName": "EMPLOYEE 2",
+                        "report": "CODE4 iohjiojijuijuijio"
+                    }
+                ]
+            }
+        ],
+        "appliances": [
+            {
+                "id": "202223880",
+                "gcCode": "4124904",
+                "category": "X",
+                "contractType": "3ST",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "CHB",
+                "description": "*C*MULTI 32/80 PLUS",
+                "flueType": "O",
+                "boilerSize": 99,
+                "cylinderType": 0,
+                "energyControl": "PR",
+                "locationDescription": "HALL",
+                "condition": 5,
+                "numberOfRadiators": 49,
+                "numberOfSpecialRadiators": 39,
+                "installationYear": 2016,
+                "systemDesignCondition": 7,
+                "systemType": 16,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "Y",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2018-07-05"
+                }
+            },
+            {
+                "id": "202223880",
+                "gcCode": "4124904",
+                "category": "X",
+                "contractType": "3ST",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "CHB",
+                "description": "*C*MULTI 32/80 PLUS",
+                "flueType": "O",
+                "boilerSize": 99,
+                "cylinderType": 0,
+                "energyControl": "PR",
+                "locationDescription": "HALL",
+                "condition": 5,
+                "numberOfRadiators": 49,
+                "numberOfSpecialRadiators": 39,
+                "installationYear": 2016,
+                "systemDesignCondition": 7,
+                "systemType": 16,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "Y",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2018-07-05"
+                }
+            },
+            {
+                "id": "202223879",
+                "gcCode": "4589701",
+                "category": "X",
+                "contractType": "CNI2",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "AGA",
+                "description": "REDFYRE C/HTG COOKER 60",
+                "flueType": "O",
+                "boilerSize": 100,
+                "cylinderType": 0,
+                "energyControl": "PR",
+                "locationDescription": "LOUNGE",
+                "condition": 3,
+                "numberOfRadiators": 50,
+                "numberOfSpecialRadiators": 25,
+                "installationYear": 2016,
+                "systemDesignCondition": 6,
+                "systemType": 16,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2018-07-05"
+                }
+            },
+            {
+                "id": "202223881",
+                "serialId": "145632",
+                "gcCode": "4402301",
+                "category": "X",
+                "contractType": "3FIS",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "BBF",
+                "description": "HEATWAVE TWIN",
+                "flueType": "O",
+                "boilerSize": 18,
+                "cylinderType": 0,
+                "energyControl": "NC",
+                "locationDescription": "KITCHEN",
+                "condition": 5,
+                "numberOfRadiators": 9,
+                "numberOfSpecialRadiators": 6,
+                "installationYear": 2016,
+                "systemDesignCondition": 9,
+                "systemType": 17,
+                "linkId": "202223881",
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y",
+                    "actionCode": "NT",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "BBF is not a safe appliance"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2018-07-05"
+                }
+            },
+            {
+                "id": "202223882",
+                "gcCode": "4700000",
+                "category": "A",
+                "contractType": "3FIS",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "FRB",
+                "description": "checking the appliance",
+                "locationDescription": "customer location",
+                "installationYear": 2008,
+                "linkId": "202223881",
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "X",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                }
+            },
+            {
+                "id": "202223883",
+                "serialId": "456257",
+                "gcCode": "1111612",
+                "category": "A",
+                "contractType": "1S",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "OVN",
+                "description": "G4STGB DUAL FUEL COOKER",
+                "flueType": "O",
+                "boilerSize": 0,
+                "locationDescription": "LOUNGE",
+                "condition": 6,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2016,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                }
+            },
+            {
+                "id": "202223884",
+                "serialId": "1236547",
+                "gcCode": "3209600",
+                "category": "A",
+                "contractType": "2API",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "FRE",
+                "description": "SUPERFORM FIRE - NO INFO",
+                "flueType": "O",
+                "boilerSize": 0,
+                "locationDescription": "LOUNGE",
+                "condition": 3,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2016,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                }
+            },
+            {
+                "id": "202223885",
+                "serialId": "123456",
+                "gcCode": "9999999",
+                "category": "A",
+                "contractType": "LI",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "INS",
+                "description": "STRATALYN ST 12 CIRCULAT",
+                "flueType": "R",
+                "boilerSize": 125,
+                "cylinderType": 2,
+                "energyControl": "TRV",
+                "locationDescription": "KITCHEN",
+                "condition": 5,
+                "numberOfRadiators": 52,
+                "numberOfSpecialRadiators": 11,
+                "installationYear": 2014,
+                "systemDesignCondition": 5,
+                "systemType": 15,
+                "safety": {
+                    "applianceSafe": "N",
+                    "installationTightnessTestSafe": "N",
+                    "actionCode": "T",
+                    "noticeStatus": "A",
+                    "noticeType": "XC",
+                    "report": "Kkijubyvfcxe"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-06-25"
+                }
+            },
+            {
+                "id": "202223886",
+                "serialId": "568549",
+                "gcCode": "1164592",
+                "category": "A",
+                "contractType": "LIG",
+                "contractExpiryDate": "2019-06-27",
+                "applianceType": "CKR",
+                "description": "BUILT IN OVEN - WHITE",
+                "flueType": "O",
+                "boilerSize": 0,
+                "locationDescription": "KITCHEN",
+                "condition": 5,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2016,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                }
+            }
+        ]
+    }
+}
+}

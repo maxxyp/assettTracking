@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IApplianceFlueTypes.ts"],"names":[],"mappings":"","file":"IApplianceFlueTypes.js","sourcesContent":["export interface IApplianceFlueTypes {\n   flueType: string;\n   flueTypeDescription: string;\n}\n"],"sourceRoot":"../../../.."}

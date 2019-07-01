@@ -1,0 +1,24 @@
+<template>
+    <div class="message row details-card card fade-in-content">
+        <div class="card-header">
+            <a class="btn btn-white active pull-right" click.trigger="deleteRead()">
+                <i class="fa fa-times"></i>
+                <span class="btn-label">${labels.deleteButton}</span>
+            </a>
+            <h1>${labels.title}</h1>
+            <small show.bind="lastUpdated">Last Updated ${lastUpdated | dateTimeFormat}</small>
+        </div>
+        <div class="card-block">
+            <div repeat.for="message of messages" class="details-list-item no-pointer no-hover">
+                <div class="details-list-item-col col-xs-12 ${message.read ? 'state-dont-care' : 'state-valid'}">
+                    <button class="btn btn-secondary pull-right"
+                        click.trigger="markAsRead(message)"
+                        show.bind="!message.read && !message.deleted">${labels.markAsRead}</button>
+                    <small>${message.date | dateTimeFormat}</small>
+                    <p>${message.content}</p>
+                </div>
+            </div>
+            <p if.bind="messages.length === 0">${labels.noMessages}</p>
+        </div>
+    </div>
+</template>

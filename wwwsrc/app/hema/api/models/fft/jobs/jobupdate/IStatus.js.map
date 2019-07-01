@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/IStatus.ts"],"names":[],"mappings":"","file":"IStatus.js","sourcesContent":["export interface IStatus {\n    code: string;\n    timestamp: string;\n}\n"],"sourceRoot":"../../../../../.."}

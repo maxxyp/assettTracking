@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IAppointmentBand.ts"],"names":[],"mappings":"","file":"IAppointmentBand.js","sourcesContent":["export interface IAppointmentBand {\n   appointmentBandCode: string;\n   appointmentBandDescription: string;\n}\n"],"sourceRoot":"../../../.."}

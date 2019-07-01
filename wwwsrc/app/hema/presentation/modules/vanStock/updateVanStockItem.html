@@ -1,0 +1,68 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${model.material.description}</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="van-stock-item-dialog-body">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Stock Reference ID</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>${model.material.stockReferenceId}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Quantity</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>${model.material.quantity}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                    <div class="form-group">
+                        <div class="col-xs-6">
+                            <label>Quantity to be returned</label>
+                        </div>
+                        <div class="col-xs-6">
+                            <label>${model.material.quantityToBeReturned}</label>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Area</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <editable-drop-down value.bind="model.material.area"
+                                          items.bind="model.myVanAreas">
+                        </editable-drop-down>
+                    </div>
+                    <div class="col-xs-6 col-xs-offset-6" style="color:red" if.bind="!isAreaValid">
+                        Please only use conventional alphanumeric characters.
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="model.material.jobId">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>W/R Number</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>${model.material.jobId}</label>
+                    </div>
+                </div>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok(model.material)" disabled.bind="!isAreaValid">Save</button>
+            <button class="btn btn-secondary" click.trigger="controller.cancel()">Cancel</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

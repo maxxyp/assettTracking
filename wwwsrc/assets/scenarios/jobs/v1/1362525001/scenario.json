@@ -1,0 +1,207 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T10:18:15Z",
+      "modifiedTimestamp": "2018-08-14T10:42:24Z"
+    },
+    "data": {
+      "job": {
+        "id": "1362525001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022201825",
+          "lastName": "Miss Cathy Perry",
+          "address": {
+            "houseNumber": "16",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L271308",
+          "address": {
+            "houseNumber": "16",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201825",
+            "initials": " ",
+            "lastName": "Miss Cathy Perry"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00057465",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1362525001001",
+            "applianceId": "202224161",
+            "jobType": "PL",
+            "applianceType": "WAW",
+            "chargeType": "ALPNONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "WA",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 15,
+                "sequence": 1,
+                "report": "62CODE dfsfsdsdsdsdsds",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "assdsdsd",
+                    "charge": 1000,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "E28102"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "assdsdsd",
+                    "charge": 1000,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "E28102"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1362525001002",
+            "applianceId": "202224160",
+            "jobType": "DA",
+            "applianceType": "FRE",
+            "chargeType": "SLONONE",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 16,
+                "sequence": 1,
+                "report": "62CODE asasasaasasa",
+                "workDuration": 16,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Universal Ball Valve Service Kit",
+                    "charge": 164,
+                    "quantity": 2,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "F31878"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1362525001003",
+            "applianceId": "202224159",
+            "jobType": "DC",
+            "applianceType": "CKR",
+            "chargeType": "EXSGNI2",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 17,
+                "sequence": 1,
+                "report": "62CODE dsssssssssssssssssssssss",
+                "workDuration": 17,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1362525001004",
+            "applianceId": "202224175",
+            "jobType": "OL",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 13,
+                "sequence": 1,
+                "report": "54CODE DSSSSSSSSSSSSSSSSSSSSSSSSSSSSS",
+                "workDuration": 13,
+                "parts": [
+                  {
+                    "status": "CP",
+                    "description": "V -Carbon Brush Pair (L) TOTE",
+                    "charge": 0,
+                    "quantity": 1,
+                    "stockReferenceId": "E07067"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "V -Carbon Brush Pair (L) TOTE",
+                    "charge": 769,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E07067"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

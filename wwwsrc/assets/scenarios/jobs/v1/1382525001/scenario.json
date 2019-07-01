@@ -1,0 +1,74 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T10:29:34Z"
+    },
+    "data": {
+      "job": {
+        "id": "1382525001",
+        "engineerId": "5050505",
+        "customer": {
+          "id": "022201572",
+          "lastName": "Mr Rocky Jim",
+          "address": {
+            "houseNumber": "26",
+            "line": [
+              "Bellfields Street"
+            ],
+            "county": "Market Harborough",
+            "postCodeIn": "8AB",
+            "postCodeOut": "LE16"
+          }
+        },
+        "premises": {
+          "id": "L271094",
+          "address": {
+            "houseNumber": "26",
+            "line": [
+              "Bellfields Street"
+            ],
+            "county": "Market Harborough",
+            "postCodeIn": "8AB",
+            "postCodeOut": "LE16"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022201572",
+            "initials": " ",
+            "lastName": "Mr Rocky Jim"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-01",
+            "lastElectricVisitDate": "2018-07-30"
+          }
+        },
+        "visit": {
+          "id": "WMW00057463",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1382525001001",
+            "applianceId": "202223853",
+            "jobType": "OL",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

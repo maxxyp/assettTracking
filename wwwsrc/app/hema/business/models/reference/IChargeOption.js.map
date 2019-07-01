@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IChargeOption.ts"],"names":[],"mappings":"","file":"IChargeOption.js","sourcesContent":["export interface IChargeOption {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

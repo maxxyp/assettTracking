@@ -1,0 +1,102 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "job": {
+                "id": "1387169279",
+                "engineerId": "0097122",
+                "customer": {
+                    "id": "011948837",
+                    "lastName": "Mr Stephen Kelly",
+                    "address": {}
+                },
+                "premises": {
+                    "id": "B063971",
+                    "address": {
+                        "premisesName": "Flat 6",
+                        "houseNumber": "11",
+                        "line": ["Shakespeare Road"],
+                        "county": "Bedford",
+                        "postCodeIn": "2DZ",
+                        "postCodeOut": "MK40"
+                    },
+                    "previousVisitCount": 0,
+                    "contact": {
+                        "id": "011948837",
+                        "initials": "",
+                        "lastName": "Mr Stephen Kelly",
+                        "homePhone": "01234270551",
+                        "workPhone": "07412513887"
+                    },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2019-01-07"
+                    }
+                },
+                "visit": {
+                    "id": "WMW01803643",
+                    "date": "2019-01-08T00:00:00Z",
+                    "earliestStartTime": "2019-01-08T08:00:00Z",
+                    "latestStartTime": "2019-01-08T10:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1387169279001",
+                    "applianceId": "220930242",
+                    "jobType": "AS",
+                    "applianceType": "CHB",
+                    "chargeType": "NCHCNI2",
+                    "status": "C",
+                    "skill": "GS",
+                    "sequence": 1,
+                    "activities": [{
+                        "date": "2019-01-07",
+                        "status": "C",
+                        "engineerName": "(TU) DALE MATTHEWS",
+                        "chargeableTime": 42,
+                        "sequence": 1,
+                        "report": "CODE4 ASv ok. Adjusted emmsions. All ok. Adv hive. Accepted.",
+                        "workDuration": 42
+                    }]
+                }, {
+                    "id": "1387169279002",
+                    "applianceId": "220930242",
+                    "jobType": "RH",
+                    "applianceType": "CHB",
+                    "chargeType": "NCFNONE",
+                    "status": "D",
+                    "skill": "OC",
+                    "sequence": 2,
+                    "activities": [{
+                        "date": "2019-01-07",
+                        "status": "IA",
+                        "engineerName": "(TU) DALE MATTHEWS",
+                        "chargeableTime": 40,
+                        "sequence": 1,
+                        "report": "CODE4 Accepted quote. PRoblems with billing. Another visit required.",
+                        "workDuration": 40
+                    }, {
+                        "status": "D",
+                        "sequence": 2
+                    }]
+                }, {
+                    "id": "1387169279003",
+                    "applianceId": "220930242",
+                    "jobType": "IB",
+                    "applianceType": "CHB",
+                    "chargeType": "EXSCNI2",
+                    "status": "C",
+                    "skill": "GR",
+                    "sequence": 1,
+                    "activities": [{
+                        "date": "2019-01-07",
+                        "status": "C",
+                        "engineerName": "(TU) DALE MATTHEWS",
+                        "chargeableTime": 26,
+                        "sequence": 1,
+                        "report": "CODE4 Reported pressure drop and leak. Repaired both.",
+                        "workDuration": 26
+                    }]
+                }]
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+  "rulesDirectory": "../../build/tslint/",
+  "rules": {
+    "jasmine-no-focus": true
+  }
+}

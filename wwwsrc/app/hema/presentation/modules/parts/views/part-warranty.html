@@ -1,0 +1,69 @@
+<template bindable="canEdit,
+                    labels,
+                    yesNoLookup,
+                    part,
+                    quantityIncrementStep,
+                    setsamerefasoriginalcallback,
+                    validationRules">
+    <collapsible title-text.bind="labels.warrantyReturnHeader" is-collapsed.bind="false" collapse-icon="chevron-circle-up" expand-icon="chevron-circle-down">
+        <template replace-part="collapsible-content-template">
+            <div class="row" if.bind="part.warrantyReturn.quantityToClaimOrReturn > part.quantity">
+                <div class="col-xs-12">
+                    <span class="resilient-alert validation-message-custom">${labels.warratyQuantityExceededMessage}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-2">
+                        <label>${labels['warrantyReturn.isWarrantyReturn']}</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <button-list items.bind="yesNoLookup" value.bind="part.warrantyReturn.isWarrantyReturn" multi-select.bind="false" validate-index="$index"
+                            disabled.bind="!canEdit" button-width="30%">
+                        </button-list>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                <div class="form-group">
+                    <div class="col-xs-2">
+                        <label>${labels['warrantyReturn.quantityToClaimOrReturn']}</label>
+                    </div>
+                    <div class="col-xs-2">
+                        <incremental-number-picker value.bind="part.warrantyReturn.quantityToClaimOrReturn" increment-step.bind="quantityIncrementStep"
+                            hide-keyboard-on-enter.bind="hideKeyboardOnEnter" each-side.bind=true max-value.bind="part.quantity"
+                            validate-index="$index" min-value.bind="1" disabled.bind="!canEdit">
+                        </incremental-number-picker>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                <div class="form-group">
+                    <div class="col-xs-2">
+                        <label>${labels['warrantyReturn.removedPartStockReferenceId']}</label>
+                    </div>
+                    <div class="col-xs-2">
+                        <text-box value.bind="part.warrantyReturn.removedPartStockReferenceId" validate-index="$index" disabled.bind="!canEdit"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <button class="btn btn-secondary" click.trigger="setsamerefasoriginalcallback(part)" disabled.bind="!canEdit">
+                            ${labels['warrantyReturn.removedPartSameId']}
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                <div class="form-group">
+                    <div class="col-xs-2">
+                        <label>${labels['warrantyReturn.reasonForClaim']}</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <text-area value.bind="part.warrantyReturn.reasonForClaim" placeholder="${validationRules['parts.warrantyReturn.reasonForClaim'].maxLength} ${labels.characterLimitSuffix}"
+                            maxlength.bind="validationRules['parts.warrantyReturn.reasonForClaim'].maxLength" validate-index="$index"
+                            disabled.bind="!canEdit"></text-area>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </collapsible>
+</template>

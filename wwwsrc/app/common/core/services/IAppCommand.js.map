@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IAppCommand.ts"],"names":[],"mappings":"","file":"IAppCommand.js","sourcesContent":["export interface IAppCommand {\n    methodName: string;\n    args: { [index: string]: string };\n}\n"],"sourceRoot":"../../.."}

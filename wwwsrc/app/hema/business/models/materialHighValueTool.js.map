@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/materialHighValueTool.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,4BAAC;IAAD,CAHA,AAGC,IAAA;IAHY,sDAAqB","file":"materialHighValueTool.js","sourcesContent":["export class MaterialHighValueTool {\n    public materialCode: string;\n    public description: string;\n}\n"],"sourceRoot":"../../.."}

@@ -1,0 +1,44 @@
+{
+    "status": 200,
+    "disableCache": true,
+    "delay": 0.3,
+    "data": [{
+        "materialCode": "555054",
+        "description": "Electronic Timeswitch Single Channel",
+        "engineerId": "1000001",
+        "name": "Forward Stock Location",
+        "telephone": "0800 123456",
+        "owner": "BGS",
+        "quantity": 1,
+        "storageZone": null,
+        "distance": 0.96,
+        "lat": "51.6332189",
+        "lon": "-0.4356882"
+    },
+    {
+        "materialCode": "555054",
+        "description": "Electronic Timeswitch Single Channel",
+        "engineerId": "8763533",
+        "name": "Jenny Jones",
+        "telephone": "0800 123456",
+        "owner": "BGS",
+        "quantity": 1,
+        "storageZone": null,
+        "distance": 1.076,
+        "lat": "51.5332189",
+        "lon": "-0.6356882"
+    },
+    {
+        "materialCode": "555054",
+        "description": "Electronic Timeswitch Single Channel",
+        "engineerId": "4353623",
+        "name": "Alan Brown",
+        "telephone": "0800 123456",
+        "owner": "BGS",
+        "quantity": 2,
+        "storageZone": "1b",
+        "distance": 3.1,
+        "lat": "51.3332189",
+        "lon": "-0.4356882"
+    }]
+}

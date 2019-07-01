@@ -1,0 +1,73 @@
+<template>
+    <div class="app-init absolute-center fade-in-content">
+        <div class="header">
+            <div>Initialising <small>version ${appVersion} ${buildType}</small></div>
+        </div>
+        <div class="content">
+            <div if.bind="!error && !showReferenceDataRetryDiv && !showLocationNotification">
+                <div>
+                    The application is initialising, please wait...
+                </div>
+                <br />
+                <div>
+                    ${category}
+                </div>
+                <br />
+                <div>
+                    ${item}
+                </div>
+                <br />
+                <progress-bar show.bind="progressMax > 0" value.bind="progressValue" max-value.bind="progressMax"></progress-bar>
+            </div>
+
+            <div if.bind="error">
+                <div>
+                    <div>
+                        A problem has occurred during initialisation<span if.bind="!isAuthError">, please try
+                            restarting the application</span>. The details of the problem are shown
+                        below:
+                    </div>
+                    <br />
+                    <div class="alert alert-danger text-lg-left">
+                        ${category}: ${error}
+                        <span if.bind="isAuthError">
+                            <br />Please check your internet connection and try again:
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <button class="btn btn-primary" click.trigger="init()">
+                                Retry
+                            </button>
+
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="alert alert-danger" if.bind="showReferenceDataRetryDiv">
+                <div class="text-lg-left">
+                    We have detected an issue downloading your reference data. A complete data set is required to carry out work.
+                    <br />
+                    <br />
+                    <button class="btn btn-secondary pull-right" click.trigger="ignore()">
+                        Cancel
+                    </button>
+                    <button class="btn btn-primary pull-right" click.trigger="retry()">
+                        Retry Download
+                    </button>
+                    <br />
+                </div>
+            </div>
+
+            <div class="alert alert-danger" if.bind="showLocationNotification">
+                <div class="text-lg-left">
+                    We have detected that the location services on your device is not turned on. We require you to enable this feauture in order to use Engineer Workbench.
+                    <br />
+                    <br />
+                    <button class="btn btn-primary pull-right" click.trigger="openSettings()">
+                        Ok, Open Settings
+                    </button>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

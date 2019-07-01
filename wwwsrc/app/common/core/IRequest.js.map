@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/IRequest.ts"],"names":[],"mappings":"","file":"IRequest.js","sourcesContent":["export interface IRequest {\n    method?: string;\n    headers?: { [index: string]: string };\n    mode?: RequestMode;\n    body?: string;\n}\n"],"sourceRoot":"../.."}

@@ -1,0 +1,16 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${model.header}</label>
+        </ai-dialog-header>
+        <ai-dialog-body>
+            <div class="form-group has-danger">
+                <label class="help-block">${model.errorMessage}</label>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button click.trigger="controller.ok(true)">Retry Now</button>
+            <button click.trigger="controller.ok(false)">Retry Later</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

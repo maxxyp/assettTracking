@@ -1,0 +1,44 @@
+[
+  {
+    "key": "1",
+    "id": "1",
+    "description": "Scotland",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2",
+    "id": "2",
+    "description": "Northern",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3",
+    "id": "3",
+    "description": "North England",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "4",
+    "id": "4",
+    "description": "Wales & West Midlands",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5",
+    "id": "5",
+    "description": "Eastern England",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6",
+    "id": "6",
+    "description": "South West",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7",
+    "id": "7",
+    "description": "London & South East",
+    "ctlgEntDelnMkr": "N"
+  }
+]

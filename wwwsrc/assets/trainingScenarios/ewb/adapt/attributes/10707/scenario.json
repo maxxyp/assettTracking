@@ -1,0 +1,51 @@
+{
+  "status" : 200,
+  "data" : {
+  "attributes": [
+    {
+      "attributeType": "GCNumber",
+      "attributeValue": "53-416-08"
+    },
+    {
+      "attributeType": "appType",
+      "attributeValue": "Gas Water Heating"
+    },
+    {
+      "attributeType": "appSubType",
+      "attributeValue": "Storage Water Heaters & Circulators"
+    },
+    {
+      "attributeType": "appFuel",
+      "attributeValue": "Gas Appliances"
+    },
+    {
+      "attributeType": "GCVariant",
+      "attributeValue": "A"
+    },
+    {
+      "attributeType": "appVersionStatus",
+      "attributeValue": "Issued"
+    },
+    {
+      "attributeType": "includeInSIS",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "serviceListed",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "ceasedProduction",
+      "attributeValue": "31/12/1984"
+    },
+    {
+      "attributeType": "sourceID",
+      "attributeValue": "20378"
+    },
+    {
+      "attributeType": "optidescription",
+      "attributeValue": "jan3secirculator"
+    }
+  ]
+}
+}

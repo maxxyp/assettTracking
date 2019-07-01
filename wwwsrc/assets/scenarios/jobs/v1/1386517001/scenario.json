@@ -1,0 +1,92 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-18T15:38:40Z"
+        },
+        "data": {
+            "job": {
+                "id": "1386517001",
+                "customer": {
+                    "id": "022189615",
+                    "lastName": "Mr Ben Crosby",
+                    "address": {
+                        "houseNumber": "72",
+                        "line": [
+                            "Stuart Street"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "0DW",
+                        "postCodeOut": "LE3"
+                    }
+                },
+                "premises": {
+                    "id": "L260651",
+                    "address": {
+                        "houseNumber": "72",
+                        "line": [
+                            "Stuart Street"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "0DW",
+                        "postCodeOut": "LE3"
+                    },
+                    "previousVisitCount": 0,
+                  "contact": {
+                    "id": "022189615",
+                    "initials": " ",
+                    "lastName": "Mr Ben Crosby",
+                    "homePhone": "01325 091210"
+                  },
+                    "safetyDetail": {
+                        "lastElectricVisitDate": "2016-10-18T00:00:00Z"
+                    },
+                    "risks": [{
+                        "reason": "R3",
+                        "report": "Dementia",
+                        "date": "2016-10-18T00:00:00Z"
+                    }, {
+                        "reason": "R6",
+                        "report": "Short Circuit",
+                        "date": "2016-10-18T00:00:00Z"
+                    }],
+                    "unsafeDetail": {
+                        "report": "TUMBLER ELECTRICAL REPORT",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "R",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "***LEICESTER AYLESTONE ROAD***",
+                        "reasons": [
+                            "SYSTP",
+                            "ELSAF"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00151102",
+                    "date": "2016-10-18T00:00:00Z",
+                    "earliestStartTime": "2016-10-18T12:00:00Z",
+                    "latestStartTime": "2016-10-18T18:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1386517001001",
+                    "applianceId": "202202282",
+                    "jobType": "BE",
+                    "applianceType": "TDE",
+                    "chargeType": "NCH2E1I",
+                    "status": "D",
+                    "skill": "ER",
+                    "sequence": 1,
+                    "activities": [{
+                        "status": "D",
+                        "sequence": 1
+                    }]
+                }]
+            }
+        }
+    }
+}

@@ -1,0 +1,346 @@
+{
+  "status": 200,
+  "data":{
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-14T05:53:14Z",
+      "modifiedTimestamp": "2018-08-14T05:53:24Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1300525001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1300525001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1399425001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1399425001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1338425001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE Complete the job in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1338425001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 10,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1345325001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Testing purpose"
+            }
+          ]
+        },
+        {
+          "id": "1345325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 10,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1305325001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "CX",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1305325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "XC",
+              "engineerName": "EMPLOYEE 1",
+              "report": "Testing purpose"
+            }
+          ]
+        },
+        {
+          "id": "1309225001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE Complete the CHB job for testing purpose"
+            }
+          ]
+        },
+        {
+          "id": "1309225001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE CODE0 Complete the 2nd RFA fixed quote job in visit 1",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 10,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1311325001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE Complete the job in Visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1311325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Complete the 2nd job in visit 1",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 10,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224153",
+          "gcCode": "4753217",
+          "category": "X",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "ALPHA CB28X",
+          "flueType": "F",
+          "boilerSize": 74,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "Customer location",
+          "condition": 1,
+          "numberOfRadiators": 8,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "systemDesignCondition": 1,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "X",
+            "ventilationSafe": "N",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Appliance is not safe"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        },
+        {
+          "id": "202224153",
+          "gcCode": "4753217",
+          "category": "X",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "ALPHA CB28X",
+          "flueType": "F",
+          "boilerSize": 74,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "Customer location",
+          "condition": 1,
+          "numberOfRadiators": 8,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "systemDesignCondition": 1,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "X",
+            "ventilationSafe": "N",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Appliance is not safe"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        }
+      ]
+    }
+  }
+}

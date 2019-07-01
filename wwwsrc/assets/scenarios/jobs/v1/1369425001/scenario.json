@@ -1,0 +1,74 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-13T14:33:54Z"
+    },
+    "data": {
+      "job": {
+        "id": "1369425001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022201830",
+          "lastName": "Mrs Karry Pearls",
+          "address": {
+            "houseNumber": "21",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L271313",
+          "address": {
+            "houseNumber": "21",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201830",
+            "initials": " ",
+            "lastName": "Mrs Karry Pearls"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          }
+        },
+        "visit": {
+          "id": "WMW00057410",
+          "date": "2018-08-13T00:00:00Z",
+          "earliestStartTime": "2018-08-13T08:00:00Z",
+          "latestStartTime": "2018-08-13T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1369425001001",
+            "applianceId": "202224172",
+            "jobType": "WU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3FIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

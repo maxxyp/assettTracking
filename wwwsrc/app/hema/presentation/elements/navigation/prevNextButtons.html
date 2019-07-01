@@ -1,0 +1,7 @@
+<template>
+    <div class="previous-next-nav" show.bind="hasMultipleItems">
+        <a class="circle-arrow-left ${hasPrevious ? '' : 'disabled'}" href click.trigger="navigateToPrevious()" tabindex="${hasPrevious ? 1 : -1}"></a>
+        <span class="info">${info}</span>
+        <a class="circle-arrow-right ${hasNext ? '' : 'disabled'}" href click.trigger="navigateToNext()" tabindex="${hasNext ? 1 : -1}"></a>
+    </div>
+</template>

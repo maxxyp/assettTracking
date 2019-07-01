@@ -1,0 +1,125 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-19T13:00:56Z",
+      "modifiedTimestamp": "2017-09-19T14:51:46Z"
+    },
+    "data": {
+      "job": {
+        "id": "1304687001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022212494",
+          "lastName": "Mr Akash Kumar",
+          "address": {
+            "houseNumber": "83",
+            "line": [
+              "Knoyle Street"
+            ],
+            "county": "London",
+            "postCodeIn": "6JY",
+            "postCodeOut": "SE14"
+          }
+        },
+        "premises": {
+          "id": "L279963",
+          "address": {
+            "houseNumber": "83",
+            "line": [
+              "Knoyle Street"
+            ],
+            "county": "London",
+            "postCodeIn": "6JY",
+            "postCodeOut": "SE14"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022212494",
+            "initials": " ",
+            "lastName": "Mr Akash Kumar"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-19"
+          }
+        },
+        "visit": {
+          "id": "WMW00220882",
+          "date": "2017-09-19T00:00:00Z",
+          "earliestStartTime": "2017-09-19T18:00:00Z",
+          "latestStartTime": "2017-09-19T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1304687001001",
+            "applianceId": "202236736",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-19",
+                "status": "IF",
+                "engineerName": "NEIL",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "CODEAAVvbhjjjhhhjnjjnjj",
+                "workDuration": 20
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1304687001002",
+            "applianceId": "202236737",
+            "jobType": "AS",
+            "applianceType": "FRE",
+            "chargeType": "NCH1S",
+            "status": "C",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-09-19",
+                "status": "C",
+                "engineerName": "NEIL",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "CODE6CODE9Bbhhnnnbbnnnnb",
+                "workDuration": 5
+              }
+            ]
+          },
+          {
+            "id": "1304687001003",
+            "applianceId": "202236738",
+            "jobType": "SD",
+            "applianceType": "HOB",
+            "chargeType": "SLO2API",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-09-19",
+                "status": "C",
+                "engineerName": "NEIL",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "CODE1CODE3Cgggggghhhjjjjjjkjj",
+                "workDuration": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

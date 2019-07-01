@@ -1,0 +1,14 @@
+progress-bar {
+    .progress-outer{
+        background-color: $grey-1;
+        height: 10px;
+        display: inline-block;
+        width:100%;
+    }
+    .progress-inner{
+        background-color: $nav-bg-color;
+        height: 10px;
+        display: block;
+        transition:width 0.5s;
+    }
+}

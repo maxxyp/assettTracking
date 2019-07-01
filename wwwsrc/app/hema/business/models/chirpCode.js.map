@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/chirpCode.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,gBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,8BAAS","file":"chirpCode.js","sourcesContent":["export class ChirpCode {\n    public code: string;\n    public date: string;\n}\n"],"sourceRoot":"../../.."}

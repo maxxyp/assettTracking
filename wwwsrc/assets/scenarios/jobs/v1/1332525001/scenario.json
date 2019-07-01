@@ -1,0 +1,206 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T07:39:44Z",
+      "modifiedTimestamp": "2018-08-14T08:12:15Z"
+    },
+    "data": {
+      "job": {
+        "id": "1332525001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022201677",
+          "lastName": "Ms Hive Customer",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "School Crescent"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6ST",
+            "postCodeOut": "LE9"
+          }
+        },
+        "premises": {
+          "id": "L271180",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "School Crescent"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6ST",
+            "postCodeOut": "LE9"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201677",
+            "initials": " ",
+            "lastName": "Ms Hive Customer"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00057456",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1332525001001",
+            "applianceId": "202223992",
+            "jobType": "RB",
+            "applianceType": "CHB",
+            "chargeType": "NCHNONE",
+            "status": "C",
+            "skill": "RE",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 11,
+                "sequence": 1,
+                "report": "62CODE dssssssssssssssssssss",
+                "workDuration": 11
+              }
+            ]
+          },
+          {
+            "id": "1332525001002",
+            "applianceId": "202223992",
+            "jobType": "RI",
+            "applianceType": "CHB",
+            "chargeType": "SLFNONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 3,
+                "sequence": 1,
+                "report": "54CODE dssssssssssssssssssssss",
+                "workDuration": 3,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "dsdsds",
+                    "charge": 1000,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "E21975"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "dsdsds",
+                    "charge": 1000,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "E21975"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1332525001003",
+            "applianceId": "202224166",
+            "jobType": "OL",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 6,
+                "sequence": 1,
+                "report": "62CODE dsssssssssssssssssssssssss",
+                "workDuration": 6,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1332525001004",
+            "applianceId": "202224166",
+            "jobType": "IA",
+            "applianceType": "COD",
+            "chargeType": "SPPNONE",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 11,
+                "sequence": 1,
+                "report": "54CODE dsssssssssssssssssssssssssss",
+                "workDuration": 11,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

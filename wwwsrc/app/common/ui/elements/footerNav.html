@@ -1,0 +1,30 @@
+<template>
+    <div class="footer-nav${navStyle}" css="position:${navPosition};">
+        <div class="footer-nav-item-container${navStyle} ${showHideNav === true ? 'footer-nav-item-container-show' : ''}">
+            <div repeat.for="navObject of footerNavObject" class="footer-nav-item${navStyle} ${navObject.selected? 'selected':''} ${showHideNav === true ? 'footer-nav-item-show' : ''}">
+                <div if.bind="navObject.info || navObject.warning" class="footer-nav-item-bubble">
+                    <div if.bind="navObject.info" class="info">
+                        <div class="footer-nav-item-bubble-text">${navObject.info}</div>
+                    </div>
+                    <div if.bind="navObject.warning" class="warning">
+                        <div class="footer-nav-item-bubble-text ">${navObject.warning}</div>
+                    </div>
+                </div>
+                <a if.bind="!navObject.imageURL && !navObject.iconClass" class="btn ${!navObject.selected? 'btn-secondary':'btn-primary'}"
+                click.trigger="navigate(navObject)">${navObject.label}</a>
+
+                <a if.bind="navObject.imageURL" class="btn btn-image" css="background-image: url('${navObject.imageURL}');
+                              height:${navObject.imageHeight}px; width:${navObject.imageWidth}px;" click.trigger="navigate(navObject)"></a>
+                <div if.bind="navObject.imageURL"><a click.trigger="navigate(navObject)">${navObject.label}</a></div>
+
+                <a if.bind="navObject.iconClass && !navObject.imageURL" click.trigger="navigate(navObject)">
+                    <i class="footer-nav-icon ${navObject.iconClass}"></i>
+                    <div>${navObject.label}</div>
+                </a>
+            </div>
+            <div if.bind="navStyle && !expanded" class="footer-nav-item">
+                <div class="card-menu-item-context" click.trigger="showHideNavDetails()">...</div>
+            </div>
+        </div>
+    </div>
+</template>

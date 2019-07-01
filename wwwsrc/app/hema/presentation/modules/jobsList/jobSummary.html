@@ -1,0 +1,58 @@
+<template>
+    <div class="card-block white-block job-summary-content" click.trigger="navigateToDetails()">
+        <div class="row">
+
+            <div class="col-sm-4 section">
+                <div class="tasks">
+                    <div class="row" repeat.for="task of viewModel.tasks">
+                        <div class="row">
+                            <task-description catalog.one-way="catalog" total-tasks.one-way="viewModel.tasks.length"
+                                              index.one-way="$index +1"
+                                              task.one-way="task"></task-description>
+                            <task-support-info labels.one-way="labels" task.one-way="task"></task-support-info>
+                        </div>
+                        <hr if.bind="viewModel.tasks.length -1 !== $index">
+                    </div>
+                    <span if.bind="task.applianceType">-</span>
+                    <task-appliance catalog.one-way="catalog" code.one-way="task.applianceType"></task-appliance>
+
+                </div>
+            </div>
+
+            <div class="col-sm-5 section">
+                <div if.bind="viewModel.password">
+                    <label>${labels.password}: </label>
+                    <p class="wrap">${viewModel.password}</p>
+                </div>
+                <div if.bind="viewModel.specialInstructions">
+                    <label>${labels.specialInstructions}: </label>
+                    <p class="wrap">${viewModel.specialInstructions}</p>
+                </div>
+                <div if.bind="viewModel.engineerInstructions">
+                    <label>${labels.engineerInstructions}: </label>
+                    <p class="wrap">${viewModel.engineerInstructions}</p>
+                </div>
+                <div if.bind="viewModel.accessInfo">
+                    <label>${labels.accessInfo}: </label>
+                    <p>${viewModel.accessInfo}</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 section">
+                <div>
+                    <strong>${viewModel.contactName}</strong>
+                </div>
+                <div>
+                    <compose view-model="hema/presentation/elements/addressMultiline"
+                             model.bind="viewModel.address"></compose>
+                </div>
+                <div>
+                    <span if.bind="viewModel.contactNumber"></span>
+                    ${viewModel.contactTelephoneNumber}
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</template>

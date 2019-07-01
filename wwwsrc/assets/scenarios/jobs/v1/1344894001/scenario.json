@@ -1,0 +1,124 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2018-04-17T12:56:17Z"
+        },
+        "data": {
+            "job": {
+                "id": "1344894001",
+                "engineerId": "0176077",
+                "customer": {
+                    "id": "022200843",
+                    "lastName": "Mr Test Private Landlord",
+                    "address": {
+                        "houseNumber": "52",
+                        "line": [
+                            "Barbara Avenue"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2AB",
+                        "postCodeOut": "LE5"
+                    }
+                },
+                "premises": {
+                    "id": "L270543",
+                    "address": {
+                        "houseNumber": "60",
+                        "line": [
+                            "Barbara Avenue"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2AB",
+                        "postCodeOut": "LE5"
+                    },
+                    "previousVisitCount": 0,
+                    "contact": {
+                        "id": "022200844",
+                        "initials": " ",
+                        "lastName": "Mrs Test Private Landlord Data"
+                    },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2018-04-16"
+                    },
+                    "risks": [
+                        {
+                            "reason": "R1",
+                            "report": "Dog",
+                            "date": "2018-04-17"
+                        }
+                    ],
+                    "unsafeDetail": {
+                        "report": "Yuvgvyvjgvv",
+                        "conditionAsLeft": "XC",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedO ff": "NT",
+                        "ownedByCustomer": true,
+                        "signatureObtained": true,
+                        "letterLeft": true,
+                        "reasons": [
+                            "GMET"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00054689",
+                    "date": "2018-04-17T00:00:00Z",
+                    "earliestStartTime": "2018-04-17T08:00:00Z",
+                    "latestStartTime": "2018-04- 17T18:00:00Z"
+                },
+                "tasks": [
+                    {
+                        "id": "1344894001001",
+                        "applianceId": "202222979",
+                        "jobType": "AS",
+                        "applianceType": "CHB",
+                        "chargeType": "NCH3ST",
+                        "status": "D",
+                        "skill": "GS",
+                        "sequence": 1,
+                        "activities": [
+                            {
+                                "status": "D",
+                                "sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1344894001002",
+                        "applianceId": "202222985",
+                        "jobType": "AS",
+                        "applianceType": "CKR",
+                        "chargeType": "NCHLIG",
+                        "status": "D",
+                        "skill": "LS",
+                        "sequence": 1,
+                        "activities": [
+                            {
+                                "status": "D",
+                                "sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1344894001003",
+                        "applianceId": "202222984",
+                        "jobType": "AS",
+                        "applianceType": "INS",
+                        "chargeType": "NCHLI",
+                        "status": "D",
+                        "skill": "LS",
+                        "sequence": 1,
+                        "activities": [
+                            {
+                                "status": "D",
+                                "sequence": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,82 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-10-18T15:58:37Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1311517001001",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "chargeType": "NCHHEWI",
+          "status": "I",
+          "activities": [
+            {
+              "date": "2016-10-17T00:00:00Z",
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1396517001001",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "chargeType": "NCHHEWI",
+          "status": "C",
+          "activities": [
+            {
+              "date": "2016-10-18T00:00:00Z",
+              "status": "C",
+              "engineerName": "Mark Millar"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202230182",
+          "category": "A",
+          "contractType": "HEWI",
+          "contractExpiryDate": "2017-10-13T00:00:00Z",
+          "applianceType": "EWR",
+          "description": "Electrical Wiring"
+        },
+        {
+          "id": "202202195",
+          "serialId": "345667",
+          "gcCode": "1102335",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2015-08-01T00:00:00Z",
+          "applianceType": "AGA",
+          "description": "GCB COOKER BALANCED FLUE",
+          "flueType": "RS",
+          "boilerSize": 7,
+          "energyControl": "EM",
+          "locationDescription": "KITCHEN",
+          "condition": 1,
+          "numberOfRadiators": 7,
+          "numberOfSpecialRadiators": 1,
+          "installationYear": 1999,
+          "safety": {
+            "flueSafe": false,
+            "ventilationSafe": true,
+            "installationSafe": false,
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "AR",
+            "report": "Boiler is not in Good Condition"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2015-01-02T00:00:00Z"
+          }
+        }
+      ],
+      "id": "1307517002"
+    }
+  }
+}

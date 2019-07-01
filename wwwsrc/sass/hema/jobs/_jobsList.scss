@@ -1,0 +1,26 @@
+.tab-buttons-summary {
+
+  .title {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+  }
+
+  .tab-buttons {
+    padding: 0rem;
+    display: flex;
+    background: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    border-bottom: none;
+  }
+  .main-router {
+    width: 100%;
+    overflow: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+}

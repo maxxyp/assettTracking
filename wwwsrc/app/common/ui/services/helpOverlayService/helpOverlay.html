@@ -1,0 +1,61 @@
+<template>
+
+     <div  if.bind="helpOverlayService.helpActivated && helpOverlayService.stepNumber > 0 && helpOverlayService.showAllSteps" class="help-overlay-main" click.trigger="manageClick($event)" css="
+    ${helpOverlayService.steps[stepArrayItem].top? 'top:' + helpOverlayService.steps[stepArrayItem].top  + 'px;' : ''}
+    ${helpOverlayService.steps[stepArrayItem].bottom? 'bottom:' + helpOverlayService.steps[stepArrayItem].bottom  + 'px;' : ''}
+    ${helpOverlayService.steps[stepArrayItem].left ? 'left:' + helpOverlayService.steps[stepArrayItem].left  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].right ? 'right:' + helpOverlayService.steps[stepArrayItem].right  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].width ? 'width:0px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:0px;' : ''}
+    ">
+    <div  if.bind="!showContent" class="fade-in-content help-overlay-circle-${helpOverlayService.steps[stepArrayItem].arrowPosition}"
+        click.trigger="toggleContent()"
+        css="
+    ${helpOverlayService.steps[stepArrayItem].arrowPosition === 'top'? 'top:-35px; left:' + helpOverlayService.steps[stepArrayItem].width * 0.44 + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].arrowPosition === 'bottom'? 'top:' + helpOverlayService.steps[stepArrayItem].height + 'px; left:' + helpOverlayService.steps[stepArrayItem].width * 0.44 + 'px;' : ''}
+      ${helpOverlayService.steps[stepArrayItem].arrowPosition === 'left'? 'top:' + helpOverlayService.steps[stepArrayItem].height * 0.37 + 'px; left:-35px;' : ''}
+       ${helpOverlayService.steps[stepArrayItem].arrowPosition === 'right'? 'top:' + helpOverlayService.steps[stepArrayItem].height * 0.37 + 'px; right:-' + helpOverlayService.steps[stepArrayItem].width + 'px;' : ''}
+    "><div class="help-overlay-circle-text">?</div>
+        </div>
+
+    <div  if.bind="stepArrayItem === helpOverlayService.stepNumber - 1 && showContent" class="help-overlay-container fade-in-content" click.trigger="toggleContent()" css="
+     ${helpOverlayService.steps[stepArrayItem].width ? 'width:' + helpOverlayService.steps[stepArrayItem].width  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:' + helpOverlayService.steps[stepArrayItem].height  + 'px;' : ''}
+    ">
+        <div class="help-overlay-arrow-${helpOverlayService.steps[stepArrayItem].arrowPosition}"></div>
+        <div class="help-overlay-sub-content" css="${helpOverlayService.steps[stepArrayItem].width ? 'width:' + helpOverlayService.steps[stepArrayItem].width  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:' + helpOverlayService.steps[stepArrayItem].height  + 'px;' : ''} ">
+            <h1 class="help-overlay-title">${helpOverlayService.steps[stepArrayItem].id}. ${helpOverlayService.steps[stepArrayItem].title}</h1>
+            <div class="help-overlay-content"><span innerhtml.bind="helpOverlayService.steps[stepArrayItem].content"></span>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div  if.bind="helpOverlayService.helpActivated && helpOverlayService.stepNumber > 0 && !helpOverlayService.showAllSteps" class="help-overlay-main" click.trigger="manageClick($event)" css="
+    ${helpOverlayService.steps[stepArrayItem].top? 'top:' + helpOverlayService.steps[stepArrayItem].top  + 'px;' : ''}
+    ${helpOverlayService.steps[stepArrayItem].bottom? 'bottom:' + helpOverlayService.steps[stepArrayItem].bottom  + 'px;' : ''}
+    ${helpOverlayService.steps[stepArrayItem].left ? 'left:' + helpOverlayService.steps[stepArrayItem].left  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].right ? 'right:' + helpOverlayService.steps[stepArrayItem].right  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].width ? 'width:0px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:0px;' : ''}
+    ">
+    <div  if.bind="stepArrayItem === helpOverlayService.stepNumber - 1" class="help-overlay-container fade-in-content" click.trigger="manageClick($event)" css="
+     ${helpOverlayService.steps[stepArrayItem].width ? 'width:' + helpOverlayService.steps[stepArrayItem].width  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:' + helpOverlayService.steps[stepArrayItem].height  + 'px;' : ''}
+    ">
+        <div class="help-overlay-arrow-${helpOverlayService.steps[stepArrayItem].arrowPosition}"></div>
+        <div class="help-overlay-sub-content" css="${helpOverlayService.steps[stepArrayItem].width ? 'width:' + helpOverlayService.steps[stepArrayItem].width  + 'px;' : ''}
+     ${helpOverlayService.steps[stepArrayItem].height ? 'height:' + helpOverlayService.steps[stepArrayItem].height  + 'px;' : ''} ">
+            <h1 class="help-overlay-title">${helpOverlayService.steps[stepArrayItem].id}. ${helpOverlayService.steps[stepArrayItem].title}</h1>
+            <div class="help-overlay-content"><span innerhtml.bind="helpOverlayService.steps[stepArrayItem].content"></span>
+                <div class="help-overlay-button-area">
+                    <button class="btn btn-white" click.trigger="previousStep($event)" if.bind="stepArrayItem > 0 || helpOverlayService.steps[stepArrayItem].onPrevious">Previous</button>
+                    <button class="btn btn-white" click.trigger="nextStep($event)" if.bind="stepArrayItem < helpOverlayService.steps.length-1  && stepArrayItem >= 0 || helpOverlayService.steps[stepArrayItem].onNext">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</template>

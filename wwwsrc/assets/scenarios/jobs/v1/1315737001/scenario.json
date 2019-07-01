@@ -1,0 +1,107 @@
+{
+  "status": 200,
+  "data": {
+    "meta":{
+      "type":"job",
+      "createdTimestamp":"2017-04-18T08:06:42Z",
+      "modifiedTimestamp":"2017-04-18T08:58:43Z"
+    },
+    "data":{
+      "job":{
+        "id":"1315737001",
+        "engineerId":"0000050",
+        "customer":{
+          "id":"022208726",
+          "lastName":"Mr Chargeable Job Completion No Charge",
+          "address":{
+            "houseNumber":"22",
+            "line":[
+              "Weaver Avenue"
+            ],
+            "county":"Glasgow",
+            "postCodeIn":"6AS",
+            "postCodeOut":"G77"
+          }
+        },
+        "premises":{
+          "id":"L276579",
+          "address":{
+            "houseNumber":"22",
+            "line":[
+              "Weaver Avenue"
+            ],
+            "county":"Glasgow",
+            "postCodeIn":"6AS",
+            "postCodeOut":"G77"
+          },
+          "previousVisitCount":1,
+          "contact":{
+            "id":"022208726",
+            "initials":" ",
+            "lastName":"Mr Chargeable Job Completion No Charge"
+          },
+          "safetyDetail":{
+            "lastGasVisitDate":"2017-04-18"
+          }
+        },
+        "visit":{
+          "id":"WMW00170652",
+          "date":"2017-04-18T00:00:00Z",
+          "earliestStartTime":"2017-04-18T08:00:00Z",
+          "latestStartTime":"2017-04-18T18:00:00Z"
+        },
+        "tasks":[
+          {
+            "id":"1315737001001",
+            "applianceId":"202230807",
+            "jobType":"IB",
+            "applianceType":"BBF",
+            "chargeType":"NCH3SIS",
+            "status":"D",
+            "skill":"GR",
+            "sequence":2,
+            "activities":[
+              {
+                "date":"2017-04-18",
+                "status":"IP",
+                "engineerName":"ITF ENGINEER 000005",
+                "chargeableTime":5,
+                "sequence":1,
+                "report":"71CODEtest report",
+                "workDuration":5,
+                "parts":[
+                  {
+                    "orderDate":"2017-04-18",
+                    "status":"AP",
+                    "requisitionNumber":"GRN00000000098",
+                    "description":"Testing Bypass data",
+                    "charge":10782.0,
+                    "quantity":1,
+                    "quantityCharged":1,
+                    "stockReferenceId":"E66527"
+                  }
+                ]
+              },
+              {
+                "status":"D",
+                "sequence":2,
+                "parts":[
+                  {
+                    "orderDate":"2017-04-18",
+                    "status":"FP",
+                    "requisitionNumber":"GRN00000000098",
+                    "description":"Testing Bypass data",
+                    "charge":10782.0,
+                    "quantity":1,
+                    "quantityCharged":1,
+                    "stockReferenceId":"E66527"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

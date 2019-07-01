@@ -1,0 +1,85 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 364431764,
+              "status": "passed"
+            },
+            "match": {
+              "location": "CucumberSteps.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Check for all the Items for Engineer - 0013846",
+        "description": "",
+        "id": "check-all-materials;check-for-all-the-items-for-engineer---0013846",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 255361899,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to the api URI",
+            "match": {
+              "location": "CucumberSteps.i_navigate_to_the_api_URI()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3744706496,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I am able to search the materials for Engineer \"0013846\" with HTTP response \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0013846",
+                  "offset": 48
+                },
+                {
+                  "val": "200",
+                  "offset": 77
+                }
+              ],
+              "location": "CucumberSteps.i_am_able_to_search_the_materials_for_Engineer_with_HTTP_response(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 76824645,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I can validate the schema",
+            "match": {
+              "location": "CucumberSteps.i_can_validate_the_schema()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@materials"
+          }
+        ]
+      }
+    ],
+    "name": "Check all materials",
+    "description": "",
+    "id": "check-all-materials",
+    "keyword": "Feature",
+    "uri": "src/test/resources/materials.feature",
+    "tags": []
+  }
+]

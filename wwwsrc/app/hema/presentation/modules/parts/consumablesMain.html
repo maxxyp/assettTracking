@@ -1,0 +1,20 @@
+<template>
+<div class="card details-card fade-in-content">
+    <div class="card-header">
+        <h1>${consumablesLabel}</h1>
+        </div>
+        <div class="child-tabs">
+                <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}"
+                      click.trigger="navigateToRoute(row.config.name)"
+                      show.bind="row.settings.alwaysShow || canEdit">
+                    <span if.bind="!row.settings.dataState" style="padding-left: 0.8em"></span>
+                    <span if.bind="row.settings.dataState" class="child-tabs-state-indicator ${row.settings.dataState | dataStateStyle:row.settings.alwaysShow }"></span>
+                    <span style="padding-right: 0.2em">${row.title}</span>
+                </span>
+        </div>
+        <div class="details-card">
+            <router-view></router-view>
+        </div>
+        </div>
+
+</template>

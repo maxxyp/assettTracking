@@ -1,0 +1,410 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card fade-in-content">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.burnerPressure}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box value.bind="gasReadings.preliminaryReadings.burnerPressure & debounce:900" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                        decimal-places.bind="businessRules.burnerPressureDecimalPlaces" max-value.bind="businessRules.burnerPressureMaxValue"
+                                        disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.gasRateReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box value.bind="gasReadings.preliminaryReadings.gasRateReading & debounce:900" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                        decimal-places.bind="businessRules.gasRateReadingDecimalPlaces" max-value.bind="businessRules.gasRateReadingMaxValue"
+                                        disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>
+                                        ${labels.unmeteredLpgAppliance}
+                                    </label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="gasIsLpgButtons" value.bind="gasReadings.preliminaryReadings.isLpg" multi-select.bind="false" button-width="30%"
+                                        disabled.bind="!canEdit || !gasReadings.preliminaryReadings.askIfLpg" reading-mode.bind="!canEdit">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="gasReadings.preliminaryReadings.showWarningFirstRatio">
+                            <strong>${labels.firstRatioWarning}</strong>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-3"><strong>${labels.combustion}</strong></div>
+                                <div class="col-xs-3"><strong>${labels.ratio}</strong></div>
+                                <div class="col-xs-3"><strong>${labels.co}</strong></div>
+                                <div class="col-xs-3"><strong>${labels.co2}</strong></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <strong>${labels.first}</strong>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFirstRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFirstCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                            max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFirstCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <strong>${labels.max}</strong>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMaxRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMaxCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                            max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMaxCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <strong>${labels.min}</strong>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMinRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMinCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                            max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingMinCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3">
+                                    <strong>${labels.final}</strong>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFinalRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                            decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                            disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFinalCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                            max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div></div>
+                                    <div class="col-xs-3">
+                                        <number-box value.bind="gasReadings.preliminaryReadings.readingFinalCO2" reading-mode.bind="!canEdit" decimal-places.bind="businessRules.cO2DecimalPlaces" float-allowed.bind="true"
+                                            max-value.bind="businessRules.cO2MaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                        </number-box>
+                                        <label class="validation-message-inlined"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div show.bind="showSupplementaryBurner">
+                        <hr>
+                        <div class="card-block">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <h2><strong>${labels.supplementaryBurnerHeading}</strong></h2>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            <label>${labels.burnerPressure}</label>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <number-box value.bind="gasReadings.supplementaryReadings.burnerPressure" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                decimal-places.bind="businessRules.burnerPressureDecimalPlaces" max-value.bind="businessRules.burnerPressureMaxValue"
+                                                disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                            </number-box>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            <label>${labels.gasRateReading}</label>
+                                        </div>
+                                        <div class="col-xs-3">
+                                            <number-box value.bind="gasReadings.supplementaryReadings.gasRateReading" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                decimal-places.bind="businessRules.gasRateReadingDecimalPlaces" max-value.bind="businessRules.gasRateReadingMaxValue"
+                                                disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                            </number-box>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-3">
+                                            <label>
+                                            ${labels.unmeteredLpgAppliance}
+                                        </label>
+                                        </div>
+                                        <div class="col-xs-9">
+                                            <button-list items.bind="suppIsLpgButtons" value.bind="gasReadings.supplementaryReadings.isLpg" multi-select.bind="false"
+                                                button-width="30%" disabled.bind="true"
+                                                reading-mode.bind="!canEdit">
+                                            </button-list>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" show.bind="gasReadings.supplementaryReadings.showWarningFirstRatio">
+                                    <strong>${labels.firstRatioWarning}</strong>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-3"><strong>${labels.combustion}</strong></div>
+                                        <div class="col-xs-3"><strong>${labels.ratio}</strong></div>
+                                        <div class="col-xs-3"><strong>${labels.co}</strong></div>
+                                        <div class="col-xs-3"><strong>${labels.co2}</strong></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <strong>${labels.first}</strong>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFirstRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFirstCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                                    max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFirstCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <strong>${labels.max}</strong>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMaxRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMaxCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                                    max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMaxCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <strong>${labels.min}</strong>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMinRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMinCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                                    max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingMinCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-3">
+                                            <strong>${labels.final}</strong>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFinalRatio" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.ratioDecimalPlaces" max-value.bind="businessRules.ratioMaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFinalCO" reading-mode.bind="!canEdit" float-allowed.bind="false"
+                                                    max-value.bind="businessRules.cOMaxValue" disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div></div>
+                                            <div class="col-xs-3">
+                                                <number-box value.bind="gasReadings.supplementaryReadings.readingFinalCO2" reading-mode.bind="!canEdit" float-allowed.bind="true"
+                                                    decimal-places.bind="businessRules.cO2DecimalPlaces" max-value.bind="businessRules.cO2MaxValue"
+                                                    disabled.bind="!canEdit" reset-value-for-validation.bind="true">
+                                                </number-box>
+                                                <label class="validation-message-inlined"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group" if.bind="canEdit">
+                    <button show.bind="showSupplementaryBurner" class="btn btn-primary" click.trigger="addSupplementaryBurner()">${labels.removeSupplementaryBurner}</button>
+                    <button show.bind="!showSupplementaryBurner" class="btn btn-primary" click.trigger="removeSupplementaryBurner()">${labels.addSupplementaryBurner}</button>
+                    <button class="btn btn-secondary" click.trigger="undo()">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn btn-tertiary arrow-blue-right" click.trigger="clear()">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

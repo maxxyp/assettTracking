@@ -1,0 +1,88 @@
+{
+  "status": 200,
+  "data": {
+    "data": {
+      "job": {
+        "id": "1327627001",
+        "customer": {
+          "id": "008582825",
+          "title": "Mr",
+          "lastName": "; Mrs N Hodgson",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "Beck Road"
+            ],
+            "county": "Saffron Walden",
+            "postCodeIn": "4EH",
+            "postCodeOut": "CB11"
+          }
+        },
+        "premises": {
+          "id": "G783559",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "Beck Road"
+            ],
+            "county": "Saffron Walden",
+            "postCodeIn": "4EH",
+            "postCodeOut": "CB11"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "008582825",
+            "initials": " ",
+            "title": "Mr",
+            "lastName": "; Mrs N Hodgson",
+            "homePhone": "02085123456",
+            "workPhone": "07506123456"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-02-13",
+            "safetyNoticeNotLeftReason": "Testing a sample job"
+          },
+          "risks": [
+            {
+              "reason": "R4",
+              "report": "$$ NO Tresspasses are allowed inside %%",
+              "date": "2017-02-13"
+            }
+          ],
+          "unsafeDetail": {
+            "reasons": [
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00161542",
+          "date": "2017-02-13T00:00:00Z",
+          "earliestStartTime": "2017-02-13T08:00:00Z",
+          "latestStartTime": "2017-02-13T18:00:00Z",
+          "specialInstructions": "07424742310"
+        },
+        "tasks": [
+          {
+            "id": "1327627001001",
+            "applianceId": "18584862",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS3FIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "specialRequirement": "&%% TESTING A SAMPLE JOB %%%&",
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

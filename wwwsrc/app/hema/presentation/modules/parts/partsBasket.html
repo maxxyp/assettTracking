@@ -1,0 +1,399 @@
+<template>
+        <require from="./views/part-warranty.html"></require>
+        <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+            <div class="card details-card fade-in-content">
+                <div class="card-block">
+                    <form form-manager>
+
+
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-12">
+                                    <span value.bind="viewModel.partsListValidation"></span>
+                                    <span class="help-block validation-custom validation-message validation-message-custom" style="text-align: left;"></span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-12" show.bind="canEdit">
+                                <div>
+                                    <a class="btn btn-secondary" click.trigger="launchAdapt()">${labels.searchFromAdapt}</a>
+                                    <button class="btn btn-secondary ${viewModel.showAddPartManually ? 'active' : ''}"
+                                            click.trigger="showAddPartManually()">
+                                        ${labels.addPartManually}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row" if.bind="viewModel.showAddPartManually && canEdit">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <span value.bind="viewModel.manualPartDetail"></span>
+                                            <span class="validation-custom validation-message help-block"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.addPartManuallyStockReferenceId}</label>
+                                        </div>
+                                        <div class="col-xs-2">
+                                            <text-box value.bind="viewModel.manualPartDetail.stockReferenceId"
+                                                      max-length.bind="validationRules['viewModel.manualPartDetail.stockReferenceId'].maxLength"
+                                                      disabled.bind="viewModel.showRemainingAddPartManuallyFields"></text-box>
+                                        </div>
+                                        <div class="col-xs-8">
+                                            <button class="btn btn-primary arrow-blue-right"
+                                                    if.bind="!viewModel.showRemainingAddPartManuallyFields"
+                                                    click.trigger="searchForManuallyAddedPart()">
+                                                ${labels.searchForManuallyAddedPartButton}
+                                            </button>
+                                            <button class="btn btn-secondary arrow-blue-right"
+                                                    if.bind="!viewModel.showRemainingAddPartManuallyFields"
+                                                    click.trigger="hideAddPartManually()">
+                                                ${labels.addPartManuallyCancelButton}
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div show.bind="viewModel.showRemainingAddPartManuallyFields">
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <span class="col-xs-2">
+                                                <label>${labels.addPartManuallyDescription}</label>
+                                            </span>
+                                            <span class="col-xs-6">
+                                            <text-area value.bind="viewModel.manualPartDetail.description"
+                                                       placeholder="${validationRules['viewModel.manualPartDetail.description'].maxLength} ${labels.characterLimitSuffix}"
+                                                       maxlength.bind="validationRules['viewModel.manualPartDetail.description'].maxLength"
+                                                       disabled.bind="viewModel.manualPartDetail.wasFoundUsingManualEntry"></text-area>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <span class="col-xs-2">
+                                            <label>${labels.addPartManuallyPrice}</label>
+                                        </span>
+                                            <span class="col-xs-2">
+                                                <number-box
+                                                        value.bind="viewModel.manualPartDetail.price | numberToBigNumber"
+                                                        float-allowed.bind="true" decimal-places.bind="priceDecimalPlaces"
+                                                        max-length.bind="validationRules['viewModel.manualPartDetail.price'].maxLength"
+                                                        reset-value-for-validation.bind="true"
+                                                        disabled.bind="viewModel.manualPartDetail.wasFoundUsingManualEntry">
+                                                </number-box>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group">
+                                            <div class="col-xs-12 text-right">
+                                                <button class="btn btn-secondary arrow-blue-right"
+                                                        click.trigger="hideAddPartManually()">
+                                                    ${labels.addPartManuallyCancelButton}
+                                                </button>
+                                                <button class="btn btn-primary arrow-blue-right"
+                                                        if.bind="viewModel.showRemainingAddPartManuallyFields"
+                                                        click.trigger="addManualPartToOrderList()">
+                                                    ${labels.addPartManuallyAddButton}
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr/>
+                        </div>
+
+                        <!-- ^ manual search -->
+
+                        <div class="card-block">
+                            <div class="row" show.bind="showPartsToOrderList && canEdit">
+                                <span>Please review the Parts Order List below to make any changes to your order.</span>
+                            </div>
+
+                            <div class="row" if.bind="!showPartsToOrderList">
+                                <div class="col-xs-12">
+                                    ${labels.partsListNoPartsOrdered}
+                                </div>
+                            </div>
+
+                            <br/> <!-- todo: proper layout -->
+
+                            <!-- ^ no parts message -->
+
+
+                            <div if.bind="showPartsToOrderList">
+
+                                <!-- v part             -->
+                                <div repeat.for="part of viewModel.partsInBasket">
+                                    <form-manager-array-map item-name="part" item.bind="part" array.bind="viewModel.partsInBasket" array-name="viewModel.partsInBasket"></form-manager-array-map>
+                                    <div class="details-list-item-col ${ canEdit ? (part.isValid ? 'state-valid' : 'state-invalid') : '' }">
+                                        <div class="row">
+                                            <div class="col-xs-10">
+
+                                                <h1>
+                                                    <i
+                                                        class="fa"
+                                                        class.bind="part.isFavourite ? 'fa-star' : 'fa-star-o'"
+                                                        click.trigger="toggleFavourite(part)"
+                                                    ></i>
+                                                    &nbsp;
+                                                    ${part.stockReferenceId}
+                                                    - ${part.description}
+
+                                                </h1>
+
+                                                <div if.bind="part.isCatalogPriceDifferentFromAdapt">
+                                                    ${labels.catalogPriceDifferentFromAdapt}
+                                                </div>
+
+                                            </div>
+
+                                            <div class="col-xs-2">
+
+                                                <button class="btn btn-block btn-secondary cross-blue"
+                                                        show.bind="canEdit"
+                                                        click.trigger="removePart($event, part, false)">
+                                                    ${labels.delete}
+                                                </button>
+
+                                                <div show.bind="canEdit && testValidConsumable(part.stockReferenceId)">
+                                                    <button disabled.bind="!canEdit" class="btn btn-block btn-secondary"
+                                                            click.trigger="removePart($event, part, true)">
+                                                        ${labels.addToConsumables}
+                                                    </button>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+
+                                        <br/> <!-- todo: proper layout -->
+
+                                        <div class="row">
+
+                                            <div class="col-xs-6">
+                                                <div class="form-group">
+                                                    <span if.bind="tasksCatalog.length === 1">
+                                                        ${tasksCatalog[0].text}
+                                                    </span>
+
+                                                    <drop-down values.bind="tasksCatalog" value.bind="part.taskId"
+                                                                value-property="id" text-property="text"
+                                                                search-properties.bind="['text']"
+                                                                validate-index="$index" if.bind="tasksCatalog.length > 1"
+                                                                disabled.bind="!canEdit" no-filter="true">
+                                                        <template replace-part="option-template">
+                                                            <div>
+                                                                ${item.text}
+                                                            </div>
+                                                        </template>
+                                                    </drop-down>
+                                                    <span class="help-block validation-custom validation-message"></span>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-2">
+                                                <checkbox
+                                                    is-checked.one-way="part.isMainPart"
+                                                    change.delegate="selectMainPart(part, $event.detail.checked)"
+                                                    disabled.bind="!part.isMainPartOptionAvailable || !canEdit"
+                                                ></checkbox>
+                                                Main Part
+                                            </div>
+
+                                            <div class="col-xs-2">
+                                                <checkbox
+                                                    is-checked.one-way="part.partOrderStatus === brVanStockPartOrderStatus"
+                                                    change.delegate="selectOrderType(part, $event.detail.checked)"
+                                                    disabled.bind="!canEdit"
+                                                ></checkbox>
+                                                Van Stock
+                                            </div>
+
+                                            <div class="col-xs-2">
+                                                <checkbox
+                                                    value.one-way="part.isPriorityPart"
+                                                    is-checked.bind="part.isPriorityPart"
+                                                    disabled.bind="(part.partOrderStatus === brVanStockPartOrderStatus) || !canEdit"
+                                                ></checkbox>
+                                                Priority Part
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="row">
+
+                                            <div class="col-xs-1 part-basket-price">
+                                                &nbsp;&nbsp;${part.price | numberToCurrency}
+                                            </div>
+
+                                            <div class="col-xs-3">
+                                                <div class="form-group">
+                                                    <incremental-number-picker
+                                                        value.bind="part.quantity"
+                                                        increment-step.bind="quantityIncrementStep"
+                                                        hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                                        each-side.bind=true
+                                                        validate-index="$index"
+                                                        max-value.bind="businessRules.maxOrderQuantity"
+                                                        min-value.one-way="0"
+                                                        disabled.bind="!canEdit">
+                                                    </incremental-number-picker>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-xs-4 col-xs-offset-4">
+                                                <!-- old world -->
+                                                <button class="btn btn-block btn-primary btn-van-stock"
+                                                        show.bind="!isVanStockEnabled && part.isInPatchVanStock"
+                                                        click.trigger="showSearchResults(part)">
+                                                        <i class="hema-icon-vanstock" style="font-size:1.5em"></i>
+                                                        &nbsp;Available on Patch
+                                                </button>
+
+                                                <!-- new world -->
+                                                <div
+                                                    show.bind="isVanStockEnabled
+                                                        && materialSearchResults[part.stockReferenceId].local.completionStatus === 'FOUND'">
+                                                    &nbsp;&nbsp;&nbsp;
+                                                    <span class="label label-success" style="display:inline">
+                                                        ${materialSearchResults[part.stockReferenceId].local.material.quantity}
+                                                        part${materialSearchResults[part.stockReferenceId].local.material.quantity > 1 ? "s" : ""}
+                                                        on your van
+                                                    </span>
+
+                                                    <span if.bind="materialSearchResults[part.stockReferenceId].local.material.quantityOutboundReservation">
+                                                        <br>
+                                                        &nbsp;&nbsp;&nbsp;
+                                                        <span class="label label-warning" style="display:inline">
+                                                            ${materialSearchResults[part.stockReferenceId].local.material.quantityOutboundReservation}
+                                                            part${materialSearchResults[part.stockReferenceId].local.material.quantityOutboundReservation > 1 ? "s" : ""}
+                                                            reserved from you
+                                                        </span>
+                                                    </span>
+                                                    <br/><br/>
+                                                </div>
+
+                                                <div
+                                                    show.bind="isVanStockEnabled
+                                                        && materialSearchResults[part.stockReferenceId].local.completionStatus === 'NOT_FOUND'">
+                                                    &nbsp;&nbsp;&nbsp;
+                                                    <span class="label label-warning" style="display:inline">
+                                                        Part not available on your van
+                                                    </span>
+                                                    <br/><br/>
+                                                </div>
+
+                                                <button class="btn btn-block btn-primary btn-van-stock"
+                                                        show.bind="isVanStockEnabled
+                                                                    && materialSearchResults[part.stockReferenceId].online.results.length
+                                                                    && !inboundReservations[part.stockReferenceId]"
+                                                        click.trigger="showSearchResults(part)">
+                                                        <i class="hema-icon-vanstock" style="font-size:1.5em"></i>
+                                                        &nbsp;Available on Patch - Click to Search
+                                                </button>
+
+                                                <button class="btn btn-block btn-secondary btn-van-stock"
+                                                    show.bind="isVanStockEnabled
+                                                                && inboundReservations[part.stockReferenceId]"
+                                                    click.trigger="goToInOutScreen()">
+                                                    <i class="hema-icon-vanstock" style="font-size:1.5em"></i>
+                                                    &nbsp;${inboundReservations[part.stockReferenceId]} Reserved - Click to collect/cancel
+                                                </button>
+                                            </div>
+
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <div>
+                                                        ${labels.partsListItemStandardWarranty}:
+                                                        ${part.warrantyEstimate.warrantyPeriodWeeks ?
+                                                        part.warrantyEstimate.warrantyPeriodWeeks + " " +
+                                                        labels.warrantyUnitsWeek : labels.warrantyNoInformation}
+                                                    </div>
+                                                    <div if.bind="part.warrantyEstimate.isInWarranty">
+                                                        <div class="label label-success row in-warranty col-centered">
+                                                            ${labels.warrantyIsInWarranty}
+                                                        </div>
+                                                        <div>(${labels.lastWarrantyFittedDate}
+                                                            ${part.warrantyEstimate.lastFittedDate | dateFormat})
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row" if.bind="part.partOrderStatus === businessRules.vanStockPartOrderStatus">
+                                                <div class="col-xs-12">
+
+                                                    <part-warranty
+                                                            can-edit.one-way="canEdit"
+                                                            labels.one-way="labels"
+                                                            yes-no-lookup.one-way="yesNoLookup"
+                                                            part.two-way="part"
+                                                            quantity-increment-step.one-way="quantityIncrementStep"
+                                                            setsamerefasoriginalcallback.call="setSameRefAsOriginal(part)"
+                                                            validation-rules.one-way="validationRules">
+                                                    </part-warranty>
+
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <br /> <!-- todo: proper layout -->
+                                    <hr /> <!-- todo: proper layout -->
+                                    <br /> <!-- todo: proper layout -->
+                                </div>
+                                <!-- ^ part -->
+
+
+                                <div class="row ">
+                                    <div class="col-xs-3 text-right">
+                                        <div>
+                                            <span>${labels.partsListTotalPartsPrice}</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1 ">
+                                        <div>
+                                            ${partsToOrderTotalPrice | numberToCurrency}
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 col-xs-offset-2">
+                                        <div class="flex" show.bind="!hideDeliverToSiteCheckbox && canEdit">
+                                            <!-- for the time being leave these as normal checkboxes -->
+                                            <checkbox value.bind="viewModel.deliverPartsToSite"
+                                                      is-checked.bind="viewModel.deliverPartsToSite"></checkbox>
+                                            <label class="flex-middle">${labels.partsListDeliverPartsToSite}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="action-group" show.bind="canEdit">
+                        <button class="btn btn-secondary" click.trigger="scrollToTop()"
+                                if.bind="showBookAppointmentButton">
+                            ${labels.searchForAnotherPart}
+                        </button>
+                        <button class="btn btn-secondary" click.trigger="bookAnAppointment()"
+                                if.bind="showBookAppointmentButton">
+                            ${labels.bookAnAppointmentButton}
+                        </button>
+                        <button class="btn btn btn-tertiary arrow-blue-right" click.trigger="clear()"
+                                if.bind="showPartsToOrderList">
+                            ${labels.clear}
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </view-state>
+    </template>

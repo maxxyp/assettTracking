@@ -1,0 +1,65 @@
+icon-nav-bar {
+  background-color: #fff;
+  margin-right: 8px;
+  width: $icon-bar-width;
+
+  div {
+
+    a, a:hover, a:visited, a:active, a:link {
+      text-decoration: none;
+
+    }
+
+    .nav-bar-icon-item {
+      width: 100%;
+      height: 105px;
+      padding-top: 14px;
+      color: $slate-1;
+      position: relative;
+      .nav-bar-icon {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 10px;
+      }
+      .nav-bar-icon-title {
+        text-align: center;
+      }
+      &.active {
+        color: white;
+
+      }
+      div{
+           &.active {
+                background-color: $blue-2;
+           }
+      }
+      .item-triangle {
+        position: absolute;
+        background-color: transparent;
+        width: 0px;
+        height: 0px;
+        transform: rotate(45deg);
+        top: 39%;
+        left: 69px;
+        z-index: -1;
+        opacity: 0;
+        &.active {
+          width: 24px;
+          height: 24px;
+          left: 90px;
+          transition: all 500ms ease-in-out;
+          background-color: $blue-2;
+          z-index: 1;
+          opacity: 1;
+        }
+      }
+    }
+
+    .nav-bar-version {
+      font-size: 12px;
+      position: absolute;
+      bottom: 0;
+    }
+
+  }
+}

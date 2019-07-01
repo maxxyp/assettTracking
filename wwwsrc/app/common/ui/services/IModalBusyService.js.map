@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/services/IModalBusyService.ts"],"names":[],"mappings":"","file":"IModalBusyService.js","sourcesContent":["export interface IModalBusyService {\n    showBusy(context: string, message: string, linkMessage?: string, linkCallback?: () => void) : Promise<void>;\n    hideBusy(context: string) : Promise<void>;\n}\n"],"sourceRoot":"../../.."}

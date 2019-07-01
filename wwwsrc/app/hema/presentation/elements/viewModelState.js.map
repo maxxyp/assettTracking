@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/presentation/elements/viewModelState.ts"],"names":[],"mappings":";;;IAAA,IAAY,cAGX;IAHD,WAAY,cAAc;QACtB,mDAAI,CAAA;QACJ,yDAAO,CAAA;IACX,CAAC,EAHW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAGzB","file":"viewModelState.js","sourcesContent":["export enum ViewModelState {\n    busy,\n    content\n}\n"],"sourceRoot":"../../.."}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IGoodsItemStatus.ts"],"names":[],"mappings":"","file":"IGoodsItemStatus.js","sourcesContent":["export interface IGoodsItemStatus {\n   status: string;\n   description: string;\n   goodsItemNotFindIndicator: string;\n}\n"],"sourceRoot":"../../../.."}

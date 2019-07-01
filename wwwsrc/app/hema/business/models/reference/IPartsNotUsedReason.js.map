@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IPartsNotUsedReason.ts"],"names":[],"mappings":"","file":"IPartsNotUsedReason.js","sourcesContent":["export interface IPartsNotUsedReason {\n   reasonCode: string;\n   partsNotUsedReasonDescription: string;\n}\n"],"sourceRoot":"../../../.."}

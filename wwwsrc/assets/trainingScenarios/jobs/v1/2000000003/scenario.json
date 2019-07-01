@@ -1,0 +1,82 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "2088066621",
+        "customer": {
+          "id": "100000258",
+          "initials": "L",
+          "title": "Mrs",
+          "middleName": "L",
+          "lastName": "Khan",
+          "homePhone": "01263458258",
+          "workPhone": "01263662255",
+          "address": {
+            "houseNumber": "127",
+            "line": [
+              "Hudson Street"
+            ],
+            "town": "Bradford",
+            "county": "Yorks",
+            "postCodeIn": "5ED",
+            "postCodeOut": "BD9"
+          }
+        },
+        "premises": {
+          "id": "8391124",
+          "address": {
+            "houseNumber": "127",
+            "line": [
+              "Hudson Street"
+            ],
+            "town": "Bradford",
+            "county": "Yorks",
+            "postCodeIn": "5ED",
+            "postCodeOut": "BD9"
+          },
+          "contact": {
+            "id": "100000258",
+            "initials": "L",
+            "title": "Mrs",
+            "middleName": "L",
+            "lastName": "Khan",
+            "homePhone": "01263458258",
+            "workPhone": "01263662255"
+          }
+        },
+        "visit": {
+          "id": "MW01233216",
+          "date": "2017-07-24T00:00:00Z",
+          "status": "D",
+          "earliestStartTime": "2016-01-01T14:00:00Z",
+          "latestStartTime": "2016-01-01T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "2088066621001",
+            "applianceId": "76661490",
+            "jobType": "BE",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "ER",
+            "fixedPriceQuotationAmount": 17561,
+            "sequence": 1,
+            "supportingText": "Nail thru cable. Customer informed chargeable.",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 5
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

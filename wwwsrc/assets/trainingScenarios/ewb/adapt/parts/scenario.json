@@ -1,0 +1,43 @@
+{
+  "status" : 200,
+  "data" : {
+    "parts": [
+        {
+          "stockReferenceId": "357552",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "Gasket - Cover Plate",
+          "price": 1056
+        },
+        {
+          "stockReferenceId": "407219",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "Stud M8 x 27 Screwed All Thread Steel BS4439 4.8 Zinc Plated BS3382",
+          "price": 814
+        },
+        {
+          "stockReferenceId": "358099",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "Kit - 6mm Aluminium Tube",
+          "price": 2678
+        },
+        {
+          "stockReferenceId": "357964",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "Seal - Silicone Cord",
+          "price": 903
+        },
+        {
+          "stockReferenceId": "407216",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "Stud M8 x 18 Screwed All Thread Steel BS4439 4.8 Zinc Plated BS3382",
+          "price": 372
+        },
+        {
+          "stockReferenceId": "FFFFFF",
+          "timestamp": "2019-06-13T08:00:00Z",
+          "description": "WD40",
+          "price": 199
+        }
+      ]
+  }
+}

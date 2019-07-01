@@ -1,0 +1,76 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-02-18T12:00:00Z",
+      "modifiedTimestamp": "2018-02-18T18:00:00Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "0001025743",
+          "jobType": "BE",
+          "applianceType": "DW",
+          "chargeType": "NCH2E3",
+          "status": "C",
+          "activities": [
+            {
+              "date": "2017-06-018Z",
+              "status": "C",
+              "engineerName": "Pete Greening",
+              "report": "bearings cleaned and oiled . Tested OK."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "79441499",
+          "gcCode": "7323913",
+          "category": "A",
+          "contractType": "2E3",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "WM",
+          "description": "Electrolux EW1265F",
+          "locationDescription": "Kitchen",
+          "installationYear": 2010,
+          "safety": {
+          }
+        },
+        {
+          "id": "79441498",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "2E3",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "DW",
+          "description": "Zanussi DW350",
+          "locationDescription": "Kitchen",
+          "installationYear": 2016,
+          "serialId": "SA/PSA/290916",
+          "safety": {
+          }
+        },
+        {
+          "id": "79441500",
+          "gcCode": "9999990",
+          "category": "A",
+          "contractType": "2E3",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "KAC",
+          "description": "Appliance cover",
+          "locationDescription": "House",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "X",
+            "ventilationSafe": "X"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "status": 200,
+  "data": {
+    "attributes": [
+      {
+        "attributeType": "GCNumber",
+        "attributeValue": "41-601-34"
+      },
+      {
+        "attributeType": "appType",
+        "attributeValue": "Gas Central Heating "
+      },
+      {
+        "attributeType": "appSubType",
+        "attributeValue": "Wall & Floor Mounted Boilers"
+      },
+      {
+        "attributeType": "appFuel",
+        "attributeValue": "Gas Appliances"
+      },
+      {
+        "attributeType": "GCVariant",
+        "attributeValue": "A"
+      },
+      {
+        "attributeType": "appVersionStatus",
+        "attributeValue": "Issued"
+      },
+      {
+        "attributeType": "includeInSIS",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "reducedPartsList",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "serviceListed",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "SEDBUKRating",
+        "attributeValue": "X"
+      },
+      {
+        "attributeType": "publishedEfficiency",
+        "attributeValue": "68"
+      },
+      {
+        "attributeType": "ceasedProduction",
+        "attributeValue": "31/12/1981"
+      },
+      {
+        "attributeType": "sourceID",
+        "attributeValue": "14191"
+      },
+      {
+        "attributeType": "safetyNotice",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "optidescription",
+        "attributeValue": "netaheatmk2f1016"
+      }
+    ]
+  }
+}

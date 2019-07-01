@@ -1,0 +1,41 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>Please confirm parts collection</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="van-stock-item-dialog-body">
+
+            <div class="row" if.bind="qtyMissing === 0" style="color: green">
+                <div class="form-group">
+                    <div class="text-xs-center">
+                        <label><strong>All ${model.expected} parts collected</strong></label>
+                    </div>
+                </div>
+                <div class="row text-xs-center">
+                    <span><icon class="fa fa-5x fa-smile-o"></icon></span>
+                </div>
+            </div>
+
+            <div class="row" if.bind="qtyMissing > 0">
+                <div class="form-group">
+                    <div class="text-xs-center">
+                        <label><strong>${model.expected}</strong></label>
+                        <label>expected</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="qtyMissing > 0">
+                <div class="form-group" style.one-time="styleCollected">
+                    <div class="text-xs-center">
+                        <label>${summaryMessage}</label>
+                    </div>
+                </div>
+            </div>
+
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok()">Save</button>
+            <button class="btn btn-secondary" click.trigger="controller.cancel()">Cancel</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

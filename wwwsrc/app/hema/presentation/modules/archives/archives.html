@@ -1,0 +1,153 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <form form-manager>
+            <div class="card details-card fade-in-content">
+                <div class="card-header">
+                    <h1>${labels.objectName}</h1>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <date-picker readonly-input.bind="true" min-date.bind="minDate" max-date.bind="maxDate"
+                            value.bind="archiveDate" calendar-only.bind="false" highlight-today.bind="true"
+                            date-format.bind="'DD-MM-YYYY'"></date-picker>
+                    </div>
+                </div>
+                <div class="row details-list-item details-list-item-header">
+                    <div class="col-xs-6">
+                        ${labels.details}
+                    </div>
+                    <div class="col-xs-2">
+                        ${labels.status}
+                    </div>
+                    <div class="col-xs-2">
+                        Time
+                    </div>
+                    <div class="col-xs-2">
+                        ${labels.duration} ( &asymp; ${labels.inMinutes})
+                    </div>
+                </div>
+                <div class="row" repeat.for="timesheet of archiveModel">
+                    <div class="col-xs-12">
+                        <div class="details-list-item ${timesheet.jobStates.length > 0 ? 'details-list-item-dark' : 'no-pointer'}"
+                            click.trigger="toggleJobs(timesheet)">
+                            <div class="col-xs-6 details-list-item-col">
+                                <i show.bind="timesheet.jobStates.length > 0"
+                                    class="fa ${timesheet.showJobs === true ? 'fa-caret-down': 'fa-caret-right'}"
+                                    aria-hidden="true"></i>
+                                <label>${timesheet.shortAddress} </label>
+                                <label if.bind="timesheet.customerName">(${timesheet.customerName})</label>
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                <label if.bind="timesheet.engineerStatus">${timesheet.engineerStatus}</label>
+                                <label if.bind="!timesheet.engineerStatus && timesheet.jobId">${timesheet.jobId}</label>
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                <label>${timesheet.start}</label>
+                                <label if.bind="timesheet.duration"> - ${timesheet.end}</label>
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                <label if.bind="timesheet.duration">${timesheet.duration}</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div show.bind="timesheet.jobStates.length > 0 && timesheet.showJobs">
+                        <div class="col-xs-12" repeat.for="js of timesheet.jobStates">
+                            <div class="details-list-item bold-content">
+                                <div class="col-xs-6 details-list-item-col">
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                    <label>${js.state}</label>
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                    <label>${js.start}</label>
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                    <label if.bind="js.duration">${js.duration}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12" repeat.for="ti of timesheet.taskItems">
+                            <div class="details-list-item bold-content">
+                                <div class="col-xs-6 details-list-item-col">
+                                    <div class="row">
+                                        <div class="col-xs-2">
+                                            ${labels.description}
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <catalog-lookup catalog="${catalog.ACTION_TYPE}"
+                                                key-field="${catalog.ACTION_TYPE_ID}"
+                                                description-field="${catalog.ACTION_TYPE_DESCRIPTION}"
+                                                value.bind="ti.jobType"></catalog-lookup>
+                                            <catalog-lookup catalog="${catalog.OBJECT_TYPE}"
+                                                key-field="${catalog.OBJECT_TYPE_ID}"
+                                                description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                                value.bind="ti.applianceType"></catalog-lookup>
+
+
+                                            <catalog-lookup catalog="${catalog.JC_JOB_CODE}"
+                                                key-field="${catalog.JC_JOB_CODE_ID}"
+                                                description-field="${catalog.JC_JOB_CODE_DESCRIPTION}"
+                                                value.bind="ti.jobType" split-index.bind="0"></catalog-lookup>
+                                            <span if.bind="task.jobType">-</span>
+                                            <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                                                key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                                                description-field="${catalog.JC_APPLIANCE_CODE_DESCRIPTION}"
+                                                value.bind="ti.applianceType"></catalog-lookup>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <p class="wrap-text">${ti.workReport}</p>
+                                        </div>
+                                    </div>
+                                    <div repeat.for="part of ti.partsToOrder">
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                ${labels.stockRefereceId}
+                                            </div>
+                                            <div class="col-xs-2">
+                                                ${labels.quantity}
+                                            </div>
+                                            <div class="col-xs-6">
+                                                ${labels.description}
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-4">
+                                                <label>${part.stockRefereceId}</label>
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <label>${part.quantity}</label>
+                                            </div>
+                                            <div class="col-xs-6">
+                                                <label>${part.description}</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4">
+                                            Start Time: ${ti.startTime}
+                                        </div>
+                                        <div class="col-xs-4">
+                                            End Time: ${ti.endTime}
+                                        </div>
+                                        <div class="col-xs-4">
+                                            Work Duration: ${ti.duration}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                    <label>${ti.visitStatus}</label>
+                                </div>
+                                <div class="col-xs-1 details-list-item-col">
+                                </div>
+                                <div class="col-xs-1 details-list-item-col">
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </view-state>
+</template>

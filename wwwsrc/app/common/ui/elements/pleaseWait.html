@@ -1,0 +1,8 @@
+<template>
+    <div class="text-xs-center" show.bind="!complete">
+        <div show.bind="showLogo" class="bg-logo"></div>
+        <div class="wait-text" if.bind="!inline" innerhtml.bind="waitingText"></div>
+        <div class="fa fa-circle-o-notch fa-spin fa-2x spinner"></div>
+        <span class="wait-text" if.bind="inline" innerhtml.bind="waitingText"></span>
+    </div>
+</template>

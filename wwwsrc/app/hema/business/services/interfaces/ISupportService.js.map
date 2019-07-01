@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ISupportService.ts"],"names":[],"mappings":"","file":"ISupportService.js","sourcesContent":["import { IJobUpdate } from \"../../../api/models/fft/jobs/jobupdate/IJobUpdate\";\n\nexport interface ISupportService {\n    getLastJobUpdate(): Promise<IJobUpdate>;\n}\n"],"sourceRoot":"../../../.."}

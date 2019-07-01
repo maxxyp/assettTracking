@@ -1,0 +1,62 @@
+nav-bar {
+  .navbar {
+    background-color: $slate-1;
+    color: #fff;
+    padding: 3px;
+    height: 60px;
+    width: 100%;
+    z-index: 6;
+    min-width: $min-width;
+
+    .breadcrumb-container {
+      left: 20px;
+      top: 11px;
+      right:605px;
+      position: absolute;
+      display: flex;
+      overflow: hidden;
+
+      .heading-back-circle {
+        font-size: 35px;
+        margin-right: 10px;
+      }
+
+      .breadcrumbs {
+        top: 5px;
+        position: relative;
+        white-space:nowrap;
+
+        .breadcrumb-item {
+          &.last {
+            color: $green-2;
+          }
+
+          &.link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .navbar-logo {
+      background-image: url("../assets/css/field-app-logo.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 111px;
+      height: 55px;
+      float: right;
+      margin-left: 20px;
+    }
+
+    .simulation {
+      float: right;
+      margin: 6px;
+      color: orange;
+      font-weight: bold;
+      margin-right: 20px;
+      border: 2px solid;
+      padding: 8px;
+    }
+  }
+}

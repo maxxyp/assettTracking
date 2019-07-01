@@ -1,0 +1,154 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card">
+            <div class="card-block">
+                <div if.bind="!canBook" class="card details-card">
+                    <div class="card-block">
+                        <p>You can't currently book an appointment, please set a suitable activity status first</p>
+                        <button class="btn btn-secondary" click.trigger="navigateToJob()">
+                            Back
+                        </button>
+                    </div>
+                </div>
+                <form if.bind="canBook" form-manager
+                      class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="row">
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.generalAccessInformation}</label>
+							</span>
+                            <span class="col-xs-8">
+								<label>${generalAccessInformation}</label>
+							</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.promisedDate}</label>
+							</span>
+                            <span class="col-xs-4">
+								<date-picker readonly-input.bind="true" show-today.bind="isTodaysDateAvailable"
+                                             disabled.bind="!canBook || hasAppointment || !canEdit"
+                                             min-date.bind="minDate" max-date.bind="maxDate" value.bind="promisedDate"
+                                             calendar-only.bind="false" highlight-today.bind="true"
+                                             date-format.bind="'ddd DD-MM-YYYY'"></date-picker>
+							</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.promisedTimeSlot}</label>
+							</span>
+                            <span class="col-xs-4">
+								<drop-down value.bind="promisedTimeSlot"
+                                           values.bind="promisedTimeSlotCatalog"
+                                           value-property.bind="catalog.APPOINTMENT_BAND_ID"
+                                           text-property.bind="catalog.APPOINTMENT_BAND_DESCRIPTION"
+                                           search-properties.bind="[catalog.APPOINTMENT_BAND_DESCRIPTION]"
+                                           disabled.bind="!canBook || hasAppointment || !canEdit"
+                                           no-filter="true"
+                                           dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+									<template replace-part="option-template">
+										<div>
+											${item[catalog.APPOINTMENT_BAND_DESCRIPTION]}
+										</div>
+									</template>
+								</drop-down>
+							</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.accessInformation}</label>
+							</span>
+                            <span class="col-xs-8">
+							<text-area value.bind="accessInformation"
+                                       disabled.bind="!canBook || hasAppointment || !canEdit"
+                                       placeholder="${businessRules.accessInformation} ${labels.characterLimitSuffix}"
+                                       maxlength.bind="businessRules.accessInformation"></text-area>
+							</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.preferredEngineer}</label>
+							</span>
+                            <span class="col-xs-2">
+                                <text-box value.bind="preferredEngineer"
+                                          placeholder.bind="preferredEngineerIdPlaceholder"
+                                          disabled.bind="!canBook || hasAppointment || !canEdit">
+                                </text-box>
+							</span>
+                        </div>
+                    </div>
+                    <div class="row" repeat.for="item of estimatedDurationOfAppointment">
+							<span class="col-xs-4">
+								<label>${labels.estimatedDurationOfAppointment}</label>
+							</span>
+                        <form-manager-array-map item-name="item" item.bind="item"
+                                                array.bind="estimatedDurationOfAppointment"
+                                                array-name="estimatedDurationOfAppointment"></form-manager-array-map>
+                        <div class="col-xs-8">
+                            <div class="row">
+                                <div class="col-xs-7">
+                                    <strong>
+                                        <catalog-lookup catalog="${catalog.ACTION_TYPE}"
+                                                        key-field="${catalog.ACTION_TYPE_ID}"
+                                                        description-field="${catalog.ACTION_TYPE_DESCRIPTION}"
+                                                        value.bind="item.jobType"></catalog-lookup>
+                                    </strong>
+                                    <catalog-lookup catalog="${catalog.OBJECT_TYPE}"
+                                                    key-field="${catalog.OBJECT_TYPE_ID}"
+                                                    description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                                    value.bind="item.applianceType"></catalog-lookup>
+                                </div>
+                                <div class="col-xs-3">
+                                    <div class="form-group">
+                                        <number-box value.bind="item.duration"
+                                                    disabled.bind="hasAppointment || !canEdit"
+                                                    placeholder.bind="estimatedDurationOfAppointmentPlaceholder"
+                                                    max-length.bind="estimatedDurationOfAppointmentMaxLength"
+                                                    float-allowed.bind="false" validate-index="$index"></number-box>
+                                        <span class="help-block validation-custom validation-message"></span>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2">
+                                    <label>${labels.minutes}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+							<span class="col-xs-4">
+								<label>${labels.specialRequirement}</label>
+							</span>
+                            <span class="col-xs-8">
+							<text-area value.bind="item.specialRequirement" disabled.bind="hasAppointment || !canEdit"
+                                       placeholder="${businessRules.specialRequirementMaxLength} ${labels.characterLimitSuffix}"
+                                       maxlength.bind="businessRules.specialRequirementMaxLength"></text-area>
+							</span>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group">
+                    <button class="btn btn-primary" click.trigger="saveAppointment()"
+                            if.bind="!!canEdit && canBook && !hasAppointment">
+                        ${labels.book}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="clear()"
+                            if.bind="!!canEdit && canBook && hasAppointment">
+                        ${labels.remove}
+                    </button>
+                    <button class="btn btn-tertiary arrow-blue-right" click.trigger="clearFields()"
+                            if.bind="!!canEdit && canBook && !hasAppointment">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

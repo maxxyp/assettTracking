@@ -1,0 +1,17 @@
+radio{
+    input{
+        padding-left: 0px;
+        padding-right: 0px;
+        background-color: white;
+        color: white;
+        overflow: hidden;
+        position: relative;
+        width: 35px;
+        height: 30px;
+        transition: all 0.2s ease-in;
+        margin: 0px 10px 5px 10px;            
+    }
+    input:focus{
+        outline: none !important;
+    }
+}

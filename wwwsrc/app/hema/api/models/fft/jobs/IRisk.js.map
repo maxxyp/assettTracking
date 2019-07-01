@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/IRisk.ts"],"names":[],"mappings":"","file":"IRisk.js","sourcesContent":["export interface IRisk {\n    reason: string;\n    report: string;\n    date: string;\n}\n"],"sourceRoot":"../../../../.."}

@@ -1,0 +1,110 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-29T11:42:37Z",
+      "modifiedTimestamp": "2017-09-29T12:25:22Z"
+    },
+    "data": {
+      "job": {
+        "id": "1368197001",
+        "customer": {
+          "id": "022210870",
+          "lastName": "Mrs Elizabeth Holly",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Copeland Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AA",
+            "postCodeOut": "LE4"
+          }
+        },
+        "premises": {
+          "id": "L278546",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Copeland Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AA",
+            "postCodeOut": "LE4"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022210870",
+            "initials": " ",
+            "lastName": "Mrs Elizabeth Holly"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-29"
+          },
+          "risks": [
+            {
+              "reason": "R5",
+              "report": "CARRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR",
+              "date": "2017-09-29"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00227332",
+          "date": "2017-09-29T00:00:00Z",
+          "earliestStartTime": "2017-09-29T18:00:00Z",
+          "latestStartTime": "2017-09-29T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1368197001001",
+            "applianceId": "202234130",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO2FI1",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-09-29",
+                "status": "C",
+                "engineerName": "NEIL",
+                "chargeableTime": 80,
+                "sequence": 1,
+                "report": "CODE4CODE7CODEAADcxccvccvv",
+                "workDuration": 80
+              }
+            ]
+          },
+          {
+            "id": "1368197001002",
+            "applianceId": "202234130",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP2FI1",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-29",
+                "status": "IH",
+                "engineerName": "NEIL",
+                "chargeableTime": 35,
+                "sequence": 1,
+                "report": "CODE4CODE7Dcccccccccccvv",
+                "workDuration": 35
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

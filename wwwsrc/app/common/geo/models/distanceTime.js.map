@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/geo/models/distanceTime.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,mBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,oCAAY","file":"distanceTime.js","sourcesContent":["export class DistanceTime {\n    public distanceInMetres: number;\n    public timeInSeconds: number;\n}\n"],"sourceRoot":"../../.."}

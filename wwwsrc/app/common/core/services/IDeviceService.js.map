@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IDeviceService.ts"],"names":[],"mappings":"","file":"IDeviceService.js","sourcesContent":["export interface IDeviceService {\n    getDeviceId() : Promise<string>;\n    getDeviceType() : Promise<string>;\n}\n"],"sourceRoot":"../../.."}

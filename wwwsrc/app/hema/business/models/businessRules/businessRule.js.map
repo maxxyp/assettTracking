@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/businessRules/businessRule.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,mBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,oCAAY","file":"businessRule.js","sourcesContent":["export class BusinessRule {\n    public id: string;\n    public rule: any;\n}\n"],"sourceRoot":"../../../.."}

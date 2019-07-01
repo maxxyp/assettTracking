@@ -1,0 +1,120 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-04T10:59:30Z"
+    },
+    "data": {
+      "job": {
+        "id": "1372677001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211153",
+          "lastName": "Mr Charges Eighteen",
+          "address": {
+            "premisesName": "Keytex Fabrics",
+            "houseNumber": "0",
+            "line": [
+              "Burleys Way"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L278807",
+          "address": {
+            "premisesName": "Keytex Fabrics",
+            "houseNumber": "0",
+            "line": [
+              "Burleys Way"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211153",
+            "initials": " ",
+            "lastName": "Mr Charges Eighteen"
+          }
+        },
+        "visit": {
+          "id": "WMW00210332",
+          "date": "2017-08-04T00:00:00Z",
+          "earliestStartTime": "2017-08-04T12:00:00Z",
+          "latestStartTime": "2017-08-04T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1372677001001",
+            "applianceId": "202234702",
+            "jobType": "IB",
+            "applianceType": "BBC",
+            "chargeType": "NCH3ST",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1372677001002",
+            "applianceId": "202234705",
+            "jobType": "SM",
+            "applianceType": "CHB",
+            "chargeType": "NCHLIG",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1372677001003",
+            "applianceId": "202234704",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1372677001004",
+            "applianceId": "202234704",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

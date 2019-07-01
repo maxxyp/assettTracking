@@ -1,0 +1,111 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-14T12:30:47Z",
+      "modifiedTimestamp": "2017-12-14T13:30:41Z"
+    },
+    "data": {
+      "job": {
+        "id": "1316518001",
+        "customer": {
+          "id": "022212813",
+          "lastName": "Mr Charges Regression",
+          "address": {
+            "premisesName": "Claire Court",
+            "houseNumber": "4",
+            "line": [
+              "West Street"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4LU",
+            "postCodeOut": "LE19"
+          }
+        },
+        "premises": {
+          "id": "L280238",
+          "address": {
+            "premisesName": "4,Claire Court",
+            "houseNumber": "0",
+            "line": [
+              "West Street"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4LU",
+            "postCodeOut": "LE19"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022212813",
+            "initials": " ",
+            "lastName": "Mr Charges Regression"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-14",
+            "safetyNoticeNotLeftReason": "Testing is done successfully"
+          }
+        },
+        "visit": {
+          "id": "WMW00252652",
+          "date": "2017-12-14T00:00:00Z",
+          "earliestStartTime": "2017-12-14T10:00:00Z",
+          "latestStartTime": "2017-12-14T12:00:00Z",
+          "specialInstructions": "Testing "
+        },
+        "tasks": [
+          {
+            "id": "1316518001001",
+            "applianceId": "202237333",
+            "jobType": "CK",
+            "applianceType": "CHB",
+            "chargeType": "SLO2FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "specialRequirement": "$$$$^^&$%#*%&",
+            "supportingText": "^%#^%&*($&$^%",
+            "activities": [
+              {
+                "date": "2017-12-14",
+                "status": "IA",
+                "engineerName": "NEIL",
+                "chargeableTime": 15,
+                "sequence": 1,
+                "report": "54CODECODE0CODE1Testing a sample job",
+                "workDuration": 15
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1316518001002",
+            "applianceId": "202237334",
+            "jobType": "HU",
+            "applianceType": "WAU",
+            "chargeType": "ALP1S",
+            "status": "C",
+            "skill": "LD",
+            "sequence": 1,
+            "specialRequirement": "Testing %%%%%%",
+            "supportingText": "UK London %%%&&&&&",
+            "activities": [
+              {
+                "date": "2017-12-14",
+                "status": "C",
+                "engineerName": "NEIL",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "CODE1CODE9Testing is done successfully........",
+                "workDuration": 20
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

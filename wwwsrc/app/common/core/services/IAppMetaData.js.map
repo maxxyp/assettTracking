@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IAppMetaData.ts"],"names":[],"mappings":"","file":"IAppMetaData.js","sourcesContent":["export interface IAppMetaData {\n    appName: string;\n    appId: string;\n    appVersion: string;\n    appInstallerId: string;\n    env: string;\n}\n"],"sourceRoot":"../../.."}

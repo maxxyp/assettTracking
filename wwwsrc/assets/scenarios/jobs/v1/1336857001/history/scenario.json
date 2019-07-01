@@ -1,0 +1,91 @@
+{
+  "status": 200,
+  "data": {
+  "meta": {
+    "type": "jobHistory",
+    "createdTimestamp": "2017-05-12T14:20:53Z"
+  },
+  "data": {
+    "tasks": [
+      {
+        "id": "1337237001001",
+        "jobType": "KF",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "status": "D"
+          }
+        ]
+      },
+      {
+        "id": "1301147001001",
+        "jobType": "BE",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "status": "D"
+          }
+        ]
+      },
+      {
+        "id": "1302247001001",
+        "jobType": "BE",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "date": "2017-05-03",
+            "status": "NA",
+            "engineerName": "EMPLOYEE 2",
+            "report": "czxbczncbncbnxcbnzxcbn"
+          }
+        ]
+      },
+      {
+        "id": "1344047001001",
+        "jobType": "BE",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "status": "D"
+          }
+        ]
+      },
+      {
+        "id": "1315937001001",
+        "jobType": "BE",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "date": "2017-04-25",
+            "status": "IP",
+            "engineerName": "ITF ENGINEER 000005",
+            "report": "CODE6Metering tank leaking, ordered part."
+          }
+        ]
+      },
+      {
+        "id": "1340937001001",
+        "jobType": "BE",
+        "applianceType": "DW",
+        "status": "I",
+        "chargeType": "NCH2E1I",
+        "activities": [
+          {
+            "status": "D"
+          }
+        ]
+      }
+    ]
+  }
+}
+}

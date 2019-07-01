@@ -1,0 +1,204 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-15T11:59:23Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1364767001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1314077001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1311967001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "date": "2017-07-19",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "Dfsfesgxgfxghcnc"
+            }
+          ]
+        },
+        {
+          "id": "1345087001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "date": "2017-08-25",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "54CODE71CODEKkkkkkllllll"
+            }
+          ]
+        },
+        {
+          "id": "1379487001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1334087001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1304077001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1345577001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1368967001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1381287001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1343187001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1392287001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH2SPT",
+          "activities": [
+            {
+              "date": "2017-09-05",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "71CODEPLEASE HAVE A RETEST"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202233686",
+          "serialId": "ER45678",
+          "gcCode": "4700000",
+          "category": "X",
+          "contractType": "2SPT",
+          "contractExpiryDate": "2018-07-16",
+          "applianceType": "CHB",
+          "description": "COMBI BOILERS - NO INFOR",
+          "flueType": "R",
+          "boilerSize": 3,
+          "cylinderType": 0,
+          "energyControl": "TRV",
+          "locationDescription": "kitchen",
+          "condition": 2,
+          "numberOfRadiators": 7,
+          "numberOfSpecialRadiators": 4,
+          "installationYear": 2015,
+          "systemDesignCondition": 9,
+          "systemType": 20,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "N",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "AR",
+            "report": "TESTING IS DONE"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-05"
+          }
+        }
+      ]
+    }
+  }
+}

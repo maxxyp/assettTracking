@@ -1,0 +1,126 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-18T11:13:40Z"
+        },
+        "data": {
+            "job": {
+                "id": "1375517001",
+                "customer": {
+                    "id": "022175154",
+                    "lastName": "Mr Lakshmi Narayanan",
+                    "address": {
+                        "premisesName": "22 Shakespeare House",
+                        "line": [
+                            "Shakespeare Drive"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2SP",
+                        "postCodeOut": "LE3"
+                    }
+                },
+                "premises": {
+                    "id": "L247409",
+                    "address": {
+                        "premisesName": "22 Shakespeare House",
+                        "line": [
+                            "Shakespeare Drive"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2SP",
+                        "postCodeOut": "LE3"
+                    },
+                    "previousVisitCount": 1,
+                  "contact": {
+                    "id": "022175154",
+                    "initials": " ",
+                    "lastName": "Mr Lakshmi Narayanan",
+                    "homePhone": "0114 221221"
+                  },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2016-10-18T00:00:00Z",
+                        "safetyNoticeNotLeftReason": "No Safety Notice left"
+                    },
+                    "risks": [{
+                        "reason": "R1",
+                        "report": "Snake",
+                        "date": "2016-10-18T00:00:00Z"
+                    }, {
+                        "reason": "R3",
+                        "report": "Angry Man",
+                        "date": "2016-10-18T00:00:00Z"
+                    }],
+                    "unsafeDetail": {
+                        "report": "PROPERTY IS UNSAFE",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "**LEICESTER CITY***",
+                        "reasons": [
+                            "GMET",
+                            "PDG8"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00151002",
+                    "date": "2016-10-18T00:00:00Z",
+                    "earliestStartTime": "2016-10-18T08:00:00Z",
+                    "latestStartTime": "2016-10-18T18:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1375517001001",
+                    "applianceId": "202185668",
+                    "jobType": "HU",
+                    "applianceType": "CHB",
+                    "chargeType": "ALP3SIS",
+                    "status": "D",
+                    "skill": "GR",
+                    "sequence": 0,
+                    "activities": [{
+                        "date": "2016-10-18T00:00:00Z",
+                        "status": "IA",
+                        "chargeableTime": 10,
+                        "sequence": 1,
+                        "workDuration": 10
+                    }, {
+                        "date": "2016-10-18T00:00:00Z",
+                        "status": "IP",
+                        "chargeableTime": 16,
+                        "sequence": 2,
+                        "workDuration": 16,
+                        "parts": [{
+                            "orderDate": "2016-10-18T00:00:00Z",
+                            "status": "AP",
+                            "requisitionNumber": "GRN000012",
+                            "description": "Hinge",
+                            "charge": 326,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "021383"
+                        }]
+                    }, {
+                        "status": "D",
+                        "sequence": 3,
+                        "date": "2016-10-17T00:00:00Z",
+                        "parts": [{
+                            "orderDate": "2016-10-18T00:00:00Z",
+                            "status": "FP",
+                            "requisitionNumber": "GRN0000120",
+                            "description": "PHinge",
+                            "charge": 327,
+                            "quantity": 3,
+                            "quantityCharged": 2,
+                            "stockReferenceId": "0213830"
+                        }]
+                    }]
+                }]
+            }
+        }
+    }
+}

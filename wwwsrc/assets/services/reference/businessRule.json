@@ -1,0 +1,1990 @@
+[
+  {
+    "key": "1001",
+    "viewModel": "applianceReading",
+    "id": "burnerPressureUnsafeValue",
+    "rule": 0,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1002",
+    "viewModel": "applianceReading",
+    "id": "gasRateUnsafeValue",
+    "rule": 0,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1003",
+    "viewModel": "applianceReading",
+    "id": "firstRatioWarningThreshold",
+    "rule": 0.004,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1004",
+    "viewModel": "applianceReading",
+    "id": "finalRatioUnsafeThreshold",
+    "rule": 0.008,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1005",
+    "viewModel": "applianceReading",
+    "id": "unsafeToastDismissTime",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1006",
+    "viewModel": "applianceReading",
+    "id": "burnerPressureDecimalPlaces",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1007",
+    "viewModel": "applianceReading",
+    "id": "gasRateReadingDecimalPlaces",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1008",
+    "viewModel": "applianceReading",
+    "id": "ratioDecimalPlaces",
+    "rule": 4,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1009",
+    "viewModel": "applianceReading",
+    "id": "cO2DecimalPlaces",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1010",
+    "viewModel": "applianceReading",
+    "id": "burnerPressureMaxValue",
+    "rule": 40,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1011",
+    "viewModel": "applianceReading",
+    "id": "gasRateReadingMaxValue",
+    "rule": 135,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1012",
+    "viewModel": "applianceReading",
+    "id": "ratioMaxValue",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1013",
+    "viewModel": "applianceReading",
+    "id": "cOMaxValue",
+    "rule": 99999,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1014",
+    "viewModel": "applianceReading",
+    "id": "cO2MaxValue",
+    "rule": 100,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2001",
+    "viewModel": "taskItem",
+    "id": "adviceResultsThatNeedCategory",
+    "rule": "ACC,DEC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2002",
+    "viewModel": "taskItem",
+    "id": "firstVisitJob",
+    "rule": "FV",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2003",
+    "viewModel": "taskItem",
+    "id": "firstVisitTask",
+    "rule": "FVT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2004",
+    "viewModel": "taskItem",
+    "id": "visitCodesProductGroupPartsRequired",
+    "rule": "MVT,TVT,BKN",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2005",
+    "viewModel": "taskItem",
+    "id": "claimRejNotCoveredVisitCodesPattern",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2006",
+    "viewModel": "taskItem",
+    "id": "workedOnClaimRejNotCovered",
+    "rule": "CR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2007",
+    "viewModel": "taskItem",
+    "id": "notDoingJobStatuses",
+    "rule": "NA,VO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2008",
+    "viewModel": "taskItem",
+    "id": "notDoingTaskStatuses",
+    "rule": "XB,XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2009",
+    "viewModel": "taskItem",
+    "id": "taskStatusDoToday",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2010",
+    "viewModel": "taskItem",
+    "id": "activityPartsRequiredStatus",
+    "rule": "IP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2011",
+    "viewModel": "taskItem",
+    "id": "appointmentRequiredActivityStatus",
+    "rule": "IZ,IP,QP,IA,IF,IP,IH",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2013",
+    "viewModel": "taskItem",
+    "id": "completedOrCancelledActivityStatuses",
+    "rule": "C,CX,XB",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2014",
+    "viewModel": "taskItem",
+    "id": "insAnnualServiceActivityStatuses",
+    "rule": "C,CX,D,NA,VO,XB,XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2015",
+    "viewModel": "taskItem",
+    "id": "intervalInMinutes",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2016",
+    "viewModel": "taskItem",
+    "id": "filteredOutActivityStatuses",
+    "rule": "PD,IZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2017",
+    "viewModel": "taskItem",
+    "id": "taskNotRequriedDuration",
+    "rule": "VO,XB,XC,NA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3001",
+    "viewModel": "gasSafety",
+    "id": "performanceTestNotDoneReasonExceptions",
+    "rule": "NC,TN",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3002",
+    "viewModel": "gasSafety",
+    "id": "flueTypesExceptions",
+    "rule": "V,O,R",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3003",
+    "viewModel": "gasSafety",
+    "id": "unsafeToastDismissTime",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3004",
+    "viewModel": "gasSafety",
+    "id": "showApplianceStrippedQuestion",
+    "rule": "IA,NO,PI",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3005",
+    "viewModel": "gasSafety",
+    "id": "reportMaxCharsLandlord",
+    "rule": "40",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3007",
+    "viewModel": "gasSafety",
+    "id": "conditionsAsLeftNotToCurrentStandardsOption",
+    "rule": "SS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3008",
+    "viewModel": "gasSafety",
+    "id": "cappedTurnedOffDisabledOptionsForNTCS",
+    "rule": "C,T,NC,NT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3009",
+    "viewModel": "gasSafety",
+    "id": "cappedTurnedOffNotApplicableOption",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3010",
+    "viewModel": "gasSafety",
+    "id": "labelAttachedRemovedDisabledOptionsForNTCS",
+    "rule": "A,X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3011",
+    "viewModel": "gasSafety",
+    "id": "labelAttachedRemovedDisabledOptionsForNonNTCS",
+    "rule": "R,X,N",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3012",
+    "viewModel": "gasSafety",
+    "id": "didYouWorkOnApplianceNoOption",
+    "rule": false,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3013",
+    "viewModel": "gasSafety",
+    "id": "conditionAsLeftImmediatelyDangerousOption",
+    "rule": "ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3014",
+    "viewModel": "gasSafety",
+    "id": "cappedTurnedOffOptionsForWarningMsg",
+    "rule": "T,NC,NT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3004",
+    "viewModel": "gasSafety",
+    "id": "showApplianceStrippedQuestionForSupplementary",
+    "rule": "IS,NS,PS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "4001",
+    "viewModel": "otherSafety",
+    "id": "unsafeToastDismissTime",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5001",
+    "viewModel": "gasSafetyDetail",
+    "id": "pressureDropThreshold",
+    "rule": 8,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5002",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasInstallationNotSatisfactoryNoType",
+    "rule": "No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5003",
+    "viewModel": "gasSafetyDetail",
+    "id": "pressureDropDecimalPlaces",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5004",
+    "viewModel": "gasSafetyDetail",
+    "id": "reportMaxCharsLandlord",
+    "rule": "40",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5005",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasInstallationNotSatisfactoryNoMeterType",
+    "rule": "No Meter",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5006",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationSatisfactoryNotApplicableOption",
+    "rule": "N/A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5007",
+    "viewModel": "gasSafetyDetail",
+    "id": "labelAttachedDisableOptions",
+    "rule": "R,N,X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5008",
+    "viewModel": "gasSafetyDetail",
+    "id": "cappedTurnedOffDisabledOptions",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5009",
+    "viewModel": "gasSafetyDetail",
+    "id": "cappedTurnedOffSelectedOption",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5010",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationSatisfactoryNotApplicableOptionInstaPerm",
+    "rule": "Yes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5011",
+    "viewModel": "gasSafetyDetail",
+    "id": "conditionAsLeftDisableOptions",
+    "rule": "SS,XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5012",
+    "viewModel": "gasSafetyDetail",
+    "id": "conditionAsLeftSelectedOptions",
+    "rule": "ID,AR,XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5013",
+    "viewModel": "gasSafetyDetail",
+    "id": "cappedTurnedOffDisabledOptionsForNotToCurrentStd",
+    "rule": "C,T,NC,NT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5014",
+    "viewModel": "gasSafetyDetail",
+    "id": "labelAttachedDisabledOptionsForNotToCurrentStd",
+    "rule": "A,X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5015",
+    "viewModel": "gasSafetyDetail",
+    "id": "notToCurrentStdConditionAsLeftOptionSelected",
+    "rule": "SS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5016",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationSatisfactoryNotApplicableOptionYes",
+    "rule": "Yes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5017",
+    "viewModel": "gasSafetyDetail",
+    "id": "notToCurrentStdConditionAsLeftOptionSelectedSS",
+    "rule": "SS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6001",
+    "viewModel": "electricalSafetyDetail",
+    "id": "ttSystemType",
+    "rule": "TT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6002",
+    "viewModel": "electricalSafetyDetail",
+    "id": "unableToCheckSystemType",
+    "rule": "UNABLE TO CHECK",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6003",
+    "viewModel": "electricalSafetyDetail",
+    "id": "rcdPresentThreshold",
+    "rule": 200,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6004",
+    "viewModel": "electricalSafetyDetail",
+    "id": "safeInTopsThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6005",
+    "viewModel": "electricalSafetyDetail",
+    "id": "iniEliReadingDecimalPlaces",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6006",
+    "viewModel": "electricalSafetyDetail",
+    "id": "availableConditionAsLeftCodes",
+    "rule": "ID,AR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6007",
+    "viewModel": "electricalSafetyDetail",
+    "id": "reportMaxCharsLandlord",
+    "rule": "40",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6008",
+    "viewModel": "electricalSafetyDetail",
+    "id": "availableLabelAttachedCodes",
+    "rule": "A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7001",
+    "viewModel": "applianceService",
+    "id": "firstVisitCode",
+    "rule": "FV",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7002",
+    "viewModel": "applianceService",
+    "id": "gasApplianceCategorySortOrder",
+    "rule": "G,E,O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7003",
+    "viewModel": "applianceService",
+    "id": "electricalApplianceCategorySortOrder",
+    "rule": "E,G,O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7004",
+    "viewModel": "applianceService",
+    "id": "removeCharactersDescription",
+    "rule": "^(\\.+)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7005",
+    "viewModel": "applianceService",
+    "id": "childApplianceIndicator",
+    "rule": "C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7006",
+    "viewModel": "applianceService",
+    "id": "fullGcCodeLength",
+    "rule": "7",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7007",
+    "viewModel": "applianceService",
+    "id": "applianceMakeAndModelMaxChars",
+    "rule": 10,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7008",
+    "viewModel": "applianceService",
+    "id": "electricalWorkingSector",
+    "rule": "PatchES",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8001",
+    "viewModel": "jobFactory",
+    "id": "applianceTypeHazard",
+    "rule": "HAZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8002",
+    "viewModel": "jobFactory",
+    "id": "applianceTypeGas",
+    "rule": "G",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8003",
+    "viewModel": "jobFactory",
+    "id": "applianceTypeElectric",
+    "rule": "E",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8004",
+    "viewModel": "jobFactory",
+    "id": "applianceTypeOther",
+    "rule": "O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8005",
+    "viewModel": "jobFactory",
+    "id": "createMarker",
+    "rule": "C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8006",
+    "viewModel": "jobFactory",
+    "id": "updateMarker",
+    "rule": "U",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8007",
+    "viewModel": "jobFactory",
+    "id": "deleteMarker",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8008",
+    "viewModel": "jobFactory",
+    "id": "statusTaskAcknowledged",
+    "rule": "00",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8009",
+    "viewModel": "jobFactory",
+    "id": "statusEnRoute",
+    "rule": "02",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8010",
+    "viewModel": "jobFactory",
+    "id": "statusOnSite",
+    "rule": "03",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8011",
+    "viewModel": "jobFactory",
+    "id": "statusTaskCompletion",
+    "rule": "04",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8012",
+    "viewModel": "jobFactory",
+    "id": "statusIncomplete",
+    "rule": "50",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8013",
+    "viewModel": "jobFactory",
+    "id": "statusNoAccess",
+    "rule": "51",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8014",
+    "viewModel": "jobFactory",
+    "id": "statusRecovery",
+    "rule": "53",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8015",
+    "viewModel": "jobFactory",
+    "id": "statusVisitClosureMismatch",
+    "rule": "58",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8016",
+    "viewModel": "jobFactory",
+    "id": "statusVisitDeselected",
+    "rule": "55",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8017",
+    "viewModel": "jobFactory",
+    "id": "sourceSystemWMIS",
+    "rule": "W",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8018",
+    "viewModel": "jobFactory",
+    "id": "instPremApplianceType",
+    "rule": "INS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8019",
+    "viewModel": "jobFactory",
+    "id": "NotVisitedOtherActivityStatus",
+    "rule": "VO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8020",
+    "viewModel": "jobFactory",
+    "id": "statusNoVisit",
+    "rule": "50",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8021",
+    "viewModel": "jobFactory",
+    "id": "electricalWorkingSector",
+    "rule": "PatchES",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8022",
+    "viewModel": "jobFactory",
+    "id": "annualServiceJobType",
+    "rule": "AS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8023",
+    "viewModel": "jobFactory",
+    "id": "paymentNonCollectionReasonCodeChargeNotOkCode",
+    "rule": "XD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8024",
+    "viewModel": "jobFactory",
+    "id": "paymentNonCollectionReasonCodeChargeOkCode",
+    "rule": "XE",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9001",
+    "viewModel": "applianceDetails",
+    "id": "centralHeatingApplianceHardwareCategory",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9002",
+    "viewModel": "applianceDetails",
+    "id": "applianceRequiresGcCode",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9003",
+    "viewModel": "applianceDetails",
+    "id": "applianceTypeAllowsCreation",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9004",
+    "viewModel": "applianceDetails",
+    "id": "applianceTypeCatalogExclusions",
+    "rule": "HAZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9005",
+    "viewModel": "applianceDetails",
+    "id": "isDefaultGcCode",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9006",
+    "viewModel": "applianceDetails",
+    "id": "parentApplianceIndicator",
+    "rule": "P",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9007",
+    "viewModel": "applianceDetails",
+    "id": "numberOfRadiatorsLength",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9008",
+    "viewModel": "applianceDetails",
+    "id": "numberOfSpecialRadiatorsLength",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9009",
+    "viewModel": "applianceDetails",
+    "id": "boilerSizeLength",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10001",
+    "viewModel": "electricalSafety",
+    "id": "itemCheckedQuestionNotChecked",
+    "rule": "C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10002",
+    "viewModel": "electricalSafety",
+    "id": "itemCheckedQuestionNo",
+    "rule": "N",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10003",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcdProtected",
+    "rule": "RCD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10004",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcboProtected",
+    "rule": "RCBO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10005",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcdProtectedNo",
+    "rule": "N",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10006",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcdProtectedCustRefusedTest",
+    "rule": "CRT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10007",
+    "viewModel": "electricalSafety",
+    "id": "ringContinuityReadingDoneFail",
+    "rule": "F",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10008",
+    "viewModel": "electricalSafety",
+    "id": "leInsulationResistanceMinThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10009",
+    "viewModel": "electricalSafety",
+    "id": "neInsulationResistanceMinThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10010",
+    "viewModel": "electricalSafety",
+    "id": "lnInsulationResistanceMinThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10011",
+    "viewModel": "electricalSafety",
+    "id": "systemTypeTt",
+    "rule": "TT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10012",
+    "viewModel": "electricalSafety",
+    "id": "systemTypeUnableToCheck",
+    "rule": "UNABLE TO CHECK",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10013",
+    "viewModel": "electricalSafety",
+    "id": "eliReadingRcdPresentMaxThreshold",
+    "rule": 200,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10014",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReadingMinThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10015",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingMessageThreshold",
+    "rule": 200,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10016",
+    "viewModel": "electricalSafety",
+    "id": "rcboTripTimeReadingMinThreshold",
+    "rule": 300,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10017",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingMaxThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10018",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingMessageThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10019",
+    "viewModel": "electricalSafety",
+    "id": "mcbFuseRatingUnsafeReason",
+    "rule": "US",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10020",
+    "viewModel": "electricalSafety",
+    "id": "applianceFuseRatingUnsafeReason",
+    "rule": "US",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10021",
+    "viewModel": "electricalSafety",
+    "id": "microwaveLeakageMaxThreshold",
+    "rule": 5,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10022",
+    "viewModel": "electricalSafety",
+    "id": "applianceTypeElectrical",
+    "rule": "ELECTRICAL",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10023",
+    "viewModel": "electricalSafety",
+    "id": "applianceTypeMicrowave",
+    "rule": "MICROWAVE",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10024",
+    "viewModel": "electricalSafety",
+    "id": "applianceTypeWhiteGoods",
+    "rule": "WHITEGOODS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10025",
+    "viewModel": "electricalSafety",
+    "id": "unsafeToastDismissTime",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10026",
+    "viewModel": "electricalSafety",
+    "id": "reportMaxLength",
+    "rule": 110,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10027",
+    "viewModel": "electricalSafety",
+    "id": "ownerNameAddressPhoneMaxLength",
+    "rule": 150,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10028",
+    "viewModel": "electricalSafety",
+    "id": "availableConditionAsLeftCodes",
+    "rule": "SS,ID,AR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10029",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingFirstThreshold",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10030",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingSecondThreshold",
+    "rule": 199,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10031",
+    "viewModel": "electricalSafety",
+    "id": "leInsulationResistanceMaxLength",
+    "rule": 6,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10032",
+    "viewModel": "electricalSafety",
+    "id": "neInsulationResistanceMaxLength",
+    "rule": 6,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10033",
+    "viewModel": "electricalSafety",
+    "id": "lnInsulationResistanceMaxLength",
+    "rule": 6,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10034",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReadingMaxLength",
+    "rule": 6,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10035",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingMaxLength",
+    "rule": 6,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11001",
+    "viewModel": "riskItem",
+    "id": "hazard",
+    "rule": "HAZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11002",
+    "viewModel": "riskItem",
+    "id": "riskException",
+    "rule": "HAZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12001",
+    "viewModel": "engineerService",
+    "id": "signOnId",
+    "rule": "52",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12002",
+    "viewModel": "engineerService",
+    "id": "signOffId",
+    "rule": "13",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12003",
+    "viewModel": "engineerService",
+    "id": "minId",
+    "rule": "5",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13001",
+    "viewModel": "partsBasket",
+    "id": "vanStockPartOrderStatus",
+    "rule": "V",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13002",
+    "viewModel": "partsBasket",
+    "id": "partOrderStatus",
+    "rule": "O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13003",
+    "viewModel": "partsBasket",
+    "id": "quantityIncrementStep",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13004",
+    "viewModel": "partsBasket",
+    "id": "priceDecimalPlaces",
+    "rule": 2,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13005",
+    "viewModel": "partsBasket",
+    "id": "workedOnClaimRejectCoveredCode",
+    "rule": "CR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13007",
+    "viewModel": "partsBasket",
+    "id": "partsCurrencyUnit",
+    "rule": 0.01,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13008",
+    "viewModel": "partsBasket",
+    "id": "isPartConsumableStockReferencePrefix",
+    "rule": "W,D,F,T,C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13009",
+    "viewModel": "partsBasket",
+    "id": "consumablesRule",
+    "rule": "[^E|^I|^O|[^0-9]",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13010",
+    "viewModel": "partsBasket",
+    "id": "maxOrderQuantity",
+    "rule": 999,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13011",
+    "viewModel": "partsBasket",
+    "id": "completeStatus",
+    "rule": "C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13012",
+    "viewModel": "partsBasket",
+    "id": "partsRequiredStatus",
+    "rule": "IP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13013",
+    "viewModel": "partsBasket",
+    "id": "waitAdviceStatus",
+    "rule": "WA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14001",
+    "viewModel": "partFactory",
+    "id": "partOrderStatus",
+    "rule": "O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14002",
+    "viewModel": "partFactory",
+    "id": "partVanStockStatus",
+    "rule": "V",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14003",
+    "viewModel": "partFactory",
+    "id": "partsDescriptionLength",
+    "rule": 40,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14004",
+    "viewModel": "partFactory",
+    "id": "partsCurrencyUnit",
+    "rule": 100,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15001",
+    "viewModel": "todaysParts",
+    "id": "defaultPartWarrantyWeeks",
+    "rule": 52,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15002",
+    "viewModel": "todaysParts",
+    "id": "doTodayActivityStatus",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15003",
+    "viewModel": "todaysParts",
+    "id": "toBeFittedPartStatus",
+    "rule": "FP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15004",
+    "viewModel": "todaysParts",
+    "id": "notFittedIndicator",
+    "rule": "N",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15005",
+    "viewModel": "todaysParts",
+    "id": "defaultApplianceWarrantyWeeks",
+    "rule": 260,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15006",
+    "viewModel": "todaysParts",
+    "id": "partVanStockStatus",
+    "rule": "V",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15007",
+    "viewModel": "todaysParts",
+    "id": "personalSourceCategory",
+    "rule": "P",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15008",
+    "viewModel": "todaysParts",
+    "id": "stockReferencePrefixesToStopWarrantyReturn",
+    "rule": "",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15009",
+    "viewModel": "todaysParts",
+    "id": "goodsTypeDateFmt",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16001",
+    "viewModel": "appointmentBooking",
+    "id": "promiseDateWarningThreshold",
+    "rule": 55,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16002",
+    "viewModel": "appointmentBooking",
+    "id": "cutOffTime",
+    "rule": "20:00",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16005",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentAllowedActivityStatus",
+    "rule": "IZ,IH,QP,IA,NA,IF,IP,WA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16006",
+    "viewModel": "appointmentBooking",
+    "id": "estimatedEndTimeInMinutes",
+    "rule": 1440,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16007",
+    "viewModel": "appointmentBooking",
+    "id": "estimatedDurationOfAppointmentPlaceholder",
+    "rule": "000",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16008",
+    "viewModel": "appointmentBooking",
+    "id": "preferredEngineerIdPlaceholder",
+    "rule": "0000000",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16009",
+    "viewModel": "appointmentBooking",
+    "id": "preferredEngineerIdMaxLength",
+    "rule": "7",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16010",
+    "viewModel": "appointmentBooking",
+    "id": "estimatedDurationOfAppointmentMaxLength",
+    "rule": "3",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16011",
+    "viewModel": "appointmentBooking",
+    "id": "AM",
+    "rule": 8,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16012",
+    "viewModel": "appointmentBooking",
+    "id": "PM",
+    "rule": 12,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16013",
+    "viewModel": "appointmentBooking",
+    "id": "EV",
+    "rule": 18,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16014",
+    "viewModel": "appointmentBooking",
+    "id": "AL",
+    "rule": 8,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16015",
+    "viewModel": "appointmentBooking",
+    "id": "specialRequirementMaxLength",
+    "rule": 40,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16016",
+    "viewModel": "appointmentBooking",
+    "id": "accessInformation",
+    "rule": 40,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17001",
+    "viewModel": "workRetrievalService",
+    "id": "statusAllocated",
+    "rule": "allocated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17002",
+    "viewModel": "workRetrievalService",
+    "id": "statusDeallocated",
+    "rule": "deallocated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17003",
+    "viewModel": "workRetrievalService",
+    "id": "statusCollected",
+    "rule": "collected",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17004",
+    "viewModel": "workRetrievalService",
+    "id": "workTypeJob",
+    "rule": "job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17005",
+    "viewModel": "workRetrievalService",
+    "id": "workTypePartsCollection",
+    "rule": "partsCollection",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17005",
+    "viewModel": "workRetrievalService",
+    "id": "statusToCollect",
+    "rule": "collect",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18001",
+    "viewModel": "propertySafetyService",
+    "id": "gasMeterInstallation",
+    "rule": "GMET",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18002",
+    "viewModel": "propertySafetyService",
+    "id": "pressureDropLess8",
+    "rule": "PDL8",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18003",
+    "viewModel": "propertySafetyService",
+    "id": "pressureDropGreater8",
+    "rule": "PDG8",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18004",
+    "viewModel": "propertySafetyService",
+    "id": "consumerUnit",
+    "rule": "CONS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18005",
+    "viewModel": "propertySafetyService",
+    "id": "systemType",
+    "rule": "SYSTP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18006",
+    "viewModel": "propertySafetyService",
+    "id": "noElectricalEliReading",
+    "rule": "ESELI",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18007",
+    "viewModel": "propertySafetyService",
+    "id": "rcdGreater200",
+    "rule": "RC200",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18008",
+    "viewModel": "propertySafetyService",
+    "id": "rcdNotPresent",
+    "rule": "RCDNO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18009",
+    "viewModel": "propertySafetyService",
+    "id": "topsReadingSafe",
+    "rule": "ELSAF",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19002",
+    "viewModel": "chargeService",
+    "id": "dateFormatVat",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19003",
+    "viewModel": "chargeService",
+    "id": "chargeRulesDateFormat",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19004",
+    "viewModel": "chargeService",
+    "id": "fixedLabourChargeCurrencyUnit",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19005",
+    "viewModel": "chargeService",
+    "id": "partsCurrencyUnit",
+    "rule": 0.01,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19006",
+    "viewModel": "chargeService",
+    "id": "tieredLabourChargeCurrencyUnit",
+    "rule": 0.01,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19007",
+    "viewModel": "chargeService",
+    "id": "vanStockPartOrderStatus",
+    "rule": "V",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19008",
+    "viewModel": "chargeService",
+    "id": "fixedPriceQuotationCurrencyUnit",
+    "rule": "0.01",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19009",
+    "viewModel": "chargeService",
+    "id": "discountFixedCode",
+    "rule": "F",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19010",
+    "viewModel": "chargeService",
+    "id": "discountPercentageCode",
+    "rule": "P",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19011",
+    "viewModel": "chargeService",
+    "id": "noDiscountCode",
+    "rule": "NODISCOUNT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19012",
+    "viewModel": "chargeService",
+    "id": "fmtDiscountEffective",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19013",
+    "viewModel": "chargeService",
+    "id": "fmtDiscountExpiration",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19014",
+    "viewModel": "chargeService",
+    "id": "complaintActionCategoryCharge",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19015",
+    "viewModel": "chargeService",
+    "id": "complaintCategoryBillingQuery",
+    "rule": "BQ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19016",
+    "viewModel": "chargeService",
+    "id": "chargeStatusCatCodes",
+    "rule": "D,C,I",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19017",
+    "viewModel": "chargeService",
+    "id": "excludeChargeStatusCatCode",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19018",
+    "viewModel": "chargeService",
+    "id": "chargeMethodCodeLength",
+    "rule": 3,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19018",
+    "viewModel": "chargeService",
+    "id": "visitStatuses",
+    "rule": "C,IA,IF,IP,WA,IH",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19018",
+    "viewModel": "chargeService",
+    "id": "excludePartStatusPrevious",
+    "rule": "AP,NU,CP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19019",
+    "viewModel": "chargeService",
+    "id": "noChargePrefix",
+    "rule": "NC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19020",
+    "viewModel": "chargeService",
+    "id": "fittedPartStatusCode",
+    "rule": "FP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19021",
+    "viewModel": "chargeService",
+    "id": "notUsedStatusCode",
+    "rule": "NU",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19021",
+    "viewModel": "chargeService",
+    "id": "incompleteVisitStatus",
+    "rule": "IF,IA,IZ,QP,IH,IP,WA,PD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20001",
+    "viewModel": "applianceSafetyFactory",
+    "id": "WHITEGOODS",
+    "rule": "WHITE GOODS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "21001",
+    "viewModel": "taskFactory",
+    "id": "partLJReportableActionTypes",
+    "rule": "HU,LD,BR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "21002",
+    "viewModel": "taskFactory",
+    "id": "bypassTaskStatus",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "21003",
+    "viewModel": "taskFactory",
+    "id": "middlewareDoTodayStatuses",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "21004",
+    "viewModel": "taskFactory",
+    "id": "partsCurrencyUnit",
+    "rule": 0.01,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22001",
+    "viewModel": "applianceFactory",
+    "id": "instPremApplianceContractType",
+    "rule": "LIG",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22002",
+    "viewModel": "applianceFactory",
+    "id": "hardWareCatForCHAppliance",
+    "rule": "X",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22003",
+    "viewModel": "applianceFactory",
+    "id": "instPremApplianceType",
+    "rule": "INS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22004",
+    "viewModel": "applianceFactory",
+    "id": "applianceCategoryOther",
+    "rule": "O",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22005",
+    "viewModel": "applianceFactory",
+    "id": "applianceSafetyNotRequiredIndicator",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22006",
+    "viewModel": "applianceFactory",
+    "id": "electricalWorkingSector",
+    "rule": "PatchES",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22007",
+    "viewModel": "applianceFactory",
+    "id": "applianceCategoryGas",
+    "rule": "G",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22008",
+    "viewModel": "applianceFactory",
+    "id": "applianceCategoryElectrical",
+    "rule": "E",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22009",
+    "viewModel": "applianceFactory",
+    "id": "applianceTypesToUseEngineerPatchInsteadToCalculateSafetyType",
+    "rule": "DFC,CGE",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22010",
+    "viewModel": "applianceFactory",
+    "id": "electricalWiringElectricalApplianceType",
+    "rule": "ELECTRICAL",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "23001",
+    "viewModel": "newTask",
+    "id": "fmtFieldActivityType",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "23002",
+    "viewModel": "newTask",
+    "id": "validNewWorkInd",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24001",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "templateAssetPath",
+    "rule": "document_templates/landlordCertificate.html",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24002",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "minApplianceLines",
+    "rule": "5",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24003",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "gasMeterApplianceSatisfactoryYes",
+    "rule": "Yes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24004",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "gasMeterApplianceSatisfactoryNo",
+    "rule": "No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24005",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "gasMeterApplianceSatisfactoryNoMeter",
+    "rule": "No Meter",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24006",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "gasMeterApplianceSatisfactoryNotApplicable",
+    "rule": "N/A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24007",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "conditionAsLeftImmediatelyDangerous",
+    "rule": "ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24008",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "conditionAsLeftAtRisk",
+    "rule": "AR",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24009",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "conditionAsLeftNotCommissioned",
+    "rule": "XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24010",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "conditionAsLeftNotToCurrentStandards",
+    "rule": "SS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24011",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "reportMaxLength",
+    "rule": 40,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24012",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "flueLessApplianceType",
+    "rule": "F",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24013",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "safetyDeviceYesValue",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24014",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "safetyDeviceNoValue",
+    "rule": 0,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24015",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "roomSealedFlueApplianceType",
+    "rule": "R",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25001",
+    "viewModel": "charges",
+    "id": "chargeOptionNotOk",
+    "rule": "2",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26002",
+    "viewModel": "taskAppliance",
+    "id": "fmtFieldActivityType",
+    "rule": "YYYY-MM-DD",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26005",
+    "viewModel": "taskAppliance",
+    "id": "validNewWorkInd",
+    "rule": "Y",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26007",
+    "viewModel": "taskAppliance",
+    "id": "firstVisitRestrictions",
+    "rule": "INS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26008",
+    "viewModel": "taskAppliance",
+    "id": "firstVisitSequence",
+    "rule": 1,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27001",
+    "viewModel": "appliances",
+    "id": "nonContractContractTypes",
+    "rule": "NONE",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28001",
+    "viewModel": "partsRequiredInBasket",
+    "id": "activityPartsRequiredStatus",
+    "rule": "IP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28002",
+    "viewModel": "partsRequiredInBasket",
+    "id": "activityCompleteStatus",
+    "rule": "C",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28003",
+    "viewModel": "partsRequiredInBasket",
+    "id": "vanPartsInBasket",
+    "rule": "V",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28004",
+    "viewModel": "partsRequiredInBasket",
+    "id": "activityWaitAdviceStatus",
+    "rule": "WA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28005",
+    "viewModel": "partsRequiredInBasket",
+    "id": "completeCancelledStatus",
+    "rule": "CX",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28006",
+    "viewModel": "partsRequiredInBasket",
+    "id": "doTodayStatus",
+    "rule": "D",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28007",
+    "viewModel": "partsRequiredInBasket",
+    "id": "incompleteStatus",
+    "rule": "IZ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28008",
+    "viewModel": "partsRequiredInBasket",
+    "id": "noAccessStatus",
+    "rule": "NA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28009",
+    "viewModel": "partsRequiredInBasket",
+    "id": "notVisitedStatus",
+    "rule": "VO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28010",
+    "viewModel": "partsRequiredInBasket",
+    "id": "cancelledBgsStatus",
+    "rule": "XB",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28011",
+    "viewModel": "partsRequiredInBasket",
+    "id": "cancelledCustomerStatus",
+    "rule": "XC",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28012",
+    "viewModel": "partsRequiredInBasket",
+    "id": "orderPartStatuses",
+    "rule": "IP,WA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28013",
+    "viewModel": "partsRequiredInBasket",
+    "id": "vanStockStatuses",
+    "rule": "IP,WA,C,IA,IF,IH",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29000",
+    "viewModel": "chargeFactory",
+    "id": "incompleteStatuses",
+    "rule": "IA,IH,IF,IP",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30000",
+    "viewModel": "jobService",
+    "id": "jobCompleteRefreshDelayMs",
+    "rule": 7000,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30001",
+    "viewModel": "jobService",
+    "id": "jobDoingStatuses",
+    "rule": "C,IA,IF,IH,IP,QP,WA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40000",
+    "viewModel": "previousJobsFactory",
+    "id": "previousJobsAllowedInMonths",
+    "rule": 60,
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "500001",
+    "viewModel": "consumablesBasket",
+    "id": "consumableStockRefIdPrefixRule",
+    "rule": "[^W|^D|^F|^T|^C]",
+    "ctlgEntDelnMkr": "N"
+  }
+]

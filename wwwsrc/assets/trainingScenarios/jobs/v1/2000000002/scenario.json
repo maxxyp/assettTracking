@@ -1,0 +1,115 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "7888052721",
+        "customer": {
+          "id": "007397779",
+          "initials": "J",
+          "title": "Mrs",
+          "lastName": "Winchester",
+          "homePhone": "07761475535",
+          "address": {
+            "housenumber": "45",
+            "line": [
+              "Canal Street"
+            ],
+            "town": "Windsor",
+            "county": "Middlsx",
+            "postCodeIn": "5DG",
+            "postCodeOut": "SL4"
+          }
+        },
+        "premises": {
+          "id": 1160033,
+          "address": {
+            "housenumber": "45",
+            "line": [
+              "Canal Street"
+            ],
+            "town": "Windsor",
+            "county": "Middlsx",
+            "postCodeIn": "5DG",
+            "postCodeOut": "SL4"
+          },
+          "previousVisitCount": 2,
+          "contact": {
+            "id": "007397779",
+            "initials": "J ",
+            "title": "Mrs",   
+            "lastName": "Winchester"
+          },
+          "risks": [{
+            "reason": "R6",
+            "report": "Inadequate earthing and damaged contacts",
+            "date": "2014-07-01"
+          }],          
+          "safetyDetail": {
+            "lastElectricVisitDate": "2014-07-20T00:00:00Z",
+            "safetyNoticeNotLeftReason": "Inadequate earthing and damaged contacts"
+          },
+          "unsafeDetail": {
+            "report": "signs of burning contacts and possible meter tampering.Advised Customer.",
+            "conditionAsLeft": "AR",
+            "labelledAttachedorRemoved": "A",
+            "CappedorTurnedOff": "NT",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "ownerNameAndDetails": "N/A",
+            "reason": [
+              "CONS"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00163552",
+          "date": "2017-07-24T00:00:00Z",
+          "earliestStartTime": "2017-07-24T08:00:00Z",
+          "latestStartTime": "2017-07-24T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "7888052721001",
+            "applianceId": "78441461",
+            "jobType": "BE",
+            "applianceType": "WM",
+            "chargeType": "SLO2EF",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "supportingText": "Broken belt",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "7888052721002",
+            "applianceId": "78441462",
+            "jobType": "BE",
+            "applianceType": "DW",
+            "chargeType": "SLO2EF",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "supportingText": "Water not filling",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

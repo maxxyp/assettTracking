@@ -1,0 +1,149 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2017-07-21T11:53:18Z",
+            "modifiedTimestamp": "2017-07-21T15:25:36Z"
+        },
+        "data": {
+            "job": {
+                "id": "1302077001",
+                "engineerId": "0080937",
+                "customer": {
+                    "id": "022210199",
+                    "lastName": "Mr Alyssa Lsap",
+                    "address": {
+                        "houseNumber": "6",
+                        "line": ["Edmondthorpe Road"],
+                        "county": "Melton Mowbray",
+                        "postCodeIn": "2AD",
+                        "postCodeOut": "LE14"
+                    }
+                },
+                "premises": {
+                    "id": "L277881",
+                    "address": {
+                        "houseNumber": "5",
+                        "line": ["Meadow Rise"],
+                        "town": "Wymondham",
+                        "county": "Melton Mowbray",
+                        "postCodeIn": "2AP",
+                        "postCodeOut": "LE14"
+                    },
+                    "previousVisitCount": 1,
+                    "contact": {
+                        "id": "022210200",
+                        "initials": " ",
+                        "lastName": "Mrs Kali Joaquin"
+                    },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2017-07-21"
+                    }
+                },
+                "visit": {
+                    "id": "WMW00203602",
+                    "date": "2017-07-21T00:00:00Z",
+                    "earliestStartTime": "2017-07-21T18:00:00Z",
+                    "latestStartTime": "2017-07-21T22:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1302077001001",
+                    "applianceId": "202232820",
+                    "jobType": "GU",
+                    "applianceType": "CHB",
+                    "chargeType": "ALF3SIM",
+                    "status": "D",
+                    "skill": "LD",
+                    "sequence": 3,
+                    "activities": [{
+                        "date": "2017-07-21",
+                        "status": "IP",
+                        "engineerName": "NEIL",
+                        "chargeableTime": 20,
+                        "sequence": 1,
+                        "report": "CODE0Hhhhhhhhhhmkkkkkllllll",
+                        "workDuration": 20,
+                        "parts": [{
+                            "orderDate": "2017-07-21",
+                            "status": "AP",
+                            "description": "Parts one",
+                            "charge": 12435.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "779901"
+                        }, {
+                            "orderDate": "2017-07-21",
+                            "status": "AP",
+                            "description": "Parts two",
+                            "charge": 2596.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "652859"
+                        }]
+                    }, {
+                        "date": "2017-07-21",
+                        "status": "NA",
+                        "engineerName": "NEIL",
+                        "chargeableTime": 0,
+                        "sequence": 2,
+                        "report": "62CODEJjjjjkkkkkkkklllllkkllllklllkkkklllllllllllllllllllllll",
+                        "workDuration": 0,
+                        "parts": [{
+                            "orderDate": "2017-07-21",
+                            "status": "AP",
+                            "description": "Parts one",
+                            "charge": 12435.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "779901"
+                        }, {
+                            "orderDate": "2017-07-21",
+                            "status": "AP",
+                            "description": "Parts two",
+                            "charge": 2596.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "652859"
+                        }, {
+                            "status": "UP",
+                            "description": "Parts one",
+                            "charge": 12435.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "779901"
+                        }, {
+                            "status": "UP",
+                            "description": "Parts two",
+                            "charge": 2596.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "652859"
+                        }]
+                    }, {
+                        "status": "D",
+                        "sequence": 3,
+                        "parts": [{
+                            "orderDate": "2017-07-21",
+                            "status": "FP",
+                            "description": "Parts one",
+                            "charge": 12435.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "779901"
+                        }, {
+                            "orderDate": "2017-07-21",
+                            "status": "FP",
+                            "description": "Parts two",
+                            "charge": 2596.0,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "652859"
+                        }]
+                    }]
+                }]
+            }
+        }
+    }
+
+}

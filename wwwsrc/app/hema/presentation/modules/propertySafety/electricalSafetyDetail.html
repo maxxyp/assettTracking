@@ -1,0 +1,233 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="job-details-page-body">                        
+                        <div class="row">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.eliReadings}</label>
+                                </span>
+                                <span class="col-xs-4">
+                                    <number-box value.bind="iniEliReading" decimal-places.bind="iniEliReadingDecimalPlaces" reset-value-for-validation.bind="true"
+                                    disabled.bind="!canEdit" readonly.bind="noEliReadings" float-allowed.bind="true" placeholder.bind="labels.eliReadings" max-length.bind="validationRules.iniEliReading.maxLength"></number-box>
+                                    <span if.bind="!canEdit && noEliReadings">${labels.noEliReadings}</span>
+                                </span>
+                                 <span class="col-xs-4">
+                                    <button class="btn btn-secondary ${noEliReadings ? 'active' : 'notactive'} ${inEditMode ? '' : disabled'}"
+                                        disabled.bind="!canEdit"
+                                        click.trigger="toggleNoEliReadings()">
+                                        ${labels.noEliReadings}
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.consumerUnit}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                        items.bind="consumerUnitSatisfactoryLookup"
+                                        value.bind="consumerUnitSatisfactory"
+                                        multi-select.bind="false"
+                                        disabled.bind="!canEdit"
+                                        button-width="30%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.systemType}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                        items.bind="systemTypeLookup"
+                                        value.bind="systemType"
+                                        multi-select.bind="false"
+                                        disabled.bind="!canEdit"
+                                        button-width="30%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="systemType === unableToCheckSystemType">
+                            <div class="col-xs-offset-4">
+                                <strong>${labels.systemTypeUnableToCheckMessage}</strong>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="systemType && (systemType === ttSystemType) && !noEliReadings">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.rcdPresent}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                        items.bind="rcdPresentLookup"
+                                        value.bind="rcdPresent"
+                                        multi-select.bind="false"
+                                        disabled.bind="!canEdit"
+                                        button-width="30%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="showEliSafeAccordingToTops">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.eliSafe}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                        items.bind="eliSafeAccordingToTopsLookup"
+                                        value.bind="eliSafeAccordingToTops"
+                                        multi-select.bind="false"
+                                        disabled.bind="!canEdit"
+                                        button-width="30%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <hr if.bind="reasons.length > 0" />
+                        <div class="row" if.bind="reasons.length > 0">
+                            <span class=" col-xs-12">
+                                <span repeat.for="reason of reasons">
+                                    <span class="unsafe-block">
+                                        ${reason.label}
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.report}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <text-area if.bind="isLandlordJob" value.bind="report" disabled.bind="!canEdit" placeholder="${validationRules.report.maxLength} ${labels.characterLimitSuffix}"
+                                               maxlength.bind="validationRules.report.maxLength"
+                                               maxlength2.bind="businessRules.reportMaxCharsLandlord"
+                                               maxlength2-text.bind="labels.reportMaxCharsLandlordText"
+                                               maxlength2-exceeded-text.bind="labels.reportMaxCharsLandlordExceededText">
+                                    </text-area>
+                                    <text-area if.bind="!isLandlordJob" value.bind="report" disabled.bind="!canEdit" placeholder="${validationRules.report.maxLength} ${labels.characterLimitSuffix}"
+                                           maxlength.bind="validationRules.report.maxLength">
+                                    </text-area>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.conditionAsLeft}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="conditionAsLeftLookup"
+                                    value.bind="conditionAsLeftSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="30%"
+                                    button-height="100px">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.cappedTrunedOff}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="cappedTurnedOffLookup"
+                                    value.bind="cappedTurnedOffSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="23%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.labelAttachedRemoved}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="labelAttachedRemovedLookup"
+                                    value.bind="labelAttachedRemovedSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="23%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.ownedByCustomer}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="ownedByCustomerLookup"
+                                    value.bind="ownedByCustomerSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="23%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.letterLeft}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="letterLeftLookup"
+                                    value.bind="letterLeftSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="23%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="reasons.length > 0">
+                            <div class="form-group">
+                                <span class="col-xs-4">
+                                    <label>${labels.signatureObtained}</label>
+                                </span>
+                                <span class="col-xs-8">
+                                    <button-list
+                                    items.bind="signatureObtainedLookup"
+                                    value.bind="signatureObtainedSelected"
+                                    multi-select.bind="false"
+                                    disabled.bind="!canEdit"
+                                    button-width="23%">
+                                    </button-list>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group" if.bind="canEdit">
+				    <button class="btn btn-secondary" click.trigger="undo()">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn-tertiary arrow-blue-right" click.trigger="clear()">
+                        ${labels.clear}
+                    </button>
+				</div>
+            </div>
+        </div>
+    </view-state>
+</template>

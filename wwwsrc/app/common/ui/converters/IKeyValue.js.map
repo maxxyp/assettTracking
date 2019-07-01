@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/converters/IKeyValue.ts"],"names":[],"mappings":"","file":"IKeyValue.js","sourcesContent":["export interface IKeyValue {\n    key: string;\n    value: string;\n    type?: string;\n}\n"],"sourceRoot":"../../.."}

@@ -1,0 +1,113 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-05T05:37:47Z",
+      "modifiedTimestamp": "2017-12-05T07:27:17Z"
+    },
+    "data": {
+      "job": {
+        "id": "1352418001",
+        "customer": {
+          "id": "022212664",
+          "lastName": "Mr Charges Arun",
+          "address": {
+            "houseNumber": "15",
+            "line": [
+              "The Plantation"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "5ST",
+            "postCodeOut": "LE8"
+          }
+        },
+        "premises": {
+          "id": "L280120",
+          "address": {
+            "houseNumber": "15",
+            "line": [
+              "The Plantation"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "5ST",
+            "postCodeOut": "LE8"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022212664",
+            "initials": " ",
+            "lastName": "Mr Charges Arun"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-05"
+          }
+        },
+        "visit": {
+          "id": "WMW00251212",
+          "date": "2017-12-05T00:00:00Z",
+          "earliestStartTime": "2017-12-05T12:00:00Z",
+          "latestStartTime": "2017-12-05T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1352418001001",
+            "applianceId": "202237153",
+            "jobType": "HU",
+            "applianceType": "BBF",
+            "chargeType": "ALP2FIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-12-05",
+                "status": "C",
+                "engineerName": "NEIL",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "54CODE62CODECODE3Tezssssssssssssssssd",
+                "workDuration": 20
+              }
+            ]
+          },
+          {
+            "id": "1352418001002",
+            "applianceId": "202237155",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-12-05",
+                "status": "IF",
+                "engineerName": "NEIL",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "CODE0CODE1CODE2Hfhfbfbbfbfbdvdvdvdvvdbdbdbdbddb",
+                "workDuration": 20,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Gasket 56 X 60mm Dia",
+                    "charge": 1261.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "109014"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

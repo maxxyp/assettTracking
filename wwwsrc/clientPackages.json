@@ -1,0 +1,327 @@
+{
+   "root": "node_modules",
+   "items": [
+      {
+         "name": "bluebird",
+         "location": "bluebird/js/browser/bluebird.min",
+         "unitLocation": "bluebird/js/browser/bluebird",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "scriptInclude": true
+      },
+      {
+         "name": "require",
+         "location": "requirejs/require",
+         "includeInIndex": false,
+         "includeInTest": false,
+         "includeInKarma": false,
+         "scriptInclude": true
+      },
+      {
+         "name": "aurelia-animator-css",
+         "location": "aurelia-animator-css/dist/amd/aurelia-animator-css",
+         "dts": "aurelia-animator-css/dist/amd/aurelia-animator-css/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-binding",
+         "location": "aurelia-binding/dist/amd/aurelia-binding",
+         "dts": "aurelia-binding/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-bootstrapper",
+         "location": "aurelia-bootstrapper/dist/amd/aurelia-bootstrapper",
+         "dts": "aurelia-bootstrapper/dist/amd/aurelia-bootstrapper/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-dependency-injection",
+         "location": "aurelia-dependency-injection/dist/amd/aurelia-dependency-injection",
+         "dts": "aurelia-dependency-injection/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-dialog",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "dts": "aurelia-dialog/dist/**/*.d.ts",
+         "package": {
+            "location": "aurelia-dialog/dist/amd",
+            "main": "aurelia-dialog"
+         }
+      },
+      {
+         "name": "aurelia-event-aggregator",
+         "location": "aurelia-event-aggregator/dist/amd/aurelia-event-aggregator",
+         "dts": "aurelia-event-aggregator/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-fetch-client",
+         "location": "aurelia-fetch-client/dist/amd/aurelia-fetch-client",
+         "dts": "aurelia-fetch-client/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-http-client",
+         "location": "aurelia-http-client/dist/amd/aurelia-http-client",
+         "dts": "aurelia-http-client/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-framework",
+         "location": "aurelia-framework/dist/amd/aurelia-framework",
+         "dts": "aurelia-framework/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-history",
+         "location": "aurelia-history/dist/amd/aurelia-history",
+         "dts": "aurelia-history/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-history-browser",
+         "location": "aurelia-history-browser/dist/amd/aurelia-history-browser",
+         "dts": "aurelia-history-browser/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-loader",
+         "location": "aurelia-loader/dist/amd/aurelia-loader",
+         "dts": "aurelia-loader/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-loader-default",
+         "location": "aurelia-loader-default/dist/amd/aurelia-loader-default",
+         "dts": "aurelia-loader-default/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-logging",
+         "location": "aurelia-logging/dist/amd/aurelia-logging",
+         "dts": "aurelia-logging/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-logging-console",
+         "location": "aurelia-logging-console/dist/amd/aurelia-logging-console",
+         "dts": "aurelia-logging-console/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-metadata",
+         "location": "aurelia-metadata/dist/amd/aurelia-metadata",
+         "dts": "aurelia-metadata/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-pal",
+         "location": "aurelia-pal/dist/amd/aurelia-pal",
+         "dts": "aurelia-pal/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-pal-browser",
+         "location": "aurelia-pal-browser/dist/amd/aurelia-pal-browser",
+         "dts": "aurelia-pal-browser/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-path",
+         "location": "aurelia-path/dist/amd/aurelia-path",
+         "dts": "aurelia-path/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-polyfills",
+         "location": "aurelia-polyfills/dist/amd/aurelia-polyfills",
+         "dts": "aurelia-polyfills/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-route-recognizer",
+         "location": "aurelia-route-recognizer/dist/amd/aurelia-route-recognizer",
+         "dts": "aurelia-route-recognizer/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-router",
+         "location": "aurelia-router/dist/amd/aurelia-router",
+         "dts": "aurelia-router/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-task-queue",
+         "location": "aurelia-task-queue/dist/amd/aurelia-task-queue",
+         "dts": "aurelia-task-queue/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-templating",
+         "location": "aurelia-templating/dist/amd/aurelia-templating",
+         "dts": "aurelia-templating/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-templating-binding",
+         "location": "aurelia-templating-binding/dist/amd/aurelia-templating-binding",
+         "dts": "aurelia-templating-binding/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "aurelia-templating-resources",
+         "dts": "aurelia-templating-resources/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "package": {
+            "location": "aurelia-templating-resources/dist/amd",
+            "main": "aurelia-templating-resources"
+         }
+      },
+      {
+         "name": "aurelia-templating-router",
+         "dts": "aurelia-templating-router/dist/**/*.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "package": {
+            "location": "aurelia-templating-router/dist/amd",
+            "main": "aurelia-templating-router"
+         }
+      },
+      {
+         "name": "aurelia-validation",
+         "dts": "aurelia-validation/dist/aurelia-validation.d.ts",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "package": {
+            "location": "aurelia-validation/dist/amd",
+            "main": "index"
+         }
+      },
+      {
+         "name": "moment",
+         "location": "moment/min/moment.min",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "whatwg-fetch",
+         "location": "whatwg-fetch/fetch",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "text",
+         "location": "text/text",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true
+      },
+      {
+         "name": "blob-polyfill",
+         "location": "blob-polyfill/Blob",
+         "includeInIndex": false,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "isCustom": false
+      },
+      {
+         "name": "tv4",
+         "location": "tv4/tv4",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "isCustom": true
+      },
+      {
+         "name": "bignumber",
+         "location": "bignumber.js/bignumber.min",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "isCustom": true
+      },
+      {
+         "name": "universal-ga",
+         "location": "universal-ga/lib/analytics.min",
+         "includeInIndex": true,
+         "includeInTest": true,
+         "includeInKarma": true,
+         "isCustom": true
+      },
+      {
+        "name": "noUiSlider",
+        "location": "nouislider/distribute/nouislider.min",
+        "includeInIndex": true,
+        "includeInTest": true,
+        "includeInKarma": true,
+        "isCustom": true
+     },
+     {
+       "name": "wNumb",
+       "location": "wnumb/wNumb",
+       "includeInIndex": true,
+       "includeInTest": true,
+       "includeInKarma": true,
+       "isCustom": true
+    }       
+   ]
+}

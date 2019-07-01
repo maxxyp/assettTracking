@@ -1,0 +1,170 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-25T12:34:44Z",
+      "modifiedTimestamp": "2017-08-25T15:06:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "1316087001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022208785",
+          "initials": " ",
+          "lastName": "Mrs Cancel Customer",
+          "address": {
+            "houseNumber": "178",
+            "line": [
+              "Charles Road"
+            ],
+            "county": "Birmingham",
+            "postCodeIn": "9AB",
+            "postCodeOut": "B10"
+          }
+        },
+        "premises": {
+          "id": "L276619",
+          "address": {
+            "houseNumber": "178",
+            "line": [
+              "Charles Road"
+            ],
+            "county": "Birmingham",
+            "postCodeIn": "9AB",
+            "postCodeOut": "B10"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022208785",
+            "initials": " ",
+            "lastName": "Mrs Cancel Customer"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-25"
+          }
+        },
+        "visit": {
+          "id": "WMW00214722",
+          "date": "2017-08-25T00:00:00Z",
+          "earliestStartTime": "2017-08-25T08:00:00Z",
+          "latestStartTime": "2017-08-25T18:00:00Z",
+          "specialInstructions": "last test mandha"
+        },
+        "tasks": [
+          {
+            "id": "1316087001001",
+            "applianceId": "202230867",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "NCH3SIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 3,
+            "activities": [
+              {
+                "date": "2017-08-25",
+                "status": "IP",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "62CODEReport tested",
+                "workDuration": 5,
+                "parts": [
+                  {
+                    "orderDate": "2017-08-25",
+                    "status": "AP",
+                    "requisitionNumber": "GRN00000000097",
+                    "description": "TIMER MECHANICAL EMT 2 TOTE",
+                    "charge": 2838.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "555123"
+                  },
+                  {
+                    "status": "CP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E66527"
+                  }
+                ]
+              },
+              {
+                "date": "2017-08-25",
+                "status": "IA",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 15,
+                "sequence": 2,
+                "report": "54CODEreport tested",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "orderDate": "2017-08-25",
+                    "status": "FP",
+                    "requisitionNumber": "GRN00000000097",
+                    "description": "TIMER MECHANICAL EMT 2 TOTE",
+                    "charge": 2838.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "555123"
+                  },
+                  {
+                    "status": "CP",
+                    "description": "Timer Mechanical EMT 2 TOTE",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "555123"
+                  },
+                  {
+                    "status": "CP",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "767676"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "yuyi",
+                    "charge": 9800.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "767676"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          },
+          {
+            "id": "1316087001002",
+            "applianceId": "202230867",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

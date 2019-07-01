@@ -1,0 +1,7 @@
+<template>
+    <div show.bind="showControls">
+        <a innerHTML.bind="controlsExpandedText" href="#" click.trigger="expandAll()"></a>
+        <a innerHTML.bind="controlsCollapsedText" href="#" click.trigger="collapseAll()"></a>
+    </div>
+    <slot></slot>
+</template>

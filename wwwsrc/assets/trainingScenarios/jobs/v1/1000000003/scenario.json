@@ -1,0 +1,158 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "job",
+			"createdTimestamp": "2016-10-18T16:03:38Z"
+		},
+		"data": {
+			"job": {
+				"id": "2083052721",
+				"customer": {
+					"id": "10418539",
+					"initials": "M",
+					"title": "Mrs",
+					"firstName": "M",
+					"middleName": "L",
+					"lastName": "Jackson",
+					"homePhone": "01530832599",
+					"workPhone": "01530510964",
+					"address": {
+						"houseNumber": "236",
+						"line": [
+							"Kimberly Street"
+						],
+						"town": "Burton on Trent",
+						"county": "Staffs",
+						"postCodeIn": "8TE",
+						"postCodeOut": "DE13"
+					}
+				},
+				"premises": {
+					"id": "A001453",
+					"address": {
+						"houseNumber": "236",
+						"line": [
+							"Kimberly Street"
+						],
+						"town": "Burton on Trent",
+						"county": "Staffs",
+						"postCodeIn": "8TE",
+						"postCodeOut": "DE13"
+					},
+					"previousVisitCount": 1,
+					"contact": {
+						"id": "100000258",
+						"initials": "L",
+						"title": "Mrs",
+						"firstName": "M",
+						"middleName": "L",
+						"lastName": "Jackson",
+						"homePhone": "01530832599",
+						"workPhone": "01530510964"
+					},
+					"safetyDetail": {
+						"lastGasVisitDate": "2016-11-20",
+						"lastElectricVisitDate": "2016-11-20",
+						"safetyNoticeNotLeftReason": "Inadequate earthing and damaged contacts"
+					},
+					"risks": [
+						{
+							"reason": "R1",
+							"report": "Beware of the dog.",
+							"date": "2016-01-01"
+						}
+					],
+					"unsafeDetail": {
+						"report": "Signs of burning contacts and possible meter tampering. Advised customer and agreed ES visit to fix.",
+						"conditionAsLeft": "AR",
+						"labelAttachedOrRemoved": "A",
+						"cappedOrTurnedOff": "NT",
+						"ownedByCustomer": true,
+						"signatureObtained": true,
+						"letterLeft": true,
+						"reasons": [
+							"CONS"
+						]
+					}
+				},
+				"visit": {
+					"id": "MW00003842",
+					"date": "2017-07-24T00:00:00Z",
+					"status": "D",
+					"earliestStartTime": "2017-07-24T2:00:00Z",
+					"latestStartTime": "2017-07-24T18:00:00Z",
+					"specialInstructions": "Dog will be locked away."
+				},
+				"tasks": [
+					{
+						"id": "2083052721001",
+						"applianceId": "79441457",
+						"jobType": "AS",
+						"applianceType": "CHB",
+						"chargeType": "NCH3ST",
+						"status": "D",
+						"skill": "GS",
+						"sequence": 1,
+						"activities": [
+							{
+								"status": "D"
+							}
+						]
+					},
+					{
+						"id": "2083052721002",
+						"applianceId": "79441457",
+						"jobType": "IB",
+						"applianceType": "CHB",
+						"chargeType": "NCH3ST",
+						"status": "D",
+						"skill": "GR",
+						"sequence": 2,
+						"supportingText": "This job is a recall",
+						"activities": [
+							{
+								"date": "2017-07-18",
+								"status": "IP",
+								"engineerName": "Sue Hull 570212",
+								"sequence": 1,
+								"workDuration": 40,
+								"chargeableTime": 40,
+								"report": "Part ordered for boiler",
+								"parts": [
+									{
+										"orderDate": "2017-07-18",
+										"status": "AP",
+										"description": "Pressure Relief Valve",
+										"charge": 1284,
+										"quantity": 1,
+										"quantityCharged": 1,
+										"stockReferenceId": "202547",
+										"requisitionNumber": "SOJ00016795867"
+									}
+								]
+							},
+							{
+								"date": "2017-07-18",
+								"status": "D",
+								"sequence": 2,
+								"parts": [
+									{
+										"orderDate": "2017-07-18",
+										"status": "FP",
+										"description": "Pressure Relief Valve",
+										"charge": 1284,
+										"quantity": 1,
+										"quantityCharged": 1,
+										"stockReferenceId": "202547",
+										"requisitionNumber": "SOJ00016795867"
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}

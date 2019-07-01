@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/IDataStateProvider.ts"],"names":[],"mappings":"","file":"IDataStateProvider.js","sourcesContent":["import {DataState} from \"./dataState\";\n\nexport interface IDataStateProvider {\n    dataState: DataState;\n    dataStateGroup: string;\n    dataStateId: string;\n}\n"],"sourceRoot":"../../.."}

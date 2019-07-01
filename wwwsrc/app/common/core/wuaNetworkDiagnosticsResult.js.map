@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/wuaNetworkDiagnosticsResult.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,kCAAC;IAAD,CAHA,AAGC,IAAA;IAHY,kEAA2B","file":"wuaNetworkDiagnosticsResult.js","sourcesContent":["export class WuaNetworkDiagnosticsResult {\r\n    public connection: string ;\r\n    [key: string]: any;\r\n}\r\n"],"sourceRoot":"../.."}

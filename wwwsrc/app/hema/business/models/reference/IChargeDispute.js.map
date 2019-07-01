@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IChargeDispute.ts"],"names":[],"mappings":"","file":"IChargeDispute.js","sourcesContent":["export interface IChargeDispute {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

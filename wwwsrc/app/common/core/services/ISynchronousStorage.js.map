@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/ISynchronousStorage.ts"],"names":[],"mappings":"","file":"ISynchronousStorage.js","sourcesContent":["\nexport interface ISynchronousStorage {\n    setSynchronous<T>(container: string, key: string, data: T) : void;\n    getSynchronous<T>(container: string, key: string): T;\n}\n"],"sourceRoot":"../../.."}

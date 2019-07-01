@@ -1,0 +1,11 @@
+<template bindable="catalog, code">
+    <span if.bind="showDescription || true">
+
+        <catalog-lookup catalog="${catalog.JC_JOB_CODE}" key-field="${catalog.JC_JOB_CODE_ID}"
+                        description-field="${catalog.JC_JOB_CODE_DESCRIPTION}"
+                        value.bind="code" split-index.bind="0">
+        </catalog-lookup>
+    </span>
+</template>
+
+

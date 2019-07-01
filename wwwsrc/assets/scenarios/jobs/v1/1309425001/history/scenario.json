@@ -1,0 +1,763 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-13T07:16:54Z",
+      "modifiedTimestamp": "2018-08-13T07:17:24Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1377425001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH2FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1377425001002",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1323325001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP2FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1323325001002",
+          "jobType": "FF",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO2FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1323325001003",
+          "jobType": "DC",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1323325001004",
+          "jobType": "IB",
+          "applianceType": "AGA",
+          "status": "I",
+          "chargeType": "EXS3FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1358425001001",
+          "jobType": "HU",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "54CODE Testing Purepose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1358425001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF2FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "UP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E07067"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "CP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1358425001003",
+          "jobType": "SD",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1358425001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1348425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE dsdsdsdsdsds",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1363425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE DSDSDSDSDDSDSD",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1301425001001",
+          "jobType": "HU",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ testing scenario 2",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE testyttttt",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1301425001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF2FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ testtinggggg",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 4,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "555055"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE CODE1 teststtststtss",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 4,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "555055"
+                },
+                {
+                  "status": "CP",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "555055"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1301425001003",
+          "jobType": "SD",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ testtttttttt",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1301425001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ testtttttttttt"
+            }
+          ]
+        },
+        {
+          "id": "1315325001001",
+          "jobType": "HU",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1315325001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF2FIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "AP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E07067"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "FP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E07067"
+                },
+                {
+                  "status": "CP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1315325001003",
+          "jobType": "SD",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1315325001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1375325001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE DSDSDSDSDdsdsds",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342325001001",
+          "jobType": "HU",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342325001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF2FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "AP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E07067"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "FP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E07067"
+                },
+                {
+                  "status": "CP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342325001003",
+          "jobType": "SD",
+          "applianceType": "AGA",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342325001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE CODE0 Testing Purpose"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224173",
+          "serialId": "1234566",
+          "gcCode": "4198010",
+          "category": "X",
+          "contractType": "2FIS",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "BRITONY SYSTEM PLUS 100",
+          "flueType": "V",
+          "boilerSize": 1,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "Kitchen",
+          "condition": 1,
+          "numberOfRadiators": 2,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "systemDesignCondition": 1,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        },
+        {
+          "id": "202224215",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202224174",
+          "serialId": "123456",
+          "gcCode": "4589701",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "AGA",
+          "description": "REDFYRE C/HTG COOKER 60",
+          "flueType": "F",
+          "boilerSize": 1,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "Kitchen",
+          "condition": 1,
+          "numberOfRadiators": 20,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2017,
+          "systemDesignCondition": 8,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        }
+      ]
+    }
+  }
+}

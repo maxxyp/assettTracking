@@ -1,0 +1,225 @@
+{
+  "status": 200,
+  "data": {
+  "meta": {
+    "type": "jobHistory",
+    "createdTimestamp": "2018-07-02T01:39:47Z",
+    "modifiedTimestamp": "2018-08-02T01:02:13Z"
+  },
+  "data": {
+    "tasks": [
+      {
+        "id": "1341809668001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [
+          {
+            "date": "2017-08-16",
+            "status": "C",
+            "engineerName": "Richard Landon",
+            "report": "CODE 6 ASV ALL OK, RECHARGED EXPANSION VESSEL, CLEANED FILTER."
+          }
+        ]
+      },
+      {
+        "id": "1342153187001",
+        "jobType": "IB",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [
+          {
+            "date": "2016-04-07",
+            "status": "C",
+            "engineerName": "MARK DAVIES",
+            "report": "CODE6 FITTED WIRELESS RECEIVER",
+            "parts": [
+              {
+                "status": "UP",
+                "description": "Drayton SCR Receiver",
+                "quantity": 1,
+                "quantityCharged": 0,
+                "stockReferenceId": "555007"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "1367349377001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [
+          {
+            "date": "2016-03-15",
+            "status": "C",
+            "engineerName": "Ryan Sargeant - HU",
+            "report": "CODE6 ASV ALL OK"
+          }
+        ]
+      },
+      {
+        "id": "1303527796001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [
+          {
+            "date": "2015-02-26",
+            "status": "C",
+            "engineerName": "MALC SPROSTON",
+            "report": "CODE6 ASV SATISFACTORY ADVISED HIVE ACTIVE"
+          }
+        ]
+      },
+      {
+        "id": "1364587526001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "X",
+        "chargeType": "NCH3SIS",
+        "activities": [
+          {
+            "date": "2014-03-04",
+            "status": "XB"
+          }
+        ]
+      },
+      {
+        "id": "1364587526002",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3ST",
+        "activities": [
+          {
+            "date": "2014-03-03",
+            "status": "C",
+            "engineerName": "PAUL CLARK",
+            "report": "CODE1 SFV / SEAL OK/3AMP/ FAN -6.0/ GAS PIPE - CONDENSATE-FLUE -GAS METER-NCS"
+          }
+        ]
+      },
+      {
+        "id": "1310199855001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3ST",
+        "activities": [
+          {
+            "date": "2013-05-17",
+            "status": "C",
+            "engineerName": "PAUL CLARK",
+            "report": "CODEZZ FLUE IN VOID 1 PEICE OF FLUE PIPE/GAS SUPPLY PIPE OFF METER NCS/3AMP"
+          }
+        ]
+      },
+      {
+        "id": "1365241944001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3ST",
+        "activities": [
+          {
+            "date": "2011-12-23",
+            "status": "C",
+            "engineerName": "MALC SPROSTON",
+            "report": "CODE1 ASV 3AMP FUSE TELGN 10.1% GAS/RT 26KW"
+          }
+        ]
+      },
+      {
+        "id": "1368227673001",
+        "jobType": "IB",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3G1",
+        "activities": [
+          {
+            "date": "2011-01-24",
+            "status": "C",
+            "engineerName": "PAUL MEAKIN(FV) 5688",
+            "report": "CODE2 REPAIRED WATER ON SUPPLY TO BATHROOM RAD"
+          }
+        ]
+      },
+      {
+        "id": "1362060643001",
+        "jobType": "IB",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3G1",
+        "activities": [
+          {
+            "date": "2010-09-29",
+            "status": "C",
+            "engineerName": "TOM RIELY 549764 C/W",
+            "report": "CODE2/REFILL COMBI."
+          }
+        ]
+      }
+    ],
+    "appliances": [
+      {
+        "id": "186920007",
+        "serialId": "5570 007 001460",
+        "gcCode": "4731187",
+        "bgInstallationIndicator": "1",
+        "category": "X",
+        "contractType": "CNI1",
+        "contractExpiryDate": "2018-08-22",
+        "applianceType": "CHB",
+        "description": "*C*GREENSTAR 28 I JUNIOR",
+        "flueType": "R",
+        "boilerSize": 28,
+        "cylinderType": 0,
+        "energyControl": "EM",
+        "locationDescription": "KITCHEN",
+        "condition": 1,
+        "numberOfRadiators": 6,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2010,
+        "systemInstallationYear": 1990,
+        "systemDesignCondition": 1,
+        "systemType": 16,
+        "safety": {
+          "applianceSafe": "Y",
+          "flueSafe": "Y",
+          "ventilationSafe": "Y",
+          "installationSafe": "X",
+          "installationTightnessTestSafe": "Y",
+          "actionCode": "X",
+          "noticeStatus": "N",
+          "noticeType": "SS",
+          "report": "CONDENSE NOT BELOW GRID LEVEL"
+        },
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2017-08-15"
+        }
+      },
+      {
+        "id": "238726326",
+        "category": "A",
+        "contractType": "NONE",
+        "applianceType": "INS",
+        "safety": {
+          "applianceSafe": "X",
+          "installationSafe": "Y",
+          "actionCode": "X",
+          "noticeStatus": "N",
+          "noticeType": "SS",
+          "report": "EARTH BONDING AFTER FIRST TEE"
+        }
+      }
+    ]
+  }
+}
+}

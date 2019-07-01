@@ -1,0 +1,89 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-18T12:00:00Z",
+      "modifiedTimestamp": "2018-02-181T18:00:00Z"
+    },
+    "data": {
+      "job": {
+        "id": "0001025743",
+        "customer": {
+          "id": "001162071",
+          "initials": "L",
+          "title": "Mrs",
+          "firstName": "Davis",
+          "homePhone": "07711475555",
+          "address": {
+            "line": ["Lawson Street"],
+            "houseNumber": "69",
+            "town": "cardiff",
+            "county": "wales",
+            "postCodeIn": "5TT",
+            "postCodeOut": "CF10"
+          }
+        },
+        "premises": {
+          "id": "1160036",
+          "address": {
+            "line": ["Lawson Street"],
+            "houseNumber": "69",
+            "town": "cardiff",
+            "county": "wales",
+            "postCodeIn": "5TT",
+            "postCodeOut": "CF10"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "001162071",
+            "initials": "L",
+            "title": "Mrs",
+            "firstName": "Davis",
+            "homePhone": "07711475555",
+            "requesterName": "Mrs Davis"
+          },
+          "risks": [{
+            "reason": "R5",
+            "report": "Cockroach behind appliance",
+            "date": "2017-01-01"
+          }],
+          "unsafeDetail": {
+            "report": "Inadequate earthing. HEC visit arranged",
+            "labelAttachedOrRemoved": "AR",
+            "cappedOrTurnedOff": "NT",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "ownersNameAndDetails": "N/A",
+            "reasons": ["CONS"]
+          }
+        },
+        "visit": {
+          "id": "2063062072001",
+          "date": "2017-03-01T12:00:00Z",
+          "status": "D",
+          "earliestStartTime": "2017-03-01T12:00:00Z",
+          "latestStartTime": "2018-03-01T18:00:00Z"
+        },
+        "tasks": [{
+          "id": "0001025743",
+          "applianceId": "79441499",
+          "jobType": "KF",
+          "applianceType": "DW",
+          "chargeType": "NCH2E3",
+          "status": "D",
+          "skill": "ER",
+          "supportingText": "could not complete customer request",
+          "sequence": 2,
+          "activities": [{
+            "date": "2018-02-16",
+            "status": "IA",
+            "sequence": 1,
+            "engineerName": "Phil Appleby"
+          }]
+        }]
+      }
+    }
+  }
+}

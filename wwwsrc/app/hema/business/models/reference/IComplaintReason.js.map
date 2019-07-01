@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IComplaintReason.ts"],"names":[],"mappings":"","file":"IComplaintReason.js","sourcesContent":["export interface IComplaintReason {\n   complaintReasonCode: string;\n   complaintReasonDescription: string;\n   complaintFixedAmount: number;\n   complaintFixedAmountIndicator: string;\n}\n"],"sourceRoot":"../../../.."}

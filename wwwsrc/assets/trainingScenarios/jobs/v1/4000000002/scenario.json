@@ -1,0 +1,95 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-10T22:33:44Z",
+      "modifiedTimestamp": "2018-02-10T22:33:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "2018729372",
+        "customer": {
+          "id": "100000260",
+          "title": "Mr",
+          "lastName": "Gabriel",
+          "homePhone": "07762476666",
+          "address": {
+            "houseNumber": "29",
+            "line": ["Links Road"],
+            "town": "Spinneyside",
+            "county": "Leicester",
+            "postCodeIn": "2DR",
+            "postCodeOut": "LE43"
+          }
+        },
+        "premises": {
+          "id": "8391126",
+          "address": {
+            "houseNumber": "29",
+            "line": ["Links Road"],
+            "town": "Spinneyside",
+            "county": "Leicester",
+            "postCodeIn": "2DR",
+            "postCodeOut": "LE43"
+          },
+          "contact": {
+            "id": "100000260",
+            "title": "Mr",
+            "lastName": "Gabriel",
+            "homePhone": "07762476666"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-28",
+            "lastElectricVisitDate": "2017-12-28",
+            "safetyNoticeNotLeftReason": "NCS Earthing and damaged contacts"
+          },
+          "risks": [{
+            "reason": "R3",
+            "report": "Angry man",
+            "date": "2014-09-09"
+          }, {
+            "reason": "R1",
+            "report": "Vicious bull terriers",
+            "date": "2018-09-07"
+          }],
+          "unsafeDetail": {
+            "report": "Earth loop failure. Burnt contacts.",
+            "conditionAsLeft": "AR",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "NT",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "ownersNameAndDetails": "N/A",
+            "reasons": ["CONS"]
+          }
+        },
+        "visit": {
+          "date": "2018-02-14T22:33:44Z",
+          "earliestStartTime": "2016-01-01T8:00:00Z",
+          "latestStartTime": "2016-01-01T12:00:00Z",
+          "status": "D"
+        },
+        "tasks": [{
+          "id": "00123410202001",
+          "applianceId": "55063784",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "chargeType": "NCHHEW",
+          "status": "D",
+          "skill": "ER",
+          "sequence": 1,
+          "supportingText": "Flash and bang",
+          "activities": [
+            {
+                "status": "D",
+                "sequence": 1,
+                "date": ""
+            }
+          ]
+        }]
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+    "status": 200,
+    "data": [
+        {
+            "materialCode": "MT10",
+            "description": "Thermostatic Atmosphere Controller",
+            "owner": "BGS",
+            "quantity": 10,
+            "expectedReturnQuantity": 0,
+            "expectedReceiptQuantity": 0,
+            "reservedQuantity": 0,
+            "storageZone": "Staines"
+        }
+    ]
+}

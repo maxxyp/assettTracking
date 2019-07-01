@@ -1,0 +1,236 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "tasks": [{
+                "id": "1376200698001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCHCNI2",
+                "activities": [{
+                    "date": "2018-01-31",
+                    "status": "C",
+                    "engineerName": "(C)RICHARD ALLEN (8)",
+                    "report": "CODE6, ASV COMPLETED, HAS COD, DECLINED HIVE"
+                }]
+            }, {
+                "id": "1373796818001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [{
+                    "date": "2016-12-13",
+                    "status": "C",
+                    "engineerName": "(C)RICHARD ALLEN (8)",
+                    "report": "CODE1,ASV COMPLETED, HAS COD"
+                }]
+            }, {
+                "id": "1330809047001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [{
+                    "date": "2015-11-10",
+                    "status": "C",
+                    "engineerName": "Abdul Alim",
+                    "report": "CODE6-ASV-GR25.41-TELH.0006-L.0000-MB4.53"
+                }]
+            }, {
+                "id": "1340420666001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [{
+                    "date": "2014-10-07",
+                    "status": "C",
+                    "engineerName": "DALE MATTHEWS",
+                    "report": "CODE0- RESET GAS VALVE AND TESTED OK."
+                }]
+            }, {
+                "id": "1317651556001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [{
+                    "date": "2014-08-06",
+                    "status": "C",
+                    "engineerName": "MARK SCOTT",
+                    "report": "CODE0 EXPLAINED TOPPING UP"
+                }]
+            }, {
+                "id": "1317651556002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3ST",
+                "activities": [{
+                    "date": "2014-08-06",
+                    "status": "C",
+                    "engineerName": "MARK SCOTT",
+                    "report": "CODE0 ASV"
+                }]
+            }, {
+                "id": "2054147247001",
+                "jobType": "CR",
+                "applianceType": "CHB",
+                "status": "X",
+                "chargeType": "SLONONE",
+                "activities": [{
+                    "status": "IZ"
+                }, {
+                    "status": "IZ"
+                }]
+            }, {
+                "id": "2054147247002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "X",
+                "chargeType": "NCH1S",
+                "activities": [{
+                    "status": "IZ"
+                }, {
+                    "status": "IZ"
+                }]
+            }],
+            "appliances": [{
+                "id": "220930242",
+                "serialId": "////////",
+                "gcCode": "4731184",
+                "bgInstallationIndicator": "1",
+                "category": "X",
+                "contractType": "CNI2",
+                "contractExpiryDate": "2019-02-03",
+                "applianceType": "CHB",
+                "description": "*C*GREENSTAR 25 SI NG",
+                "flueType": "R",
+                "boilerSize": 25,
+                "cylinderType": 0,
+                "energyControl": "EM",
+                "locationDescription": "KIT",
+                "condition": 1,
+                "numberOfRadiators": 5,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2013,
+                "systemInstallationYear": 1989,
+                "systemDesignCondition": 1,
+                "systemType": 17,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-01-27"
+                }
+            }, {
+                "id": "220930242",
+                "serialId": "////////",
+                "gcCode": "4731184",
+                "bgInstallationIndicator": "1",
+                "category": "X",
+                "contractType": "CNI2",
+                "contractExpiryDate": "2019-02-03",
+                "applianceType": "CHB",
+                "description": "*C*GREENSTAR 25 SI NG",
+                "flueType": "R",
+                "boilerSize": 25,
+                "cylinderType": 0,
+                "energyControl": "EM",
+                "locationDescription": "KIT",
+                "condition": 1,
+                "numberOfRadiators": 5,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2013,
+                "systemInstallationYear": 1989,
+                "systemDesignCondition": 1,
+                "systemType": 17,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-01-27"
+                }
+            }, {
+                "id": "220930242",
+                "serialId": "////////",
+                "gcCode": "4731184",
+                "bgInstallationIndicator": "1",
+                "category": "X",
+                "contractType": "CNI2",
+                "contractExpiryDate": "2019-02-03",
+                "applianceType": "CHB",
+                "description": "*C*GREENSTAR 25 SI NG",
+                "flueType": "R",
+                "boilerSize": 25,
+                "cylinderType": 0,
+                "energyControl": "EM",
+                "locationDescription": "KIT",
+                "condition": 1,
+                "numberOfRadiators": 5,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2013,
+                "systemInstallationYear": 1989,
+                "systemDesignCondition": 1,
+                "systemType": 17,
+                "safety": {
+                    "applianceSafe": "Y",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-01-27"
+                }
+            }, {
+                "id": "236861989",
+                "category": "A",
+                "contractType": "NDI2",
+                "contractExpiryDate": "2019-02-03",
+                "applianceType": "DRA",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0
+            }, {
+                "id": "236861990",
+                "category": "A",
+                "contractType": "PNI2",
+                "contractExpiryDate": "2019-02-03",
+                "applianceType": "PLB",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0
+            }, {
+                "id": "247524587",
+                "category": "A",
+                "contractType": "NONE",
+                "applianceType": "EWR",
+                "description": "Default",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2019
+            }, {
+                "id": "247524588",
+                "category": "A",
+                "contractType": "NONE",
+                "applianceType": "RHC",
+                "description": "Default",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2019
+            }]
+        }
+    }
+}

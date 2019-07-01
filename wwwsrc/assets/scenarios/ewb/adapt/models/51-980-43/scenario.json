@@ -1,0 +1,11 @@
+{
+  "status" : 200,
+  "data" : {
+  "models": [
+    {
+      "imModKey": 9636,
+      "description": "CELT STAR C",
+      "manufacturer": "CHAFFOTEAUX et MAURY"
+    }
+  ]
+} }

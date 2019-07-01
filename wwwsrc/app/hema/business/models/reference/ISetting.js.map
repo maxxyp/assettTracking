@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISetting.ts"],"names":[],"mappings":"","file":"ISetting.js","sourcesContent":["export interface ISetting {\n    key: string;\n    value: any;\n}\n"],"sourceRoot":"../../../.."}

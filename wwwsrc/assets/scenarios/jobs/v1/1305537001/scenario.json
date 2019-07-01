@@ -1,0 +1,80 @@
+{
+    "status": 200,
+    "data": {
+	"meta": {
+		"type": "job",
+		"createdTimestamp": "2017-04-06T15:17:07Z"
+	},
+	"data": {
+		"job": {
+			"id": "1305537001",
+			"engineerId": "0002828",
+			"customer": {
+				"id": "017837313",
+				"initials": "A",
+				"title": "Mr",
+				"firstName": "Amjad",
+				"lastName": "Ghafoor",
+				"address": {
+					"houseNumber": "136",
+					"line": ["Harlaxton Drive"],
+					"county": "Nottingham",
+					"postCodeIn": "1JE",
+					"postCodeOut": "NG7"
+				}
+			},
+			"premises": {
+				"id": "B234490",
+				"address": {
+					"houseNumber": "138",
+					"line": ["Harlaxton Drive"],
+					"county": "Nottingham",
+					"postCodeIn": "1JE",
+					"postCodeOut": "NG7"
+				},
+				"previousVisitCount": 0,
+				"contact": {
+					"id": "019531455",
+					"initials": " ",
+					"lastName": "The Tenant",
+					"homePhone": "01159123456",
+					"workPhone": "01159123456"
+				}
+			},
+			"visit": {
+				"id": "WMW00169032",
+				"date": "2017-04-06T00:00:00Z",
+				"earliestStartTime": "2017-04-06T08:00:00Z",
+				"latestStartTime": "2017-04-06T18:00:00Z"
+			},
+			"tasks": [{
+				"id": "1305537001001",
+				"applianceId": "172774107",
+				"jobType": "AS",
+				"applianceType": "CKR",
+				"chargeType": "NCH2AFI",
+				"status": "D",
+				"skill": "GS",
+				"sequence": 1,
+				"activities": [{
+					"status": "D",
+					"sequence": 1
+				}]
+			}, {
+				"id": "1305537001002",
+				"applianceId": "172774106",
+				"jobType": "AS",
+				"applianceType": "INS",
+				"chargeType": "NCHLI",
+				"status": "D",
+				"skill": "LS",
+				"sequence": 1,
+				"activities": [{
+					"status": "D",
+					"sequence": 1
+				}]
+			}]
+		}
+	}
+}
+}

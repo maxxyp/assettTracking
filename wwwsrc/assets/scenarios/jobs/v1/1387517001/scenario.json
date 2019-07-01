@@ -1,0 +1,97 @@
+{
+  "status": 200,
+  "data": {
+    "data": {
+      "job": {
+        "id": "1387517001",
+        "customer": {
+          "id": "022188948",
+          "lastName": "Mr Gravybelly Doc Lewis",
+          "address": {
+            "houseNumber": "29",
+            "line": [
+              "Hengest Avenue"
+            ],
+            "county": "Esher",
+            "postCodeIn": "0BP",
+            "postCodeOut": "KT10"
+          }
+        },
+        "premises": {
+          "id": "L260048",
+          "address": {
+            "houseNumber": "29",
+            "line": [
+              "Hengest Avenue"
+            ],
+            "county": "Esher",
+            "postCodeIn": "0BP",
+            "postCodeOut": "KT10"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022188948",
+            "initials": " ",
+            "lastName": "Mr Gravybelly Doc Lewis",
+            "homePhone":  "01234 567890"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2016-10-17T00:00:00Z",
+            "safetyNoticeNotLeftReason": "SAFETY NOTICE IS ISSUED"
+          },
+          "risks": [{
+            "reason": "R6",
+            "report": "Wiring not in good condition",
+            "date": "2016-10-17T00:00:00Z"
+          }, {
+            "reason": "R2",
+            "report": "Indoor Access Problems",
+            "date": "2016-10-17T00:00:00Z"
+          }, {
+            "reason": "R1",
+            "report": "Ferocious Dog",
+            "date": "2016-10-13T00:00:00Z"
+          }, {
+            "reason": "R3",
+            "report": "Angry Tenant",
+            "date": "2016-10-13T00:00:00Z"
+          }],
+          "unsafeDetail": {
+            "report": "THIS REPORT IS USED FOR TESTING",
+            "conditionAsLeft": "ID",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "C",
+            "ownedByCustomer": true,
+            "signatureObtained": false,
+            "letterLeft": false,
+            "ownersNameAndDetails": "TESTER IS TESTING",
+            "reasons": [
+              "GMET",
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00150822",
+          "date": "2016-10-17T00:00:00Z",
+          "earliestStartTime": "2016-10-17T08:00:00Z",
+          "latestStartTime": "2016-10-17T18:00:00Z",
+          "specialInstructions": "Call to my Mobile before thirty minutes"
+        },
+        "tasks": [{
+          "id": "1344517001001",
+          "applianceId": "202201040",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "chargeType": "NCH3ST",
+          "status": "D",
+          "skill": "GS",
+          "sequence": 1,
+          "specialRequirement": "TESTING",
+          "supportingText": "BOILER TESTING PURPOSE",
+          "activities": []
+        }]
+      }
+    }
+  }
+}

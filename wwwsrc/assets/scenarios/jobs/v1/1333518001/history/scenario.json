@@ -1,0 +1,396 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-12-12T15:30:42Z",
+      "modifiedTimestamp": "2017-12-12T15:35:44Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1349797001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1349797001002",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1392518001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "IA",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1392518001002",
+          "jobType": "RB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1382518001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1382518001002",
+          "jobType": "BP",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1301997001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1304397001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1360097001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1313518001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1313518001002",
+          "jobType": "BP",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1323518001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "54CODEBhvyvgvgvgvgvyvg"
+            }
+          ]
+        },
+        {
+          "id": "1323518001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "54CODEIninjnunununun"
+            }
+          ]
+        },
+        {
+          "id": "1352518001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "IA",
+              "engineerName": "NAVIN",
+              "report": "71CODEBbyvvgvtvgvg"
+            },
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "54CODEBtbtbvtvtvt"
+            }
+          ]
+        },
+        {
+          "id": "1352518001002",
+          "jobType": "RB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "54CODEGvtvtvfvfvvfvf"
+            }
+          ]
+        },
+        {
+          "id": "1302897001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-10",
+              "status": "C",
+              "engineerName": "RYAN DAVIS",
+              "report": "CODE5ASV COMPLETE ALL TESTS PASS"
+            }
+          ]
+        },
+        {
+          "id": "1302897001002",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2017-10-10",
+              "status": "C",
+              "engineerName": "RYAN DAVIS",
+              "report": "CODE5INSTALL CO DETECT",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "CO Detector BG 7yr Warranty TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555525"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1315697001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-05",
+              "status": "C",
+              "engineerName": "SUNNY SOLANKI",
+              "report": "CODE3Mic booked HSA appt. Adv COD"
+            }
+          ]
+        },
+        {
+          "id": "1382597001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-04",
+              "status": "C",
+              "engineerName": "ROBERT CARAVELLI",
+              "report": "CODE3serviced warm air unit and circ"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202235319",
+          "gcCode": "4317604",
+          "category": "X",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2018-08-16",
+          "applianceType": "WAW",
+          "description": "MINI MONARCH SLIMPACK TY",
+          "flueType": "O",
+          "boilerSize": 25,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "kitchen",
+          "condition": 1,
+          "numberOfRadiators": 14,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 1980,
+          "systemDesignCondition": 6,
+          "systemType": 1,
+          "linkId": "202235319",
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2017-10-10"
+          }
+        },
+        {
+          "id": "202237352",
+          "gcCode": "4100000",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "CHB",
+          "description": "BOILERS - NO INFORMATION",
+          "flueType": "V",
+          "boilerSize": 50,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "bygyvgvgvggv",
+          "condition": 1,
+          "numberOfRadiators": 4,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-12-12"
+          }
+        },
+        {
+          "id": "202235320",
+          "gcCode": "4300000",
+          "category": "A",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2018-08-16",
+          "applianceType": "WAC",
+          "description": "circ",
+          "locationDescription": "kitchen",
+          "installationYear": 2000,
+          "linkId": "202235319",
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        },
+        {
+          "id": "202236912",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "CO DETECT",
+          "locationDescription": "KITCHEN",
+          "installationYear": 2017,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "X"
+          }
+        },
+        {
+          "id": "202237335",
+          "gcCode": "4100000",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "CHB",
+          "description": "BOILERS - NO INFORMATION",
+          "flueType": "V",
+          "boilerSize": 0,
+          "cylinderType": 0,
+          "locationDescription": "somewhere",
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-12-12"
+          }
+        }
+      ]
+    }
+  }
+}

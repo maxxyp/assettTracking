@@ -1,0 +1,11 @@
+.signs {
+    &.risks {
+        border-left: 3px solid orange;
+        padding-left: 1rem;
+    }
+
+    &.hazards {
+        border-left: 3px solid red;
+        padding-left: 1rem;
+    }
+}

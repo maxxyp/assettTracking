@@ -1,0 +1,408 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "tasks": [{
+                "id": "1364003279001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "X",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1364003279002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "X",
+                "chargeType": "NCHCNI1",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1364003279003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "X",
+                "chargeType": "NCHCNI1",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1374287869001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "X",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1374287869002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "X",
+                "chargeType": "NCHCNI1",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1392966429001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCHCNI1",
+                "activities": [{
+                    "date": "2018-04-19",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "CODE8. ATTENDED IGNITION ELECTRODE - NO SPARK. REDUCED PRESSURE - OVERFILLED?"
+                }]
+            }, {
+                "id": "1388903198001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "date": "2018-01-08",
+                    "status": "C",
+                    "engineerName": "Mike Pring",
+                    "report": "LANDLORDS"
+                }]
+            }, {
+                "id": "1388903198002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCHCNI1",
+                "activities": [{
+                    "date": "2018-01-08",
+                    "status": "C",
+                    "engineerName": "Mike Pring",
+                    "report": "ASV CODE0"
+                }]
+            }, {
+                "id": "1384866728001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "date": "2017-01-10",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "CODE8. TIGHTNESS TEST OK"
+                }]
+            }, {
+                "id": "1384866728002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2017-01-10",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "CODE8. ASV OK. T/T@700PPM. RE-ADVISED FLUSH & FILTER"
+                }]
+            }, {
+                "id": "1340709238001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2017-01-02",
+                    "status": "C",
+                    "engineerName": "RAY SMITH",
+                    "report": "CODE0 REPLACE PRESS SENSOR AND TEST",
+                    "parts": [{
+                        "status": "UP",
+                        "description": "WATER PRESSURE SENSOR",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "H71229"
+                    }]
+                }]
+            }, {
+                "id": "1343903238001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2016-12-30",
+                    "status": "C",
+                    "engineerName": "RICHARD HUDD",
+                    "report": "CODE6 PRESSURE SENSOR BLOCKED, REPEAT T&C ADVISE & QUOTE SYSTEM FLUSH"
+                }]
+            }, {
+                "id": "1347626318001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2016-10-08",
+                    "status": "IP",
+                    "engineerName": "NICHOLAS DILLET",
+                    "report": "CODE6/ ATT RF STAT FAULT : F61 PCB FAULT / PARTS REQ / XSOL DIAG PCB",
+                    "parts": [{
+                        "status": "AP",
+                        "description": "PCB",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "725445"
+                    }, {
+                        "status": "AP",
+                        "description": "Fuse 2.0A T2H (10pk)",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "725483"
+                    }]
+                }, {
+                    "date": "2016-10-10",
+                    "status": "C",
+                    "engineerName": "NICHOLAS DILLET",
+                    "report": "CODE6/24.1KW/0.0008/69PPM/9.09%CO2/ REPLACE PCB & RF STAT & RECEIVER ADV CO DET",
+                    "parts": [{
+                        "status": "FP",
+                        "description": "PCB",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "725445"
+                    }, {
+                        "status": "FP",
+                        "description": "Fuse 2.0A T2H (10pk)",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "725483"
+                    }, {
+                        "status": "UP",
+                        "description": "Wireless Programmable Thermostat",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "555062"
+                    }, {
+                        "status": "UP",
+                        "description": "Hive Single Channel Receiver",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "555060"
+                    }]
+                }]
+            }, {
+                "id": "1316215267001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "date": "2016-01-14",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "TIGHTNESS TEST OK."
+                }]
+            }, {
+                "id": "1316215267002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2016-01-14",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "CODE1. 0.0011/99PPM/9.4%. T/T OK"
+                }]
+            }, {
+                "id": "1316215267003",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2016-01-14",
+                    "status": "C",
+                    "engineerName": "STEVE GREEDY",
+                    "report": "CODE1. ATTENDED BEDROOM RAD & TRV"
+                }]
+            }, {
+                "id": "1365749857001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2015-12-28",
+                    "status": "C",
+                    "engineerName": "GLEN JENNINGS",
+                    "report": "CODE6   REPLACED DIVERTER VALVE & AAV, ADVISED POOR WATER QUALITY (SLUDGE NOT COVERED) QUOTED P/F&MB",
+                    "parts": [{
+                        "status": "UP",
+                        "description": "Air Vent c/w Needle",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "E27166"
+                    }, {
+                        "status": "UP",
+                        "description": "Diverter Valve c/w Adaptor",
+                        "quantity": 1,
+                        "quantityCharged": 0,
+                        "stockReferenceId": "726819"
+                    }]
+                }]
+            }, {
+                "id": "1314762296001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "date": "2015-02-05",
+                    "status": "C",
+                    "engineerName": "MARK CHRISTOPHER",
+                    "report": "0 MB DROP"
+                }]
+            }, {
+                "id": "1314762296002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2015-02-05",
+                    "status": "C",
+                    "engineerName": "MARK CHRISTOPHER",
+                    "report": "CODE 1 CHB ASV ADVICE COD AND MAGNETIC FILTER"
+                }]
+            }, {
+                "id": "1382271026001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHLI",
+                "activities": [{
+                    "date": "2014-02-13",
+                    "status": "C",
+                    "engineerName": "REBECCA SANCHEZ",
+                    "report": "CODE6 0MB DROP.METER INSTALL ALL OK"
+                }]
+            }, {
+                "id": "1382271026002",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIS",
+                "activities": [{
+                    "date": "2014-02-13",
+                    "status": "C",
+                    "engineerName": "REBECCA SANCHEZ",
+                    "report": "CODE6 SAFETY TESTS OK,21.52KW,120PPM,9.4%.00013.FREED TRV."
+                }]
+            }, {
+                "id": "1382271026003",
+                "jobType": "IQ",
+                "applianceType": "INS",
+                "status": "C",
+                "chargeType": "NCHNONE",
+                "activities": [{
+                    "date": "2014-02-13",
+                    "status": "C",
+                    "engineerName": "REBECCA SANCHEZ",
+                    "report": "CODE6 QUOTE LEFT FOR FILTER.CUST ADVISED SLUDGE/DIRT FAULTS CHARGED."
+                }]
+            }],
+            "appliances": [{
+                "id": "244658727",
+                "category": "A",
+                "contractType": "LI",
+                "contractExpiryDate": "2018-02-25",
+                "applianceType": "INS",
+                "safety": {
+                    "applianceSafe": "N",
+                    "actionCode": "C",
+                    "noticeStatus": "A",
+                    "noticeType": "ID",
+                    "report": "gas escape at meter inlet."
+                }
+            }, {
+                "id": "591767",
+                "serialId": "VUW GB 245/3-5",
+                "gcCode": "4704431",
+                "bgInstallationIndicator": "0",
+                "category": "X",
+                "contractType": "CNI1",
+                "contractExpiryDate": "2018-02-25",
+                "applianceType": "CHB",
+                "description": "ECOTEC PLUS 824",
+                "flueType": "R",
+                "boilerSize": 23,
+                "cylinderType": 0,
+                "energyControl": "PR",
+                "locationDescription": "BATHROOM COMP",
+                "condition": 1,
+                "numberOfRadiators": 12,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2006,
+                "systemInstallationYear": 1981,
+                "systemDesignCondition": 1,
+                "systemType": 16,
+                "safety": {
+                    "applianceSafe": "N",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y",
+                    "actionCode": "T",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "case seal foam damaged"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-02-18"
+                }
+            }, {
+                "id": "591767",
+                "serialId": "VUW GB 245/3-5",
+                "gcCode": "4704431",
+                "bgInstallationIndicator": "0",
+                "category": "X",
+                "contractType": "CNI1",
+                "contractExpiryDate": "2018-02-25",
+                "applianceType": "CHB",
+                "description": "ECOTEC PLUS 824",
+                "flueType": "R",
+                "boilerSize": 23,
+                "cylinderType": 0,
+                "energyControl": "PR",
+                "locationDescription": "BATHROOM COMP",
+                "condition": 1,
+                "numberOfRadiators": 12,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 2006,
+                "systemInstallationYear": 1981,
+                "systemDesignCondition": 1,
+                "systemType": 16,
+                "safety": {
+                    "applianceSafe": "N",
+                    "flueSafe": "Y",
+                    "ventilationSafe": "Y",
+                    "installationSafe": "X",
+                    "installationTightnessTestSafe": "Y",
+                    "actionCode": "T",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "case seal foam damaged"
+                },
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2018-02-18"
+                }
+            }]
+        }
+    }
+}

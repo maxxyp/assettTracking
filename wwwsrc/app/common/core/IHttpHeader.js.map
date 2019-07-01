@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/IHttpHeader.ts"],"names":[],"mappings":"","file":"IHttpHeader.js","sourcesContent":["export interface IHttpHeader {\n    name: string;\n    value: string;\n}\n"],"sourceRoot":"../.."}

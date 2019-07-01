@@ -1,0 +1,89 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2017-07-21T11:53:18Z",
+            "modifiedTimestamp": "2017-07-21T15:25:36Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1337167001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1328167001001",
+                "jobType": "LD",
+                "applianceType": "CHB",
+                "status": "I",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "status": "D"
+                }]
+            }, {
+                "id": "1367167001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "date": "2017-07-05",
+                    "status": "C",
+                    "engineerName": "MARK WOLLINGTON",
+                    "report": "CODE3Reset time clock"
+                }]
+            }, {
+                "id": "1367167001002",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "date": "2017-07-05",
+                    "status": "C",
+                    "engineerName": "MARK WOLLINGTON",
+                    "report": "CODE2CODE1First visit advised cod"
+                }]
+            }, {
+                "id": "1377167001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "date": "2017-07-05",
+                    "status": "C",
+                    "engineerName": "MARK WOLLINGTON",
+                    "report": "CODE3Adjusted panel advised co detector"
+                }]
+            }, {
+                "id": "1387957001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "status": "C",
+                "chargeType": "NCH3SIM",
+                "activities": [{
+                    "date": "2017-07-04",
+                    "status": "C",
+                    "engineerName": "MARK GARNER",
+                    "report": "CODE1Passed first visit all Ok"
+                }]
+            }],
+            "appliances": [{
+                "id": "202232820",
+                "category": "X",
+                "contractType": "3SIM",
+                "contractExpiryDate": "2099-12-31",
+                "applianceType": "CHB",
+                "description": "Default",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0
+            }]
+        }
+    }
+}

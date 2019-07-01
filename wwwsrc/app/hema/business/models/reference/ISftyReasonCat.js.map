@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISftyReasonCat.ts"],"names":[],"mappings":"","file":"ISftyReasonCat.js","sourcesContent":["export interface ISftyReasonCat {\n   safetyReadingCategoryFlag: string;\n   safetyReasonCategoryReason: string;\n   safetyReasonCategoryCode: string;\n}\n"],"sourceRoot":"../../../.."}

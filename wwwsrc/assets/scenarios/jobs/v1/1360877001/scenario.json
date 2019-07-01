@@ -1,0 +1,87 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-14T09:30:25Z"
+    },
+    "data": {
+      "job": {
+        "id": "1360877001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022209590",
+          "lastName": "Miss Kelly Natasha",
+          "address": {
+            "houseNumber": "48",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L277338",
+          "address": {
+            "houseNumber": "48",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022209590",
+            "initials": " ",
+            "lastName": "Miss Kelly Natasha"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-06-15",
+            "lastElectricVisitDate": "2017-08-01",
+            "safetyNoticeNotLeftReason": "To provide caution"
+          },
+          "risks": [
+            {
+              "reason": "R6",
+              "report": "Shock risk",
+              "date": "2017-08-01"
+            }
+          ],
+          "unsafeDetail": {
+            "reasons": [
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00212182",
+          "date": "2017-08-14T00:00:00Z",
+          "earliestStartTime": "2017-08-14T08:00:00Z",
+          "latestStartTime": "2017-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1360877001001",
+            "applianceId": "202231902",
+            "jobType": "BE",
+            "applianceType": "MW",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

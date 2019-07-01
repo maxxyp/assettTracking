@@ -1,0 +1,50 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>Select a High Value Tool</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="van-stock-hvt-dialog-body">
+            <div class="card details-card details-list">
+                <br />
+                <div class="row">
+                    <div class="col-xs-12 text-xs-center">
+                        <text-box value.bind="searchText" placeholder.bind="'Search (Stock Reference ID, Description)'"></text-box>
+                    </div>
+                </div>
+                <div class="card-block hook-list-data-container van-stock-hvt-container" if.bind="material.length > 0">
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-4">Stock Ref.</div>
+                        <div class="col-xs-8">Description</div>
+                    </div>
+                    <div class="details-list-item no-hover blue-content hook-list-data-item-container" repeat.for="part of material" click.trigger="controller.ok(part)">
+                        <div class="col-xs-4 details-list-item-col">
+                            ${part.materialCode}
+                        </div>
+                        <div class="col-xs-8 details-list-item-col">
+                            ${part.description}
+                        </div>
+                    </div>
+                    <div class="row" hide.bind="hideLoadMore">
+                        <div class="col-xs-12 text-xs-center">
+                            <button class="btn btn-secondary text-center" click.trigger="loadMore()">Load more</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-block hook-list-data-container" if.bind="material.length === 0">
+                    <div class="row">
+                        <div class="col-xs-12 text-xs-center">
+                            <p class="text-center">
+                                No data
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <div class="action-group">
+                <button class="btn btn-secondary" click.trigger="controller.cancel()">Close</button>
+            </div>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

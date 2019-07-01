@@ -1,0 +1,17 @@
+<template>
+    <div class="navbar">
+        <div class="breadcrumb-container">
+            <a  href tabindex="2" if.bind="navHistory.length > 1" class="heading-back-circle hema-icon-circle-arrow-left"
+                 click.trigger="back()"></a>
+            <div class="breadcrumbs" repeat.for="breadcrumb of breadCrumbs">
+                <a href click.trigger="navigateByIndex($index)"
+                      class="breadcrumb-item ${$index === breadCrumbs.length - 1 ? 'last' : 'link'}">${breadcrumb}</a>
+                <span if.bind="$index < breadCrumbs.length - 1">&nbsp;/&nbsp;</span>
+            </div>
+        </div>
+
+        <div class="navbar-logo"></div>
+        <engineer-state></engineer-state>
+        <span class="simulation" show.bind="applicationModeBadge">${applicationModeBadge}</span>
+    </div>
+</template>

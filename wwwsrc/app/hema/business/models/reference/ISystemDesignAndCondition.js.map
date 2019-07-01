@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISystemDesignAndCondition.ts"],"names":[],"mappings":"","file":"ISystemDesignAndCondition.js","sourcesContent":["export interface ISystemDesignAndCondition {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

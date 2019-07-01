@@ -1,0 +1,127 @@
+<template>
+    <div if.bind="helpOverlayService.adminActivated" class="card row help-overlay-admin-container">
+        <div class="row">
+            <div class=" col-xs-12 card-header help-overlay-admin-title" click.trigger="toggleAdmin()">Help Overlay Admin : Overlay Id: ${helpOverlayService.currentStep.id}
+                <i class="fa ${showAdmin === true ? 'fa-chevron-up': 'fa-chevron-down'}  pull-right" aria-hidden="true"></i>
+            </div>
+            <div show.bind="showAdmin" class="col-xs-12">
+                <div class="row card-block help-overlay-admin-form">
+                    <div class="help-overlay-admin-label col-xs-12">
+                        <i class="fa  fa-chevron-right  fa-3 pull-right overlay-nav-button" aria-hidden="true" click.trigger="helpOverlayService.processNextStep(1, true)"></i>
+                        <i class="fa fa-chevron-left   fa-3 pull-right overlay-nav-button" aria-hidden="true" click.trigger="helpOverlayService.processNextStep(-1, true)"></i>
+                    </div>
+                </div>
+                <div class="row card-block help-overlay-admin-form">
+                    <div class="col-xs-1">
+                        <label>Group</label>
+                        <text-box value.bind="helpOverlayService.currentStep.parentStep" change.trigger="refreshOverlay(undefined)" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-3">
+                        <label>Selector</label>
+                        <text-box value.bind="helpOverlayService.currentStep.selector" place-holder="Nothing Selected" click.trigger="setTarget('selector')"
+                            change.trigger="refreshOverlay(undefined)" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>On Next Action</label>
+                        <text-box value.bind="helpOverlayService.currentStep.onNext" place-holder="Nothing Selected" click.trigger="setTarget('nextAction')"
+                            blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Click Class</label>
+                        <drop-down values.bind="onNextClickClassOptions" value.bind="helpOverlayService.currentStep.onNextOkToClickClass" value-property="className"
+                            text-property="className" search-properties.bind="['className']" blur.trigger="helpOverlayService.updateEditedConfigString()" no-filter="true">
+                        </drop-down>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Scroll Selector</label>
+                        <text-box value.bind="helpOverlayService.currentStep.parentScollSelector" place-holder="Nothing Selected" click.trigger="setTarget('parentScroll')"
+                            blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Scroll Offset</label>
+                        <text-box value.bind="helpOverlayService.currentStep.scrollOffset" place-holder="Nothing Selected" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                </div>
+                <div class="row card-block help-overlay-admin-form">
+                    <div class="col-xs-4">
+                        <label>Title</label>
+                        <text-box value.bind="helpOverlayService.currentStep.title" click.trigger="setTarget(undefined)" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>On Previous Action</label>
+                        <text-box value.bind="helpOverlayService.currentStep.onPrevious" place-holder="Nothing Selected" click.trigger="setTarget('previousAction')"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Click Class</label>
+                        <drop-down values.bind="onPreviousClickClassOptions" value.bind="helpOverlayService.currentStep.onPreviousOkToClickClass" value-property="className"
+                            text-property="className" search-properties.bind="['className']" blur.trigger="helpOverlayService.updateEditedConfigString()" no-filter="true">
+                        </drop-down>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Arrow Position</label>
+                        <drop-down values.bind="arrowPositions" value.bind="helpOverlayService.currentStep.arrowPosition" value-property="positionDescription"
+                            text-property="positionDescription" search-properties.bind="['positionDescription']" blur.trigger="helpOverlayService.updateEditedConfigString()" no-filter="true" no-filter="true">
+                        </drop-down>
+                    </div>
+                    <div class="col-xs-2">
+                        <label>Wait Timeout</label>
+                        <text-box type="number" value.bind="helpOverlayService.currentStep.selectorWaitTimeout" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                </div>
+                <div class="row card-block help-overlay-admin-form">
+                    <div class="col-xs-12">
+                        <label>Content</label>
+                        <text-area click.trigger="setTarget(undefined)" value.bind="helpOverlayService.currentStep.content" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-area>
+                    </div>
+                </div>
+                <div class="row card-block help-overlay-admin-form">
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Width</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.width" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Height</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.height" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Top</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.top" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Bottom</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.bottom" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Left</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.left" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                    <div class="col-xs-2">
+                        <div class="help-overlay-admin-label col-xs-1"><label>Right</label></div>
+                        <text-box type="number" max-length="4" value.bind="helpOverlayService.currentStep.right" blur.trigger="helpOverlayService.updateEditedConfigString()"></text-box>
+                    </div>
+                </div>
+                <div class="help-overlay-admin-buttons row">
+                    <div class="col-xs-2"><button class="btn btn-secondary" click.trigger="appendStep()">Append New Step</button></div>
+                    <div show.bind="helpOverlayService.steps" class="col-xs-2"><button class="btn btn-secondary" click.trigger="removeStep(helpOverlayService.currentStep.id)">Remove this step</button></div>
+                    <div show.bind="helpOverlayService.steps" class="col-xs-2"><button class="btn btn-secondary" click.trigger="helpOverlayService.insertStep(helpOverlayService.currentStep.id)">Insert new step</button></div>
+                    <div class="col-xs-2" show.bind="platform === 'wua' && helpOverlayService.editedConfigString">
+                        <button class="btn btn-secondary" click.trigger="saveFile()">Save Config</button>
+                    </div>
+                    <div class="col-xs-2" show.bind="platform === 'web'">
+                        <a show.bind="helpOverlayService.editedConfigString" href="data:text/html,${helpOverlayService.editedConfigString}" download="overlayConfig.json"><button class="btn btn-primary">Download Config</button></a>
+                    </div>
+                    <div class="col-xs-2" show.bind="platform === 'web'">
+                        Load Config: <input type="file" id="fileInput">
+                    </div>
+                    <div class="col-xs-2" show.bind="platform === 'wua'">
+                        <button class="btn btn-secondary" click.trigger="loadFile()">Load Config</button>
+                    </div>
+                    <div class="col-xs-2">
+                        Help Bubble Style
+                        <checkbox is-checked.bind="helpOverlayService.showAllSteps"></checkbox>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

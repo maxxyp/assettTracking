@@ -1,0 +1,91 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-13T14:35:54Z",
+      "modifiedTimestamp": "2018-08-13T14:39:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "1379425001",
+        "engineerId": "6060606",
+        "customer": {
+          "id": "022201831",
+          "initials": " ",
+          "lastName": "Mr Scenario Two Madhavi",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          }
+        },
+        "premises": {
+          "id": "L271314",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022201831",
+            "initials": " ",
+            "lastName": "Mr Scenario Two Madhavi"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          }
+        },
+        "visit": {
+          "id": "WMW00057413",
+          "date": "2018-08-13T00:00:00Z",
+          "earliestStartTime": "2018-08-13T08:00:00Z",
+          "latestStartTime": "2018-08-13T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1379425001001",
+            "applianceId": "202224173",
+            "jobType": "FV",
+            "applianceType": "CHB",
+            "chargeType": "NCH2FIS",
+            "status": "D",
+            "skill": "FV",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1379425001002",
+            "applianceId": "202224215",
+            "jobType": "IA",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

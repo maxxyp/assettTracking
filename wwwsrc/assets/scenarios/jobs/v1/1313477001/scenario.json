@@ -1,0 +1,121 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-07-31T22:53:39Z",
+      "modifiedTimestamp": "2017-08-01T10:46:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "1313477001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022210821",
+          "initials": " ",
+          "lastName": "Mr Kitchen Appliance",
+          "address": {
+            "houseNumber": "29-31",
+            "line": [
+              "Church Gate"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AL",
+            "postCodeOut": "LE1"
+          }
+        },
+        "premises": {
+          "id": "L278489",
+          "address": {
+            "premisesName": "Flat 4",
+            "houseNumber": "29-31",
+            "line": [
+              "Church Gate"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AL",
+            "postCodeOut": "LE1"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022210821",
+            "initials": " ",
+            "lastName": "Mr Kitchen Appliance"
+          },
+          "safetyDetail": {
+            "lastElectricVisitDate": "2017-07-28"
+          },
+          "unsafeDetail": {
+            "report": "Ghghhjjjjjj",
+            "conditionAsLeft": "ID",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "C",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "reasons": [
+              "SYSTP",
+              "ESELI"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00208342",
+          "date": "2017-08-01T00:00:00Z",
+          "earliestStartTime": "2017-08-01T12:58:00Z",
+          "latestStartTime": "2017-08-01T14:45:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1313477001001",
+            "applianceId": "202234045",
+            "jobType": "LJ",
+            "applianceType": "MW",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1313477001002",
+            "applianceId": "202234043",
+            "jobType": "LJ",
+            "applianceType": "DW",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1313477001003",
+            "applianceId": "202234044",
+            "jobType": "BE",
+            "applianceType": "WM",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

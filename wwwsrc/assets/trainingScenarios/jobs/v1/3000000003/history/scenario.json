@@ -1,0 +1,77 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-02-16T08:00:00Z",
+      "modifiedTimestamp": "2018-02-16T18:00:00Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "2018729372",
+        "jobType": "IB",
+        "applicanceType": "CHB",
+        "chargeType": "NCH3ST",
+        "status": "C",
+        "activities": [{
+          "date": "2018-02-14Z",
+          "status": "C",
+          "engineerName": "Mike Coulter",
+          "report": "Boiler and system checked OK after ignition fault repair."
+        }]
+      }],
+      "appliances": [{
+        "id": "55290916",
+        "serialId": "281252/SA/1",
+        "gcCode": "4740604",
+        "category": "X",
+        "bgInstallationIndicator": 0,
+        "contractType": "3ST",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "CHB",
+        "description": "Worcester British Gas 537/i",
+        "flueType": "R",
+        "boilerSize": 12,
+        "cylinderType": 0,
+        "energyControl": "EM",
+        "locationDescription": "KITCHEN",
+        "condition": 1,
+        "numberOfRadiators": 8,
+        "numberOfSpecialRadiators": 2,
+        "installationYear": 2007,
+        "energy control code": "EM",
+        "systemInstallationYear": 1990,
+        "systemDesignCondition": 2,
+        "systemType": 16,
+        "linkId": "55290916",
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "installationSafe": true,
+          "Installation sound": "true"
+        },
+        "chirp": {}
+      }, {
+        "id": "55063888",
+        "category": "A",
+        "serialId": "GasFlame CAT 1N",
+        "gcCode": "3207721",
+        "bgInstallationIndicator": 0,
+        "contractType": "2ST",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "FRE",
+        "description": "GasFlame CAT 1N",
+        "flueType": "R",
+        "locationDescription": "Lounge",
+        "installationYear": 1999,
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "installationSafe": false,
+          "Installation sound": "true"
+        },
+        "chirp": {}
+      }]
+    }
+  }
+}

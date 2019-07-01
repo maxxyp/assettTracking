@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/IHttpHelper.ts"],"names":[],"mappings":"","file":"IHttpHelper.js","sourcesContent":["export interface IHttpHelper {\n    isSuspendingEventFired: boolean;\n    intialise(): void;\n}\n"],"sourceRoot":"../.."}

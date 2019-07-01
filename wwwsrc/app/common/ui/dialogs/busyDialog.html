@@ -1,0 +1,11 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-body>
+            <please-wait complete.bind="false" waiting-text.bind="model.message" show-logo.bind="true"></please-wait>
+            <div class="text-xs-center" if.bind="model.linkMessage">
+                <br/>
+                <div click.trigger="model.linkClicked()" class="btn btn-secondary">${model.linkMessage}</div>
+            </div>
+        </ai-dialog-body>
+    </ai-dialog>
+</template>

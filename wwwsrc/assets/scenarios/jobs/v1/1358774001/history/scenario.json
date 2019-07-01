@@ -1,0 +1,98 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-02-06T12:33:54Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1340774001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1307774001001",
+          "jobType": "FD",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1302774001001",
+          "jobType": "FD",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "IZ"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1371774001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1381774001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312774001001",
+          "jobType": "FD",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202222828",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        }
+      ]
+    }
+  }
+}

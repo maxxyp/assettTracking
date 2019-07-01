@@ -1,0 +1,268 @@
+[
+	{
+		"key": 1,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "burnerPressure",
+		"value": "BP",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 2,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "gasRateReading",
+		"value": "GR",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 3,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFirstRatio",
+		"value": "TF",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 4,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFirstCO",
+		"value": "1F",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 5,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFirstCO2",
+		"value": "3F",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 6,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMaxRatio",
+		"value": "1R",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 7,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMaxCO",
+		"value": "1P",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 8,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMaxCO2",
+		"value": "3C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 9,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMinRatio",
+		"value": "2R",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 10,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMinCO",
+		"value": "2P",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 11,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingMinCO2",
+		"value": "4C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 12,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFinalRatio",
+		"value": "TL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 13,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFinalCO",
+		"value": "2F",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 14,
+		"group": "applianceGasReadingsMaster.preliminaryReadings",
+		"id": "readingFinalCO2",
+		"value": "4F",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 101,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "burnerPressure",
+		"value": "1S",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 102,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "gasRateReading",
+		"value": "2S",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 103,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFirstRatio",
+		"value": "7C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 104,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFirstCO",
+		"value": "8C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 105,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFirstCO2",
+		"value": "9C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 106,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMaxRatio",
+		"value": "3R",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 107,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMaxCO",
+		"value": "3P",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 108,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMaxCO2",
+		"value": "5C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 109,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMinRatio",
+		"value": "4R",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 110,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMinCO",
+		"value": "4P",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 111,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingMinCO2",
+		"value": "6C",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 112,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFinalRatio",
+		"value": "1D",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 113,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFinalCO",
+		"value": "2D",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 114,
+		"group": "applianceGasReadingsMaster.supplementaryReadings",
+		"id": "readingFinalCO2",
+		"value": "3D",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 201,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "mcbFuseRating",
+		"value": "1M",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 202,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "applianceFuseRating",
+		"value": "2M",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 203,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "applianceEarthContinuityReading",
+		"value": "AE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 204,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "leInsulationResistance",
+		"value": "IL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 205,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "neInsulationResistance",
+		"value": "RN",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 206,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "lnInsulationResistance",
+		"value": "SL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 207,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "finalEliReading",
+		"value": "EF",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 208,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "rcdTripTimeReading",
+		"value": "RT",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 209,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "rcboTripTimeReading",
+		"value": "RO",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 210,
+		"group": "applianceElectricalSafetyDetail",
+		"id": "microwaveLeakageReading",
+		"value": "ML",
+		"ctlgEntDelnMkr": "N"
+	}
+]

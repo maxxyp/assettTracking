@@ -1,0 +1,63 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="job-details-page-body">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.reason}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <button-list value.bind="reason" items.bind="reasonButtons"
+                                                 button-width="45%" disabled.bind="!canEdit"></button-list>
+                                </div>
+                            </div>
+                        </div>
+                        <div if.bind="!isHazard" class="row">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.report}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <text-area value.bind="report" placeholder.bind="labels.riskReport"
+                                               disabled.bind="!canEdit"
+                                               maxlength.bind="validationRules.report.maxLength"></text-area>
+                                </div>
+                            </div>
+                        </div>
+                        <div if.bind="isHazard">
+                            <div class="row form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.location}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <text-area value.bind="location" placeholder.bind="labels.riskLocation"
+                                               reading-mode.bind="!canEdit"
+                                               maxlength.bind="validationRules.report.maxLength"></text-area>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group" if.bind="canEdit">
+                    <button class="btn btn-primary" click.trigger="completeOk()" if.bind="isNew"
+                            disabled.bind="isCompleteTriggeredAlready">
+                        ${labels.ok}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="completeCancel()"
+                            if.bind="isNew">
+                        ${labels.cancel}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="undo()" if.bind="!isNew">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn btn-tertiary arrow-blue-right" click.trigger="clear()" if.bind="!isNew">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

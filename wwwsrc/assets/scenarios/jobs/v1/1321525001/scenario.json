@@ -1,0 +1,302 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T06:12:44Z",
+      "modifiedTimestamp": "2018-08-14T06:37:54Z"
+    },
+    "data": {
+      "job": {
+        "id": "1321525001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022201824",
+          "lastName": "Mr Scenario Five Yogs",
+          "address": {
+            "houseNumber": "2",
+            "line": [
+              "Rose Hill Court"
+            ],
+            "county": "Chesterfield",
+            "postCodeIn": "6TT",
+            "postCodeOut": "S44"
+          }
+        },
+        "premises": {
+          "id": "L271307",
+          "address": {
+            "houseNumber": "2",
+            "line": [
+              "Rose Hill Court"
+            ],
+            "county": "Chesterfield",
+            "postCodeIn": "6TT",
+            "postCodeOut": "S44"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201824",
+            "initials": " ",
+            "lastName": "Mr Scenario Five Yogs",
+            "homePhone": "07405374080",
+            "workPhone": "07405374080"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00057440",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1321525001001",
+            "applianceId": "202224178",
+            "jobType": "GU",
+            "applianceType": "CHB",
+            "chargeType": "ALFBNI2",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 11,
+                "sequence": 1,
+                "report": "54CODE dsdsssssssssssssss",
+                "workDuration": 11,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "Packing",
+                    "charge": 80,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E49976"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "O Ring - Pack of 10 14.4x9.6x2.5 mm",
+                    "charge": 308,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E77199"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "Bracket - Vertical Flue Pk5",
+                    "charge": 3524,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "794929"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "Packing",
+                    "charge": 80,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E49976"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "O Ring - Pack of 10 14.4x9.6x2.5 mm",
+                    "charge": 308,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E77199"
+                  },
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "Bracket - Vertical Flue Pk5",
+                    "charge": 3524,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "794929"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1321525001002",
+            "applianceId": "202224177",
+            "jobType": "OL",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 4,
+                "sequence": 1,
+                "report": "62CODE dsdsdddddddddddddddddd",
+                "workDuration": 4,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "Valve Body Flow Switch",
+                    "charge": 1777,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E39696"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "Valve Body Flow Switch",
+                    "charge": 1777,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E39696"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1321525001003",
+            "applianceId": "202224154",
+            "jobType": "SD",
+            "applianceType": "WAW",
+            "chargeType": "SLOBNI2",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 4,
+                "sequence": 1,
+                "report": "71CODE sdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsd",
+                "workDuration": 4,
+                "parts": [
+                  {
+                    "status": "CP",
+                    "description": "PCB Programme Pektron",
+                    "charge": 0,
+                    "quantity": 1,
+                    "stockReferenceId": "E87375"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "PCB Programme Pektron",
+                    "charge": 14938,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E87375"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1321525001004",
+            "applianceId": "202224154",
+            "jobType": "RI",
+            "applianceType": "WAW",
+            "chargeType": "SLFBNI2",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 7,
+                "sequence": 1,
+                "report": "71CODE dssssssssssssssssss",
+                "workDuration": 7,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Primary heat exchanger",
+                    "charge": 20957,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E23731"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1321525001005",
+            "applianceId": "202224154",
+            "jobType": "IB",
+            "applianceType": "WAW",
+            "chargeType": "EXSBNI2",
+            "status": "X",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "XB",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "dsssssssssssssssssssss",
+                "workDuration": 6
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

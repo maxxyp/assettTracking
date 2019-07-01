@@ -1,0 +1,9 @@
+<template>
+    <div class="panel" if.bind="viewState === 0">
+        <please-wait complete.bind="viewState !== 0" waiting-text.bind="viewStateText"></please-wait>
+    </div>
+
+    <div show.bind="viewState === 1">
+        <slot></slot>
+    </div>
+</template>

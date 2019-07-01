@@ -1,0 +1,142 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-20T14:51:19Z",
+      "modifiedTimestamp": "2017-09-20T16:21:09Z"
+    },
+    "data": {
+      "job": {
+        "id": "1360787001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211690",
+          "lastName": "Mrs Natalie Isaac",
+          "address": {
+            "houseNumber": "277",
+            "line": [
+              "Welford Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6BJ",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L279235",
+          "address": {
+            "houseNumber": "277",
+            "line": [
+              "Welford Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6BJ",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211690",
+            "initials": " ",
+            "lastName": "Mrs Natalie Isaac"
+          }
+        },
+        "visit": {
+          "id": "WMW00221792",
+          "date": "2017-09-20T00:00:00Z",
+          "earliestStartTime": "2017-09-20T12:00:00Z",
+          "latestStartTime": "2017-09-20T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1360787001001",
+            "applianceId": "202235429",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-20",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "Tests is fooooo",
+                "workDuration": 0,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E66527"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1360787001002",
+            "applianceId": "202235429",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-20",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "Tessssszztrrf",
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1360787001003",
+            "applianceId": "202235429",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "fixedPriceQuotationAmount": "099900",
+            "sequence": 2,
+            "specialRequirement": "Fixed Quote",
+            "activities": [
+              {
+                "date": "2017-09-20",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "Tessssstgtgvvb",
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

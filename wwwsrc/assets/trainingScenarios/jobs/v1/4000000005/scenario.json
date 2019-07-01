@@ -1,0 +1,73 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-14T22:33:44Z",
+      "modifiedTimestamp": "2018-02-11T22:33:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "1038633623",
+        "customer": {
+          "id": "001162067",
+          "title": "Mrs",
+          "lastName": "Graham",
+          "homePhone": "1162522360",
+          "address": {
+            "houseNumber": "10",
+            "line": ["Finland Road"],
+            "town": "Stockport",
+            "county": "Manchester",
+            "postCodeIn": "5RG",
+            "postCodeOut": "SK1"
+          }
+        },
+        "premises": {
+          "id": "1160032",
+          "address": {
+            "houseNumber": "10",
+            "line": ["Finland Road"],
+            "town": "Stockport",
+            "county": "Manchester",
+            "postCodeIn": "5RG",
+            "postCodeOut": "SK1"
+          },
+          "contact": {
+            "id": "001162067",
+            "title": "Mrs",
+            "lastName": "Graham",
+            "homePhone": "1162522360"
+          }
+        },
+        "visit": {
+          "id": "MW08391159",
+          "date": "2018-02-14T22:33:44Z",
+          "earliestStartTime": "2018-02-11T14:00:44Z",
+          "latestStartTime": "2018-02-11T18:00:44Z"
+        },
+        "tasks": [{
+            "id": "1038633623001",
+            "applianceId": "30885273",
+            "jobType": "BE",
+            "applianceType": "DW",
+            "chargeType": "NCH2E3",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "supportingText": "Soap dispenser leaking"
+          }, {
+            "id": "1038633623002",
+            "applianceId": "30885272",
+            "jobType": "BE",
+            "applianceType": "WM",
+            "chargeType": "NCH2E3",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "supportingText": "Not draining properly"
+        }]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/dialogs/models/errorDialogModel.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,uBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,4CAAgB","file":"errorDialogModel.js","sourcesContent":["export class ErrorDialogModel {\n    public header: string;\n    public errorMessage: string;\n}\n"],"sourceRoot":"../../../.."}

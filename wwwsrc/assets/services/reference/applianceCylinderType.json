@@ -1,0 +1,44 @@
+[
+	{
+		"key": "0",
+		"id": "0",
+		"description": "None",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "1",
+		"id": "1",
+		"description": "Indirect",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "2",
+		"description": "Indirect, including CW storage",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "3",
+		"description": "Direct",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "4",
+		"description": "Thermal Store",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"id": "5",
+		"description": "Unvented",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"id": "6",
+		"description": "Primatic",
+		"ctlgEntDelnMkr": "N"
+	}
+]

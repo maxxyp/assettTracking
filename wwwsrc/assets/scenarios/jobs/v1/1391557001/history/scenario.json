@@ -1,0 +1,241 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-06-23T12:42:51Z",
+      "modifiedTimestamp": "2017-06-26T10:08:18Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1370557001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-22",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "Nfgjfjyfffhjfh"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1370557001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-06-22",
+              "status": "NA",
+              "engineerName": "WENDY"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1380557001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-22",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "Bfhvfhmghjhjh"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1380557001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-06-22",
+              "status": "NA",
+              "engineerName": "WENDY"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1381557001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-23",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "54CODEFfhdrgfxvxdffg"
+            }
+          ]
+        },
+        {
+          "id": "1381557001002",
+          "jobType": "IB",
+          "applianceType": "CKR",
+          "status": "I",
+          "chargeType": "NCH2E1I",
+          "activities": [
+            {
+              "date": "2017-06-23",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "62CODEVbnvhgvngcnccgn"
+            }
+          ]
+        },
+        {
+          "id": "1361557001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-23",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "Fcbdhtfhgfgjvjhv"
+            }
+          ]
+        },
+        {
+          "id": "1361557001002",
+          "jobType": "IB",
+          "applianceType": "CKR",
+          "status": "I",
+          "chargeType": "NCH2E1I",
+          "activities": [
+            {
+              "date": "2017-06-23",
+              "status": "NA",
+              "engineerName": "WENDY"
+            }
+          ]
+        },
+        {
+          "id": "1375457001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-20",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "CODE3Report yet to be updated."
+            }
+          ]
+        },
+        {
+          "id": "1375457001002",
+          "jobType": "IB",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "NCH2E1I",
+          "activities": [
+            {
+              "date": "2017-06-20",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "54CODE62CODE2 jobs in one property"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202232182",
+          "gcCode": "400",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "CHB",
+          "description": ".Unknown-Default",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": true,
+            "installationSafe": true
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-06-14"
+          }
+        },
+        {
+          "id": "202232187",
+          "gcCode": "1205901",
+          "category": "A",
+          "contractType": "2E1I",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "CKR",
+          "description": "CROYDON NATIONAL",
+          "locationDescription": "jhghjghv",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": true,
+            "installationSafe": true
+          }
+        },
+        {
+          "id": "202232183",
+          "category": "A",
+          "contractType": "2DI",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "DRA"
+        },
+        {
+          "id": "202232184",
+          "category": "A",
+          "contractType": "2PI",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "PLB"
+        },
+        {
+          "id": "202232185",
+          "category": "A",
+          "contractType": "HEWI",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "EWR"
+        },
+        {
+          "id": "202232186",
+          "gcCode": "1314804",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-06-13",
+          "applianceType": "HOB",
+          "description": "T.42 U AND T.42 U MK II",
+          "installationYear": 2015
+        }
+      ]
+    }
+  }
+}

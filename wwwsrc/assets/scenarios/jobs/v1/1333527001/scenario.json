@@ -1,0 +1,75 @@
+{
+  "status": 200,
+  "data": {
+    "meta":{
+      "type":"job",
+      "createdTimestamp":"2017-02-02T18:29:25Z"
+    },
+    "data":{
+      "job":{
+        "id":"1333527001",
+        "customer":{
+          "id":"022193677",
+          "lastName":"Mr John Will",
+          "address":{
+            "premisesName":" ",
+            "houseNumber":"21",
+            "line":[
+              "Ardgay Street"
+            ],
+            "county":"Glasgow",
+            "postCodeIn":"7AS",
+            "postCodeOut":"G32"
+          }
+        },
+        "premises":{
+          "id":"L263575",
+          "address":{
+            "houseNumber":"12",
+            "line":[
+              "Campbell Street"
+            ],
+            "county":"Hamilton",
+            "postCodeIn":"6AS",
+            "postCodeOut":"ML3"
+          },
+          "previousVisitCount":0,
+          "contact":{
+            "id":"022193678",
+            "initials":" ",
+            "lastName":"Mr Rock Will",
+            "homePhone":"07574099429",
+            "workPhone":"07424335946"
+          }
+        },
+        "visit":{
+          "id":"WMW00160062",
+          "date":"2017-02-02T00:00:00Z",
+          "earliestStartTime":"2017-02-02T18:00:00Z",
+          "latestStartTime":"2017-02-02T22:00:00Z"
+        },
+        "tasks":[
+          {
+            "id":"1333527001001",
+            "applianceId":"202206540",
+            "jobType":"AS",
+            "applianceType":"FRE",
+            "chargeType":"NCHLIG",
+            "status":"D",
+            "skill":"LS",
+            "sequence":1,
+            "activities":[
+              {
+                "status":"D",
+                "sequence":1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
+
+
+

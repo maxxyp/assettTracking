@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IChirpCode.ts"],"names":[],"mappings":"","file":"IChirpCode.js","sourcesContent":["export interface IChirpCode {\n   key: string;\n   code: string;\n   whenToUse: string;\n   resultingAction: string;\n   meaning: boolean;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

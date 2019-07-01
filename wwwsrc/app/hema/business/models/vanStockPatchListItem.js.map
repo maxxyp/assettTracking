@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/vanStockPatchListItem.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAEA,CAAC;QAAD,4BAAC;IAAD,CAFA,AAEC,IAAA;IAFY,sDAAqB","file":"vanStockPatchListItem.js","sourcesContent":["export class VanStockPatchListItem {\n    public patchCode: string;\n}\n"],"sourceRoot":"../../.."}

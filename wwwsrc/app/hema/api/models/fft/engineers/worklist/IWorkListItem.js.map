@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/worklist/IWorkListItem.ts"],"names":[],"mappings":"","file":"IWorkListItem.js","sourcesContent":["export interface IWorkListItem {\r\n    id: string;\r\n    status: string;\r\n    workType: \"job\" | \"partsCollection\";\r\n    timestamp: string;\r\n}\r\n"],"sourceRoot":"../../../../../.."}

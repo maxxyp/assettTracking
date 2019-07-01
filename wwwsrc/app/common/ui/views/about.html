@@ -1,0 +1,26 @@
+<template>
+    <require from="../converters/dateFormatValueConverter"></require>
+    <div class="card about-card">
+        <div class="card-header card-title">${appName}</div>
+        <img class="pull-right" src="assets/favicon/favicon-96x96.png"/>
+        <div class="card-block">Version: ${version} [${buildType}]</div>
+        <div class="card-block" innerhtml.bind="description"></div>
+        <div class="card-block" innerhtml.bind="copyright"></div>
+    </div>
+    <div class="card" show.bind="!!releaseNotes">
+        <div class="card-header card-title">Release Notes</div>
+        <a class="btn btn-primary  pull-right" click.trigger="toggleReleaseDetail()">
+            <i class="fa fa-${toggleReleaseDetailIcon}-circle"></i>
+            <label>${toggleReleaseDetailText}</label>
+        </a>
+        <div repeat.for="releaseNote of releaseNotes">
+            <div class="card-block">${releaseNote.version} - ${releaseNote.date | dateFormat}</div>
+            <div class="card-block">${releaseNote.summary}</div>
+            <div class="card-block" show.bind="toggleReleaseDetailState" innerhtml.bind="releaseNote.details"></div>
+            <br>
+        </div>
+    </div>
+    <div repeat.for="viewModel of additionalViewModels">
+        <compose view-model="${viewModel.viewModel}" model.bind="viewModel.model"></compose>
+    </div>
+</template>

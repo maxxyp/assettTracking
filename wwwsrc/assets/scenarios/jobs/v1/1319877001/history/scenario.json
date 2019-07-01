@@ -1,0 +1,39 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-17T11:35:00Z",
+      "modifiedTimestamp": "2017-08-17T12:41:34Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1367877001001",
+          "jobType": "HU",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "ALP2SIM",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202234962",
+          "category": "X",
+          "contractType": "2SIM",
+          "contractExpiryDate": "2099-12-31",
+          "applianceType": "BBF",
+          "description": "Default",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "linkId": "202234962"
+        }
+      ]
+    }
+  }
+}

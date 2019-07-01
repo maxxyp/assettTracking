@@ -1,0 +1,53 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="van-stock-parts-collection-header">
+            <span>You have </span>
+            <span style="font-weight: bolder">${headerTitle.partNo}</span>
+            <span>${headerTitle.partWord} ready for collection</span>
+            <span if.bind="headerTitle.returnNo">
+                and
+                <span style="font-weight: bolder">${headerTitle.returnNo}</span>
+                <span>${headerTitle.returnWord} expected to be returned</span>
+            </span>
+        </div>
+
+        <div class="card details-card details-list-item no-pointer no-hover blue-content hook-list-data-item-container"
+             show.bind="viewModel.parts && viewModel.parts.length > 0 ">
+
+            <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container">
+                <div class="col-xs-2">Stock Ref.</div>
+                <div class="col-xs-4">${labels.description}</div>
+                <div class="col-xs-2">Qty</div>
+                <div class="col-xs-2">Area</div>
+                <div class="col-xs-2">Edit</div>
+                <div class="col-xs-1">Verified</div>
+            </div>
+
+            <compose view-model="./partsCollectionGrouped"
+                    model.bind="{
+                        parts: viewModel.parts,
+                        returns: viewModel.expectedReturns,
+                        myVanAreas}">
+            </compose>
+
+            <div class="row">
+                <br />
+                <div class="col-xs-12 text-xs-right" show.bind="show">
+                    <button class="btn btn-primary text-center" click.trigger="confirmParts()"
+                            disabled.bind="!allPartsVerified">
+                        Submit
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="details-list-item disabled"
+             show.bind="!viewModel || !viewModel.parts || viewModel.parts.length === 0">
+            <div class="col-xs-12 details-list-item-col">
+                ${labels.noData}
+            </div>
+        </div>
+
+    </view-state>
+</template>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/status/IJobStatusRequest.ts"],"names":[],"mappings":"","file":"IJobStatusRequest.js","sourcesContent":["import {IJobStatus} from \"./IJobStatus\";\n\nexport interface IJobStatusRequest {\n    data: IJobStatus;\n}\n"],"sourceRoot":"../../../../../.."}

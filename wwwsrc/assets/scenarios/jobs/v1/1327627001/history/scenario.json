@@ -1,0 +1,129 @@
+{
+  "status": 200,
+  "data": {
+    "data": {
+      "tasks": [
+        {
+          "id": "1326627001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1366627001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-02-13",
+              "status": "C",
+              "engineerName": "SOFTWARE",
+              "report": "Testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1366627001002",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3FIS",
+          "activities": [
+            {
+              "date": "2017-02-13",
+              "status": "C",
+              "engineerName": "SOFTWARE"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "158584862",
+          "serialId": "LWY032700009AP",
+          "gcCode": "4107520",
+          "bgInstallationIndicator": false,
+          "category": "X",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2014-10-11",
+          "applianceType": "CHB",
+          "description": "SOLO 3 30 PFL",
+          "flueType": "R",
+          "boilerSize": 12,
+          "cylinderType": 1,
+          "energyControl": "PR",
+          "locationDescription": "KITCHEN",
+          "condition": 1,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 2,
+          "installationYear": 2005,
+          "systemInstallationYear": 2005,
+          "systemDesignCondition": 1,
+          "systemType": 10,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": true,
+            "ventilationSafe": true,
+            "installationTightnessTestSafe": true
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2008-11-26"
+          }
+        },
+        {
+          "id": "158584863",
+          "category": "A",
+          "contractType": "HEFI",
+          "contractExpiryDate": "2014-10-11",
+          "applianceType": "EWR"
+        },
+        {
+          "id": "158669123",
+          "serialId": "XXX",
+          "gcCode": "9900000",
+          "bgInstallationIndicator": false,
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "INSTALLATION GAS",
+          "flueType": "F",
+          "energyControl": "NOCH",
+          "locationDescription": "KITCHEN",
+          "installationYear": 2008,
+          "safety": {
+            "installationSafe": true
+          }
+        },
+        {
+          "id": "203194687",
+          "category": "A",
+          "contractType": "2PI1",
+          "contractExpiryDate": "2014-10-11",
+          "applianceType": "PLB"
+        },
+        {
+          "id": "203194688",
+          "category": "A",
+          "contractType": "2DI1",
+          "contractExpiryDate": "2014-10-11",
+          "applianceType": "DRA"
+        },
+        {
+          "id": "206905194",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "WSP"
+        }
+      ]
+    }
+  }
+}

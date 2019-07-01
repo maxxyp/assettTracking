@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/IFutureTask.ts"],"names":[],"mappings":"","file":"IFutureTask.js","sourcesContent":["export interface IFutureTask {\n    id: string;\n    fieldTaskId: string;\n    jobType: string;\n    applianceType: string;\n    specialRequirement: string;\n    longJobForecastTime: number;\n}\n"],"sourceRoot":"../../../../../.."}

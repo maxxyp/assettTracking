@@ -1,0 +1,127 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="job-details-header">
+            <span class="title"> ${isNew ? labels.newTaskTitle : labels.updateTaskTitle + ' Id : ' + task.id}</span>
+        </div>
+        <div class="card details-card">
+            <div class="card-block">
+                <div class="row">
+                    <div class="form-group">
+                        <span class="col-xs-2">
+                            ${labels.applianceType}
+                        </span>
+                        <span class="col-xs-10">
+                            <drop-down format-text-value="(applianceType) / (locationDescription)"
+                                       values.bind="appliances" value-property="id" text-property="applianceType"
+                                       search-properties.bind="['id','applianceType','description','locationDescription']"
+                                       value.bind="selectedApplianceId"
+                                       disabled.bind="!canEdit || !isFirstVisitActivity"
+                                       readonly="true"
+                                       no-filter="true"
+                                       dropdown-type.one-way="appSettings.dropdownType"
+                                       min-items-to-categorise-smash-buttons.one-way="appSettings.minItemsToCategoriseSmashButtons">
+                                <template replace-part="option-template">
+                                    <div>
+                                        ${item.locationDescription !== "" ? item.applianceType + ' / ' + item.locationDescription : item.applianceType}
+                                    </div>
+                                </template>
+                            </drop-down>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" show.bind="selectedApplianceId && selectedApplianceDescription && selectedApplianceDescription.length > 0">
+                    <div class="form-group">
+                        <div class="col-xs-2">
+                            <label>${labels.description}</label>
+                        </div>
+                        <div class="col-xs-10">
+                            <text-box placeholder="${labels.description}" readonly="true" value.bind="selectedApplianceDescription"></text-box>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" show.bind="actionTypes.length > 0">
+                    <div class="form-group">
+                        <span class="col-xs-2">
+                            ${labels.actionType}
+                        </span>
+                        <span class="col-xs-10">
+                            <drop-down format-text-value="(${catalog.ACTION_TYPE_ID}) - (${catalog.ACTION_TYPE_DESCRIPTION})"
+                                       values.bind="actionTypes"
+                                       value-property.bind="catalog.ACTION_TYPE_ID"
+                                       text-property.bind="catalog.ACTION_TYPE_ID"
+                                       search-properties.bind="[catalog.ACTION_TYPE_ID,catalog.ACTION_TYPE_DESCRIPTION]"
+                                       value.bind="selectedActionType"
+                                       disabled.bind="!canEdit || !isFirstVisitActivity"
+                                       show-error-message.bind=true
+                                       error-message.bind="actionTypeErrorMsg"
+                                       no-filter="true"
+                                       dropdown-type.one-way="appSettings.dropdownType"
+                                       min-items-to-categorise-smash-buttons.one-way="appSettings.minItemsToCategoriseSmashButtons">
+                                <template replace-part="option-template">
+                                    <div>
+                                        ${item[catalog.ACTION_TYPE_DESCRIPTION] ? item[catalog.ACTION_TYPE_ID] + ' - ' + item[catalog.ACTION_TYPE_DESCRIPTION] :
+                                        item[catalog.ACTION_TYPE_ID]}
+                                    </div>
+                                </template>
+                            </drop-down>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" show.bind="chargeTypes.length > 0">
+                    <div class="form-group">
+                        <span class="col-xs-2">
+                            ${labels.chargeType}
+                        </span>
+                        <span class="col-xs-10" show.bind="chargeTypes.length > 1">
+                            <drop-down format-text-value="(${catalog.CHARGE_TYPE_ID}) - (${catalog.CHARGE_TYPE_DESCRIPTION})"
+                                       values.bind="chargeTypes"
+                                       value-property.bind="catalog.CHARGE_TYPE_ID"
+                                       text-property.bind="catalog.CHARGE_TYPE_ID"
+                                       search-properties.bind="[catalog.CHARGE_TYPE_ID,catalog.CHARGE_TYPE_DESCRIPTION]"
+                                       value.bind="selectedChargeType"
+                                       disabled.bind="!canEdit"
+                                       show-error-message.bind=true
+                                       error-message.bind="chargeTypeErrorMsg"
+                                       no-filter="true"
+                                       dropdown-type.one-way="appSettings.dropdownType"
+                                       min-items-to-categorise-smash-buttons.one-way="appSettings.minItemsToCategoriseSmashButtons">
+                                <template replace-part="option-template">
+                                    <div>
+                                        ${item[catalog.CHARGE_TYPE_DESCRIPTION] ? item[catalog.CHARGE_TYPE_ID] + ' - ' + item[catalog.CHARGE_TYPE_DESCRIPTION] :
+                                        item[catalog.CHARGE_TYPE_ID]}
+                                    </div>
+                                </template>
+                            </drop-down>
+                        </span>
+                        <span class="col-xs-10" show.bind="chargeTypes.length === 1">
+                            <text-box placeholder="${labels.chargeType}" readonly.bind="true" value.bind="selectedChargeText"></text-box>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" show.bind="showChargeTypesLoading || showActionTypesLoading">
+                    <span class="col-xs-6"></span>
+                    <span class="col-xs-2">
+                        <i class="fa fa-circle-o-notch fa-spin fa spinner"></i>
+                    </span>
+                    <span class="col-xs-4"></span>
+                </div>
+                <div class="row has-warning" show.bind="noChargeRulesFound">
+                    <div class="col-xs-2 help-block">
+                        ${noChargeRuleMessage}
+                    </div>
+                </div>
+                <div class="action-group" if.bind="canEdit">
+                    <button class="btn btn-primary" click.trigger="saveTask()" disabled.bind="!selectedChargeType || isCompleteTriggeredAlready || noChargeRulesFound">
+                        ${labels.save}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="resetViewModel()">
+                        ${labels.clear}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="cancel()">
+                        ${labels.cancel}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

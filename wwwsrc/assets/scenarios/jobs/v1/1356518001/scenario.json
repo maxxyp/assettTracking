@@ -1,0 +1,102 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-14T16:13:30Z",
+      "modifiedTimestamp": "2017-12-14T16:15:37Z"
+    },
+    "data": {
+      "job": {
+        "id": "1356518001",
+        "customer": {
+          "id": "022212644",
+          "lastName": "Mrs Hether Wilson",
+          "address": {
+            "houseNumber": "6",
+            "line": [
+              "The Plantation"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "5ST",
+            "postCodeOut": "LE8"
+          }
+        },
+        "premises": {
+          "id": "L280106",
+          "address": {
+            "houseNumber": "7",
+            "line": [
+              "The Plantation"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "5ST",
+            "postCodeOut": "LE8"
+          },
+          "previousVisitCount": 66,
+          "chirpAICode": "202237120",
+          "contact": {
+            "id": "022212645",
+            "initials": " ",
+            "lastName": "Mr Kiran Josh"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00252742",
+          "date": "2017-12-14T00:00:00Z",
+          "earliestStartTime": "2017-12-14T08:00:00Z",
+          "latestStartTime": "2017-12-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1356518001001",
+            "applianceId": "202237119",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCH3ST",
+            "status": "C",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-12-14",
+                "status": "C",
+                "engineerName": "EMPLOYEE 3",
+                "chargeableTime": 10,
+                "sequence": 1,
+                "workDuration": 10
+              }
+            ]
+          },
+          {
+            "id": "1356518001002",
+            "applianceId": "202237119",
+            "jobType": "GU",
+            "applianceType": "CHB",
+            "chargeType": "ALF3ST",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-12-14",
+                "status": "IA",
+                "engineerName": "EMPLOYEE 3",
+                "chargeableTime": 10,
+                "sequence": 1,
+                "workDuration": 10
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

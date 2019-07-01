@@ -1,0 +1,101 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-02-18T12:00:00Z",
+      "modifiedTimestamp": "2018-02-18T18:00:00Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "2030510334",
+        "jobType": "AS",
+        "applicanceType": "WAW",
+        "chargeType": "NCH3ST",
+        "status": "D",
+        "activities": [{
+          "date": "2018-02-016Z",
+          "status": "D",
+          "engineerName": "Phil Appleby",
+          "report": "MI and system all OK."
+        }]
+      }],
+      "appliances": [{
+        "id": "55063789",
+        "contractType": "1S",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "WAC",
+        "linkId": "55063781",
+        "installationYear": "1987",
+        "locationDescription": "Lounge",
+        "description": "Warm Air Circulator",
+        "safety": {
+          "applianceSafe": true,
+          "flue safe": "false",
+          "installation safe": "true",
+          "installation sound": "false",
+          "actionCode": "A",
+          "date": "2018-02-18Z"
+        }
+      }, {
+        "id": "55063781",
+        "contractType": "3ST",
+        "contractExpiryDate": "2099-12-31Z",
+        "bgInstallationIndicator": "N",
+        "gcCode": "4341634",
+        "applianceType": "WAW",
+        "flueType": "O",
+        "linkId": "55063781",
+        "installationYear": "1987",
+        "description": "J&S J25-32R Mk3/MAF/JAN",
+        "locationDescription": "lounge",
+        "condition": "1",
+        "boilerSize": "25",
+        "numberOfRadiators": "0",
+        "energyControl": "TS",
+        "systemInstallationYear": "1987",
+        "systemType": "1",
+        "systemDesignCondition": "2",
+        "cylinderType": "0",
+        "numberOfSpecialRadiators": "0",
+        "safety": {
+          "applianceSafe": true,
+          "flue safe": "true",
+          "installation safe": "true",
+          "installation sound": "true",
+          "actionCode": "X",
+          "date": "2018-02-18Z"
+        },
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2016-01-01Z"
+        }
+      }, {
+        "id": "79441461",
+        "contractType": "2E3",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "WM",
+        "gcCode": "WM34219",
+        "flueType": "R",
+        "locationDescription": "Kitchen",
+        "installationYear": "2011",
+        "serialId": "110214895",
+        "decription": "Aquarius WML540GUK",
+        "linkId": "79441459",
+        "safety": {
+          "applianceSafe": true,
+          "flue safe": "false",
+          "installation safe": "true",
+          "installation sound": "false",
+          "vent satisfactory": "false",
+          "actionCode": "A",
+          "date": "2018-02-18Z"
+        },
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2016-01-01Z"
+        }
+      }]
+    }
+  }
+}

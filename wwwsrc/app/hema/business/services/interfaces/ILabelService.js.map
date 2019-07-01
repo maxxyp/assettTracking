@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ILabelService.ts"],"names":[],"mappings":"","file":"ILabelService.js","sourcesContent":["export interface ILabelService {\n    getGroup(groupKey: string): Promise<{ [key: string]: string}>;\n    getGroupWithoutCommon(groupKey: string): Promise<{ [key: string]: string}>;\n}\n"],"sourceRoot":"../../../.."}

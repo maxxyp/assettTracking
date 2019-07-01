@@ -1,0 +1,55 @@
+{
+  "status": 200,
+  "data" : {
+    "attributes": [
+      {
+        "attributeType": "GCNumber",
+        "attributeValue": "41-394-73"
+      },
+      {
+        "attributeType": "appType",
+        "attributeValue": "Gas Central Heating "
+      },
+      {
+        "attributeType": "appSubType",
+        "attributeValue": "Wall & Floor Mounted Boilers"
+      },
+      {
+        "attributeType": "appFuel",
+        "attributeValue": "Gas Appliances"
+      },
+      {
+        "attributeType": "GCVariant",
+        "attributeValue": "A"
+      },
+      {
+        "attributeType": "appVersionStatus",
+        "attributeValue": "Withdrawn"
+      },
+      {
+        "attributeType": "includeInSIS",
+        "attributeValue": "True"
+      },
+      {
+        "attributeType": "SEDBUKRating",
+        "attributeValue": "X"
+      },
+      {
+        "attributeType": "publishedEfficiency",
+        "attributeValue": "55"
+      },
+      {
+        "attributeType": "ceasedProduction",
+        "attributeValue": "31/12/1968"
+      },
+      {
+        "attributeType": "sourceID",
+        "attributeValue": "12485"
+      },
+      {
+        "attributeType": "optidescription",
+        "attributeValue": "concordno2basicboiler"
+      }
+    ]
+  }
+}

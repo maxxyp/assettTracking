@@ -1,0 +1,17 @@
+collapsible {
+  .header {
+    background-color: transparent !important;
+    padding-left: 0 !important;
+    border-bottom: solid 1px #d6dfef !important;
+
+    .icon {
+      float: none;
+      color: #005eb8;
+    }
+
+    .acc-heading-text {
+      color: #005eb8;
+      font-weight: bold;
+    }
+  }
+}

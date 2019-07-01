@@ -1,0 +1,26 @@
+.swipe-container {
+    overflow-x: auto;
+    overflow-y: hidden;
+    width:100%;
+    -ms-scroll-snap-type: mandatory;
+    -ms-scroll-snap-points-x: snapInterval(0%, 100%);
+    position:relative;
+    display:inline-block;
+        &.disable-scroll{
+            overflow-x: hidden;
+        }
+        .swipe-content {
+        -ms-scroll-chaining:none;
+        -ms-content-zooming: zoom;
+        -ms-content-zoom-limit-min: 100%;
+        -ms-content-zoom-limit-max: 100%;
+        -ms-overflow-style: none;
+        overflow: auto;
+        position:relative;
+        .slider-item{
+            float:left;
+        }
+    }   
+}
+
+       

@@ -1,0 +1,7 @@
+<template bindable="catalog, code">
+    <span if.bind="code">
+        <catalog-lookup catalog="${catalog.JC_SERVICE_LEVEL_CODE}" key-field="${catalog.JC_SERVICE_LEVEL_CODE_ID}"
+                        description-field="${catalog.JC_SERVICE_LEVEL_CODE_DESCRIPTION}"
+                        value.bind="code.substring(3,code.length)"></catalog-lookup>
+    </span>
+</template>

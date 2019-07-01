@@ -1,0 +1,217 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-14T14:59:47Z",
+      "modifiedTimestamp": "2017-09-14T16:28:15Z"
+    },
+    "data": {
+      "job": {
+        "id": "1368487001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211559",
+          "lastName": "Mr Test Data Fourteen",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Belton Street"
+            ],
+            "county": "Loughborough",
+            "postCodeIn": "9AB",
+            "postCodeOut": "LE12"
+          }
+        },
+        "premises": {
+          "id": "L278068",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Belton Street"
+            ],
+            "county": "Loughborough",
+            "postCodeIn": "9AB",
+            "postCodeOut": "LE12"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022211559",
+            "initials": " ",
+            "lastName": "Mr Test Data Fourteen"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00219352",
+          "date": "2017-09-14T00:00:00Z",
+          "earliestStartTime": "2017-09-14T12:00:00Z",
+          "latestStartTime": "2017-09-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1368487001001",
+            "applianceId": "202233174",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "CPOZAW3",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 3,
+            "activities": [
+              {
+                "date": "2017-09-14",
+                "status": "IP",
+                "engineerName": "NEIL",
+                "chargeableTime": 25,
+                "sequence": 1,
+                "report": "54CODECODE0Fffgggggggggggggh",
+                "workDuration": 25,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Filter - Fan Oven Element E51256",
+                    "charge": 2756.0,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "E51256"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Filter - Fan Oven Element E17712",
+                    "charge": 2120.0,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "E17712"
+                  },
+                  {
+                    "status": "FP",
+                    "description": "Shelf - Wire 779850",
+                    "charge": 1330.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "779850"
+                  }
+                ]
+              },
+              {
+                "date": "2017-09-14",
+                "status": "IP",
+                "engineerName": "NEIL",
+                "chargeableTime": 15,
+                "sequence": 2,
+                "report": "62CODELullkklllllll",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Filter - Fan Oven Element E51256",
+                    "charge": 2756.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E51256"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Filter - Fan Oven Element E17713",
+                    "charge": 2121.0,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "E17713"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "NU",
+                    "charge": 0.0,
+                    "quantity": 2,
+                    "stockReferenceId": "E17713"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Feet - Wire Rack - High H58005",
+                    "charge": 187.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "H58005"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Motor - 3 Wire - 348 Type 648041",
+                    "charge": 9077.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "648041"
+                  },
+                  {
+                    "status": "FP",
+                    "description": "Shelf - Wire 779850",
+                    "charge": 1330.0,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "779850"
+                  },
+                  {
+                    "status": "FP",
+                    "description": "Shelf - Wire 779850",
+                    "charge": 1330.0,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "779850"
+                  },
+                  {
+                    "status": "CP",
+                    "description": "Wax Sensor",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "779850"
+                  },
+                  {
+                    "orderDate": "2018-08-07",
+                    "status": "NU",
+                    "description": "Wax Sensor",
+                    "charge": 0.0,
+                    "quantity": 0,
+                    "stockReferenceId": "779850"
+                }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 3,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Feet - Wire Rack - High",
+                    "charge": 187.0,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "H58005"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Motor - 3 Wire - 348 Type",
+                    "charge": 9077.0,
+                    "quantity": 4,
+                    "quantityCharged": 4,
+                    "stockReferenceId": "648041"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

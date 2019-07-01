@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IApplianceCylinderType.ts"],"names":[],"mappings":"","file":"IApplianceCylinderType.js","sourcesContent":["export interface IApplianceCylinderType {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

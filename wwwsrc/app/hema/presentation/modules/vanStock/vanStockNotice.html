@@ -1,0 +1,29 @@
+<template>
+	<ai-dialog>
+		<ai-dialog-header>
+			<label><i  class="vanstock-header-icon hema-icon-vanstock"></i><div class="vanstock-heading-text">${labels.partAvailability}</div></label>
+		</ai-dialog-header>
+		<ai-dialog-body>
+			<div>
+                <p>
+				<h1>
+					${part.stockReferenceId} : ${part.description}, ${labels.vanstockAvailable}
+				</h1>
+                </p>
+			</div>
+			<div class="card details-card row details-list">
+				<div class="row details-list-item details-list-item-header">
+					<div class="col-xs-4 details-list-item-col">${labels.name}</div>
+					<div class="col-xs-4 details-list-item-col">${labels.phoneNumber}</div>
+				</div>
+				<div class="row" repeat.for="engineer of part.patchVanStockEngineers ">
+					<div class="col-xs-4 details-list-item-col">${engineer.name}</div>
+					<div class="col-xs-4 details-list-item-col">${engineer.phone}</div>
+				</div>
+			</div>
+		</ai-dialog-body>
+		<ai-dialog-footer>
+			<button class="btn btn-primary" click.trigger="controller.ok()">${labels.ok}</button>
+		</ai-dialog-footer>
+	</ai-dialog>
+</template>

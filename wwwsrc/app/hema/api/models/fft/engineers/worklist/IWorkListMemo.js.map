@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/worklist/IWorkListMemo.ts"],"names":[],"mappings":"","file":"IWorkListMemo.js","sourcesContent":["export interface IWorkListMemo {\n    id: string;\n    memo: string;\n}\n"],"sourceRoot":"../../../../../.."}

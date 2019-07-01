@@ -1,0 +1,94 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+  "data": {
+    "job": {
+      "id": "2083223617",
+      "customer": {
+        "id": "10000254",
+        "initials": "F",
+        "title": "Mr",
+        "lastName": "Winchester",
+        "homePhone": "07761850932",
+        "address": {
+          "houseNumber": "45",
+          "line": [
+            "Canal Street"
+          ],
+          "town": "Windsor",
+          "county": "Middsx",
+          "postCodeIn": "5DG",
+          "postCodeOut": "SL4"
+        }
+      },
+      "premises": {
+        "id": 8391120,
+        "address": {
+          "houseNumber": "45",
+          "line": [
+            "Canal Street"
+          ],
+          "town": "Windsor",
+          "county": "Middsx",
+          "postCodeIn": "5DG",
+          "postCodeOut": "SL4"
+        },
+        "previousVisitCount": 0,
+        "contact": {
+          "id": "10000254",
+          "initials": "F",
+          "title": "Mr",
+          "firstName": "F",
+          "homePhone": 7761850932,
+          "lastName": "Winchester"
+        }
+      },
+      "visit": {
+        "id": "WMW00163555",
+        "date": "2017-07-24T00:00:00Z",
+        "earliestStartTime": "2017-07-24T08:00:00Z",
+        "latestStartTime": "2017-07-24T18:00:00Z",
+        "specialInstructions": "Landlord Safety Check"
+      },
+      "tasks": [
+        {
+          "id": "2083223617001",
+          "applianceId": "55063775",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "chargeType": "NCH3ST",
+          "status": "D",
+          "skill": "GS",
+          "sequence": 1,
+          "activities": [
+            {
+              "status": "D",
+              "sequence": 1
+            }
+          ]
+        },
+        {
+          "id": "2083223617002",
+          "applianceId": "55063776",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "chargeType": "NCHLI",
+          "status": "D",
+          "skill": "LS",
+          "sequence": 1,
+          "activities": [
+            {
+              "status": "D",
+              "sequence": 1
+            }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

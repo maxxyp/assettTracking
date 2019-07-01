@@ -1,0 +1,336 @@
+DONE
+====
+- figure out material storage vs business model
+- figure out acknowledgements storage models
+- business model and access
+- daily clear-down logic
+- isPolling lock! - don't bother, should not need
+- apply local and server adjustments
+- got to the transfers bit
+- tell TEWB about stockRefId plus jobId PK
+We need a getMaterialRequests method
+ - need to store engineer name in the adjustment and surface it!
+-getReturns
+
+Clear down logic is not right, we need to know when we are good to reload caches
+- what if we do not have connection.... but do on worklist and start work...?
+- we might not even be able to work!!!
+- the getMaterial stuff might need to crunch down multiples, rather than find()
+- Think hard about bindable vs non-bindable
+
+- materialBase is a rubbish name, and we might not need it if we sort the quantitiy* object out
+- talk to TEWB about binding and updating models directly - yes or no?
+
+- Should reservations have a jobId? - no, don't think so
+
+- revisit cache expiry on search
+
+- seam API
+
+- [4] Toggle
+
+[6] event, logging and alerts when stuff happens
+-mutation on actions
+- mutation on searches
+
+[5] header in all the calls esp actions
+
+[4] should resilience asset tracking calls stop EOD?
+
+[7] config
+
+[8] hook into job update
+
+IMMEDIATE TODOS
+===============
+
+[6] unique keys - composite?!
+
+[2] tests - include search forceRefreshing
+- batter with double calls, calls after previous equivalent withdrawn or fulfilled calls
+- double-calls, and calls against non-existing adjustment! or uniqueness (i.e. exists first check before we insert on some)
+
+- need to tell testers to try a reserve -> (withdraw | complete) -> reserve again for same part
+
+[9] check all methods for null or nested null blow ups, and for violations of proper story (i.e. transfer without a reservation)
+
+[10] - the confirm-style events are not really tested in the scneario/integration test...
+
+[10] does a search that refreshes but can't get newer data still work on the ui?
+    - think the sear
+[11] Test network change event on G1
+
+[12] - do we need a refresh everything i.e. hit full materials again?
+
+Register* calls
+- plug in consumption and return from job update
+- return signature of the register*
+- none of register* calls need to be promisey
+
+- we are using guids as server key but not on our internal methods... hmm
+
+- check api calls and double check to logic of all the register* methods
+- error policy and logging approach throughout all of the things that happen
+
+- finish and refactor scruffy search code
+- refactor applyRemoteActions to be cleaner, currently there is mixed updating
+- config driven polling interval and cleardown
+- update all app.configs
+
+- have we got the PK right, would the transfer need a jobId too?
+    - at the moment this is
+
+- make sure onboarding process is clear, what should appear in which endpoint ans when to let us know the engineer can use AT
+- config override (Howard's override should save) - check all the configs
+
+APIs
+====
+ https://ih2blxfxue.execute-api.eu-west-2.amazonaws.com/dev-sandbox
+
+
+
+STUFF TO TELL TEAM
+==================
+- tell TEWB about stockRefId plus jobId PK
+- check that it is always uppercase stockRefIds?
+- if we get an api method hit (i.e. receipt ) that does not match local data, do we still send it? I think so...
+
+STUFF TO TELL PULSE
+===================
+    - proactive validation - Leicester
+    - reservations -> transfer flow
+        - withdrawn reservations will disappear
+    -  reservation disappears when transferred?
+
+    - parts receipted, reservations will disappear?
+    - quantitiy
+
+    - PKs:  GUIDS and shape of actions
+        - they eed to tell us composite keys or uid
+
+    - PKs: jobId on the shape of materials
+
+    can we expect to see updates on collection, reservation, transfer -yes
+        - when collected items leave dispatches
+
+    zones
+    - can there be more thanies one zone for a
+
+    - shape of search and materials
+
+    - toggle spec
+
+    - headers need to spec
+        - correlation guid
+
+- high value tools as a separate array on the material?
+
+    - will a parts collection item be in the materials endpoint? so we know it's description etc.
+        - anurag to tell us, but assume no
+JOBID
+
+    - if not can the description be attached to the actions record.
+    - please guids on stuff coming down (do we actuslly need?)
+    - request can be retracted (and disappear), not updated quantity
+-  check that it is always uppercase stockRefIds?
+    - collate examples of the json for each call, incoming and outgoing
+    - search result needs engineer id, more fields
+        - we will send a list of fields
+    - exhaustive list of expected behaviours of each endpoint (i.e. when full stock endpoint gets updated, what should have happened to the actions stuff)
+    - jobIds are a nested array on a single stockRefId line????
+    - WE MIGHT NEED TO CHANGE MODEL !! so that jobIds are a nested array on a single stockRefId line
+        - consider the material extra quantities as another object that sits next to the material
+
+- define the toggle behaviour
+    - if there are items in the table then yes
+- what can and cannot be updated
+- is there a return reason field?
+- engineer sick absent
+- we need a spec for toggle behaviour
+
+ADJUSTMENTS
+===========
+Parts Collection
+- received action
+    add ACKNOWLEDGED action into adjustment actions
+    return core material, augment with parts collection action
+- receipted and/or returned
+    ** update core material (if any set as received)
+    flag action as FULFILLED
+    return core material, augment (only returns)
+
+Request and Transfer
+- made one
+    add UNACKNOWLEDGED request adjustment action
+    return core material, augment with action
+- requester acked by server IN ENDPOINT
+    update request record to be ACKNOWLEDGED
+    return core material, augment with action
+- requester deletes STILL IN ENDPOINT!
+    flag record as DELETED UNACKNOWLEDGED
+    return core material, augment with action (but ignore)
+
+- request received first time by donor IN ENDPOINT
+    add request ACKNOWLEDGED adjustment action
+    return core material, augment with action
+- removed from server (donor or requester)
+    delete request
+    return core material, augment with action (but nothing there)
+
+- transfered (I am receiving and hitting api)
+    ** update core material
+    add UNACKNOWLEDGED transfer in adjustment section
+    return core material, augment with action (but ignore it)
+- transfered (I am receiving and server now knows)
+    flag adjustment record as ACKNOWLEDGED
+    return core material, augment with action (but ignore it)
+
+- transfered (I have given and server is telling me that I have)
+    ** update core material
+    store flag action as a ACKNOWLEDGED action
+    (request should delete itself)
+    return core material, augment with action (but nothing there)
+
+Return
+- made one
+    add ACKNOWLEDGED request record (although nothing happens after this)
+    return core material, augment with action
+
+Consumption
+- made one
+    ** update core material
+
+8 Jan at Leicester Meeting
+==========================
+we will send a return
+- the return api will be called for OTJ parts during job update - as we are doing
+- the return api will be called for OTV parts separately - as we are doing
+A - on collection, we send receipt call but then immediately send a return
+- there may be a return reason
+
+400 - validation fails on models wrong
+Action - logic for validation
+
+21st Jan at Leicester Meeting
+=============================
+
+Resilience
+    /   - we do not need to pay attention to validation
+
+General
+- no top-level arrays
+- they will add a guid
+
+Validation -
+- we need to pay attention to validation, quantities etc.
+
+Materials
+- no jobId apart from later on in response to our daily activity
+
+Zone
+- prune the fields
+- one-to-many problems!!! consume the same part on two different jobs
+
+Actions -> Collections
+- add a zone field, we will code up this field
+- Chris to clarify what happens to a fulfilled dispatch
+
+Receipt
+- we need to include all of Harj's fields in thr Calidus spec
+- Chris will ask about jobId and flatten the structure
+- why does our own api code have a non-nullable jobId (but return is nullable jobId)
+
+Return
+- same as receipt, flatten and add jobId
+- we need a set of reason codes
+
+Search
+- lat lon to be added as well as number
+- engineer name and phone and email
+
+Reserve
+- drop description
+
+Actions - Reserved
+- we need engineer name
+A - we will remove the reservation by hitting a separate call - Chris to double check
+
+Transfer
+- storage zones optional
+- drop description
+
+Actions -> transferred
+- we get the new array,
+
+In-day job-swap
+-
+
+Staines 23rd Jan
+================
+
+Summing up actions that come up - we might have complete duplicates
+    Calidus do not care about jobIds, materials download will not have job Ids so what happens then?? A - see if we can make this stick together.
+
+All calls:
+    A - Keep owner in the calls - owner is always BGS
+
+Zone:
+    Zone just a put, do not pass description
+    We will not send quantity on a zone update
+
+Return:
+    A - build the reason code in, and OTJ returns to remove WMIS-generated
+    are we doing the return bit right, should be recipet everything and then return broken ones?
+
+Receipt:
+    A - NEED TO DOUBLE CHECK RETURN LOGIC (DO WE RECEIPT AND RETURN, OR JUST RETURN)
+
+Tools:
+    A - separate api endpoint; we need to build this in - a drop-down lookup or something
+
+Double dispatch might happen
+    we may need to group stuff when taking in actions (dispatches, transfers)
+
+Unreserve - this is a PUT to the endpoint
+
+Data
+    A - cook up some job ids for Prasnatha
+
+Consumption
+    we might not have jobId in some cases, so we need a fallback to using van stock when consuming a
+
+AAAA - Field walk throughout
+
+
+
+
+
+28 Jan Missing fields
+=====================
+
+GET HVT:
+    OK, but top-level needs to be an object
+
+GET Materials:
+    OK, but top-level needs to be an object (jobId, but we know about that)
+
+GET Search:
+    top-level needs to be an object
+    Missing fields:
+        engineerName
+        phone
+        distance
+
+GET Actions:
+    dispatchedMaterials:
+        need owner (helps with not hardcoding)
+
+    reservedMaterials:
+        need sourceEngineerName
+        need sourceEngineerPhone
+        need destinationEngineerName
+        need destinationEngineerPhone
+
+    transferredMaterials:
+        need sourceEngineerName
+        need destinationEngineerName

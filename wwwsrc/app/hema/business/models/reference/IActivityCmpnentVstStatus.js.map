@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IActivityCmpnentVstStatus.ts"],"names":[],"mappings":"","file":"IActivityCmpnentVstStatus.js","sourcesContent":["export interface IActivityCmpnentVstStatus {\n   status: string;\n   statusDescription: string;\n   jobStatusCategory: string;\n}\n"],"sourceRoot":"../../../.."}

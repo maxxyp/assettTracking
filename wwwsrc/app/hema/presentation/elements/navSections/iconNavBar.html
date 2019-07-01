@@ -1,0 +1,30 @@
+<template>
+    <div class="fade-in-content">
+        <a class="nav-bar-icon-item ${navTitle === row.title ? 'active' : ''}" repeat.for="row of router.navigation"
+           href click.trigger='navigateTo(row)'>
+            <div class=" ${navTitle === row.title ? 'active' : ''}">
+                <div class="nav-bar-icon ${row.config.settings.icon} relative">
+                    <badge value.bind="row.config.settings.badgeCount" show-count.one-time="row.config.settings.showCount"></badge>
+                </div>
+                <div class="nav-bar-icon-title  ">${row.title}</div>
+                <div class="item-triangle ${navTitle === row.title ? 'active' : ''}"></div>
+            </div>
+        </a>
+        <a class="nav-bar-icon-item" href click.trigger='helpOverlayService.toggleHelp()'>
+            <div>
+                <div class="nav-bar-icon help-overlay-icon ${helpOverlayService.helpActivated? 'hema-icon-question-mark-circle-active help-overlay-icon-active' : 'hema-icon-question-mark-circle'}">
+                </div>
+                <div class="nav-bar-icon-title  "> Help ${helpOverlayService.helpActivated? 'On' : 'Off'}</div>
+            </div>
+        </a>
+        <a if.bind="platform === 'web' && helpOverlayService.helpActivated" class="nav-bar-icon-item" href
+           click.trigger='helpOverlayService.toggleHelpAdmin()'>
+            <div>
+                <div class="nav-bar-icon icon-hema-superuser">
+                </div>
+                <div class="nav-bar-icon-title  ">Help Admin ${helpOverlayService.adminActivated? 'On' : 'Off'}</div>
+            </div>
+        </a>
+        <div class="nav-bar-version">${appVersion}<br/>${buildType}</div>
+    </div>
+</template>

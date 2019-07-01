@@ -1,0 +1,85 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "jobHistory",
+			"createdTimestamp": "2017-05-10T11:41:45Z"
+		},
+		"data": {
+			"tasks": [{
+				"id": "0001025743001",
+				"jobType": "BE",
+				"applianceType": "WM",
+				"status": "C",
+				"chargeType": "NCH2E5",
+				"activities": [{
+					"date": "2017-05-05T00:00:00Z",
+					"status": "C",
+					"engineerName": "Chris Johnson",
+					"report": "Replaced door seal."
+				}]
+			}],
+			"appliances": [{
+				"id": "79441461",
+				"gcCode": "7352280",
+				"category": "A",
+				"applianceType": "WM",
+				"contractType": "2E5",
+				"description": "Bosch",
+				"locationDescription": "Utility",
+				"installationYear": 2013
+			}, {
+				"id": "79441459",
+				"gcCode": "9000000",
+				"category": "A",
+                "applianceType": "KAC",
+                "contractType": "2E5",
+				"contractExpiryDate": "2099-12-31Z",
+				"description": "Appliance Cover",
+				"locationDescription": "House",
+				"installationYear": 2015,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "X",
+					"installationSafe": "Y",
+					"installationsound": "X",
+					"ventilationSafe": "X"
+				}
+			}, {
+				"id": "79441460",
+				"category": "A",
+				"applianceType": "CKE",
+				"contractType": "2E5",
+				"description": "Stoves ES550",
+				"locationDescription": "Kitchen",
+				"installationYear": 2005
+			}, {
+				"id": "55063778",
+				"gcCode": "9900000",
+				"category": "A",
+				"applianceType": "EWR",
+				"contractType": "HEWI",
+				"contractExpiryDate": "2099-12-31Z",
+				"description": "Wiring Cover",
+				"locationDescription": "House",
+				"installationYear": 2014,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "X",
+					"installationSafe": "Y",
+					"installationsound": "X",
+					"ventilationSafe": "X"
+				}
+			}, {
+				"id": "10002743",
+				"gcCode": "9112103",
+				"category": "A",
+				"applianceType": "MW",
+				"contractType": "2E5",
+				"description": "Panasonic NN-C703B",
+				"locationDescription": "Kitchen",
+				"installationYear": 2014
+			}]
+		}
+	}
+}

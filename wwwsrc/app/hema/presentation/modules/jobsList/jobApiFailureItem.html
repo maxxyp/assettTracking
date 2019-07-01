@@ -1,0 +1,22 @@
+<template>
+    <div class="job-api-failure-item-head">
+        <div class="clearfix header-container">
+            <div class="col-xs-12 action-container-spacer">
+                <div class="job-fail-message">
+                    ${labels.jobNo} ${jobApiFailure.id}
+                </div>
+                <div class="job-fail-message">
+                    ${labels.jobFailureMessage}
+                </div>
+
+            </div>
+            <div class="action-container">
+                <div class="refresh-buttons-container">
+                    <button class="btn btn-primary form-control ${tracker.requestingStatus ? 'disabled' : ''}" click.trigger="refreshJobList()">
+                        ${labels.refresh}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

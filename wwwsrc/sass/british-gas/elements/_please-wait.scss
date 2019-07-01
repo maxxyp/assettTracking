@@ -1,0 +1,28 @@
+.spinner {
+  color: $blue-1;
+}
+
+please-wait {
+  .wait-text {
+    padding: 20px 10px 20px 10px;
+  }
+
+  .please-wait-modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.33);
+    z-index: 10
+  }
+
+  .spinner {
+    vertical-align: middle;
+  }
+
+  &.inline {
+    display: inline-block;
+    margin-left: 20px;
+  }
+}

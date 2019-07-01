@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IJcJobCode.ts"],"names":[],"mappings":"","file":"IJcJobCode.js","sourcesContent":["export interface IJcJobCode {\n   key: string;\n   code: string;\n   fieldAppCode: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

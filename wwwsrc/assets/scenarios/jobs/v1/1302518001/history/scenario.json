@@ -1,0 +1,284 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-12-18T16:17:15Z",
+      "modifiedTimestamp": "2017-12-18T17:11:02Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1316518001001",
+          "jobType": "CK",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO2FI1",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "IA",
+              "engineerName": "NEIL",
+              "report": "54CODECODE0CODE1Testing a sample job"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1316518001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "ALP1S",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "CODE1CODE9Testing is done successfully........"
+            }
+          ]
+        },
+        {
+          "id": "1336518001001",
+          "jobType": "CK",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO2FI1",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "IA",
+              "engineerName": "NEIL",
+              "report": "CODE0Testing is done"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1336518001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "ALP1S",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "CODE1Testing is done"
+            }
+          ]
+        },
+        {
+          "id": "1306518001001",
+          "jobType": "CK",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO2FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1306518001002",
+          "jobType": "RI",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "SLF1S",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312518001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS2FI1",
+          "activities": [
+            {
+              "date": "2017-12-15",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1312518001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "ALP1S",
+          "activities": [
+            {
+              "date": "2017-12-15",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "Testing the appliance"
+            }
+          ]
+        },
+        {
+          "id": "1395518001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "EXS2FI1",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "XB",
+              "engineerName": "NEIL",
+              "report": "Testing a simple charge job"
+            }
+          ]
+        },
+        {
+          "id": "1395518001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "ALP1S",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "CODE0Testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1302518001001",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS2FI1",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "71CODECODE0APPLIANCE NEEDS TO BE TESTED....."
+            }
+          ]
+        },
+        {
+          "id": "1302518001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "ALP1S",
+          "activities": [
+            {
+              "date": "2017-12-12",
+              "status": "WA",
+              "engineerName": "NEIL",
+              "report": "CODE1APPLIANCE TESTING IS GOOD...."
+            },
+            {
+              "date": "2017-12-12",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "CODE0Testing is done........"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202237333",
+          "gcCode": "100",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-12-11",
+          "applianceType": "CHB",
+          "description": ".Non-Combi-Default",
+          "flueType": "F",
+          "boilerSize": 100,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "TABLE IN YARD...",
+          "condition": 5,
+          "numberOfRadiators": 80,
+          "numberOfSpecialRadiators": 6,
+          "installationYear": 2015,
+          "systemDesignCondition": 1,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Testing a job"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-12-12"
+          }
+        },
+        {
+          "id": "202237334",
+          "gcCode": "4206601",
+          "category": "X",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-12-11",
+          "applianceType": "WAU",
+          "description": "BJ 30 AIR HEATER",
+          "flueType": "R",
+          "boilerSize": 124,
+          "cylinderType": 0,
+          "energyControl": "TRV",
+          "locationDescription": "KITCHEN",
+          "condition": 4,
+          "numberOfRadiators": 12,
+          "numberOfSpecialRadiators": 6,
+          "installationYear": 2015,
+          "systemDesignCondition": 3,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "N",
+            "ventilationSafe": "N",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "N",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Testing a job"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-12-12"
+          }
+        },
+        {
+          "id": "202237371",
+          "gcCode": "9110865",
+          "category": "A",
+          "contractType": "2E1I",
+          "contractExpiryDate": "2018-12-11",
+          "applianceType": "MW",
+          "description": "HBC84E663B/39 - Combinat",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015
+        }
+      ]
+    }
+  }
+}

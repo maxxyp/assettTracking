@@ -1,0 +1,91 @@
+<template>
+    <ai-dialog class="part-material-dialog">
+        <ai-dialog-header>
+
+            <label>
+                <i  class="vanstock-header-icon hema-icon-vanstock"></i>
+                <div class="vanstock-heading-text">
+                    Material search
+                </div>
+            </label>
+
+        </ai-dialog-header>
+
+        <ai-dialog-body>
+
+
+            <div class="row">
+
+                <div class="col-xs-1">
+                    <i class="fa fa-circle fa-5x" style="color:#eee;"></i>
+                </div>
+
+                <div class="col-xs-8">
+                    I want to order the part
+                </div>
+
+                <div class="col-xs-3">
+                    <div class="form-group">
+                        <incremental-number-picker
+                            value.bind="viewModel.quantityFromVanStock"
+                            increment-step.bind="1"
+                            hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                            each-side.bind=true
+                            max-value.bind="999"
+                            min-value.one-way="0"
+                        ></incremental-number-picker>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row">
+
+                <div class="col-xs-1">
+                    <i class="fa fa-circle fa-5x" style="color:#eee;"></i>
+                </div>
+
+                <div class="col-xs-8">
+                    <br/>
+                    My van stock
+                </div>
+
+                <div class="col-xs-3">
+                        <div class="form-group">
+                            <incremental-number-picker
+                                value.bind="viewModel.quantityToOrder"
+                                increment-step.bind="1"
+                                hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                each-side.bind=true
+                                max-value.bind="999"
+                                min-value.one-way="0"
+                            ></incremental-number-picker>
+                        </div>
+                    </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-xs-2">
+                    <i class="fa fa-circle fa-5x" style="color:#eee;"></i>
+                </div>
+                <div class="col-xs-10">
+                    <br/>
+                    Foo
+                </div>
+            </div>
+
+
+
+        </ai-dialog-body>
+
+        <ai-dialog-footer>
+
+            <button class="btn btn-primary" click.trigger="ok()">OK!</button>
+
+        </ai-dialog-footer>
+
+    </ai-dialog>
+</template>

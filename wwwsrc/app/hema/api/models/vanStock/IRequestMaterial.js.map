@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/vanStock/IRequestMaterial.ts"],"names":[],"mappings":"","file":"IRequestMaterial.js","sourcesContent":["export interface IRequestMaterial {\r\n    materialCode: string;\r\n    description: string;\r\n    owner: string;\r\n    quantity: number;\r\n    engineer: string;\r\n}\r\n"],"sourceRoot":"../../../.."}

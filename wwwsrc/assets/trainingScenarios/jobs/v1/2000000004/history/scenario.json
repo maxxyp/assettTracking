@@ -1,0 +1,129 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "0001015743001",
+          "jobType": "BE",
+          "applianceType": "DW",
+          "status": "C",
+          "chargeType": "NCH2E5",
+          "activities": [
+            {
+              "date": "2016-12-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Phil Appleby",
+              "report": "Noisy pump repaired.Door seal loose.All Ok"
+            }
+          ]
+        },
+        {
+          "id": "0001016543001",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "status": "C",
+          "chargeType": "NCHHEW",
+          "activities": [
+            {
+              "date": "2016-11-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Mark Millar",
+              "report": "Lounge socket inoperable.Replaced"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "78741461",
+          "serialId": "1784512",
+          "gcCode": "WM23913",
+          "category": "A",
+          "contractType": "2E5",
+          "applianceType": "WM",
+          "linkId": "78741459",
+          "description": "Electrolux EW1265F",
+          "locationDescription": "Kitchen",
+          "installationYear": 2010
+        },
+        {
+          "id": "78741462",
+          "serialId": "PSA/B/290916",
+          "category": "A",
+          "gcCode": "DW17506",
+          "contractType": "2E5",
+          "applianceType": "DW",
+          "linkId": "78741459",
+          "description": "Bosch SGS43E08GB/35",
+          "locationDescription": "Utility Room",
+          "installationYear": 2011
+        },
+        {
+          "id": "78741459",
+          "category": "A",
+          "applianceType": "KAC",
+          "installationYear": 2015,
+           "description": "Appliance Cover",
+          "contractType": "MIE",
+          "gcCode": "9999990",
+          "locationDescription": "House",
+          "contractExpiryDate": "2099-12-31Z",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "X",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "X"
+          }
+        },
+        {
+          "id": "78741460",
+          "category": "A",
+          "gcCode": "EC14501",
+          "contractType": "2E5",
+          "applianceType": "CKE",
+          "linkId": "79441459",
+          "description": "New World CKE13002",
+          "locationDescription": "KITCHEN",
+          "installationYear": 1995
+        },
+        {
+          "id": "78741490",
+          "gcCode": "9900000",
+          "category": "A",
+          "contractType": "HEWI",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "EWR",
+          "description": "Wiring Cover",
+          "locationDescription": "House",
+          "installationYear": 2014,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "X",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "X"
+          }
+        },
+        {
+          "id": "79441458",
+          "gcCode": "EF22701",
+          "bgInstallationIndicator": "0",
+          "category": "A",
+          "contractType": "2E5",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "FRE",
+          "description": "Flavel Aviator MBSC11ME",
+          "locationDescription": "Lounge",
+          "linkId": "78741459",
+          "installationYear": 2005
+        }
+      ]
+    }
+  }
+}

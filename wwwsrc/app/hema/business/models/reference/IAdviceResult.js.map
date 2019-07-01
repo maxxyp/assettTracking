@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IAdviceResult.ts"],"names":[],"mappings":"","file":"IAdviceResult.js","sourcesContent":["export interface IAdviceResult {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

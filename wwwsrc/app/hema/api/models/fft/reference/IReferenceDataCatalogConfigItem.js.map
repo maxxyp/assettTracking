@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/reference/IReferenceDataCatalogConfigItem.ts"],"names":[],"mappings":"","file":"IReferenceDataCatalogConfigItem.js","sourcesContent":["export interface IReferenceDataCatalogConfigItem {\n    documentName: string;\n    majorVersion: string;\n    minorVersion: string;\n    sequenceNumber: string;\n}\n"],"sourceRoot":"../../../../.."}

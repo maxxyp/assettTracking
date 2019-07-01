@@ -1,0 +1,106 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-17T14:58:42Z"
+        },
+        "data": {
+            "job": {
+                "id": "1344517001",
+                "customer": {
+                    "id": "022188948",
+                    "lastName": "Mr Doc Lewis",
+                    "address": {
+                        "houseNumber": "15",
+                        "line": [
+                            "The Glade"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2WB",
+                        "postCodeOut": "LE3"
+                    }
+                },
+                "premises": {
+                    "id": "L260048",
+                    "address": {
+                        "houseNumber": "15",
+                        "line": [
+                            "The Glade"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2WB",
+                        "postCodeOut": "LE3"
+                    },
+                    "previousVisitCount": 0,
+                  "contact": {
+                    "id": "022188948",
+                    "initials": " ",
+                    "lastName": "Mr Doc Lewis",
+                    "homePhone": "07777 177177"
+                  },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2016-10-17T00:00:00Z",
+                        "safetyNoticeNotLeftReason": "SAFETY NOTICE IS ISSUED"
+                    },
+                    "risks": [{
+                        "reason": "R6",
+                        "report": "Wiring not in good condition",
+                        "date": "2016-10-17T00:00:00Z"
+                    }, {
+                        "reason": "R2",
+                        "report": "Indoor Access Problems",
+                        "date": "2016-10-17T00:00:00Z"
+                    }, {
+                        "reason": "R1",
+                        "report": "Ferocious Dog",
+                        "date": "2016-10-13T00:00:00Z"
+                    }, {
+                        "reason": "R3",
+                        "report": "Angry Tenant",
+                        "date": "2016-10-13T00:00:00Z"
+                    }],
+                    "unsafeDetail": {
+                        "report": "Nail through gas pipe",
+                        "conditionAsLeft": "ID",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "",
+                        "reasons": [
+                            "GMET",
+                            "PDL8"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00150822",
+                    "date": "2016-10-17T00:00:00Z",
+                    "earliestStartTime": "2016-10-17T08:00:00Z",
+                    "latestStartTime": "2016-10-17T18:00:00Z",
+                    "specialInstructions": "Call to my Mobile before thirty minutes"
+                },
+                "tasks": [{
+                    "id": "1344517001001",
+                    "applianceId": "202201040",
+                    "_jobType": "HU",
+                    "jobType": "AS",
+                    "applianceType": "CHB",
+                    "_chargeType": "ALPNONE",
+                    "chargeType": "NCH3ST",
+                    "status": "D",
+                    "skill": "GS",
+                    "sequence": 1,
+                    "specialRequirement": "Give Manuel an apple",
+                    "supportingText": "Please call 077522385689",
+                    "activities": [{
+                        "status": "D",
+                        "sequence": 1
+                    }]
+                }]
+            }
+        }
+    }
+}

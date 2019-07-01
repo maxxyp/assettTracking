@@ -1,0 +1,40 @@
+<template>
+    <div class="card row">
+    <div class="card-header">
+        Training Settings
+    </div>
+    <div class="card-block">
+        <div class="row">
+            <div class="col-xs-3">
+                <label>${labels.selectEngineer}</label>
+            </div>
+            <div class="col-xs-9">
+                <drop-down value.bind="engineerId"
+                           values.bind="simulations"
+                           value-property="engineerId"
+                           format-text-value="(firstName) (lastName) - (engineerId)"  no-filter="true" >
+                    <template replace-part="option-template">
+                        <div>
+                            ${item.firstName} ${item.lastName} - ${item.engineerId}
+                        </div>
+                    </template>
+                </drop-down>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <label>${labels.customEngineer}</label>
+            </div>
+            <div class="col-xs-7">
+                <text-box value.bind="customEngineerId" max-length="7"></text-box>
+            </div>
+            <div class="col-xs-1">
+                <button class="hook-select-custom-engineer btn-secondary btn-sm ${customEngineerId.length === 7 ? 'active' : ''}"
+                    click.trigger="assignCustomEngineerId()"
+                    disabled.bind="customEngineerId.length !== 7">Select</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</template>

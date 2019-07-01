@@ -1,0 +1,74 @@
+incremental-number-picker {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+
+  .each-side-buttons {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    a {
+      display: inline !important;
+      padding: 7px;
+    }
+
+    a:hover {
+      padding: 7px;
+    }
+
+     input.form-control {
+      width: 100%;
+    }
+  }
+
+  span {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+  }
+
+  .picker-buttons {
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    white-space: nowrap;
+
+    .picker-buttons-minus {
+        @extend .button-icon;
+        @extend .hema-icon-circle-minus;
+        background-image: none !important;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0px 0px 0px 0px;
+        color: black;
+        padding: 0 10px 0 0 !important;
+      }
+
+    .picker-buttons-minus:before {
+      font-size:30px;
+      margin: 5px;
+    }
+
+    .picker-buttons-plus {
+      @extend .button-icon;
+      @extend .hema-icon-circle-plus;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0px 0px 0px 0px;
+      background-image: none !important;
+      color: black;
+      padding: 0 0 0 10px !important;
+    }
+
+    .picker-buttons-plus:before {
+      font-size:30px;
+      margin: 5px;
+    }
+  }
+}

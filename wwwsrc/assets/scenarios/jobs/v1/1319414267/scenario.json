@@ -1,0 +1,165 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "job": {
+                "id": "1319414267",
+                "customer": {
+                    "id": "007d9437d4248e84d4072e70693b790a200b42e9a908be7fb5469f4baada6217",
+                    "password": "July12",
+                    "initials": "JS",
+                    "title": "Mr",
+                    "firstName": "John",
+                    "middleName": "M",
+                    "lastName": "Smith Land Lord",
+                    "homePhone": "01234545411",
+                    "workPhone": "01235444531",
+                    "address": {
+                        "houseNumber": "69",
+                        "line": [
+                            "Lawson Street"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "7QE",
+                        "postCodeOut": "LE2"
+                    }
+                },
+                "premises": {
+                    "id": "453d772de1eadfa128c0e74402023fb9b98b3d855dfc36d6feb55337e0a974c0",
+                    "address": {
+                        "premisesName": "The cottage",
+                        "houseNumber": "1A",
+                        "line": [
+                            "The Grand road",
+                            "Little Street"
+                        ],
+                        "town": "New Town",
+                        "county": "London",
+                        "postCodeIn": "3AR",
+                        "postCodeOut": "TW19",
+                        "country": "United Kingdom"
+                    },
+                    "previousVisitCount": 66,
+                    "chirpAICode": "23014481",
+                    "contact": {
+                        "id": "2113635",
+                        "password": "July12",
+                        "initials": "JB",
+                        "title": "Mr",
+                        "firstName": "John",
+                        "middleName": "A",
+                        "lastName": "Bower",
+                        "homePhone": "0123543432",
+                        "workPhone": "0181 212565",
+                        "requesterName": "Mr John A Bower"
+                    },
+                    "specialAccessInstructions": "Gate Passcode 0045",
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2016-01-01T00:00:00Z",
+                        "lastElectricVisitDate": "2016-01-03T00:00:00Z",
+                        "safetyNoticeNotLeftReason": "High earth reading- bedroom socket san"
+                    },
+                    "risks": [{
+                        "reason": "R1",
+                        "report": "BIG DOG",
+                        "date": "2016-01-03T00:00:00Z"
+                    }, {
+                        "reason": "R2",
+                        "report": "BIG CAT",
+                        "date": "2016-03-05T00:00:00Z"
+                    }],
+                    "unsafeDetail": {
+                        "report": "NOT ALL ON RCD",
+                        "conditionAsLeft": "SS",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "NT",
+                        "ownedByCustomer": true,
+                        "signatureObtained": true,
+                        "letterLeft": true,
+                        "ownersNameAndDetails": "AS PER LANDLORD DETAILS",
+                        "reasons": [
+                            "CONS"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "MW01233216",
+                    "date": "2016-06-13T00:00:00Z",
+                    "status": "D",
+                    "earliestStartTime": "2016-06-13T08:00:00Z",
+                    "latestStartTime": "2016-06-13T12:00:00Z",
+                    "specialInstructions": "Parking OK : Call 0123123132 boiler making noise when turning on"
+                },
+                "tasks": [{
+                    "id": "1319414267001",
+                    "applianceId": "00000001",
+                    "jobType": "HU",
+                    "applianceType": "BBF",
+                    "chargeType": "NCH3SIS",
+                    "status": "D",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 2,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "activities": [{
+                        "date": "2016-01-01T00:00:00Z",
+                        "status": "D",
+                        "chargeableTime": 40,
+                        "percentageUplift": 20,
+                        "supplementaryLabourCharge": 21.99,
+                        "sequence": 1,
+                        "report": "All OK",
+                        "workDuration": 60,
+                        "engineerName": "Jack Smith",
+                        "parts": [{
+                            "orderDate": "2016-01-01T00:00:00Z",
+                            "status": "FP",
+                            "requisitionNumber": "SOJ00063785639",
+                            "description": "Fan-105 Assy c/w Impeller 75Watt",
+                            "charge": 109.87,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "E66527"
+                        }]
+                    }, {
+                        "date": "2016-01-02T00:00:00Z",
+                        "status": "D",
+                        "chargeableTime": 40,
+                        "percentageUplift": 20,
+                        "supplementaryLabourCharge": 21.99,
+                        "sequence": 2,
+                        "report": "All OK",
+                        "workDuration": 60,
+                        "engineerName": "Jack Smith",
+                        "parts": [{
+                            "orderDate": "2016-01-01T00:00:00Z",
+                            "status": "FP",
+                            "requisitionNumber": "SOJ00063785640",
+                            "description": "Rocker Switch(On/Off)2 Terminal",
+                            "charge": 12.73,
+                            "quantity": 2,
+                            "quantityCharged": 2,
+                            "stockReferenceId": "114077"
+                        }]
+                    }]
+                }, {
+                    "id": "1319414267002",
+                    "applianceId": "92973622",
+                    "jobType": "FV",
+                    "applianceType": "BBF",
+                    "chargeType": "NCH3SIS",
+                    "status": "D",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "Service the boiler",
+                    "activities": []
+                }]
+            }
+        }
+    }
+}

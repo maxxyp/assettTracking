@@ -1,0 +1,49 @@
+<template>
+    <div class="card row">
+    <div class="card-header">
+        ${labels.displayPreferences}
+    </div>
+    <div class="card-block">
+        <div class="row">
+            <div class="col-xs-3">
+                <label>${labels.notificationPosition}</label>
+            </div>
+            <div class="col-xs-9">
+                <drop-down value.bind="toastSelectedPosition" format-text-value="(position)" placeholder="${labels.selectPosition}" values.bind="toastScreenPositions"
+                    value-property="code" text-property="position" search-properties.bind="['position', 'code']"  no-filter="true">
+                </drop-down>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <label>${labels.notificationDelay}</label>
+            </div>
+            <div class="col-xs-9">
+                  <drop-down value.bind="toastDelay" format-text-value="(description)" placeholder="${labels.selectDelay}" values.bind="toastTimeValues"
+                    value-property="timeInSecond" text-property="description"  search-properties.bind="['timeInSecond', 'description']"  no-filter="true">
+                </drop-down>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <label>${labels.dropdownType}</label>
+            </div>
+            <div class="col-xs-9">
+                  <drop-down value.bind="dropdownType" format-text-value="(description)" placeholder="${labels.selectDropdown}" values.bind="dropdownTypeValues"
+                    value-property="code" text-property="description"  no-filter="true">
+                </drop-down>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-3">
+                <label>Sound Notifications</label>
+            </div>
+            <div class="col-xs-9">
+                <drop-down value.bind="sound" format-text-value="(description)" placeholder="${labels.selectDropdown}" values.bind="dropdownSoundNotificationValues"
+                       value-property="code" text-property="description"  no-filter="true">
+                </drop-down>
+            </div>
+        </div>
+    </div>
+    </div>
+</template>

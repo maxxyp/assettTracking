@@ -1,0 +1,9 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="fade-in-content job-details">
+            <compose view-model="./jobDetailsHead" model.bind="{clickable: false, job: job, jobSummary: jobSummaryViewModel}"></compose>
+            <tab-buttons router.bind="router" ></tab-buttons>
+            <router-view class="fade-in-content"></router-view>
+        </div>
+    </view-state>
+</template>

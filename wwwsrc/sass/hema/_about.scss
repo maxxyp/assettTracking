@@ -1,0 +1,30 @@
+.console {
+  height: 2000px;
+  overflow-y: scroll;
+  background-color: black;
+  color: white;
+  font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+  font-size: 10px;
+}
+
+.console div.info {
+  color: white;
+}
+
+.console div.debug {
+  color: greenyellow;
+}
+
+.console div.warn {
+  color: yellow;
+}
+
+.console div.error {
+  color: red;
+}
+
+.clear {
+  font-size:8px;
+  padding: 10px;
+  color:#353f49
+}

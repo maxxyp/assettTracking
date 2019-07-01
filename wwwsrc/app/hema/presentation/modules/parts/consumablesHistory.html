@@ -1,0 +1,40 @@
+<template>
+    <div class="fade-in-content">
+        <div class="details-card details-list">
+            <div class="card-block fade-in-content">
+                <div class="hook-list-data-item-container" if.bind="consumablesBasket.partsInBasket.length > 0 ">
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-2">${labels.stockReferenceCode}</div>
+                        <div class="col-xs-6">${labels.partDescription}</div>
+                        <div class="col-xs-2">${labels.quantity}</div>
+                        <div class="col-xs-2"></div>
+                    </div>
+                    <div  class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container" repeat.for="item of consumablesBasket.partsInBasket" show.bind="item.sent">
+                        <div class="floating-date" show.bind="consumablesBasket.partsInBasket[$index - 1].dateAdded != item.dateAdded">
+                            ${item.dateAdded} 
+                        </div>
+                        <div class="col-xs-2 details-list-item-col ">
+                            ${item.referenceId}
+                        </div>
+                        <div class="col-xs-6 details-list-item-col">
+                            ${item.description}
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            ${item.quantity}
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <button class="btn btn-secondary pull-right no-margin" click.trigger="reOrder(item)">
+                                  ${labels.reOrder}
+                             </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-list-item" if.bind="consumablesBasket.partsInBasket.length === 0 ">
+                    <div class="col-xs-12 details-list-item-col">
+                       ${labels.noRecords}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

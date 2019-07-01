@@ -1,0 +1,46 @@
+{
+  "status": 200,
+  "data": {
+  "attributes": [
+    {
+      "attributeType": "GCNumber",
+      "attributeValue": "DW-108-64"
+    },
+    {
+      "attributeType": "appType",
+      "attributeValue": "Electric Dishwashers"
+    },
+    {
+      "attributeType": "appSubType",
+      "attributeValue": "Dishwashers"
+    },
+    {
+      "attributeType": "appFuel",
+      "attributeValue": "Electrical"
+    },
+    {
+      "attributeType": "GCVariant",
+      "attributeValue": "A"
+    },
+    {
+      "attributeType": "appVersionStatus",
+      "attributeValue": "Issued"
+    },
+    {
+      "attributeType": "includeInSIS",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "sourceID",
+      "attributeValue": "22260"
+    },
+    {
+      "attributeType": "safetyNotice",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "optidescription",
+      "attributeValue": "sgi3302gb01dishwasher"
+    }
+  ]
+} }

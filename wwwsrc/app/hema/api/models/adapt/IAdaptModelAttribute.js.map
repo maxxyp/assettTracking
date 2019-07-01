@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/adapt/IAdaptModelAttribute.ts"],"names":[],"mappings":"","file":"IAdaptModelAttribute.js","sourcesContent":["export interface IAdaptModelAttribute {\n    attributeType: string;\n    attributeValue?: string;\n}\n"],"sourceRoot":"../../../.."}

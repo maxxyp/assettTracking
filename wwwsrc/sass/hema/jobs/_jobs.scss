@@ -1,0 +1,128 @@
+.job-footer {
+  text-align: right;
+  background-color: #005eb8;
+  color: white;
+  min-height: 0.5rem;
+  padding-right: 10px;
+  padding-top: 10px;
+  &.done {
+    background-color: #777;
+  }
+}
+
+.job-details {
+
+  border-bottom: 5px solid $blue-2;
+
+  .job-details-page-body {
+    margin: 0 1rem;
+  }
+  .job-details-page-title {
+    padding: 0.5rem 0 1rem 1rem;
+    height: 5rem;
+
+    h2 {
+      font-size: 1.75em;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+    button {
+      float: left;
+    }
+  }
+
+  .job-details-tabs {
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: #ddd;
+    display: flex;
+    margin-top: 3px;
+    a:focus {
+      color: white !important;
+    }
+
+    .job-details-tab {
+      padding: 0.55rem;
+      font-weight: bold;
+      background: #b9cbec;
+      color: $blue-2;
+      text-align: center;
+      flex: 1;
+      display: inline-block;
+      text-decoration: none;
+      border-right: 1px solid $blue-2;
+      border-radius: 10px 10px 0px 0px;
+
+      &.active {
+        background: #fff;
+        color: $blue-2;
+      }
+      &.disabled {
+        background: #eee;
+        color: #666;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .job-details-header {
+    background: white;
+    padding: 0.75rem;
+    padding-bottom: 1rem;
+    color: black;
+    border-bottom: 1px solid #aaa;
+    .title {
+      padding: 0.75rem 0 0 0.5rem;
+      font-size: 1.5rem;
+    }
+    .sub-title{
+          padding: 0.0rem 0 0 0.5rem;
+    }
+  }
+}
+
+.job-summary {
+  .job-summary-content {
+    cursor: pointer;
+
+    .section {
+      padding-right: 0;
+      .row {
+        margin: 0;
+      }
+    }
+  }
+
+  &.not-ready {
+    opacity: 0;
+  }
+
+  &.done {
+    border-color: #777;
+  }
+}
+
+.task-summary {
+  font-weight: bold;
+}
+
+.job-details-btns {
+}
+
+.job-details-separator {
+  border-color: #005eb8;
+  border-width: 2px;
+}
+
+.visit-count-badge {
+  color: white;
+  background-color: #818a91;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 0.8em;
+  padding: 0.1em 0.4em;
+}
+
+div table {
+    align-self: center;
+}

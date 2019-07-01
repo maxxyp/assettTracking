@@ -1,0 +1,41 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-10-18T15:58:37Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1311517001001",
+                "jobType": "BE",
+                "applianceType": "EWR",
+                "chargeType": "NCHHEWI",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1396517001001",
+                "jobType": "BE",
+                "applianceType": "EWR",
+                "chargeType": "NCHHEWI",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-18T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Mark Millar"
+                }]
+            }],
+            "appliances": [{
+                "id": "202230182",
+                "category": "A",
+                "contractType": "HEWI",
+                "contractExpiryDate": "2017-10-13T00:00:00Z",
+                "applianceType": "EWR"
+            }],
+            "id": "1307517001"
+        }
+    }
+}

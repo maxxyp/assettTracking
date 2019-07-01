@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/simulation/ISchemaLoader.ts"],"names":[],"mappings":"","file":"ISchemaLoader.js","sourcesContent":["export interface ISchemaLoader {\n   getSchema(name: string) : Promise<tv4.JsonSchema>;\n}\n"],"sourceRoot":"../.."}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/propertySafetyType.ts"],"names":[],"mappings":";;;IAAA,IAAY,kBAGX;IAHD,WAAY,kBAAkB;QAC1B,yDAAG,CAAA;QACH,uEAAU,CAAA;IACd,CAAC,EAHW,kBAAkB,GAAlB,0BAAkB,KAAlB,0BAAkB,QAG7B","file":"propertySafetyType.js","sourcesContent":["export enum PropertySafetyType {\n    gas,\n    electrical\n}\n"],"sourceRoot":"../../.."}

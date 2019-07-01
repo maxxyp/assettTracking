@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IReadTypeMapping.ts"],"names":[],"mappings":"","file":"IReadTypeMapping.js","sourcesContent":["export interface IReadTypeMapping {\n   key: string;\n   group: string;\n   id: string;\n   value: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

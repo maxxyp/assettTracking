@@ -1,0 +1,32 @@
+<template>
+    <div class="col-xs-2">
+        <label>${startTimeLabel}</label>
+    </div>
+    <div class="col-xs-3">
+        <time-picker disabled.bind="startTimeDisabled"
+                     value.bind="startTime"
+                     interval-in-minutes.bind="intervalInMinutes"
+                     button-plus-classes.bind="buttonPlusClasses"
+                     button-minus-classes.bind="buttonMinusClasses"
+                     classes.bind="controlContainerClasses"
+                     hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                     read-only.bind="readOnly"
+                     each-side.bind="eachSide">
+        </time-picker>
+    </div>
+    <div class="col-xs-2">
+        <label>${endTimeLabel}</label>
+    </div>
+    <div class="col-xs-3">
+        <time-picker disabled.bind="endTimeDisabled"
+                     value.bind="endTime"
+                     interval-in-minutes.bind="intervalInMinutes"
+                     button-plus-classes.bind="buttonPlusClasses"
+                     button-minus-classes.bind="buttonMinusClasses"
+                     classes.bind="controlContainerClasses"
+                     hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                     read-only.bind="readOnly"
+                     each-side.bind="eachSide">
+        </time-picker>
+    </div>
+</template>

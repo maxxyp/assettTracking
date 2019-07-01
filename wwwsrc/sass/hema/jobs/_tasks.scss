@@ -1,0 +1,42 @@
+time-picker {
+  span {
+    float: left;
+  }
+}
+
+.task-description-status {
+  &.invalid {
+    color: $criticalColor;
+  }
+  &.valid {
+    color: #39ab39;
+  }
+}
+.selection-container {
+    margin-left: -10px;
+
+    button {
+      margin-top: 10px;
+    }
+
+    button:focus{
+      text-shadow: 0 0 4px #005eb8;
+    }
+}
+
+.task-number-box {
+  input{   
+    width: 60px;
+  }
+}
+
+.ui-slider .ui-slider-horizontal { height: .6em; }
+.ui-slider .ui-slider-handle {
+  position: absolute;
+  z-index: 2;
+  width: 1em;
+  height: 1em;
+  cursor: default;
+  width:1em !important;
+  height:1em !important;
+}

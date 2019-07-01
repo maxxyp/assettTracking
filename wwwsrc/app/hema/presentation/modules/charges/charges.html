@@ -1,0 +1,256 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="fade-in-content">
+            <form form-manager>
+                <div class="card details-card details-list" show.bind="viewModel.tasks && viewModel.tasks.length > 0"
+                    disabled>
+                    <div class="card-block">
+                        <!-- Header -->
+                        <div class="details-list-item details-list-item-header">
+                            <div class="col-xs-3">${labels.taskDescription}</div>
+                            <div class="col-xs-2">${labels.charge}</div>
+                            <div class="col-xs-2">${labels.totalChargableTime}</div>
+                            <div class="col-xs-2">${labels.discount}</div>
+                            <div class="col-xs-1">${labels.vat}</div>
+                            <div class="col-xs-1 text-right">${labels.amount}</div>
+                        </div>
+                        <!-- Header -->
+                        <!-- TaskItem -->
+                        <div class="row" repeat.for="task of viewModel.tasks">
+                            <div class="col-xs-12">
+                                <div class="details-list-item details-list-item-dark" click.trigger="toggleItem(task)">
+                                    <div class="col-xs-3  details-list-item-cols">
+                                        <div class="col-xs-2">
+                                            <i class="fa ${task.show === true ? 'fa-caret-down': 'fa-caret-right'}"
+                                                aria-hidden="true"></i>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <task-description catalog.one-way="catalog" task.one-way="task.task"></task-description>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        ${task.chargeDescription}
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        ${getTotalChargableTime(task.task)}
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        <span>
+                                            ${task.discountAmount.greaterThan(0) ? task.discountText : ''}
+                                        </span>
+                                        <div class="form-group has-warning" show.bind="task.discountGreaterThanAmount">
+                                            <label class="help-block">
+                                                Discount greater than total
+                                                <!-- todo labelise -->
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col">
+                                        <span show.bind="!task.error">
+                                            ${task.vat.toNumber() / 10}%
+                                        </span>
+                                        <div show.bind="task.error">
+                                            <label class="help-block">
+                                                ${labels.errorCalculatingCharge}
+                                            </label>
+                                        </div>
+                                        <!-- refdata: vat will always be in multiple of 10 -->
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col text-right">
+                                        <span show.bind="task.error === false">
+                                            £${task.grossTotal.toFixed(2)}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div show.bind="task.show">
+                                <div show.bind="task.error">
+                                    <div class="col-xs-3  details-list-item-col ">
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        <div class="form-group has-warning">
+                                            <label class="help-block">${labels.errorCalculatingCharge} -
+                                                ${task.errorDescription}</label>
+                                        </div>
+                                        <div class="col-xs-2  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-2  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-1  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-1  details-list-item-col text-right">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div show.bind="task.hasFixedPriceQuotation && !task.error" class="row details-list-item no-pointer no-hover blue-content">
+                                    <div class="col-xs-3  details-list-item-col ">
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        ${labels.fixedPriceQuotation}
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col text-right">
+                                        £${task.fixedPriceQuotationAmount.toFixed(2)}
+                                    </div>
+                                </div>
+                                <div show.bind="!task.error" class="row details-list-item no-pointer no-hover blue-content">
+                                    <div class="col-xs-3  details-list-item-col ">
+                                        ${task.labourItem.displayItemName}
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        ${getLabourItemDescription(task.labourItem)}
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-1  details-list-item-col text-right">
+                                        £${task.labourItem.grossAmount.toFixed(2)}
+                                    </div>
+                                </div>
+                                <div show.bind="!task.error" class="row" repeat.for="item of task.partItems">
+                                    <div class="details-list-item no-pointer no-hover blue-content">
+                                        <div class="col-xs-3  details-list-item-col ">
+                                            ${item.displayItemName}
+                                        </div>
+                                        <div class="col-xs-2  details-list-item-col">
+                                            ${getPartItemDescription(item)}
+                                        </div>
+                                        <div class="col-xs-2  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-2  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-1  details-list-item-col">
+                                        </div>
+                                        <div class="col-xs-1  details-list-item-col text-right">
+                                            £${item.grossAmount.toFixed(2)}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row details-list-item no-pointer no-hover blue-content" show.bind="task.canApplyDiscount">
+                                    <div class="col-xs-3  details-list-item-col ">
+                                        <drop-down value.bind="task.discountCode" placeholder.bind="labels.selectDiscountCode"
+                                            format-text-value="(${catalog.DISCOUNT_DESCRIPTION})" values.bind="discountCatalog"
+                                            value-property.bind="catalog.DISCOUNT_ID" text-property.bind="catalog.DISCOUNT_DESCRIPTION"
+                                            search-properties.bind="[catalog.DISCOUNT_DESCRIPTION, catalog.DISCOUNT_VALUE, catalog.DISCOUNT_CATEGORY]"
+                                            disabled.bind="!canEdit" no-filter="true">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.DISCOUNT_DESCRIPTION]}
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                    <div class="col-xs-2 details-list-item-col">
+                                        <span>
+                                            ${task.discountAmount.greaterThan(0) ? labels.discount : labels.nodiscount}
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                    </div>
+                                    <div class="col-xs-2  details-list-item-col">
+                                        <span>${task.discountText}</span>
+                                    </div>
+                                    <!--<div class="col-xs-1  details-list-item-col"></div>-->
+                                    <div class="col-xs-1  details-list-item-col text-right">
+                                        <span>
+                                            ${task.displayDiscountAmount}
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- Subtotal -->
+                        <div class="row details-list-item details-list-item-dark no-pointer ">
+                            <div class="col-xs-3  details-list-item-col ">
+                            </div>
+                            <div class="col-xs-2  details-list-item-col bold-content">
+                                ${labels.chargeTotal}
+                            </div>
+                            <div class="col-xs-2  details-list-item-col">
+                            </div>
+                            <div class="col-xs-2  details-list-item-col">
+                            </div>
+                            <div class="col-xs-1  details-list-item-col">
+                                ${labels.includingVat}
+                            </div>
+                            <div show.bind="noErrors" class="col-xs-1  details-list-item-col text-right bold-content">
+                                £${viewModel.chargeTotal.toFixed(2)}
+                            </div>
+                            <div show.bind="hasErrors" class=" form-group has-warning col-xs-1 details-list-item-col text-right">
+                                <label class="help-block">${labels.errorCalculatingCharge}</label>
+                            </div>
+                        </div>
+
+                        <!-- Confirm Prevous Appliance Checked -->
+                        <div class="row" show.bind="viewModel.previousChargeSameAppliance && !viewModel.previousChargeSameApplianceConfirmed && canEdit">
+                            <div class="col-xs-12 details-list-item-col">
+                                <span class="unsafe-block">${labels.previousChargeApplianceMessage}</span>
+                                <button show.bind="!viewModel.previousChargeSameApplianceConfirmed" class="btn btn-label"
+                                    click.trigger="readWarning()">${labels.previousChargeApplianceConfirm}
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Options -->
+                        <div class="row details-list-item details-list-item-dark" show.bind="showChargeOkQuestions">
+                            <div class="col-xs-12  details-list-item-col">
+                                <div class="form-group">
+                                    <div class="col-xs-1"><label></label></div>
+                                    <div class="col-xs-11">
+                                        <button-list items.bind="chargeOptionCatalog" value.bind="viewModel.chargeOption"
+                                            multi-select.bind="false" button-width="30%" disabled.bind="!canEdit || (canEdit && !hasCharge)">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Options -->
+                        <!-- Dispute Reason -->
+                        <div class="row details-list-item details-list-item-dark" show.bind="viewModel.chargeOption === '2'">
+                            <div class="form-group col-xs-12">
+                                <div class="col-xs-4"><label>${labels.reasonWhyChargesAreNotAccepted}</label></div>
+                                <div class="col-xs-8">
+                                    <label>${viewModel.chargeDisputeText}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row details-list-item details-list-item-dark" show.bind="viewModel.chargeOption === '2'">
+                            <div class="form-group col-xs-12">
+                                <div class="col-xs-4"><label>${labels.remarks}</label></div>
+                                <div class="col-xs-8  details-list-item-col ">
+                                    <text-area value.bind="viewModel.remarks" disabled.bind="!canEdit" placeholder="${validationRules['viewModel.remarks'].maxLength} ${labels.characterLimitSuffix}"
+                                        maxlength.bind="40"></text-area>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Dispute Reason -->
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button class="btn btn-secondary pull-right" click.trigger="undo()" if.bind="canEdit && hasCharge">
+                                    ${labels.undo}
+                                </button>
+                                <button class="btn btn-tertiary arrow-blue-right pull-right" click.trigger="clear()"
+                                    if.bind="canEdit && hasCharge">
+                                    ${labels.clear}
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card details-card details-list" show.bind="!viewModel.tasks || viewModel.tasks.length === 0">
+                    <div class="card-block">
+                        ${labels.noData}
+                    </div>
+                </div>
+            </form>
+        </div>
+    </view-state>
+</template>

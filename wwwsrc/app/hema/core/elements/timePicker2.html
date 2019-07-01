@@ -1,0 +1,38 @@
+<template>
+    <div show.bind="eachSide" class="each-side-btns">
+        <div class="time-picker-btns ${buttonContainerClasses}" show.bind="!disabled">
+            <a href class.bind="buttonMinusClasses" click.trigger="subtract()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+        </div>
+        <div class.bind="controlContainerClasses">
+            <input type="textbox" placeholder="HH:MM" value.bind="value & updateTrigger:'blur'" class="time-picker2 ${classes}" disabled.bind="disabled" readonly.bind="readOnly || disabled"
+                hide-keyboard-on-enter.bind="hideKeyboardOnEnter" cancel-default-submit.bind="cancelDefaultSubmit" interval-in-minutes.bind="intervalInMinutes"
+                time-only blur.trigger="blur()" focus.trigger="focus()" disable-form-manager="true" />
+        </div>
+        <div class="time-picker-btns ${buttonContainerClasses}" show.bind="!disabled">
+            <a href class.bind="buttonPlusClasses" click.trigger="add()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+        </div>
+    </div>
+    <div show.bind="!eachSide" >
+        <span class.bind="controlContainerClasses">
+        <input type="textbox"
+                placeholder="HH:MM"
+                value.bind="value"
+                class="time-picker2 ${classes}"
+                disabled.bind="disabled"
+                readonly.bind="readOnly || disabled"
+                hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                cancel-default-submit.bind="cancelDefaultSubmit"
+                interval-in-minutes.bind="intervalInMinutes"
+                time-only
+                blur.trigger="blur()" focus.trigger="focus()" disable-form-manager="true" ref="pickerTextBox"/>
+    </span>
+        <span class="time-picker-btns ${buttonContainerClasses}" show.bind="!disabled">
+        <a href class.bind="buttonMinusClasses" click.trigger="subtract()" blur.trigger="blur()" focus.trigger="focus()">
+        </a>
+        <a href class.bind="buttonPlusClasses" click.trigger="add()" blur.trigger="blur()" focus.trigger="focus()">
+        </a>
+    </span>
+    </div>
+</template>

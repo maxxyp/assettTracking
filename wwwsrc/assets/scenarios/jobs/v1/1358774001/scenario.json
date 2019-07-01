@@ -1,0 +1,70 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-06T12:33:54Z"
+    },
+    "data": {
+      "job": {
+        "id": "1358774001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022200765",
+          "lastName": "Mr Test Sample Data",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Greenland Drive"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1AB",
+            "postCodeOut": "LE5"
+          }
+        },
+        "premises": {
+          "id": "L270438",
+          "address": {
+            "houseNumber": "8",
+            "line": [
+              "Greenland Drive"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1AB",
+            "postCodeOut": "LE5"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022200765",
+            "initials": " ",
+            "lastName": "Mr Test Sample Data"
+          }
+        },
+        "visit": {
+          "id": "WMW00052523",
+          "date": "2018-02-06T00:00:00Z",
+          "earliestStartTime": "2018-02-06T08:00:00Z",
+          "latestStartTime": "2018-02-06T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1358774001001",
+            "applianceId": "202222828",
+            "jobType": "IA",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

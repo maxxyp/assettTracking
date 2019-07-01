@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IGcCode.ts"],"names":[],"mappings":"","file":"IGcCode.js","sourcesContent":["export interface IGcCode {\n   applianceTypeCode: string;\n   gcCode: string;\n   gcCodeDescription: string;\n   defaultIndicator: string;\n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,20 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <worklist-notification job-refresh-fn.call="updateJobs()"></worklist-notification>
+        <div class="top-margin">
+
+            <compose if.bind="!isAssetTracked" view-model="./jobPartsCollections" model.bind="{isDone: false}"></compose>
+            <compose if.bind="isAssetTracked" view-model="./VanStockJobPartsCollections"></compose>
+
+            <compose
+                repeat.for="job of jobs"
+                view-model.bind="job.isError ? 'hema/presentation/modules/jobsList/JobApiFailureItem' : 'hema/presentation/modules/jobsList/jobItem'"
+                model.bind="job.data"
+                class="job"></compose>
+
+            <div class="card row" if.bind="!jobs.length">
+                <div class="card-block">${labels.noData}</div>
+            </div>
+        </div>
+    </view-state>
+</template>

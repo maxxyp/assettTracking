@@ -1,0 +1,94 @@
+state-buttons {
+
+  button-list {
+    margin: 0;
+    text-align: center;
+
+    .button-list-item {
+      &:disabled {
+        opacity: 1;
+      }
+    }
+
+    button {
+      border-radius: 20px !important;
+      border-color:white !important;
+      color:white !important;
+      border-width: 2px !important;
+      margin-left: 3px !important;
+      margin-right: 3px !important;
+      padding: 0px !important;
+
+      .button-list-item-icon-holder {
+        display: flex;
+        flex-direction: column;
+      }
+      .button-list-item-icon-text {
+        font-size:0.9rem;
+        margin-top: -5px;
+      }
+
+      &.notactive {
+        &:disabled {
+          background-color: transparent !important;
+          border-color: #999999 !important;
+          color:#999999 !important;
+        }
+      }
+    }
+    button:hover{
+      background-color:#0280de !important;
+    }
+     button:hover:active{
+      background-color:#0280de !important;
+      border-color:#0280de !important;
+    }
+  }
+}
+
+.job-state-base {
+  font-size: 48px;
+  color: white;
+}
+
+.job-state-enRoute {
+  @extend .job-state-base;
+  @extend .hema-icon-en-route;
+}
+
+.job-state-noAccess {
+  @extend .job-state-base;
+  @extend .hema-icon-no-access;
+}
+
+.job-state-arrived {
+  @extend .job-state-base;
+  @extend .hema-icon-arrived;
+}
+
+.job-state-complete {
+  @extend .job-state-base;
+  @extend .hema-icon-complete;
+
+  &.state-invalid {
+    color: $stateInvalidColor;
+  }
+
+  &.state-valid {
+    color: $stateValidColor;
+  }
+
+  &.state-not-visited {
+    color: $stateNotVisitedColor;
+  }
+
+  &.state-dont-care {
+    color: $stateDontCareColor;
+  }
+
+}
+
+.job-state-deSelect {
+  @extend .job-state-base;
+  @extend .hema-icon-deselect;
+}

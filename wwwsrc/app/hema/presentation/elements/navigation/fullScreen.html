@@ -1,0 +1,4 @@
+<template>
+<button  if.bind="!_isFullScreen" class="btn btn-secondary btn-fullscreen fa fa-expand fa-3" click.trigger="processContent()"></button>
+<button  if.bind="_isFullScreen" class="btn btn-secondary btn-fullscreen fa fa-compress fa-3" click.trigger="processContent()"></button>
+</template>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IJcApplianceCode.ts"],"names":[],"mappings":"","file":"IJcApplianceCode.js","sourcesContent":["export interface IJcApplianceCode {\n   key: string;\n   code: string;\n   fieldAppCode: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

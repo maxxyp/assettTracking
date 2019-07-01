@@ -1,0 +1,38 @@
+[
+	{
+		"key": "1",
+		"id": "1",
+		"description": "Appliance, components & access - OK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "2",
+		"description": "Access poor (not in accordance with manuf. instructions",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "3",
+		"description": "Burner, pilot, flame failure condition poor",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "4",
+		"description": "Evidence of failing joints/corrosion",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"id": "5",
+		"description": "Balanced or fanned flue = case and seals poor",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"id": "6",
+		"description": "Combination of above - very poor",
+		"ctlgEntDelnMkr": "N"
+	}
+]

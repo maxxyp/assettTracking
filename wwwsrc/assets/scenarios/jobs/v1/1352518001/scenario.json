@@ -1,0 +1,110 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-12T11:27:40Z",
+      "modifiedTimestamp": "2017-12-12T11:53:55Z"
+    },
+    "data": {
+      "job": {
+        "id": "1352518001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022211596",
+          "lastName": "Mrs Evelyn Oliver",
+          "address": {
+            "houseNumber": "345",
+            "line": [
+              "Welford Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6BJ",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L279153",
+          "address": {
+            "houseNumber": "345",
+            "line": [
+              "Welford Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "6BJ",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022211596",
+            "initials": " ",
+            "lastName": "Mrs Evelyn Oliver"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-12"
+          },
+          "risks": [
+            {
+              "reason": "R1",
+              "report": "Dog",
+              "date": "2017-12-12"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00252302",
+          "date": "2017-12-12T00:00:00Z",
+          "earliestStartTime": "2017-12-12T12:00:00Z",
+          "latestStartTime": "2017-12-12T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1352518001001",
+            "applianceId": "202235319",
+            "jobType": "HU",
+            "applianceType": "WAW",
+            "chargeType": "ALP2SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-12-12",
+                "status": "IA",
+                "engineerName": "NAVIN",
+                "chargeableTime": 22,
+                "sequence": 1,
+                "report": "71CODEBbyvvgvtvgvg",
+                "workDuration": 22
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1352518001002",
+            "jobType": "RB",
+            "applianceType": "CHB",
+            "chargeType": "NCHNONE",
+            "status": "C",
+            "skill": "RE",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-12-12",
+                "status": "D",
+                "engineerName": "NAVIN",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "54CODEGvtvtvfvfvvfvf",
+                "workDuration": 20
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

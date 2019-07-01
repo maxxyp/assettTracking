@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/history/IJobHistory.ts"],"names":[],"mappings":"","file":"IJobHistory.js","sourcesContent":["import { IAppliance } from \"./IAppliance\";\nimport { ITask } from \"../ITask\";\n\nexport interface IJobHistory {\n    tasks: ITask[];\n    appliances: IAppliance[];\n    id: string;\n}\n"],"sourceRoot":"../../../../../.."}

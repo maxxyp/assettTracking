@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISafetyNoticeType.ts"],"names":[],"mappings":"","file":"ISafetyNoticeType.js","sourcesContent":["export interface ISafetyNoticeType {\n   noticeType: string;\n   safetyNoticeTypeDescription: string;\n   safetyNoticeTypeCategory: string;\n}\n"],"sourceRoot":"../../../.."}

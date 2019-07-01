@@ -1,0 +1,125 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-10-18T14:13:38Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1336517001001",
+                "jobType": "KF",
+                "applianceType": "FZR",
+                "chargeType": "NCHFZR",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1304576001001",
+                "jobType": "BE",
+                "applianceType": "MW",
+                "chargeType": "NCHMW",
+                "status": "I",
+                "activities": [{
+                    "date": "2015-01-07T00:00:00Z",
+                    "status": "NA",
+                    "engineerName": "Kevin O'brian"
+                }]
+            }, {
+                "id": "1346517001001",
+                "jobType": "KF",
+                "applianceType": "MWO",
+                "chargeType": "NCHMWO",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-18T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Mark Millar"
+                }]
+            }, {
+                "id": "1326517001001",
+                "jobType": "BE",
+                "applianceType": "MW",
+                "chargeType": "NCHMW",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-18T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Paul Green"
+                }]
+            }],
+            "appliances": [{
+                "id": "202202794",
+                "gcCode": "9115303",
+                "category": "A",
+                "contractType": "2E1",
+                "contractExpiryDate": "2016-01-06T00:00:00Z",
+                "applianceType": "MW",
+                "description": "MW BROTHER MF-2200 MICRO",
+                "installationYear": 2012,
+                "linkId": "202202797"
+            }, {
+                "id": "202202795",
+                "gcCode": "7504500",
+                "category": "A",
+                "contractType": "2E1I",
+                "contractExpiryDate": "2016-01-06T00:00:00Z",
+                "applianceType": "FZR",
+                "description": "FZ BLOMBERG DEFAULT",
+                "boilerSize": 0,
+                "installationYear": 2013
+            }, {
+                "id": "202202796",
+                "gcCode": "9108601",
+                "category": "A",
+                "contractType": "2E1I",
+                "contractExpiryDate": "2016-01-06T00:00:00Z",
+                "applianceType": "MWO",
+                "description": "MW BELLING MW1 MICROWAVE",
+                "installationYear": 2012
+            }, {
+                "id": "202202797",
+                "category": "A",
+                "contractType": "MIE",
+                "contractExpiryDate": "2016-01-06T00:00:00Z",
+                "applianceType": "KAC",
+                "linkId": "202202797"
+            }, {
+                "id": "202201044",
+                "serialId": "23456",
+                "gcCode": "4200000",
+                "category": "A",
+                "contractType": "3ST",
+                "applianceType": "CGE",
+                "description": "AIR HEATERS - NO INFORMA",
+                "flueType": "F",
+                "boilerSize": 2,
+                "cylinderType": 2,
+                "energyControl": "EMX",
+                "locationDescription": "Washroom",
+                "condition": 1,
+                "numberOfRadiators": 2,
+                "numberOfSpecialRadiators": 2,
+                "installationYear": 1920,
+                "systemDesignCondition": 1,
+                "systemType": 1,
+                "safety": {
+                    "flueSafe": false,
+                    "ventilationSafe": true,
+                    "installationSafe": false,
+                    "actionCode": "C",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "Appliance not in good condition"
+                },
+                "chirp": {
+                    "iaciCode": "A",
+                    "iaciDate": "2014-11-28T00:00:00Z"
+                }
+            }],
+            "id": "1356517001"
+        }
+    }
+}

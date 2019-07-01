@@ -1,0 +1,47 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-02-14T8:00:00Z",
+      "modifiedTimestamp": "2018-02-14T12:00:00Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "2043062072",
+        "jobType": "AS",
+        "applicanceType": "CHB",
+        "status": "D"
+      }],
+      "appliances": [{
+        "id": "55063778",
+        "serialId": "281252/PSA",
+        "gcCode": "4740604",
+        "bgInstallationIndicator": "False",
+        "contractType": "3ST",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "CHB",
+        "description": "Worcester British Gas 537/i",
+        "flueType": "R",
+        "boilerSize": 12,
+        "cylinderType": 0,
+        "energyControl": "PR",
+        "locationDescription": "KITCHEN",
+        "condition": 1,
+        "numberOfRadiators": 9,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2007,
+        "systemInstallationYear": 1980,
+        "systemDesignCondition": 2,
+        "systemType": 16,
+        "linkId": "55063778",
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "installationSafe": true,
+          "installationTightnessTestSafe": true
+        }
+      }]
+    }
+  }    
+}

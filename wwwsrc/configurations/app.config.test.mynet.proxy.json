@@ -1,0 +1,301 @@
+{
+    "applicationTitle": "Engineer Workbench",
+    "organisationId": "BGS",
+    "applicationId": "AS123123",
+    "fftServiceEndpoint": {
+        "clients": [
+            {
+                "name": "simulation",
+                "type": "simulation"
+            },
+            {
+                "name": "test.mynet.proxy",
+                "type": "basic",
+                "root": "http://localhost:8081/dt.pulsenow.co.uk:443/fapp/",
+                "userName": "fapp_user",
+                "password": "P@s$w0rd01!",
+                "envQueryParams": {
+                    "env": "test"
+                }
+            }
+        ],
+        "routes": [
+            {
+                "route": "engineer_requestwork",
+                "client": "test.mynet.proxy",
+                "path": "engineers/v1/{engineerId}/requestwork"
+            },
+            {
+                "route": "engineer_worklist",
+                "client": "test.mynet.proxy",
+                "path": "engineers/v1/{engineerId}/worklist"
+            },
+            {
+                "route": "engineer_status",
+                "client": "test.mynet.proxy",
+                "path": "engineers/v1/{engineerId}/status"
+            },
+            {
+                "route": "engineer_status_eod",
+                "client": "test.mynet.proxy",
+                "path": "engineers/v1/{engineerId}/status"
+            },
+            {
+                "route": "engineer_orderconsumables",
+                "client": "test.mynet.proxy",
+                "path": "engineers/v1/{engineerId}/orderconsumables"
+            },
+            {
+                "route": "job",
+                "client": "test.mynet.proxy",
+                "path": "jobs/v1/{jobId}"
+            },
+            {
+                "route": "job_history",
+                "client": "test.mynet.proxy",
+                "path": "jobs/v1/{jobId}/history"
+            },
+            {
+                "route": "job_update",
+                "client": "test.mynet.proxy",
+                "path": "jobs/v1/{jobId}/jobupdate"
+            },
+            {
+                "route": "job_order_parts",
+                "client": "test.mynet.proxy",
+                "path": "jobs/v1/{jobId}/order"
+            },
+            {
+                "route": "job_status",
+                "path": "jobs/v1/{jobId}/status",
+                "client": "test.mynet.proxy"
+            },
+            {
+                "route": "reference_index",
+                "path": "reference/index",
+                "client": "simulation"
+            },
+            {
+                "route": "reference_catalog",
+                "path": "reference/catalog/{catalog}",
+                "client": "simulation",
+                "successLoggingMode": 1
+            },
+            {
+                "route": "reference_update",
+                "path": "engineers/v1/referencedata/engineerdata",
+                "client": "test.mynet"
+            },
+            {
+                "route": "parts_collection",
+                "path": "jobs/v1/{jobId}/parts",
+                "client": "test.mynet"
+            },
+            {
+                "route": "contractor_info",
+                "client": "test.mynet",
+                "path": "engineers/v1/contract/{engineerId}"
+            }
+        ],
+        "sendAnalyticsOnSuccess": true
+    },
+    "whoAmIServiceEndpoint": {
+        "clients": [
+            {
+                "name": "simulation",
+                "type": "simulation"
+            },
+            {
+                "name": "dev",
+                "type": "basic",
+                "root": "https://dt.pulsenow.co.uk/",
+                "userName": "eyre0b",
+                "password": "Password123#"
+            },
+            {
+                "name": "prod",
+                "type": "http",
+                "root": "https://dt.pulsenow.co.uk/"
+            }
+        ],
+        "routes": [
+            {
+                "route": "whoAmI",
+                "path": "whoami/v1",
+                "client": "simulation"
+            }
+        ],
+        "sendAnalyticsOnSuccess": true
+    },
+    "adaptServiceEndpoint": {
+        "clients": [
+            {
+                "name": "bridge",
+                "type": "http",
+                "root": "http://localhost:60012/"
+            },
+            {
+                "name": "simulation",
+                "type": "simulation"
+            }
+        ],
+        "routes": [
+            {
+                "route": "models",
+                "path": "ewb/adapt/models/{gcNumber}",
+                "client": "simulation"
+            },
+            {
+                "route": "attributes",
+                "path": "ewb/adapt/attributes/{modelId}",
+                "client": "simulation"
+            },
+            {
+                "route": "parts",
+                "path": "ewb/adapt/parts",
+                "client": "simulation",
+                "successLoggingMode": 2
+            },
+            {
+                "route": "settings",
+                "path": "ewb/adapt/usersettings",
+                "client": "simulation"
+            },
+            {
+                "route": "customerDetails",
+                "path": "ewb/quote/customerDetails",
+                "client": "simulation"
+            },
+            {
+                "route": "status",
+                "path": "ewb/status",
+                "client": "simulation"
+            },
+            {
+                "route": "version",
+                "path": "ewb/version",
+                "client": "simulation"
+            },
+            {
+                "route": "parts_collection",
+                "path": "jobs/v1/{jobId}/parts",
+                "client": "simulation"
+            }
+        ]
+    },
+    "assetTrackingEndpoint": {
+        "clients": [
+          {
+              "name": "test",
+              "type": "basic",
+              "root": "https://dt.pulsenow.co.uk/assettracking/",
+              "userName": "lambda_dev_team",
+              "password": "Lambda123!"
+          }
+        ],
+        "routes": [
+          {
+            "route": "materials",
+            "path": "engineer/{engineerId}/materials",
+            "client": "test"
+          },
+          {
+            "route": "actions",
+            "path": "engineer/{engineerId}/actions",
+            "client": "test"
+          },
+          {
+            "route": "search",
+            "path": "material/{materialCode}",
+            "client": "test"
+          },
+          {
+            "route": "highvaluetools",
+            "path": "material/hvt",
+            "client": "test"
+          },
+          {
+            "route": "zone",
+            "path": "material/{materialCode}/zone",
+            "client": "test"
+          },
+          {
+            "route": "receipt",
+            "path": "material/{materialCode}/receipt",
+            "client": "test"
+          },
+          {
+            "route": "return",
+            "path": "material/{materialCode}/return",
+            "client": "test"
+          },
+          {
+            "route": "reservation",
+            "path": "material/{materialCode}/reservation",
+            "client": "test"
+          },
+          {
+            "route": "transfer",
+            "path": "material/{materialCode}/transfer",
+            "client": "test"
+          },
+          {
+            "route": "consumption",
+            "path": "material/{materialCode}/consumption",
+            "client": "test"
+          }
+        ]
+      },
+    "activeDirectoryRoles": [
+        "d-Field-Engineer",
+        "d-Field-Admin",
+        "g-Field-Engineer",
+        "g-Field-Admin"
+    ],
+    "referenceDataStaleMinutes": 1440,
+    "targetReferenceDataTypes": [
+      "business",
+      "goods",
+      "jobcodes",
+      "lookups",
+      "config"
+    ],
+    "workListPostRequestWorkPollingIntervals": [
+        3000,
+        3000,
+        3000,
+        10000,
+        30000
+    ],
+    "workListPollingInterval": 300000,
+    "adaptPollingInterval": 5000,
+    "adaptLaunchUri": "launch-adapt:",
+    "customerInfoAutoLaunch": false,
+    "customerInfoReOpenExpiryMinutes": 30,
+    "googleClientKey": "AIzaSyDtoSQSLO-hhX1M9QeJU4TkSeQA1QsI7h4",
+    "googleApiVersion": "3",
+    "alwaysAllowSignOff": false,
+    "maxDaysArchiveRetrival": 60,
+    "logLevel": "info",
+    "maxLogFileAgeDays": 42,
+    "analyticsTrackingId": "UA-114658341-1",
+    "analyticsEnabled": false,
+    "logGeoLocation": false,
+    "notificationPosition": 4,
+    "notificationDisplayTime": 5,
+    "dropdownType": 1,
+    "minItemsToCategoriseSmashButtons": 24,
+    "soundEnabled": true,
+    "logJobOnEverySave": true,
+    "resilienceRertyIntervals": [
+        1000,
+        1000,
+        1000
+    ],
+    "whoAmITimeoutRetries": 2,
+    "whoAmITimeoutMs": 60000,
+    "resilienceSendAnalyticsOnSuccess": true,
+    "assetTrackingSearchStaleMinutes": 0.125,
+    "assetTrackingPollingIntervalMinutes": 1,
+    "assetTrackingCacheRefreshTimeHHmm": "05:00"
+}

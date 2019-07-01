@@ -1,0 +1,148 @@
+toast-manager { 
+    .toast-container {
+        z-index:9999;
+        width: 600px;
+        &.topleft{
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        &.topcenter{
+            position: fixed;
+            top: 0px;
+            width: 600px;
+            margin-left: -300px;
+            left: 50%;
+        }
+        
+        &.topright{
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+        &.bottomleft{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+        &.bottomcenter{
+            position: fixed;
+            bottom: 0px;
+            width: 600px;
+            margin-left: -300px;
+            left: 50%;
+        }
+        
+        &.bottomright{
+            position: fixed;
+            bottom: 0;
+            right: 0;
+        }
+
+        .toast-item {
+            background-color: #FFFFFF;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+            border: 1px solid #eee;
+            .successIconClass{
+                    @extend .fa;
+                    @extend .fa-check;
+            }
+            .failIconClass
+            {
+                    @extend .fa;
+                    @extend .fa-times;
+            }
+            .arrowDownClass{
+                    @extend .fa;
+                    @extend .fa-chevron-down;
+            }
+            .arrowUpClass{
+                    @extend .fa;
+                    @extend .fa-chevron-up;
+            }
+            .close-button {
+                font-size: 1.5rem;
+                position: relative;
+                top: 8px;
+                right: 8px;
+            }
+
+            .title {
+                padding: 10px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+
+            .btn-details {
+                text-align: right;
+
+                button i {
+                    font-size: 0.8rem;
+                    margin-left: 5px;
+                }
+
+                .details {
+                    text-align: left;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 10px;
+                    max-height: 400px;
+                    overflow: auto;
+                }                
+            }
+
+            &.danger {
+                .title {
+                    background: $brand-danger;
+                    color: #fff;
+                }
+            }
+            &.info {
+                .title {
+                    background: $brand-info;
+                    color: #fff;
+                }
+            }
+            &.warning {
+                .title {
+                    background: $brand-warning;
+                    color: #fff;
+                }
+            }
+            &.success {
+                .title {
+                    background: $brand-success;
+                    color: #fff;
+                }
+            }
+
+            animation: fadeIn 1s;
+
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+
+            &.fade-out {
+                animation: fadeOut 1s;
+
+                @keyframes fadeOut {
+                    from {
+                        opacity: 1;
+                    }
+
+                    to {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+

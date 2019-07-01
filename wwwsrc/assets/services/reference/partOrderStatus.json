@@ -1,0 +1,14 @@
+[
+	{
+		"key": 1,
+		"id": "O",
+		"description": "Order Part",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 2,
+		"id": "V",
+		"description": "Van Stock",
+		"ctlgEntDelnMkr": "N"
+	}
+]

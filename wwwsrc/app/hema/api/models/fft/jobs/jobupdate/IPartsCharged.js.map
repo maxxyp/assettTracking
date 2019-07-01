@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/IPartsCharged.ts"],"names":[],"mappings":"","file":"IPartsCharged.js","sourcesContent":["export interface IPartsCharged {\n    charge: number;\n    quantityCharged: number;\n    quantityUsed: number;\n    description: string;\n    stockReferenceId: string;\n}\n"],"sourceRoot":"../../../../../.."}

@@ -1,0 +1,92 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "job",
+			"createdTimestamp": "2017-02-28T",
+			"modifiedTimestamp": "2018-01-01T22:33:44Z"
+		},
+		"data": {
+			"job": {
+				"id": "2043062076",
+				"customer": {
+					"id": "100000255",
+					"password": "Ginger",
+					"initials": "S",
+					"title": "Ms",
+					"lastName": "Hull",
+					"homePhone": "01815983326",
+					"workPhone": "01814759621",
+					"address": {
+						"line": ["Beech Avenue"],
+						"houseNumber": "6",
+						"town": "Edinburgh",
+						"postCodeIn": "4PR",
+						"postCodeOut": "EH6"
+					}
+				},
+				"premises": {
+					"id": "8391152",
+					"address": {
+						"line": ["Beech Avenue"],
+						"houseNumber": "6",
+						"town": "Edinburgh",
+						"postCodeIn": "4PR",
+						"postCodeOut": "EH6"
+					},
+					"previousVisitCount": 1,
+					"contact": {
+						"id": "100000255",
+						"password": "Ginger",
+						"initials": "S",
+						"title": "Ms",
+						"lastName": "Hull",
+						"homePhone": "01815983326",
+						"workPhone": "01814759621",
+						"requesterName": "Ms Hull S"
+					},
+					"specialAccessInstructions": "",
+					"safetyDetail": {
+						"lastGasVisitDate": "2016-01-01",
+						"lastElectricVisitDate": "2016-01-01",
+						"safetyNoticeNotLeftReason": "High earth reading- bedroom socket san"
+					},
+					"risks": [{
+						"reason": "R1",
+						"report": "Dog will be secured",
+						"date": "2018-01-01"
+					}]
+				},
+				"visit": {
+					"id": "2032053421001",
+					"date": "2016-10-20T",
+					"status": "C",
+					"action type": "FV",
+					"appliance type": "CHB",
+					"charge type": "NCH3ST",
+					"earliestStartTime": "2017-02-28T08:00:00Z",
+					"latestStartTime": "2018-02-15T12:00:00Z",
+					"specialInstructions": ""
+				},
+				"tasks": [{
+					"id": "2043062076001",
+					"applianceId": "52063787",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"chargeType": "NCH3SIS",
+					"status": "D",
+					"skill": "GS",
+					"sequence": 1,
+					"supportingText": "Accidental damage to boiler water feed",
+					"activities": [{
+						"date": "2018-02-15",
+						"status": "D",
+						"sequence": 1,
+						"engineerName": "Mike Coulter",
+						"report": "Boiler and system checked OK after ignition fault repair."
+					}]
+				}]
+			}
+		}
+	}
+}

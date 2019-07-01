@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/vanStock/IVanStockPatchListItem.ts"],"names":[],"mappings":"","file":"IVanStockPatchListItem.js","sourcesContent":["export interface IVanStockPatchListItem {\n     patchCode: string;\n}\n"],"sourceRoot":"../../../.."}

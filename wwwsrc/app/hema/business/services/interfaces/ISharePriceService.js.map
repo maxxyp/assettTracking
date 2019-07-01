@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ISharePriceService.ts"],"names":[],"mappings":"","file":"ISharePriceService.js","sourcesContent":["import {Ticker} from \"../../models/sharePrice/ticker\";\n\nexport interface ISharePriceService {\n    getSharePrice(): Promise<Ticker>;\n}\n"],"sourceRoot":"../../../.."}

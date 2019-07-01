@@ -1,0 +1,142 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card fade-in-content">
+            <div class="card-block">
+                <div class="row" show.bind="isEmpty">
+                    <div class="col-xs-12">
+                        ${labels.noPreviousApplianceUnsafeDetail}
+                    </div>
+                </div>
+
+                <div class="row" show.bind="!isEmpty">
+                    <div class="col-xs-12">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.applianceSafe}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button-list items.bind="applianceSafeLookup" value.bind="safety.applianceSafe" multi-select.bind="false" disabled.bind="true"
+                                                button-width="30%">
+                                            </button-list>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.installationSafe}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <button-list items.bind="installationSafeLookup" value.bind="safety.installationSafe" multi-select.bind="false" disabled.bind="true"
+                                                button-width="30%">
+                                            </button-list>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.safetyAction}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <drop-down value.bind="safety.actionCode"
+                                                       format-text-value="(${catalog.SAFETY_ACTION_DESCRIPTION}) - (${catalog.SAFETY_ACTION_ID})"
+                                                       values.bind="safetyActionTypeCatalog"
+                                                       value-property.bind="catalog.SAFETY_ACTION_ID"
+                                                       text-property.bind="catalog.SAFETY_ACTION_DESCRIPTION"
+                                                       search-properties.bind="[catalog.SAFETY_ACTION_DESCRIPTION, catalog.SAFETY_ACTION_ID]"
+                                                        disabled.bind="true" no-filter="true" dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                                <template replace-part="option-template">
+                                                    <div>
+                                                        ${item[catalog.SAFETY_ACTION_DESCRIPTION]} - ${item[catalog.SAFETY_ACTION_ID]}
+                                                    </div>
+                                                </template>
+                                            </drop-down>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" if.bind="safety.date">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.date}</label>
+                                        </div>
+                                        <span class="col-xs-6">
+                                            ${safety.date | dateFormat}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.noticeStatus}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <drop-down value.bind="safety.noticeStatus"
+                                                       format-text-value="(${catalog.SAFETY_NOTICE_STATUS_DESCRIPTION}) - (${catalog.SAFETY_NOTICE_STATUS_ID})"
+                                                       values.bind="noticeStatusCatalog"
+                                                       value-property.bind="catalog.SAFETY_NOTICE_STATUS_ID"
+                                                       text-property.bind="catalog.SAFETY_NOTICE_STATUS_DESCRIPTION"
+                                                       search-properties.bind="[catalog.SAFETY_NOTICE_STATUS_DESCRIPTION, catalog.SAFETY_NOTICE_STATUS_ID]"
+                                                disabled.bind="true" no-filter="true" dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                                <template replace-part="option-template">
+                                                    <div>
+                                                        ${item[catalog.SAFETY_NOTICE_STATUS_DESCRIPTION]} - ${item[catalog.SAFETY_NOTICE_STATUS_ID]}
+                                                    </div>
+                                                </template>
+                                            </drop-down>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.noticeType}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <drop-down value.bind="safety.noticeType"
+                                                       format-text-value="(${catalog.SAFETY_NOTICE_TYPE_DESCRIPTION}) - (${catalog.SAFETY_NOTICE_TYPE_ID})"
+                                                       values.bind="noticeTypeCatalog"
+                                                       value-property.bind="catalog.SAFETY_NOTICE_TYPE_ID"
+                                                       text-property.bind="catalog.SAFETY_NOTICE_TYPE_DESCRIPTION"
+                                                       search-properties.bind="[catalog.SAFETY_NOTICE_TYPE_DESCRIPTION, catalog.SAFETY_NOTICE_TYPE_ID]"
+                                                       disabled.bind="true" no-filter="true" dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                                <template replace-part="option-template">
+                                                    <div>
+                                                        ${item[catalog.SAFETY_NOTICE_TYPE_DESCRIPTION]} - ${item[catalog.SAFETY_NOTICE_TYPE_ID]}
+                                                    </div>
+                                                </template>
+                                            </drop-down>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" if.bind="safety.progress">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.progress}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <text-box value.bind="safety.progress" disabled.bind="true"></text-box>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.report}</label>
+                                        </div>
+                                        <div class="col-xs-6">
+                                            <text-area value.bind="safety.report" disabled.bind="true"></text-area>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

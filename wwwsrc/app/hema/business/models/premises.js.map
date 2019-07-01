@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/premises.ts"],"names":[],"mappings":";;;IAEA;QAAA;QAIA,CAAC;QAAD,eAAC;IAAD,CAJA,AAIC,IAAA;IAJY,4BAAQ","file":"premises.js","sourcesContent":["import {Address} from \"./address\";\n\nexport class Premises {\n    public id: string;\n    public address: Address;\n    public accessInfo: string;\n}\n"],"sourceRoot":"../../.."}

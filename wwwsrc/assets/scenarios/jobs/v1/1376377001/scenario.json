@@ -1,0 +1,107 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-07-27T15:26:44Z",
+      "modifiedTimestamp": "2017-07-27T15:28:16Z"
+    },
+    "data": {
+      "job": {
+        "id": "1376377001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022210800",
+          "initials": " ",
+          "lastName": "Mr Samuel Finley",
+          "address": {
+            "houseNumber": "286",
+            "line": [
+              "Abbey Lane"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "2AA",
+            "postCodeOut": "LE4"
+          }
+        },
+        "premises": {
+          "id": "L278468",
+          "address": {
+            "houseNumber": "286",
+            "line": [
+              "Abbey Lane"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "2AA",
+            "postCodeOut": "LE4"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022210800",
+            "initials": " ",
+            "lastName": "Mr Samuel Finley"
+          }
+        },
+        "visit": {
+          "id": "WMW00207242",
+          "date": "2017-07-27T00:00:00Z",
+          "earliestStartTime": "2017-07-27T12:00:00Z",
+          "latestStartTime": "2017-07-27T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1376377001001",
+            "applianceId": "202234015",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1376377001002",
+            "applianceId": "202234015",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "fixedPriceQuotationAmount": "019967",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1376377001003",
+            "applianceId": "202234015",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

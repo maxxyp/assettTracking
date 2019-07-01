@@ -1,0 +1,47 @@
+<template>
+	<div class="card row">
+	<form form-manager>
+		<div class="card-header">
+			${labels.userSettings}
+		</div>
+		<div class="card-block" if.bind="isLoaded">
+			<div class="row">
+				<div class="form-group">
+					<div class="col-xs-3">
+						<label>${labels.workingArea}</label>
+					</div>
+					<div class="col-xs-6">
+						<drop-down values.bind="workingSectors" value.bind="selectedWorkingSector" placeholder="${labels.selectWorkingArea}" value-property="sectorCode"
+							text-property="sectorDescription" search-properties.bind="['sectorDescription', 'sectorCode']"  no-filter="true">
+						</drop-down>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-xs-3">
+						<label>${labels.patch}</label>
+					</div>
+					<div class="col-xs-6">
+						<drop-down values.bind="patchList" value.bind="selectedPatch" placeholder="${labels.selectPatch}" value-property="patchCode"
+							text-property="patchCode" search-properties.bind="['patchCode']"  no-filter="true">
+						</drop-down>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="form-group">
+					<div class="col-xs-3">
+						<label>${labels.region}</label>
+					</div>
+					<div class="col-xs-6">
+						<drop-down values.bind="regionList" value.bind="selectedRegion" placeholder="${labels.selectRegion}" value-property="key"
+								   text-property="description" search-properties.bind="['key']"  no-filter="true">
+						</drop-down>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	</div>
+</template>

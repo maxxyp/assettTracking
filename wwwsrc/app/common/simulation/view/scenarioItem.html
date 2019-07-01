@@ -1,0 +1,36 @@
+<template>
+    <require from="common/core/converters/stringifyValueConverter"></require>
+    <div class="card fade-in-content">
+        <div class="card-block card-header">${scenarioName}</div>
+        <div class="form-group" if.bind="scenario.status">
+            <label>Status</label>
+            <span>${scenario.status}</span>
+        </div>
+        <div class="form-group" if.bind="scenario.delay">
+            <label>Delay</label>
+            <span>${scenario.delay}</span>s
+        </div>
+        
+        <div class="form-group" if.bind="scenario.data">
+            <div class="alert alert-warning" role="alert" if.bind="!scenario.dataSchema">
+              <strong>Warning! The data has no schema file.</strong>
+            </div>
+        </div>
+
+        <div class="form-group" if.bind="scenario.data">
+            <div class="alert alert-warning" role="alert" if.bind="scenario.dataSchema && !scenario.dataSchema.valid">
+              <strong>Warning! The data does't meet the json schema spec.</strong>
+               <pre class="pretty-print" innerhtml.bind="scenario.dataSchema | stringify"></pre>
+            </div>
+            <pre class="pretty-print" innerhtml.bind="scenario.data | stringify"></pre>
+        </div>
+    </div>
+
+    <div if.bind="scenario.mutations">
+        <div class="card fade-in-content" repeat.for="mutation of scenario.mutations">
+            <div class="card-block card-header">${mutation.timestamp | dateTimeFormat}</div>
+                <pre class="pretty-print" innerhtml.bind="mutation.payload | stringify"></pre>
+            </div>
+        </div>
+    </div>
+</template>

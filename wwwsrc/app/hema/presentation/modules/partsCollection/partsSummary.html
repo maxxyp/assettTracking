@@ -1,0 +1,27 @@
+<template>
+    <div class="card details-card details-list">
+        <div class="card-block hook-list-data-container" show.bind="parts && parts.length > 0 ">
+            <div class="details-list-item details-list-item-header">
+                <div class="col-xs-4">${labels.stockRefId}</div>
+                <div class="col-xs-6">${labels.description}</div>
+                <div class="col-xs-2">${labels.quantity}</div>
+            </div>
+            <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container" repeat.for="part of parts">
+                <div class="col-xs-4 details-list-item-col ">
+                    ${part.stockReferenceId}
+                </div>
+                <div class="col-xs-6  details-list-item-col">
+                    ${part.description}
+                </div>
+                <div class="col-xs-2  details-list-item-col">
+                    ${part.quantity}
+                </div>
+            </div>
+        </div>
+        <div class="details-list-item disabled" show.bind="!parts || parts.length === 0">
+            <div class="col-xs-12 details-list-item-col">
+                ${labels.noData}
+            </div>
+        </div>
+    </div>
+</template>

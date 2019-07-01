@@ -1,0 +1,559 @@
+{
+  "status": 200,
+  "data":{
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-13T14:25:25Z",
+      "modifiedTimestamp": "2018-08-14T04:55:54Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1367425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "CP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1367425001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the 2nd RFA in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1367425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the 3rd RFA in visit 1",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1332425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE vgfmjbgdsjfvsd",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1332425001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE sfghadfjkgh"
+            }
+          ]
+        },
+        {
+          "id": "1332425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODE4 62CODE sfgjhdfnjkfhjk",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1302425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1302425001002",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1306425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1306425001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1306425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312425001002",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1316425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "CP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-10",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the job",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "NU",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1316425001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the 2nd job in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1316425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-10",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the 3rd job in visit 1",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1323425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the job in visit 1",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "CP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "NU",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1323425001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Complete the 2 nd job in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1323425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the job in visit 1",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1322425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1322425001002",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing s ample job",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 2,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 10,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224193",
+          "gcCode": "4306608",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "WAW",
+          "description": "BSD 19-25 WH WITH ECONOM",
+          "flueType": "R",
+          "boilerSize": 50,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "FFBAFFGAFAFGFGDFGADF",
+          "condition": 5,
+          "numberOfRadiators": 45,
+          "numberOfSpecialRadiators": 10,
+          "installationYear": 2011,
+          "systemDesignCondition": 8,
+          "systemType": 16,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-08"
+          }
+        },
+        {
+          "id": "202224192",
+          "gcCode": "4753214",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2019-08-07",
+          "applianceType": "CHB",
+          "description": "ALPHA CB24X",
+          "flueType": "R",
+          "boilerSize": 5,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "LOUNGE",
+          "condition": 4,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 9,
+          "installationYear": 2016,
+          "systemDesignCondition": 3,
+          "systemType": 9,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-08"
+          }
+        },
+        {
+          "id": "202224195",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "testing testing",
+          "locationDescription": "Kitchen",
+          "installationYear": 2010,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "X"
+          }
+        },
+        {
+          "id": "202224194",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "WAC",
+          "flueType": "R",
+          "boilerSize": 50,
+          "cylinderType": 3,
+          "energyControl": "PR",
+          "numberOfRadiators": 45,
+          "numberOfSpecialRadiators": 10,
+          "systemDesignCondition": 8,
+          "systemType": 16
+        }
+      ]
+    }
+  }
+}

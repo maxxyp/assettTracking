@@ -1,0 +1,451 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card fade-in-content">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="row" if.bind="viewModel.hasParentAppliance">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-2">
+                                    <label>${labels.parentApplianceType}</label>
+                                </div>
+                                <div class="col-xs-6">
+                                    <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                                                    key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                                                    description-field="${catalog.JC_APPLIANCE_CODE_FIELD_CODE}"
+                                                    value.bind="viewModel.parentApplianceType"></catalog-lookup>
+                                    &nbsp;-&nbsp;
+                                    <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                                                    key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                                                    description-field="${catalog.JC_APPLIANCE_CODE_DESCRIPTION}"
+                                                    value.bind="viewModel.parentApplianceType"></catalog-lookup>
+                                </div>
+                                <div class="col-xs-4">
+                                    <button class="btn btn-primary" click.trigger="loadParentAppliance()">
+                                        ${labels.goToParent}
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="row" if.bind="canEdit">
+                                <div class="col-xs-12">
+                                    <label>${labels.completeChildAppliance}</label>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="row" if.bind="!isNew && viewModel.contractExpiryDate">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.contractExpiry}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <label>
+                                            ${viewModel.contractExpiryDate | dateFormat: 'DD/MM/YYYY'}
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" if.bind="!isNew && viewModel.contractType">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.contractType}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <span show.bind="contractTypeDescription.length > 0">
+                                            ${contractTypeDescription} -
+                                        </span>
+                                        <catalog-lookup catalog="${catalog.JC_SERVICE_LEVEL_CODE}"
+                                                        key-field="${catalog.JC_SERVICE_LEVEL_CODE_ID}"
+                                                        description-field="${catalog.JC_SERVICE_LEVEL_CODE_DESCRIPTION}"
+                                                        value.bind="viewModel.contractType"></catalog-lookup>                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.applianceType}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down if.bind="canEdit && isNew"
+                                                   format-text-value="(${catalog.OBJECT_TYPE_DESCRIPTION}) - (${catalog.OBJECT_TYPE_ID}) "
+                                                   values.bind="creatableApplianceTypesCatalog"
+                                                   value.bind="viewModel.applianceType" placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.OBJECT_TYPE_ID"
+                                                   text-property.bind="catalog.OBJECT_TYPE_DESCRIPTION"
+                                                   search-properties.bind="[ catalog.OBJECT_TYPE_DESCRIPTION, catalog.OBJECT_TYPE_ID ]"
+                                                   disabled.bind="!canEdit || replaceAppliance" dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.OBJECT_TYPE_DESCRIPTION] ?
+                                                    item[catalog.OBJECT_TYPE_DESCRIPTION] + ' - ' +
+                                                    item[catalog.OBJECT_TYPE_ID] : item[catalog.OBJECT_TYPE_ID]}
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                        <span if.bind="!canEdit || !isNew">
+                                            <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                                                            key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                                                            description-field="${catalog.JC_APPLIANCE_CODE_FIELD_CODE}"
+                                                            value.bind="viewModel.applianceType"></catalog-lookup>
+                                            &nbsp;-&nbsp;
+                                            <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                                                            key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                                                            description-field="${catalog.JC_APPLIANCE_CODE_DESCRIPTION}"
+                                                            value.bind="viewModel.applianceType"></catalog-lookup>
+                                        </span>
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <span if.bind="viewModel.hasChildAppliance">(Parent)</span>
+                                        <span if.bind="viewModel.hasParentAppliance">(Child)</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.gcCode}</label>
+                                    </div>
+                                    <div class="col-xs-2" hide.bind="isDefaultGcCodeOptionAvailable">
+                                        <text-box disabled.bind="!canEdit || replaceAppliance"
+                                            readonly.bind="!viewModel.applianceType"
+                                            value.bind="viewModel.gcCode"
+                                            numeric-only="true"
+                                            max-length.bind="validationRules['viewModel.gcCode'].maxLength"></text-box>
+                                    </div>
+                                    <div class="col-xs-2"
+                                         hide.bind="isDefaultGcCodeOptionAvailable || (isKnownGcCodeSelected && viewModel.gcCode)">
+                                        <button class="btn btn-secondary" click.trigger="selectDefaultGcCodes()"
+                                                if.bind="canEdit && viewModel.requiresGcCode && !replaceAppliance">
+                                            ${labels.selectDefaultGcCode}
+                                        </button>
+                                    </div>
+
+                                    <div class="col-xs-4" if.bind="isDefaultGcCodeOptionAvailable">
+                                        <drop-down values.bind="defaultGcCodeCatalogItems"
+                                                   format-text-value="(${catalog.GC_CODE_DESCRIPTION}) -  (${catalog.GC_CODE_ID}) "
+                                                   value.bind="selectedDefaultGcCode" placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.GC_CODE_ID"
+                                                   text-property.bind="catalog.GC_CODE_DESCRIPTION"
+                                                   search-properties.bind="[catalog.GC_CODE_DESCRIPTION,catalog.GC_CODE_ID]"
+                                                   disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.GC_CODE_DESCRIPTION]?
+                                                    item[catalog.GC_CODE_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.GC_CODE_ID]):
+                                                    item[catalog.GC_CODE_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+
+                                    <div class="col-xs-2" if.bind="isDefaultGcCodeOptionAvailable">
+                                        <button class="btn btn-secondary" click.trigger="hideDefaultGcCodes()">
+                                            ${labels.hideDefaultGcCodes}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.description}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <text-box placeholder="${validationRules['viewModel.description'].maxLength} characters"
+                                                  max-length.bind="validationRules['viewModel.description'].maxLength"
+                                                  disabled.bind="!canEdit"
+                                                  readonly.bind="viewModel.requiresGcCode"
+                                                  value.bind="viewModel.description"></text-box>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.location}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <text-box placeholder="${validationRules['viewModel.locationDescription'].maxLength} characters"
+                                                  max-length.bind="validationRules['viewModel.locationDescription'].maxLength"
+                                                  disabled.bind="!canEdit"
+                                                  value.bind="viewModel.locationDescription"></text-box>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.applianceYear}</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <number-box disabled.bind="!canEdit"
+                                                    value.bind="viewModel.installationYear"
+                                                    max-length.bind="4"></number-box>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.serialNumber}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <text-box placeholder="${validationRules['viewModel.serialId'].maxLength} characters"
+                                                  disabled.bind="!canEdit"
+                                                  value.bind="viewModel.serialId"
+                                                  max-length.bind="validationRules['viewModel.serialId'].maxLength"></text-box>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isGasAppliance && viewModel.applianceType != 'INS'">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.flueType}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="flueTypesCatalog"
+                                                   format-text-value="(${catalog.APPLIANCE_FLUE_TYPES_DESCRIPTION}) - (${catalog.APPLIANCE_FLUE_TYPES_ID})"
+                                                   value.bind="viewModel.flueType" placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.APPLIANCE_FLUE_TYPES_ID"
+                                                   text-property.bind="catalog.APPLIANCE_FLUE_TYPES_DESCRIPTION"
+                                                   search-properties.bind="[catalog.APPLIANCE_FLUE_TYPES_DESCRIPTION,catalog.APPLIANCE_FLUE_TYPES_ID]"
+                                                   disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.APPLIANCE_FLUE_TYPES_DESCRIPTION] ?
+                                                    item[catalog.APPLIANCE_FLUE_TYPES_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.APPLIANCE_FLUE_TYPES_ID]) :
+                                                    item[catalog.APPLIANCE_FLUE_TYPES_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.bgInstallation}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <button-list
+                                                items.bind="bgInstallationYesNoLookup"
+                                                value.bind="viewModel.bgInstallationIndicator"
+                                                multi-select.bind="false"
+                                                disabled.bind="!canEdit"
+                                                button-width="30%">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.applianceCondition}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="applianceConditionCatalog"
+                                                   format-text-value="(${catalog.APPLIANCE_CONDITION_DESCRIPTION}) - (${catalog.APPLIANCE_CONDITION_ID})"
+                                                   value.bind="viewModel.condition" placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.APPLIANCE_CONDITION_ID"
+                                                   text-property.bind="catalog.APPLIANCE_CONDITION_DESCRIPTION"
+                                                   search-properties.bind="[catalog.APPLIANCE_CONDITION_DESCRIPTION,catalog.APPLIANCE_CONDITION_ID]"
+                                                   disabled.bind="!canEdit"  no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.APPLIANCE_CONDITION_DESCRIPTION]?
+                                                    item[catalog.APPLIANCE_CONDITION_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.APPLIANCE_CONDITION_ID]) :
+                                                    item[catalog.APPLIANCE_CONDITION_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.systemType}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="systemTypeCatalog"
+                                                   format-text-value="(${catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION}) - (${catalog.APPLIANCE_SYSTEM_TYPE_ID})"
+                                                   value.bind="viewModel.systemType" placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.APPLIANCE_SYSTEM_TYPE_ID"
+                                                   text-property.bind="catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION"
+                                                   search-properties.bind="[catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION,catalog.APPLIANCE_SYSTEM_TYPE_ID]"
+                                                   model.bind="catalogItem.code" disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template" >
+                                                <div>
+                                                    ${item[catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION]?
+                                                    item[catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.APPLIANCE_SYSTEM_TYPE_ID]) :
+                                                    item[catalog.APPLIANCE_SYSTEM_TYPE_DESCRIPTION] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.systemDesignCondition}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="systemDesignAndConditionCatalog"
+                                                   format-text-value="(${catalog.SYSTEM_DESIGN_AND_CONDITION_DESCRIPTION}) - (${catalog.SYSTEM_DESIGN_AND_CONDITION_ID})"
+                                                   value.bind="viewModel.systemDesignCondition"
+                                                   placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.SYSTEM_DESIGN_AND_CONDITION_ID"
+                                                   text-property.bind="catalog.SYSTEM_DESIGN_AND_CONDITION_DESCRIPTION"
+                                                   search-properties.bind="[catalog.SYSTEM_DESIGN_AND_CONDITION_DESCRIPTION,catalog.SYSTEM_DESIGN_AND_CONDITION_ID]"
+                                                   disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.SYSTEM_DESIGN_AND_CONDITION_DESCRIPTION] ?
+                                                    item[catalog.SYSTEM_DESIGN_AND_CONDITION_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.SYSTEM_DESIGN_AND_CONDITION_ID]) :
+                                                    item[catalog.SYSTEM_DESIGN_AND_CONDITION_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.radiators}: ${labels.total}</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <number-box disabled.bind="!canEdit"
+                                                    value.bind="viewModel.numberOfRadiators" max-length.bind="validationRules['viewModel.numberOfRadiators'].maxLength"></number-box>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.radiators}: ${labels.special}</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <number-box disabled.bind="!canEdit"
+                                                    value.bind="viewModel.numberOfSpecialRadiators" max-length.bind="validationRules['viewModel.numberOfSpecialRadiators'].maxLength"></number-box>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.boilerSize} ${labels.boilerSizeUnits}</label>
+                                    </div>
+                                    <div class="col-xs-2">
+                                        <number-box disabled.bind="!canEdit"
+                                                    value.bind="viewModel.boilerSize" max-length.bind="validationRules['viewModel.boilerSize'].maxLength"></number-box>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.cylinderType}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="cylinderTypeCatalog"
+                                                   format-text-value="(${catalog.APPLIANCE_CYLINDER_TYPE_DESCRIPTION}) - (${catalog.APPLIANCE_CYLINDER_TYPE_ID})"
+                                                   value.bind="viewModel.cylinderType"
+                                                   placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.APPLIANCE_CYLINDER_TYPE_ID"
+                                                   text-property.bind="catalog.APPLIANCE_CYLINDER_TYPE_DESCRIPTION"
+                                                   search-properties.bind="[catalog.APPLIANCE_CYLINDER_TYPE_DESCRIPTION,catalog.APPLIANCE_CYLINDER_TYPE_ID]"
+                                                   disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.APPLIANCE_CYLINDER_TYPE_DESCRIPTION]?
+                                                    item[catalog.APPLIANCE_CYLINDER_TYPE_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.APPLIANCE_CYLINDER_TYPE_ID]) :
+                                                    item[catalog.APPLIANCE_CYLINDER_TYPE_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" if.bind="viewModel.isCentralHeatingAppliance">
+                                <div class="form-group">
+                                    <div class="col-xs-2">
+                                        <label>${labels.energyControls}</label>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <drop-down values.bind="energyControlsCatalog"
+                                                   format-text-value="(${catalog.ENERGY_CONTROLS_DESCRIPTION}) - (${catalog.ENERGY_CONTROLS_ID})"
+                                                   value.bind="viewModel.energyControl"
+                                                   placeholder.bind="labels.pleaseSelect"
+                                                   value-property.bind="catalog.ENERGY_CONTROLS_ID"
+                                                   text-property.bind="catalog.ENERGY_CONTROLS_DESCRIPTION"
+                                                   search-properties.bind="[catalog.ENERGY_CONTROLS_DESCRIPTION,catalog.ENERGY_CONTROLS_ID]"
+                                                   disabled.bind="!canEdit" no-filter="true"  dropdown-type.bind="appSettings.dropdownType" min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                            <template replace-part="option-template">
+                                                <div>
+                                                    ${item[catalog.ENERGY_CONTROLS_DESCRIPTION]?
+                                                    item[catalog.ENERGY_CONTROLS_DESCRIPTION] + ' - ' +
+                                                    (item[catalog.ENERGY_CONTROLS_ID]) :
+                                                    item[catalog.ENERGY_CONTROLS_ID] }
+                                                </div>
+                                            </template>
+                                        </drop-down>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="action-group" if.bind="canEdit">
+                    <button class="btn btn-primary" click.trigger="completeOk()"
+                            if.bind="canEdit && isNew" disabled.bind="!viewModel.applianceType || isCompleteTriggeredAlready">
+                        ${labels.ok}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="loadChildAppliance()"
+                            if.bind="canEdit && viewModel.hasChildAppliance" disabled.bind="isCompleteTriggeredAlready">
+                        ${labels.goToChild}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="completeCancel()"
+                            if.bind="canEdit && isNew">
+                        ${labels.cancel}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="undo()" if.bind="canEdit && !isNew">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn btn-tertiary arrow-blue-right" click.trigger="clear()" if.bind="canEdit && !isNew">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

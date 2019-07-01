@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/IEngineerStatus.ts"],"names":[],"mappings":"","file":"IEngineerStatus.js","sourcesContent":["export interface IEngineerStatus {\n    timestamp: string;\n    statusCode: string;\n}\n"],"sourceRoot":"../../../../.."}

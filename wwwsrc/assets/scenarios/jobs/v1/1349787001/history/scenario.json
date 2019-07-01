@@ -1,0 +1,250 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-22T12:14:05Z",
+      "modifiedTimestamp": "2017-09-22T12:27:34Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1313827001001",
+          "jobType": "FV",
+          "applianceType": "BBC",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1390357001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-16",
+              "status": "IZ",
+              "engineerName": "WENDY",
+              "report": "62CODEVtnvuvhbbj,nlknkl"
+            }
+          ]
+        },
+        {
+          "id": "1391847001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1346857001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1346857001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1355077001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1333157001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-16",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "71CODErrrrrrrrrrrrrrrrrr"
+            }
+          ]
+        },
+        {
+          "id": "1328057001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-15",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "CODE3Activity should be completed soon",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                },
+                {
+                  "status": "UP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1308057001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-15",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "71CODEPpppppppppp"
+            }
+          ]
+        },
+        {
+          "id": "1382057001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-14",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "CODE2Done successfully"
+            }
+          ]
+        },
+        {
+          "id": "1342057001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-14",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "54CODEChcgvgvjbbjkbjbk"
+            }
+          ]
+        },
+        {
+          "id": "1342057001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-14",
+              "status": "C",
+              "engineerName": "WENDY",
+              "report": "54CODEChcgvgvjbbjkbjbk"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202231788",
+          "serialId": "1234567",
+          "gcCode": "4153215",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-06-08",
+          "applianceType": "CHB",
+          "description": "*C*ALPHA CD 24S LPG",
+          "flueType": "R",
+          "boilerSize": 2,
+          "energyControl": "EM",
+          "locationDescription": "bathroom",
+          "condition": 6,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 2,
+          "installationYear": 2000,
+          "systemDesignCondition": 5,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "C",
+            "iaciDate": "2017-06-16"
+          }
+        },
+        {
+          "id": "202230785",
+          "gcCode": "5398800",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-02-19",
+          "applianceType": "BBC",
+          "description": "DELGO CIRCULATORS - NO I",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "linkId": "202230785",
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-02-20"
+          }
+        },
+        {
+          "id": "202230786",
+          "category": "A",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-02-19",
+          "applianceType": "FRC",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "linkId": "202230785"
+        }
+      ]
+    }
+  }
+}

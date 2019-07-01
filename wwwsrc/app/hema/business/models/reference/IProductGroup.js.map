@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IProductGroup.ts"],"names":[],"mappings":"","file":"IProductGroup.js","sourcesContent":["export interface IProductGroup {\n   productGroupCode: string;\n   productGroupDescription: string;\n}\n"],"sourceRoot":"../../../.."}

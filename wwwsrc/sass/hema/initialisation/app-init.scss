@@ -1,0 +1,31 @@
+.app-init {
+  text-align: center;
+  border: 0px;
+  box-shadow: 0px 0px 7px 0px $grey-1;
+  border-bottom: 4px solid $blue-2;
+  width: 640px;
+  height: 300px;
+  display: inline-block;
+  background-color: white !important;
+  color: $slate-1 !important;
+
+  &.absolute-center {
+    position: absolute;   
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+
+  .header {
+    background: $slate-1;
+    color: #fff;
+    padding: 15px;
+    font-size: 1.5rem;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}

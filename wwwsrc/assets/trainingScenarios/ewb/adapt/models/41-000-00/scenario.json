@@ -1,0 +1,12 @@
+{
+  "status" : 200,
+  "data" : {
+    "models": [
+      {
+        "imModKey": 12573,
+        "description": "GREENSTAR 24 Ri",
+        "manufacturer": "WORCESTER HEAT SYSTEMS LTD"
+      }
+    ]
+  }
+}

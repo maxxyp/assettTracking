@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/IResponse.ts"],"names":[],"mappings":"","file":"IResponse.js","sourcesContent":["export interface IResponse {\n    type: string | ResponseType;\n    url: string;\n    status: number;\n    ok: boolean;\n    statusText: string;\n    headers: any;\n    json<T>(): Promise<T>;\n}\n"],"sourceRoot":"../.."}

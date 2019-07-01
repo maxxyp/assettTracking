@@ -1,0 +1,429 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-12-14T16:13:30Z",
+      "modifiedTimestamp": "2017-12-14T16:15:37Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1346518001001",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODE62CODECODE0Receive an interview"
+            }
+          ]
+        },
+        {
+          "id": "1346518001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALF3ST",
+          "activities": [
+            {
+              "date": "2017-12-14",
+              "status": "IA",
+              "engineerName": "NEIL",
+              "report": "54CODE71CODECODE3CODE7Ffggghhhjjjkkklllkhbb",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1384418001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODEHyyhuuuuujjjhhuuhhhhhhjjjjjjjjk"
+            }
+          ]
+        },
+        {
+          "id": "1384418001002",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODECODE0Bhhhhhhjjjjjjjjjjjj"
+            }
+          ]
+        },
+        {
+          "id": "1384418001003",
+          "jobType": "IB",
+          "applianceType": "OVN",
+          "status": "C",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "71CODECODE0Hhjjjjhgvvbnnmm,,llll"
+            }
+          ]
+        },
+        {
+          "id": "1384418001004",
+          "jobType": "AS",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODECODE1Njjjjnhghhnnhbhhhj"
+            }
+          ]
+        },
+        {
+          "id": "1384418001005",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "status": "C",
+          "chargeType": "NCHLI",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODECODE1Giggles henna ghostly"
+            }
+          ]
+        },
+        {
+          "id": "1384418001006",
+          "jobType": "AS",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-12-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODEhfhddhdhdgdgdgdgdgdgdgdg"
+            }
+          ]
+        },
+        {
+          "id": "1320118001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODECODE0Tedium visit her husbands"
+            }
+          ]
+        },
+        {
+          "id": "1320118001002",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODE71CODETime and they said there will also in which they"
+            }
+          ]
+        },
+        {
+          "id": "1320118001003",
+          "jobType": "IB",
+          "applianceType": "OVN",
+          "status": "C",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODE71CODECODE1Tvggggggghhhhhhhhhhhhhhh"
+            }
+          ]
+        },
+        {
+          "id": "1320118001004",
+          "jobType": "AS",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "71CODETesting perform in premise is successful"
+            }
+          ]
+        },
+        {
+          "id": "1320118001005",
+          "jobType": "AS",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODETesters completed the testing successfully"
+            }
+          ]
+        },
+        {
+          "id": "1320118001006",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "status": "C",
+          "chargeType": "NCHLI",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "71CODEUrgency testing is done"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202237119",
+          "gcCode": "4104800",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "CHB",
+          "description": "ALDE INTERNATIONAL BOILE",
+          "flueType": "F",
+          "boilerSize": 30,
+          "cylinderType": 0,
+          "energyControl": "NC",
+          "locationDescription": "Kitchen",
+          "condition": 4,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 4,
+          "installationYear": 2011,
+          "systemDesignCondition": 3,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-11-08"
+          }
+        },
+        {
+          "id": "202237119",
+          "gcCode": "4104800",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "CHB",
+          "description": "ALDE INTERNATIONAL BOILE",
+          "flueType": "F",
+          "boilerSize": 30,
+          "cylinderType": 0,
+          "energyControl": "NC",
+          "locationDescription": "Kitchen",
+          "condition": 4,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 4,
+          "installationYear": 2011,
+          "systemDesignCondition": 3,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-11-08"
+          }
+        },
+        {
+          "id": "202237120",
+          "gcCode": "4462000",
+          "category": "X",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "BBF",
+          "description": "NEW WORLD BOILERS - NO I",
+          "flueType": "O",
+          "boilerSize": 4,
+          "cylinderType": 0,
+          "energyControl": "NC",
+          "locationDescription": "Lounge",
+          "condition": 5,
+          "numberOfRadiators": 8,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "systemDesignCondition": 4,
+          "systemType": 3,
+          "linkId": "202237120",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2017-11-08"
+          }
+        },
+        {
+          "id": "202237121",
+          "gcCode": "4100000",
+          "category": "A",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "FRB",
+          "description": "combi",
+          "locationDescription": "Kitchen",
+          "installationYear": 2015,
+          "linkId": "202237120",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          }
+        },
+        {
+          "id": "202237122",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "FRE",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "locationDescription": "Kitchen",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Appliances is to be checked throughly"
+          }
+        },
+        {
+          "id": "202237123",
+          "gcCode": "1105000",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "OVN",
+          "description": "VITRO CERAMIC COOKERS -",
+          "locationDescription": "Lounge",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          }
+        },
+        {
+          "id": "202237124",
+          "category": "A",
+          "contractType": "LI",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "INS",
+          "safety": {
+            "applianceSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "X",
+            "noticeStatus": "N",
+            "noticeType": "SS",
+            "report": "Not to current standard"
+          }
+        },
+        {
+          "id": "202237125",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "LIG",
+          "contractExpiryDate": "2018-10-29",
+          "applianceType": "CKR",
+          "description": "Gas Cooker",
+          "locationDescription": "Lounge",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "Testing a sample job"
+          }
+        }
+      ]
+    }
+  }
+}

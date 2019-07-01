@@ -1,0 +1,79 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-10-17T15:28:39Z",
+            "modifiedTimestamp": "2016-10-17T15:33:40Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1354517001001",
+                "jobType": "AS",
+                "applianceType": "AGA",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Mark Millar"
+                }]
+            }, {
+                "id": "1374517001001",
+                "jobType": "IB",
+                "applianceType": "AGA",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-19T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Mark Millar"
+                }]
+            }, {
+                "id": "1386476001001",
+                "jobType": "FV",
+                "applianceType": "AGA",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2015-01-02T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Paul Green",
+                    "report": "CODE1 Boiler Inspection "
+                }]
+            }],
+            "appliances": [{
+                "id": "202202195",
+                "serialId": "345667",
+                "gcCode": "1102335",
+                "category": "X",
+                "contractType": "3ST",
+                "contractExpiryDate": "2015-08-01T00:00:00Z",
+                "applianceType": "AGA",
+                "description": "GCB COOKER BALANCED FLUE",
+                "flueType": "RS",
+                "boilerSize": 7,
+                "energyControl": "EM",
+                "locationDescription": "KITCHEN",
+                "condition": 1,
+                "numberOfRadiators": 7,
+                "numberOfSpecialRadiators": 1,
+                "installationYear": 1999,
+                "safety": {
+                    "flueSafe": false,
+                    "ventilationSafe": true,
+                    "installationSafe": false,
+                    "actionCode": "C",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "Boiler is not in Good Condition"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2015-01-02T00:00:00Z"
+                }
+            }],
+            "id": "1384517001"
+        }
+    }
+}

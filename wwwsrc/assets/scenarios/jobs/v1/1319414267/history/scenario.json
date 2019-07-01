@@ -1,0 +1,675 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "tasks": [
+                {
+                    "id": "1318344977001",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2016-06-24T10:22:35Z",
+                            "status": "X",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": false,
+                                    "partOrderStatus": "V"
+                                },
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "AP",
+                                    "requisitionNumber": "SOJ00063785640",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "O"
+                                }
+                            ]
+                        },
+                        {
+                            "date": "2016-06-24T10:22:35Z",
+                            "status": "X",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "AP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 10,
+                                    "quantityCharged": 10,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                },
+                                {
+                                    "orderDate": "2015-05-01T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785640",
+                                    "description": "Special Pipe",
+                                    "charge": 100,
+                                    "quantity": 10,
+                                    "quantityCharged": 10,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344911002",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2016-02-24T10:25:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": []
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344922003",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2015-06-22T19:22:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-03-05T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Motor",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": false,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344933004",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2014-09-24T10:22:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2012-03-30T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Impeller 100Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344944005",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2016-02-24T11:22:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Valve",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "O"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344955006",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2016-05-22T11:22:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344966007",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2016-03-23T10:21:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "AP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344977008",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2015-02-25T13:22:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": [
+                                {
+                                    "orderDate": "2016-01-01T00:00:00Z",
+                                    "status": "FP",
+                                    "requisitionNumber": "SOJ00063785639",
+                                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                                    "charge": 100,
+                                    "quantity": 1,
+                                    "quantityCharged": 1,
+                                    "stockReferenceId": "E66527",
+                                    "isMainPart": true,
+                                    "partOrderStatus": "V"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344912009",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2014-08-27T10:25:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": []
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344913010",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2014-01-10T10:25:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": []
+                        }
+                    ]
+                },
+                {
+                    "id": "1318344914011",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2014-04-24T10:25:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": []
+                        }
+                    ]
+                },
+                 {
+                    "id": "1318344915012",
+                    "jobType": "IB",
+                    "applianceType": "BBF",
+                    "status": "D",
+                    "applianceId": "92973623",
+                    "chargeType": "NCH3SIS",
+                    "skill": "GR",
+                    "fixedPriceQuotationAmount": 1.23,
+                    "discountCode": "AL",
+                    "sequence": 1,
+                    "specialRequirement": "All Ok",
+                    "supportingText": "boiler is making noise when turning on",
+                    "reference": "referenceid123",
+                    "activities": [
+                        {
+                            "date": "2014-05-24T10:25:35Z",
+                            "status": "D",
+                            "chargeableTime": 40,
+                            "percentageUplift": 20,
+                            "supplementaryLabourCharge": 21.99,
+                            "sequence": 1,
+                            "workDuration": 60,
+                            "engineerName": "Jack Smith",
+                            "report": "All OK",
+                            "parts": []
+                        }
+                    ]
+                }
+            ],
+            "appliances": [
+                {
+                    "id": "00000001",
+                    "serialId": "55-10/104510090",
+                    "gcCode": "4402301",
+                    "bgInstallationIndicator": false,
+                    "category": "A",
+                    "contractType": "LIM",
+                    "contractExpiryDate": "2016-01-01T00:00:00Z",
+                    "applianceType": "BBF",
+                    "description": "HEATWAVE TWIN",
+                    "flueType": "R",
+                    "boilerSize": 10,
+                    "cylinderType": 0,
+                    "energyControl": "NC",
+                    "locationDescription": "KITCHEN",
+                    "condition": 1,
+                    "numberOfRadiators": 0,
+                    "numberOfSpecialRadiators": 0,
+                    "installationYear": 1994,
+                    "systemInstallationYear": 1990,
+                    "systemDesignCondition": 0,
+                    "systemType": 0,
+                    "linkId": "",
+                    "notes": "INS Quote",
+                    "safety": {
+                        "applianceSafe": true,
+                        "flueSafe": true,
+                        "ventilationSafe": false,
+                        "installationSafe": false,
+                        "installationTightnessTestSafe": true,
+                        "actionCode": "X",
+                        "date": "2016-01-01T00:00:00Z",
+                        "noticeStatus": "A",
+                        "noticeType": "SS",
+                        "progress": "Some text information",
+                        "report": "NO 2ND RCD IN FUSE BOX"
+                    },
+                    "chirp": {
+                        "iaciCode": "A",
+                        "iaciDate": "2016-01-01T00:00:00Z"
+                    }
+                },
+                {
+                    "id": "00000002",
+                    "serialIdserialId": "55-10/104510090",
+                    "gcCode": "",
+                    "bgInstallationIndicator": false,
+                    "category": "B",
+                    "contractType": "2PI",
+                    "contractExpiryDate": "2016-01-01T00:00:00Z",
+                    "applianceType": "FRB",
+                    "description": "Fire for BBF",
+                    "flueType": "R",
+                    "boilerSize": 10,
+                    "cylinderType": 0,
+                    "energyControl": "NC",
+                    "locationDescription": "KITCHEN",
+                    "condition": 1,
+                    "numberOfRadiators": 10,
+                    "numberOfSpecialRadiators": 2,
+                    "installationYear": 1995,
+                    "systemInstallationYear": 1990,
+                    "systemDesignCondition": 0,
+                    "systemType": 0,
+                    "linkId": "00000001",
+                    "notes": "INS Quote",
+                    "safety": {
+                        "applianceSafe": true,
+                        "flueSafe": true,
+                        "ventilationSafe": false,
+                        "installationSafe": false,
+                        "installationTightnessTestSafe": true,
+                        "actionCode": "X",
+                        "date": "2016-01-01T00:00:00Z",
+                        "noticeStatus": "A",
+                        "noticeType": "SS",
+                        "progress": "Some text information",
+                        "report": "NO 2ND RCD IN FUSE BOX"
+                    },
+                    "chirp": {
+                        "iaciCode": "B",
+                        "iaciDate": "2016-01-01T00:00:00Z"
+                    }
+                },
+                {
+                    "id": "92973622",
+                    "serialId": "55-10/104510090",
+                    "gcCode": "9999998",
+                    "bgInstallationIndicator": false,
+                    "category": "A",
+                    "contractType": "NONE",
+                    "contractExpiryDate": "2016-01-01T00:00:00Z",
+                    "applianceType": "AGA",
+                    "description": "Aga Description 2",
+                    "flueType": "R",
+                    "boilerSize": 10,
+                    "cylinderType": 0,
+                    "energyControl": "NC",
+                    "locationDescription": "KITCHEN",
+                    "condition": 1,
+                    "numberOfRadiators": 0,
+                    "numberOfSpecialRadiators": 0,
+                    "installationYear": 1996,
+                    "systemInstallationYear": 1990,
+                    "systemDesignCondition": 0,
+                    "systemType": 0,
+                    "linkId": "",
+                    "notes": "INS Quote",
+                    "safety": {
+                        "applianceSafe": true,
+                        "flueSafe": true,
+                        "ventilationSafe": false,
+                        "installationSafe": false,
+                        "installationTightnessTestSafe": true,
+                        "actionCode": "X",
+                        "date": "2016-01-01T00:00:00Z",
+                        "noticeStatus": "A",
+                        "noticeType": "SS",
+                        "progress": "Some text information",
+                        "report": "NO 2ND RCD IN FUSE BOX"
+                    },
+                    "chirp": {
+                        "iaciCode": "C",
+                        "iaciDate": "2016-01-01T00:00:00Z"
+                    }
+                },
+                {
+                    "id": "92973623",
+                    "serialId": "55-10/104510090",
+                    "gcCode": "9999999",
+                    "bgInstallationIndicator": false,
+                    "category": "B",
+                    "contractType": "2PI",
+                    "contractExpiryDate": "2016-01-01T00:00:00Z",
+                    "applianceType": "BBF",
+                    "description": "Carbon Monoxide Model",
+                    "flueType": "R",
+                    "boilerSize": 10,
+                    "cylinderType": 0,
+                    "energyControl": "NC",
+                    "locationDescription": "KITCHEN",
+                    "condition": 1,
+                    "numberOfRadiators": 0,
+                    "numberOfSpecialRadiators": 0,
+                    "installationYear": 1997,
+                    "systemInstallationYear": 1990,
+                    "systemDesignCondition": 0,
+                    "systemType": 0,
+                    "linkId": "",
+                    "notes": "INS Quote",
+                    "safety": {
+                        "applianceSafe": true,
+                        "flueSafe": true,
+                        "ventilationSafe": false,
+                        "installationSafe": false,
+                        "installationTightnessTestSafe": true,
+                        "actionCode": "X",
+                        "date": "2016-01-01T00:00:00Z",
+                        "noticeStatus": "A",
+                        "noticeType": "SS",
+                        "progress": "Some text information",
+                        "report": "NO 2ND RCD IN FUSE BOX"
+                    },
+                    "chirp": {
+                        "iaciCode": "D",
+                        "iaciDate": "2016-01-01T00:00:00Z"
+                    }
+                },
+                {
+                    "id": "92973624",
+                    "gcCode": "8888888",
+                    "applianceType": "HAZ",
+                    "description": "ASBESTOS",
+                    "locationDescription": "attic",
+                    "installationYear": 2000
+                }
+            ]
+        }
+    }
+}

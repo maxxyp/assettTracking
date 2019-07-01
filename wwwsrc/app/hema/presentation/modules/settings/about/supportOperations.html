@@ -1,0 +1,42 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+
+                <div>
+                    <button class="btn btn-secondary" click.trigger="logCurrentJobState()">Log Current Job State</button>
+                    <button class="btn btn-secondary" click.trigger="getBridgeDiagnostic()">
+                        <i class="bridge-icon hema-icon-bridge-service ${bridgeDiagnosticSummary.statusOk? 'bridge-ok' : 'bridge-not-ok'}"></i>
+                        <span class="bridge-version" show.bind="bridgeDiagnosticSummary.statusOk">
+                            v${bridgeDiagnosticSummary.version} checked at ${bridgeDiagnosticSummary.timestamp | dateTimeFormat : 'HH:mm:ss'}
+                        </span>
+                    </button>
+                </div>
+
+                <br/>
+
+                <div class="alert alert-danger">
+                    <div>${labels.warning}</div>
+                    <br/>
+                    <button class="btn btn-secondary" click.trigger="removeData({user: true})">${labels.removeUserData}</button>
+                    <button class="btn btn-secondary" click.trigger="removeData({catalog: true})">${labels.removeCatalogData}</button>
+                    <button class="btn btn-secondary" click.trigger="removeData({user: true, catalog: true})">${labels.removeAll}</button>
+                </div>
+
+                <div class="card-block fade-in-content" show.bind="jobUpdate">
+                    <div>
+                        <label>Last Job Update JSON</label>
+                    </div>
+                    <div class="row json-viewer pretty-print">
+                        <pre>${jobUpdate}</pre>
+                    </div>
+                    <textarea ref="hiddenText" style="width: 0; height: 0; border: 0;margin: 0; padding: 0.1px;min-height:0"></textarea>
+                    <button class="btn btn-secondary fa fa-clipboard" click.trigger="copy()"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

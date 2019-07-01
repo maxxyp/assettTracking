@@ -1,0 +1,722 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-27T15:32:25Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1398857001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-06-30",
+              "status": "IA",
+              "engineerName": "WENDY",
+              "report": "62CODEGvnvh v Ng bh nb nvjh"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1398857001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "X",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-06-30",
+              "status": "XB",
+              "engineerName": "WENDY",
+              "report": "Hgvjvhjvjvjvjyvjvy"
+            }
+          ]
+        },
+        {
+          "id": "1398857001003",
+          "jobType": "AS",
+          "applianceType": "GRL",
+          "status": "X",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "date": "2017-06-30",
+              "status": "XC",
+              "engineerName": "WENDY",
+              "report": "Ng hgvjvvjhvjhbjjbjh"
+            }
+          ]
+        },
+        {
+          "id": "1314667001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-07-12",
+              "status": "IA",
+              "engineerName": "WENDY",
+              "report": "62CODETesting activity"
+            }
+          ]
+        },
+        {
+          "id": "1314667001002",
+          "jobType": "FF",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2017-07-12",
+              "status": "IP",
+              "engineerName": "WENDY",
+              "report": "62CODELink on Tuesday morning",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1384097001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1384097001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1384097001003",
+          "jobType": "IB",
+          "applianceType": "GRL",
+          "status": "I",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1384097001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1331667001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1341077001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1341077001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1300477001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-07-28",
+              "status": "IP",
+              "engineerName": "MANDHAGINI",
+              "report": "71CODEyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                }
+              ]
+            },
+            {
+              "status": "D",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1343487001001",
+          "jobType": "HU",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1343487001002",
+          "jobType": "SD",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "SLO1S",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1343487001003",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1363487001001",
+          "jobType": "HU",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1363487001002",
+          "jobType": "HU",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1363487001003",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1319277001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-07-26",
+              "status": "NA",
+              "engineerName": "NAVIN",
+              "report": "54CODETest test Test"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1319277001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-07-26",
+              "status": "NA",
+              "engineerName": "NAVIN",
+              "report": "CODE1Test done test freee",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373757001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1309277001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1379067001001",
+          "jobType": "S1",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2017-07-04",
+              "status": "IZ",
+              "engineerName": "WENDY",
+              "report": "CODE8Typing the report"
+            },
+            {
+              "date": "2017-07-04",
+              "status": "IA",
+              "engineerName": "WENDY",
+              "report": "CODE2New Alyson road Leicester"
+            },
+            {
+              "date": "2017-07-04",
+              "status": "IA",
+              "engineerName": "WENDY",
+              "report": "62CODEKkkkkkkklllll"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1393267001001",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-07-05",
+              "status": "QP",
+              "engineerName": "WENDY",
+              "report": "71CODEGfgcghhfnhgghngmjg"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1397287001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-09-07",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "Mm, mm,kkllllll"
+            }
+          ]
+        },
+        {
+          "id": "1397287001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-09-07",
+              "status": "NA",
+              "engineerName": "NEIL"
+            }
+          ]
+        },
+        {
+          "id": "1397287001003",
+          "jobType": "IB",
+          "applianceType": "GRL",
+          "status": "I",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "date": "2017-09-07",
+              "status": "NA",
+              "engineerName": "NEIL"
+            }
+          ]
+        },
+        {
+          "id": "1397287001004",
+          "jobType": "OD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2017-09-07",
+              "status": "NA",
+              "engineerName": "NEIL"
+            }
+          ]
+        },
+        {
+          "id": "1334267001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1389557001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1399557001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1310657001001",
+          "jobType": "OD",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1329857001001",
+          "jobType": "OD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO1S",
+          "activities": [
+            {
+              "date": "2017-06-30",
+              "status": "NA",
+              "engineerName": "WENDY",
+              "report": "CODE3Activity reports are not mandatory"
+            }
+          ]
+        },
+        {
+          "id": "1341667001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1341667001002",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1341667001003",
+          "jobType": "AS",
+          "applianceType": "GRL",
+          "status": "I",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1398087001001",
+          "jobType": "FF",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO2SPT",
+          "activities": [
+            {
+              "date": "2017-08-29",
+              "status": "NA",
+              "engineerName": "NAVIN",
+              "report": "Testesffrsf"
+            }
+          ]
+        },
+        {
+          "id": "1398087001002",
+          "jobType": "OD",
+          "applianceType": "GRL",
+          "status": "I",
+          "chargeType": "SLO1S",
+          "activities": [
+            {
+              "date": "2017-08-29",
+              "status": "NA",
+              "engineerName": "NAVIN"
+            }
+          ]
+        },
+        {
+          "id": "1351957001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1316657001001",
+          "jobType": "OD",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202232760",
+          "gcCode": "4739302",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "CHB",
+          "description": "PUMA 80SE",
+          "flueType": "V",
+          "boilerSize": 3,
+          "energyControl": "EM",
+          "locationDescription": "kitchen test",
+          "condition": 2,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2000,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "C",
+            "iaciDate": "2017-07-03"
+          }
+        },
+        {
+          "id": "202232755",
+          "gcCode": "4404105",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-06-26",
+          "applianceType": "BBF",
+          "description": "ANSWER BOILER & FIREPLAC",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "linkId": "202232755",
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-06-27"
+          }
+        },
+        {
+          "id": "202232756",
+          "category": "A",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-06-26",
+          "applianceType": "FRB",
+          "locationDescription": "fbgfhnfhghg",
+          "installationYear": 2014,
+          "linkId": "202232755",
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        },
+        {
+          "id": "202232757",
+          "gcCode": "1327001",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-06-26",
+          "applianceType": "HOB",
+          "description": "BO HO TO",
+          "locationDescription": "fgfgghgjh",
+          "installationYear": 2014,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        },
+        {
+          "id": "202232758",
+          "gcCode": "1202101",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2018-06-26",
+          "applianceType": "GRL",
+          "description": "bbfgfhghhjjh",
+          "locationDescription": "bcvfgfhvhgh",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        },
+        {
+          "id": "202232763",
+          "gcCode": "4267791",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "WAU",
+          "description": "RPV 300",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-06-27"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,265 @@
+{
+    "status": 200,
+    "data": {
+	"meta": {
+		"type": "jobHistory",
+		"createdTimestamp": "2017-04-06T15:17:07Z"
+	},
+	"data": {
+		"tasks": [{
+			"id": "1366237001001",
+			"jobType": "AS",
+			"applianceType": "CHB",
+			"status": "I",
+			"chargeType": "NCH3SIS",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1366237001002",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1366237001003",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1325237001001",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1325237001002",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1373337001001",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1373337001002",
+			"jobType": "AS",
+			"applianceType": "CHB",
+			"status": "I",
+			"chargeType": "NCH3SIS",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1373337001003",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1398237001001",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1398237001002",
+			"jobType": "AS",
+			"applianceType": "CHB",
+			"status": "I",
+			"chargeType": "NCH3SIS",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1328437001001",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1328437001002",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1391827001001",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1391827001002",
+			"jobType": "AS",
+			"applianceType": "CHB",
+			"status": "I",
+			"chargeType": "NCH3SIS",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1391827001003",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1350827001001",
+			"jobType": "AS",
+			"applianceType": "INS",
+			"status": "I",
+			"chargeType": "NCHLI",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1350827001002",
+			"jobType": "AS",
+			"applianceType": "CHB",
+			"status": "I",
+			"chargeType": "NCH3SIS",
+			"activities": [{
+				"status": "D"
+			}]
+		}, {
+			"id": "1350827001003",
+			"jobType": "AS",
+			"applianceType": "CKR",
+			"status": "I",
+			"chargeType": "NCH2AFI",
+			"activities": [{
+				"status": "D"
+			}]
+		}],
+		"appliances": [{
+			"id": "172774107",
+			"gcCode": "1100000",
+			"bgInstallationIndicator": false,
+			"category": "A",
+			"contractType": "2AFI",
+			"contractExpiryDate": "2099-12-31",
+			"applianceType": "CKR",
+			"description": "COOKERS - NO INFORMATION",
+			"flueType": "F",
+			"locationDescription": "KITCHEN",
+			"installationYear": 2008,
+			"safety": {
+				"applianceSafe": true,
+				"ventilationSafe": true,
+				"installationTightnessTestSafe": true,
+				"report": "NEW KITCHEN BEING FITTED - NO CUPBOARDS IN PLACE"
+			}
+		}, {
+			"id": "172774106",
+			"gcCode": "9900000",
+			"bgInstallationIndicator": false,
+			"category": "A",
+			"contractType": "LI",
+			"contractExpiryDate": "2099-12-31",
+			"applianceType": "INS",
+			"description": "INSTALLATION GAS",
+			"flueType": "F",
+			"locationDescription": "CELLAR",
+			"installationYear": 2009,
+			"safety": {
+				"applianceSafe": true,
+				"ventilationSafe": true,
+				"installationTightnessTestSafe": true,
+				"actionCode": "X",
+				"noticeStatus": "N",
+				"noticeType": "SS",
+				"report": "CLIPPING LEAD GAS TO ELECTRICS NOT SLEEVED"
+			}
+		}, {
+			"id": "156235473",
+			"gcCode": "4704411",
+			"bgInstallationIndicator": false,
+			"category": "X",
+			"contractType": "3SIS",
+			"contractExpiryDate": "2099-12-31",
+			"applianceType": "CHB",
+			"description": "TURBOMAX PRO 28E",
+			"flueType": "R",
+			"boilerSize": 28,
+			"cylinderType": 0,
+			"energyControl": "TS",
+			"locationDescription": "KITCHEN",
+			"condition": 1,
+			"numberOfRadiators": 11,
+			"numberOfSpecialRadiators": 0,
+			"installationYear": 2004,
+			"systemInstallationYear": 2001,
+			"systemDesignCondition": 2,
+			"systemType": 17,
+			"safety": {
+				"applianceSafe": true,
+				"flueSafe": true,
+				"ventilationSafe": true,
+				"installationTightnessTestSafe": true,
+				"actionCode": "X",
+				"noticeStatus": "N",
+				"noticeType": "SS",
+				"report": "NCS - FLUE LENGTH, 3-PIN PLUG, CLEARANCES"
+			},
+			"chirp": {
+				"iaciCode": "D",
+				"iaciDate": "2009-01-14"
+			}
+		}, {
+			"id": "199940919",
+			"gcCode": "9999999",
+			"category": "A",
+			"contractType": "NONE",
+			"applianceType": "FFR",
+			"description": "ZZ Migration",
+			"locationDescription": "KITCHEN",
+			"safety": {
+				"applianceSafe": true,
+				"installationSafe": false,
+				"actionCode": "X",
+				"noticeStatus": "N",
+				"noticeType": "SS",
+				"report": "FB NTCS"
+			}
+		}]
+	}
+}
+}

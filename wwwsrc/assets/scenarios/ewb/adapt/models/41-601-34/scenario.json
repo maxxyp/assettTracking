@@ -1,0 +1,17 @@
+{
+  "status": 200,
+  "data": {
+    "models": [
+      {
+        "imModKey": 6440,
+        "description": "NETAHEAT MK2F 10/16",
+        "manufacturer": "POTTERTON MYSON LTD"
+      },
+      {
+        "imModKey": 6441,
+        "description": "NETAHEAT MK2F 10/16 - PCB From Serial No PCA",
+        "manufacturer": "POTTERTON MYSON LTD"
+      }
+    ]
+  }
+}

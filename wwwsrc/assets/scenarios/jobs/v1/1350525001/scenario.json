@@ -1,0 +1,91 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T05:00:24Z"
+    },
+    "data": {
+      "job": {
+        "id": "1350525001",
+        "engineerId": "6060606",
+        "customer": {
+          "id": "022201599",
+          "lastName": "Mrs Treasa Geroge",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "Western Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "8BS",
+            "postCodeOut": "LE8"
+          }
+        },
+        "premises": {
+          "id": "L271112",
+          "address": {
+            "houseNumber": "4",
+            "line": [
+              "Western Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "8BS",
+            "postCodeOut": "LE8"
+          },
+          "previousVisitCount": 66,
+          "chirpAICode": "202223879",
+          "contact": {
+            "id": "022201600",
+            "initials": " ",
+            "lastName": "Mrs Charles Daze"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-07"
+          }
+        },
+        "visit": {
+          "id": "WMW00057427",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T12:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1350525001001",
+            "applianceId": "202223880",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO3ST",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1350525001002",
+            "applianceId": "202223880",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCH3ST",
+            "status": "D",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

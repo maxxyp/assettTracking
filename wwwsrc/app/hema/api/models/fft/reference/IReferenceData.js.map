@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/reference/IReferenceData.ts"],"names":[],"mappings":"","file":"IReferenceData.js","sourcesContent":["export interface IReferenceData {\n    [index: string]: any[];\n}\n"],"sourceRoot":"../../../../.."}

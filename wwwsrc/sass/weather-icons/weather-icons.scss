@@ -1,0 +1,14 @@
+
+@font-face {
+  font-family: WeatherIcons;
+  src: url('../fonts/weathericons/WeatherIcons.woff') format('woff');
+  font-style: normal;
+}
+
+.weather-icons{
+  font-family: WeatherIcons;
+  font-style: normal;
+}
+.weather-icons.weather-icons-cloud:before { content: "a" }
+.weather-icons.weather-icons-partly-sunny:before { content: "f" }
+/* add the rest... */

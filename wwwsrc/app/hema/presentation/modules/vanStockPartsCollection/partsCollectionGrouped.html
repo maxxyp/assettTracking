@@ -1,0 +1,18 @@
+<template>
+    <div repeat.for="groupId of groupNames">
+        <div class="van-stock-parts-collection-item-head">
+            <strong if.bind="groupId === VANSTOCK_ID">Van stock parts</strong>
+            <strong if.bind="groupId !== VANSTOCK_ID">Parts to collect for W/R No.: ${groupId}</strong>
+        </div>
+        <compose repeat.for="part of groups[groupId]"
+                 view-model="./vanStockItem"
+                 model.bind="{part, myVanAreas}" class="job">
+        </compose>
+    </div>
+    <div if.bind="returns.length">
+        <div class="van-stock-parts-collection-item-head">
+            <strong>Expected Returns</strong>
+        </div>
+        <compose view="./vanStockItemReturn.html"></compose>
+    </div>
+</template>

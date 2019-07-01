@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ILabel.ts"],"names":[],"mappings":"","file":"ILabel.js","sourcesContent":["export interface ILabel {\n   key: string;\n   viewModel: string;\n   id: string;\n   label: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

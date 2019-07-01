@@ -1,0 +1,278 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-19T13:00:56Z",
+      "modifiedTimestamp": "2017-09-19T14:51:46Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1307587001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "hhhhhhhhhhhhhhhhhhhhhh"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1307587001002",
+          "jobType": "AS",
+          "applianceType": "FRE",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": " nnnnnhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1307587001003",
+          "jobType": "SD",
+          "applianceType": "HOB",
+          "status": "I",
+          "chargeType": "SLO2API",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "gggggggggggggggggggggg",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "bb",
+                  "quantity": 1,
+                  "stockReferenceId": "123456"
+                }
+              ]
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373687001001",
+          "jobType": "AS",
+          "applianceType": "FRE",
+          "status": "I",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1335587001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODE71CODEgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg"
+            }
+          ]
+        },
+        {
+          "id": "1335587001002",
+          "jobType": "AS",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "NCH1S",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "IA",
+              "engineerName": "NEIL",
+              "report": "62CODE71CODEhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2017-09-18",
+              "status": "IP",
+              "engineerName": "NEIL",
+              "report": "62CODECODE0yhyhhhhhhhhhhhhhhhhhhh",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2017-09-18",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODECODE1yyyyyyyyyyyyyyyyyyyyyyyyy",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "ttttt",
+                  "quantity": 1,
+                  "stockReferenceId": "198788"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1335587001003",
+          "jobType": "AS",
+          "applianceType": "HOB",
+          "status": "C",
+          "chargeType": "NCH2API",
+          "activities": [
+            {
+              "date": "2017-09-18",
+              "status": "IP",
+              "engineerName": "NEIL",
+              "report": "54CODECODE0jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                }
+              ]
+            },
+            {
+              "date": "2017-09-18",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODEgggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                },
+                {
+                  "status": "CP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202236736",
+          "gcCode": "4104800",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-09-17",
+          "applianceType": "CHB",
+          "description": "ALDE INTERNATIONAL BOILE",
+          "flueType": "V",
+          "boilerSize": 8,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "location chb",
+          "condition": 1,
+          "numberOfRadiators": 8,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "systemDesignCondition": 9,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-19"
+          }
+        },
+        {
+          "id": "202236737",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-09-17",
+          "applianceType": "FRE",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "locationDescription": "testttttt",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "202236738",
+          "gcCode": "1327410",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2018-09-17",
+          "applianceType": "HOB",
+          "description": "UTILITY BOILING RING",
+          "locationDescription": "tesdsss",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          }
+        }
+      ]
+    }
+  }
+}

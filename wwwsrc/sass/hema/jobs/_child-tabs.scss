@@ -1,0 +1,30 @@
+.child-tabs {
+  background: #ddd;
+  display: flex;
+  margin-top: 3px;
+
+  .child-tabs-item {
+    display: inline-block;
+    padding: 8px;
+    flex: 1;
+    font-weight: bold;
+    background-color: #b9cbec;
+    border-right: 1px solid #aaa;
+    color: $blue-2;
+    cursor: pointer;
+    border-radius: 10px 10px 0px 0px;
+
+    &:last-child {
+      border-right: none;
+    }
+
+    &.active {
+      background-color: #fafafa;
+    }
+
+    .child-tabs-state-indicator {
+        @extend .validation-state-indicator
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+{
+  "status" : 200,
+  "data" :{
+  "models": [
+    {
+      "imModKey": 38067,
+      "description": "HEATMASTER 71 and 101",
+      "manufacturer": "ACV"
+    }
+  ]
+}
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IVisitActivityCode.ts"],"names":[],"mappings":"","file":"IVisitActivityCode.js","sourcesContent":["export interface IVisitActivityCode {\n   visitActivityCode: string;\n   visitActivityDescription: string;\n   partsDataRequired: string;\n}\n"],"sourceRoot":"../../../.."}

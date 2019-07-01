@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/reference/IListObject.ts"],"names":[],"mappings":"","file":"IListObject.js","sourcesContent":["export interface IListObject {\n    documentName: string;\n    etag: string;\n    lastModifiedDate: string;\n}\n"],"sourceRoot":"../../../../.."}

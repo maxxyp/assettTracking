@@ -1,0 +1,83 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-08T12:58:15Z"
+    },
+    "data": {
+      "job": {
+        "id": "1310518001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022212792",
+          "lastName": "Mr Additional Charges",
+          "address": {}
+        },
+        "premises": {
+          "id": "L279781",
+          "address": {
+            "houseNumber": "5",
+            "line": [
+              "Althorpe Drive"
+            ],
+            "county": "Loughborough",
+            "postCodeIn": "4QT",
+            "postCodeOut": "LE11"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022212792",
+            "initials": " ",
+            "lastName": "Mr Additional Charges"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-08"
+          }
+        },
+        "visit": {
+          "id": "WMW00252102",
+          "date": "2017-12-08T00:00:00Z",
+          "earliestStartTime": "2017-12-08T08:00:00Z",
+          "latestStartTime": "2017-12-08T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1310518001001",
+            "applianceId": "202237322",
+            "jobType": "CB",
+            "applianceType": "CHB",
+            "chargeType": "EXS2FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1310518001002",
+            "applianceId": "202237323",
+            "jobType": "HU",
+            "applianceType": "WAU",
+            "chargeType": "ALP1S",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

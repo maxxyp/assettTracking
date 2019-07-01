@@ -1,0 +1,130 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-08T11:28:57Z",
+      "modifiedTimestamp": "2017-09-11T11:48:18Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1366287001001",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "status": "C",
+          "chargeType": "NCHLI",
+          "activities": [
+            {
+              "date": "2017-09-06",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODECODE3CODEAANjjkkkkkkkkkk"
+            }
+          ]
+        },
+        {
+          "id": "1384287001001",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "status": "C",
+          "chargeType": "NCHLI",
+          "activities": [
+            {
+              "date": "2017-09-05",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "62CODEReporrt tesetd"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202236577",
+          "gcCode": "5104700",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2018-09-04",
+          "applianceType": "CIR",
+          "description": "NEW WORLD MULTI W/HEATER",
+          "flueType": "V",
+          "boilerSize": 0,
+          "cylinderType": 0,
+          "locationDescription": "CIR location",
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2013,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-06"
+          }
+        },
+        {
+          "id": "202236577",
+          "gcCode": "5104700",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2018-09-04",
+          "applianceType": "CIR",
+          "description": "NEW WORLD MULTI W/HEATER",
+          "flueType": "V",
+          "boilerSize": 0,
+          "cylinderType": 0,
+          "locationDescription": "CIR location",
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2013,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-06"
+          }
+        },
+        {
+          "id": "202236576",
+          "gcCode": "4700000",
+          "category": "X",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2018-09-04",
+          "applianceType": "CHB",
+          "description": "COMBI BOILERS - NO INFOR",
+          "flueType": "V",
+          "boilerSize": 12,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "CHB Location",
+          "condition": 2,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "systemDesignCondition": 1,
+          "systemType": 3,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-06"
+          }
+        },
+        {
+          "id": "202236578",
+          "category": "A",
+          "contractType": "LI",
+          "contractExpiryDate": "2018-09-04",
+          "applianceType": "INS"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "job": {
+        "id": "1391817001",
+        "customer": {
+          "id": "022208285",
+          "lastName": "Mr Datafor Private",
+          "address": {
+            "houseNumber": "20",
+            "line": [
+              "Lennymuir"
+            ],
+            "county": "Edinburgh",
+            "postCodeIn": "0AP",
+            "postCodeOut": "EH12"
+          }
+        },
+        "premises": {
+          "id": "L276178",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Clerwood Gardens"
+            ],
+            "county": "Edinburgh",
+            "postCodeIn": "8PT",
+            "postCodeOut": "EH12"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022208286",
+            "initials": " ",
+            "lastName": "Miss Resi Data"
+          }
+        },
+        "visit": {
+          "id": "WMW00153572",
+          "date": "2016-11-17T00:00:00Z",
+          "earliestStartTime": "2016-11-17T08:00:00Z",
+          "latestStartTime": "2016-11-17T18:00:00Z"
+        },
+        "tasks": [{
+          "id": "1391817001001",
+          "applianceId": "202230305",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "chargeType": "NCH2SIS",
+          "status": "D",
+          "skill": "FV",
+          "sequence": 1,
+          "activities": [{
+            "status": "D",
+            "sequence": 1
+          }]
+        }]
+      }
+    }
+  }
+}

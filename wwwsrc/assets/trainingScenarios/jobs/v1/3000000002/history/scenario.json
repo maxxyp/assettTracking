@@ -1,0 +1,55 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-02-17T08:0:00Z",
+      "modifiedTimestamp": "2018-02-17T12:00:00Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "2043062076",
+        "jobType": "IB",
+        "applicanceType": "CHB",
+        "chargeType": " NCH3SIS",
+        "status": "D",
+        "activities": [{
+          "date": "2018-02-15Z",
+          "status": "D",
+          "engineerName": "Mike Coulter"
+        }]
+      }],
+      "appliances": [{
+        "id": "52063787",
+        "gcCode": "4710814",
+        "bgInstallationIndicator": false,
+        "contractType": "3SIS",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "CHB",
+        "description": "Bosch RD 628",
+        "flueType": "R",
+        "boilerSize": 28,
+        "cylinderType": 0,
+        "category": "X",
+        "energyControl": "EM",
+        "locationDescription": "KITCHEN",
+        "condition": 1,
+        "numberOfRadiators": 11,
+        "numberOfSpecialRadiators": 2,
+        "installationYear": 2012,
+        "systemInstallationYear": 2012,
+        "systemDesignCondition": 1,
+        "systemType": 16,
+        "linkId": "52063787",
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "installationSafe": true,
+          "Installation sound": "true",
+          "date": "2018-02-15Z",
+          "report": "Boiler and system checked OK after ignition fault repair"
+        }
+      }]
+    }
+  }  
+}

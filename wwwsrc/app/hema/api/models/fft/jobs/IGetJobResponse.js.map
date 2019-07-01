@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/IGetJobResponse.ts"],"names":[],"mappings":"","file":"IGetJobResponse.js","sourcesContent":["import {IGetJobData} from \"./IGetJobData\";\nimport { IMeta } from \"../IMeta\";\n\nexport interface IGetJobResponse {\n    meta: IMeta;\n    data: IGetJobData;\n}\n"],"sourceRoot":"../../../../.."}

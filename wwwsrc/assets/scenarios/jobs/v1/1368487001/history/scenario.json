@@ -1,0 +1,86 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-14T14:59:47Z",
+      "modifiedTimestamp": "2017-09-14T16:28:15Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1375577001001",
+          "jobType": "RH",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCFZAW3",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1380487001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "CPOZAW3",
+          "activities": [
+            {
+              "date": "2017-09-12",
+              "status": "IA",
+              "engineerName": "NAVIN",
+              "report": "71CODETestimony Tisdale"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202233174",
+          "gcCode": "4739302",
+          "category": "X",
+          "contractType": "ZAW3",
+          "contractExpiryDate": "2020-07-11",
+          "applianceType": "CHB",
+          "description": "PUMA 80SE",
+          "flueType": "V",
+          "boilerSize": 111,
+          "cylinderType": 0,
+          "energyControl": "EMX",
+          "locationDescription": "Testimonials",
+          "condition": 1,
+          "numberOfRadiators": 8,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "systemDesignCondition": 1,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-09-14"
+          }
+        },
+        {
+          "id": "202235273",
+          "gcCode": "3262616",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2018-08-15",
+          "applianceType": "FRE",
+          "description": "DUNBAR 3 UNIT WITH BOILI",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+[
+	{
+		"key": "1",
+		"id": "1",
+		"description": "CHARGE OK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "2",
+		"description": "CHARGE NOT OK",
+		"ctlgEntDelnMkr": "N"
+	}
+]

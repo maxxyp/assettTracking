@@ -1,0 +1,43 @@
+<template>
+    <div if.bind="partsCollections.length" class="job job-parts-collection-item-head">
+        <div class="clearfix header-container pointer" click.trigger="navigateToPartsCollection($event)">
+            <div class="col-xs-12 action-container-spacer" if.bind="summaryDescription">
+                <div class="job-parts-collection-message">
+                    ${summaryDescription}
+                </div>
+            </div>
+            <div class="action-container">
+                <div class="refresh-buttons-container">
+                    <div if.bind="!engineerService.isPartCollectionInProgress">
+                        <div>
+                            Parts Not Collected
+                        </div>
+                        <button disabled.bind="!enabled"
+                                click.trigger="collectAndNavigateToPartsCollection($event)"
+                                class="btn btn-primary form-control ${(tracker.requestingStatus || !enabled) ? 'disabled' : ''}">
+                            <i class="hema-icon-collecting-parts"
+                               style="font-size:32px; display: block; margin-top:10px"></i>
+                            <span style="font-size: 0.9rem;">
+                                Collect Parts
+                            </span>
+                        </button>
+                    </div>
+                    <div if.bind="engineerService.isPartCollectionInProgress">
+                        <div>
+                            Obtaining Materials
+                        </div>
+                        <button click.trigger="continueToPartsCollection($event)"
+                                class="btn btn-primary form-control enabled">
+                            <i class="hema-icon-collecting-parts"
+                               style="font-size:32px; display: block; margin-top:10px"></i>
+                            <span style="font-size: 0.9rem;">
+                                Collect Parts
+                            </span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

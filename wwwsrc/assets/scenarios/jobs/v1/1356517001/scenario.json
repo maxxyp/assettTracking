@@ -1,0 +1,98 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-18T14:13:38Z"
+        },
+        "data": {
+            "job": {
+                "id": "1356517001",
+                "customer": {
+                    "id": "022190466",
+                    "lastName": "Mr John Smith",
+                    "address": {
+                        "houseNumber": "45",
+                        "line": [
+                            "Burnell Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "1EB",
+                        "postCodeOut": "LE3"
+                    }
+                },
+                "premises": {
+                    "id": "L261133",
+                    "address": {
+                        "houseNumber": "45",
+                        "line": [
+                            "Burnell Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "1EB",
+                        "postCodeOut": "LE3"
+                    },
+                    "previousVisitCount": 1,
+                  "contact": {
+                    "id": "022190466",
+                    "initials": " ",
+                    "lastName": "Mr John Smith",
+                    "homePhone": "01765 987456"
+                  },
+                    "safetyDetail": {
+                        "lastElectricVisitDate": "2016-10-18T00:00:00Z"
+                    },
+                    "risks": [{
+                        "reason": "R5",
+                        "report": "Rude Neighbours",
+                        "date": "2016-10-18T00:00:00Z"
+                    }, {
+                        "reason": "R6",
+                        "report": "Wiring",
+                        "date": "2016-10-18T00:00:00Z"
+                    }],
+                    "unsafeDetail": {
+                        "report": "Electrical Installation is unsafe in the property",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "NT",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "",
+                        "reasons": [
+                            "SYSTP"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00151062",
+                    "date": "2016-10-18T00:00:00Z",
+                    "earliestStartTime": "2016-10-18T18:00:00Z",
+                    "latestStartTime": "2016-10-18T22:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1356517001001",
+                    "applianceId": "202202794",
+                    "jobType": "BE",
+                    "applianceType": "MW",
+                    "chargeType": "NCH2E1",
+                    "status": "D",
+                    "skill": "ER",
+                    "sequence": 2,
+                    "specialRequirement": "",
+                    "supportingText": "**ELECTRCAL***",
+                    "activities": [{
+                        "date": "2016-10-18T00:00:00Z",
+                        "status": "IP",
+                        "chargeableTime": 10,
+                        "sequence": 1,
+                        "workDuration": 10
+                    }, {
+                        "status": "D"
+                    }]
+                }]
+            }
+        }
+    }
+}

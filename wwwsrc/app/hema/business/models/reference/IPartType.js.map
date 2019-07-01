@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IPartType.ts"],"names":[],"mappings":"","file":"IPartType.js","sourcesContent":["export interface IPartType {\n   productGroupCode: string;\n   partTypeCode: string;\n   partTypeDescription: string;\n}\n"],"sourceRoot":"../../../.."}

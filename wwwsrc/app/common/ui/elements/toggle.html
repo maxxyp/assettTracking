@@ -1,0 +1,8 @@
+<template>
+    <label class="btn btn-toggle ${value === true ? 'active' : ''}" click.trigger="toggleClick(true)">
+        ${isTrueText}
+    </label>
+    <label class="btn btn-toggle ${value === false ? 'active' : ''}" click.trigger="toggleClick(false)">
+        ${isFalseText}
+    </label>
+</template>

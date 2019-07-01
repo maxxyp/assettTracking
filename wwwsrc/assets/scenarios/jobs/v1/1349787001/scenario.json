@@ -1,0 +1,101 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-22T12:14:05Z",
+      "modifiedTimestamp": "2017-09-22T12:27:34Z"
+    },
+    "data": {
+      "job": {
+        "id": "1349787001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022209508",
+          "lastName": "Mr Third Gas Tester",
+          "address": {}
+        },
+        "premises": {
+          "id": "L276558",
+          "address": {
+            "premisesName": "Flat 1",
+            "houseNumber": "4",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022209587",
+            "initials": " ",
+            "lastName": "Mrs Gas Customer"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-22"
+          }
+        },
+        "visit": {
+          "id": "WMW00222972",
+          "date": "2017-09-22T00:00:00Z",
+          "earliestStartTime": "2017-09-22T18:00:00Z",
+          "latestStartTime": "2017-09-22T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1349787001001",
+            "applianceId": "202231788",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "CPO2ST",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-22",
+                "status": "IA",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "54CODEreport tested",
+                "workDuration": 5,
+                "parts": [
+                  {
+                    "status": "CP",
+                    "description": "Wax Sensor",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "108014"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Knob Control c/w Clip",
+                    "charge": 1224.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E76070"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Wax Sensor",
+                    "charge": 2672.0,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "108014"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

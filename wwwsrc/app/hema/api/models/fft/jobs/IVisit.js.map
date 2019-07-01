@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/IVisit.ts"],"names":[],"mappings":"","file":"IVisit.js","sourcesContent":["export interface IVisit {\n    id: string;\n    date: string;\n    status: string;\n    earliestStartTime: string;\n    latestStartTime: string;\n    specialInstructions: string;\n    engineerInstructions: string;\n}\n"],"sourceRoot":"../../../../.."}

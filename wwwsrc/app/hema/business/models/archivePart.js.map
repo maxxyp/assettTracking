@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/archivePart.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAIA,CAAC;QAAD,kBAAC;IAAD,CAJA,AAIC,IAAA;IAJY,kCAAW","file":"archivePart.js","sourcesContent":["export class ArchivePart {\n    public stockRefereceId: string;\n    public quantity: number;\n    public description: string;\n}\n"],"sourceRoot":"../../.."}

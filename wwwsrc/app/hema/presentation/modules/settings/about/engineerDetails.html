@@ -1,0 +1,44 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+                <div>
+                    <label>${labels.name}:</label>
+                    <span>${name}</span>
+                </div>
+                <div>
+                <label>${labels.lanId}:</label>
+                    <span>${lanId}</span>
+                </div>
+                <div>
+                    <label>${labels.payrollId}:</label>
+                    <span>${payrollId}</span>
+                </div>
+                <div>
+                    <label>${labels.phoneNumber}:</label>
+                    <span>${phoneNumber}</span>
+                </div>
+                <div>
+                    <label>${labels.roles}:</label>
+                    <span>${roles}</span>
+                </div>
+                <hr/>
+                <div>
+                    <label>${labels.workingArea}:</label>
+                    <span>${workingArea}</span>
+                </div>
+                <div>
+                    <label>${labels.patch}:</label>
+                    <span>${patch}</span>
+                </div>
+                <div>
+                    <label>${labels.region}:</label>
+                    <span>${region}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,558 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-14T06:27:24Z",
+      "modifiedTimestamp": "2018-08-14T06:53:54Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1331525001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1331525001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "I",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1331525001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1330325001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "I",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "NA",
+              "engineerName": "EMPLOYEE 6"
+            }
+          ]
+        },
+        {
+          "id": "1330325001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "I",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "NA",
+              "engineerName": "EMPLOYEE 6"
+            }
+          ]
+        },
+        {
+          "id": "1330325001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "NA",
+              "engineerName": "EMPLOYEE 6"
+            }
+          ]
+        },
+        {
+          "id": "1398425001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Complete the 1st RFA in visit 1",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 3,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1398425001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "C",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Complete the 2nd RFA in visit 2",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1398425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Complete the 3rd RFA in visit 1",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342425001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample.."
+            }
+          ]
+        },
+        {
+          "id": "1342425001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "C",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job..",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1342425001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1325325001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE DSDSDSDSDSDSD"
+            }
+          ]
+        },
+        {
+          "id": "1325325001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "C",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "62CODE DSDSDSDSDS",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE dasdsdsdsd",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1325325001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "62CODE SDSDSDSDSDSDSD",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1329225001001",
+          "jobType": "RH",
+          "applianceType": "WAU",
+          "status": "X",
+          "chargeType": "NCFCNI1",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "XB",
+              "engineerName": "AMEND",
+              "report": "testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1329225001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "X",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "XB",
+              "engineerName": "AMEND",
+              "report": "testuinmksdngksdj"
+            }
+          ]
+        },
+        {
+          "id": "1329225001003",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "XB",
+              "engineerName": "AMEND",
+              "report": "kdjfnkdjkdfghdfjvbjdfg"
+            }
+          ]
+        },
+        {
+          "id": "1369225001001",
+          "jobType": "FV",
+          "applianceType": "WAU",
+          "status": "C",
+          "chargeType": "NCHCNI1",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 3,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1369225001002",
+          "jobType": "HU",
+          "applianceType": "WH",
+          "status": "C",
+          "chargeType": "ALP2API",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1369225001003",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224163",
+          "gcCode": "4200000",
+          "category": "X",
+          "contractType": "CNI1",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "WAU",
+          "description": "AIR HEATERS - NO INFORMA",
+          "flueType": "F",
+          "boilerSize": 1,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "Kitchen",
+          "condition": 1,
+          "numberOfRadiators": 23,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2017,
+          "systemDesignCondition": 1,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        },
+        {
+          "id": "202224165",
+          "gcCode": "5169413",
+          "category": "A",
+          "contractType": "2API",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "WH",
+          "description": "CASCADE 4 TC",
+          "locationDescription": "Kitchen",
+          "installationYear": 2017,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "202224167",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "Cupboard",
+          "locationDescription": "Cupboard",
+          "installationYear": 2011,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "X"
+          }
+        },
+        {
+          "id": "202224164",
+          "gcCode": "4107578",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "*C*Megaflo 2 System 32 C",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        }
+      ]
+    }
+  }
+}

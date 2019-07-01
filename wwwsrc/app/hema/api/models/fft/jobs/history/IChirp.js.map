@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/history/IChirp.ts"],"names":[],"mappings":"","file":"IChirp.js","sourcesContent":["export interface IChirp {\n    iaciCode: string;\n    iaciDate: string;\n}\n"],"sourceRoot":"../../../../../.."}

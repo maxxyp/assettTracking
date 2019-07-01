@@ -1,0 +1,208 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-12-12T11:27:40Z",
+      "modifiedTimestamp": "2017-12-12T11:53:55Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1349797001001",
+          "jobType": "HU",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALP2SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1349797001002",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1301997001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1304397001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1360097001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1302897001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-10",
+              "status": "C",
+              "engineerName": "RYAN DAVIS",
+              "report": "CODE5ASV COMPLETE ALL TESTS PASS"
+            }
+          ]
+        },
+        {
+          "id": "1302897001002",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2017-10-10",
+              "status": "C",
+              "engineerName": "RYAN DAVIS",
+              "report": "CODE5INSTALL CO DETECT",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "CO Detector BG 7yr Warranty TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555525"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1315697001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-05",
+              "status": "C",
+              "engineerName": "SUNNY SOLANKI",
+              "report": "CODE3Mic booked HSA appt. Adv COD"
+            }
+          ]
+        },
+        {
+          "id": "1382597001001",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "NCH2SIS",
+          "activities": [
+            {
+              "date": "2017-10-04",
+              "status": "C",
+              "engineerName": "ROBERT CARAVELLI",
+              "report": "CODE3serviced warm air unit and circ"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202235319",
+          "gcCode": "4317604",
+          "category": "X",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2018-08-16",
+          "applianceType": "WAW",
+          "description": "MINI MONARCH SLIMPACK TY",
+          "flueType": "O",
+          "boilerSize": 25,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "kitchen",
+          "condition": 1,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 1980,
+          "systemDesignCondition": 6,
+          "systemType": 1,
+          "linkId": "202235319",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2017-10-10"
+          }
+        },
+        {
+          "id": "202235320",
+          "gcCode": "4300000",
+          "category": "A",
+          "contractType": "2SIS",
+          "contractExpiryDate": "2018-08-16",
+          "applianceType": "WAC",
+          "description": "circ",
+          "locationDescription": "kitchen",
+          "installationYear": 2000,
+          "linkId": "202235319",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "202236912",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "CO DETECT",
+          "locationDescription": "KITCHEN",
+          "installationYear": 2017,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "X"
+          }
+        }
+      ]
+    }
+  }
+}

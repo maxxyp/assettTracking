@@ -1,0 +1,3 @@
+phone number
+highlighting search
+no lat long - error on actions!

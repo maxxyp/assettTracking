@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/dialogs/models/confirmDialogModel.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,yBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,gDAAkB","file":"confirmDialogModel.js","sourcesContent":["export class ConfirmDialogModel {\n    public header: string;\n    public text: string;\n}\n"],"sourceRoot":"../../../.."}

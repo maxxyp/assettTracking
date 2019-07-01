@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+
+<style>
+    body {
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+    .main {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding: 150px 20px 20px;
+        resize: both;
+        overflow: auto;
+    }
+
+    aside {
+        margin-top: 10em;
+    }
+
+    h1 {
+        margin-top: 2em;
+    }
+
+</style>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <img src="../assets/bg-logo-mobile.svg" height=250px ">
+            <h1>{{title}}</h1>
+            <aside>
+                <p>Author: {{author}}</p>
+                <p>Version: {{version}}</p>
+                <p>{{date}}</p>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>

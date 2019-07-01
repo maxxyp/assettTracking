@@ -1,0 +1,112 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-07-11T12:52:04Z",
+      "modifiedTimestamp": "2017-07-11T13:33:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "1313567001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022209025",
+          "lastName": "Mr Chrg Oneyht",
+          "address": {
+            "houseNumber": "109",
+            "line": [
+              "Upperton Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          }
+        },
+        "premises": {
+          "id": "L276802",
+          "address": {
+            "premisesName": "Flat 3",
+            "houseNumber": "109",
+            "line": [
+              "Upperton Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022209026",
+            "initials": " ",
+            "lastName": "Miss Comboo Dataooo"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-07-11"
+          },
+          "risks": [
+            {
+              "reason": "R6",
+              "report": "HIGH VOLTAGE OF CURRENT",
+              "date": "2017-07-11"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00198842",
+          "date": "2017-07-11T00:00:00Z",
+          "earliestStartTime": "2017-07-11T18:00:00Z",
+          "latestStartTime": "2017-07-11T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1313567001001",
+            "applianceId": "202231054",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCH1S",
+            "status": "C",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-07-11",
+                "status": "C",
+                "engineerName": "NAVIN",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "CODEZZyyyyyyyyyyyyyyyyyyyyyy",
+                "workDuration": 5
+              }
+            ]
+          },
+          {
+            "id": "1313567001002",
+            "applianceId": "202231054",
+            "jobType": "RH",
+            "applianceType": "CHB",
+            "chargeType": "NCF1S",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-07-11",
+                "status": "IA",
+                "engineerName": "NAVIN",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "CODE7ythrreeeeeeeeee",
+                "workDuration": 5
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

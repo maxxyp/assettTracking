@@ -1,0 +1,227 @@
+{
+  "servers": {
+    "dev": {
+      "server": "10.25.241.4",
+      "deployPort": 443,
+      "deployBuildEndpoint": "/bgsapps/deploy/build/",
+      "deployReportEndpoint": "/bgsapps/deploy/report/",
+      "deployCompleteEndpoint": "/bgsapps/deploy/complete/",
+      "unpack": [
+        "dev.simulation",
+        "test.mynet",
+        "debug"
+      ],
+      "auth": {
+        "username": "FFTBuildAgent",
+        "password": "TwP2sKYYKcwnnm3QNUGD"
+      },
+      "isCustom": true
+    },
+    "test": {
+      "server": "10.25.241.132",
+      "deployPort": 443,
+      "deployBuildEndpoint": "/bgsapps/deploy/build/",
+      "deployReportEndpoint": "/bgsapps/deploy/report/",
+      "deployCompleteEndpoint": "/bgsapps/deploy/complete/",
+      "unpack": [
+        "test.simulation",
+        "test.mynet",
+        "test.centrica",
+        "debug"
+      ],
+      "auth": {
+        "username": "FFTBuildAgent",
+        "password": "XWNaEYeR2y3skuJZfYEM"
+      },
+      "isCustom": true
+    }
+  },
+  "builds": {
+    "dev.simulation": {
+      "platforms": {
+        "web": {
+          "minify": false,
+          "sourceMaps": true,
+          "isDevelopment": true,
+          "isCustom": true
+        },
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.simulation": {
+      "platforms": {
+        "wua": {
+          "minify": true,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.mynet": {
+      "platforms": {
+        "web": {
+          "minify": false,
+          "sourceMaps": true,
+          "isDevelopment": true,
+          "isCustom": true
+        },
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.centrica": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.preprod": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.itf1": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "test.itf2": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": true,
+          "isCustom": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },    
+    "prod": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": false,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          }
+        }
+      }
+    },
+    "debug": {
+      "platforms": {
+        "web": {
+          "minify": false,
+          "sourceMaps": true,
+          "isDevelopment": true,
+          "isCustom": true
+        }
+      }
+    },
+    "prod.training": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": false,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          },
+          "projectFile": "training"
+        }
+      }
+    },
+    "test.training": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": false,
+          "isDevelopment": false,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          },
+          "projectFile": "training"
+        }
+      }
+    },
+    "dev.training": {
+      "platforms": {
+        "wua": {
+          "minify": false,
+          "sourceMaps": true,
+          "isDevelopment": true,
+          "certificate": {
+            "file": "BGFieldApps.pfx",
+            "name": "CN=BGFieldApps",
+            "key": "8GF!31d4pp5"
+          },
+          "projectFile": "training"
+        }
+      }
+    }
+  }
+}

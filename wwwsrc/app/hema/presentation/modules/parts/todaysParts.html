@@ -1,0 +1,205 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card fade-in-content">
+            <div class="card-block">
+                <form form-manager>
+                    <div if.bind="!parts.length">
+                        ${labels.noPartsMessage}
+                    </div>
+
+                    <div if.bind="parts.length">
+                        <div class="row details-list-item details-list-item-header" id="todays-parts-header" fix-header="is-alt.bind:isFullScreen;">
+                            <div class="col-xs-4 details-list-item-col">
+                                ${labels.partsListHeaderPartDescription}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderUnitPrice}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderQuantity}
+                            </div>
+                            <div class="col-xs-3 details-list-item-col">
+                                ${labels.partsListHeaderAssociatedWithTask}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderWarranty}
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                ${labels.partsListHeaderDateLastFitted}
+                            </div>
+                        </div>
+                        <div class="row details-list-item details-list-item-header">
+                            <div class="col-xs-4 details-list-item-col">
+                                ${labels.partsListHeaderPartDescription}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderUnitPrice}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderQuantity}
+                            </div>
+                            <div class="col-xs-3 details-list-item-col">
+                                ${labels.partsListHeaderAssociatedWithTask}
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                ${labels.partsListHeaderWarranty}
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                ${labels.partsListHeaderDateLastFitted}
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div repeat.for="part of parts" class="details-list-item-col ${$last ? '' : 'todays-parts-not-last-item'} ${part.dataStateIndicator | dataStateStyle:canEdit}">
+                            <form-manager-array-map item-name="part" item.bind="part" array.bind="parts" array-name="parts"></form-manager-array-map>
+
+                            <div class="row">
+                                <div class="col-xs-4 details-list-item-col">
+                                    <h4>${part.part.stockReferenceId}</h4>
+                                    ${part.part.description}
+                                </div>
+                                <div class="col-xs-1 details-list-item-col">
+                                    ${part.partPrice | numberToCurrency}
+                                </div>
+                                <div class="col-xs-1 details-list-item-col">
+                                    ${part.part.quantity}
+                                </div>
+                                <div class="col-xs-3 details-list-item-col">
+                                    <catalog-lookup catalog="${catalog.ACTION_TYPE}" key-field="${catalog.ACTION_TYPE_ID}" description-field="${catalog.ACTION_TYPE_DESCRIPTION}"
+                                        value.bind="part.task.jobType" disabled.bind="!canEdit">
+                                    </catalog-lookup>
+
+                                    <catalog-lookup catalog="${catalog.OBJECT_TYPE}" key-field="${catalog.OBJECT_TYPE_ID}" description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                        value.bind="part.task.applianceType" disabled.bind="!canEdit"></catalog-lookup>
+
+                                    <catalog-lookup catalog="${catalog.CHARGE_TYPE}" key-field="${catalog.CHARGE_TYPE_ID}" description-field="${catalog.CHARGE_TYPE_DESCRIPTION}"
+                                        value.bind="part.task.chargeType" disabled.bind="!canEdit"></catalog-lookup>
+
+                                </div>
+                                <div class="col-xs-1 details-list-item-col">
+                                    ${part.part.warrantyEstimate.warrantyPeriodWeeks ? part.part.warrantyEstimate.warrantyPeriodWeeks + " " + labels.warrantyUnitsWeek
+                                    : labels.warrantyNoInformation}
+                                </div>
+                                <div class="col-xs-2 details-list-item-col">
+                                    ${part.part.warrantyEstimate.lastFittedDate | dateFormat}
+                                    <span if.bind="part.part.warrantyEstimate.isInWarranty" class="label label-success">
+                                        ${labels.warrantyIsInWarranty}
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-xs-12 details-list-item-col">
+                                    <div class="todays-parts-collapsible" if.bind="part.isWarrantyReturnOptionAvailable">
+                                        <collapsible title-text.bind="labels.warrantyControlsHeader" is-collapsed.bind="part.isWarrantyCollapsedOnLoad" collapse-icon="chevron-circle-up"
+                                            expand-icon="chevron-circle-down">
+                                            <template replace-part="collapsible-content-template">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.isWarrantyReturn']}</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <button-list items.bind="yesNoLookup" value.bind="part.warrantyReturn.isWarrantyReturn" multi-select.bind="false" validate-index="$index"
+                                                                button-width="30%" disabled.bind="!canEdit">
+                                                            </button-list>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.quantityToClaimOrReturn']}</label>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <incremental-number-picker value.bind="part.warrantyReturn.quantityToClaimOrReturn" increment-step.bind="1" hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                                                each-side.bind=true max-value.bind="part.part.quantity" validate-index="$index"
+                                                                min-value.bind="0" disabled.bind="!canEdit">
+                                                            </incremental-number-picker>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.removedPartStockReferenceId']}</label>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <text-box value.bind="part.warrantyReturn.removedPartStockReferenceId" validate-index="$index" max-length.bind="validationRules['parts.warrantyReturn.removedPartStockReferenceId'].maxLength"
+                                                                disabled.bind="!canEdit"></text-box>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <button class="btn btn-secondary" click.trigger="setSameRefAsOriginal(part.warrantyReturn, part.part)" disabled.bind="!canEdit">
+                                                                    ${labels['warrantyReturn.removedPartSameId']}
+                                                                </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row" if.bind="part.warrantyReturn.isWarrantyReturn">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.reasonForClaim']}</label>
+                                                        </div>
+                                                        <div class="col-xs-6">
+                                                            <text-area value.bind="part.warrantyReturn.reasonForClaim" validate-index="$index" placeholder="${validationRules['parts.warrantyReturn.reasonForClaim'].maxLength} ${labels.characterLimitSuffix}"
+                                                                maxlength.bind="validationRules['parts.warrantyReturn.reasonForClaim'].maxLength"
+                                                                disabled.bind="!canEdit"></text-area>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </collapsible>
+                                    </div>
+                                    <div class="todays-parts-collapsible" if.bind="part.canRaiseNotUsed">
+                                        <collapsible title-text.bind="labels.returnsControlsHeader" is-collapsed.bind="part.isReturnCollapsedOnLoad" collapse-icon="chevron-circle-up"
+                                            expand-icon="chevron-circle-down">
+                                            <template replace-part="collapsible-content-template">
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.quantityToReturn']}</label>
+                                                        </div>
+                                                        <div class="col-xs-2">
+                                                            <incremental-number-picker value.bind="part.notUsedReturn.quantityToReturn" increment-step.bind="1" hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                                                each-side.bind=true max-value.bind="part.part.quantity" validate-index="$index"
+                                                                min-value.bind="0" disabled.bind="!canEdit">
+                                                            </incremental-number-picker>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-xs-2">
+                                                            <label>${labels['warrantyReturn.reasonForReturn']}</label>
+                                                        </div>
+                                                        <div class="col-xs-8">
+                                                            <button-list items.bind="returnReasonLookup" value.bind="part.notUsedReturn.reasonForReturn" multi-select.bind="false" validate-index="$index"
+                                                                button-width="23%" disabled.bind="!canEdit">
+                                                            </button-list>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </collapsible>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row" if.bind="canEdit">
+                        <div class="col-xs-12 text-right">
+                            <button class="btn btn-secondary" click.trigger="undo()">
+                                    ${labels.undo}
+                                </button>
+                            <button class="btn btn btn-tertiary arrow-blue-right" click.trigger="clear()">
+                                    ${labels.clear}
+                                </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </view-state>
+</template>

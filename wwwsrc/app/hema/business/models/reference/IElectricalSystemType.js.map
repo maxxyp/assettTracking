@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IElectricalSystemType.ts"],"names":[],"mappings":"","file":"IElectricalSystemType.js","sourcesContent":["export interface IElectricalSystemType {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

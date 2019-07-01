@@ -1,0 +1,21 @@
+<template>
+    <div class.bind="buttonLayout" data-e2e="buttonList">
+        <button css="width:${buttonWidth}; height:${buttonHeight}"
+                class="btn btn-primary form-control ${(multiSelect ? value && value.indexOf(item.value) >= 0 : value === item.value) ? 'active' : 'notactive' } ${buttonHeight !== 'auto' ?  'multi-line-button' : ''} button-list-item"
+                repeat.for="item of items" click.trigger="setValue(item, $index, $event)"
+                disabled.bind="disabled || item.disabled" blur.trigger="blur()" focus.trigger="focus()"
+                data-e2e="${item.value}">
+                <span if.bind="!isIconButton(item)">
+                    ${item.text}
+                </span>
+            <span if.bind="isIconButton(item)" class="button-list-item-icon-holder">
+                    <span class="button-list-item-icon">
+                        <i class.bind="item.iconClassName"></i>
+                    </span>
+                    <span class="button-list-item-icon-text">
+                        ${item.text}
+                    </span>
+                </span>
+        </button>
+    </div>
+</template>

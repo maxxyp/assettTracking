@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IPlatformAppLauncher.ts"],"names":[],"mappings":"","file":"IPlatformAppLauncher.js","sourcesContent":["export interface IPlatformAppLauncher {\n    checkApplicationInstalled(uri: string): Promise<boolean>;\n    launchApplication(uri: string): void;\n    getUriScheme(): Promise<string>;\n}\n"],"sourceRoot":"../../.."}

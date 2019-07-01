@@ -1,0 +1,132 @@
+{
+  "status": 200,
+  "data": {
+    "meta":{
+      "type":"jobHistory",
+      "createdTimestamp":"2017-04-18T10:28:43Z"
+    },
+    "data":{
+      "tasks":[
+        {
+          "id":"1320737001001",
+          "jobType":"IB",
+          "applianceType":"WAW",
+          "status":"I",
+          "chargeType":"NCH2SIS",
+          "activities":[
+            {
+              "date":"2017-04-12",
+              "status":"IP",
+              "engineerName":"VALID ENGINEER",
+              "parts":[
+                {
+                  "status":"AP",
+                  "description":"Testing Bypass data",
+                  "quantity":1,
+                  "stockReferenceId":"021383"
+                }
+              ]
+            },
+            {
+              "status":"D",
+              "parts":[
+                {
+                  "status":"FP",
+                  "description":"Testing Bypass data",
+                  "quantity":1,
+                  "stockReferenceId":"021383"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id":"1376637001001",
+          "jobType":"IB",
+          "applianceType":"WAW",
+          "status":"C",
+          "chargeType":"NCH2SIS",
+          "activities":[
+            {
+              "date":"2017-04-11",
+              "status":"C",
+              "engineerName":"VALID ENGINEER",
+              "report":"REPORT DATA"
+            }
+          ]
+        },
+        {
+          "id":"1376637001002",
+          "jobType":"AS",
+          "applianceType":"BBF",
+          "status":"C",
+          "chargeType":"NCH1S",
+          "activities":[
+            {
+              "date":"2017-04-11",
+              "status":"C",
+              "engineerName":"VALID ENGINEER",
+              "report":"NEW RFA FOR DIFFERENT APPLIANCE"
+            }
+          ]
+        }
+      ],
+      "appliances":[
+        {
+          "id":"202230971",
+          "category":"X",
+          "contractType":"1S",
+          "contractExpiryDate":"2018-04-10",
+          "applianceType":"FOOBAR",
+          "boilerSize":0,
+          "numberOfSpecialRadiators":0,
+          "installationYear":2015,
+          "linkId":"202230971",
+          "chirp":{
+            "iaciCode":"D",
+            "iaciDate":"2017-04-11"
+          }
+        },
+        {
+          "id":"202230969",
+          "gcCode":"4132706",
+          "category":"X",
+          "contractType":"2SIS",
+          "contractExpiryDate":"2018-04-10",
+          "applianceType":"WAW",
+          "description":"AGA FANFARE BOILERS - NO",
+          "boilerSize":0,
+          "numberOfSpecialRadiators":0,
+          "installationYear":2015,
+          "linkId":"202230969",
+          "chirp":{
+            "iaciCode":"D",
+            "iaciDate":"2017-04-11"
+          }
+        },
+        {
+          "id":"202230970",
+          "gcCode":"4400000",
+          "category":"A",
+          "contractType":"2SIS",
+          "contractExpiryDate":"2018-04-10",
+          "applianceType":"WAC",
+          "description":"BOILERS - NO INFORMATION",
+          "boilerSize":0,
+          "numberOfSpecialRadiators":0,
+          "linkId":"202230969"
+        },
+        {
+          "id":"202230972",
+          "category":"A",
+          "contractType":"1S",
+          "contractExpiryDate":"2018-04-10",
+          "applianceType":"FRB",
+          "boilerSize":0,
+          "numberOfSpecialRadiators":0,
+          "linkId":"202230971"
+        }
+      ]
+    }
+  }
+}

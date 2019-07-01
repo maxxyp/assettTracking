@@ -1,0 +1,96 @@
+
+$partsCollectBackground: #9E007E;
+$partsCollectBackground2: #830065;
+$partsCollectButtonActiveBackground:#ff9e00;
+
+.job-parts-collection-item-head {
+  margin-bottom: 10px;
+  background-color: $partsCollectBackground;
+  color: white;
+  min-height: 7rem;
+  padding: 0 0 0 0.5rem;
+
+  &.done {
+    background-color: #aaa;
+    color: $slate-1;
+  }
+
+  .job-parts-collection-message {
+    margin-top: 5px;
+    font-size: 1.4rem;
+    font-weight: normal;
+  }
+  .header-container {
+    position: relative;
+    min-height: inherit;
+    padding-top: 0.5rem;
+  }
+  .action-container-spacer {
+    padding-right: 365px;
+  }
+  .action-container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .refresh-buttons-container {
+      display: inline-block;
+      height: 100%;
+      width: 15rem;
+      // border-left: 1px solid #d2d2d2;
+      background-color: $partsCollectBackground2;
+      vertical-align: top;
+      text-align: center;
+      button {
+        text-align: center;
+        border-radius: 20px !important;
+        border-color:white !important;
+        color:white !important;
+        border-width: 2px !important;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+        padding: 0px !important;
+        margin-top: 10px;
+        height: 70px;
+        width: 45%;
+        background-color: transparent;
+        &.notactive {
+          &:disabled {
+            background-color: transparent !important;
+            border-color: #999999 !important;
+            color:#999999 !important;
+          }
+        }
+      }
+      button:hover:active{
+        background-color: $partsCollectButtonActiveBackground !important;
+      }
+    }
+  }
+}
+
+.van-stock-parts-collection-header {
+  padding: 0.5em;
+  background-color: white;
+  color: #005a85;
+  font-size: 1.8em;
+}
+
+.van-stock-parts-collection-item-head {
+  font-size: small;
+  color:dimgray;
+  font-weight:bolder;
+  padding-top: 1.2em;
+  padding-left: 2em;
+}
+
+.van-stock-parts-collection-none-received {
+  left: 1em;
+}
+
+.job-parts-collection-details {
+  padding-bottom: 0 !important;
+  .headline {
+    font-size: larger;
+  }
+}

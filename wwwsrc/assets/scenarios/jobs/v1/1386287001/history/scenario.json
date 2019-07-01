@@ -1,0 +1,403 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-09-06T12:45:14Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1338977001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1304087001001",
+          "jobType": "HU",
+          "applianceType": "BBC",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "date": "2017-08-24",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "62CODENmmmmmmmmmmkkkk"
+            }
+          ]
+        },
+        {
+          "id": "1372677001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODEhhhhhhhhhhhhh"
+            }
+          ]
+        },
+        {
+          "id": "1372677001002",
+          "jobType": "SM",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODETESTTSTTSTTSTST"
+            }
+          ]
+        },
+        {
+          "id": "1372677001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODEhhhhhhhhhhhhhhhhhhh"
+            }
+          ]
+        },
+        {
+          "id": "1372677001004",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "XC",
+              "engineerName": "NEIL",
+              "report": "hhhhhhhhhhhhhhhhhhhh"
+            }
+          ]
+        },
+        {
+          "id": "1318877001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1318877001002",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1318877001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1318877001004",
+          "jobType": "SM",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1377877001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "71CODECODE0testststtststststtstststssts"
+            }
+          ]
+        },
+        {
+          "id": "1377877001002",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODEtetststststststststst"
+            }
+          ]
+        },
+        {
+          "id": "1377877001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "62CODEHhhhjjjjjjjkkkoo",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 6,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1377877001004",
+          "jobType": "SM",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-08-16",
+              "status": "C",
+              "engineerName": "NEIL",
+              "report": "54CODECODE0tetstststtststtstststtststs"
+            }
+          ]
+        },
+        {
+          "id": "1382677001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1382677001002",
+          "jobType": "SM",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHLIG",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1382677001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FI1",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        },
+        {
+          "id": "1382677001004",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3FI1",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "XB",
+              "engineerName": "EMPLOYEE 3"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202234704",
+          "gcCode": "4100000",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "CHB",
+          "description": "BOILERS - NO INFORMATION",
+          "flueType": "V",
+          "boilerSize": 12,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "test",
+          "condition": 1,
+          "numberOfRadiators": 12,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "systemDesignCondition": 1,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-16"
+          }
+        },
+        {
+          "id": "202234702",
+          "gcCode": "5307101",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "BBC",
+          "description": "66C",
+          "flueType": "V",
+          "boilerSize": 1,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "fff",
+          "condition": 2,
+          "numberOfRadiators": 12,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "linkId": "202234702",
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-16"
+          }
+        },
+        {
+          "id": "202234703",
+          "gcCode": "4100000",
+          "category": "A",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "FRC",
+          "description": "dddddddd",
+          "locationDescription": "testst",
+          "installationYear": 2016,
+          "linkId": "202234702",
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "AR",
+            "report": "wwwwwwwwwwwwwww"
+          }
+        },
+        {
+          "id": "202234705",
+          "gcCode": "4100000",
+          "category": "X",
+          "contractType": "LIG",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "CHB",
+          "description": "BOILERS - NO INFORMATION",
+          "flueType": "F",
+          "boilerSize": 12,
+          "cylinderType": 0,
+          "energyControl": "EM",
+          "locationDescription": "gggg",
+          "condition": 1,
+          "numberOfRadiators": 12,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-16"
+          }
+        },
+        {
+          "id": "202234706",
+          "category": "A",
+          "contractType": "LIG",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "INS"
+        }
+      ]
+    }
+  }
+}

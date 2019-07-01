@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IReadingType.ts"],"names":[],"mappings":"","file":"IReadingType.js","sourcesContent":["export interface IReadingType {\n   category: string;\n   readingHighRangeValue: number;\n   readingLowRangeValue: number;\n   readingTypeCode: string;\n   readingTypeDescription: string;\n}\n"],"sourceRoot":"../../../.."}

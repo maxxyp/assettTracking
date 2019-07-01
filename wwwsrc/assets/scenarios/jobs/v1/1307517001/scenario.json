@@ -1,0 +1,94 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-18T16:03:38Z"
+        },
+        "data": {
+            "job": {
+                "id": "1307517001",
+                "customer": {
+                    "id": "022208159",
+                    "lastName": "Mr Electrical",
+                    "address": {
+                        "houseNumber": "69",
+                        "line": [
+                            "Lawson Street"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "7QE",
+                        "postCodeOut": "LE2"
+                    }
+                },
+                "premises": {
+                    "id": "L276045",
+                    "address": {
+                        "houseNumber": "69",
+                        "line": [
+                            "Lawson Street"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "7QE",
+                        "postCodeOut": "LE2"
+                    },
+                    "previousVisitCount": 1,
+                  "contact": {
+                    "id": "022208159",
+                    "initials": " ",
+                    "lastName": "Mr Electrical",
+                    "homePhone": "07262 762267"
+                  },
+                    "safetyDetail": {
+                        "lastElectricVisitDate": "2016-10-18T00:00:00Z"
+                    },
+                    "risks": [],
+                    "unsafeDetail": {
+                        "report": "INTERNAL WIRING TESTING",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "**STAINES***",
+                        "reasons": [
+                            "SYSTP",
+                            "ELSAF",
+                            "ESELI"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00151142",
+                    "date": "2016-10-18T00:00:00Z",
+                    "earliestStartTime": "2016-10-18T08:00:00Z",
+                    "latestStartTime": "2016-10-18T18:00:00Z",
+                    "specialInstructions": "07459148851"
+                },
+                "tasks": [{
+                    "id": "1307517001001",
+                    "applianceId": "202230182",
+                    "jobType": "BE",
+                    "applianceType": "EWR",
+                    "chargeType": "NCHHEWI",
+                    "status": "D",
+                    "skill": "EI",
+                    "sequence": 2,
+                    "specialRequirement": "Special Requirement",
+                    "supportingText": "Internal wiring ",
+                    "activities": [{
+                        "date": "2016-10-18T00:00:00Z",
+                        "status": "IP",
+                        "chargeableTime": 10,
+                        "sequence": 1,
+                        "workDuration": 10
+                    }, {
+                        "status": "D",
+                        "sequence": 2
+                    }]
+                }]
+            }
+        }
+    }
+}

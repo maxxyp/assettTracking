@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IPerformanceTestReason.ts"],"names":[],"mappings":"","file":"IPerformanceTestReason.js","sourcesContent":["export interface IPerformanceTestReason {\n   key: string;\n   id: string;\n   category: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

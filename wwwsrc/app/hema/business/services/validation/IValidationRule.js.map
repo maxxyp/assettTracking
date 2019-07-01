@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/validation/IValidationRule.ts"],"names":[],"mappings":"","file":"IValidationRule.js","sourcesContent":["export interface IValidationRule {\n    test(value: any) : Promise<boolean>;\n}\n"],"sourceRoot":"../../../.."}

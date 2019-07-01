@@ -1,0 +1,49 @@
+$blue-1: rgba(0, 153, 255, 1) !default;
+$blue-2: rgba(0, 94, 184, 1) !default;
+$blue-3: rgba(106, 209, 227, 1) !default;
+$blue-4: rgba(21, 31, 76, 1)!default;
+$slate-1: rgba(53, 63, 73, 1) !default;
+$grey-1: rgb(178, 181, 181) !default;
+$grey-2: rgba(214, 214, 214, 1) !default;
+$grey-3: rgba(217, 225, 226, 1) !default;
+$grey-4: rgba(238, 238, 238, 1) !default;
+$green-1: rgba(49, 155, 66, 1) !default;
+$green-2: rgba(179, 224, 0, 1) !default;
+$green-3: rgba(121, 247, 3, 1) !default;
+
+$nav-bg-color: $blue-2;
+$nav-bg-dark-color: darken($nav-bg-color, 15);
+$nav-bg-dark-border-color: darken($nav-bg-color, 40);
+$nav-bg-light-border-color: lighten($nav-bg-dark-color, 5);
+$nav-text-color: white;
+
+$btn-primary-color:              #fff !default;
+$btn-primary-bg:                 $nav-bg-color;
+$btn-primary-border:           $nav-bg-color;
+
+$darkFont:rgb(0,0,0);
+$lightFont:rgb(255,255,255);
+
+
+$viewTitleFontSize: 3.0625rem;
+$cardTitleFontSize: 1.5rem;
+$cardContentFontSize: 1rem;
+$cardContentSmallFontSize: 1.25rem;
+$cardContentIconSize: 2rem;
+$cardContentIconLabelSize: 1.0rem;
+
+$fadeTime:0.5s;
+
+$header-height: 36px;
+$footer-height: 100px;
+$footer-accent-height: 10px;
+$container-padding-top: 45px;
+$container-padding-bottom: 45px;
+$iphone-status-bar-height: 20px;
+
+$deviceSpecs: (
+    nokia650: (360px, 592px),
+    iphone5: (320px, (568 - $iphone-status-bar-height))
+);
+
+$slidebarwidth: 250px;

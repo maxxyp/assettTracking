@@ -1,0 +1,23 @@
+log-console {
+    div.console {
+        height: 100px;
+        overflow-y: scroll;       
+        background-color: black;
+        color: white;
+        font-family: 'Lucida Console', 'Lucida Sans Typewriter', monaco, 'Bitstream Vera Sans Mono', monospace;
+        font-size: 10px;
+        
+        div.info {
+            color: white;
+        }
+        div.debug {
+            color: greenyellow;
+        }
+        div.warn {
+            color: yellow;
+        }
+        div.error {
+            color: red;
+        }
+    }
+}

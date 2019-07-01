@@ -1,0 +1,43 @@
+<template>
+    <div if.bind="showMenu || showNotifications" class="grey-out-background"></div>
+    <div class="nav-bar-menu-slide-menu ${showMenu === false ? '' : 'show-menu'}">
+        <div class="nav-bar-menu-icon-list">
+            <ul>
+                <li show.bind="row.config.settings.showItem" repeat.for="row of router.navigation" click.trigger="navigateTo(row)">
+                    <span if.bind="row.config.settings.showItem" class="fa fa-2x ${row.config.settings.icon} text-xs-center"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar-menu-item-list">
+            <ul>
+                <li show.bind="row.config.settings.showItem" repeat.for="row of router.navigation" click.trigger="navigateTo(row)">
+                    <span if.bind="row.config.settings.showItem">${row.title}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div if.bind="isActive" class="nav-bar-menu-slide-menu ${showNotifications === false ? '' : 'show-menu'}">
+        <div class="nav-bar-menu-icon-list">
+            <ul>
+                <li repeat.for="notification of notifications" click.trigger="notificationActioned(notification)">
+                    <span class="fa ${notification.icon} fa-2x text-xs-center"></span>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-bar-menu-item-list">
+            <ul>
+                <li repeat.for="notification of notifications" click.trigger="notificationActioned(notification)">
+                    ${notification.label}
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="nav-bar-menu-container ${isSimMode === true ? 'sim-mode' : ''}">
+        <div click.trigger="backClicked()" if.bind="isActive && (overrideShowBackButton || homeShowBackButton)" class="nav-bar-menu-back-icon-container fade-in-content">
+            <div class="nav-bar-menu-back-icon fa fa-chevron-left"></div>
+        </div>
+        <div class="nav-bar-menu-title"><h1>${navBarTitle}</h1></div>
+        <div if.bind="isActive" show.bind="notifications.length > 0" class="fade-in-content nav-bar-menu-notifications-icon" click.trigger="toggleNotificationsMenu()">${notificationsTotal}</div>
+        <div class="nav-bar-menu-hamburger fa fa-bars fa-2x" click.trigger="toggleSideMenu()"></div>
+    </div>
+</template>

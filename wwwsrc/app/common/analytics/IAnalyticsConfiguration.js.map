@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/analytics/IAnalyticsConfiguration.ts"],"names":[],"mappings":"","file":"IAnalyticsConfiguration.js","sourcesContent":["export interface IAnalyticsConfiguration {\n    analyticsTrackingId: string;\n    analyticsEnabled: boolean;\n    logGeoLocation: boolean;\n}\n"],"sourceRoot":"../.."}

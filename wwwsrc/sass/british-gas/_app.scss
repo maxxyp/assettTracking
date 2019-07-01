@@ -1,0 +1,101 @@
+.bg-logo {
+  width: 200px;
+  height: 78px;
+  background-image: url('../assets/css/bg-logo.png');
+  background-size: cover;
+  margin: 10px auto;
+
+  &.large-margin {
+    margin: 55px auto;
+  }
+}
+
+body {
+  -ms-content-zooming: none;
+  -webkit-touch-callout: none;
+  overflow-x: hidden;
+  background-color: #DADADA;
+
+  &.noscroll {
+    overflow-y: hidden;
+  }
+}
+
+h1, .h1 {
+  font-size: 1.5rem;
+}
+
+h2, .h2 {
+  font-size: 1.2rem;
+}
+
+h3, .h3 {
+  font-size: 1.1rem;
+}
+
+h4, .h4 {
+  font-size: 1.1rem;
+}
+
+h5, .h5 {
+  font-size: 1.0rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+/* Disable up/down arrows for input type=number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+.zoom-element {
+    overflow: auto;
+    -ms-content-zooming: zoom;
+    -ms-scroll-rails: none;
+    -ms-content-zoom-limit-min: 80%;
+     -ms-content-zoom-limit-max: 200%;
+    &.reset-zoom{
+        -ms-content-zoom-limit-min: 100% !important;
+        -ms-content-zoom-limit-max: 100% !important;
+         -ms-content-zoom-limit-min: 100% !important;
+    }
+}
+
+
+.pretty-print {
+  font-size: 0.7rem;
+  pre {
+    outline: 1px solid #ccc;
+    padding: 5px;
+    margin: 5px;
+  }
+  .string {
+    color: green;
+  }
+  .number {
+    color: darkorange;
+  }
+  .boolean {
+    color: blue;
+  }
+  .null {
+    color: magenta;
+  }
+  .key {
+    color: red;
+  }
+}
+
+.wrap-text {
+  word-wrap: break-word; 
+  word-break:break-word;
+}

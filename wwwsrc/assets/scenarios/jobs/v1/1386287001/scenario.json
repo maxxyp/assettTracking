@@ -1,0 +1,88 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-06T12:45:14Z"
+    },
+    "data": {
+      "job": {
+        "id": "1386287001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022211153",
+          "lastName": "Mr Charges Eighteen",
+          "address": {
+            "premisesName": "Keytex Fabrics",
+            "houseNumber": "0",
+            "line": [
+              "Burleys Way"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L278807",
+          "address": {
+            "premisesName": "Keytex Fabrics",
+            "houseNumber": "0",
+            "line": [
+              "Burleys Way"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211153",
+            "initials": " ",
+            "lastName": "Mr Charges Eighteen"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-16"
+          },
+          "unsafeDetail": {
+            "report": "unsafeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+            "conditionAsLeft": "XC",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "C",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "reasons": [
+              "PDL8",
+              "GMET"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00216772",
+          "date": "2017-09-06T00:00:00Z",
+          "earliestStartTime": "2017-09-06T08:00:00Z",
+          "latestStartTime": "2017-09-06T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1386287001001",
+            "applianceId": "202234704",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

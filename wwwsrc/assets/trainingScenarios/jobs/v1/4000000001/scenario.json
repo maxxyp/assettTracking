@@ -1,0 +1,72 @@
+{
+  "status": 200,
+  "data": {
+    "status": "200",
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-10T07:55:06Z"
+    },
+    "data": {
+      "job": {
+        "id": "2043062072",
+        "customer": {
+          "id": "001162070",
+          "initials": "D",
+          "title": "Miss",
+          "lastName": "Smith",
+          "address": {
+            "houseNumber": "34C",
+            "line": ["High Rise House"],
+            "county": "Glasgow",
+            "postCodeIn": "8BB",
+            "postCodeOut": "G65"
+          }
+        },
+        "premises": {
+          "id": "1160035",
+          "address": {
+            "houseNumber": "34C",
+            "line": ["High Rise House"],
+            "town": "Uddingstone",
+            "county": "Glasgow",
+            "postCodeIn": "8BB",
+            "postCodeOut": "G65"
+          },
+          "contact": {
+            "id": "001162070",
+            "initials": "D",
+            "title": "Miss",
+            "lastName": "Smith",
+            "homePhone": "01162071452",
+            "workPhone": "07979560076"
+          },
+          "risks": [{
+            "reason": "R1",
+            "report": "Dog in property, owner locks away.",
+            "date": "2018-01-01"
+          }]
+        },
+        "visit": {
+          "date": "2018-02-10T00:00:00Z",
+          "earliestStartTime": "2018-02-05T08:00:00Z",
+          "latestStartTime": "2018-02-05T12:00:00Z"
+        },
+        "tasks": [{
+          "id": "2043062072001",
+          "applianceId": "55063778",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "chargeType": "NCHHEWI",
+          "status": "D",
+          "supportingText": "No power to sockets",
+          "skill": "ER",
+          "sequence": 1,
+          "activities": [{
+            "status": "D",
+            "sequence": 1
+          }]
+        }]
+      }
+    }
+  }
+}

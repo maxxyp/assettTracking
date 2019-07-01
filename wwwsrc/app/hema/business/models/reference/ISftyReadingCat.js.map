@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISftyReadingCat.ts"],"names":[],"mappings":"","file":"ISftyReadingCat.js","sourcesContent":["export interface ISftyReadingCat {\n   safetyReadingCategoryFlag: string;\n   safetyReadingCategoryReading: string;\n}\n"],"sourceRoot":"../../../.."}

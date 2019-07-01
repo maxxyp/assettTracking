@@ -1,0 +1,11 @@
+<template>
+<a href="" click.trigger="showPopup($event)" blur.trigger="hidePopup($event)">
+    <div class="help-tip-overlay ${showStyle}" click.trigger="hidePopup($event)"></div>
+    <div class="help-tip-icon ${iconClass}" click.trigger="showPopup($event)" ref="mainControl">${iconClass ? '' : icon}
+        <p class="help-tip-popup ${showStyle}" ref="popup">
+            <span innerHTML.bind="content"></span>
+            <slot></slot>
+        </p>
+    </div>
+    </a>
+</template>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/vanStock/IVanStockEngineer.ts"],"names":[],"mappings":"","file":"IVanStockEngineer.js","sourcesContent":["export interface IVanStockEngineer {\n     engineerId: string;\n     name: string;\n     phone: string;\n     parts: string[];\n}\n"],"sourceRoot":"../../../.."}

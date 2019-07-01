@@ -1,0 +1,51 @@
+prev-next-buttons {
+  a:hover {
+    text-decoration: none;
+  }
+  .previous-next-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 170px;
+    float: right;
+
+    .circle-arrow-left {
+      @extend .hema-icon-circle-arrow-left;
+      font-size: 40px;
+      color: black;
+
+      &:focus, &:hover {
+        color: $focusColor;
+      }
+      &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        &:focus, &:hover {
+          color: black;
+        }
+      }
+    }
+
+    .info {
+      position: relative;
+      font-size: 1.5rem;
+    }
+
+    .circle-arrow-right {
+      @extend .hema-icon-circle-arrow-right;
+      font-size: 40px;
+      color: black;
+
+      &:focus, &:hover {
+        color: $focusColor;
+      }
+
+      &.disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        &:focus, &:hover {
+          color: black;
+        }
+      }
+    }
+  }
+}

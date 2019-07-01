@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/IJobUpdatePackage.ts"],"names":[],"mappings":"","file":"IJobUpdatePackage.js","sourcesContent":["import {IJobUpdate} from \"./IJobUpdate\";\n\nexport interface IJobUpdatePackage {\n    data: IJobUpdate;\n}\n"],"sourceRoot":"../../../../../.."}

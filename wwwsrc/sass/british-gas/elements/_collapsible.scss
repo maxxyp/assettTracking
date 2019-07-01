@@ -1,0 +1,59 @@
+collapsible {
+  box-sizing: border-box;
+
+  .animate {
+    transition-timing-function: ease;
+    transition-duration: .35s;
+    transition-property: height;
+  }
+
+  >.content {
+    overflow: hidden;
+    margin: 0 8px 8px;
+    position: relative;
+
+    .with-nav {
+      padding-bottom: 95px;
+    }
+  }
+
+
+  .header {
+    @extend .card-header;
+
+    .fa {
+      padding-top: 0.2rem;
+      font-size: 1.3em;
+    }
+
+    span {
+      /* width: 90%; why do we need the 90% width? */
+      display: inline-block;
+    }
+
+    .collapser {
+      padding-left: 20px;
+    }
+
+    .icon {
+      display: inline-block;
+      vertical-align: middle;
+      /* width: 10% */
+    }
+
+    .header-icon {
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+
+
+    .card & {
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid $blue-1;
+      cursor: pointer;
+      background: $nav-bg-color;
+    }
+  }
+
+}

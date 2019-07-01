@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ITrainingModeConfiguration.ts"],"names":[],"mappings":"","file":"ITrainingModeConfiguration.js","sourcesContent":["import { ISimulation } from \"./ISimulation\";\n\nexport interface ITrainingModeConfiguration {\n    simulation: ISimulation[];\n    trainingMode: boolean;\n}\n"],"sourceRoot":"../../../.."}

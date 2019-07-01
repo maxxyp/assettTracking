@@ -1,0 +1,119 @@
+nav-bar-menu {
+  .grey-out-background{
+    touch-action: none;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(61, 61, 61, 0.52);
+    z-index: 10;
+  }
+
+  .nav-bar-menu-slide-menu {
+    position: fixed;
+    -ms-scroll-chaining: none;
+    overflow-y: auto;
+    display: inline-block;
+    height: 100%;
+    width: $slidebarwidth;
+    right: -$slidebarwidth;
+    z-index: 20;
+    background-color: $nav-bg-dark-color;
+    -webkit-transition: .3s ease all;
+    transition: .3s ease all;
+    border-left-style: solid;
+    border-left-color: $nav-bg-dark-border-color;
+    border-left-width: 1pt;
+    color: $nav-text-color;
+    padding-top: 40px;
+    ul {
+      list-style-type: none;
+      padding-left: 0px;
+      margin: 0;
+    }
+    ul li {
+      height: 60px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: $nav-bg-light-border-color;
+      align-self: center;
+      text-align: center;
+      padding-top: 16px;
+      cursor: pointer;
+    }
+    .nav-bar-menu-icon-list {
+      float: left;
+      width: 70px;
+    //   height: 100%;
+      background-color: $nav-bg-color;
+    }
+    .nav-bar-menu-item-list {
+      margin-left: 70px;
+    }
+  }
+
+  .nav-bar-menu-container {
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: $nav-bg-color;
+    color: $nav-text-color;
+    box-shadow: 0 -5px 15px 5px black;
+    height: 40px;
+    
+    &.sim-mode {
+      background-color: hotpink; 
+    }    
+
+    .nav-bar-menu-back-icon-container {
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      background-color: $nav-bg-dark-color;
+      cursor: pointer;
+
+      .nav-bar-menu-back-icon {
+        font-size: 29px;
+        align-self: center;
+      }
+    }
+
+    .nav-bar-menu-hamburger {
+      position: absolute;
+      right: 19px;
+      top: 3px;
+      cursor: pointer;
+    }
+    .nav-bar-menu-notifications-icon {
+      position: absolute;
+      right: 74px;
+      top: 7px;
+      background-color: red;
+      color: white;
+      width: 26px;
+      text-align: center;
+      border-bottom-style: solid;
+      border-color: #00376C;
+      box-shadow: 0 0 3px 4px rgba(0, 0, 0, 0.16);
+      cursor: pointer;
+    }
+  }
+
+  .nav-bar-menu-title {
+    padding-left: 10px;
+    padding-top: 6px;
+  }
+
+  .show-menu {
+    -webkit-transform: translateX(-$slidebarwidth);
+    transform: translateX(-$slidebarwidth);
+  }
+}

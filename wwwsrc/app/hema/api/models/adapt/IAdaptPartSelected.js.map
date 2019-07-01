@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/adapt/IAdaptPartSelected.ts"],"names":[],"mappings":"","file":"IAdaptPartSelected.js","sourcesContent":["export interface IAdaptPartSelected {\n    timestamp: string;\n    stockReferenceId: string;\n    description: string;\n    price: number;\n}\n"],"sourceRoot":"../../../.."}

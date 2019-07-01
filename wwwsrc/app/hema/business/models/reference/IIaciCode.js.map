@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IIaciCode.ts"],"names":[],"mappings":"","file":"IIaciCode.js","sourcesContent":["export interface IIaciCode {\n   iaciCode: string;\n   iaciDescription: string;\n   relativePriority: number;\n}\n"],"sourceRoot":"../../../.."}

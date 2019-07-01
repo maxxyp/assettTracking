@@ -1,0 +1,67 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-07T14:30:16Z",
+      "modifiedTimestamp": "2017-08-07T14:42:56Z"
+    },
+    "data": {
+      "appliances": [{
+        "id": "202234802",
+        "category": "A",
+        "contractType": "LI",
+        "contractExpiryDate": "2018-07-05",
+        "applianceType": "INS"
+      }, {
+        "id": "202234800",
+        "gcCode": "500",
+        "category": "X",
+        "contractType": "3FI1",
+        "contractExpiryDate": "2018-07-05",
+        "applianceType": "CHB",
+        "description": ".Unknown-Default",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2015,
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2017-08-07"
+        }
+      }, {
+        "id": "202234801",
+        "gcCode": "5162801",
+        "category": "A",
+        "contractType": "2API",
+        "contractExpiryDate": "2018-07-05",
+        "applianceType": "CIR",
+        "description": "DAYWHITE (SEG)",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2014,
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2017-08-07"
+        }
+      }, {
+        "id": "202234821",
+        "gcCode": "9600201",
+        "category": "A",
+        "contractType": "NONE",
+        "applianceType": "CKE",
+        "description": "HC5617 - 948523056",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0
+      }, {
+        "id": "202234828",
+        "gcCode": "1305103",
+        "category": "A",
+        "contractType": "NONE",
+        "applianceType": "HOB",
+        "description": "FA/1 BOILING BURNER W/FF",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0
+      }]
+    }
+  }
+}

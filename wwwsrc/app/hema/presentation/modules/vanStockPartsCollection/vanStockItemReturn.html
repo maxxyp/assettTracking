@@ -1,0 +1,25 @@
+<template>
+    <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container" repeat.for="returnPart of returns">
+        <div class="col-xs-2 details-list-item-col ">
+            ${returnPart.stockReferenceId}
+        </div>
+        <div class="col-xs-4  details-list-item-col wrap">
+            ${returnPart.description}
+        </div>
+        <div class="col-xs-2 details-list-item-col" style="font-size: larger;">
+            ${returnPart.quantity}
+        </div>
+        <div class="col-xs-2  details-list-item-col wrap">
+            ${returnPart.area}
+        </div>
+
+        <div class="col-xs-2  details-list-item-col">
+
+        </div>
+        <div class="col-xs-1  details-list-item-col">
+            <i class="fa fa-2x fa-check-circle"
+                style="visibility: hidden"
+            ></i>
+        </div>
+    </div>
+</template>

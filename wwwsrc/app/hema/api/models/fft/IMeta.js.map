@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/IMeta.ts"],"names":[],"mappings":"","file":"IMeta.js","sourcesContent":["export interface IMeta {\n    type: string;\n    createdTimestamp: string;\n    modifiedTimestamp: string;\n}\n"],"sourceRoot":"../../../.."}

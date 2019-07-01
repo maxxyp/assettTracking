@@ -1,0 +1,62 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1015743001",
+          "jobType": "BE",
+          "applianceType": "DW",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2015-07-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Jimmy Smith",
+              "report": "Lubricated pump bearing tested Ok"
+            }
+          ]
+        },
+        {
+          "id": "1015743001",
+          "jobType": "BE",
+          "applianceType": "EWR",
+          "status": "C",
+          "chargeType": "NCHHEW",
+          "activities": [
+            {
+              "date": "2014-07-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Jimmy Smith",
+              "report": "Inadequate Earth cables burnt at meter DNO advised."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "78441461",
+          "serialId": "1784512",
+          "gcCode": "WM23913",
+          "category": "A",
+          "applianceType": "WM",
+          "description": "Electrolux EW1265F",
+          "locationDescription": "Kitchen",
+          "installationYear": 2010
+        },
+        {
+          "id": "78441462",
+          "category": "A",
+          "applianceType": "DW",
+          "description": "Creda",
+          "locationDescription": "Kitchen"
+        }
+      ]
+    }
+  }
+}

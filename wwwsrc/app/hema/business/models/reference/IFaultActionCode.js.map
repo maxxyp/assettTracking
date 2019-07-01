@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IFaultActionCode.ts"],"names":[],"mappings":"","file":"IFaultActionCode.js","sourcesContent":["export interface IFaultActionCode {\n   faultActionCode: string;\n   faultActionDescription: string;\n}\n"],"sourceRoot":"../../../.."}

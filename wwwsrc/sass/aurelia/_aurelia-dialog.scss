@@ -1,0 +1,126 @@
+ai-dialog-container, ai-dialog-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0
+}
+
+ai-dialog, ai-dialog-container > div > div {
+  max-width: 100%;
+  min-width: 250px;
+  margin: auto;
+  display: block
+}
+
+ai-dialog-overlay {
+  opacity: 0;
+
+  &.active {
+    background-color: #EEE;
+    opacity: 0.9;
+  }
+}
+
+ai-dialog-container {
+  display: block;
+  transition: opacity .2s linear;
+  opacity: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+ai-dialog-container.active {
+  opacity: 1
+}
+
+ai-dialog-container > div {
+  padding: 30px
+}
+
+ai-dialog-container > div > div {
+  width: fit-content;
+  height: fit-content
+}
+
+ai-dialog-container, ai-dialog-container > div, ai-dialog-container > div > div {
+  outline: 0
+}
+
+ai-dialog {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+  border: 0px;
+  border-bottom: $footer-accent-height solid $nav-bg-color;
+
+  /* Edge doesn't support width: fit-content, so replace with old auto sizing method of display: table and auto:width */
+  display: table;
+  width: auto;
+
+  height: fit-content;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+  background: #fff;
+
+
+  @each $deviceName, $size in $deviceSpecs {
+    $width: nth($size, 1);
+    $height: nth($size, 2);
+    @media (width: $height) and (height: $width) {
+      margin-top: 52px !important;
+    }
+  }
+}
+
+ai-dialog > ai-dialog-header {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+
+  padding: 9px 15px 3px 15px !important;
+  background-color: $nav-bg-color;
+  color: $nav-text-color;
+
+  .dialog-close {
+    display: none;
+  }
+}
+
+ai-dialog > ai-dialog-header > button {
+  float: right;
+  border: none;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: 0 0;
+  font-size: 22px;
+  line-height: 16px;
+  margin: -14px -16px 0 0;
+  padding: 0;
+  cursor: pointer
+}
+
+ai-dialog > ai-dialog-body {
+  display: block;
+  padding: 16px
+}
+
+ai-dialog > ai-dialog-footer {
+  display: block;
+  padding: 10px;
+  border-top: 1px solid #e5e5e5;
+  text-align: right
+
+}
+
+ai-dialog > ai-dialog-footer button {
+  @extend .btn;
+  @extend .btn-primary;
+  margin-left: 10px;
+}
+
+.ai-dialog-open {
+  overflow: hidden
+}

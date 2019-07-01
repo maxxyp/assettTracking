@@ -1,0 +1,62 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-10-18T10:53:40Z",
+            "modifiedTimestamp": "2016-10-18T11:13:40Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1381483001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SPT",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-18T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1365517001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SPT",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-18T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Employee 20",
+                    "report": "CODE1.Boiler has been fixed and it is working fine"
+                }]
+            }],
+            "appliances": [{
+                "id": "202185668",
+                "gcCode": "4160156",
+                "category": "X",
+                "contractType": "2SPT",
+                "contractExpiryDate": "2099-12-31T00:00:00Z",
+                "applianceType": "CHB",
+                "description": "KINGFISHER CF60",
+                "locationDescription": "KITCHEN",
+                "boilerSize": 23,
+                "numberOfSpecialRadiators": 0,
+                "installationYear": 1985,
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2014-05-16T00:00:00Z"
+                }
+            }, {
+                "id": "202185669",
+                "gcCode": "1102335",
+                "category": "A",
+                "contractType": "2AP",
+                "contractExpiryDate": "2099-12-31T00:00:00Z",
+                "applianceType": "CKR",
+                "description": "AGA GCB COOKER BALANCED",
+                "installationYear": 2009
+            }],
+            "id": "1375517001"
+        }
+    }
+}

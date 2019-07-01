@@ -1,0 +1,22 @@
+number-adjuster {
+
+  .plus-minus-button {
+    color: #005dbf;
+  }
+
+  .active {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+  .disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  .display-number {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}

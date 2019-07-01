@@ -1,0 +1,566 @@
+[{
+    "key": "1",
+    "code": "BNI1",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 - cover for all repairs to boiler and controls. Includes gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "2",
+    "code": "2SIS",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 - cover for all repairs to boiler and controls. Includes gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "3",
+    "code": "BNI2",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 Flexi - cover for all repairs to boiler and controls. Includes gas supply pipe, accidental damage, boiler replacement and ASV. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "4",
+    "code": "2FIS",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 Flexi - cover for all repairs to boiler and controls. Includes gas supply pipe, accidental damage, boiler replacement and ASV. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "5",
+    "code": "2SIA",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 – additional boiler. Cover for all repairs to boiler and controls, including gas supply pipe, accidental damage, boiler replacement and ASV"
+}, {
+    "key": "6",
+    "code": "2SAP",
+    "careType": "Insurance",
+    "careDescription": "HomeCare One/100 – additional boiler. Cover for all repairs to boiler and controls, including gas supply pipe, accidental damage, boiler replacement and ASV"
+}, {
+    "key": "7",
+    "code": "2BP",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 100 – breakdown only cover for the boiler and controls, including gas supply pipe and boiler replacement. Accidental damage is not covered."
+}, {
+    "key": "8",
+    "code": "2BP1",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 100 – breakdown only cover for the boiler and controls, including gas supply pipe and boiler replacement. Accidental damage is not covered."
+}, {
+    "key": "9",
+    "code": "2BI",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 100 Flexi – breakdown only cover for the boiler and controls. Includes gas supply pipe and boiler replacement. No ASV included and accidental damage is not covered. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "10",
+    "code": "2BI1",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 100 Flexi – breakdown only cover for the boiler and controls. Includes gas supply pipe and boiler replacement. No ASV included and accidental damage is not covered. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "11",
+    "code": "2SPT",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 care – all repairs for boiler and controls, including an ASV. Accidental damage is not covered."
+}, {
+    "key": "12",
+    "code": "2FPT",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 Flexi care – all repairs for boiler and controls, including an ASV. Customer has fixed fee to be charged for each unrelated fault repaired. Accidental damage is not covered."
+}, {
+    "key": "13",
+    "code": "2SM",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 care – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered."
+}, {
+    "key": "14",
+    "code": "2SPA",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 care – additional boiler. All repairs for boiler and controls (additional boiler). Includes an ASV. Accidental damage is not covered."
+}, {
+    "key": "15",
+    "code": "2G1",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "16",
+    "code": "2G2",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "17",
+    "code": "2G3",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "18",
+    "code": "2G4",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "19",
+    "code": "2G5",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "20",
+    "code": "2SG1",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "21",
+    "code": "2SG2",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "22",
+    "code": "2SG3",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "23",
+    "code": "2SG4",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "24",
+    "code": "2SG5",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 guarantee – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "25",
+    "code": "2SPM",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 100 care – all repairs for boiler and controls. Includes an ASV. Accidental damage is not covered. Provided as a guarantee/warranty product."
+}, {
+    "key": "26",
+    "code": "CNI1",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "27",
+    "code": "3SIS",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "28",
+    "code": "CNI2",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 Flexi Cover – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe, accidental damage, boiler replacement and ASV. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "29",
+    "code": "3FIS",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 Flexi Cover – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe, accidental damage, boiler replacement and ASV. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "30",
+    "code": "3SIA",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 – additional boiler. Cover for the boiler and full central heating system, including gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "31",
+    "code": "3SAP",
+    "careType": "Insurance",
+    "careDescription": "HomeCare Two/200 –additional boiler. Cover for all repairs to boiler and full central heating system, including gas supply pipe, accidental damage, boiler replacement and ASV."
+}, {
+    "key": "32",
+    "code": "3BI",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 200 breakdown only cover – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe and boiler replacement. Customer has no FV or ASV. Accidental damage is not covered."
+}, {
+    "key": "33",
+    "code": "3BI1",
+    "careType": "Insurance",
+    "careDescription": "HomeCare 200 breakdown only flexi cover – cover for all repairs to boiler, controls and full central heating system. Includes gas supply pipe and boiler replacement. Customer has no FV or ASV. Accidental damage is not covered. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "34",
+    "code": "3ST",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200 Care – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered."
+}, {
+    "key": "35",
+    "code": "3SHT",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200 Care – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered."
+}, {
+    "key": "36",
+    "code": "3GT",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200 Care – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered."
+}, {
+    "key": "37",
+    "code": "3SC",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200 Care – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered."
+}, {
+    "key": "38",
+    "code": "CWG1",
+    "careType": "Homecare",
+    "careDescription": "Year 1 of British Gas 5 Year Warranty - all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered. Only available to customers who purchased a new boiler through British Gas."
+}, {
+    "key": "39",
+    "code": "CWG2",
+    "careType": "Homecare",
+    "careDescription": "Central Heating Care top up for British Gas 5 Year Warranty customers -  all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered. Only available for customers who purchased a new boiler from British Gas."
+}, {
+    "key": "40",
+    "code": "BWG1",
+    "careType": "Homecare",
+    "careDescription": "Years 2 to 5 of British Gas 5 Year Warranty - repairs to the boiler only. Only available for customers who purchased a new boiler from British Gas."
+}, {
+    "key": "41",
+    "code": "3FT",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200 Flexi care – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "42",
+    "code": "3SM",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200  care – all repairs for boiler, controls and full central heating system. Includes an ASV. Accidental damage is not covered."
+}, {
+    "key": "43",
+    "code": "3SA",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ care –additional boiler. All repairs to boiler, controls and full central heating system. Includes an ASV. Accidental damage is not covered."
+}, {
+    "key": "44",
+    "code": "3G1",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ guarantee – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered.  Provided as a guarantee/warranty product."
+}, {
+    "key": "45",
+    "code": "3G2",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ guarantee – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered.  Provided as a guarantee/warranty product."
+}, {
+    "key": "46",
+    "code": "3G3",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ guarantee – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered.  Provided as a guarantee/warranty product."
+}, {
+    "key": "47",
+    "code": "3G4",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ guarantee – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered.  Provided as a guarantee/warranty product."
+}, {
+    "key": "48",
+    "code": "3G5",
+    "careType": "Homecare",
+    "careDescription": "HomeCare 200™ guarantee – all repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered.  Provided as a guarantee/warranty product."
+}, {
+    "key": "49",
+    "code": "3PSG",
+    "careType": "Homecare",
+    "careDescription": "Homecare 200 guarantee – Scottish Executive contracts. Repairs for boiler, controls and full central heating system. Includes gas supply pipe, boiler replacement and ASV. Accidental damage is not covered."
+}, {
+    "key": "50",
+    "code": "3SCP",
+    "careType": "Homecare",
+    "careDescription": "Business Care – all repairs for boiler, controls and full central heating system. For business premises."
+}, {
+    "key": "51",
+    "code": "GNI1",
+    "careType": "Insurance",
+    "careDescription": "Gas Appliance Cover- cover for all repairs to the gas appliance(s) on the customer’s agreement. Includes accidental damage and ASV."
+}, {
+    "key": "52",
+    "code": "2API",
+    "careType": "Insurance",
+    "careDescription": "Gas Appliance Cover- cover for all repairs to the gas appliance(s) on the customer’s agreement. Includes accidental damage and ASV."
+}, {
+    "key": "53",
+    "code": "2AP",
+    "careType": "Homecare",
+    "careDescription": "Gas Appliance Care™ – all repairs to the gas appliance(s) on the customer’s agreement. Includes ASV. Accidental damage is not included."
+}, {
+    "key": "54",
+    "code": "2APM",
+    "careType": "Homecare",
+    "careDescription": "Gas Appliance Care™ – all repairs to the gas appliance(s) on the customer’s agreement. Includes ASV. Accidental damage is not included."
+}, {
+    "key": "55",
+    "code": "1S",
+    "careType": "Homecare",
+    "careDescription": "Gas Appliance Check™ – Annual Service Visit for the gas appliance on customer’s agreement."
+}, {
+    "key": "56",
+    "code": "1SM",
+    "careType": "Homecare",
+    "careDescription": "Gas Fire Guarantee – repairs to the gas appliance(s) on the customer’s agreement. Includes ASV."
+}, {
+    "key": "57",
+    "code": "2AG1",
+    "careType": "Homecare",
+    "careDescription": "Gas Fire Guarantee – repairs to the gas appliance(s) on the customer’s agreement. Includes ASV. Accidental damage is not included. Provided as a guarantee/warranty product."
+}, {
+    "key": "58",
+    "code": "2AG2",
+    "careType": "Homecare",
+    "careDescription": "Gas Fire Guarantee – repairs to the gas appliance(s) on the customer’s agreement. Includes ASV. Accidental damage is not included. Provided as a guarantee/warranty product."
+}, {
+    "key": "59",
+    "code": "BWG2",
+    "careType": "Homecare",
+    "careDescription": "Annual Boiler Service - annual service visit for the gas boiler that British Gas installed. Only available if the customer has British Gas 5 Year Warranty."
+}, {
+    "key": "60",
+    "code": "2PI",
+    "careType": "Insurance",
+    "careDescription": "Plumbing Cover – cover for the customer’s plumbing system. Includes accidental damage and water supply pipe."
+}, {
+    "key": "61",
+    "code": "2PI1",
+    "careType": "Insurance",
+    "careDescription": "Plumbing Flexi Cover- cover for the customer’s plumbing system. Includes accidental damage and water supply pipe. Customer has an excess on their account to be charged for each unrelated fault repaired."
+}, {
+    "key": "62",
+    "code": "2PFI",
+    "careType": "Insurance",
+    "careDescription": "Plumbing \u0026 Drains Cover Flexi -  cover for the customer’s plumbing system and drains. Includes accidental damage and water supply pipe. Customer has an excess on their account to be charged for each unrelated fault repaired."
+}, {
+    "key": "63",
+    "code": "DNI1",
+    "careType": "Insurance",
+    "careDescription": "Plumbing \u0026 Drains Cover – cover for the customer’s plumbing system and drains. Includes accidental damage and water supply pipe."
+}, {
+    "key": "64",
+    "code": "2PDI",
+    "careType": "Insurance",
+    "careDescription": "Plumbing \u0026 Drains Cover – cover for the customer’s plumbing system and drains. Includes accidental damage and water supply pipe."
+}, {
+    "key": "65",
+    "code": "2PCD",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains Care – care for the customer’s plumbing system and drains. Includes a two yearly service maintenance. Taps/washers, water supply pipe and accidental damage are not included."
+}, {
+    "key": "66",
+    "code": "2PCM",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains Care – care for the customer’s plumbing system and drains. Includes a two yearly service maintenance. Taps/washers, water supply pipe and accidental damage are not included."
+}, {
+    "key": "67",
+    "code": "2PC",
+    "careType": "Homecare",
+    "careDescription": "Plumbing Care – care for the customer’s plumbing system. Taps/washers, water supply pipe and accidental damage are not included. Includes a two yearly service maintenance."
+}, {
+    "key": "68",
+    "code": "2FC",
+    "careType": "Homecare",
+    "careDescription": "Plumbing Flexi Care – care for the customer’s plumbing system. Taps/washers, water supply pipe and accidental damage are not included. Includes a two yearly service maintenance. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "69",
+    "code": "2PD",
+    "careType": "Homecare",
+    "careDescription": "Drains Care – care for the customer’s drains. Accidental damage is not included."
+}, {
+    "key": "70",
+    "code": "2FD",
+    "careType": "Homecare",
+    "careDescription": "Drains Flexi Care - care for the customer’s drains. Accidental damage is not included. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "71",
+    "code": "KNI1",
+    "careType": "Insurance",
+    "careDescription": "Kitchen appliance Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Includes accidental damage and contribution to appliance replacement."
+}, {
+    "key": "72",
+    "code": "2E1I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen appliance Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Includes accidental damage and contribution to appliance replacement."
+}, {
+    "key": "73",
+    "code": "KNI2",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Flexi Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Includes accidental damage and contribution to appliance replacement. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "74",
+    "code": "2F1I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Flexi Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Includes accidental damage and contribution to appliance replacement. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "75",
+    "code": "2E3I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Cover – provides cover for the kitchen appliance(s) on the customer’s agreement."
+}, {
+    "key": "76",
+    "code": "2E5I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Cover – provides cover for the kitchen appliance(s) on the customer’s agreement."
+}, {
+    "key": "77",
+    "code": "2E9I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Cover – provides cover for the kitchen appliance(s) on the customer’s agreement."
+}, {
+    "key": "78",
+    "code": "2F3I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Flexi Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "79",
+    "code": "2F5I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Flexi Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "80",
+    "code": "2F9I",
+    "careType": "Insurance",
+    "careDescription": "Kitchen Appliance Flexi Cover – provides cover for the kitchen appliance(s) on the customer’s agreement. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "81",
+    "code": "HNI1",
+    "careType": "Insurance",
+    "careDescription": "Home Electrical Cover – repairs for the electrical system, includes accidental damage."
+}, {
+    "key": "82",
+    "code": "HEWI",
+    "careType": "Insurance",
+    "careDescription": "Home Electrical Cover – repairs for the electrical system, includes accidental damage."
+}, {
+    "key": "83",
+    "code": "HEFI",
+    "careType": "Insurance",
+    "careDescription": "Home Electrical Cover flexi – repairs for the electrical system, includes accidental damage. Customer has an excess to be charged for each unrelated fault repaired."
+}, {
+    "key": "84",
+    "code": "HEW",
+    "careType": "Homecare",
+    "careDescription": "Home Electrical Care – repairs for the electrical system. Includes a two yearly service maintenance inspection. Accidental damage is not covered."
+}, {
+    "key": "85",
+    "code": "HEWF",
+    "careType": "Homecare",
+    "careDescription": "Home Electrical Flexi Care – repairs for the electrical system. Includes a two yearly service maintenance inspection. Accidental damage is not covered. Customer has fixed fee to be charged for each unrelated fault repaired."
+}, {
+    "key": "86",
+    "code": "MIE",
+    "careType": "Homecare",
+    "careDescription": "Maintenance Inspection for electrical appliances every two years on a continuous agreement."
+}, {
+    "key": "87",
+    "code": "MIG",
+    "careType": "Homecare",
+    "careDescription": "Maintenance Inspection for gas appliances every two years on a continuous agreement."
+}, {
+    "key": "88",
+    "code": "LI",
+    "careType": "Homecare",
+    "careDescription": "Landlords Inspection"
+}, {
+    "key": "89",
+    "code": "LIG",
+    "careType": "Homecare",
+    "careDescription": "Landlords Check"
+}, {
+    "key": "90",
+    "code": "LIM",
+    "careType": "Homecare",
+    "careDescription": "Landlords Inspection – Bulk customer"
+}, {
+    "key": "91",
+    "code": "NONE",
+    "careType": "Homecare",
+    "careDescription": "Non contract work – Chargeable Work"
+}, {
+    "key": "92",
+    "code": "PR",
+    "careType": "Homecare",
+    "careDescription": "Priority Response – Discounted chargeable repairs for customers on Priority Response contracts"
+}, {
+    "key": "93",
+    "code": "BC1S",
+    "careType": "Homecare",
+    "careDescription": "Housing Services – Full central care for Housing Services customers"
+}, {
+    "key": "94",
+    "code": "BLIM",
+    "careType": "Homecare",
+    "careDescription": "Housing Services – Landlords inspection for housing services bulk customers"
+}, {
+    "key": "95",
+    "code": "PDG1",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains - Guarantee contract"
+}, {
+    "key": "96",
+    "code": "PDG2",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains - Guarantee contract"
+}, {
+    "key": "97",
+    "code": "PDG3",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains - Guarantee contract"
+}, {
+    "key": "98",
+    "code": "PDG4",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains - Guarantee contract"
+}, {
+    "key": "99",
+    "code": "PDG5",
+    "careType": "Homecare",
+    "careDescription": "Plumbing \u0026 Drains - Guarantee contract"
+}, {
+    "key": "100",
+    "code": "SECH",
+    "careType": "Homecare",
+    "careDescription": "Scottish Executive – Full central heating care for Scottish Exec customers."
+}, {
+    "key": "101",
+    "code": "3SXS",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Boiler \u0026 Hot Water Cover - Includes parts and labour for full CH system including ASV - Include Boiler Replacement \u0026 Includes Accidental Damage - Same as Homecare 3SIS"
+}, {
+    "key": "102",
+    "code": "3FXS",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Boiler \u0026 Hot Water Cover with £50 excess - Includes parts and labour for full CH system including ASV - with a fixed charge for each callout - Same as Homecare 3FIS"
+}, {
+    "key": "103",
+    "code": "3BX1",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Boiler \u0026 Hot Water Breakdown Cover with £50 excess - Includes parts and labour for full CH system with no ASV with a fixed charge for each callout - Same as 3BI1"
+}, {
+    "key": "104",
+    "code": "3BX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Boiler \u0026 Hot Water Breakdown Cover - Includes parts and labour for full CH system with no ASV - Same as 3BI"
+}, {
+    "key": "105",
+    "code": "2APX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy Gas Appliance Cover - Includes Parts \u0026 Labour and ASV, Equivalent to 2API"
+}, {
+    "key": "106",
+    "code": "2AFX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy Gas Appliance Cover Excess - Includes Parts \u0026 Labour for individual Gas Appliance with a fixed charge for each call out. Includes Annual Service for appliance covered."
+}, {
+    "key": "107",
+    "code": "2PX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Plumbing Cover - Includes Parts \u0026 Labour - includes taps \u0026 washers, accidental damage \u0026 ASV on plumbing if customer previously held plumbing care - Same as 2PI"
+}, {
+    "key": "108",
+    "code": "2PX1",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Plumbing Cover with £50 excess - Includes Parts \u0026 Labour - with a fixed charge for each callout - Includes taps \u0026 washers, accidental damage \u0026 ASV on plumbing if customer previously held plumbing care"
+}, {
+    "key": "109",
+    "code": "2DX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Drains Cover - Includes Parts \u0026 Labour \u0026 accidental damage."
+}, {
+    "key": "110",
+    "code": "2DX1",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Drains Cover with £50 excess - Includes Parts \u0026 Labour - with a fixed charge for each callout \u0026 accidental damage"
+}, {
+    "key": "111",
+    "code": "2WPX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Water Supply Pipe Cover - Includes Parts \u0026 Labour - cover claims up to £1000"
+}, {
+    "key": "112",
+    "code": "HEWX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Electrical Cover - Includes Parts \u0026 Labour, accidental damage \u0026 biannual inspection if home electrical care held previous."
+}, {
+    "key": "113",
+    "code": "HEFX",
+    "careType": "Sainsbury",
+    "careDescription": "Sainsbury\u0027s Energy - Electrical Cover with £50 excess - Includes Parts \u0026 Labour with a fixed charge for each callout - Includes accidental damage \u0026 bi-annual inspection if home electrical care held previously"
+}]

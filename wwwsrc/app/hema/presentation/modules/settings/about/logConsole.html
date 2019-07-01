@@ -1,0 +1,19 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">
+                Console Log
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+                <div class="row console">
+                    <div class="console-text">
+                        <div repeat.for="l of logs" class.bind="l.logLevel">
+                            <span class="console-text">${l.logText}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

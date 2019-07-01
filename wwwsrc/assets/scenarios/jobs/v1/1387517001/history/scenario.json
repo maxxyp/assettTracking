@@ -1,0 +1,143 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "tasks": [{
+                "id": "1325866001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH3ST",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1330517001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH3ST",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1334517001001",
+                "jobType": "AS",
+                "applianceType": "CHB",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "EMPLOYEE 4"
+                }]
+            }, {
+                "id": "1310517001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2016-10-13T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "Loius Mark",
+                    "report": "Boiler has been checked and it is working fine"
+                }]
+            }, {
+                "id": "1334766001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2014-11-28T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "EMPLOYEE 10",
+                    "report": "LKXHCLKJASCFLJKB"
+                }]
+            }, {
+                "id": "1334766001002",
+                "jobType": "LJ",
+                "applianceType": "WAU",
+                "chargeType": "NCH3ST",
+                "status": "C",
+                "activities": [{
+                    "date": "2014-11-28T00:00:00Z",
+                    "status": "C",
+                    "engineerName": "EMPLOYEE 10",
+                    "report": "OBHDUWQHEODHWQEIO"
+                }]
+            }],
+            "appliances": [{
+                "id": "202201040",
+                "serialId": "2346587",
+                "gcCode": "4101903",
+                "category": "X",
+                "contractType": "3ST",
+                "contractExpiryDate": "2015-06-27T00:00:00Z",
+                "applianceType": "CHB",
+                "description": "ULTRACOM 18HXi",
+                "flueType": "O",
+                "boilerSize": 3,
+                "cylinderType": 1,
+                "energyControl": "EM",
+                "locationDescription": "Kitchen",
+                "condition": 1,
+                "numberOfRadiators": 3,
+                "numberOfSpecialRadiators": 3,
+                "installationYear": 1980,
+                "systemDesignCondition": 1,
+                "systemType": 1,
+                "safety": {
+                    "flueSafe": true,
+                    "ventilationSafe": true,
+                    "installationSafe": false,
+                    "installationTightnessTestSafe": true,
+                    "actionCode": "C",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "Appliance Too Aged"
+                },
+                "chirp": {
+                    "iaciCode": "B",
+                    "iaciDate": "2014-11-28T00:00:00Z"
+                }
+            }, {
+                "id": "202201044",
+                "serialId": "23456",
+                "gcCode": "4200000",
+                "category": "X",
+                "contractType": "3ST",
+                "applianceType": "WAU",
+                "description": "AIR HEATERS - NO INFORMA",
+                "flueType": "F",
+                "boilerSize": 2,
+                "cylinderType": 2,
+                "energyControl": "EMX",
+                "locationDescription": "Washroom",
+                "condition": 1,
+                "numberOfRadiators": 2,
+                "numberOfSpecialRadiators": 2,
+                "installationYear": 1920,
+                "systemDesignCondition": 1,
+                "systemType": 1,
+                "safety": {
+                    "flueSafe": false,
+                    "ventilationSafe": true,
+                    "installationSafe": false,
+                    "actionCode": "C",
+                    "noticeStatus": "A",
+                    "noticeType": "AR",
+                    "report": "Appliance not in good condition"
+                },
+                "chirp": {
+                    "iaciCode": "A",
+                    "iaciDate": "2014-11-28T00:00:00Z"
+                }
+            }],
+            "id": "1344517001"
+        }
+    }
+}

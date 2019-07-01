@@ -1,0 +1,69 @@
+<template>
+
+    <div if.bind="status === 'NOT_WORKING'"
+        class="worklist-notification ${isFullScreen ? 'expanded' : ''}">
+        <div>${labels.notReadyStatusMessage}</div>
+    </div>
+
+    <div if.bind="status === 'REQUESTING'"
+         class="worklist-notification inprogress ${isFullScreen ? 'expanded' : ''}">
+         <div align="center">
+            <span class="wait fa fa-circle-o-notch fa-spin"></span>
+            <span>${labels.refreshingWorkListMessage}</span>
+
+        </div>
+    </div>
+
+    <div if.bind="status === 'NORMAL'"
+        class="worklist-notification pointer ${isFullScreen ? 'expanded' : ''}"
+        click.trigger="triggerWorklistRetrieval()">
+
+        ${labels.workSummary}
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        ${labels.customers}
+        &nbsp;
+        <span class="value">${jobsTodoCount}</span>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        ${labels.activities}
+        &nbsp;
+        <span class="value">${activitiesCount}</span>
+
+        <span class="pull-right">
+            ${labels.lastUpdatedTime}
+            &nbsp;
+            <span class="value">${tracker.lastUpdatedTime | dateTimeFormat : 'HH:mm'}</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            ${labels.lastRequestedTime}
+            &nbsp;
+            <span class="value">${tracker.lastRequestTime | dateTimeFormat : 'HH:mm'}</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+        </span>
+    </div>
+
+    <div if.bind="status === 'FAILED_WORKLIST'"
+        class="worklist-notification pointer error ${isFullScreen ? 'expanded' : ''}">
+        <div>
+            <span class="fa fa-exclamation-triangle"></span>
+            <span>${labels.workListRetrivalErrorMessage}</span>
+            <span class="pull-right refresh-buttons-container">
+                <button class="btn btn-primary form-control" click.trigger="triggerWorklistRetrieval()">
+                    ${labels.refresh}
+                </button>
+            </span>
+        </div>
+    </div>
+
+    <div if.bind="status === 'NEW_WORKLIST'"
+        class="worklist-notification pointer worklistrefresh ${isFullScreen ? 'expanded' : ''}"
+        click.trigger="refreshAfterNewWorklist()">
+        <div>
+            <span class="fa fa-exclamation-triangle"></span>
+            <span>${labels.newWorkListAvailableMessage}</span>
+            <span class="pull-right refresh-buttons-container">
+                <button class="btn btn-primary form-control" click.trigger="refreshAfterNewWorklist()">
+                        ${labels.refresh}
+                </button>
+            </span>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,193 @@
+<template>
+
+<div id="landlord-cert" class="container fade-in-content">
+    <div class="landlord-cert-watermark">
+        <span>For Guidance Only</span>
+    </div>
+    <div class="row landlord-cert-text">
+
+        <div class="col-xs-4">
+            <h1>Landlords Gas Safety Record</h1>
+            <p class="landlord-cert-statement">
+                This screen is for guidance only.  This is not a valid certificate.
+            </p>
+        </div>
+
+        <div class="col-xs-6">
+
+            <div class="row">
+                <div class="col-xs-4">
+                    <h4>Landlords Inspection Service</h4>
+                    Aylestone Road<br/>
+                    Leicester<br/>
+                    Leicestershire<br/>
+                    LE2 7QH
+                </div>
+                <div class="col-xs-4">
+                    <h4>Landlord/Agent Details</h4>
+                    <div repeat.for="addressLine of model.landlordAddress">
+                        ${addressLine}
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <h4>Property Details</h4>
+                    <div repeat.for="addressLine of model.propertyAddress">
+                        ${addressLine}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col-xs-2 bg-logo"></div>
+
+    </div>
+
+    <div class="row">
+
+        <table class="col-xs-12 landlord-cert-table">
+            <thead>
+                <tr class="landlord-cert-heavy-header">
+                    <th colspan="6">Appliance details</th>
+                    <th colspan="9">Inspection details</th>
+                </tr>
+                <tr span class="landlord-cert-light-header">
+                    <th rowspan="2" class="landlord-cert-index-column"></th>
+                    <th rowspan="2">Location</th>
+                    <th rowspan="2">Type</th>
+                    <th rowspan="2">Make</th>
+                    <th rowspan="2">Model</th>
+                    <th rowspan="2">Flue type</th>
+                    <th rowspan="2">Operating value</th>
+                    <th rowspan="2">Safety device correct operation</th>
+                    <th rowspan="2">Ventilation satisfactory</th>
+                    <th colspan="2">Flue&nbsp;performance</th>
+                    <th rowspan="2">Visual condition of flue and termination satisfactory</th>
+                    <th rowspan="2">Appliance safe</th>
+                    <th rowspan="2">Requested to test</th>
+                    <th rowspan="2">Indicate YES if unable to test</th>
+                </tr>
+                <tr span class="landlord-cert-light-header">
+                    <th>Flue flow test</th>
+                    <th>Spillage test</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="appliance of model.appliances">
+                    <td class="landlord-cert-index-column">${$index + 1}</td>
+                    <td>${appliance.location}</td>
+                    <td>${appliance.type}</td>
+                    <td>${appliance.make}</td>
+                    <td>${appliance.model}</td>
+                    <td>${appliance.flueType}</td>
+                    <td class="landlord-cert-center-cell">${appliance.operatingValue}<span class="landlord-cert-units">${appliance.operatingValueUnits}</span></td>
+                    <td class="landlord-cert-center-cell">${appliance.safetyDeviceCorrectOperation}</td>
+                    <td class="landlord-cert-center-cell">${appliance.ventilationSatisfactory}</td>
+                    <td class="landlord-cert-center-cell">${appliance.flueFlowTest}</td>
+                    <td class="landlord-cert-center-cell">${appliance.spillageTest}</td>
+                    <td class="landlord-cert-center-cell">${appliance.visualConditionOfFlueAndTerminationSatisfactory}</td>
+                    <td class="landlord-cert-center-cell">${appliance.applianceSafe}</td>
+                    <td class="landlord-cert-center-cell">${appliance.requestedToTest}</td>
+                    <td class="landlord-cert-center-cell">${appliance.unableToTest}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <table class="col-xs-12 landlord-cert-ins">
+            <tbody>
+                <tr>
+                    <td class="landlord-cert-index-column">Ins</td>
+                    <td>Gas Installation, Tightness test, and visual inspection of pipework:
+                        <span class="landlord-cert-ins-pass-fail landlord-cert-center-cell">
+                            <span class="hook-gas-inst-tightness-test-first landlord-cert-value">${model.gasInstallationTightnessTestAndVisualInspectionOfPipeworkPass}</span>
+                        </span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="row">
+        <table class="col-xs-10 landlord-cert-table">
+            <thead>
+                <tr class="landlord-cert-heavy-header">
+                    <th colspan="2">Details of any defects we found</th>
+                    <th style="width: 30%" class="landlord-cert-index-column">What we've done</th>
+                    <th style="width: 15%">Condition of appliance</th>
+                    <th style="width: 15%">Labelled and warning notice given</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr repeat.for="defect of model.defects">
+                    <td class="landlord-cert-index-column">${$index + 1}</td>
+                    <td>${defect.details}</td>
+                    <td>${defect.actionTaken}</td>
+                    <td class="landlord-cert-center-cell">${defect.conditionOfAppliance}</td>
+                    <td class="landlord-cert-center-cell">${defect.labelledAndWarningNoticeGiven}</td>
+                </tr>
+                <tr>
+                    <td>INS</td>
+                    <td>${model.instPremDefect.details}</td>
+                    <td>${model.instPremDefect.actionTaken}</td>
+                    <td class="landlord-cert-center-cell">${model.instPremDefect.conditionOfAppliance}</td>
+                    <td class="landlord-cert-center-cell">${model.instPremDefect.labelledAndWarningNoticeGiven}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="col-xs-2 landlord-cert-gas-inst-container">
+            <table class="landlord-cert-gas-inst">
+                <thead>
+                    <tr>
+                        <th>Gas installation tightness test and visual inspection of pipework</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="landlord-cert-center-cell">
+                            <span class="hook-gas-inst-tightness-test-second landlord-cert-value">
+                                ${model.gasInstallationTightnessTestAndVisualInspectionOfPipeworkPass}
+                            </span>
+                            <div class="landlord-cert-next-insp">
+                                Next Safety Inspection Due Within 12 Months
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">
+            <strong>This safety record has our engineer’s electronic signature:</strong>
+        </div>
+        <div class="col-xs-3">
+            Engineer name:<br/>
+            <span class="landlord-cert-value">${model.engineerName} ${model.engineerId}</span>
+        </div>
+        <div class="col-xs-3">
+            Date:<br/>
+            <span class="landlord-cert-value">${model.date | dateFormat}</span>
+        </div>
+        <div class="col-xs-2">
+            W/R Number:<br/>
+            <span class="landlord-cert-value">${model.jobNumber}</span>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-3">
+            <strong>Number of appliances tested:</strong>
+            <span class="landlord-cert-value">${model.applianceCount}</span>
+        </div>
+    </div>
+</div>
+
+
+
+</template>

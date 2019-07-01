@@ -1,0 +1,71 @@
+.appliance-saftey
+{
+    font-family: 'HemaIcons', 'BGFlame' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+
+.adapt-icons help-tip .help-tip-icon {
+  float: left;
+  font-weight: inherit !important;
+  border: inherit !important;
+  color: inherit;
+  background: inherit !important;
+  width: 35px;
+  height: 26px;
+}
+
+.parts-reduced{
+  @extend .appliance-saftey;
+  @extend .hema-icon-adapt-rsl;
+  color: #ee7d22 !important;
+}
+
+.parts-listed{
+  @extend .appliance-saftey;
+  @extend .hema-icon-adapt-sl;
+  color: #57b51a !important;
+}
+
+.parts-folio{
+  @extend .appliance-saftey;
+  @extend .hema-icon-adapt-fo;
+  color: #0d49a0 !important;
+}
+
+.parts-na{
+  @extend .appliance-saftey;
+  @extend .hema-icon-adapt-na;
+  color:#ed1c24 !important;
+ }
+.parts-ceased{
+  @extend .appliance-saftey;
+  @extend .hema-icon-adapt-no;
+  color:#ed1c24 !important;
+}
+
+.parts-withdrawn{
+ @extend .appliance-saftey;
+ @extend .hema-icon-adapt-w;
+ color:#ed1c24 !important;
+}
+
+.error-adapt{
+ @extend .appliance-saftey;
+ @extend .hema-icon-error-adapt;
+ color:#0d49a0 !important;
+}
+
+.safety{
+ @extend .appliance-saftey;
+ @extend .hema-icon-adapt-safety;
+ color:#ee7d22 !important;
+}
+
+.appliance-risk-alert{
+  color: $alertColor;
+}

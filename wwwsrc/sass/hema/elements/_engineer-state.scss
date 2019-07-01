@@ -1,0 +1,138 @@
+engineer-state {
+  float: right;
+  position: relative;
+  top: 8px;
+
+  drop-down {
+    width: 225px;
+    display: inline-block;
+    margin-left: 5px;
+
+    .dropdown-container {
+      &.disabled {
+        opacity: 0.7;
+      }
+
+      a {
+        color: #fff;
+      }
+
+      .input-base {
+        background-color: $slate-1 !important;
+        border-color: #fff !important;
+        color: $green-2 !important;
+      }
+
+      .selected-items {
+        height: 40px;
+
+        div {
+          .search-box {
+            font-size: 1rem;
+          }
+          .dd-caret {
+            color: #fff;
+            
+            &:focus {
+              color: #fff;
+            }
+
+            &.disabled {
+              color: #eee;
+            }
+          }
+        }
+      }
+
+      .lookup-items {
+        border-left: 1px #fff solid;
+        border-right: 1px #508ba8 solid;
+        border-bottom: 1px #508ba8 solid;
+        max-height: none;
+        height: auto;
+
+        &.close {
+          height: 0px;
+        }
+
+        > div {
+          background-color: $slate-1;
+          border-bottom: solid 1px #555;
+
+          &:hover, &.selected {
+            background-color: #000;
+            color: orange;
+          }
+        }
+
+        div:hover, div:active, div:focus:active, div:focus {
+          background-color: #000;
+        }
+      }
+    }
+  }
+
+  .engineer-state-item {
+    .engineer-state-icon {
+      margin-left: 5px;
+      margin-right: 15px;
+      font-size: 2rem;
+      display: inline-block;
+      width: 24px;
+      vertical-align: middle;
+
+      &.hema-icon-05 { /* Meeting */
+        @extend .hema-icon-meeting;
+      }
+
+      &.hema-icon-06 { /* Lunch */
+        @extend .hema-icon-lunch;
+      }
+
+      &.hema-icon-07 { /* Vehicle Maintenance */
+        @extend .icon-hema-vehicle-maintenance;
+      }
+
+      &.hema-icon-08 { /* Assisting */
+        @extend .hema-icon-assistance;
+      }
+
+      &.hema-icon-09 { /* Super-user Visit */
+        @extend .icon-hema-superuser;
+      }
+
+      &.hema-icon-10 { /* Appointment */
+        @extend .hema-icon-appointment;
+      }
+
+      &.hema-icon-11 { /* Collecting Parts */
+        @extend .hema-icon-collecting-parts;
+      }
+
+      &.hema-icon-12 { /* Other */
+        @extend .hema-icon-status-other;
+      }
+
+      &.hema-icon-13 { /* Sign-off */
+        @extend .hema-icon-sign-out;
+      }
+
+      &.hema-icon-52 { /* Sign-on */
+        @extend .hema-icon-sign-in;
+      }
+
+      &.hema-icon-internal-working {
+        @extend .hema-icon-working;
+      }
+
+      &.hema-icon-internal-not-working {
+        @extend .hema-icon-not-working;
+      }
+    }
+
+    .engineer-state-description {
+      font-size: 1rem;
+      vertical-align: middle;
+    }
+  }
+}

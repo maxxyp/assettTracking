@@ -1,0 +1,91 @@
+            /*
+            OUR FIELDS:
+                chargeExcludingVAT: number;             // above
+                vatAmount: number;                      // above
+                vatCode: string;                        // above
+
+                discountAmount: number;                 // above
+                subsequentJobIndicator: boolean;        // above, worked out in charges
+
+                fixedPriceQuotationAmount: number;      // taskFactory, just recycle what came down but is definitely observed by charges
+
+                standardLabourChargeIndicator: boolean; // here
+                standardPartsPriceCharged: number;      // here
+                supplementaryLabourChargeTotal: number; // here
+                totalLabourCharged: number;             // here
+
+                partsCharged: IPartsCharged[];
+                partsUsed: IPartsUsed[]; (only has a bit of chargability in it)
+
+            THEIR FIELDS:
+                SUBSEQUENT JOB INDICATOR  // this is worked out in charges
+                SUPPLEMENTARY LABOUR CHARGE TOTAL // comes down and goes back up again (?) maybe not really used anymore (?)
+
+                STANDARD LABOUR CHARGE INDICATOR // if prime and prime labour charge, or subseq and subseq labour charge
+                TOTAL LABOUR CHARGED // always set, if indicator is set then is the prime lab charge, if subseq then subseq lab charge, otherwise just the calc
+
+                STANDARD PARTS PRICE CHARGED
+
+            CF19 LABOUR:
+                if ((is not a subsequent job indicator or is a prime job)
+                    and there is a prime charge for labour)
+
+                    set subsequentJobIndicator = false; (force this to false)
+                    set standardLabourChargeIndicator = true;
+                    set totalLabourCharged = prime standard charge for labour;
+                    exit;
+
+                else if ((is a subsequent job indicator and is not a prime job)
+                    and is a subsequent charge for labour)
+
+                    set standardLabourChargeIndicator = true;
+                    set totalLabourCharged = subsequent standard charge for labour;
+                    exit;
+                end if;
+
+                .....
+
+
+            CF19 PARTS:
+                if ((is not a subsequent job indicator or is a prime job)
+                    and there is a prime charge for parts)
+
+                    set subsequentJobIndicator = false; (force this to false)
+                    set totalPartsCharged = prime standard charge for parts;
+                    set standardPartsPriceCharged = prime standard charge for parts;
+                    exit;
+
+                else if ((is a subsequent job indicator and is not a prime job)
+                    and is a subsequent charge for parts)
+
+                    set totalPartsCharged = subsequent standard charge for parts;
+                    set standardPartsPriceCharged = subsequent standard charge for parts;
+                    exit
+                end if;
+
+                .....
+
+            DEFINITE TODOs:
+                1) the multi-visit parts stuff, retain the non-todays-parts
+                2) supplementaryLabourChargeTotal - does this just come down and go back up?  with no effect on calculations?
+                    - I think this is pence, but what does it come down as? - question
+                3) standardLabourChargeIndicator is wrong
+                    - we only set it if we are charging a standard amount - done
+
+            QUESTIONS:
+                1) what units is supplementaryLabourChargeTotal
+                2) get clarification on supplementaryLabourChargeTotal, standardLabourChargeIndicator & standardPricePartsCharged
+                3) multi-visits - do we observe warranty returns too in the previous activities?
+                    - extra stautus stuff that we need to observe too? ask Nehal
+                4) Just when a task is completed do we send back parts?
+                    - do we need CX as well as C
+                5) Charge dispute - which value should we send?
+
+                0) what is standard parts price charged? - a value or an indicator
+                    - done - we don't have this concept anymore
+                1) parts VAT - is it really the same as the task VAT?
+                    - done - we don't have this concept anymore
+                2) parts - we have no concept as prime and subsequent standard charge for parts in our code yet, although it is in reference data see IJcChargeRule.ts....
+                    - done - doesn't look like this concept is used anymore
+                3) should we be driving partscharged of chargeService - it is a bit weird that we don't...
+            */

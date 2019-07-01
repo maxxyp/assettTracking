@@ -1,0 +1,15 @@
+   button-list-popup{
+    display: inline-block;
+    .button-list-popup{
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    left: 24px;
+    bottom: 24px;
+    background-color: white;
+    border: 4px solid #005eb8;
+    border-radius: 3px;
+    z-index: 999;
+    text-align: center;
+    }
+   }

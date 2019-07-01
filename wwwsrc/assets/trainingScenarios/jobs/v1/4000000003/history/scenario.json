@@ -1,0 +1,119 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "jobHistory",
+			"createdTimestamp": "2017-09-29T11:41:45Z"
+		},
+		"data": {
+			"tasks": [{
+				"id": "2099410372001",
+				"jobType": "BE",
+				"applianceType": "MW",
+				"status": "C",
+				"chargeType": "NCH2E3",
+				"activities": [{
+					"date": "2017-09-29T00:00:00Z",
+					"status": "C",
+					"engineerName": "Phil Appleby",
+					"report": "Thermostat replaced. Door resealed"
+				}]
+			}],
+			"appliances": [{
+				"id": "10002749",
+				"gcCode": "7354049",
+				"serialId": "29091961/SA",
+				"category": "A",
+				"applianceType": "WM",
+				"linkId": "10002700",
+				"contractType": "2E3",
+				"description": "Zanussi ZWG7120",
+				"locationDescription": "Utility",
+				"installationYear": 2012
+			}, {
+				"id": "10002748",
+				"gcCode": "7117242",
+				"category": "A",
+				"applianceType": "TD",
+				"linkId": "10002700",
+				"contractType": "2E3",
+				"description": "Zanussi TCE7127W",
+				"locationDescription": "Utility",
+				"installationYear": 2012
+			}, {
+				"id": "10002700",
+				"gcCode": "9999990",
+				"category": "A",
+				"applianceType": "KAC",
+				"contractexpirydate": "2099-12-31Z",
+				"contracttype": "2E3",
+				"linkId": "10002700",
+				"description": "Kitchen App Cover",
+				"locationDescription": "House",
+				"installationYear": 2015,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "X",
+					"installationSafe": "Y",
+					"applianceTightnessTestSafe": "X",
+					"ventilationSafe": "X"
+				}
+			}, {
+				"id": "55063778",
+				"serialId": "281252/PSA",
+				"gcCode": "4740604",
+				"bgInstallationIndicator": "0",
+				"category": "X",
+				"contractType": "3SIS",
+				"contractExpiryDate": "2099-12-31Z",
+				"applianceType": "CHB",
+				"description": "Worcester British Gas 537/i",
+				"flueType": "R",
+				"boilerSize": 12,
+				"cylinderType": 0,
+				"energyControl": "PR",
+				"locationDescription": "Kitchen",
+				"condition": 1,
+				"numberOfRadiators": 9,
+				"numberOfSpecialRadiators": 0,
+				"installationYear": 2007,
+				"systemInstallationYear": 1980,
+				"systemDesignCondition": 2,
+				"systemType": 16,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "Y",
+					"installationSafe": "Y",
+					"installationTightnessTestSafe": "Y"
+				}
+			}, {
+				"id": "10002743",
+				"gcCode": "9104204",
+				"category": "A",
+				"applianceType": "MW",
+				"contracttype": "2E3",
+				"linkId": "10002700",
+				"description": "Hitachi 8290",
+				"locationDescription": "Kitchen",
+				"installationYear": 2014
+			}, {
+				"id": "30885272",
+				"gcCode": "9900000",
+				"category": "A",
+				"applianceType": "EWR",
+				"contracttype": "HEW",
+				"contractexpirydate": "2099-12-31Z",
+				"description": "Wiring cover",
+				"locationDescription": "House",
+				"installationYear": 2015,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "X",
+					"installationSafe": "Y",
+					"applianceTightnessTestSafe": "X",
+					"ventilationSafe": "X"
+				}
+			}]
+		}
+	}
+}

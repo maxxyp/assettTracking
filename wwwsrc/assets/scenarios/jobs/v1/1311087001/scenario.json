@@ -1,0 +1,140 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-23T10:52:41Z",
+      "modifiedTimestamp": "2017-08-23T11:08:52Z"
+    },
+    "data": {
+      "job": {
+        "id": "1311087001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022208990",
+          "lastName": "Mr Gasothr Appcom",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Malta Close"
+            ],
+            "county": "Manchester",
+            "postCodeIn": "2BT",
+            "postCodeOut": "M24"
+          }
+        },
+        "premises": {
+          "id": "L276782",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Malta Close"
+            ],
+            "county": "Manchester",
+            "postCodeIn": "2BT",
+            "postCodeOut": "M24"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022208990",
+            "initials": " ",
+            "lastName": "Mr Gasothr Appcom"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-23"
+          },
+          "risks": [
+            {
+              "reason": "R3",
+              "report": "Mentally challenged customer",
+              "date": "2017-08-23"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00214132",
+          "date": "2017-08-23T00:00:00Z",
+          "earliestStartTime": "2017-08-23T18:00:00Z",
+          "latestStartTime": "2017-08-23T20:00:00Z",
+          "specialInstructions": "repeated"
+        },
+        "tasks": [
+          {
+            "id": "1311087001001",
+            "applianceId": "202231017",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "specialRequirement": "parts are fine",
+            "activities": [
+              {
+                "date": "2017-08-23",
+                "status": "IA",
+                "engineerName": "WENDY",
+                "chargeableTime": 40,
+                "sequence": 1,
+                "report": "71CODELeft done bee",
+                "workDuration": 40,
+                "parts": [
+                  {
+                    "status": "CP",
+                    "charge": 0.0,
+                    "quantity": 1,
+                    "stockReferenceId": "E41242"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Fan",
+                    "charge": 10782.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "New part one",
+                    "charge": 350.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "123456"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "New part two",
+                    "charge": 1500.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "452143"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "New part three",
+                    "charge": 93.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "147554"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "New part four",
+                    "charge": 950.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E41242"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

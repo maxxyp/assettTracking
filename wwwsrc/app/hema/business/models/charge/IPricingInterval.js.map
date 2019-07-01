@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/charge/IPricingInterval.ts"],"names":[],"mappings":"","file":"IPricingInterval.js","sourcesContent":["export interface IPricingInterval {\n    sequenceNo: number;\n    chargeInterval: number;\n    chargePeriod: number;\n    chargeIntervalPrice: number;\n}\n"],"sourceRoot":"../../../.."}

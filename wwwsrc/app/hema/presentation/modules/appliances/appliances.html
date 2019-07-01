@@ -1,0 +1,50 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card details-list hook-list-data-container fade-in-content">
+            <div class="card-block">
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-4">${labels.applianceTypeAndDescription}</div>
+                    <div class="col-xs-2">${labels.location}</div>
+                    <div class="col-xs-2">${labels.gcCode}</div>
+                    <div class="col-xs-2">${labels.adaptStatus}</div>
+                    <div class="col-xs-2 with-button">
+                        <button if.bind="canEdit" class="btn btn-secondary plus" click.trigger="newAppliance()">${labels.new}</button>
+                    </div>
+                </div>
+                <div repeat.for="model of viewModels" class="details-list-item hook-list-data-item-container">
+                    <div class="col-xs-3  details-list-item-col ${model.aggregateDataState | dataStateStyle:canEdit}" click.trigger="navigateToAppliance(model.appliance.id)">
+                        <i class="fa hema-icon-linked-appliance" if.bind="model.appliance.parentId"></i>
+                        ${model.appliance.applianceType}<span if.bind="model.applianceDescription"> - ${model.applianceDescription}</span>
+                    </div>
+                    <div class="col-xs-1  details-list-item-col">
+                        <span if.bind="model.appliance.safety && model.appliance.safety.previousApplianceUnsafeDetail && model.appliance.safety.previousApplianceUnsafeDetail.noticeType !== undefined">
+                            <i class="fa fa-exclamation-circle appliance-risk-alert"></i>
+                        </span>
+                    </div>
+                    <div class="col-xs-2  details-list-item-col wrap" click.trigger="navigateToAppliance(model.appliance.id)">
+                        ${model.appliance.locationDescription}
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        <a show.bind="model.isDisplayableGcCode" class="btn btn-secondary" click.trigger="launchAdapt(model.appliance.gcCode)">
+                            ${model.appliance.gcCode}
+                        </a>
+                    </div>
+                    <div class="col-xs-2  details-list-item-col adapt-icons">
+                        <span repeat.for="headerIcon of model.appliance.headerIcons">
+                            <help-tip icon-class="fa ${headerIcon.iconClassName}">${labels[headerIcon.title]}</help-tip>
+                        </span>
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        <button class="btn btn-tertiary cross-blue" click.trigger="excludeAppliance($event, model.appliance.id)" if.bind="!!canEdit && !!model.canExclude">${labels.hide}
+                        </button>
+                    </div>
+                </div>
+                <div class="details-list-item disabled" if.bind="!viewModels || viewModels.length === 0">
+                    <div class="col-xs-12 details-list-item-col state-not-visited">
+                        ${labels.noData}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

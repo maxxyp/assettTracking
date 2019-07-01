@@ -1,0 +1,158 @@
+$table-border-width: 2px;
+
+#landlord-cert {
+    margin: 0 auto;
+    padding:0;
+    font-size: 0.8rem;
+    background:white;
+
+    h1{
+        font-size: 1.7rem;
+        color: $blue-1;
+        font-weight: lighter;
+    }
+
+    h4{
+        font-size: 0.8rem;
+        font-weight: bold;
+        margin-bottom:2px;
+    }
+
+    .landlord-cert-watermark{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+
+        z-index: 999;
+        span {
+            display: inline-block;
+            color: #000;
+            position:relative;
+            top:33%;
+            font-size: 5rem;
+            font-weight: bold;
+            opacity: 0.15;
+            text-transform: uppercase;
+            transform: rotate(315deg);
+        }
+    }
+
+    .landlord-cert-text{
+        line-height: 1rem;
+    }
+
+    .landlord-cert-statement{
+        font-size: 1.75em;
+        line-height: 1.75rem;
+        border: 1px solid $blue-1;
+        padding: 10px 20px;
+    }
+
+    .landlord-cert-units{
+        text-transform: none;
+    }
+
+    .landlord-cert-value{
+        font-size: 1.2rem;
+    }
+
+    .landlord-cert-center-cell{
+        text-align: center;
+    }
+
+    table.landlord-cert-table{
+        border: $table-border-width solid $blue-1;
+
+        td, th{
+            border: $table-border-width solid $blue-1;
+            padding: 2px;
+        }
+        th{
+            text-align: center;
+        }
+        td{
+            text-transform: uppercase;
+        }
+
+        .landlord-cert-heavy-header{
+            background: $blue-1;
+            color: white;
+            font-size: 1rem;
+            th{
+                border-color:$blue-1 white;
+                &:first-child{
+                    border-left-color: $blue-1;
+                }
+                &:last-child{
+                    border-right-color: $blue-1;
+                }
+            }
+        }
+
+        .landlord-cert-light-header{
+            background: $grey-4;
+        }
+
+    }
+
+    table.landlord-cert-ins {
+        border: $table-border-width solid $blue-1;
+
+        td, th{
+            border: $table-border-width solid $blue-1;
+            padding: 2px;
+        }
+
+        .landlord-cert-ins-pass-fail{
+            display: inline-block;
+            padding: 2px 3px;
+            border: 1px solid black;
+        }
+    }
+
+    .landlord-cert-gas-inst-container{
+        padding-right:0;
+        padding-left:5px;
+
+        table.landlord-cert-gas-inst {
+            border: $table-border-width solid $slate-1;
+            td, th{
+                border: $table-border-width solid $slate-1;
+                padding: 2px;
+                font-size: 1rem;
+            }
+
+            th{
+                background: $slate-1;
+                color:white;
+                text-align: center;
+            }
+
+            .landlord-cert-value{
+                display: inline-block;
+                height: 73px;
+                line-height: 73px;
+                vertical-align: middle;
+            }
+
+            .landlord-cert-next-insp{
+                font-weight: bold;
+
+            }
+        }
+    }
+
+    .landlord-cert-index-column{
+        width:2rem;
+        text-align: center;
+    }
+
+    .bg-logo{
+        width: 180px;
+        background-size: 90% auto;
+        background-repeat: no-repeat;
+    }
+}

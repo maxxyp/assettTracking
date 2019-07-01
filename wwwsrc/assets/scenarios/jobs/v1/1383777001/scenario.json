@@ -1,0 +1,101 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-09T09:50:02Z"
+    },
+    "data": {
+      "job": {
+        "id": "1383777001",
+        "customer": {
+          "id": "022211317",
+          "lastName": "Mr Ll Test",
+          "address": {
+            "houseNumber": "34",
+            "line": [
+              "Campbell Grove"
+            ],
+            "county": "Nottingham",
+            "postCodeIn": "1HA",
+            "postCodeOut": "NG3"
+          }
+        },
+        "premises": {
+          "id": "L278952",
+          "address": {
+            "houseNumber": "34",
+            "line": [
+              "Bellevue Court"
+            ],
+            "county": "Nottingham",
+            "postCodeIn": "3NA",
+            "postCodeOut": "NG3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211317",
+            "initials": " ",
+            "lastName": "Mr Ll Test"
+          }
+        },
+        "visit": {
+          "id": "WMW00211352",
+          "date": "2017-08-09T00:00:00Z",
+          "earliestStartTime": "2017-08-09T08:00:00Z",
+          "latestStartTime": "2017-08-09T12:45:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1383777001001",
+            "applianceId": "202234945",
+            "jobType": "AS",
+            "applianceType": "INS",
+            "chargeType": "NCHLIG",
+            "status": "D",
+            "skill": "LS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1383777001002",
+            "applianceId": "202234944",
+            "jobType": "AS",
+            "applianceType": "HOB",
+            "chargeType": "NCHLIG",
+            "status": "D",
+            "skill": "LS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1383777001003",
+            "applianceId": "202234941",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCH3SIS",
+            "status": "D",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-15T15:51:54Z",
+      "modifiedTimestamp": "2017-08-16T10:59:11Z"
+    },
+    "data": {
+      "job": {
+        "id": "1393877001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211526",
+          "lastName": "Mr Charges Threeeeee",
+          "address": {
+            "houseNumber": "87-89",
+            "line": [
+              "Mortimer Street"
+            ],
+            "county": "London",
+            "postCodeIn": "7SW",
+            "postCodeOut": "W1W"
+          }
+        },
+        "premises": {
+          "id": "L279091",
+          "address": {
+            "premisesName": "Flat 3",
+            "houseNumber": "87-89",
+            "line": [
+              "Mortimer Street"
+            ],
+            "county": "London",
+            "postCodeIn": "7SW",
+            "postCodeOut": "W1W"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211526",
+            "initials": " ",
+            "lastName": "Mr Charges Threeeeee"
+          }
+        },
+        "visit": {
+          "id": "WMW00212732",
+          "date": "2017-08-16T00:00:00Z",
+          "earliestStartTime": "2017-08-16T12:00:00Z",
+          "latestStartTime": "2017-08-16T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1393877001002",
+            "applianceId": "202235202",
+            "jobType": "FF",
+            "applianceType": "WAW",
+            "chargeType": "SLO2FI1",
+            "status": "D",
+            "skill": "GR",
+            "discountCode": "AL",
+            "sequence": 3,
+            "specialRequirement": "T1",
+            "activities": [
+              {
+                "date": "2017-08-15",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "CODE0CODE2CODE3CODE4testtststtstststtststs",
+                "workDuration": 0
+              },
+              {
+                "date": "2017-08-16",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 2,
+                "report": "Bnnmmmll,kkkm",
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          },
+          {
+            "id": "1393877001003",
+            "applianceId": "202235202",
+            "jobType": "IB",
+            "applianceType": "WAW",
+            "chargeType": "EXS2FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 3,
+            "specialRequirement": "T2",
+            "activities": [
+              {
+                "date": "2017-08-15",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "71CODECODE0CODE2CODE3ssssssssssssssssssss",
+                "workDuration": 0
+              },
+              {
+                "date": "2017-08-16",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 2,
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          },
+          {
+            "id": "1393877001005",
+            "applianceId": "202235204",
+            "jobType": "IB",
+            "applianceType": "AGA",
+            "chargeType": "EXS3FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 3,
+            "specialRequirement": "T3",
+            "activities": [
+              {
+                "date": "2017-08-15",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "62CODEhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+                "workDuration": 0
+              },
+              {
+                "date": "2017-08-16",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 2,
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          },
+          {
+            "id": "1393877001006",
+            "applianceId": "202235202",
+            "jobType": "LJ",
+            "applianceType": "WAW",
+            "chargeType": "EXS2FI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 3,
+            "specialRequirement": "T4",
+            "activities": [
+              {
+                "date": "2017-08-15",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "report": "62CODEggggggggggggggggggggggggggggg",
+                "workDuration": 0,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Wax Sensor",
+                    "charge": 2672.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "108014"
+                  }
+                ]
+              },
+              {
+                "date": "2017-08-16",
+                "status": "NA",
+                "engineerName": "NEIL",
+                "chargeableTime": 0,
+                "sequence": 2,
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

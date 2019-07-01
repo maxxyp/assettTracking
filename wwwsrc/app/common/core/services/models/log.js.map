@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/models/log.ts"],"names":[],"mappings":";;;IAEA;QAAA;QAGA,CAAC;QAAD,UAAC;IAAD,CAHA,AAGC,IAAA;IAHY,kBAAG","file":"log.js","sourcesContent":["import {LogLevel} from \"../constants/logLevel\";\n\nexport class Log {\n    public logText: string;\n    public logLevel: LogLevel;\n}\n"],"sourceRoot":"../../../.."}

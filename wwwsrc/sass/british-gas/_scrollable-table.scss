@@ -1,0 +1,26 @@
+table.scrollable-table {
+    thead {
+        display: block;
+        tr {
+            display: flex;
+            overflow: auto;
+            th {
+                min-width: 60px;
+                width:100%;
+            }
+        }
+    }
+    
+    tbody {
+        display: block;
+        overflow: auto;
+        height: calc(100vh - 280px);
+        tr {
+            display: flex;
+            td {
+                min-width: 60px;
+                width:100%;
+            }            
+        }
+    }
+}

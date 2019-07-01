@@ -1,0 +1,78 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "2083281252",
+        "customer": {
+          "id": "100000250",
+          "password": "Bilbo",
+          "initials": "G",
+          "title": "Miss",
+          "lastName": "Gemmell",
+          "homePhone": "1162554567",
+          "address": {
+            "premisesName": "The Coach House",
+            "line": [
+              "Country Lane"
+            ],
+            "town": "Leicester",
+            "county": "Leics",
+            "postCodeIn": "7ER",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": 8391150,
+          "address": {
+            "premisesName": "The Coach House",
+            "line": [
+              "Country Lane"
+            ],
+            "town": "Leicester",
+            "county": "Leics",
+            "postCodeIn": "7ER",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "100000250",
+            "initials": "G",
+            "title": "Miss",
+            "lastName": "Gemmell"
+          }
+        },
+        "visit": {
+          "id": "WMW00163552",
+          "date": "2017-07-24T00:00:00Z",
+          "earliestStartTime": "2017-07-24T12:00:00Z",
+          "latestStartTime": "2017-07-24T18:00:00Z",
+          "specialInstructions": ""
+        },
+        "tasks": [
+          {
+            "id": "2083281252001",
+            "applianceId": "55063788",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "NCH3ST",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "NO HW",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

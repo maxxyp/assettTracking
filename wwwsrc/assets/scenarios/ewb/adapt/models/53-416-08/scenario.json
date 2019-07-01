@@ -1,0 +1,12 @@
+{
+  "status" : 200,
+  "data" : {
+    "models": [
+    {
+      "imModKey": 10707,
+      "description": "JAN 3/SE CIRCULATOR",
+      "manufacturer": "JOHNSON & STARLEY LTD"
+    }
+  ]
+}
+}

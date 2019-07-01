@@ -1,0 +1,89 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "2032029961001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2016-07-20T00:00:00Z",
+              "status": "D",
+              "engineerName": "Mike Coulter",
+              "report": "Gas valved faulty.Clean Ok"
+            }
+          ]
+        },
+        {
+          "id": "2043969299001",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2016-12-18T00:00:00Z",
+              "status": "C",
+              "engineerName": "Phil Appleby",
+              "report": "All Ok"
+            }
+          ]
+        },
+        {
+          "id": "20323229961001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2017-02-20T00:00:00Z",
+              "status": "D",
+              "engineerName": "Phil Appleby",
+              "report": "ignition failure."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "55063788",
+          "serialId": "YG050562YR",
+          "gcCode": "4131327",
+          "bgInstallationIndicator": false,
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "CHB",
+          "description": "Glowworm Hideaway 100OF",
+          "flueType": "O",
+          "boilerSize": 35,
+          "cylinderType": 1,
+          "energyControl": "EM",
+          "locationDescription": "Kitchen",
+          "condition": 1,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 1995,
+          "systemInstallationYear": 1985,
+          "systemType": 2,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": true,
+            "ventilationSafe": true,
+            "installationSafe": true,
+            "installationTightnessTestSafe": true
+          }
+        }
+      ]
+    }
+  }
+}

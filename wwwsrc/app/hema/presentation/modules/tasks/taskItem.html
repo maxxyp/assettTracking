@@ -1,0 +1,325 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="job-details-page-body">
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.visitStatus}</label>
+                                </div>
+                                <div class="col-xs-4 ">
+                                    <drop-down value.bind="viewModel.status" format-text-value="(${catalog.ACTIVITY_COMPONENT_VISIT_STATUS_DESCRIPTION}) - (${catalog.ACTIVITY_COMPONENT_VISIT_STATUS_ID})"
+                                        values.bind="jobStatusesCatalog" value-property.bind="catalog.ACTIVITY_COMPONENT_VISIT_STATUS_ID"
+                                        text-property.bind="catalog.ACTIVITY_COMPONENT_VISIT_STATUS_DESCRIPTION"
+                                        search-properties.bind="[ catalog.ACTIVITY_COMPONENT_VISIT_STATUS_DESCRIPTION, catalog.ACTIVITY_COMPONENT_VISIT_STATUS_ID]"
+                                        disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask" readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        no-filter="true" placeholder.bind="labels.visitStatus" dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.ACTIVITY_COMPONENT_VISIT_STATUS_DESCRIPTION]} -
+                                                ${item[catalog.ACTIVITY_COMPONENT_VISIT_STATUS_ID]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="!viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.workedOn}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <button-list items.bind="workedOnLookup" value.bind="viewModel.workedOnCode"
+                                        multi-select.bind="false" button-width="30%" disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="viewModel.visitActivityFilteredCatalog.length > 0 && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.visitActivity}</label>
+                                </div>
+                                <div class="col-xs-4" if.bind="viewModel.visitActivityFilteredCatalog.length > 0">
+                                    <drop-down value.bind="viewModel.activity" format-text-value="(${catalog.VISIT_ACTIVITY_CODE_DESCRIPTION})"
+                                        values.bind="viewModel.visitActivityFilteredCatalog" value-property.bind="catalog.VISIT_ACTIVITY_CODE_ID"
+                                        text-property.bind="catalog.VISIT_ACTIVITY_CODE_DESCRIPTION"
+                                        search-properties.bind="[catalog.VISIT_ACTIVITY_CODE_DESCRIPTION, catalog.VISIT_ACTIVITY_CODE_ID]"
+                                        disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask || viewModel.isFirstVisit"
+                                        readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask || viewModel.isFirstVisit"
+                                        no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.VISIT_ACTIVITY_CODE_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-4" if.bind="viewModel.showMainPartSelectedWithInvalidActivityTypeMessage">
+                                    ${labels.mainPartSelectedWithInvalidActivityTypeMessage}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="viewModel.showProductGroupAndPartTypes && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.productGroup}</label>
+                                </div>
+                                <div class="col-xs-4">
+                                    <drop-down value.bind="viewModel.productGroup" format-text-value="(${catalog.PRODUCT_GROUP_DESCRIPTION})"
+                                        values.bind="productGroupCatalog" value-property.bind="catalog.PRODUCT_GROUP_ID"
+                                        text-property.bind="catalog.PRODUCT_GROUP_DESCRIPTION" search-properties.bind="[catalog.PRODUCT_GROUP_DESCRIPTION, catalog.PRODUCT_GROUP_ID]"
+                                        disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask" readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.PRODUCT_GROUP_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div if.bind="viewModel.hasMainPart && viewModel.showMainPartSelectedWithInvalidProductGroupTypeMessage">
+                                        <button class="btn btn-secondary" click.trigger="loadProductGroupFromMainPart()">
+                                            ${labels.loadFromMainPartButton}
+                                        </button>
+                                    </div>
+                                    <span if.bind="viewModel.showMainPartSelectedWithInvalidProductGroupTypeMessage">
+                                        ${labels.mainPartSelectedWithInvalidProductGroupTypeMessage}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="viewModel.showProductGroupAndPartTypes && viewModel.partTypeFilteredCatalog.length > 0 && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.partType}</label>
+                                </div>
+                                <div class="col-xs-4" if.bind="viewModel.partTypeFilteredCatalog.length > 0">
+                                    <drop-down value.bind="viewModel.partType" format-text-value="(${catalog.PART_TYPE_DESCRIPTION})"
+                                        values.bind="viewModel.partTypeFilteredCatalog" value-property.bind="catalog.PART_TYPE_ID"
+                                        text-property="catalog.PART_TYPE_DESCRIPTION" search-properties.bind="[catalog.PART_TYPE_DESCRIPTION, catalog.PART_TYPE_ID]"
+                                        disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask" readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.PART_TYPE_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-4">
+                                    <div if.bind="viewModel.hasMainPart && viewModel.showMainPartSelectedWithInvalidPartTypeMessage">
+                                        <button class="btn btn-secondary" click.trigger="loadPartTypeFromMainPart()">
+                                            ${labels.loadFromMainPartButton}
+                                        </button>
+                                    </div>
+                                    <span if.bind="viewModel.showMainPartSelectedWithInvalidPartTypeMessage">
+                                        ${labels.mainPartSelectedWithInvalidPartTypeMessage}
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="viewModel.faultActionCodeFilteredCatalog.length > 0 && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.faultActionCode}</label>
+                                </div>
+                                <div class="col-xs-4" if.bind="viewModel.faultActionCodeFilteredCatalog.length > 0">
+                                    <drop-down value.bind="viewModel.faultActionCode" format-text-value="(${catalog.FAULT_ACTION_CODE_DESCRIPTION}) - (${catalog.FAULT_ACTION_CODE_ID})"
+                                        values.bind="viewModel.faultActionCodeFilteredCatalog" value-property.bind="catalog.FAULT_ACTION_CODE_ID"
+                                        text-property.bind="catalog.FAULT_ACTION_CODE_DESCRIPTION"
+                                        search-properties.bind="[catalog.FAULT_ACTION_CODE_DESCRIPTION, catalog.FAULT_ACTION_CODE_ID]"
+                                        disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask" readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.FAULT_ACTION_CODE_DESCRIPTION]} -
+                                                ${item[catalog.FAULT_ACTION_CODE_ID]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="!viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <time-range-picker
+                                    start-time-disabled.bind="disableTimeRangePicker || !canEdit"
+                                    end-time-disabled.bind="disableTimeRangePicker || !canEdit"
+                                    interval-in-minutes.bind="intervalInMinutes"
+                                    button-plus-classes.bind="'btn-timepicker-plus'"
+                                    button-minus-classes.bind="'btn-timepicker-minus'"
+                                    duration-in-minutes.bind="viewModel.workDuration"
+                                    value.bind="viewModel.taskTime"
+                                    control-container-classes.bind="'form-control'"
+                                    start-time-label.bind="labels.startTime"
+                                    end-time-label.bind="labels.endTime"
+                                    readonly.bind="false"
+                                    each-side.bind="true">
+                                </time-range-picker>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="!viewModel.isInCancellingStatus">
+                            <div class="col-xs-2 task-nowrap">
+                                <label>${labels.previousTime}</label>
+                            </div>
+                            <div class="col-xs-1 task-number-box">
+                                <number-box value.bind="viewModel.totalPreviousWorkDuration" readonly.bind="true"
+                                    disabled.bind="true"></number-box>
+                            </div>
+                            <div class="col-xs-1 task-nowrap">
+                                <label>${labels.jobDuration}</label>
+                            </div>
+                            <div class="col-xs-1 task-number-box">
+                                <number-box value.bind="viewModel.workDuration" readonly.bind="true" disabled.bind="true"></number-box>
+                            </div>
+                            <div class="col-xs-3 task-nowrap">
+                                <div class="form-group">
+                                    <div class="col-xs-5 task-nowrap">
+                                        <label>${labels.chargeableTime}</label>
+                                    </div>
+                                    <div class="col-xs-7 task-number-box">
+                                        <number-box value.bind="viewModel.chargeableTime" disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                            float-allowed.bind="false"></number-box>
+                                        <span class="help-block validation-custom validation-message"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="col-xs-8 task-nowrap">
+                                    <label>${labels.totalChargableTime}</label>
+                                </div>
+                                <div class="col-xs-1 task-number-box">
+                                    <number-box value.bind="totalChargableTime" readonly.bind="true" disabled.bind="true"></number-box>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="!viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.chirpCode}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <drop-down if.bind="canEdit" value.bind="viewModel.selectedChirpCode"
+                                        format-text-value="(${catalog.CHIRP_CODE_ID}) - (${catalog.CHIRP_CODE_DESCRIPTION})"
+                                        placeholder="Add a chirp code..." values.bind="viewModel.unusedChirpCodes"
+                                        value-property.bind="catalog.CHIRP_CODE_ID" text-property.bind="catalog.CHIRP_CODE_DESCRIPTION"
+                                        search-properties.bind="[catalog.CHIRP_CODE_DESCRIPTION, catalog.CHIRP_CODE_ID]"
+                                        clear-on-select.bind="true" disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask" no-filter="true"
+                                        dropdown-type.bind="appSettings.dropdownType"
+                                        min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.CHIRP_CODE_ID]} -
+                                                ${item[catalog.CHIRP_CODE_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-2">
+                                </div>
+                                <div class="col-xs-10">
+                                    <span class="help-block validation-custom validation-message"></span>
+                                    <div show.bind="!viewModel.isNotDoingJobByAnotherTask" class="selection-container"
+                                        value.bind="viewModel.chirpCodes">
+                                        <button repeat.for="item of viewModel.chirpCodes" class="btn btn-secondary cross-blue"
+                                            click.trigger="deselectChirpCode(item)" disabled.bind="!canEdit">
+                                            ${item[catalog.CHIRP_CODE_ID]} - ${item[catalog.CHIRP_CODE_DESCRIPTION]}
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-xs-2 ">
+                                    <label>${labels.visitReport}</label>
+                                </div>
+                                <div class="col-xs-10 ">
+                                    <div>
+                                        <span if.bind="false" class="task-description-status ${viewModel.charactersLeftClass}"
+                                            show.bind="canEdit">${viewModel.charactersLeft}</span>
+                                        <text-area value.bind="viewModel.taskReport" maxlength.bind="viewModel.charactersLeftNum"
+                                            disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                            placeholder.bind="labels.visitReport"></text-area>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<text-box show.one-time="false" value.bind="combinedReport"></text-box>-->
+                        </div>
+                        <div class="row" if.bind="!viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.customerAdvice}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <button-list items.bind="adviceResultLookup" value.bind="viewModel.adviceOutcome"
+                                        multi-select.bind="false" button-width="30%" disabled.bind="!canEdit || isNotDoingJobByAnotherTask">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="showAdviceCategory && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.adviceCategory}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <button-list items.bind="adviceCategoryLookup" value.bind="viewModel.adviceCode"
+                                        multi-select.bind="false" disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        button-width="30%" button-height="100px" readonly.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="showAdviceCategory && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.adviceComment}</label>
+                                </div>
+                                <div class="col-xs-10 ">
+                                    <text-area value.bind="viewModel.adviceComment" disabled.bind="!canEdit || viewModel.isNotDoingJobByAnotherTask"
+                                        placeholder="Advice comment" maxlength.bind="100">
+                                    </text-area>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" if.bind="viewModel.isPotentiallyPartLJReportable && !viewModel.isInCancellingStatus">
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.isPartLJReportable}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <button-list items.bind="isPartLJReportableLookup" value.bind="viewModel.isPartLJReportable"
+                                        multi-select.bind="false" disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                    <span if.bind="viewModel.isPartLJReportable">
+                                        <strong>${labels.partLRReportableMessage}</strong>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group" if.bind="canEdit">
+                    <button class="btn btn-secondary" click.trigger="undo()" if.bind="!viewModel.isNotDoingJobByAnotherTask">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn-tertiary arrow-blue-right" click.trigger="clear()" if.bind="!viewModel.isNotDoingJobByAnotherTask">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

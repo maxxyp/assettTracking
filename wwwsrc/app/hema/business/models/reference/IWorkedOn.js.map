@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IWorkedOn.ts"],"names":[],"mappings":"","file":"IWorkedOn.js","sourcesContent":["export interface IWorkedOn {\n   workedOnCode: string;\n   workedOnDescription: string;\n}\n"],"sourceRoot":"../../../.."}

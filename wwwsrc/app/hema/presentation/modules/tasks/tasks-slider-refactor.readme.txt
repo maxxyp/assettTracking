@@ -1,0 +1,59 @@
+- check jobService -> checkIfJobFinishTimeNeedsToBeUpdated works still
+- reinstate commented out tests in tasks.spec.ts
+    - double check logic on tasks that sets start and end time (where it falls back to tasks rather than _liveTasks)
+    - clear button on taskItem and general taskItem stuff
+    - check getting on to taskItem page before arriving the jobd
+    TaskItemViewModel helpers
+- test across hour boundary maybe
+
+check zero minutes are allowed
+
+TIME UPDATE LOGIC
+=================
+
+Initialising:
+    initialising task when job is created
+    - in jobService but callsTaskItemViewModel static methods
+
+Lifecycle:
+        creating a task
+        - goes to the end with one minute duration from the last live task
+
+        deleting a task
+        - shift all subsequent live tasks time up to slot in to missing time
+
+        cancelling a task
+        - as per deleting, and set times and duration to null
+
+        reinstating a task
+        - if a predecessor exists take a minute from predecessor
+        - if a predecessor does not exists and a successor exists, take a minute from the successor
+        - if any live task has 0 then add 1 and take from the predecessor (basically logic to spread all the tasks out)
+
+logic for live tasks - both tasks page and taskItem page are interested
+
+SLIDER PAGE
+===========
+    - disable DELETE on No ACCESS
+
+
+TASK ITEM LEVEL STUFF
+================
+
+    taskItemViewModel continue tidy up
+
+    taskItem page
+        - does duration etc get updated for XBed when we XB on the page and when we come in to an previously XBed task
+        - editing when not arrived
+
+    - clear on task item page
+        - single item and mutliple
+
+    - what setTimeRangePicker is doing
+        - calculates if we can edit or not
+    - bringing back an XB when it is a) only task and b) one of many live tasks
+
+    - manually changing chargeable time
+    - reinstating an XBed task, is chargeable time set to 1 ok?
+
+    duration = 0 stuff

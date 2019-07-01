@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/applianceOperationType.ts"],"names":[],"mappings":";;;IAAA,IAAY,sBAGX;IAHD,WAAY,sBAAsB;QAC9B,uEAAM,CAAA;QACN,yEAAO,CAAA;IACX,CAAC,EAHW,sBAAsB,GAAtB,8BAAsB,KAAtB,8BAAsB,QAGjC","file":"applianceOperationType.js","sourcesContent":["export enum ApplianceOperationType {\n    delete,\n    exclude\n}\n"],"sourceRoot":"../../.."}

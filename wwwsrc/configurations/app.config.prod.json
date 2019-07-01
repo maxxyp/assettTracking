@@ -1,0 +1,276 @@
+{
+  "applicationTitle": "Engineer Workbench",
+  "organisationId": "BGS",
+  "applicationId": "AS123123",
+  "fftServiceEndpoint": {
+    "clients": [
+      {
+        "name": "prod",
+        "type": "http",
+        "root": "https://pulse.britishgas.co.uk/fapp/",
+        "envQueryParams": {
+          "env": "prod"
+        }
+      }
+    ],
+    "routes": [
+      {
+        "route": "engineer_requestwork",
+        "client": "prod",
+        "path": "engineers/v1/{engineerId}/requestwork"
+      },
+      {
+        "route": "engineer_worklist",
+        "client": "prod",
+        "path": "engineers/v1/{engineerId}/worklist"
+      },
+      {
+        "route": "engineer_status",
+        "client": "prod",
+        "path": "engineers/v1/{engineerId}/status"
+      },
+      {
+        "route": "engineer_status_eod",
+        "client": "prod",
+        "path": "engineers/v1/{engineerId}/status"
+      },
+      {
+        "route": "engineer_orderconsumables",
+        "client": "prod",
+        "path": "engineers/v1/{engineerId}/orderconsumables"
+      },
+      {
+        "route": "job",
+        "client": "prod",
+        "path": "jobs/v1/{jobId}"
+      },
+      {
+        "route": "job_history",
+        "client": "prod",
+        "path": "jobs/v1/{jobId}/history"
+      },
+      {
+        "route": "job_update",
+        "client": "prod",
+        "path": "jobs/v1/{jobId}/jobupdate"
+      },
+      {
+        "route": "job_order_parts",
+        "client": "prod",
+        "path": "jobs/v1/{jobId}/order"
+      },
+      {
+        "route": "job_status",
+        "path": "jobs/v1/{jobId}/status",
+        "client": "prod"
+      },
+      {
+        "route": "reference_index",
+        "path": "engineers/v1/referencedata/list",
+        "client": "prod"
+      },
+      {
+        "route": "reference_catalog",
+        "path": "engineers/v1/referencedata/{catalog}",
+        "client": "prod",
+        "successLoggingMode": 1
+      },
+      {
+        "route": "reference_update",
+        "path": "engineers/v1/referencedata/engineerdata",
+        "client": "prod"
+      },
+      {
+        "route": "parts_collection",
+        "path": "jobs/v1/{jobId}/parts",
+        "client": "prod"
+      },
+      {
+          "route": "contractor_info",
+          "client": "prod",
+          "path": "engineers/v1/contract/{engineerId}"
+      }
+    ],
+    "sendAnalyticsOnSuccess": true
+  },
+  "whoAmIServiceEndpoint": {
+    "clients": [
+      {
+        "name": "prod",
+        "type": "http",
+        "root": "https://pulse.britishgas.co.uk/"
+      }
+    ],
+    "routes": [
+      {
+        "route": "whoAmI",
+        "path": "whoami/v1",
+        "client": "prod"
+      }
+    ],
+    "sendAnalyticsOnSuccess": true
+  },
+  "adaptServiceEndpoint": {
+    "clients": [
+      {
+        "name": "bridge",
+        "type": "http",
+        "root": "http://localhost:60012/"
+      }
+    ],
+    "routes": [
+      {
+        "route": "models",
+        "path": "ewb/adapt/models/{gcNumber}",
+        "client": "bridge"
+      },
+      {
+        "route": "attributes",
+        "path": "ewb/adapt/attributes/{modelId}",
+        "client": "bridge"
+      },
+      {
+        "route": "parts",
+        "path": "ewb/adapt/parts",
+        "client": "bridge",
+        "successLoggingMode": 2
+      },
+      {
+        "route": "settings",
+        "path": "ewb/adapt/usersettings",
+        "client": "bridge"
+      },
+      {
+        "route": "customerDetails",
+        "path": "ewb/quote/customerDetails",
+        "client": "bridge"
+      },
+      {
+        "route": "status",
+        "path": "ewb/status",
+        "client": "bridge"
+      },
+      {
+        "route": "version",
+        "path": "ewb/version",
+        "client": "bridge"
+      }
+    ]
+  },
+  "assetTrackingEndpoint": {
+    "clients": [
+      {
+          "name": "prod",
+          "type": "http",
+          "root": "https://pulse.britishgas.co.uk/assettracking/",
+          "envQueryParams": {
+              "env": "prod"
+          }
+      }
+    ],
+    "routes": [
+      {
+        "route": "materials",
+        "path": "engineer/{engineerId}/materials",
+        "client": "prod"
+      },
+      {
+        "route": "actions",
+        "path": "engineer/{engineerId}/actions",
+        "client": "prod"
+      },
+      {
+        "route": "search",
+        "path": "material/{materialCode}",
+        "client": "prod"
+      },
+      {
+        "route": "highvaluetools",
+        "path": "material/hvt",
+        "client": "prod"
+      },
+      {
+        "route": "zone",
+        "path": "material/{materialCode}/zone",
+        "client": "prod"
+      },
+      {
+        "route": "receipt",
+        "path": "material/{materialCode}/receipt",
+        "client": "prod"
+      },
+      {
+        "route": "return",
+        "path": "material/{materialCode}/return",
+        "client": "prod"
+      },
+      {
+        "route": "reservation",
+        "path": "material/{materialCode}/reservation",
+        "client": "prod"
+      },
+      {
+        "route": "transfer",
+        "path": "material/{materialCode}/transfer",
+        "client": "prod"
+      },
+      {
+        "route": "consumption",
+        "path": "material/{materialCode}/consumption",
+        "client": "prod"
+      }
+    ]
+  },
+  "activeDirectoryRoles": [
+    "d-Field-Engineer",
+    "d-Field-Admin",
+    "g-Field-Engineer",
+    "g-Field-Admin"
+  ],
+  "referenceDataStaleMinutes": 1440,
+  "targetReferenceDataTypes": [
+      "business",
+      "goods",
+      "jobcodes",
+      "lookups",
+      "config"
+  ],
+  "workListPostRequestWorkPollingIntervals": [
+    3000,
+    3000,
+    3000,
+    10000,
+    30000
+  ],
+  "workListPollingInterval": 300000,
+  "adaptPollingInterval": 5000,
+  "adaptLaunchUri": "launch-adapt:",
+  "customerInfoAutoLaunch": true,
+  "customerInfoReOpenExpiryMinutes": 30,
+  "googleClientKey": "AIzaSyB4KKT7xveEVRvprawRR--RwE2vmJoptyc",
+  "googleApiVersion": "3",
+  "alwaysAllowSignOff": false,
+  "maxDaysArchiveRetrival": 60,
+  "logLevel": "info",
+  "maxLogFileAgeDays": 42,
+  "analyticsTrackingId": "UA-113361615-1",
+  "analyticsEnabled": false,
+  "logGeoLocation": false,
+  "notificationPosition": 4,
+  "notificationDisplayTime": 5,
+  "dropdownType": 1,
+  "minItemsToCategoriseSmashButtons": 24,
+  "soundEnabled": true,
+  "logJobOnEverySave": true,
+  "resilienceRertyIntervals": [
+    1000,
+    1000,
+    1000
+  ],
+  "whoAmITimeoutRetries": 2,
+  "whoAmITimeoutMs": 60000,
+  "resilienceSendAnalyticsOnSuccess": false,
+  "assetTrackingSearchStaleMinutes": 2,
+  "assetTrackingPollingIntervalMinutes": 5,
+  "assetTrackingCacheRefreshTimeHHmm": "05:00"
+}

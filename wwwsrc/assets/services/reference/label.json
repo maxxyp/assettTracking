@@ -1,0 +1,6179 @@
+[
+  {
+    "key": "1001",
+    "viewModel": "common",
+    "id": "ok",
+    "label": "OK",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1002",
+    "viewModel": "common",
+    "id": "save",
+    "label": "Save",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1003",
+    "viewModel": "common",
+    "id": "edit",
+    "label": "Edit",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1004",
+    "viewModel": "common",
+    "id": "new",
+    "label": "New",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1005",
+    "viewModel": "common",
+    "id": "delete",
+    "label": "Delete",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1006",
+    "viewModel": "common",
+    "id": "cancel",
+    "label": "Cancel",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1007",
+    "viewModel": "common",
+    "id": "moreDetails",
+    "label": "More Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1008",
+    "viewModel": "common",
+    "id": "view",
+    "label": "View",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1009",
+    "viewModel": "common",
+    "id": "description",
+    "label": "Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1010",
+    "viewModel": "common",
+    "id": "status",
+    "label": "Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1011",
+    "viewModel": "common",
+    "id": "quantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1012",
+    "viewModel": "common",
+    "id": "date",
+    "label": "Date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1013",
+    "viewModel": "common",
+    "id": "task",
+    "label": "Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1014",
+    "viewModel": "common",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1015",
+    "viewModel": "common",
+    "id": "reason",
+    "label": "Reason",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1016",
+    "viewModel": "common",
+    "id": "type",
+    "label": "Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1017",
+    "viewModel": "common",
+    "id": "visit",
+    "label": "Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1018",
+    "viewModel": "common",
+    "id": "id",
+    "label": "ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1019",
+    "viewModel": "common",
+    "id": "minutes",
+    "label": "minutes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1020",
+    "viewModel": "common",
+    "id": "characterLimitSuffix",
+    "label": "character limit",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1021",
+    "viewModel": "common",
+    "id": "discard",
+    "label": "Discard",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1022",
+    "viewModel": "common",
+    "id": "fault",
+    "label": "Fault",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1023",
+    "viewModel": "common",
+    "id": "yes",
+    "label": "Yes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1024",
+    "viewModel": "common",
+    "id": "no",
+    "label": "No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1025",
+    "viewModel": "common",
+    "id": "startTime",
+    "label": "Start Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1026",
+    "viewModel": "common",
+    "id": "endTime",
+    "label": "End Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1027",
+    "viewModel": "common",
+    "id": "calculating",
+    "label": "Calculating...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1028",
+    "viewModel": "common",
+    "id": "reset",
+    "label": "Reset",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1029",
+    "viewModel": "common",
+    "id": "clear",
+    "label": "Clear",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1030",
+    "viewModel": "common",
+    "id": "undo",
+    "label": "Undo",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1031",
+    "viewModel": "common",
+    "id": "na",
+    "label": "N/A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1032",
+    "viewModel": "common",
+    "id": "errorTitle",
+    "label": "Problem",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1033",
+    "viewModel": "common",
+    "id": "errorDescription",
+    "label": "A problem has occurred in the application.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1034",
+    "viewModel": "common",
+    "id": "savedTitle",
+    "label": "Saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1035",
+    "viewModel": "common",
+    "id": "savedDescription",
+    "label": "The {0} was successfully saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1036",
+    "viewModel": "common",
+    "id": "savedDescriptionPlural",
+    "label": "The {0} were successfully saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1037",
+    "viewModel": "common",
+    "id": "savedDataInvalid",
+    "label": ", but the data is not yet complete.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1039",
+    "viewModel": "common",
+    "id": "unsafeSituation",
+    "label": "Unsafe Situation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1040",
+    "viewModel": "common",
+    "id": "confirmation",
+    "label": "Confirmation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1041",
+    "viewModel": "common",
+    "id": "clearQuestion",
+    "label": "Are you sure you want to clear the form?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1042",
+    "viewModel": "common",
+    "id": "deleteQuestion",
+    "label": "Are you sure you want to delete the '{0}' ?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1043",
+    "viewModel": "common",
+    "id": "removeQuestion",
+    "label": "Are you sure you want to remove the '{0}' ?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1044",
+    "viewModel": "common",
+    "id": "jobDetails",
+    "label": "Job details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1045",
+    "viewModel": "common",
+    "id": "bookAppointment",
+    "label": "Book an Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1046",
+    "viewModel": "common",
+    "id": "remove",
+    "label": "Remove",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1047",
+    "viewModel": "common",
+    "id": "weeks",
+    "label": "Weeks",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1048",
+    "viewModel": "common",
+    "id": "close",
+    "label": "Close",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1049",
+    "viewModel": "common",
+    "id": "engineer",
+    "label": "Engineer",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1050",
+    "viewModel": "common",
+    "id": "or",
+    "label": "Or",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1051",
+    "viewModel": "common",
+    "id": "add",
+    "label": "Add",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1052",
+    "viewModel": "common",
+    "id": "consumables",
+    "label": "Consumables",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1053",
+    "viewModel": "common",
+    "id": "restore",
+    "label": "Restore",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1054",
+    "viewModel": "common",
+    "id": "loadingPleaseWait",
+    "label": "Loading, please wait...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1055",
+    "viewModel": "common",
+    "id": "deleted",
+    "label": "Deleted",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1056",
+    "viewModel": "common",
+    "id": "newRFA",
+    "label": "New Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1057",
+    "viewModel": "common",
+    "id": "jobNo",
+    "label": "W/R No.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1058",
+    "viewModel": "common",
+    "id": "supportingtext",
+    "label": "Supporting Text",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1059",
+    "viewModel": "common",
+    "id": "specialrequirement",
+    "label": "Special Requirements",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1060",
+    "viewModel": "common",
+    "id": "durationHHMM",
+    "label": "HH:mm",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1061",
+    "viewModel": "common",
+    "id": "markAsRead",
+    "label": "Got it",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1062",
+    "viewModel": "common",
+    "id": "refresh",
+    "label": "Refresh",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1063",
+    "viewModel": "common",
+    "id": "workDuration",
+    "label": "Work Duration",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1064",
+    "viewModel": "common",
+    "id": "chargeableTime",
+    "label": "Chargeable Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1065",
+    "viewModel": "common",
+    "id": "pleaseSelect",
+    "label": "Please Select...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1066",
+    "viewModel": "common",
+    "id": "customerInfo",
+    "label": "Customer Info",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1067",
+    "viewModel": "common",
+    "id": "preliminary",
+    "label": "preliminary",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1068",
+    "viewModel": "common",
+    "id": "supplementary",
+    "label": "supplementary",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1069",
+    "viewModel": "common",
+    "id": "amend",
+    "label": "Amend",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1070",
+    "viewModel": "common",
+    "id": "continue",
+    "label": "Continue",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1071",
+    "viewModel": "common",
+    "id": "minute",
+    "label": "minute",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1072",
+    "viewModel": "common",
+    "id": "hide",
+    "label": "Hide",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1073",
+    "viewModel": "common",
+    "id": "hideQuestion",
+    "label": "Are you sure you want to hide this appliance?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "1074",
+    "viewModel": "common",
+    "id": "stockRefId",
+    "label": "Stock Ref ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2001",
+    "viewModel": "taskMain",
+    "id": "objectName",
+    "label": "Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2002",
+    "viewModel": "taskMain",
+    "id": "visits",
+    "label": "Previous Activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2003",
+    "viewModel": "taskMain",
+    "id": "details",
+    "label": "Activity Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2004",
+    "viewModel": "taskMain",
+    "id": "parts",
+    "label": "Parts",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2005",
+    "viewModel": "taskMain",
+    "id": "applianceChanged",
+    "label": "Appliance Changed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2006",
+    "viewModel": "taskMain",
+    "id": "selectAnAppliance",
+    "label": "Please select an appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2007",
+    "viewModel": "taskMain",
+    "id": "taskId",
+    "label": "Activity Id",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "2008",
+    "viewModel": "taskMain",
+    "id": "visitNumber",
+    "label": "Visit #",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3001",
+    "viewModel": "taskItem",
+    "id": "objectName",
+    "label": "Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3002",
+    "viewModel": "taskItem",
+    "id": "visitStatus",
+    "label": "Activity Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3003",
+    "viewModel": "taskItem",
+    "id": "workedOn",
+    "label": "Worked On",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3004",
+    "viewModel": "taskItem",
+    "id": "visitActivity",
+    "label": "Activity Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3005",
+    "viewModel": "taskItem",
+    "id": "jobStart",
+    "label": "Job Start",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3006",
+    "viewModel": "taskItem",
+    "id": "jobEnd",
+    "label": "Job End",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3007",
+    "viewModel": "taskItem",
+    "id": "jobDuration",
+    "label": "Job Duration",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3008",
+    "viewModel": "taskItem",
+    "id": "previousTime",
+    "label": "Previous time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3009",
+    "viewModel": "taskItem",
+    "id": "chargeableTime",
+    "label": "Chargeable Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3010",
+    "viewModel": "taskItem",
+    "id": "customerAdvice",
+    "label": "Customer Advice",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3011",
+    "viewModel": "taskItem",
+    "id": "adviceCategory",
+    "label": "Advice Category",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3012",
+    "viewModel": "taskItem",
+    "id": "adviceComment",
+    "label": "Advice Comment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3013",
+    "viewModel": "taskItem",
+    "id": "chirpCode",
+    "label": "CHIRP Outcome Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3014",
+    "viewModel": "taskItem",
+    "id": "visitReport",
+    "label": "Activity Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3015",
+    "viewModel": "taskItem",
+    "id": "productGroup",
+    "label": "Product Group",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3016",
+    "viewModel": "taskItem",
+    "id": "partType",
+    "label": "Part Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3017",
+    "viewModel": "taskItem",
+    "id": "faultActionCode",
+    "label": "Fault Action Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3019",
+    "viewModel": "taskItem",
+    "id": "mainPartSelectedWithInvalidActivityTypeMessage",
+    "label": "There is a main part but the activity type is wrong",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3020",
+    "viewModel": "taskItem",
+    "id": "mainPartSelectedWithInvalidProductGroupTypeMessage",
+    "label": "There is a main part but the product group is wrong",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3021",
+    "viewModel": "taskItem",
+    "id": "mainPartSelectedWithInvalidPartTypeMessage",
+    "label": "There is a main part but the part type is wrong",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3022",
+    "viewModel": "taskItem",
+    "id": "incorrectActivityProductGroupOrPartTypeQuestion",
+    "label": "This activity has a main part in the parts basket and the activity information does not match, continuing will clear the main part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3023",
+    "viewModel": "taskItem",
+    "id": "loadFromMainPartButton",
+    "label": "Load from main part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3024",
+    "viewModel": "taskItem",
+    "id": "isPartLJReportable",
+    "label": "Is the job part L/J reportable?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3025",
+    "viewModel": "taskItem",
+    "id": "doTodayTaskStatusMessage",
+    "label": "Can not complete the job with this status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3026",
+    "viewModel": "taskItem",
+    "id": "chargeableTimeMessage",
+    "label": "Chargeable time must be less than job duration",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3027",
+    "viewModel": "taskItem",
+    "id": "partLRReportableMessage",
+    "label": "Please ensure you complete the Buildings Regulations Notification form(D00199) and post it back to your local Area Service centre today.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "3027",
+    "viewModel": "taskItem",
+    "id": "totalChargableTime",
+    "label": "Total Chargable Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "4001",
+    "viewModel": "taskVisitDetails",
+    "id": "noData",
+    "label": "No previous activities found",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5001",
+    "viewModel": "gasSafetyDetail",
+    "id": "objectName",
+    "label": "Gas Property Safety Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5002",
+    "viewModel": "gasSafetyDetail",
+    "id": "heading",
+    "label": "Property Safety Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5003",
+    "viewModel": "gasSafetyDetail",
+    "id": "eliReadings",
+    "label": "ELI Readings (Ohms)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5004",
+    "viewModel": "gasSafetyDetail",
+    "id": "whyNoEli",
+    "label": "Why were no ELI readings taken?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5005",
+    "viewModel": "gasSafetyDetail",
+    "id": "safetyAdviceLeft",
+    "label": "Safety advice notice Left? (non-gas)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5006",
+    "viewModel": "gasSafetyDetail",
+    "id": "reasonWhy",
+    "label": "Reason Why?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5007",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasTightnessTestDone",
+    "label": "Gas installation tightness test done?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5008",
+    "viewModel": "gasSafetyDetail",
+    "id": "pressureDrop",
+    "label": "Pressure Drop",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5009",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationSatisfactory",
+    "label": "Gas meter and installation satisfactory?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5010",
+    "viewModel": "gasSafetyDetail",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5011",
+    "viewModel": "gasSafetyDetail",
+    "id": "conditionAsLeft",
+    "label": "Condition As Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5012",
+    "viewModel": "gasSafetyDetail",
+    "id": "cappedTurnedOff",
+    "label": "Capped/Turned Off?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5013",
+    "viewModel": "gasSafetyDetail",
+    "id": "labelAttachedRemoved",
+    "label": "Label Attached/Removed?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5014",
+    "viewModel": "gasSafetyDetail",
+    "id": "ownedByCustomer",
+    "label": "Owned by Customer?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5015",
+    "viewModel": "gasSafetyDetail",
+    "id": "letterLeft",
+    "label": "Letter Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5016",
+    "viewModel": "gasSafetyDetail",
+    "id": "signatureObtained",
+    "label": "Signature Obtained?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5017",
+    "viewModel": "gasSafetyDetail",
+    "id": "propertySafety",
+    "label": "Property Safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5018",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationNotSatisfactoryNoMeter",
+    "label": "Gas meter installation not satisfactory - no meter",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5019",
+    "viewModel": "gasSafetyDetail",
+    "id": "unsafeDetailRequired",
+    "label": "The unsafe details are required because the property has been marked as not safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5020",
+    "viewModel": "gasSafetyDetail",
+    "id": "unsafeToast",
+    "label": "Unsafe Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5021",
+    "viewModel": "gasSafetyDetail",
+    "id": "pressureDropGreater8Unsafe",
+    "label": "Pressure drop > {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5022",
+    "viewModel": "gasSafetyDetail",
+    "id": "gasMeterInstallationUnsafe",
+    "label": "Gas meter installation not satisfactory",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5023",
+    "viewModel": "gasSafetyDetail",
+    "id": "reportMaxCharsLandlordText",
+    "label": "characters left for landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5024",
+    "viewModel": "gasSafetyDetail",
+    "id": "reportMaxCharsLandlordExceededText",
+    "label": "warning: only the first 40 characters can be included in the landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5025",
+    "viewModel": "gasSafetyDetail",
+    "id": "pressureDropLess8Unsafe",
+    "label": "Pressure drop < {0} (non-mandatory)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5026",
+    "viewModel": "gasSafetyDetail",
+    "id": "noEliReadings",
+    "label": "No reading taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5027",
+    "viewModel": "gasSafetyDetail",
+    "id": "noEliReadingsUnsafe",
+    "label": "No ELI readings selected",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "5028",
+    "viewModel": "gasSafetyDetail",
+    "id": "unsafeWarningMsg",
+    "label": "Inform gas emergency service phone number 0800 111999.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6001",
+    "viewModel": "electricalSafetyDetail",
+    "id": "objectName",
+    "label": "Electrical Property Safety Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6002",
+    "viewModel": "electricalSafetyDetail",
+    "id": "heading",
+    "label": "Property Safety Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6003",
+    "viewModel": "electricalSafetyDetail",
+    "id": "eliReadings",
+    "label": "ELI Readings (Ohms)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6004",
+    "viewModel": "electricalSafetyDetail",
+    "id": "noEliReadings",
+    "label": "No reading taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6005",
+    "viewModel": "electricalSafetyDetail",
+    "id": "whyNoEli",
+    "label": "Why were no ELI readings taken?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6006",
+    "viewModel": "electricalSafetyDetail",
+    "id": "consumerUnit",
+    "label": "Consumer unit / fuse box satisfactory?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6007",
+    "viewModel": "electricalSafetyDetail",
+    "id": "systemType",
+    "label": "System type?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6008",
+    "viewModel": "electricalSafetyDetail",
+    "id": "systemTypeUnableToCheckMessage",
+    "label": "Please confirm you are not carrying out an upgrade job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6009",
+    "viewModel": "electricalSafetyDetail",
+    "id": "rcdPresent",
+    "label": "RCD Present?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6010",
+    "viewModel": "electricalSafetyDetail",
+    "id": "eliSafe",
+    "label": "ELI safe according to TOPs?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6011",
+    "viewModel": "electricalSafetyDetail",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6012",
+    "viewModel": "electricalSafetyDetail",
+    "id": "conditionAsLeft",
+    "label": "Condition As Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6013",
+    "viewModel": "electricalSafetyDetail",
+    "id": "cappedTrunedOff",
+    "label": "Capped/Turned Off?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6014",
+    "viewModel": "electricalSafetyDetail",
+    "id": "labelAttachedRemoved",
+    "label": "Label Attached/Removed?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6015",
+    "viewModel": "electricalSafetyDetail",
+    "id": "ownedByCustomer",
+    "label": "Owned by Customer?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6016",
+    "viewModel": "electricalSafetyDetail",
+    "id": "letterLeft",
+    "label": "Letter Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6017",
+    "viewModel": "electricalSafetyDetail",
+    "id": "signatureObtained",
+    "label": "Signature Obtained?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6018",
+    "viewModel": "electricalSafetyDetail",
+    "id": "propertySafety",
+    "label": "Property Safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6019",
+    "viewModel": "electricalSafetyDetail",
+    "id": "unsafeToast",
+    "label": "Unsafe Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6020",
+    "viewModel": "electricalSafetyDetail",
+    "id": "consumerUnitUnsafe",
+    "label": "Consumer unit / fuse box not satisfactory",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6021",
+    "viewModel": "electricalSafetyDetail",
+    "id": "systemTypeUnsafe",
+    "label": "Unable to check system type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6022",
+    "viewModel": "electricalSafetyDetail",
+    "id": "noElectricalEliReadingUnsafe",
+    "label": "No ELI reading taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6023",
+    "viewModel": "electricalSafetyDetail",
+    "id": "rcdGreater200Unsafe",
+    "label": "ELI >200 ohm",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6024",
+    "viewModel": "electricalSafetyDetail",
+    "id": "rcdNotPresentUnsafe",
+    "label": "No RCD present",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6025",
+    "viewModel": "electricalSafetyDetail",
+    "id": "topsReadingSafeUnsafe",
+    "label": "Reading not safe according to TOPS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6026",
+    "viewModel": "electricalSafetyDetail",
+    "id": "reportMaxCharsLandlordText",
+    "label": "characters left for landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "6027",
+    "viewModel": "electricalSafetyDetail",
+    "id": "reportMaxCharsLandlordExceededText",
+    "label": "warning: only the first 40 characters can be included in the landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7001",
+    "viewModel": "appInit",
+    "id": "objectName",
+    "label": "Application Intialisation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "7002",
+    "viewModel": "appInit",
+    "id": "initialising",
+    "label": "Initialising",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8001",
+    "viewModel": "appliances",
+    "id": "objectName",
+    "label": "Appliances",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8002",
+    "viewModel": "appliances",
+    "id": "applianceTypeAndDescription",
+    "label": "Type & Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8003",
+    "viewModel": "appliances",
+    "id": "location",
+    "label": "Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8004",
+    "viewModel": "appliances",
+    "id": "gcCode",
+    "label": "GC Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8005",
+    "viewModel": "appliances",
+    "id": "adaptStatus",
+    "label": "Adapt Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8006",
+    "viewModel": "appliances",
+    "id": "gcStatusFolio",
+    "label": "Folio",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8007",
+    "viewModel": "appliances",
+    "id": "gcStatusSafetyIssue",
+    "label": "Safety Issue",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8008",
+    "viewModel": "appliances",
+    "id": "gcStatusWithdrawn",
+    "label": "Withdrawn",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8009",
+    "viewModel": "appliances",
+    "id": "gcStatusRsl",
+    "label": "Reduced Service List",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8010",
+    "viewModel": "appliances",
+    "id": "gcStatusSl",
+    "label": "Service Listed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8011",
+    "viewModel": "appliances",
+    "id": "gcStatusSlUnknown",
+    "label": "Service Listing Unknown",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8012",
+    "viewModel": "appliances",
+    "id": "gcStatusCeased",
+    "label": "Ceased Production",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8013",
+    "viewModel": "appliances",
+    "id": "gcStatusNa",
+    "label": "Product not found",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8014",
+    "viewModel": "appliances",
+    "id": "loading",
+    "label": "Loading Adapt Information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8015",
+    "viewModel": "appliances",
+    "id": "adaptError",
+    "label": "Could not find product in Adapt",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8016",
+    "viewModel": "appliances",
+    "id": "parent",
+    "label": "(Parent)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8017",
+    "viewModel": "appliances",
+    "id": "child",
+    "label": "(Child)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8018",
+    "viewModel": "appliances",
+    "id": "noData",
+    "label": "There are no appliances for this job.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8019",
+    "viewModel": "appliances",
+    "id": "delinkApplianceMessage",
+    "label": "Existing activity will be automatically unlinked with the appliance, Are you sure?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8020",
+    "viewModel": "appliances",
+    "id": "excludeApplianceMessage",
+    "label": "This will remove the appliance from certificate and cannot be undone. Do you want to continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8021",
+    "viewModel": "appliances",
+    "id": "excludeApplianceButtonText",
+    "label": "Exclude From Cert",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "8021",
+    "viewModel": "appliances",
+    "id": "excludedApplianceButtonText",
+    "label": "Excluded From Cert",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9001",
+    "viewModel": "applianceMain",
+    "id": "objectName",
+    "label": "Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "9002",
+    "viewModel": "applianceMain",
+    "id": "newAppliance",
+    "label": "New Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10001",
+    "viewModel": "applianceDetails",
+    "id": "objectName",
+    "label": "Appliance Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10002",
+    "viewModel": "applianceDetails",
+    "id": "applianceType",
+    "label": "Appliance Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10003",
+    "viewModel": "applianceDetails",
+    "id": "description",
+    "label": "Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10004",
+    "viewModel": "applianceDetails",
+    "id": "gcCode",
+    "label": "GC Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10005",
+    "viewModel": "applianceDetails",
+    "id": "applianceYear",
+    "label": "Appliance Year",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10006",
+    "viewModel": "applianceDetails",
+    "id": "applianceYearUnknown",
+    "label": "unknown",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10007",
+    "viewModel": "applianceDetails",
+    "id": "applianceCondition",
+    "label": "Appliance Condition",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10009",
+    "viewModel": "applianceDetails",
+    "id": "systemType",
+    "label": "System Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10010",
+    "viewModel": "applianceDetails",
+    "id": "serialNumber",
+    "label": "Serial Number",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10011",
+    "viewModel": "applianceDetails",
+    "id": "systemDesignCondition",
+    "label": "System Design & Condition",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10012",
+    "viewModel": "applianceDetails",
+    "id": "bgInstallation",
+    "label": "BG Installation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10013",
+    "viewModel": "applianceDetails",
+    "id": "radiators",
+    "label": "Radiators",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10014",
+    "viewModel": "applianceDetails",
+    "id": "total",
+    "label": "Total",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10015",
+    "viewModel": "applianceDetails",
+    "id": "special",
+    "label": "Special",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10016",
+    "viewModel": "applianceDetails",
+    "id": "boilerSize",
+    "label": "Boiler Size",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10017",
+    "viewModel": "applianceDetails",
+    "id": "boilerSizeUnits",
+    "label": "kW",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10018",
+    "viewModel": "applianceDetails",
+    "id": "location",
+    "label": "Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10019",
+    "viewModel": "applianceDetails",
+    "id": "flueType",
+    "label": "Flue Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10020",
+    "viewModel": "applianceDetails",
+    "id": "firstInspection",
+    "label": "First Inspection",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10021",
+    "viewModel": "applianceDetails",
+    "id": "cylinderType",
+    "label": "Cylinder Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10022",
+    "viewModel": "applianceDetails",
+    "id": "contractExpiry",
+    "label": "Contract Expiry",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10023",
+    "viewModel": "applianceDetails",
+    "id": "energyControls",
+    "label": "Energy Controls",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10024",
+    "viewModel": "applianceDetails",
+    "id": "contractType",
+    "label": "Contract Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10025",
+    "viewModel": "applianceDetails",
+    "id": "notes",
+    "label": "Notes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10026",
+    "viewModel": "applianceDetails",
+    "id": "invalidGcCode",
+    "label": "GC Code is invalid",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10027",
+    "viewModel": "applianceDetails",
+    "id": "useDefaultGcCodePrompt",
+    "label": "Select default",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10028",
+    "viewModel": "applianceDetails",
+    "id": "dirtyNavigationConfirmHeader",
+    "label": "Navigate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10029",
+    "viewModel": "applianceDetails",
+    "id": "dirtyNavigationConfirmMessage",
+    "label": "Unsaved changes will be lost. Continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10030",
+    "viewModel": "applianceDetails",
+    "id": "parentApplianceType",
+    "label": "Parent Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10031",
+    "viewModel": "applianceDetails",
+    "id": "childApplianceType",
+    "label": "Child Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10032",
+    "viewModel": "applianceDetails",
+    "id": "mustCompleteChildAppliance",
+    "label": "The selected appliance has a child appliance, please also complete the details for the child appliance.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10033",
+    "viewModel": "applianceDetails",
+    "id": "completeChildAppliance",
+    "label": "The appliance selected requires a child appliance, please fill out the child appliance details below.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10034",
+    "viewModel": "applianceDetails",
+    "id": "goToChild",
+    "label": "Child Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10035",
+    "viewModel": "applianceDetails",
+    "id": "goToParent",
+    "label": "Parent Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10036",
+    "viewModel": "applianceDetails",
+    "id": "selectDefaultGcCode",
+    "label": "Show Defaults",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10037",
+    "viewModel": "applianceDetails",
+    "id": "hideDefaultGcCodes",
+    "label": "Hide Defaults",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10038",
+    "viewModel": "applianceDetails",
+    "id": "invalidNumberOfSpecialRadiators",
+    "label": "must not be greater than the total radiators.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10039",
+    "viewModel": "applianceDetails",
+    "id": "invalidYear",
+    "label": "must not be greater than the current year.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10040",
+    "viewModel": "applianceDetails",
+    "id": "replaceApplianceQuestion",
+    "label": "Is this a replacement Appliance?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "10041",
+    "viewModel": "applianceDetails",
+    "id": "amendApplianceQuestion",
+    "label": "Are you wanting to amend this appliance? (This would overwrite the existing appliance details)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11001",
+    "viewModel": "previousJobDetail",
+    "id": "objectName",
+    "label": "Previous Job Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11002",
+    "viewModel": "previousJobDetail",
+    "id": "applianceType",
+    "label": "Appliance type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11003",
+    "viewModel": "previousJobDetail",
+    "id": "chargeType",
+    "label": "Charge type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11004",
+    "viewModel": "previousJobDetail",
+    "id": "engineerName",
+    "label": "Engineer Name",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11005",
+    "viewModel": "previousJobDetail",
+    "id": "reportStockRef",
+    "label": "Stock ref",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11006",
+    "viewModel": "previousJobDetail",
+    "id": "details",
+    "label": "Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11007",
+    "viewModel": "previousJobDetail",
+    "id": "activities",
+    "label": "Activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11008",
+    "viewModel": "previousJobDetail",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11009",
+    "viewModel": "previousJobDetail",
+    "id": "jobId",
+    "label": "Activity ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "11010",
+    "viewModel": "previousJobDetail",
+    "id": "jobType",
+    "label": "Job type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12001",
+    "viewModel": "previousJobs",
+    "id": "objectName",
+    "label": "Previous Activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12002",
+    "viewModel": "previousJobs",
+    "id": "jobId",
+    "label": "Activity ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12003",
+    "viewModel": "previousJobs",
+    "id": "taskDescription",
+    "label": "Activity description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12004",
+    "viewModel": "previousJobs",
+    "id": "noData",
+    "label": "There are no previous activities.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12005",
+    "viewModel": "previousJobs",
+    "id": "charge",
+    "label": "Charge",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "12006",
+    "viewModel": "previousJobs",
+    "id": "visitCount",
+    "label": "Visit Count",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13002",
+    "viewModel": "userPreferences",
+    "id": "workingArea",
+    "label": "Working Area",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13003",
+    "viewModel": "userPreferences",
+    "id": "patch",
+    "label": "Patch",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13004",
+    "viewModel": "userPreferences",
+    "id": "selectWorkingArea",
+    "label": "Select your working area...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13005",
+    "viewModel": "userPreferences",
+    "id": "selectPatch",
+    "label": "Select your patch...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13007",
+    "viewModel": "userPreferences",
+    "id": "userSettings",
+    "label": "User Settings",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13008",
+    "viewModel": "userPreferences",
+    "id": "region",
+    "label": "Region",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "13009",
+    "viewModel": "userPreferences",
+    "id": "selectRegion",
+    "label": "Select your region...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14001",
+    "viewModel": "riskMain",
+    "id": "objectName",
+    "label": "Risk",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "14002",
+    "viewModel": "riskMain",
+    "id": "title",
+    "label": "Risk",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15001",
+    "viewModel": "riskItem",
+    "id": "objectName",
+    "label": "Risk",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15002",
+    "viewModel": "riskItem",
+    "id": "location",
+    "label": "Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15003",
+    "viewModel": "riskItem",
+    "id": "description",
+    "label": "Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15004",
+    "viewModel": "riskItem",
+    "id": "hazardReason",
+    "label": "Asbestos",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15005",
+    "viewModel": "riskItem",
+    "id": "riskReport",
+    "label": "Risk report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "15006",
+    "viewModel": "riskItem",
+    "id": "riskLocation",
+    "label": "Risk location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16001",
+    "viewModel": "risks",
+    "id": "objectName",
+    "label": "Risks",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16002",
+    "viewModel": "risks",
+    "id": "noData",
+    "label": "There are no safety risks for this job.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16003",
+    "viewModel": "risks",
+    "id": "noDataCanEdit",
+    "label": "There are no safety risks for this job, please click the new button to add a new risk.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16004",
+    "viewModel": "risks",
+    "id": "report",
+    "label": "Report / Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16005",
+    "viewModel": "risks",
+    "id": "hazard",
+    "label": "Asbestos",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16006",
+    "viewModel": "risks",
+    "id": "reminder",
+    "label": "Reminder",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16007",
+    "viewModel": "risks",
+    "id": "riskMessage",
+    "label": "Undertake a dynamic risk assessment to identify changing risks to yourself, the customer and the environment, ensuring that appropriate control measures are in place and maintained. Remember to keep touch points with the customer and stop work if you identify any uncontrollable risks throughout your activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "16008",
+    "viewModel": "risks",
+    "id": "incomplete",
+    "label": "Reason Required",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17001",
+    "viewModel": "signon",
+    "id": "objectName",
+    "label": "Sign On",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17002",
+    "viewModel": "signon",
+    "id": "signOn",
+    "label": "Sign On",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17003",
+    "viewModel": "signon",
+    "id": "header",
+    "label": "Hello,",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17004",
+    "viewModel": "signon",
+    "id": "signOnMessage",
+    "label": "to get started",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "17005",
+    "viewModel": "signon",
+    "id": "signOnButton",
+    "label": "Sign on",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18001",
+    "viewModel": "tasks",
+    "id": "objectName",
+    "label": "Activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18002",
+    "viewModel": "tasks",
+    "id": "jobdescription",
+    "label": "Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18003",
+    "viewModel": "tasks",
+    "id": "appliance",
+    "label": "Appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18004",
+    "viewModel": "tasks",
+    "id": "notes",
+    "label": "Notes",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18005",
+    "viewModel": "tasks",
+    "id": "charge",
+    "label": "Charge",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18006",
+    "viewModel": "tasks",
+    "id": "visit",
+    "label": "Visit",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18007",
+    "viewModel": "tasks",
+    "id": "ref",
+    "label": "Ref",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18008",
+    "viewModel": "tasks",
+    "id": "noData",
+    "label": "There are no activities for this job.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18009",
+    "viewModel": "tasks",
+    "id": "restoreTaskMessage",
+    "label": "Are you sure?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18010",
+    "viewModel": "tasks",
+    "id": "activityDuration",
+    "label": "Activity Duration",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "18011",
+    "viewModel": "tasks",
+    "id": "activityTimeChangedTitle",
+    "label": "Activity Time Changed",
+    "ctlgEntDelnMkr": "N"
+  },  
+  {
+    "key": "18012",
+    "viewModel": "tasks",
+    "id": "activityTimeChangedDescription",
+    "label": "Chargeable time will be updated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19001",
+    "viewModel": "jobSummary",
+    "id": "objectName",
+    "label": "Job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19002",
+    "viewModel": "jobSummary",
+    "id": "jobNumberPrefix",
+    "label": "W/R No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19003",
+    "viewModel": "jobSummary",
+    "id": "appointment",
+    "label": "Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19004",
+    "viewModel": "jobSummary",
+    "id": "elapsedTime",
+    "label": "Elapsed Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19005",
+    "viewModel": "jobSummary",
+    "id": "estimatedTimeToArrival",
+    "label": "Estimated travel time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19006",
+    "viewModel": "jobSummary",
+    "id": "estimatedTravelTimeNotCalculated",
+    "label": "The estimated travel time could not be calculated.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19007",
+    "viewModel": "jobSummary",
+    "id": "taskNumberPrefix",
+    "label": "Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19008",
+    "viewModel": "jobSummary",
+    "id": "password",
+    "label": "Password",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19009",
+    "viewModel": "jobSummary",
+    "id": "specialInstructions",
+    "label": "Special Instructions",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19010",
+    "viewModel": "jobSummary",
+    "id": "engineerInstructions",
+    "label": "Engineer Instructions",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19011",
+    "viewModel": "jobSummary",
+    "id": "accessInfo",
+    "label": "Access Information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "19012",
+    "viewModel": "jobSummary",
+    "id": "moreDetailsButton",
+    "label": "More Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20001",
+    "viewModel": "jobDetailsHead",
+    "id": "objectName",
+    "label": "Job Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20002",
+    "viewModel": "jobDetailsHead",
+    "id": "jobNumberPrefix",
+    "label": "W/R No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20003",
+    "viewModel": "jobDetailsHead",
+    "id": "appointment",
+    "label": "Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20004",
+    "viewModel": "jobDetailsHead",
+    "id": "elapsedTime",
+    "label": "Elapsed Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20005",
+    "viewModel": "jobDetailsHead",
+    "id": "estimatedTimeToArrival",
+    "label": "Estimated travel time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20006",
+    "viewModel": "jobDetailsHead",
+    "id": "estimatedTravelTimeNotCalculated",
+    "label": "Could not be calculated.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20007",
+    "viewModel": "jobDetailsHead",
+    "id": "estimatedTravelTimeNoPostCode",
+    "label": "No Post Code found.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20008",
+    "viewModel": "jobDetailsHead",
+    "id": "btnCustomerInfo",
+    "label": "Customer Info",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20009",
+    "viewModel": "jobDetailsHead",
+    "id": "btnGenerateQuote",
+    "label": "Transfer Quote Info",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20010",
+    "viewModel": "jobDetailsHead",
+    "id": "customerInfoNotInstalledHeader",
+    "label": "Application Not Installed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20011",
+    "viewModel": "jobDetailsHead",
+    "id": "customerInfoNotInstalledBody",
+    "label": "Customer Info is not installed on this device.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20012",
+    "viewModel": "jobDetailsHead",
+    "id": "btnLandlordDetails",
+    "label": "Landlord",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20013",
+    "viewModel": "jobDetailsHead",
+    "id": "previousChirpCodeWarning",
+    "label": "This customer has a CHIRP flag {0} for appliance {1} fitted in location {2}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "20014",
+    "viewModel": "jobDetailsHead",
+    "id": "previousChirpCodeWarningTitle",
+    "label": "Previous CHIRP Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "21001",
+    "viewModel": "customerInfoService",
+    "id": "customerInfoReturnToApp",
+    "label": "Return to Engineer Workbench.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "22001",
+    "viewModel": "jobDetails",
+    "id": "objectName",
+    "label": "Job Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "23001",
+    "viewModel": "customerInfoDetails",
+    "id": "objectName",
+    "label": "Customer Info Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24001",
+    "viewModel": "notice",
+    "id": "objectName",
+    "label": "Notice",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24002",
+    "viewModel": "notice",
+    "id": "hazardTitle",
+    "label": "WARNING {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24003",
+    "viewModel": "notice",
+    "id": "hazardBody",
+    "label": "During  {0} a colleague reported {1} located in the {2}.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24004",
+    "viewModel": "notice",
+    "id": "hazardAsbestosNoDateBody",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24005",
+    "viewModel": "notice",
+    "id": "hazardNoDateBody",
+    "label": "A colleague reported {0} located in the {1}.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24006",
+    "viewModel": "notice",
+    "id": "hazardAsbestosFooter",
+    "label": "Where the material or test results are unknown arrange for the material to be sampled BEFORE commencing work in the area of the material or disturbing it. Remember, there may be more than one asbestos product in this property, so please be vigilant. Guidance on ASBESTOS can be found in your operational procedures. If in doubt please contact your line manager / suitably trained asbestos sampling engineer!",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24007",
+    "viewModel": "notice",
+    "id": "riskTitle",
+    "label": "WARNING RISK REPORTED",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24008",
+    "viewModel": "notice",
+    "id": "riskBody",
+    "label": "During  {0} a colleague reported {1}.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24009",
+    "viewModel": "notice",
+    "id": "riskFooter",
+    "label": "Please ensure you keep yourself and your customer safe and use this information appropriately when you carry out your risk assessment. If in doubt please contact your line manager / safety representative immediately! If you identify that the risk is no longer present, please ensure you access the \"risk\" details within the risk screen and select \"delete\".  This will ensure your records are up to date.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "24010",
+    "viewModel": "notice",
+    "id": "hazard",
+    "label": "Asbestos",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25001",
+    "viewModel": "previousSafetyDetail",
+    "id": "objectName",
+    "label": "Previous Safety Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25002",
+    "viewModel": "previousSafetyDetail",
+    "id": "safetyNoticeNotLeftReason",
+    "label": "Notice Not Left Reason",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25003",
+    "viewModel": "previousSafetyDetail",
+    "id": "unsafeSituation",
+    "label": "Unsafe situation reasons",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25004",
+    "viewModel": "previousSafetyDetail",
+    "id": "conditionAsLeft",
+    "label": "Condition as left",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25005",
+    "viewModel": "previousSafetyDetail",
+    "id": "cappedTurnedOff",
+    "label": "Capped / Turned off",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25006",
+    "viewModel": "previousSafetyDetail",
+    "id": "labelAttached",
+    "label": "Label attached / removed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25007",
+    "viewModel": "previousSafetyDetail",
+    "id": "ownedByCustomer",
+    "label": "Owned by customer",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25008",
+    "viewModel": "previousSafetyDetail",
+    "id": "letterLeft",
+    "label": "Letter left",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25009",
+    "viewModel": "previousSafetyDetail",
+    "id": "signatureObtained",
+    "label": "Signature obtained",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "25010",
+    "viewModel": "previousSafetyDetail",
+    "id": "noData",
+    "label": "There are no previous safety details to show.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26001",
+    "viewModel": "applianceReading",
+    "id": "objectName",
+    "label": "Appliance Reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26002",
+    "viewModel": "applianceReading",
+    "id": "unmeteredLpgAppliance",
+    "label": "Unmetered LPG appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26003",
+    "viewModel": "applianceReading",
+    "id": "burnerPressure",
+    "label": "Burner pressure (mb)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26004",
+    "viewModel": "applianceReading",
+    "id": "gasRateReading",
+    "label": "Gas rate (kW)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26005",
+    "viewModel": "applianceReading",
+    "id": "first",
+    "label": "First",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26006",
+    "viewModel": "applianceReading",
+    "id": "max",
+    "label": "Maximum",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26007",
+    "viewModel": "applianceReading",
+    "id": "min",
+    "label": "Minimum",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26008",
+    "viewModel": "applianceReading",
+    "id": "final",
+    "label": "Final",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26009",
+    "viewModel": "applianceReading",
+    "id": "combustion",
+    "label": "Combustion Performance Tests",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26010",
+    "viewModel": "applianceReading",
+    "id": "ratio",
+    "label": "Ratio",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26011",
+    "viewModel": "applianceReading",
+    "id": "co",
+    "label": "CO (ppm)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26012",
+    "viewModel": "applianceReading",
+    "id": "co2",
+    "label": "CO2 (%)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26013",
+    "viewModel": "applianceReading",
+    "id": "firstRatioWarning",
+    "label": "Make sure that appliance is stripped and cleaned",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26014",
+    "viewModel": "applianceReading",
+    "id": "applianceOperatingReadings",
+    "label": "Appliance Operating Readings",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26015",
+    "viewModel": "applianceReading",
+    "id": "addSupplementaryBurner",
+    "label": "Add Supplementary Burner",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26016",
+    "viewModel": "applianceReading",
+    "id": "removeSupplementaryBurner",
+    "label": "Remove Supplementary Burner",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26017",
+    "viewModel": "applianceReading",
+    "id": "supplementaryBurnerHeading",
+    "label": "Supplementary Burner",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26018",
+    "viewModel": "applianceReading",
+    "id": "burnerPressureUnsafe",
+    "label": "Burner pressure unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26019",
+    "viewModel": "applianceReading",
+    "id": "gasReadingUnsafe",
+    "label": "Gas reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26020",
+    "viewModel": "applianceReading",
+    "id": "isLpg",
+    "label": "Unsafe because appliance not Lpg",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26021",
+    "viewModel": "applianceReading",
+    "id": "isSuppLpg",
+    "label": "Unsafe because no supplementary Lpg",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26022",
+    "viewModel": "applianceReading",
+    "id": "finalRatioUnsafe",
+    "label": "Final ratio is unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26023",
+    "viewModel": "applianceReading",
+    "id": "clearReadingsWarning",
+    "label": "No readings entered. Gas Safety will be cleared",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26024",
+    "viewModel": "applianceReading",
+    "id": "clearQuestion",
+    "label": "This will clear all readings and gas safety details. Are you sure you want to continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26025",
+    "viewModel": "applianceReading",
+    "id": "supplementaryBurnerPressureUnsafe",
+    "label": "Supplementary burner pressure unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26026",
+    "viewModel": "applianceReading",
+    "id": "supplementaryGasReadingUnsafe",
+    "label": "Supplementary burner gas reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "26027",
+    "viewModel": "applianceReading",
+    "id": "supplementaryFinalRatioUnsafe",
+    "label": "Supplementary burner final ratio is unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27001",
+    "viewModel": "validationRules",
+    "id": "required",
+    "label": "*",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27002",
+    "viewModel": "validationRules",
+    "id": "isNumber",
+    "label": "needs to be a number",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27003",
+    "viewModel": "validationRules",
+    "id": "hasLengthBetween",
+    "label": "needs to be between {0} and {1} characters long",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27004",
+    "viewModel": "validationRules",
+    "id": "hasLength",
+    "label": "needs to be {0} characters long",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27005",
+    "viewModel": "validationRules",
+    "id": "hasMinLength",
+    "label": "needs to be at least {0} characters long",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27006",
+    "viewModel": "validationRules",
+    "id": "hasMaxLength",
+    "label": "cannot be longer than {0} characters",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27007",
+    "viewModel": "validationRules",
+    "id": "isBetween",
+    "label": "needs to be between {0} and {1}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27008",
+    "viewModel": "validationRules",
+    "id": "isGreaterThanOrEqualTo",
+    "label": "is greater than or equal to {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27009",
+    "viewModel": "validationRules",
+    "id": "isLessThanOrEqualTo",
+    "label": "is less than or equal to {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27010",
+    "viewModel": "validationRules",
+    "id": "regExp",
+    "label": "not a valid format",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27011",
+    "viewModel": "validationRules",
+    "id": "isDate",
+    "label": "needs to be a date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27012",
+    "viewModel": "validationRules",
+    "id": "isBetweenDate",
+    "label": "needs to be between {0} and {1}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27013",
+    "viewModel": "validationRules",
+    "id": "isGreaterThanOrEqualToDate",
+    "label": "is after or on {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27014",
+    "viewModel": "validationRules",
+    "id": "isLessThanOrEqualToDate",
+    "label": "is before or on {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "27015",
+    "viewModel": "validationRules",
+    "id": "isAlphaNumeric",
+    "label": "needs to only be alpha numeric",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28001",
+    "viewModel": "electricalSafety",
+    "id": "objectName",
+    "label": "Electrical Safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28002",
+    "viewModel": "electricalSafety",
+    "id": "mainEarthChecked",
+    "label": "Main earth okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28003",
+    "viewModel": "electricalSafety",
+    "id": "mainEarthCheckedUnsafe",
+    "label": "Main earth not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28004",
+    "viewModel": "electricalSafety",
+    "id": "gasBondingChecked",
+    "label": "Gas bonding okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28005",
+    "viewModel": "electricalSafety",
+    "id": "gasBondingCheckedUnsafe",
+    "label": "Gas bonding not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28006",
+    "viewModel": "electricalSafety",
+    "id": "waterBondingChecked",
+    "label": "Water bonding okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28007",
+    "viewModel": "electricalSafety",
+    "id": "waterBondingCheckedUnsafe",
+    "label": "Water bonding not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28008",
+    "viewModel": "electricalSafety",
+    "id": "otherBondingChecked",
+    "label": "Other bonding checked okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28009",
+    "viewModel": "electricalSafety",
+    "id": "otherBondingCheckedUnsafe",
+    "label": "Other bonding not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28010",
+    "viewModel": "electricalSafety",
+    "id": "supplementaryBondingOrFullRcdProtectionChecked",
+    "label": "Supplementary bonding/full RCD protection okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28011",
+    "viewModel": "electricalSafety",
+    "id": "supplementaryBondingOrFullRcdProtectionCheckedUnsafe",
+    "label": "Supplementary bonding/full RCD protection not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28012",
+    "viewModel": "electricalSafety",
+    "id": "ringContinuityReadingDone",
+    "label": "Ring continuity reading done?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28013",
+    "viewModel": "electricalSafety",
+    "id": "ringContinuityReadingDoneUnsafe",
+    "label": "Ring continuity reading failed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28014",
+    "viewModel": "electricalSafety",
+    "id": "leInsulationResistance",
+    "label": "L-E IR reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28015",
+    "viewModel": "electricalSafety",
+    "id": "leInsulationResistanceUnsafe",
+    "label": "L-E IR reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28016",
+    "viewModel": "electricalSafety",
+    "id": "showLeInsulationResistanceReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28017",
+    "viewModel": "electricalSafety",
+    "id": "leInsulationResistanceReasonWhyNot",
+    "label": "L-E IR reason why not?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28018",
+    "viewModel": "electricalSafety",
+    "id": "neInsulationResistance",
+    "label": "N-E IR reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28019",
+    "viewModel": "electricalSafety",
+    "id": "neInsulationResistanceUnsafe",
+    "label": "N-E IR reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28020",
+    "viewModel": "electricalSafety",
+    "id": "showNeInsulationResistanceReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28021",
+    "viewModel": "electricalSafety",
+    "id": "neInsulationResistanceReasonWhyNot",
+    "label": "N-E IR reason why not?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28022",
+    "viewModel": "electricalSafety",
+    "id": "lnInsulationResistance",
+    "label": "L-N IR reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28023",
+    "viewModel": "electricalSafety",
+    "id": "lnInsulationResistanceUnsafe",
+    "label": "L-N IR reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28024",
+    "viewModel": "electricalSafety",
+    "id": "showLnInsulationResistanceReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28025",
+    "viewModel": "electricalSafety",
+    "id": "lnInsulationResistanceReasonWhyNot",
+    "label": "L-N IR reason why not?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28026",
+    "viewModel": "electricalSafety",
+    "id": "systemType",
+    "label": "System Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28027",
+    "viewModel": "electricalSafety",
+    "id": "systemTypeUnsafe",
+    "label": "System Type unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28028",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReadingDone",
+    "label": "Final ELI reading done?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28029",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReadingDoneUnsafe",
+    "label": "Final ELI reading not done",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28030",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReading",
+    "label": "Final ELI reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28031",
+    "viewModel": "electricalSafety",
+    "id": "finalEliReadingUnsafe",
+    "label": "Final ELI reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28032",
+    "viewModel": "electricalSafety",
+    "id": "readingSafeAccordingToTops",
+    "label": "Reading safe according to TOPS?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28033",
+    "viewModel": "electricalSafety",
+    "id": "readingSafeAccordingToTopsUnsafe",
+    "label": "Reading not safe according to TOPS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28034",
+    "viewModel": "electricalSafety",
+    "id": "isRcdPresent",
+    "label": "Is RCD present?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28035",
+    "viewModel": "electricalSafety",
+    "id": "isRcdPresentUnsafe",
+    "label": "RCD not present",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28036",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcdRcboProtected",
+    "label": "Circuit RCD/RCBO protected?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28037",
+    "viewModel": "electricalSafety",
+    "id": "circuitRcdRcboProtectedUnsafe",
+    "label": "Circuit not RCD/RCBO protected",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28038",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReading",
+    "label": "RCD trip time reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28039",
+    "viewModel": "electricalSafety",
+    "id": "rcboTripTimeReading",
+    "label": "RCBO trip time reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28040",
+    "viewModel": "electricalSafety",
+    "id": "rcboTripTimeReadingUnsafe",
+    "label": "RCBO trip time reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28041",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingDone",
+    "label": "Appliance earth continuity reading done?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28042",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingDoneUnsafe",
+    "label": "Appliance earth continuity reading not done",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28043",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReading",
+    "label": "Appliance earth continuity reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28044",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingMessage",
+    "label": "This reading makes the appliance and installation unsafe.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28045",
+    "viewModel": "electricalSafety",
+    "id": "applianceEarthContinuityReadingUnsafe",
+    "label": "Appliance earth continuity reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28046",
+    "viewModel": "electricalSafety",
+    "id": "isApplianceHardWired",
+    "label": "Is appliance hard wired?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28047",
+    "viewModel": "electricalSafety",
+    "id": "mcbFuseRating",
+    "label": "Fuse/MCB rating",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28048",
+    "viewModel": "electricalSafety",
+    "id": "mcbFuseRatingUnsafe",
+    "label": "Fuse/MCB rating unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28049",
+    "viewModel": "electricalSafety",
+    "id": "showMcbFuseRatingReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28050",
+    "viewModel": "electricalSafety",
+    "id": "showMcbFuseRatingReasonWhyNotUnsafe",
+    "label": "MCB Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28051",
+    "viewModel": "electricalSafety",
+    "id": "mcbFuseRatingReasonWhyNot",
+    "label": "Fuse/MCB rating reason why not?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28052",
+    "viewModel": "electricalSafety",
+    "id": "mcbFuseRatingReasonWhyNotUnsafe",
+    "label": "Fuse/MCB rating reason why not unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28053",
+    "viewModel": "electricalSafety",
+    "id": "applianceFuseRating",
+    "label": "Appliance fuse rating",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28054",
+    "viewModel": "electricalSafety",
+    "id": "applianceFuseRatingReasonWhyNot",
+    "label": "Appliance fuse rating reason why not?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28055",
+    "viewModel": "electricalSafety",
+    "id": "applianceFuseRatingReasonWhyNotUnsafe",
+    "label": "Appliance fuse rating reason why not unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28056",
+    "viewModel": "electricalSafety",
+    "id": "showApplianceFuseRatingReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28057",
+    "viewModel": "electricalSafety",
+    "id": "isPartP",
+    "label": "Is Part P?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28058",
+    "viewModel": "electricalSafety",
+    "id": "partPReason",
+    "label": "Part P",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28059",
+    "viewModel": "electricalSafety",
+    "id": "workedOnLightingCircuit",
+    "label": "Worked on lighting circuit?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28060",
+    "viewModel": "electricalSafety",
+    "id": "cpcInLightingCircuitOk",
+    "label": "CPC in lighting circuit?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28061",
+    "viewModel": "electricalSafety",
+    "id": "cpcInLightingCircuitOkUnsafe",
+    "label": "CPC not in lighting circuit",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28062",
+    "viewModel": "electricalSafety",
+    "id": "installationSatisfactory",
+    "label": "Installation Satisfactory?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28063",
+    "viewModel": "electricalSafety",
+    "id": "installationSatisfactoryUnsafe",
+    "label": "Installation not satisfactory",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28064",
+    "viewModel": "electricalSafety",
+    "id": "applianceSafe",
+    "label": "Appliance safe?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28065",
+    "viewModel": "electricalSafety",
+    "id": "applianceSafeUnsafe",
+    "label": "Appliance not safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28066",
+    "viewModel": "electricalSafety",
+    "id": "applianceInstallationSatisfactory",
+    "label": "Appliance installation satisfactory?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28067",
+    "viewModel": "electricalSafety",
+    "id": "applianceInstallationSatisfactoryUnsafe",
+    "label": "Appliance installation not satisfactory",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28068",
+    "viewModel": "electricalSafety",
+    "id": "microwaveLeakageReading",
+    "label": "Microwave leakage reading",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28069",
+    "viewModel": "electricalSafety",
+    "id": "microwaveLeakageReadingMessage",
+    "label": "Please confirm you have attached the microwave test label.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28070",
+    "viewModel": "electricalSafety",
+    "id": "microwaveLeakageReadingUnsafe",
+    "label": "Microwave leakage reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28071",
+    "viewModel": "electricalSafety",
+    "id": "microwaveLeakageReadingReasonWhyNot",
+    "label": "Microwave leakage reading reason why not",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28072",
+    "viewModel": "electricalSafety",
+    "id": "showMicrowaveLeakageReadingReasonWhyNot",
+    "label": "Reading not taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28073",
+    "viewModel": "electricalSafety",
+    "id": "report",
+    "label": "Report (including all NCS details)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28074",
+    "viewModel": "electricalSafety",
+    "id": "conditionAsLeft",
+    "label": "Condition as left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28075",
+    "viewModel": "electricalSafety",
+    "id": "cappedTurnedOff",
+    "label": "Capped/turned-off?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28076",
+    "viewModel": "electricalSafety",
+    "id": "labelAttachedRemoved",
+    "label": "Label attached/removed?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28077",
+    "viewModel": "electricalSafety",
+    "id": "ownedByCustomer",
+    "label": "Owned by customer?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28078",
+    "viewModel": "electricalSafety",
+    "id": "letterLeft",
+    "label": "Letter left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28079",
+    "viewModel": "electricalSafety",
+    "id": "signatureObtained",
+    "label": "Signature obtained?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28080",
+    "viewModel": "electricalSafety",
+    "id": "ownerNameAddressPhone",
+    "label": "Owner's name/address/phone",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28081",
+    "viewModel": "electricalSafety",
+    "id": "applianceType",
+    "label": "Appliance type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28082",
+    "viewModel": "electricalSafety",
+    "id": "nonMandatory",
+    "label": "(non-mandatory)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28083",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingMessage",
+    "label": "Please confirm this is a new type RCD BSEN61008. If BSEN4293 present, please report AT RISK",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28084",
+    "viewModel": "electricalSafety",
+    "id": "rcdTripTimeReadingUnsafe",
+    "label": "RCD trip time reading unsafe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28085",
+    "viewModel": "electricalSafety",
+    "id": "mainEarthUnCheckedUnsafe",
+    "label": "Main earth has not been checked",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28086",
+    "viewModel": "electricalSafety",
+    "id": "gasBondingUnCheckedUnsafe",
+    "label": "Gas bonding has not been checked",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28087",
+    "viewModel": "electricalSafety",
+    "id": "waterBondingUnCheckedUnsafe",
+    "label": "Water bonding has not been checked",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28088",
+    "viewModel": "electricalSafety",
+    "id": "otherBondingUnCheckedUnsafe",
+    "label": "Other bonding has not been checked",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "28089",
+    "viewModel": "electricalSafety",
+    "id": "supplementaryBondingOrFullRcdProtectionUnCheckedUnsafe",
+    "label": "Supplementary bonding/full RCD protection has not been checked",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29001",
+    "viewModel": "jobsList",
+    "id": "objectName",
+    "label": "Jobs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29002",
+    "viewModel": "jobsList",
+    "id": "noDataTitle",
+    "label": "No Jobs Available",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29003",
+    "viewModel": "jobsList",
+    "id": "noData",
+    "label": "There are no jobs in your work list, you can manually request work using the button below.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29004",
+    "viewModel": "jobsList",
+    "id": "requestWork",
+    "label": "Request Work",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "29005",
+    "viewModel": "jobsList",
+    "id": "title",
+    "label": "My Jobs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30001",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "noPreviousApplianceUnsafeDetail",
+    "label": "There is no previous unsafe detail about this appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30002",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "applianceSafe",
+    "label": "Appliance safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30003",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "installationSatisfactory",
+    "label": "Installation satisfactory",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30004",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "safetyAction",
+    "label": "Safety action",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30005",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "date",
+    "label": "Date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30006",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "noticeStatus",
+    "label": "Safety notice status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30007",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "noticeType",
+    "label": "Safety notice type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30008",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "progress",
+    "label": "Progress",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "30009",
+    "viewModel": "previousElectricalUnsafeDetail",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31001",
+    "viewModel": "gasSafety",
+    "id": "objectName",
+    "label": "Gas Appliance Safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31002",
+    "viewModel": "gasSafety",
+    "id": "unsafetySituationHeader",
+    "label": "UNSAFE SITUATION",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31003",
+    "viewModel": "gasSafety",
+    "id": "applianceSafeStatus",
+    "label": "Is the appliance safe:",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31004",
+    "viewModel": "gasSafety",
+    "id": "conditionAsLeft",
+    "label": "Condition as left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31005",
+    "viewModel": "gasSafety",
+    "id": "cappedTurnedOff",
+    "label": "Capped / Turned Off?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31006",
+    "viewModel": "gasSafety",
+    "id": "labelAttachedRemoved",
+    "label": "Label Attached / Removed?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31007",
+    "viewModel": "gasSafety",
+    "id": "ownedByCustomer",
+    "label": "Owned by Customer?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31008",
+    "viewModel": "gasSafety",
+    "id": "letterLeft",
+    "label": "Letter Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31009",
+    "viewModel": "gasSafety",
+    "id": "signatureObtained",
+    "label": "Signature Obtained?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31010",
+    "viewModel": "gasSafety",
+    "id": "reasonWhyNot",
+    "label": "Performance test not carried out, why?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31011",
+    "viewModel": "gasSafety",
+    "id": "applianceStrippedText",
+    "label": "Was the Appliance stripped and cleaned in accordance with TOPs?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31012",
+    "viewModel": "gasSafety",
+    "id": "applianceStripped",
+    "label": "Appliance not stripped and cleaned in accordance with TOPs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31013",
+    "viewModel": "gasSafety",
+    "id": "didYouWorkOnAppliance",
+    "label": "Did you work on the appliance?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31014",
+    "viewModel": "gasSafety",
+    "id": "didYouVisuallyCheckText",
+    "label": "Did you visually check / relight?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31015",
+    "viewModel": "gasSafety",
+    "id": "didYouVisuallyCheck",
+    "label": "Did not visually check / relight",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31016",
+    "viewModel": "gasSafety",
+    "id": "installationSatisfactory",
+    "label": "Installation satisfactory?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31017",
+    "viewModel": "gasSafety",
+    "id": "applianceTightnessText",
+    "label": "Appliance tightness okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31018",
+    "viewModel": "gasSafety",
+    "id": "applianceTightness",
+    "label": "Appliance tightness not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31019",
+    "viewModel": "gasSafety",
+    "id": "chimneyInstallationAndTestsText",
+    "label": "Chimney installation and applicable tests okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31020",
+    "viewModel": "gasSafety",
+    "id": "chimneyInstallationAndTests",
+    "label": "Chimney installation and applicable tests are not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31021",
+    "viewModel": "gasSafety",
+    "id": "ventSizeConfigText",
+    "label": "Vent size, configuration and label okay?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31022",
+    "viewModel": "gasSafety",
+    "id": "ventSizeConfig",
+    "label": "Vent size, configuration and label are not ok",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31023",
+    "viewModel": "gasSafety",
+    "id": "safetyDeviceText",
+    "label": "Safety device correct operation?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31024",
+    "viewModel": "gasSafety",
+    "id": "safetyDevice",
+    "label": "Safety device is not in correct operation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31025",
+    "viewModel": "gasSafety",
+    "id": "isApplianceSafe",
+    "label": "Is appliance safe?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31026",
+    "viewModel": "gasSafety",
+    "id": "readingClearQuestion",
+    "label": "This will clear all readings and gas safety details. Are you sure you want to continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31027",
+    "viewModel": "gasSafety",
+    "id": "clearQuestion",
+    "label": "This will clear all readings and gas safety details. Are you sure you want to continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31028",
+    "viewModel": "gasSafety",
+    "id": "reportMaxCharsLandlordText",
+    "label": "characters left for landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31029",
+    "viewModel": "gasSafety",
+    "id": "reportMaxCharsLandlordExceededText",
+    "label": "warning: only the first 40 characters can be included in the landlord certificate",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31030",
+    "viewModel": "gasSafety",
+    "id": "applianceMake",
+    "label": "Appliance make",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31031",
+    "viewModel": "gasSafety",
+    "id": "applianceModel",
+    "label": "Appliance model",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31032",
+    "viewModel": "gasSafety",
+    "id": "requestedToTest",
+    "label": "Requested to test?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31033",
+    "viewModel": "gasSafety",
+    "id": "ableToTest",
+    "label": "Are you able to test?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31034",
+    "viewModel": "gasSafety",
+    "id": "toCurrentStandards",
+    "label": "To Current Standards (Customer Advised)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31035",
+    "viewModel": "gasSafety",
+    "id": "applianceSafe",
+    "label": "Appliance not safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31036",
+    "viewModel": "gasSafety",
+    "id": "unsafeWarningMsg",
+    "label": "Inform gas emergency service phone number 0800 111999.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31037",
+    "viewModel": "gasSafety",
+    "id": "reasonWhyNotSupplementary",
+    "label": "Performance test not carried out for supplementary burner, why?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31038",
+    "viewModel": "gasSafety",
+    "id": "supplementaryApplianceStripped",
+    "label": "Supplementary burner not stripped and cleaned in accordance with TOPs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "31011",
+    "viewModel": "gasSafety",
+    "id": "supplementaryApplianceStrippedText",
+    "label": "Was the Supplementary burner stripped and cleaned in accordance with TOPs?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32001",
+    "viewModel": "prevGasSafety",
+    "id": "noPreviousApplianceUnsafeDetail",
+    "label": "There is no previous unsafe detail about this appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32002",
+    "viewModel": "prevGasSafety",
+    "id": "applianceSafe",
+    "label": "Appliance safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32003",
+    "viewModel": "prevGasSafety",
+    "id": "installationSafe",
+    "label": "Installation safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32004",
+    "viewModel": "prevGasSafety",
+    "id": "safetyAction",
+    "label": "Safety action",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32005",
+    "viewModel": "prevGasSafety",
+    "id": "date",
+    "label": "Date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32006",
+    "viewModel": "prevGasSafety",
+    "id": "noticeStatus",
+    "label": "Safety notice status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32007",
+    "viewModel": "prevGasSafety",
+    "id": "noticeType",
+    "label": "Safety notice type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32008",
+    "viewModel": "prevGasSafety",
+    "id": "progress",
+    "label": "Progress",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "32009",
+    "viewModel": "prevGasSafety",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33001",
+    "viewModel": "prevOtherSafety",
+    "id": "noPreviousApplianceUnsafeDetail",
+    "label": "There is no previous unsafe detail about this appliance",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33002",
+    "viewModel": "prevOtherSafety",
+    "id": "applianceSafe",
+    "label": "Appliance safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33003",
+    "viewModel": "prevOtherSafety",
+    "id": "installationSafe",
+    "label": "Installation safe",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33004",
+    "viewModel": "prevOtherSafety",
+    "id": "safetyAction",
+    "label": "Safety action",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33005",
+    "viewModel": "prevOtherSafety",
+    "id": "date",
+    "label": "Date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33006",
+    "viewModel": "prevOtherSafety",
+    "id": "noticeStatus",
+    "label": "Safety notice status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33007",
+    "viewModel": "prevOtherSafety",
+    "id": "noticeType",
+    "label": "Safety notice type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33008",
+    "viewModel": "prevOtherSafety",
+    "id": "progress",
+    "label": "Progress",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "33009",
+    "viewModel": "prevOtherSafety",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34001",
+    "viewModel": "otherSafety",
+    "id": "objectName",
+    "label": "Gas Appliance Safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34002",
+    "viewModel": "otherSafety",
+    "id": "didYouWorkOnAppliance",
+    "label": "Did you work on the appliance?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34003",
+    "viewModel": "otherSafety",
+    "id": "didYouVisuallyCheck",
+    "label": "Did you visually check / relight?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34004",
+    "viewModel": "otherSafety",
+    "id": "isApplianceSafe",
+    "label": "Is appliance safe?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34005",
+    "viewModel": "otherSafety",
+    "id": "unsafetySituationHeader",
+    "label": "UNSAFE SITUATION",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34006",
+    "viewModel": "otherSafety",
+    "id": "report",
+    "label": "Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34007",
+    "viewModel": "otherSafety",
+    "id": "conditionAsLeft",
+    "label": "Condition as left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34008",
+    "viewModel": "otherSafety",
+    "id": "cappedTurnedOff",
+    "label": "Capped / Turned Off?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34009",
+    "viewModel": "otherSafety",
+    "id": "labelAttachedRemoved",
+    "label": "Label Attached / Removed?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34010",
+    "viewModel": "otherSafety",
+    "id": "ownedByCustomer",
+    "label": "Owned by Customer?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34011",
+    "viewModel": "otherSafety",
+    "id": "letterLeft",
+    "label": "Letter Left?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34012",
+    "viewModel": "otherSafety",
+    "id": "signatureObtained",
+    "label": "Signature Obtained?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "34013",
+    "viewModel": "otherSafety",
+    "id": "toCurrentStandards",
+    "label": "To Current Standards (Customer Advised)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35001",
+    "viewModel": "engineerState",
+    "id": "working",
+    "label": "WORKING",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35002",
+    "viewModel": "engineerState",
+    "id": "notWorking",
+    "label": "NOT YET WORKING",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35003",
+    "viewModel": "engineerState",
+    "id": "signOn",
+    "label": "READY FOR WORK",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35004",
+    "viewModel": "engineerState",
+    "id": "signOff",
+    "label": "END OF DAY",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35005",
+    "viewModel": "engineerState",
+    "id": "myStatus",
+    "label": "My Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35006",
+    "viewModel": "engineerState",
+    "id": "signInHere",
+    "label": "Sign in here",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35007",
+    "viewModel": "engineerState",
+    "id": "endOfDayMessage",
+    "label": "You still have unsent job information from the activities you have carried out today, please obtain a data connection to allow this to be sent, before completing your End of Day process.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35008",
+    "viewModel": "engineerState",
+    "id": "endOfDaySuccessMessage",
+    "label": "End of the day status update successful",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35009",
+    "viewModel": "engineerState",
+    "id": "endOfDayFailMessage",
+    "label": "End of the day status update unsuccessful - Please retry",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "35010",
+    "viewModel": "engineerState",
+    "id": "endOfDayUnreadMessage",
+    "label": "You still have some unread messages, please mark these as read and retry",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36001",
+    "viewModel": "appointmentBooking",
+    "id": "objectName",
+    "label": "Appointment Booking",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36002",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentDetails",
+    "label": "Appointment Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36003",
+    "viewModel": "appointmentBooking",
+    "id": "accessInformation",
+    "label": "Next Visit Access Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36004",
+    "viewModel": "appointmentBooking",
+    "id": "generalAccessInformation",
+    "label": "General Access Information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36005",
+    "viewModel": "appointmentBooking",
+    "id": "promisedDate",
+    "label": "Promised Date",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36006",
+    "viewModel": "appointmentBooking",
+    "id": "promisedTimeSlot",
+    "label": "Promised Time Slot",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36007",
+    "viewModel": "appointmentBooking",
+    "id": "preferredEngineer",
+    "label": "Preferred Engineer",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36008",
+    "viewModel": "appointmentBooking",
+    "id": "estimatedDurationOfAppointment",
+    "label": "Estimated Duration of Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36009",
+    "viewModel": "appointmentBooking",
+    "id": "specialRequirement",
+    "label": "Special Requirements",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36010",
+    "viewModel": "appointmentBooking",
+    "id": "book",
+    "label": "Book",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36011",
+    "viewModel": "appointmentBooking",
+    "id": "error572",
+    "label": "Parts cannot be ordered for today. Please select an alternate date.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36012",
+    "viewModel": "appointmentBooking",
+    "id": "error573",
+    "label": "Parts cannot be ordered for Sunday. Please select an alternative date.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36013",
+    "viewModel": "appointmentBooking",
+    "id": "error575",
+    "label": "Please select an alternative date after {0}",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36014",
+    "viewModel": "appointmentBooking",
+    "id": "promiseDateWarningThresholdWarning",
+    "label": "The selected appointment is more that {0} Days in the future, please ensure we have Engineer availability before finalizing this Visit.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36015",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentRemoved",
+    "label": "Appointment has been removed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36016",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentSaved",
+    "label": "Appointment has been saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36017",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentNotSaved",
+    "label": "Appointment has not been saved, the information is incomplete",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36018",
+    "viewModel": "appointmentBooking",
+    "id": "engineerIdValidationError",
+    "label": "Enter a valid engineer",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36019",
+    "viewModel": "appointmentBooking",
+    "id": "clearQuestion",
+    "label": "Are you sure you want to remove the '{0}' ?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36020",
+    "viewModel": "appointmentBooking",
+    "id": "appointmentNotificationTitle",
+    "label": "Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "36021",
+    "viewModel": "appointmentBooking",
+    "id": "estimatedDurationMaxValueError",
+    "label": "must not be greater than '{0}'",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37001",
+    "viewModel": "todaysParts",
+    "id": "objectName",
+    "label": "Today's Part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37002",
+    "viewModel": "todaysParts",
+    "id": "noPartsMessage",
+    "label": "There are no parts for this job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37003",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderPartDescription",
+    "label": "Part Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37004",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderUnitPrice",
+    "label": "Unit Price",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37005",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderQuantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37006",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderAssociatedWithTask",
+    "label": "Associated With Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37007",
+    "viewModel": "todaysParts",
+    "id": "partsListItemStandardWarranty",
+    "label": "Standard warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37008",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderWarranty",
+    "label": "Warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37009",
+    "viewModel": "todaysParts",
+    "id": "partsListHeaderDateLastFitted",
+    "label": "Last fitted/installed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37010",
+    "viewModel": "todaysParts",
+    "id": "warrantyControlsHeader",
+    "label": "Warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37011",
+    "viewModel": "todaysParts",
+    "id": "returnsControlsHeader",
+    "label": "Not used return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37012",
+    "viewModel": "todaysParts",
+    "id": "warrantyUnitsWeek",
+    "label": "weeks",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37013",
+    "viewModel": "todaysParts",
+    "id": "warrantyNoInformation",
+    "label": "No information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37014",
+    "viewModel": "todaysParts",
+    "id": "warrantyIsInWarranty",
+    "label": "In warranty?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37015",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.isWarrantyReturn",
+    "label": "Is this part going to be returned as a warranty claim?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37016",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.quantityToClaimOrReturn",
+    "label": "Quantity to claim/return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37017",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.removedPartStockReferenceId",
+    "label": "Removed part stock reference id",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37018",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.removedPartSameId",
+    "label": "Same ID as Original",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37019",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.reasonForClaim",
+    "label": "Reason for claim",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37020",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.quantityToReturn",
+    "label": "Quantity to return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "37021",
+    "viewModel": "todaysParts",
+    "id": "warrantyReturn.reasonForReturn",
+    "label": "Reason for return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38001",
+    "viewModel": "partsBasket",
+    "id": "searchAdaptOrFindParts",
+    "label": "How do you want to search for a part to order?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38002",
+    "viewModel": "partsBasket",
+    "id": "searchFromAdapt",
+    "label": "search ADAPT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38003",
+    "viewModel": "partsBasket",
+    "id": "objectName",
+    "label": "part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38004",
+    "viewModel": "partsBasket",
+    "id": "addPartManually",
+    "label": "search for part manually",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38005",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyStockReferenceId",
+    "label": "Stock Reference Id",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38006",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyDescription",
+    "label": "Part Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38007",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyPrice",
+    "label": "Price (£)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38008",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyQuantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38009",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyAssociatedWithTask",
+    "label": "Associated With Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38010",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyPartOrderStatus",
+    "label": "Order Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38011",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyMainPart",
+    "label": "Main Fault",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38012",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyCancelButton",
+    "label": "Cancel manual part entry",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38013",
+    "viewModel": "partsBasket",
+    "id": "addPartManuallyAddButton",
+    "label": "Add to order list",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38014",
+    "viewModel": "partsBasket",
+    "id": "partsListHeaderPartDescription",
+    "label": "Unit Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38015",
+    "viewModel": "partsBasket",
+    "id": "partsListHeaderUnitPrice",
+    "label": "Unit Price",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38016",
+    "viewModel": "partsBasket",
+    "id": "partsListHeaderQuantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38017",
+    "viewModel": "partsBasket",
+    "id": "partsListHeaderAssociatedWithTask",
+    "label": "Associated With Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38018",
+    "viewModel": "partsBasket",
+    "id": "partsListHeaderPartOrderStatus",
+    "label": "Order Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38019",
+    "viewModel": "partsBasket",
+    "id": "partsListNoPartsOrdered",
+    "label": "No parts have been ordered",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38020",
+    "viewModel": "partsBasket",
+    "id": "partsListItemIsMainPart",
+    "label": "Main Fault",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38021",
+    "viewModel": "partsBasket",
+    "id": "partsListTotalPartsPrice",
+    "label": "Total",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38022",
+    "viewModel": "partsBasket",
+    "id": "partsListDeliverPartsToSite",
+    "label": "Deliver parts to site",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38023",
+    "viewModel": "partsBasket",
+    "id": "bookAnAppointmentButton",
+    "label": "Book An Appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38024",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturnHeader",
+    "label": "Warranty Returns",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38025",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.isWarrantyReturn",
+    "label": "Is this part going to be returned as a warranty claim?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38026",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.quantityToClaimOrReturn",
+    "label": "Quantity to claim/return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38027",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.removedPartStockReferenceId",
+    "label": "Removed part stock reference id",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38028",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.reasonForClaim",
+    "label": "Reason for claim",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38029",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.reasonForReturn",
+    "label": "Reason for return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38030",
+    "viewModel": "partsBasket",
+    "id": "partsListItemStandardWarranty",
+    "label": "Standard warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38031",
+    "viewModel": "partsBasket",
+    "id": "warrantyUnitsWeek",
+    "label": "weeks",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38032",
+    "viewModel": "partsBasket",
+    "id": "warrantyNoInformation",
+    "label": "No information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38033",
+    "viewModel": "partsBasket",
+    "id": "warrantyIsInWarranty",
+    "label": "In warranty?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38034",
+    "viewModel": "partsBasket",
+    "id": "searchForManuallyAddedPartButton",
+    "label": "Search for part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38035",
+    "viewModel": "partsBasket",
+    "id": "warrantyReturn.removedPartSameId",
+    "label": "Same ID as Original",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38036",
+    "viewModel": "partsBasket",
+    "id": "rememberToAddPartToList",
+    "label": "Don't forget to add the part to the list",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38037",
+    "viewModel": "partsBasket",
+    "id": "lastWarrantyFittedDate",
+    "label": "last fitted/installed on",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38038",
+    "viewModel": "partsBasket",
+    "id": "selectMainPartQuestion",
+    "label": "This will reset the activity type on the associated activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38039",
+    "viewModel": "partsBasket",
+    "id": "appointmentBooking",
+    "label": "Appointment Booking",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38040",
+    "viewModel": "partsBasket",
+    "id": "appointmentBookingMessage",
+    "label": "You have booked an appointment for today or after the cut off time. Please be aware that your part(s) may not be ready for collection in time for the appointment.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38041",
+    "viewModel": "partsBasket",
+    "id": "addToConsumables",
+    "label": "Consumable",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38042",
+    "viewModel": "partsBasket",
+    "id": "addToConsumablesQuestion",
+    "label": "You have chosen to send this part to the consumables basket?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38043",
+    "viewModel": "partsBasket",
+    "id": "addToFavourites",
+    "label": "Favourite",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38044",
+    "viewModel": "partsBasket",
+    "id": "clear",
+    "label": "Clear Order List",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38045",
+    "viewModel": "partsBasket",
+    "id": "searchForAnotherPart",
+    "label": "Search for another part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38046",
+    "viewModel": "partsBasket",
+    "id": "priorityPart",
+    "label": "Priority Part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38047",
+    "viewModel": "partsBasket",
+    "id": "catalogPriceDifferentFromAdapt",
+    "label": "(note: this price has been revised from the value in Adapt)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38048",
+    "viewModel": "partsBasket",
+    "id": "makeMainPartForActivity",
+    "label": "Make this part main part for this activity?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "38049",
+    "viewModel": "partsBasket",
+    "id": "warratyQuantityExceededMessage",
+    "label": "** Warranty returned quantity exceeded the parts used quantity **",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39001",
+    "viewModel": "previouslyFittedParts",
+    "id": "partDescription",
+    "label": "Part Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39002",
+    "viewModel": "previouslyFittedParts",
+    "id": "dateFitted",
+    "label": "Date Fitted",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39003",
+    "viewModel": "previouslyFittedParts",
+    "id": "quantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39004",
+    "viewModel": "previouslyFittedParts",
+    "id": "associatedWithTask",
+    "label": "Associated with Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39005",
+    "viewModel": "previouslyFittedParts",
+    "id": "vanStock",
+    "label": "Van Stock",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39006",
+    "viewModel": "previouslyFittedParts",
+    "id": "mainPart",
+    "label": "Main Part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39007",
+    "viewModel": "previouslyFittedParts",
+    "id": "warranty",
+    "label": "Warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "39007",
+    "viewModel": "previouslyFittedParts",
+    "id": "noPartsMessage",
+    "label": "There are no previously fitted parts for this job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40001",
+    "viewModel": "charges",
+    "id": "objectName",
+    "label": "Charges",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40002",
+    "viewModel": "charges",
+    "id": "taskDescription",
+    "label": "Activity Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40003",
+    "viewModel": "charges",
+    "id": "charge",
+    "label": "Charge",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40004",
+    "viewModel": "charges",
+    "id": "labour",
+    "label": "Labour",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40005",
+    "viewModel": "charges",
+    "id": "parts",
+    "label": "Parts",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40006",
+    "viewModel": "charges",
+    "id": "vat",
+    "label": "VAT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40007",
+    "viewModel": "charges",
+    "id": "amount",
+    "label": "Amount",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40008",
+    "viewModel": "charges",
+    "id": "unitPrice",
+    "label": "Unit Price",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40009",
+    "viewModel": "charges",
+    "id": "total",
+    "label": "Total",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40011",
+    "viewModel": "charges",
+    "id": "applyDiscount",
+    "label": "Apply Discount Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40012",
+    "viewModel": "charges",
+    "id": "removeDiscount",
+    "label": "Remove Discount Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40013",
+    "viewModel": "charges",
+    "id": "discountCode",
+    "label": "Discount Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40014",
+    "viewModel": "charges",
+    "id": "reasonWhyChargesAreNotAccepted",
+    "label": "Reason why charges are not accepted",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40015",
+    "viewModel": "charges",
+    "id": "remarks",
+    "label": "Remarks",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40016",
+    "viewModel": "charges",
+    "id": "discountTextLabel",
+    "label": "{0} discount applied",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40017",
+    "viewModel": "charges",
+    "id": "subtotal",
+    "label": "Sub Total",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40018",
+    "viewModel": "charges",
+    "id": "chargeTotal",
+    "label": "CHARGE TOTAL",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40019",
+    "viewModel": "charges",
+    "id": "includingVat",
+    "label": "including VAT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40020",
+    "viewModel": "charges",
+    "id": "discountWarning",
+    "label": "Discount value is more then charge amount.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40021",
+    "viewModel": "charges",
+    "id": "noChargesWarning",
+    "label": "There is no charge in this job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40022",
+    "viewModel": "charges",
+    "id": "updatingCharges",
+    "label": "Updating charges",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40023",
+    "viewModel": "charges",
+    "id": "warranty",
+    "label": "warranty",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40024",
+    "viewModel": "charges",
+    "id": "return",
+    "label": "return",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40025",
+    "viewModel": "charges",
+    "id": "fixedPriceQuotation",
+    "label": "Fixed Price Quotation",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40026",
+    "viewModel": "charges",
+    "id": "errorCalculatingCharge",
+    "label": "Error calculating charge",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40027",
+    "viewModel": "charges",
+    "id": "discount",
+    "label": "Discount",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40028",
+    "viewModel": "charges",
+    "id": "nodiscount",
+    "label": "NO DISCOUNT",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40029",
+    "viewModel": "charges",
+    "id": "selectDiscountCode",
+    "label": "Select a Discount",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40030",
+    "viewModel": "charges",
+    "id": "noData",
+    "label": "There are no charges to apply right now"
+  },
+  {
+    "key": "40031",
+    "viewModel": "charges",
+    "id": "previousChargeApplianceConfirm",
+    "label": "I understand. Click to continue...."
+  },
+  {
+    "key": "40032",
+    "viewModel": "charges",
+    "id": "previousChargeApplianceMessage",
+    "label": "Warning: There has been previous activities to this appliance or system. Before confirming a charge today, have you checked the activity history to ensure today’s work does not fall under the warranty of any previous repair work within the last 12 months?"
+  },
+  {
+    "key": "40033",
+    "viewModel": "charges",
+    "id": "previous",
+    "label": "previous activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "40034",
+    "viewModel": "charges",
+    "id": "totalChargableTime",
+    "label": "Total charge time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "41001",
+    "viewModel": "vanStockNotice",
+    "id": "partAvailability",
+    "label": "Part Availability",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "41002",
+    "viewModel": "vanStockNotice",
+    "id": "vanstockAvailable",
+    "label": "may be available from the following engineer's van stock",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "41003",
+    "viewModel": "vanStockNotice",
+    "id": "name",
+    "label": "Name",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "41004",
+    "viewModel": "vanStockNotice",
+    "id": "phoneNumber",
+    "label": "Phone number",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42001",
+    "viewModel": "displayPreferences",
+    "id": "notificationPosition",
+    "label": "Notification Position",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42002",
+    "viewModel": "displayPreferences",
+    "id": "selectPosition",
+    "label": "Select a notification position",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42003",
+    "viewModel": "displayPreferences",
+    "id": "selectDelay",
+    "label": "Select a notification display time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42004",
+    "viewModel": "displayPreferences",
+    "id": "notificationDelay",
+    "label": "Notification Delay",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42005",
+    "viewModel": "displayPreferences",
+    "id": "displayPreferences",
+    "label": "Display and Sound Settings",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42006",
+    "viewModel": "displayPreferences",
+    "id": "dropdownType",
+    "label": "Dropdown Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "42006",
+    "viewModel": "displayPreferences",
+    "id": "minItemsToCategoriseSmashButtons",
+    "label": "Min Items for Smash Button Categories",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43001",
+    "viewModel": "consumablesBasket",
+    "id": "consumables",
+    "label": "Consumables Basket",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43002",
+    "viewModel": "consumablesBasket",
+    "id": "referenceId",
+    "label": "Reference ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43003",
+    "viewModel": "consumablesBasket",
+    "id": "partSearch",
+    "label": "Part Search",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43004",
+    "viewModel": "consumablesBasket",
+    "id": "order",
+    "label": "Order",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43005",
+    "viewModel": "consumablesBasket",
+    "id": "archive",
+    "label": "Previous Orders",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43006",
+    "viewModel": "consumablesBasket",
+    "id": "reorder",
+    "label": "Re-Order",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43007",
+    "viewModel": "consumablesBasket",
+    "id": "noData",
+    "label": "There are currently no items in the consumables basket",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43008",
+    "viewModel": "consumablesBasket",
+    "id": "placeOrder",
+    "label": "Place Order",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43009",
+    "viewModel": "consumablesBasket",
+    "id": "objectName",
+    "label": "Part",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43010",
+    "viewModel": "consumablesBasket",
+    "id": "addConsumable",
+    "label": "Add Consumable",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43011",
+    "viewModel": "consumablesBasket",
+    "id": "favourites",
+    "label": "Favourites",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43012",
+    "viewModel": "consumablesBasket",
+    "id": "addFavourite",
+    "label": "Add Favourite",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43013",
+    "viewModel": "consumablesBasket",
+    "id": "removeFavourite",
+    "label": "Remove Favourite",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43014",
+    "viewModel": "consumablesBasket",
+    "id": "noDataFavourites",
+    "label": "There are currently no items in the favourites list",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43015",
+    "viewModel": "consumablesBasket",
+    "id": "savedTitle",
+    "label": "Saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43016",
+    "viewModel": "consumablesBasket",
+    "id": "savedMessage",
+    "label": "Your consumables order has been sent",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "43017",
+    "viewModel": "consumablesBasket",
+    "id": "noDataArchive",
+    "label": "There are currently no items in the previous orders list",
+    "ctlgEntDelnMkr": "N"
+  },
+    {
+    "key": "42018",
+    "viewModel": "consumablesBasket",
+    "id": "addManual",
+    "label": "Add consumable manually",
+    "ctlgEntDelnMkr": "N"
+  },
+    {
+    "key": "42019",
+    "viewModel": "consumablesBasket",
+    "id": "stockReference",
+    "label": "Stock reference",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "44001",
+    "viewModel": "landlordDetail",
+    "id": "landlordDetail",
+    "label": "Billing Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "44002",
+    "viewModel": "landlordDetail",
+    "id": "landlordName",
+    "label": "Name",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "44003",
+    "viewModel": "landlordDetail",
+    "id": "homePhone",
+    "label": "Home phone",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "44004",
+    "viewModel": "landlordDetail",
+    "id": "workPhone",
+    "label": "Work phone",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "44005",
+    "viewModel": "landlordDetail",
+    "id": "address",
+    "label": "Address",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45001",
+    "viewModel": "resilienceInformation",
+    "id": "title",
+    "label": "Resilience Information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45002",
+    "viewModel": "resilienceInformation",
+    "id": "noUnsent",
+    "label": "There are no unsent payloads",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45003",
+    "viewModel": "resilienceInformation",
+    "id": "id",
+    "label": "ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45004",
+    "viewModel": "resilienceInformation",
+    "id": "lastRetryTime",
+    "label": "Last Retry Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45005",
+    "viewModel": "resilienceInformation",
+    "id": "expiryTime",
+    "label": "Expiry Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45006",
+    "viewModel": "resilienceInformation",
+    "id": "status",
+    "label": "Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45007",
+    "viewModel": "resilienceInformation",
+    "id": "type",
+    "label": "Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45008",
+    "viewModel": "resilienceInformation",
+    "id": "retrying",
+    "label": "Retrying",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45009",
+    "viewModel": "resilienceInformation",
+    "id": "notSent",
+    "label": "Not Sent",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45010",
+    "viewModel": "resilienceInformation",
+    "id": "retryAll",
+    "label": "Retry",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45011",
+    "viewModel": "resilienceInformation",
+    "id": "failureInformation",
+    "label": "Failure Information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45012",
+    "viewModel": "resilienceInformation",
+    "id": "jobUpdate",
+    "label": "job_update",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45013",
+    "viewModel": "resilienceInformation",
+    "id": "orderConsumables",
+    "label": "Order Consumables",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45014",
+    "viewModel": "resilienceInformation",
+    "id": "errorDetails",
+    "label": "Error Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45015",
+    "viewModel": "resilienceInformation",
+    "id": "notApplicable",
+    "label": "N/A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "45016",
+    "viewModel": "resilienceInformation",
+    "id": "retryingAll",
+    "label": "Retrying...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46001",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "heading",
+    "label": "Landlords Gas Safety Record:",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46002",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "incomplete",
+    "label": "INCOMPLETE",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46003",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "yes",
+    "label": "YES",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46004",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "no",
+    "label": "NO",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46005",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "dashes",
+    "label": "---",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46006",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "operatingUnitsM",
+    "label": "m",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46007",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "operatingUnitsK",
+    "label": "k",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46008",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "operatingUnitsR",
+    "label": "r",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46009",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "notApplicable",
+    "label": "N/A",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46010",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "pass",
+    "label": "PASS",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46011",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "fail",
+    "label": "FAIL",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "46012",
+    "viewModel": "landlordSafetyCertificate",
+    "id": "unableToTest",
+    "label": "UNABLE TO TEST",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47001",
+    "viewModel": "supportOperations",
+    "id": "title",
+    "label": "Support Operations",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47002",
+    "viewModel": "supportOperations",
+    "id": "removeUserData",
+    "label": "Remove User Data",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47003",
+    "viewModel": "supportOperations",
+    "id": "removeCatalogData",
+    "label": "Remove Catalog Data",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47004",
+    "viewModel": "supportOperations",
+    "id": "warning",
+    "label": "The following operations may lose any work in progress. The application will restart when the action is complete.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47005",
+    "viewModel": "supportOperations",
+    "id": "questionTitle",
+    "label": "Question",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47006",
+    "viewModel": "supportOperations",
+    "id": "question",
+    "label": "Are you sure you want to continue, this action can not be undone?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47007",
+    "viewModel": "supportOperations",
+    "id": "removeAll",
+    "label": "Remove All",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47008",
+    "viewModel": "supportOperations",
+    "id": "logJobTitle",
+    "label": "Log Current Job State",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47009",
+    "viewModel": "supportOperations",
+    "id": "logJobNoActiveJob",
+    "label": "Cannot log current job state: No active job",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47010",
+    "viewModel": "supportOperations",
+    "id": "logJobCantGetJob",
+    "label": "Cannot log current job state: Cannot retrieve current job ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47011",
+    "viewModel": "supportOperations",
+    "id": "logJobSuccess",
+    "label": "Logged job state for job ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47012",
+    "viewModel": "supportOperations",
+    "id": "haveUnsentPayloadsTitle",
+    "label": "Warning: Entries Present in the Resilience Information Section",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "47013",
+    "viewModel": "supportOperations",
+    "id": "haveUnsentPayloads",
+    "label": "WARNING: \n\n There are entries in the Resilience Information section.\n\n  This operation will destroy these entries and the information contained will never be received by WMIS. Only continue if your intention is to remove this entries. \n\n  Do you wish to continue?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48001",
+    "viewModel": "catalogVersions",
+    "id": "title",
+    "label": "Catalog Versions",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48002",
+    "viewModel": "catalogVersions",
+    "id": "table",
+    "label": "Table",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48003",
+    "viewModel": "catalogVersions",
+    "id": "version",
+    "label": "Version",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48004",
+    "viewModel": "catalogVersions",
+    "id": "source",
+    "label": "Source",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48005",
+    "viewModel": "catalogVersions",
+    "id": "local",
+    "label": "Local",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48006",
+    "viewModel": "catalogVersions",
+    "id": "remote",
+    "label": "Remote",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48007",
+    "viewModel": "catalogVersions",
+    "id": "lastSuccessfulSyncTime",
+    "label": "Last Successful Sync Time",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "48008",
+    "viewModel": "catalogVersions",
+    "id": "lastDateModified",
+    "label": "Last Updated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49001",
+    "viewModel": "engineerDetails",
+    "id": "title",
+    "label": "Engineer Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49002",
+    "viewModel": "engineerDetails",
+    "id": "name",
+    "label": "Name",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49003",
+    "viewModel": "engineerDetails",
+    "id": "phoneNumber",
+    "label": "Phone Number",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49004",
+    "viewModel": "engineerDetails",
+    "id": "payrollId",
+    "label": "Payroll ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49005",
+    "viewModel": "engineerDetails",
+    "id": "roles",
+    "label": "Roles",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49006",
+    "viewModel": "engineerDetails",
+    "id": "workingArea",
+    "label": "Working Area",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49007",
+    "viewModel": "engineerDetails",
+    "id": "patch",
+    "label": "Patch",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49008",
+    "viewModel": "engineerDetails",
+    "id": "region",
+    "label": "Region",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "49009",
+    "viewModel": "engineerDetails",
+    "id": "lanId",
+    "label": "Lan ID",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "50001",
+    "viewModel": "endpointDetails",
+    "id": "title",
+    "label": "Endpoint Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "50002",
+    "viewModel": "endpointDetails",
+    "id": "routeName",
+    "label": "Route Name",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "50003",
+    "viewModel": "endpointDetails",
+    "id": "client",
+    "label": "Client",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "50004",
+    "viewModel": "endpointDetails",
+    "id": "path",
+    "label": "Path",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "50005",
+    "viewModel": "featureToggle",
+    "id": "title",
+    "label": "Feature Toggle",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52001",
+    "viewModel": "taskAppliance",
+    "id": "newTaskTitle",
+    "label": "New Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52002",
+    "viewModel": "taskAppliance",
+    "id": "applianceType",
+    "label": "Appliance Type / Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52003",
+    "viewModel": "taskAppliance",
+    "id": "actionType",
+    "label": "Action Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52004",
+    "viewModel": "taskAppliance",
+    "id": "chargeType",
+    "label": "Charge Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52005",
+    "viewModel": "taskAppliance",
+    "id": "objectName",
+    "label": "New RFA",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52006",
+    "viewModel": "taskAppliance",
+    "id": "taskSaved",
+    "label": "Activity Saved",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52007",
+    "viewModel": "taskAppliance",
+    "id": "actionTypeInvalidErrorMsg",
+    "label": "The Action Type entered is invalid!",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52008",
+    "viewModel": "taskAppliance",
+    "id": "chargeTypeInvalidErrorMsg",
+    "label": "The Charge Type entered is invalid!",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52009",
+    "viewModel": "taskAppliance",
+    "id": "applianceType",
+    "label": "Appliance Type / Location",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52010",
+    "viewModel": "taskAppliance",
+    "id": "actionType",
+    "label": "Action Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52011",
+    "viewModel": "taskAppliance",
+    "id": "chargeType",
+    "label": "Charge Type",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52012",
+    "viewModel": "taskAppliance",
+    "id": "applianceTitle",
+    "label": "Update Activity Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52013",
+    "viewModel": "taskAppliance",
+    "id": "updateTaskTitle",
+    "label": "Update Activity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52014",
+    "viewModel": "taskAppliance",
+    "id": "applianceTypeChanged",
+    "label": "Appliance Type has been updated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52015",
+    "viewModel": "taskAppliance",
+    "id": "actionTypeChanged",
+    "label": "Action Type has been updated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "52016",
+    "viewModel": "taskAppliance",
+    "id": "chargeTypeChanged",
+    "label": "Charge Type has been updated",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53001",
+    "viewModel": "archives",
+    "id": "objectName",
+    "label": "Your archive for",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53002",
+    "viewModel": "archives",
+    "id": "viewAnotherArchives",
+    "label": "View another archive",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53003",
+    "viewModel": "archives",
+    "id": "start",
+    "label": "Start",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53004",
+    "viewModel": "archives",
+    "id": "end",
+    "label": "End",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53005",
+    "viewModel": "archives",
+    "id": "duration",
+    "label": "Duration",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53006",
+    "viewModel": "archives",
+    "id": "status",
+    "label": "W/R Number / Status",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53007",
+    "viewModel": "archives",
+    "id": "details",
+    "label": "Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53008",
+    "viewModel": "archives",
+    "id": "jobStatusArrived",
+    "label": "Arrived",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53009",
+    "viewModel": "archives",
+    "id": "jobStatusCompleted",
+    "label": "Completed",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53010",
+    "viewModel": "archives",
+    "id": "jobStatusDeSelected",
+    "label": "Job De-selected",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53011",
+    "viewModel": "archives",
+    "id": "jobStatusDone",
+    "label": "Job Done",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53012",
+    "viewModel": "archives",
+    "id": "jobStatusEnRoute",
+    "label": "Enroute",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53013",
+    "viewModel": "archives",
+    "id": "inMinutes",
+    "label": "mins",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53014",
+    "viewModel": "archives",
+    "id": "workReport",
+    "label": "Work Report",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53015",
+    "viewModel": "archives",
+    "id": "stockRefereceId",
+    "label": "Stock Referece",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "53016",
+    "viewModel": "archives",
+    "id": "quantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "54001",
+    "viewModel": "messages",
+    "id": "title",
+    "label": "My Messages",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "54002",
+    "viewModel": "messages",
+    "id": "deleteButton",
+    "label": "Delete Read Messages",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "54003",
+    "viewModel": "messages",
+    "id": "noMessages",
+    "label": "There are currently no messages for you...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "55001",
+    "viewModel": "notWorking",
+    "id": "notWorking",
+    "label": "{0}, your status is <b>Not Yet Working</b>, when ready change your status to <b>Ready For Work</b>.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "56001",
+    "viewModel": "todo",
+    "id": "noDataRequesting",
+    "label": "There are no jobs in your work list, a list of jobs is currently being retrieved.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "56002",
+    "viewModel": "todo",
+    "id": "noDataTitle",
+    "label": "No Jobs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "56003",
+    "viewModel": "todo",
+    "id": "requestWork",
+    "label": "Request Work",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "56004",
+    "viewModel": "todo",
+    "id": "noData",
+    "label": "No Jobs Available",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "57001",
+    "viewModel": "done",
+    "id": "noDataTitle",
+    "label": "No Completed Jobs",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "57002",
+    "viewModel": "done",
+    "id": "noData",
+    "label": "There are no completed jobs.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "58001",
+    "viewModel": "consumablesHistory",
+    "id": "stockReferenceCode",
+    "label": "Stock Reference Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "58002",
+    "viewModel": "consumablesHistory",
+    "id": "partDescription",
+    "label": "Part Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "58003",
+    "viewModel": "consumablesHistory",
+    "id": "quantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "58004",
+    "viewModel": "consumablesHistory",
+    "id": "reOrder",
+    "label": "Re-Order",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "58005",
+    "viewModel": "consumablesHistory",
+    "id": "noRecords",
+    "label": "There are currenly no consumables in your order history",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "59001",
+    "viewModel": "favourites",
+    "id": "stockReferenceCode",
+    "label": "Stock Reference Code",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "59002",
+    "viewModel": "favourites",
+    "id": "partDescription",
+    "label": "Part Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "59003",
+    "viewModel": "favourites",
+    "id": "addToConsumables",
+    "label": "Add To Consumables",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "59004",
+    "viewModel": "favourites",
+    "id": "addToPartsBasket",
+    "label": "Add To Parts Basket",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "59005",
+    "viewModel": "favourites",
+    "id": "noRecords",
+    "label": "There are currently no records in your favourites",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60001",
+    "viewModel": "stateButtons",
+    "id": "bookAppointmentTitle",
+    "label": "Book an appointment",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60002",
+    "viewModel": "stateButtons",
+    "id": "bookAppointmentDescription",
+    "label": "Please book an appointment for the next visit",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60003",
+    "viewModel": "stateButtons",
+    "id": "customerTipsReminderTitle",
+    "label": "Customer Tips",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60004",
+    "viewModel": "stateButtons",
+    "id": "customerTipsReminderDescription",
+    "label": "Please ensure you have completed your customer tips",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60005",
+    "viewModel": "stateButtons",
+    "id": "isValidReminderTitle",
+    "label": "Job Not Complete",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60006",
+    "viewModel": "stateButtons",
+    "id": "isValidReminderDescription",
+    "label": "The job is not yet complete.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60007",
+    "viewModel": "stateButtons",
+    "id": "referenceDataOutOfDateTitle",
+    "label": "Catalogue Data Refresh Required",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60008",
+    "viewModel": "stateButtons",
+    "id": "referenceDataOutOfDateDescription",
+    "label": "A new version of the EWB Catalogue data has been released. In order to download the new data the application will now restart.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60009",
+    "viewModel": "stateButtons",
+    "id": "jobFinishTimeUpdateConfirmationMessage",
+    "label": "The job finish time is not in line with the current system time, Do you want to amend it now?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "60010",
+    "viewModel": "stateButtons",
+    "id": "jobCompletingText",
+    "label": "Please wait as we process and save your activity information",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "61001",
+    "viewModel": "jobApiFailureItem",
+    "id": "jobFailureMessage",
+    "label": "There was a problem loading this job, Try the refresh button to resolve the problem",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62001",
+    "viewModel": "worklistNotification",
+    "id": "notReadyStatusMessage",
+    "label": "Auto refresh has been paused, When ready for work, Please return status to 'Working'",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62002",
+    "viewModel": "worklistNotification",
+    "id": "workSummary",
+    "label": "Your work for today:",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62003",
+    "viewModel": "worklistNotification",
+    "id": "customers",
+    "label": "Customers",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62004",
+    "viewModel": "worklistNotification",
+    "id": "activities",
+    "label": "Activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62005",
+    "viewModel": "worklistNotification",
+    "id": "refreshingWorkListMessage",
+    "label": "Refreshing Worklist...",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62006",
+    "viewModel": "worklistNotification",
+    "id": "workListRetrivalErrorMessage",
+    "label": "There was a problem getting your worklist. Refresh to resolve the problem.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62007",
+    "viewModel": "worklistNotification",
+    "id": "newWorkListAvailableMessage",
+    "label": "There is an update on your worklist. Refresh to update.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62008",
+    "viewModel": "worklistNotification",
+    "id": "lastUpdatedTime",
+    "label": "Last Updated: ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "62009",
+    "viewModel": "worklistNotification",
+    "id": "lastRequestedTime",
+    "label": "Last Checked: ",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "63001",
+    "viewModel": "simulationPreferences",
+    "id": "selectEngineer",
+    "label": "Select Training Engineer:",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "63002",
+    "viewModel": "simulationPreferences",
+    "id": "customEngineer",
+    "label": "Select custom training engineer id:",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64001",
+    "viewModel": "otherSafetyDetail",
+    "id": "objectName",
+    "label": "Other Property Safety Detail",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64002",
+    "viewModel": "otherSafetyDetail",
+    "id": "heading",
+    "label": "Property Safety Details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64003",
+    "viewModel": "otherSafetyDetail",
+    "id": "eliReadings",
+    "label": "ELI Readings (Ohms)",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64004",
+    "viewModel": "otherSafetyDetail",
+    "id": "whyNoEli",
+    "label": "Why were no ELI readings taken?",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64005",
+    "viewModel": "otherSafetyDetail",
+    "id": "noEliReadings",
+    "label": "No reading taken",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "64006",
+    "viewModel": "otherSafetyDetail",
+    "id": "noEliReadingsUnsafe",
+    "label": "No ELI readings selected",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65001",
+    "viewModel": "pageService",
+    "id": "applianceMain",
+    "label": "appliances",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65002",
+    "viewModel": "pageService",
+    "id": "partsMain",
+    "label": "parts",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65003",
+    "viewModel": "pageService",
+    "id": "propertySafetyMain",
+    "label": "property-safety",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65004",
+    "viewModel": "pageService",
+    "id": "taskMain",
+    "label": "activities",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65005",
+    "viewModel": "pageService",
+    "id": "appliances",
+    "label": "appliance-details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65006",
+    "viewModel": "pageService",
+    "id": "activities",
+    "label": "details",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "65007",
+    "viewModel": "pageService",
+    "id": "consumablesMain",
+    "label": "consumables",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "66001",
+    "viewModel": "customerSummary",
+    "id": "jobNumberPrefix",
+    "label": "W/R No",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "67001",
+    "viewModel": "partsSummary",
+    "id": "stockRefId",
+    "label": "Stock Reference Id",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "67002",
+    "viewModel": "partsSummary",
+    "id": "description",
+    "label": "Description",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "67003",
+    "viewModel": "partsSummary",
+    "id": "quantity",
+    "label": "Quantity",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "67004",
+    "viewModel": "partsSummary",
+    "id": "noData",
+    "label": "No parts to display.",
+    "ctlgEntDelnMkr": "N"
+  },
+  {
+    "key": "68001",
+    "viewModel": "partsCollectionDetails",
+    "id": "noData",
+    "label": "No part collection details found.",
+    "ctlgEntDelnMkr": "N"
+  }        
+]

@@ -1,0 +1,122 @@
+[
+	{
+		"key": "1",
+		"code": "CODE0",
+		"whenToUse": "No advice required because:\n- A or B rated boiler installed\n- SMART Meters installed / Not eligible for SMART meters\n- No benefit from system upgrade \n- Customer has full HomeCare cover",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Safety & Efficiency Advice Not Applicable",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"code": "CODE1",
+		"whenToUse": "Your customer accepted your advice on upgrading to SMART Meters and agreed to speak to an agent for more detail",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Accepted SMART meter advice",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"code": "CODE2",
+		"whenToUse": "Your customer understands they could upgrade their Homecare cover/contract with us, and has agreed to speak with a Homecare agent about this.",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Accepted Homecare Advice",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"code": "CODE3",
+		"whenToUse": "Your customer accepted your advice on upgrading their boiler and agreed to a free no obligation quote",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "HSA Appointment booked",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"code": "CODE4",
+		"whenToUse": "Your customer accepted your advice on upgrading their central heating or electrical system and agreed for the work to be completed",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Quote Accepted",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"code": "CODE5",
+		"whenToUse": "Your customer declined your advice on upgrading their boiler",
+		"resultingAction": "We call the customer to talk to them after your visit and 10% of customers then agree to a quotation after your advice and You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "HSA Appointment declined following advice",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"code": "CODE6",
+		"whenToUse": "Your customer declined your advice on upgrading their central heating or electrical system",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Quote Declined following advice",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"code": "CODE7",
+		"whenToUse": "Your customer system is unsuitable for Homecare and they wont make the necessary changes required.  We need to review your customers level of cover",
+		"resultingAction": "Our membership office team will review your customers level of cover and You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": " Review level of cover - Boiler / System not suitable for HomeCare",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"code": "CODE8",
+		"whenToUse": "Your customer understands they could upgrade to SMART Meters for free with us, but doesn't want to speak with an agent about this at the moment.",
+		"resultingAction": "You have provided evidence of your advice, which will help in the event of customer feedback, queries or a complaint",
+		"meaning": "Decline SMART meter following advice",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "10",
+		"code": "CODEZZ",
+		"whenToUse": "Your customers boiler is installed with a \"Flue in a Void\" which has failed a risk assessment and is left AR or ID.  Not required to record if your risk assessment is passed",
+		"resultingAction": "We will pass your customers details to the HSE, who may write to other customers in locality who may have the same issue, e.g. block of flats",
+		"meaning": "Flues in Voids",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "11",
+		"code": "CODEAA",
+		"whenToUse": "Your customer has a non-operational appliance and is vulnerable, or the part required to repair the appliance is obsolete",
+		"resultingAction": "You have provided evidence of your advice, which may help your manager in the event of a complaint",
+		"meaning": "Vulnerable Customer with Non-op appliance / Obsolete Parts",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "12",
+		"code": "54CODE",
+		"whenToUse": "You have completed a \"Rest Day Service Visit\"",
+		"resultingAction": "Your job will be recorded as a \"Rest Day Service Visit\"",
+		"meaning": "Radical Working",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "13",
+		"code": "71CODE",
+		"whenToUse": "You attended this customer visit on an EA (emergency appointment) call",
+		"resultingAction": "Your job will be excluded from WMR calculations for Output and Success Rate",
+		"meaning": "EA Working",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "14",
+		"code": "62CODE",
+		"whenToUse": "You attended this customer visit on short notice overtime",
+		"resultingAction": "Your job will be excluded from WMR calculations for Output and Success Rate",
+		"meaning": "Short Notice Overtime",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "15",
+		"code": "CODE9",
+		"whenToUse": "You have temporarily cut or disconnected your customers condensate pipe because it was frozen - DO NOT close this job down",
+		"resultingAction": "Our planning team will contact the customer to book a suitable time to reconnect the condensate pipe",
+		"meaning": "Frozen Condensate",
+		"ctlgEntDelnMkr": "N"
+	}
+]

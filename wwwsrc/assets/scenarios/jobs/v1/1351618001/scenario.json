@@ -1,0 +1,106 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-12-20T11:40:27Z",
+      "modifiedTimestamp": "2017-12-20T11:55:47Z"
+    },
+    "data": {
+      "job": {
+        "id": "1351618001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022212813",
+          "lastName": "Mr Charges Regression",
+          "address": {
+            "premisesName": "Claire Court",
+            "houseNumber": "4",
+            "line": [
+              "West Street"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4LU",
+            "postCodeOut": "LE19"
+          }
+        },
+        "premises": {
+          "id": "L280238",
+          "address": {
+            "premisesName": "4,Claire Court",
+            "houseNumber": "0",
+            "line": [
+              "West Street"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4LU",
+            "postCodeOut": "LE19"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022212813",
+            "initials": " ",
+            "lastName": "Mr Charges Regression"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-12-20"
+          }
+        },
+        "visit": {
+          "id": "WMW00253272",
+          "date": "2017-12-20T00:00:00Z",
+          "earliestStartTime": "2017-12-20T12:00:00Z",
+          "latestStartTime": "2017-12-20T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1351618001001",
+            "applianceId": "202237333",
+            "jobType": "CK",
+            "applianceType": "CHB",
+            "chargeType": "SLO2FI1",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-12-20",
+                "status": "C",
+                "engineerName": "NAVIN",
+                "chargeableTime": 1,
+                "sequence": 1,
+                "report": "54CODEBjgbvhghvvhj",
+                "workDuration": 1
+              }
+            ]
+          },
+          {
+            "id": "1351618001002",
+            "applianceId": "202237334",
+            "jobType": "HU",
+            "applianceType": "WAU",
+            "chargeType": "ALP1S",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-12-20",
+                "status": "WA",
+                "engineerName": "NAVIN",
+                "chargeableTime": 1,
+                "sequence": 1,
+                "report": "54CODE'pllkkmnbbv",
+                "workDuration": 1
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

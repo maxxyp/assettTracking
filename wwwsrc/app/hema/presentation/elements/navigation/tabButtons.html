@@ -1,0 +1,32 @@
+<template>
+    <div>
+        <div  id="nav-tab-buttons" fix-header="is-alt.bind:isFullScreen;" class="tab-buttons" >
+        <span repeat.for="row of router.navigation"
+              class="state-border ${row.settings.stateClass ? row.settings.stateClass : 'state-none'}"
+              show.bind="row.settings.visible === undefined || row.settings.visible === true">
+            <button class="btn btn-primary button-list-item ${activeTab === row.config.name ? 'active' : 'notactive'} ${row.settings.riskType ? 'risk-' + row.settings.riskType : ''}"
+                    click.trigger="navigateToChildRoute(row.config.name)">
+                <span class="btn-label">${row.title}</span>
+                <span if.bind="row.settings.riskType" class="icon-container">
+                    <i class="fa fa-exclamation-circle ${row.settings.riskType ? 'risk-' + row.settings.riskType : ''}"></i>
+                </span>
+            </button>
+        </span>
+            <full-screen original-positions.bind="{top:'60px', left:'0px', bottom:'0px', right:'0px'}" top-offset="120px" left-offset="129px" right-offset="0px" bottom-offset="0px" hide-left-offset="118px" hide-right-offset="0px" hide-top-offset="60px" hide-bottom-offset="0px" transition-time="700"></full-screen>
+        </div>
+        <div class="tab-buttons" data-e2e="tab-buttons">
+        <span repeat.for="row of router.navigation"
+              class="state-border ${row.settings.stateClass ? row.settings.stateClass : 'state-none'}"
+              show.bind="row.settings.visible === undefined || row.settings.visible === true">
+            <button class="btn btn-primary button-list-item ${activeTab === row.config.name ? 'active' : 'notactive'} ${row.settings.riskType ? 'risk-' + row.settings.riskType : ''}"
+                    click.trigger="navigateToChildRoute(row.config.name)" data-e2e="${row.config.name}">
+                <span class="btn-label">${row.title}</span>
+                <span if.bind="row.settings.riskType" class="icon-container">
+                    <i class="fa fa-exclamation-circle ${row.settings.riskType ? 'risk-' + row.settings.riskType : ''}"></i>
+                </span>
+            </button>
+        </span>
+            <full-screen original-positions.bind="{top:'60px', left:'0px', bottom:'0px', right:'0px'}" top-offset="120px" left-offset="129px" right-offset="0px" bottom-offset="0px" hide-left-offset="118px" hide-right-offset="0px" hide-top-offset="60px" hide-bottom-offset="0px" transition-time="700"></full-screen>
+
+        </div>
+</template>

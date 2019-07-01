@@ -1,0 +1,95 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-02T16:48:12Z"
+    },
+    "data": {
+      "job": {
+        "id": "1316577001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022210322",
+          "lastName": "Mr Nathan Hebrew",
+          "address": {
+            "houseNumber": "25",
+            "line": ["John Boden Way"],
+            "county": "Loughborough",
+            "postCodeIn": "2BB",
+            "postCodeOut": "LE11"
+          }
+        },
+        "premises": {
+          "id": "L277986",
+          "address": {
+            "houseNumber": "15",
+            "line": ["John Boden Way"],
+            "county": "Loughborough",
+            "postCodeIn": "2BB",
+            "postCodeOut": "LE11"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022210325",
+            "initials": " ",
+            "lastName": "Mr Sample Three"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-02",
+            "safetyNoticeNotLeftReason": "testing testing"
+          },
+          "risks": [{
+            "reason": "R1",
+            "report": "Dog will bite",
+            "date": "2017-08-02"
+          }, {
+            "reason": "R3",
+            "report": "Worst behaviour",
+            "date": "2017-08-02"
+          }, {
+            "reason": "R5",
+            "report": "Dusty",
+            "date": "2017-08-02"
+          }],
+          "unsafeDetail": {
+            "reasons": ["PDL8"]
+          }
+        },
+        "visit": {
+          "id": "WMW00209532",
+          "date": "2017-08-02T00:00:00Z",
+          "earliestStartTime": "2017-08-02T18:00:00Z",
+          "latestStartTime": "2017-08-02T22:00:00Z"
+        },
+        "tasks": [{
+          "id": "1316577001001",
+          "applianceId": "202232985",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "chargeType": "NCH3SIM",
+          "status": "D",
+          "skill": "GS",
+          "sequence": 1,
+          "activities": [{
+            "status": "D",
+            "sequence": 1
+          }]
+        }, {
+          "id": "1316577001002",
+          "applianceId": "202232984",
+          "jobType": "AS",
+          "applianceType": "CKR",
+          "chargeType": "NCHLIGM",
+          "status": "D",
+          "skill": "LS",
+          "sequence": 1,
+          "activities": [{
+            "status": "D",
+            "sequence": 1
+          }]
+        }]
+      }
+    }
+  }
+}

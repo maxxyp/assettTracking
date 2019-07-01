@@ -1,0 +1,92 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-18T12:00:00Z",
+      "modifiedTimestamp": "2018-02-181T18:00:00Z"
+    },
+    "data": {
+      "job": {
+        "id": "2030510375",
+        "customer": {
+          "id": "100000258",
+          "initials": "L",
+          "title": "Mrs",
+          "lastName": "Khan",
+          "homePhone": "01255456892",
+          "workPhone": "01255784236",
+          "address": {
+            "line": ["Hudson Street"],
+            "houseNumber": "127",
+            "town": "Bradford",
+            "county": "Yorks",
+            "postCodeIn": "5ED",
+            "postCodeOut": "BD9"
+          }
+        },
+        "premises": {
+          "id": "8391111",
+          "address": {
+            "line": ["Hudson Street"],
+            "houseNumber": "127",
+            "town": "Bradford",
+            "county": "Yorks",
+            "postCodeIn": "5ED",
+            "postCodeOut": "BD9"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "100000258",
+            "initials": "L",
+            "title": "Mrs",
+            "lastName": "Khan",
+            "homePhone": "01255456892",
+            "workPhone": "01255784236",
+            "requesterName": "Mrs Khan"
+          },
+          "risks": [{
+            "reason": "R6",
+            "report": "High ELI",
+            "date": "2017-01-01"
+          }],
+          "unsafeDetail": {
+            "report": "Inadequate earthing. HEC visit arranged",
+            "labelAttachedOrRemoved": "AR",
+            "unsafe condition": "AR",
+            "cappedOrTurnedOff": "NT",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "ownersNameAndDetails": "N/A",
+            "reasons": ["CONS"]
+          }
+        },
+        "visit": {
+          "id": "2063062072001",
+          "date": "2018-02-18T12:00:00Z",
+          "status": "D",
+          "earliestStartTime": "2017-03-01T12:00:00Z",
+          "latestStartTime": "2018-03-01T18:00:00Z"
+        },
+        "tasks": [{
+          "id": "2030510375001",
+          "applianceId": "55063781",
+          "jobType": "AS",
+          "applianceType": "WAW",
+          "chargeType": "NCH3ST",
+          "status": "D",
+          "skill": "GS",
+          "sequence": 1,
+          "activities": [{
+            "date": "2017-03-01",
+            "status": "C",
+            "sequence": 1,
+            "engineerName": "Phil Appleby",
+            "report": "MI and system all OK."
+          }]
+        }]
+      }
+    }
+  }
+}

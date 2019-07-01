@@ -1,0 +1,116 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="row">
+            <div class="form-group">
+                <div class="card details-card details-list fade-in-content">
+                    <div class="card-block">
+                        <div show.bind="canEdit && showTimeSlider">
+                            <div class="hook-list-data-item-container details-list-item">
+                                <div class="col-xs-12">
+                                    <div class="col-xs-12">
+                                            <div class="col-xs-2">
+                                                <time-picker2
+                                                    readonly.bind="false"
+                                                    disabled.bind="false"
+                                                    interval-in-minutes.bind="intervalInMinutes"
+                                                    button-plus-classes.bind="'btn-timepicker-plus'"
+                                                    button-minus-classes.bind="'btn-timepicker-minus'"
+                                                    each-side.bind="true"
+                                                    classes.bind="'form-control'"
+                                                    value.bind="startTime">
+                                                </time-picker2>
+                                            </div>
+                                            <div class="col-xs-3">
+                                            </div>
+                                            <div class="col-xs-2">
+                                                <label style="text-align: center;font-size: 1.2rem;font-weight: bold;"> ${labels.activityDuration} </label>
+                                            </div>
+                                            <div class="col-xs-3">
+                                                </div>
+                                            <div class="col-xs-2">
+                                                <time-picker2
+                                                    readonly.bind="false"
+                                                    disabled.bind="false"
+                                                    interval-in-minutes.bind="intervalInMinutes"
+                                                    button-plus-classes.bind="'btn-timepicker-plus'"
+                                                    button-minus-classes.bind="'btn-timepicker-minus'"
+                                                    each-side.bind="true"
+                                                    classes.bind="'form-control'"
+                                                    value.bind="endTime">
+                                                </time-picker2>
+                                            </div>
+                                        </div>
+                                    <div class="col-xs-12">
+                                            <br/>
+                                            <br/>
+                                        <div ref="tasktimes"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-list-item details-list-item-header">
+                            <div class="col-xs-3">${labels.jobdescription}</div>
+                            <div class="col-xs-1" show.bind="canEdit && showTimeSlider"></div>
+                            <div class="col-xs-2">${labels.charge}</div>
+                            <div class="col-xs-3">${labels.notes}</div>
+                            <div class="col-xs-1">${labels.visit}</div>
+                            <div class="col-xs-1 with-button">
+                                <button
+                                    if.bind="canEdit"
+                                    class="btn btn-secondary plus"
+                                    click.trigger="newTask()"
+                                    disabled.bind="!shouldAllowAddTask">
+                                    ${labels.new}
+                                </button>
+                            </div>
+                        </div>
+                        <div repeat.for="task of tasks" class="hook-list-data-item-container details-list-item" click.trigger="navigateToTask(task.id)">
+                            <div class="col-xs-3 details-list-item-col ${task.dataState | dataStateStyle:canEdit}">
+                                <h4>
+                                    <span style="margin:0px;display: inline-block;">
+                                        <task-description catalog.one-way="catalog" task.one-way="task"></task-description>
+                                    </span>
+                                    <span style="margin:0px;display: inline-block;"
+                                        show.bind="canEdit && showTimeSlider && task.isMiddlewareDoTodayTask && !task.isInCancellingStatus">
+                                        (${task.startTime} to ${task.endTime} - ${task.workDuration} mins)
+                                    </span>
+                                </h4>
+                            </div>
+                            <div class="col-xs-1 details-list-item-col" show.bind="canEdit && showTimeSlider">
+                                <span css="margin:0px;display: inline-block; background: ${task.color};width: 20px; height: 20px; border-radius: 50%;"></span>
+                            </div>
+                            <div class="col-xs-2 details-list-item-col">
+                                <h4>
+                                    <catalog-lookup
+                                        catalog="${catalog.CHARGE_TYPE}"
+                                        key-field="${catalog.CHARGE_TYPE_ID}"
+                                        description-field="${catalog.CHARGE_TYPE_DESCRIPTION}"
+                                        value.bind="task.chargeType"></catalog-lookup>
+                                </h4>
+                            </div>
+                            <div class="col-xs-3 details-list-item-col">
+                                <h4>${labels.ref}: ${task.id}</h4>
+                                <task-support-info task.one-way="task" labels.one-way="labels"></task-support-info>
+                            </div>
+                            <div class="col-xs-1 details-list-item-col">
+                                <h4>${labels.visit} ${task.visitCount}</h4>
+                            </div>
+                            <div class="col-xs-2  details-list-item-col">
+                                <button class="btn btn-tertiary cross-blue"
+                                        click.trigger="deleteTask($event, task)"
+                                        if.bind="canEdit && task.isNewRFA && shouldAllowAddTask">
+                                    ${labels.delete}
+                                </button>
+                            </div>
+                        </div>
+                        <div class="details-list-item disabled" if.bind="!tasks.length">
+                            <div class="col-xs-12 details-list-item-col">
+                                ${labels.noData}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

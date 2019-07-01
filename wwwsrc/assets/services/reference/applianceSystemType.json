@@ -1,0 +1,146 @@
+[
+	{
+		"key": "0",
+		"id": "0",
+		"description": "No Central Heating",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "1",
+		"id": "1",
+		"description": "Warm Air System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "2",
+		"description": "Open/TRVs/Gravity HW, pumped Htg",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "3",
+		"description": "Open/Gravity HW, pumped Htg",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "4",
+		"description": "Sealed/TRVs/Fully pumped Y Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"id": "5",
+		"description": "Sealed/Fully pumped Y Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"id": "6",
+		"description": "Open/TRVs/Fully pumped Y Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"id": "7",
+		"description": "Open/Fully pumped Y Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"id": "8",
+		"description": "Sealed/TRVs/Fully pumped S Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"id": "9",
+		"description": "Sealed/Fully pumped S Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "10",
+		"id": "10",
+		"description": "Open/TRVs/Fully pumped S Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "11",
+		"id": "11",
+		"description": "Open/Fully pumped S Plan",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "12",
+		"id": "12",
+		"description": "Sealed/TRVs/Fully pumped HW+2 zone valves",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "13",
+		"id": "13",
+		"description": "Sealed/Fully pumped HW+2 zone valves",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "14",
+		"id": "14",
+		"description": "Open/TRVs/Fully pumped HW+2 zone valves",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "15",
+		"id": "15",
+		"description": "Open/Fully pumped HW+2 zone valves",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "16",
+		"id": "16",
+		"description": "Sealed/TRVs/Combi System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "17",
+		"id": "17",
+		"description": "Sealed/Combi System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "18",
+		"id": "18",
+		"description": "Open/TRVs/Combi System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "19",
+		"id": "19",
+		"description": "Open/Combi System",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "20",
+		"id": "20",
+		"description": "Sealed/TRVs/>3 zones/Other configuration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "21",
+		"id": "21",
+		"description": "Sealed/>3 zones/Other configuration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "22",
+		"id": "22",
+		"description": "Open/TRVs/>3 zones/Other configuration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "23",
+		"id": "23",
+		"description": "Open/>3 zones/Other configuration",
+		"ctlgEntDelnMkr": "N"
+	}
+]

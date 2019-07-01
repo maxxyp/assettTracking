@@ -1,0 +1,62 @@
+[
+	{
+		"key": "0",
+		"id": "0",
+		"description": "No Central Heating",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "1",
+		"id": "1",
+		"description": "OK-all components OK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "2",
+		"description": "OK-some components minor defects",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "3",
+		"description": "OK-components defective",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "4",
+		"description": "Suspect-all components OK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"id": "5",
+		"description": "Suspect-some components minor defects",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"id": "6",
+		"description": "Suspect-components defective",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"id": "7",
+		"description": "Defective-all components OK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"id": "8",
+		"description": "Defective-some components minor defects",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"id": "9",
+		"description": "Defective-components defective",
+		"ctlgEntDelnMkr": "N"
+	}
+]

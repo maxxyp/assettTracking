@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/analytics/IAnalyticsEvent.ts"],"names":[],"mappings":"","file":"IAnalyticsEvent.js","sourcesContent":["export interface IAnalyticsEvent {\n    category: string;\n    action: string;\n    label: string;\n    metric: number;\n}\n"],"sourceRoot":"../.."}

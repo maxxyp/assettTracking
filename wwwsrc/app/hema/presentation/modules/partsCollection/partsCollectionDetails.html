@@ -1,0 +1,16 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div>
+            <compose view-model="hema/presentation/modules/jobsList/jobPartsCollections" model.bind="{isDone: isDone}"></compose>
+
+            <div class="card row job-summary" css="border-color: ${isDone? '#aaa': '#9E007E'}; margin-top: -10px; padding-top: 10px;">
+                <compose repeat.for="item of viewModel" view-model.bind="'hema/presentation/modules/partsCollection/partsCollectionItem'"
+                    model.bind="{isDone: isDone, partDetails: item}" class="job">
+                </compose>
+            </div>
+            <div class="card row" if.bind="!viewModel.length">
+                <div class="card-block">${labels.noData}</div>
+            </div>
+        </div>
+    </view-state>
+</template>

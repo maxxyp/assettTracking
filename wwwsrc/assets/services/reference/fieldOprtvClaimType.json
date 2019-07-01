@@ -1,0 +1,12 @@
+[
+	{
+		"key": "1",
+		"fieldOprtvClmCat": "H",
+		"fieldOprtvClmTcode": "XX",
+		"fieldOprtvClmTypeDesc": "DO NOT USE!!!",
+		"clmValMax": 10,
+		"fieldOprtvClaimType": "Y",
+		"ctlgEntDelnMkr": "Y",
+		"insUpdFlag": ""
+	}
+]

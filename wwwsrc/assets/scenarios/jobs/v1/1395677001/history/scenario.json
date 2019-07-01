@@ -1,0 +1,122 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-07T14:30:28Z",
+      "modifiedTimestamp": "2017-08-07T14:44:06Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1385677001001",
+          "jobType": "IQ",
+          "applianceType": "EWR",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202234752",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "EWR",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202234752",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "EWR",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202234752",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "EWR",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202234752",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "EWR",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202234752",
+          "gcCode": "3209600",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "EWR",
+          "description": "SUPERFORM FIRE - NO INFO",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0
+        },
+        {
+          "id": "202234602",
+          "gcCode": "4201301",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-08-02",
+          "applianceType": "WAU",
+          "description": "MINOR M3G",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-03"
+          }
+        },
+        {
+          "id": "202234603",
+          "gcCode": "1313112",
+          "category": "A",
+          "contractType": "2AFI",
+          "contractExpiryDate": "2018-08-02",
+          "applianceType": "HOB",
+          "description": "2282S",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015
+        },
+        {
+          "id": "202234650",
+          "gcCode": "400",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-08-02",
+          "applianceType": "CHB",
+          "description": ".Unknown-Default",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-03"
+          }
+        }
+      ]
+    }
+  }
+}

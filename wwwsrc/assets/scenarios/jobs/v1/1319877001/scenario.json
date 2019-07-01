@@ -1,0 +1,98 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-17T11:35:00Z",
+      "modifiedTimestamp": "2017-08-17T12:41:34Z"
+    },
+    "data": {
+      "job": {
+        "id": "1319877001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211328",
+          "lastName": "Mr Arab Lsap",
+          "address": {
+            "houseNumber": "136",
+            "line": [
+              "Regent Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7PA",
+            "postCodeOut": "LE1"
+          }
+        },
+        "premises": {
+          "id": "L278964",
+          "address": {
+            "houseNumber": "123",
+            "line": [
+              "Douglas Place"
+            ],
+            "county": "Blackburn",
+            "postCodeIn": "9ST",
+            "postCodeOut": "BB1"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022211331",
+            "initials": " ",
+            "lastName": "The Tenant"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-17"
+          },
+          "unsafeDetail": {
+            "reasons": [
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00213102",
+          "date": "2017-08-17T00:00:00Z",
+          "earliestStartTime": "2017-08-17T12:00:00Z",
+          "latestStartTime": "2017-08-17T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1319877001001",
+            "applianceId": "202234962",
+            "jobType": "HU",
+            "applianceType": "BBF",
+            "chargeType": "ALP2SIM",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-08-17",
+                "status": "IA",
+                "engineerName": "NEIL",
+                "chargeableTime": 30,
+                "sequence": 1,
+                "report": "62CODECODE0Testingb previous visithhhhhhhhh",
+                "workDuration": 50,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Wax Sensor",
+                    "charge": 2672.0,
+                    "quantity": 4,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "108014"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

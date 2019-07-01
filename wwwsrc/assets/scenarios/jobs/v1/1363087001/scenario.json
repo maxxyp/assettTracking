@@ -1,0 +1,80 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-24T11:07:37Z"
+    },
+    "data": {
+      "job": {
+        "id": "1363087001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022208990",
+          "lastName": "Mr Gasothr Appcom",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Malta Close"
+            ],
+            "county": "Manchester",
+            "postCodeIn": "2BT",
+            "postCodeOut": "M24"
+          }
+        },
+        "premises": {
+          "id": "L276782",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Malta Close"
+            ],
+            "county": "Manchester",
+            "postCodeIn": "2BT",
+            "postCodeOut": "M24"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022208990",
+            "initials": " ",
+            "lastName": "Mr Gasothr Appcom"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-23"
+          },
+          "risks": [
+            {
+              "reason": "R3",
+              "report": "Mentally challenged customer",
+              "date": "2017-08-23"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00214342",
+          "date": "2017-08-24T00:00:00Z",
+          "earliestStartTime": "2017-08-24T08:00:00Z",
+          "latestStartTime": "2017-08-24T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1363087001001",
+            "applianceId": "202231017",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

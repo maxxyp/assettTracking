@@ -1,0 +1,178 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-02T16:48:12Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "1335577001001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "NCH3SIM",
+        "activities": [{
+          "status": "IZ"
+        }]
+      }, {
+        "id": "1335577001002",
+        "jobType": "AS",
+        "applianceType": "CKR",
+        "status": "I",
+        "chargeType": "NCHLIGM",
+        "activities": [{
+          "status": "IZ"
+        }]
+      }, {
+        "id": "1333167001001",
+        "jobType": "AS",
+        "applianceType": "INS",
+        "status": "I",
+        "chargeType": "NCHLIM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1333167001002",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "NCH3SIM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1333167001003",
+        "jobType": "AS",
+        "applianceType": "HOB",
+        "status": "I",
+        "chargeType": "NCHLIGM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1391167001001",
+        "jobType": "AS",
+        "applianceType": "INS",
+        "status": "I",
+        "chargeType": "NCHLIM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1391167001002",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "NCH3SIM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1391167001003",
+        "jobType": "AS",
+        "applianceType": "HOB",
+        "status": "I",
+        "chargeType": "NCHLIGM",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1315577001001",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIM",
+        "activities": [{
+          "date": "2017-08-02",
+          "status": "C",
+          "engineerName": "EMPLOYEE 3",
+          "report": "sdsfghdghdfyhjfhjtykdukudk"
+        }]
+      }, {
+        "id": "1315577001002",
+        "jobType": "AS",
+        "applianceType": "CKR",
+        "status": "C",
+        "chargeType": "NCHLIGM",
+        "activities": [{
+          "date": "2017-08-02",
+          "status": "C",
+          "engineerName": "EMPLOYEE 3",
+          "report": "Test report"
+        }]
+      }, {
+        "id": "1313957001001",
+        "jobType": "AS",
+        "applianceType": "INS",
+        "status": "C",
+        "chargeType": "NCHLIM",
+        "activities": [{
+          "date": "2017-07-04",
+          "status": "C",
+          "engineerName": "KEITH MORRELL",
+          "report": "CODE0Tightness test and meter check"
+        }]
+      }, {
+        "id": "1313957001002",
+        "jobType": "AS",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH3SIM",
+        "activities": [{
+          "date": "2017-07-04",
+          "status": "C",
+          "engineerName": "KEITH MORRELL",
+          "report": "CODE0Serviced boiler"
+        }]
+      }, {
+        "id": "1313957001003",
+        "jobType": "AS",
+        "applianceType": "HOB",
+        "status": "C",
+        "chargeType": "NCHLIGM",
+        "activities": [{
+          "date": "2017-07-04",
+          "status": "C",
+          "engineerName": "KEITH MORRELL",
+          "report": "CODE0Serviced hob"
+        }]
+      }],
+      "appliances": [{
+        "id": "202232985",
+        "category": "X",
+        "contractType": "3SIM",
+        "contractExpiryDate": "2099-12-31",
+        "applianceType": "CHB",
+        "description": "Default",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0
+      }, {
+        "id": "202232984",
+        "category": "A",
+        "contractType": "LIGM",
+        "contractExpiryDate": "2099-12-31",
+        "applianceType": "CKR",
+        "description": "Default",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0
+      }, {
+        "id": "202232983",
+        "category": "A",
+        "contractType": "LIGM",
+        "contractExpiryDate": "2099-12-31",
+        "applianceType": "HOB",
+        "description": "Default",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0
+      }, {
+        "id": "202232986",
+        "category": "A",
+        "contractType": "LIM",
+        "contractExpiryDate": "2099-12-31",
+        "applianceType": "INS"
+      }]
+    }
+  }
+}

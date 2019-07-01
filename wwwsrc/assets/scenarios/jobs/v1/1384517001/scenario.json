@@ -1,0 +1,92 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-17T15:33:40Z"
+        },
+        "data": {
+            "job": {
+                "id": "1384517001",
+                "customer": {
+                    "id": "022189566",
+                    "lastName": "Mr Rutgers Wright",
+                    "address": {
+                        "houseNumber": "63",
+                        "line": [
+                            "Kirkland Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2JQ",
+                        "postCodeOut": "LE3"
+                    }
+                },
+                "premises": {
+                    "id": "L260616",
+                    "address": {
+                        "houseNumber": "63",
+                        "line": [
+                            "Kirkland Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "2JQ",
+                        "postCodeOut": "LE3"
+                    },
+                    "previousVisitCount": 1,
+                  "contact": {
+                    "id": "022189566",
+                    "initials": " ",
+                    "lastName": "Mr Rutgers Wright",
+                    "homePhone": "07890 789098"
+                  },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2016-10-17T00:00:00Z",
+                        "safetyNoticeNotLeftReason": "BOILER IS GOOD FOR TESTING"
+                    },
+                    "unsafeDetail": {
+                        "report": "PLEASE CONTACT THE CUSTOMER TEAM IMMEDIATELY",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "***LEICESTER*****",
+                        "reasons": [
+                            "GMET",
+                            "PDL8"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00150882",
+                    "date": "2016-10-17T00:00:00Z",
+                    "earliestStartTime": "2016-10-17T12:00:00Z",
+                    "latestStartTime": "2016-10-17T18:00:00Z"
+                },
+                "tasks": [{
+                    "id": "1384517001001",
+                    "applianceId": "202202195",
+                    "jobType": "AS",
+                    "applianceType": "AGA",
+                    "chargeType": "NCH3ST",
+                    "status": "D",
+                    "skill": "GS",
+                    "sequence": 0,
+                    "specialRequirement": "AGA trained engineer required",
+                    "supportingText": "Knock on the backdoor",
+                    "activities": [{
+                        "date": "2016-10-17T00:00:00Z",
+                        "status": "IA",
+                        "chargeableTime": 13,
+                        "sequence": 1,
+                        "workDuration": 13
+                    }, {
+                        "status": "D",
+                        "sequence": 2
+                    }]
+                }]
+            }
+        }
+    }
+}

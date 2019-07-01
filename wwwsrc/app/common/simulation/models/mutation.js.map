@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/simulation/models/mutation.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,eAAC;IAAD,CAHA,AAGC,IAAA;IAHY,4BAAQ","file":"mutation.js","sourcesContent":["export class Mutation<T> {\n    public timestamp: Date;\n    public payload: T;\n}\n"],"sourceRoot":"../../.."}

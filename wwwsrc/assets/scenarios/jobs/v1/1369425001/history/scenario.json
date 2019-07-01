@@ -1,0 +1,489 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-13T14:33:54Z",
+      "modifiedTimestamp": "2018-08-13T14:33:54Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1381425001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1391325001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "NA",
+              "engineerName": "AMEND",
+              "report": "dgghasasasasasasasgas"
+            }
+          ]
+        },
+        {
+          "id": "1378425001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing Charge Job.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1378425001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE0 Testing a charge job.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1378425001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE7 Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1352425001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODEZZ asaaaaaaaaaaa",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1352425001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODE4 aaaaaaaaaaaaaaaaaaaaa",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1352425001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODEZZ aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1311425001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job..",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1311425001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1311425001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1347325001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-06",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1347325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-06",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODE5 Testing chargeable job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1347325001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-06",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODE6 Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1382325001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "report": "XDGHOIREGORWEGIJWGRJWRGJREGJ",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1382325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "report": "HTHH4HT4TH4H4H",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1382325001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "report": "DHRTJHRTHREHTNREHTETNR",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1312325001001",
+          "jobType": "WU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1312325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE5 Testing Chargable job...",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1312325001003",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALF3FIS",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE6 Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224172",
+          "serialId": "1111111",
+          "gcCode": "4711649",
+          "category": "X",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "*C*ACO 32 MFFI LPG",
+          "flueType": "R",
+          "boilerSize": 10,
+          "cylinderType": 0,
+          "energyControl": "NC",
+          "locationDescription": "LONDON",
+          "condition": 4,
+          "numberOfRadiators": 20,
+          "numberOfSpecialRadiators": 15,
+          "installationYear": 2011,
+          "systemDesignCondition": 3,
+          "systemType": 8,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-02"
+          }
+        }
+      ]
+    }
+  }
+}

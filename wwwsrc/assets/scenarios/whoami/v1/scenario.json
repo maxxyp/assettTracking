@@ -1,0 +1,19 @@
+{
+  "status" :200,
+  "delay": 1,
+  "disableCache": true,
+  "data" : {
+    "userid": "millarm",
+    "attributes": [
+      {
+        "employeeid": "1111111"
+      }
+    ],
+    "roles": [
+      "d-Field-Engineer",
+      "d-Field-Apprentice",
+      "d-Field-Admin",
+      "assetTracking"
+    ]
+  }
+}

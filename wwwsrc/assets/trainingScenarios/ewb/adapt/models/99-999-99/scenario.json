@@ -1,0 +1,12 @@
+{
+  "status" : 200,
+  "data" : {
+    "models": [
+      {
+        "imModKey": 2449,
+        "description": "NETAHEAT ELECTRONIC 10/16",
+        "manufacturer": "9999999"
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T04:55:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "1340525001",
+        "engineerId": "6060606",
+        "customer": {
+          "id": "022201831",
+          "lastName": "Mr Scenario Two Madhavi",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          }
+        },
+        "premises": {
+          "id": "L271314",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201831",
+            "initials": " ",
+            "lastName": "Mr Scenario Two Madhavi"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          }
+        },
+        "visit": {
+          "id": "WMW00057425",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1340525001001",
+            "applianceId": "202224174",
+            "jobType": "HU",
+            "applianceType": "AGA",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

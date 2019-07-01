@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IBusinessRule.ts"],"names":[],"mappings":"","file":"IBusinessRule.js","sourcesContent":["export interface IBusinessRule {\n   key: string;\n   viewModel: string;\n   id: string;\n   rule: any;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

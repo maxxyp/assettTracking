@@ -1,0 +1,316 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-10-18T15:58:37Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1361355001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "NA",
+              "engineerName": "EMPLOYEE 1",
+              "report": "no access for job 2 for same A/c no , which is booked for checking the job type"
+            }
+          ]
+        },
+        {
+          "id": "1368255001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1368255001002",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1368255001003",
+          "jobType": "OD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373355001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373355001002",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALF3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1339255001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1351355001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE comp;eting RFA1 in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1351355001002",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE visit 2 complete in vist 1"
+            }
+          ]
+        },
+        {
+          "id": "1351355001003",
+          "jobType": "OD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "WA",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE wait advice for rfa3 in vist1"
+            },
+            {
+              "date": "2019-02-21",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE visit 2 for rfa 3"
+            }
+          ]
+        },
+        {
+          "id": "1332355001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "C",
+              "engineerName": "JOHN HENRY",
+              "report": "54CODE Job1testcase13"
+            }
+          ]
+        },
+        {
+          "id": "1382355001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "date": "2019-02-21",
+              "status": "XB",
+              "engineerName": "JOHN HENRY",
+              "report": "Gvgbhgcfcvhbhbj"
+            }
+          ]
+        },
+        {
+          "id": "1391355001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1399255001001",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALP3SIS",
+          "activities": [
+            {
+              "date": "2019-02-20",
+              "status": "C",
+              "engineerName": "JOHN HENRY",
+              "report": "62CODE Tc14test case"
+            }
+          ]
+        },
+        {
+          "id": "1376155001001",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2019-02-01",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Gfcfccgfccfcgcgcgcgcgfgf"
+            }
+          ]
+        },
+        {
+          "id": "1343594001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-04-06",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Maintenance needed......."
+            }
+          ]
+        },
+        {
+          "id": "1343594001002",
+          "jobType": "SD",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2018-04-06",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Maintenance needed...."
+            }
+          ]
+        },
+        {
+          "id": "1372594001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2018-04-06",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE Testing a sample job....."
+            }
+          ]
+        },
+        {
+          "id": "1372594001002",
+          "jobType": "OD",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2018-04-06",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Testing new task.."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202223482",
+          "gcCode": "4700000",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2019-04-05",
+          "applianceType": "CHB",
+          "description": "COMBI BOILERS - NO INFOR",
+          "flueType": "O",
+          "boilerSize": 25,
+          "cylinderType": 0,
+          "energyControl": "EMX",
+          "locationDescription": "Kitchen",
+          "condition": 3,
+          "numberOfRadiators": 20,
+          "numberOfSpecialRadiators": 2,
+          "installationYear": 2016,
+          "systemDesignCondition": 3,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2019-02-01"
+          }
+        }
+      ]
+    }
+  }
+}

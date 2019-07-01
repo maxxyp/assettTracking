@@ -1,0 +1,37 @@
+time-picker {
+    display: flex;
+    .each-side-btns{
+        display:flex;
+        align-items: center;
+        a{
+            display: inline !important;
+        }
+    }
+    input {
+        width: 80px !important;
+    }
+    span{
+        align-self:center;
+    }
+    .time-picker-btns {
+        align-self: center;
+        white-space: nowrap;
+        .btn-timepicker-minus{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0px 15px 0px -4px;
+            padding: 0px!important;
+        }
+        .btn-timepicker-plus{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0px 0px 0px 0px;
+
+        }
+    }
+     a{
+            padding: 7px;
+        }
+}

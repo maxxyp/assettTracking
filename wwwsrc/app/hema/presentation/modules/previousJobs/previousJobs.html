@@ -1,0 +1,68 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card details-list fade-in-content">
+            <div class="card-block">
+                <div class="details-list-item details-list-item-header" id="previous-jobs-header" fix-header="is-alt.bind:isFullScreen;">
+                    <div class="col-xs-2">${labels.jobId}</div>
+                    <div class="col-xs-5">
+                        ${labels.taskDescription}
+                    </div>
+                    <div class="col-xs-2">
+                        ${labels.visitCount}
+                    </div>
+                    <div class="col-xs-3">${labels.date}</div>
+                </div>
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-2">${labels.jobId}</div>
+                    <div class="col-xs-5">
+                        ${labels.taskDescription}
+                    </div>
+                    <div class="col-xs-2">
+                        ${labels.visitCount}
+                    </div>
+                    <div class="col-xs-3">${labels.date}</div>
+                </div>
+                <div repeat.for="job of previousJobs" class="details-list-item" click.trigger="navigateToPreviousJob(job.id)">
+                    <div class="col-xs-2  details-list-item-col">
+                        ${job.id}
+                        <br />
+                        <span class="label label-danger" show.bind="job.isCharge">${labels.charge}</span>
+                    </div>
+                    <div class="col-xs-5  details-list-item-col flex">
+                        <table>
+                            <tr class="job-details-previous-task" repeat.for="task of job.tasks">
+                                <td>${$index + 1}:
+                                    <task-description catalog.one-way="catalog" task.one-way="task"></task-description>
+                                </td>                                
+                                <td>
+                                    <help-tip icon="i">
+                                        <task-charge catalog.one-way="catalog" code.one-way="task.chargeType"></task-charge>
+                                    </help-tip>
+                                </td>
+                            </tr>
+                        </table>
+                        <br if.bind="job.tasks.indexOf(task) < job.tasks.length - 1" />
+                    </div>
+                    <div class="col-xs-2  details-list-item-col flex">
+                        <table>
+                            <tr class="job-details-previous-task" repeat.for="task of job.tasks">
+                                <td>
+                                    ${task.activities && task.activities.length > 0 ? task.activities.length > 1 ? task.activities.length + " visits" : task.activities.length + " visit" : ""}
+                                </td>
+                            </tr>
+                        </table>  
+                        <br if.bind="job.tasks.indexOf(task) < job.tasks.length - 1" />                      
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${job.date | dateFormat: 'D MMM YYYY'}
+                    </div>
+                    <div class="details-list-item disabled" if.bind="!previousJobs || previousJobs.length === 0">
+                        <div class="col-xs-12 details-list-item-col">
+                            ${labels.noData}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

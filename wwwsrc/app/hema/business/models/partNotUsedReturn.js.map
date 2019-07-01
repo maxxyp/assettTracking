@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/partNotUsedReturn.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,wBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,8CAAiB","file":"partNotUsedReturn.js","sourcesContent":["export class PartNotUsedReturn {\n    public quantityToReturn: number;\n    public reasonForReturn: string;\n}\n"],"sourceRoot":"../../.."}

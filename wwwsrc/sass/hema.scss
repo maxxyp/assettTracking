@@ -1,0 +1,585 @@
+$header-height: 90px;
+$footer-height: 50px;
+$nav-bar-height: 35px;
+$icon-bar-width: 116px;
+$min-width: 700px;
+$button-color: #115080;
+$list-header:#DDE5F2;
+$list-header-text:#005882;
+$input-color:#27638C ;
+$input-background: #dbe1ef ;
+$input-border:#297395 ;
+$alertColor: #ff9e00;
+$criticalColor: #ff0000;
+$focusColor: #1798fb;
+
+$stateInvalidColor: #ff0000;
+$stateValidColor: #b3e000;
+$stateNotVisitedColor: #ff9e00;
+$stateDontCareColor: #dddddd;
+
+@import "weather-icons/weather-icons";
+@import "hema/hema-icons";
+@import "hema/buttons";
+@import "hema/overrides";
+@import "hema/landlord-cert";
+@import "hema/van-stock-item";
+@import "hema/van-stock-elipses-menu";
+@import "hema/transfer-van-stock";
+@import "hema/mixins";
+@import "hema/nav-sections/icon-nav-bar";
+@import "hema/nav-sections/nav-bar";
+@import "hema/elements/_engineer-state";
+@import "hema/elements/state-buttons";
+@import "hema/elements/prev-next-buttons";
+@import "hema/elements/tab-buttons";
+@import "hema/elements/view-state";
+@import "hema/elements/worklist-notification";
+@import "hema/elements/nouislider";
+@import "hema/elements/time-picker2";
+@import "hema/jobs/appliances";
+@import "hema/jobs/validation";
+@import "hema/jobs/child-tabs";
+@import "hema/jobs/jobDetailsHead";
+@import "hema/jobs/jobApiFailureItem";
+@import "hema/jobs/jobPartsCollection";
+@import "hema/jobs/jobs";
+@import "hema/jobs/tasks";
+@import "hema/jobs/signs";
+@import "hema/jobs/parts";
+@import "hema/jobs/task-appliance";
+@import "hema/jobs/jobsList";
+@import "hema/jobs/materialDialog";
+@import "hema/initialisation/app-init";
+@import "hema/elements/_incremental-number-picker";
+@import "hema/elements/_checkbox";
+@import "hema/elements/_collapsible";
+@import "hema/about";
+
+html {
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/css/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a{
+    color:white;
+    text-decoration: none !important;
+    outline-style: none;
+    outline: 0;
+}
+
+a:focus{
+  color: $focusColor;
+  outline-style: none;
+  outline: 0;
+}
+a:hover{
+  @extend a;
+}
+
+h1 {
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+h3 {
+  font-size: 1.0rem;
+}
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.main-container {
+  display: flex;
+  position: absolute;
+  left:0px;
+  right: 0px;
+  top: 60px;
+  bottom: 0px;
+  background-color: #ddd;
+  min-width: $min-width;
+}
+
+.flex{
+  display:flex;
+  .flex-middle{
+    align-self: center;
+  }
+}
+.main-router {
+  padding:10px;
+  width: 100%;
+  overflow:auto;
+}
+
+label {
+  font-size: 24px;
+  &.centered-label {
+    font-size: 24px;
+    display: inline-block;
+  }
+  &.label-spacing {
+    padding: 19px 0px;
+  }
+}
+
+incremental-number-picker{
+        input{
+            width:4rem !important;
+        }
+    }
+.wait-container{
+  background-color: white;
+  max-width: 400px;
+  height: 400px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0 0 250px 32px rgb(11, 27, 56);
+}
+
+.input-base {
+  &:not([type="checkbox"]) {
+    background-color: #fafafa !important;
+    border-width: 2px;
+  }
+
+  color: #27638C !important;
+  border-color: #297395 !important;
+
+  &:disabled, &.disabled{
+    color: #555 !important;
+    border-color: #ccc !important;
+    background-color: #ddd !important;
+  }
+}
+
+.text-right {
+  text-align: right;
+}
+
+.wrap {
+    word-wrap: break-word;
+    word-break: break-all
+}
+
+input {
+  @extend .input-base;
+
+}
+input:disabled{
+ @extend .input-base:disabled;
+ }
+
+textarea {
+  @extend .input-base;
+  min-height: 5rem;
+}
+textarea:disabled{
+ @extend .input-base:disabled;
+}
+
+select {
+  @extend .input-base;
+}
+
+select:disabled{
+ @extend .input-base:disabled;
+}
+.card {
+  .card-header {
+    background-color: #005eb8;
+    margin: 0px 0px 10px 0px;
+    padding: 15px 19px;
+    color: white;
+    font-size: 1rem;
+  }
+  .card-toggle {
+    float: right;
+    color: white;
+  }
+  .card-block {
+    position: relative;
+  }
+}
+.row {
+  margin: 0px 0px 10px 0px;
+}
+
+.details-card {
+  background: #fafafa;
+  padding: 0;
+  margin: 0;
+  color: black;
+  border: none !important;
+  padding-bottom: 10px;
+
+  label {
+    font-size: 1rem;
+    font-weight: normal;;
+    display: inline;
+  }
+
+  &.details-list {
+    background-color: #fff;
+    margin-top: 3px;
+  }
+
+  .details-list-item {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 0.5rem;
+    display: flex;
+    cursor: pointer;
+    background-color: white;
+    &:hover {
+      background: #eee;
+    }
+
+    &.disabled {
+      background: #fff;
+      cursor: default;
+      &:hover {
+        background: #fff;
+      }
+    }
+
+    &.excluded {
+      background: rgb(240, 240, 240)  !important;
+      cursor: not-allowed;
+      &:hover {
+        background: rgb(240, 240, 240)  !important;
+      }
+    }
+
+    &.no-pointer{
+      cursor: default !important;
+    }
+
+    help-tip {
+      float: none; // overriding float:left - otherwise it looks as if the icon belong to another column
+      .help-tip-icon {
+        background: #fff;
+        border: 2px solid $blue-2;
+        color: $blue-2;
+        font-weight: bold;
+        margin-right: 12px;
+      }
+
+      .help-tip-popup {
+        background: #fff;
+        border: 1px solid $blue-2;
+        color: $blue-2;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+        font-size: 1rem;
+      }
+    }
+
+    help-tip.help-tip-alert{
+        .help-tip-icon {
+            border-color: $alertColor;
+            background-color: $alertColor;
+            color: white;
+            width: 28px;
+            height: 28px;
+            font-size: 1.5em;
+        }
+    }
+
+    &.details-list-item-header {
+      font-weight: bold;
+      background-color: $list-header;
+      border-bottom: 1px none;
+      color: $list-header-text;
+      cursor: default;
+      padding: 0;
+      margin-bottom: 5px;
+      padding-left:5px;
+      div {
+        padding-top: 6px;
+        padding-bottom: 6px;
+
+        &.with-button {
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+      }
+    }
+
+    .job-details-previous-task {
+      line-height: 1em;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+    &.details-list-item-dark{
+        background: #eee;
+        }
+    &.no-hover:hover{
+        background-color: #fff;
+    }
+    &.no-pointer{
+      cursor: default !important;
+    }
+    &.blue-content{
+      color:#005882;
+      border-bottom: 1px solid rgba(0, 88, 130, 0.15);
+    }
+
+  }
+  .bold-content{
+        font-weight:bold;
+  }
+
+  .details-list-item-col {
+      min-height: 24px;
+      align-self: center;
+   table{
+     width:100%;
+          td{
+            padding:7px 0px;
+          }
+   }
+      p {
+          margin-bottom: 0.5rem;
+      }
+      p:last-child {
+          margin-bottom: 0;
+      }
+
+      border-left: 6px solid transparent;
+
+      &.state-invalid {
+        border-color: $stateInvalidColor;
+      }
+
+      &.state-valid {
+        border-color: $stateValidColor;
+      }
+
+      &.state-not-visited {
+        border-color: $stateNotVisitedColor;
+      }
+
+      &.state-dont-care {
+        border-color: $stateDontCareColor;
+      }
+
+      &.no-pointer{
+        cursor: default !important;
+      }
+    }
+}
+
+.table-header {
+  font-weight: bold;
+  background-color: $list-header;
+  border-bottom: 1px none;
+  color: $list-header-text;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.validation-message {
+  display: block;
+}
+
+.validation-message-custom {
+  font-weight: bold;
+  font-size: 1.1rem !important;
+}
+
+/*
+  If there is a custom message, by default we see an asterisk, then the message on a new line (as validation messages are
+  display: block by default. If you want inline messages, add validation-message-inlined to the label element. The first
+  message (the asterisk) will be inline-block already, so we only style second+ siblings of the label
+*/
+.validation-message-inlined + .validation-message ~ .validation-message  {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+.validation-custom {
+  display: none;
+}
+
+.validation-required-marker {
+  margin-left:3px;
+  vertical-align: top !important;
+  font-size: 0.92rem !important;
+  position: relative;
+  top: 3px;
+  display: inline-block;
+  i {
+      font-size: 1rem !important;
+  }
+}
+
+.has-warning {
+  .help-block {
+    color: $criticalColor;
+  }
+}
+
+.unsafe-block {
+  font-size: 1rem;
+  padding: 10px;
+  background-color: $brand-warning;
+  color: $slate-1;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  display: inline-block;
+  border: 1px solid $slate-1;
+}
+
+.unsafe-message{
+  color: $brand-warning;
+  font-weight: bold;
+  position: relative;
+  top: 5px;
+}
+
+.pointer {
+	cursor: pointer
+}
+
+
+.toast-item {
+     .successIconClass:before{
+            @extend .hi;
+              content: "\e913" !important;
+    }
+    .failIconClass:before {
+            @extend .hi;
+            content: "\e900" !important;
+            font-size: 20px !important;
+    }
+    .arrowDownClass:before{
+            @extend .hi;
+            content: "\e980" !important;
+            font-size: 10px !important;
+    }
+    .arrowUpClass:before{
+            @extend .hi;
+            content: "\e918" !important;
+            font-size: 10px !important;
+    }
+}
+.swipeable{
+  touch-action: pan-y;
+}
+.relative{
+  position: relative;
+}
+.help-overlay-icon-active{
+  color:#b3e000;
+}
+.help-overlay-icon:focus{
+  color:#b3e000;
+}
+
+.card.message {
+  .details-list-item-col {
+      &.state-dont-care {
+        color: $stateDontCareColor;
+      }
+  }
+}
+
+.label {
+  display: flex;
+  padding: .2em .6em .3em;
+  color: #fff;
+  border-radius: 40px;
+  align-self: center;
+}
+
+.label-danger {
+  @extend label;
+  background-color: $gray;
+}
+.col-centered{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-container .selected-items div .dd-caret {
+    top:13px;
+    font-size: 1rem;
+    color: #005882;
+    border: 0;
+   // extended FA class to update app wide
+    &.fa-caret-down{
+      @extend .fa-chevron-down;
+    }
+    &.fa-close{
+      @extend .fa-chevron-up;
+    }
+}
+
+.action-group {
+
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  text-align: right;
+
+  button {
+    display: inline-block;
+    border-width: 2px;
+
+    &.btn-primary {
+      margin-left: 1rem;
+    }
+  }
+}
+
+.top-margin {
+  margin-top: 3.0rem;
+}
+
+.bridge-icon {
+  font-size: x-large;
+  margin-right: 2px;
+}
+
+.bridge-ok {
+  color: green;
+}
+
+.bridge-not-ok {
+  color:red;
+}
+
+.bridge-version {
+  font-size: x-small;
+}
+
+.json-viewer {
+  height: 300px;
+  overflow-y: scroll;
+}
+
+.resilient-alert {
+  color: $criticalColor;
+}
+
+.error-text {
+  color: $input-background;
+}

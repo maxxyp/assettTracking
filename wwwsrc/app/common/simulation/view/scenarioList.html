@@ -1,0 +1,7 @@
+<template>
+    <div class="card fade-in-content">
+        <div class="card-block card-header">Scenarios</div>
+        <div repeat.for="scenario of scenarios"><a route-href="route: scenarioitem; params.bind: { scenario: paramName(scenario) }">${scenario}</a></div>
+    </div>
+</template>
+

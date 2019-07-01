@@ -1,0 +1,315 @@
+.hema-button {
+  background-color: transparent !important;
+  border-radius: 18px !important;
+  padding: 2px 11px !important;
+  border-width: 1px !important;
+  border-color: $button-color !important;
+  color: $button-color !important;
+  min-width: 100px !important;
+  margin: 10px ! important;
+  padding: 4px !important;
+
+  &.active {
+    background-color: $button-color !important;
+    color: white !important;
+    &:disabled {
+      background-color: #333 !important;
+    }
+  }
+
+  &.notactive {
+    &:disabled {
+      color: #eee !important;
+      background-color: #ccc !important;
+      border-color: #ccc !important;
+    }
+  }
+}
+
+button-list {
+  margin: 0px;
+  button {
+    @extend .hema-button;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+
+    span {
+        display: inline-block;
+        padding-left: 7px !important;          
+        padding-right: 7px !important;          
+        text-transform:lowercase;
+    }
+
+    span::first-letter {
+        text-transform:uppercase;
+    }  
+  }
+}
+
+toggle {
+  label {
+    background-color: transparent !important;
+    border-radius: 40px !important;
+    border-width: 1px !important;
+    border-color: $button-color !important;
+    color: $button-color !important;
+    min-width: 100px !important;
+    margin: 10px ! important;
+    padding: 4px !important;
+    padding: 5px 40px !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+    &.active {
+    background-color: $button-color !important;
+    color: white !important;
+  }
+  }
+}
+
+.button-icon{
+    font-family: 'HemaIcons', 'BGFlame' !important;
+    padding: 2px 17px 6px 17px !important;
+
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.button-icon::before{
+    font-size:11px;
+    margin-right:10px;
+}
+.arrow-right{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-right;
+}
+.arrow-left{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-left;
+
+}
+.arrow-up{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-up;
+
+}
+.arrow-down{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-down;
+
+}
+.arrow-black-right{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-right;
+}
+.arrow-blue-right{
+    @extend .button-icon;
+    @extend .hema-icon-arrow-right;
+}
+.cross-blue{
+  @extend .button-icon;
+  @extend .hema-icon-cross;
+}
+.plus{
+    @extend .button-icon;
+    @extend .hema-icon-plus;
+}
+
+button{
+  margin:5px 10px 5px 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  min-height: 32px;
+  i{
+      vertical-align: middle;
+  }
+}
+button:focus{
+    outline: 0 !important;
+    outline-width: 0pt !important;
+    outline-style: none !important;
+
+}
+.btn{
+        box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.125)!important;
+}
+.btn_base{
+    border-radius: 40px;
+    padding: 2px 17px 3px 17px;
+    border-width: 1px;
+    min-width: 100px;
+}
+.btn-primary{
+    @extend .btn_base;
+    background-color: $green-2;
+    border-color:$green-2;
+    color:$slate-1 ;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,  .btn-primary:focus:active{
+      background-color: darken($green-2, 5);
+      border-color: darken($green-2, 5);
+ }
+  .btn-primary:focus {
+         box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #005eb8;
+ }
+.btn-secondary {
+     @extend .btn_base;
+    background-color: transparent;
+    color:#115080 !important;
+    border-color:#115080 !important;
+    &.active{
+        background-color: #115080 !important;
+        color: white !important;
+    }
+}
+.btn-secondary.disabled:hover, .btn-secondary:disabled:hover{
+   background-color: transparent; 
+}
+ .btn-secondary:active,  .btn-secondary:focus:active{
+    background-color: #115080;
+       color:white !important;
+ }
+
+.btn-tertiary {
+  @extend .btn_base;
+  background-color: transparent;
+  color:#115080 !important;
+  border-color: transparent !important;
+  &.active{
+    background-color: transparent !important;
+    color:#115080 !important;
+  }
+}
+
+btn-tertiary:before {
+  display: inline-block;
+  margin-right: 0;
+}
+
+.btn-tertiary.disabled, .btn-tertiary:disabled:hover{
+  background-color: transparent;
+}
+.btn-tertiary:hover, .btn-tertiary:focus, .btn-tertiary:active,  .btn-tertiary:focus:active{
+  text-decoration: underline;
+}
+
+.btn-tertiary:hover:before, .btn-tertiary:focus:before, .btn-tertiary:active:before,  .btn-tertiary:focus:active:before{
+  text-decoration: none;
+}
+
+ .btn-white {
+     @extend .btn_base;
+    background-color: transparent;
+    color:white;
+    border-color:white;
+}
+.btn-slate {
+  @extend .btn_base;
+  background-color: transparent;
+  color: $slate-1;
+  border-color: $slate-1;
+}
+.btn-white:hover,  .btn-white:active,  .btn-white:focus:active{
+    background-color: rgba(0, 0, 0, 0.15);
+    color:white;
+ }
+.btn-white:focus{
+    background-color: rgba(0, 0, 0, 0.15);
+     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #005eb8;
+ }
+ .btn-fullscreen{
+    border-radius: 0px;
+    padding: 6px !important;
+    border-width: 1px;
+    min-width: 31px;
+    position: absolute;
+    top: -2px;
+    right: -6px;
+ }
+
+.btn-timepicker-minus{
+    @extend .button-icon;
+    @extend .hema-icon-circle-minus;
+    background-image: none !important;
+}
+.btn-timepicker-minus::before{
+    font-size:30px;
+    margin: 5px;
+}
+.btn-timepicker-plus{
+    @extend .button-icon;
+    @extend .hema-icon-circle-plus;
+    background-image: none !important;
+    padding: 0px 10px;
+}
+.btn-timepicker-plus::before{
+    font-size:30px;
+    margin: 5px;
+}
+time-picker{
+    a{
+        color:black
+    }
+}
+time-picker2{
+    a{
+        color:black
+    }
+}
+
+.btn-transparent{
+    background-color: transparent;
+    border-style: none;
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+.btn-transparent:focus{
+    border-style: solid;
+}
+button-list{
+    button:focus{
+    outline: none !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px #005eb8 !important;
+    }
+}
+
+date-picker {
+    button {
+        @extend .hema-button;
+        margin-top: 0px !important;
+        margin-left: 5px !important;
+
+        .fa {
+            font-size: 1.5rem !important;
+        }
+
+        &.disabled {
+          opacity: 1 !important;
+          color: #eee !important;
+          background-color: #ccc !important;
+          border-color: #ccc !important;
+        }
+    }
+}
+
+.btn-toggle {
+  color: #9A9292;
+  background-color: #FFFFFF;
+  border-color: #4B8CCC;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
+
+  &.active {
+    color: #fff;
+    background-color: #005eb8;
+    border-color: #003f7b;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  }
+}
+
+.btn-not-valid {
+  color: #D0011B !important; 
+  border-color: #D0011B !important; 
+  border-width: 2px;
+}

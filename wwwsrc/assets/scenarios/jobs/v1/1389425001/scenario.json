@@ -1,0 +1,216 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-13T14:39:14Z",
+      "modifiedTimestamp": "2018-08-13T15:20:04Z"
+    },
+    "data": {
+      "job": {
+        "id": "1389425001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022201831",
+          "lastName": "Mr Scenario Two Madhavi",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          }
+        },
+        "premises": {
+          "id": "L271314",
+          "address": {
+            "houseNumber": "43",
+            "line": [
+              "Chanctonbury Way"
+            ],
+            "county": "London",
+            "postCodeIn": "7AA",
+            "postCodeOut": "N12"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201831",
+            "initials": " ",
+            "lastName": "Mr Scenario Two Madhavi"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          }
+        },
+        "visit": {
+          "id": "WMW00057420",
+          "date": "2018-08-13T00:00:00Z",
+          "earliestStartTime": "2018-08-13T08:00:00Z",
+          "latestStartTime": "2018-08-13T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1389425001001",
+            "applianceId": "202224174",
+            "jobType": "HU",
+            "applianceType": "AGA",
+            "chargeType": "ALP3FI1",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 30,
+                "sequence": 1,
+                "report": "62CODE Test Activity report",
+                "workDuration": 30,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "AP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "FP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1389425001002",
+            "applianceId": "202224173",
+            "jobType": "GU",
+            "applianceType": "CHB",
+            "chargeType": "ALF2FIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "IP",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 30,
+                "sequence": 1,
+                "report": "54CODE Test Act Rep",
+                "workDuration": 30,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "AP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "V -Carbon Brush Pair (L) TOTE",
+                    "charge": 769,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "E07067"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "FP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1389425001003",
+            "applianceId": "202224174",
+            "jobType": "SD",
+            "applianceType": "AGA",
+            "chargeType": "SLO3FI1",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 50,
+                "sequence": 1,
+                "report": "CODE4 Test Report",
+                "workDuration": 50,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Pcb-Ignition",
+                    "charge": 9694,
+                    "quantity": 2,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E01561"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1389425001004",
+            "applianceId": "202224173",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS2FIS",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "C",
+                "engineerName": "EMPLOYEE 1",
+                "chargeableTime": 50,
+                "sequence": 1,
+                "report": "CODE0 Test Act Report",
+                "workDuration": 50
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "job",
+			"createdTimestamp": "2018-02-01T08:00:00Z",
+			"modifiedTimestamp": "2018-02-01T08:00:00Z"
+		},
+		"data": {
+			"job": {
+				"id": "2043062072",
+				"customer": {
+					"id": "100000255",
+					"initials": "D",
+					"title": "Miss",
+					"lastName": "Smith",
+					"homePhone": "7584459862",
+					"workPhone": "1448563847",
+					"address": {
+						"houseNumber": "34",
+						"flatNumber": "C",
+						"line": ["High Rise House"],
+						"town": "Uddingstone",
+						"postCodeIn": "8BB",
+						"postCodeOut": "G65",
+						"county": "Glasgow"
+					}
+				},
+				"premises": {
+					"id": "8391121",
+					"address": {
+						"houseNumber": "34",
+						"flatNumber": "C",
+						"line": ["High Rise House"],
+						"town": "Uddingstone",
+						"postCodeIn": "8BB",
+						"postCodeOut": "G65",
+						"county": "Glasgow"
+					},
+					"contact": {
+						"id": "100000255",
+						"initials": "D",
+						"title": "Miss",
+						"lastName": "Smith",
+						"homePhone": "7584459862",
+						"workPhone": "1448563847"
+
+					},
+                    "specialAccessInstructions": "Gate Passcode 0045",
+					"date": "2018-02-14T8:00:00Z",
+					"status": "D",
+					"earliestStartTime": "2018-01-01T8:00:00Z",
+					"latestStartTime": "2018-01-01T12:00:00Z"
+				},
+				"tasks": [{
+					"id": "2043062072001",
+					"applianceId": "55063778",
+					"jobType": "AS",
+					"applianceType": "CHB",
+					"chargeType": "NCH3ST",
+					"status": "D",
+					"skill": "GS",
+					"sequence": 1
+				}]
+			}
+		}
+	}
+}

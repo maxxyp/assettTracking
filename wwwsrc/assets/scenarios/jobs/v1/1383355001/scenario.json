@@ -1,0 +1,124 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "1307517002",
+        "customer": {
+          "id": "022208159",
+          "lastName": "Mr Charlie Ramsey",
+          "address": {
+            "houseNumber": "63",
+            "line": [
+              "Lothair Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L276045",
+          "address": {
+            "houseNumber": "63",
+            "line": [
+              "Lothair Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "7QE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022208159",
+            "initials": " ",
+            "lastName": "Mr Charlie Ramsey",
+            "homePhone": "07262 762267"
+          },
+          "safetyDetail": {
+            "lastElectricVisitDate": "2016-10-18T00:00:00Z"
+          },
+          "risks": [],
+          "unsafeDetail": {
+            "report": "INTERNAL WIRING TESTING",
+            "conditionAsLeft": "AR",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "C",
+            "ownedByCustomer": true,
+            "signatureObtained": false,
+            "letterLeft": false,
+            "ownersNameAndDetails": "**STAINES***",
+            "reasons": [
+              "SYSTP",
+              "ELSAF",
+              "ESELI"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00151142",
+          "date": "2016-10-18T00:00:00Z",
+          "earliestStartTime": "2016-10-18T08:00:00Z",
+          "latestStartTime": "2016-10-18T18:00:00Z",
+          "specialInstructions": "07459148851"
+        },
+        "tasks": [
+          {
+            "id": "1307517002001",
+            "applianceId": "202230182",
+            "jobType": "XR",
+            "applianceType": "BBF",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "EI",
+            "sequence": 2,
+            "specialRequirement": "",
+            "supportingText": "",
+            "activities": [
+              {
+                "date": "2016-10-18T00:00:00Z",
+                "status": "IP",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1307517002002",
+            "applianceId": "202230182",
+            "jobType": "EV",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "EI",
+            "sequence": 2,
+            "specialRequirement": "",
+            "supportingText": "",
+            "activities": [
+              {
+                "date": "2016-10-18T00:00:00Z",
+                "status": "IP",
+                "chargeableTime": 0,
+                "sequence": 1,
+                "workDuration": 0
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-08T11:28:57Z",
+      "modifiedTimestamp": "2017-09-11T11:48:18Z"
+    },
+    "data": {
+      "job": {
+        "id": "1301387001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022212378",
+          "initials": "",
+          "lastName": "Dr Ameen Bhai",
+          "address": {
+            "houseNumber": "12",
+            "line": [
+              "Coulson Road"
+            ],
+            "county": "Lincoln",
+            "postCodeIn": "7AT",
+            "postCodeOut": "LN6"
+          }
+        },
+        "premises": {
+          "id": "L279868",
+          "address": {
+            "houseNumber": "4",
+            "line": [
+              "Lincoln Road"
+            ],
+            "county": "Lincoln",
+            "postCodeIn": "9HE",
+            "postCodeOut": "LN5"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022212378",
+            "initials": "",
+            "lastName": "Dr Ameen Bhai"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-08"
+          }
+        },
+        "visit": {
+          "id": "WMW00217352",
+          "date": "2017-09-11T00:00:00Z",
+          "earliestStartTime": "2017-09-11T08:00:00Z",
+          "latestStartTime": "2017-09-11T18:00:00Z",
+          "specialInstructions": "Order Parts"
+        },
+        "tasks": [
+          {
+            "id": "1301387001001",
+            "applianceId": "202236577",
+            "jobType": "IB",
+            "applianceType": "CIR",
+            "chargeType": "NCH2API",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-09-08",
+                "status": "C",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "62CODEReport tested",
+                "workDuration": 5
+              }
+            ]
+          },
+          {
+            "id": "1301387001002",
+            "applianceId": "202236577",
+            "jobType": "XR",
+            "applianceType": "CIR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-09-08",
+                "status": "IP",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "62CODEWorking area",
+                "workDuration": 5,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-08",
+                    "status": "AP",
+                    "description": "Timer Mechanical EMT 2 TOTE",
+                    "charge": 2838.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "555123"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-08",
+                    "status": "FP",
+                    "description": "Timer Mechanical EMT 2 TOTE",
+                    "charge": 2838.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "555123"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

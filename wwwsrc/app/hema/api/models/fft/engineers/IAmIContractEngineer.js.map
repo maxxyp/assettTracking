@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/IAmIContractEngineer.ts"],"names":[],"mappings":"","file":"IAmIContractEngineer.js","sourcesContent":["\nexport interface IAmIContractEngineer {\n    workdayPayrollId: number;\n    engineerId: string;\n    contractorInd: string;\n}\n"],"sourceRoot":"../../../../.."}

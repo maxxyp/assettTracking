@@ -1,0 +1,113 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="fade-in-content">
+        <div class="card-block" if.bind="!hasData">
+            ${labels.noData}
+        </div>
+        <div class="card details-card" if.bind="hasData">
+            <div class="card-block">
+                <div class="row" if.bind="lastVisitDate">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.date}</label>
+                                </span>
+                        <span class="col-xs-8">
+                                ${lastVisitDate | dateFormat}
+                            </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="safetyNoticeNotLeftReason">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.safetyNoticeNotLeftReason}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${safetyNoticeNotLeftReason}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="unsafeSituation">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.unsafeSituation}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${unsafeSituation}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="report">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.report}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${report}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="conditionAsLeft">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.conditionAsLeft}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${conditionAsLeft}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="cappedTurnedOff">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.cappedTurnedOff}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${cappedTurnedOff}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="labelAttached">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.labelAttached}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${labelAttached}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="ownedByCustomer">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.ownedByCustomer}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${ownedByCustomer}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="letterLeft">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.letterLeft}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${letterLeft}</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="row" if.bind="signatureObtained">
+                    <div class="form-group">
+                            <span class="col-xs-4">
+                                    <label>${labels.signatureObtained}</label>
+                                </span>
+                        <span class="col-xs-8">
+                            <span>${signatureObtained}</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </view-state>
+</template>

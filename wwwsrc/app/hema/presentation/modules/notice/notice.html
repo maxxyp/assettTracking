@@ -1,0 +1,31 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>Risks</label>
+        </ai-dialog-header>
+        <ai-dialog-body>
+            <div class="signs hazards" if.bind="hazard">
+                <p><h1>
+                    ${getParameterisedLabel("hazardTitle", [hazardTitle])}
+                </h1></p>
+                <p class="lead wrap">
+                    ${hazard.date ? getParameterisedLabel("hazardBody", [getYear(hazard.date), hazardTitle, hazard.report]) : getParameterisedLabel("hazardNoDateBody", [hazardTitle, hazard.report])}
+                </p>
+                <p>${labels.hazardAsbestosFooter}</p>
+            </div>
+            <hr if.bind="hazard && risks.length > 0">
+            <div class="signs risks" if.bind="risks.length > 0">
+                <p><h1>${labels.riskTitle}</h1></p>
+                <p class="lead wrap" repeat.for="risk of risks">
+                    ${getParameterisedLabel("riskBody", [getYear(risk.date), risk.report])}
+                </p>
+                <p>
+                    ${labels.riskFooter}
+                </p>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok()">OK</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

@@ -1,0 +1,156 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-07-17T10:49:02Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1361767001001",
+          "jobType": "LJ",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-07-14",
+              "status": "NA",
+              "engineerName": "NEIL",
+              "report": "kkkkklllllkkkk"
+            }
+          ]
+        },
+        {
+          "id": "1361767001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-07-14",
+              "status": "NA",
+              "engineerName": "NEIL"
+            }
+          ]
+        },
+        {
+          "id": "1381767001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1381767001002",
+          "jobType": "LD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1352767001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1352767001002",
+          "jobType": "LD",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1338667001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-07-13",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "62CODEtetrettttt"
+            }
+          ]
+        },
+        {
+          "id": "1309667001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "EXS3FIS",
+          "activities": [
+            {
+              "date": "2017-07-13",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "CODE7Activity report give"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202233385",
+          "serialId": "1234568",
+          "gcCode": "4130306",
+          "category": "X",
+          "contractType": "3FIS",
+          "contractExpiryDate": "2018-07-12",
+          "applianceType": "CHB",
+          "description": "AWB 45 F - PYROCRAFT LTD",
+          "flueType": "R",
+          "boilerSize": 12,
+          "cylinderType": 5,
+          "energyControl": "NC",
+          "locationDescription": "Appliance location",
+          "condition": 3,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2010,
+          "systemType": 1,
+          "safety": {
+            "applianceSafe": false,
+            "flueSafe": false,
+            "ventilationSafe": false,
+            "installationTightnessTestSafe": false,
+            "actionCode": "C",
+            "noticeStatus": "R",
+            "noticeType": "ID",
+            "report": "Unsafe appliance"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-13"
+          }
+        }
+      ]
+    }
+  }
+}

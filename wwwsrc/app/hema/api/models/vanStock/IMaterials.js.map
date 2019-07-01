@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/vanStock/IMaterials.ts"],"names":[],"mappings":"","file":"IMaterials.js","sourcesContent":["import { IMaterial } from \"./IMaterial\";\nexport interface IMaterials {\n    materials: IMaterial[];\n}\n"],"sourceRoot":"../../../.."}

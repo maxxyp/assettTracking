@@ -1,0 +1,17 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+
+        <compose view-model="./jobPartsCollections" model.bind="{isDone: true}"></compose>
+
+        <compose
+            repeat.for="job of jobs"
+            view-model="hema/presentation/modules/jobsList/jobItem"
+            model.bind="job"
+            class="job"></compose>
+
+        <div class="card row" if.bind="!jobs.length">
+            <div class="card-block">${labels.noData}</div>
+        </div>
+
+    </view-state>
+</template>

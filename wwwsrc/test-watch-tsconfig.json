@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig",
+  "compilerOptions": {
+    "noImplicitAny": false
+  },
+  "include": [
+      "app/**/*.ts",
+      "tests/unit/**/*.ts"
+  ]
+}

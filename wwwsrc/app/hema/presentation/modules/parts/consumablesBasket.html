@@ -1,0 +1,157 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text="Loading consumables..." class="fade-in-content">
+        <form form-manager>
+            <div class="card-block">
+                <div class="fade-in-content" show.bind="!showManual">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.partSearch}</label>
+                            </div>
+                            <div class="col-xl-6">
+                                <drop-down values.bind="consumablePartsList" filter-count.bind="filteredItems"
+                                    value.bind="selectedConsumable" limit="200" value-item.bind="selectedConsumableItem" value-property.bind="catalog.CONSUMABLE_TYPE_ID"
+                                    text-property.bind="catalog.CONSUMABLE_TYPE_DESCRIPTION" format-text-value="(${catalog.CONSUMABLE_TYPE_DESCRIPTION}) : (${catalog.CONSUMABLE_TYPE_ID})"
+                                    search-properties.bind="[catalog.CONSUMABLE_TYPE_ID, catalog.CONSUMABLE_TYPE_DESCRIPTION]" ref="dropDownElement">
+                                    <template replace-part="option-template">
+                                        <div>
+                                            ${item[catalog.CONSUMABLE_TYPE_DESCRIPTION]} : ${item[catalog.CONSUMABLE_TYPE_ID]}
+                                        </div>
+                                    </template>
+                                </drop-down>
+                            </div>
+                            <div class="col-xs-2 fade-in-content" if.bind="filteredItems === 0">
+                                <button class="btn btn-secondary" click.trigger="showManualAdd()">${labels.addManual}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row fade-in-content" show.bind="!showManual">
+                    <div class="row " show.bind="selectedConsumable">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.quantity}</label>
+                            </div>
+                            <div class="col-xs-3 col-xl-2">
+                                <incremental-number-picker value.bind="selectedConsumableQuantity" increment-step="1" hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                    each-side.bind="true" validate-index="$index" max-value.bind="99" min-value.bind="1">
+                                </incremental-number-picker>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" show.bind="selectedConsumable">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.Quantity}</label>
+                            </div>
+                            <div class="col-xs-4 col-xl-3">
+                                <button class="btn btn-primary plus" click.trigger="addConsumable()">${labels.addConsumable}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div if.bind="showManual" class="fade-in-content">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.stockReference}</label>
+                            </div>
+                            <div class="col-xs-2">
+                                <text-box value.bind="manualConsumablePartRef" max-length.bind="validationRules['manualConsumablePartRef'].maxLength"></text-box>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.description}</label>
+                            </div>
+                            <div class="col-xs-9 col-xl-6">
+                                <text-box value.bind="manualConsumablePartDescription"></text-box>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-3 col-xl-2">
+                                <label>${labels.quantity}</label>
+                            </div>
+                            <div class="col-xs-9 col-xl-6">
+                                <incremental-number-picker value.bind="manualConsumablePartQuantity" increment-step="1" hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                    each-side.bind="true" validate-index="$index" max-value.bind="99" min-value.bind="1">
+                                </incremental-number-picker>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <button class="btn btn-primary arrow-blue-right pull-right" click.trigger="addConsumable()"
+                                    disabled.bind="!isConsumableValid">
+                                                ${labels.addConsumable}
+                                                </button>
+                                <button class="btn btn-secondary arrow-blue-right pull-right" click.trigger="hideManualAdd()">
+                                            ${labels.cancel}
+                                        </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="card details-card details-list">
+                <div class="card-header">
+                    ${labels.order}
+                </div>
+                <div class="card-block hook-list-data-container" show.bind="consumablesBasket.partsInBasket.length > 0 ">
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-2">${labels.referenceId}</div>
+                        <div class="col-xs-3">${labels.description}</div>
+                        <div class="col-xs-2 col-centered">${labels.quantity}</div>
+                        <div class="col-xs-3 col-centered">Add To Favourite</div>
+
+                    </div>
+                    <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container" repeat.for="item of consumablesBasket.partsInBasket" show.bind="!item.sent">
+                        <div class="col-xs-2 details-list-item-col ">
+                            ${item.referenceId}
+                        </div>
+                        <div class="col-xs-3  details-list-item-col">
+                            ${item.description}
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <incremental-number-picker class="col-centered" value.bind="item.quantity" increment-step="1" subtract.trigger="saveAndSendBadgeEvent()"
+                                add.trigger="saveAndSendBadgeEvent()" updated.trigger="saveAndSendBadgeEvent()" hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                                each-side.bind="true" validate-index="$index" max-value.bind="99" min-value.bind="1" blur.trigger="updateBasket()">
+                            </incremental-number-picker>
+                        </div>
+                        <div class="col-xs-3 details-list-item-col col-centered">
+                            <checkbox is-checked.bind="item.favourite" click.trigger="updateBasket()"></checkbox>
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <button class="btn btn-secondary cross-blue pull-right no-margin" click.trigger="removeConsumable(item.referenceId)">
+                                            ${labels.delete}
+                             </button>
+                        </div>
+                    </div>
+                    <div class="details-list-item no-pointer no-hover" show.bind="!noRecords">
+                        <div class="col-xs-12 details-list-item-col ">
+                            <button class="btn btn-primary no-margin pull-right hook-place-order" click.trigger="placeConsumablesOrder()">
+                                            ${labels.placeOrder}
+                             </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details-list-item disabled" show.bind="noRecords">
+                    <div class="col-xs-12 details-list-item-col">
+                        ${labels.noData}
+                    </div>
+                </div>
+            </div>
+        </form>
+    </view-state>
+</template>

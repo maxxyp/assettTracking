@@ -1,0 +1,26 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "settings",
+      "createdTimestamp": "2017-11-18T23:40:56Z",
+      "modifiedTimestamp": "2018-01-29T02:01:08Z",
+      "sequence": 37,
+      "currentMajorVersion": 83,
+      "currentMinorVersion": 1
+    },
+    "data": {
+      "setting": [
+        {
+          "key": "workListPostRequestWorkPollingIntervals",
+          "value": [100, 100, 100]
+        },
+        {
+          "key": "anotherSetting",
+          "value": "some-value"
+        }       
+      ]
+    }
+  }
+}

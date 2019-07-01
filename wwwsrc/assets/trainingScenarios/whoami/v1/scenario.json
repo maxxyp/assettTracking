@@ -1,0 +1,16 @@
+{
+  "status" : 200,
+  "data" : {
+    "userid": "millarm",
+    "attributes": [
+      {
+        "employeeid": "0000001"
+      }
+    ],
+    "roles": [
+      "d-Field-Engineer", 
+      "d-Field-Apprentice", 
+      "d-Field-Admin"
+    ]
+  }
+}

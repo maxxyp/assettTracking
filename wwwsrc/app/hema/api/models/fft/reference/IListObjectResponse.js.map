@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/reference/IListObjectResponse.ts"],"names":[],"mappings":"","file":"IListObjectResponse.js","sourcesContent":["import { IListObject } from \"./IListObject\";\n\nexport interface IListObjectResponse {\n    data: {\n        listObjects: IListObject[]\n    };\n}\n"],"sourceRoot":"../../../../.."}

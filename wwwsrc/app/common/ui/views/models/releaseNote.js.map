@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/views/models/releaseNote.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAKA,CAAC;QAAD,kBAAC;IAAD,CALA,AAKC,IAAA;IALY,kCAAW","file":"releaseNote.js","sourcesContent":["export class ReleaseNote {\n    public version: string;\n    public date: string;\n    public summary: string;\n    public details: string;\n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,7 @@
+<template>
+    <input type.bind="type" maxlength.bind="maxLength" value.bind="value"
+           class="form-control ${classes}" disabled.bind="disabled" readonly.bind="readonly || disabled"
+           hide-keyboard-on-enter.bind="hideKeyboardOnEnter" cancel-default-submit.bind="cancelDefaultSubmit"
+           placeholder.bind="disabled ? '' : placeholder" blur.trigger="blur()"
+           disable-form-manager="true" />
+</template>

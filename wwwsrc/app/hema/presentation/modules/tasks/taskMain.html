@@ -1,0 +1,82 @@
+<template>
+    <require from="../../../../common/ui/attributes/swipe"></require>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <form form-manager>
+            <div swipe="callback.bind: swipeFunction; scope.bind: $this;" class="swipeable" ref="card">
+                <div class="job-details-header" id="job-details-header" fix-header="is-alt.bind:isFullScreen;">
+                    <div>
+                        <div class="form-group">
+                            <span class="title">${labels.taskId}: ${taskId}</span>
+                            <span class="title" if.bind="actionType">
+                                (<task-action catalog.one-way="catalog" code.one-way="actionType"></task-action>)
+                            </span>
+                            <span class="title">
+                                <a class="btn btn-secondary ${canEdit && !isJobNoAccessed && isDoTodayTask ? '' : 'disabled'} ${!applianceId ? 'btn-not-valid' : ''}"
+                                    click.trigger="changeApplianceType($event)">
+                                    <catalog-lookup show.bind="applianceType && applianceId" catalog="${catalog.OBJECT_TYPE}"
+                                                    key-field="${catalog.OBJECT_TYPE_ID}"
+                                                    description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                                    value.bind="applianceType"></catalog-lookup>
+                                    <span show.bind="!applianceId">${labels.selectAnAppliance}</span>
+                                </a>
+                            </span>
+                            <prev-next-buttons values.bind="taskIds" param-id="taskId" />
+
+                            <div class="sub-title">
+                            <task-job catalog.one-way="catalog" code.one-way="actionType"></task-job> -
+                            <task-charge catalog.one-way="catalog" code.one-way="chargeType"></task-charge>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="job-details-header">
+                    <div>
+                        <div class="form-group">
+                            <span class="title">${labels.taskId}: ${taskId}</span>
+                            <span class="title" if.bind="actionType">
+                                (<task-action catalog.one-way="catalog" code.one-way="actionType"></task-action>)
+                            </span>
+                            <span class="title">
+                                <a class="btn btn-secondary ${canEdit && !isJobNoAccessed && isDoTodayTask ? '' : 'disabled'} ${!applianceId ? 'btn-not-valid' : ''}"
+                                   click.trigger="changeApplianceType($event)">
+                                    <catalog-lookup show.bind="applianceType && applianceId" catalog="${catalog.OBJECT_TYPE}"
+                                                    key-field="${catalog.OBJECT_TYPE_ID}"
+                                                    description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                                    value.bind="applianceType"></catalog-lookup>
+                                    <span show.bind="!applianceId">${labels.selectAnAppliance}</span>
+                                </a>
+                            </span>
+                            <prev-next-buttons values.bind="taskIds" param-id="taskId" />
+
+                            <div class="sub-title">
+                            <task-job catalog.one-way="catalog" code.one-way="actionType"></task-job> -
+                            <task-charge catalog.one-way="catalog" code.one-way="chargeType"></task-charge>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div  id="tasks-child-header"class="child-tabs" fix-header="is-alt.bind:isFullScreen;">
+                    <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}"
+                          click.trigger="navigateToRoute(row.config.name)"
+                          show.bind="(!row.settings.hideIfNotDoToday || (row.settings.hideIfNotDoToday && isDoTodayTask))">
+                        <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>
+                        ${row.title}
+                    </span>
+                </div>
+                <div class="child-tabs">
+                    <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}"
+                          click.trigger="navigateToRoute(row.config.name)"
+                          show.bind="(!row.settings.hideIfNotDoToday || (row.settings.hideIfNotDoToday && isDoTodayTask))">
+                        <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>
+                        ${row.title}
+                    </span>
+                </div>
+                <div class="details-card">
+                    <router-view></router-view>
+                </div>
+            </div>
+        </form>
+    </view-state>
+</template>

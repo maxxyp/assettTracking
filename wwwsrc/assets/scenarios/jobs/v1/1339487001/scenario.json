@@ -1,0 +1,188 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-14T16:10:39Z",
+      "modifiedTimestamp": "2017-09-15T12:32:53Z"
+    },
+    "data": {
+      "job": {
+        "id": "1339487001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022208197",
+          "initials": "",
+          "lastName": "Mr Jim Morison",
+          "address": {
+            "premisesName": "Roberton",
+            "houseNumber": "Hillen",
+            "line": [
+              "D Fa ."
+            ],
+            "county": "Biggar",
+            "postCodeIn": "6RR",
+            "postCodeOut": "ML12"
+          }
+        },
+        "premises": {
+          "id": "L276081",
+          "address": {
+            "premisesName": "1 Yarrow Cottage,Roberton",
+            "houseNumber": "0",
+            "line": [
+              "."
+            ],
+            "county": "Biggar",
+            "postCodeIn": "6RR",
+            "postCodeOut": "ML12"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022208198",
+            "initials": "",
+            "lastName": "Mrs Meena Kumari"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00219362",
+          "date": "2017-09-15T00:00:00Z",
+          "earliestStartTime": "2017-09-15T18:00:00Z",
+          "latestStartTime": "2017-09-15T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1339487001001",
+            "applianceId": "202230229",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 3,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2017-09-14",
+                "status": "IP",
+                "engineerName": "NAVIN",
+                "chargeableTime": 17,
+                "sequence": 1,
+                "report": "CODE3Tastes gdyxgc",
+                "workDuration": 25,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782.0,
+                    "quantity": 5,
+                    "quantityCharged": 5,
+                    "stockReferenceId": "E66527"
+                  }
+                ]
+              },
+              {
+                "date": "2017-09-14",
+                "status": "IP",
+                "engineerName": "NAVIN",
+                "chargeableTime": 21,
+                "sequence": 2,
+                "report": "CODE0Tesretttgg",
+                "workDuration": 25,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782.0,
+                    "quantity": 5,
+                    "quantityCharged": 5,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Wax Sensor",
+                    "charge": 2672.0,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "108014"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "AP",
+                    "description": "Tested ted",
+                    "charge": 1500.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "412578"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 3,
+                "parts": [
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Wax Sensor",
+                    "charge": 2672.0,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "108014"
+                  },
+                  {
+                    "orderDate": "2017-09-14",
+                    "status": "FP",
+                    "description": "Tested ted",
+                    "charge": 1500.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "412578"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1339487001002",
+            "applianceId": "202230229",
+            "jobType": "SD",
+            "applianceType": "CHB",
+            "chargeType": "SLO3SIS",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2017-09-14",
+                "status": "C",
+                "engineerName": "NAVIN",
+                "chargeableTime": 15,
+                "sequence": 1,
+                "report": "71CODEWorking fine",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Grennn trsr",
+                    "charge": 1400.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "999999"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

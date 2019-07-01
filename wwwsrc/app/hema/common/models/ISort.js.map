@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/common/models/ISort.ts"],"names":[],"mappings":"","file":"ISort.js","sourcesContent":["export interface ISort {\n    sortBy: string;\n    sortOrderAsc: boolean;\n}\n"],"sourceRoot":"../../.."}

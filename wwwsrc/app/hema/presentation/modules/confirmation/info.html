@@ -1,0 +1,13 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${title}</label>
+        </ai-dialog-header>
+        <ai-dialog-body>
+            <div innerhtml.bind="message"></div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok()">${okLabel}</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

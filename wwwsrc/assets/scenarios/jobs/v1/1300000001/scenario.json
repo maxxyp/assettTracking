@@ -1,0 +1,7 @@
+{
+    "status": 200,
+    "data": {
+        "status": "404",
+        "error": "Artificial 404 error"
+    }
+}

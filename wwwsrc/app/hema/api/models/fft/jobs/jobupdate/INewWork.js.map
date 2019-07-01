@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/INewWork.ts"],"names":[],"mappings":"","file":"INewWork.js","sourcesContent":["export interface INewWork {\n    jobType: string;\n    applianceType: string;\n    chargeType: string;\n    jobStatusCategory: string;\n    fieldActivityNumber: string;\n    newTaskId: string;\n}\n"],"sourceRoot":"../../../../../.."}

@@ -1,0 +1,79 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-09-27T15:32:25Z"
+    },
+    "data": {
+      "job": {
+        "id": "1376097001",
+        "customer": {
+          "id": "022210148",
+          "lastName": "Mr Scenario Eight Create Appliance",
+          "address": {
+            "houseNumber": "63",
+            "line": [
+              "Upperton Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          }
+        },
+        "premises": {
+          "id": "L277854",
+          "address": {
+            "houseNumber": "63",
+            "line": [
+              "Upperton Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022210148",
+            "initials": " ",
+            "lastName": "Mr Scenario Eight Create Appliance"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-09-25"
+          },
+          "risks": [
+            {
+              "reason": "R6",
+              "report": "elec danger zone",
+              "date": "2017-09-25"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00226082",
+          "date": "2017-09-27T00:00:00Z",
+          "earliestStartTime": "2017-09-27T12:00:00Z",
+          "latestStartTime": "2017-09-27T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1376097001001",
+            "applianceId": "202232760",
+            "jobType": "XL",
+            "applianceType": "CHB",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

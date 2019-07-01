@@ -1,0 +1,42 @@
+{
+  "status" : 200,
+  "data" : {
+  "attributes": [
+    {
+      "attributeType": "GCNumber",
+      "attributeValue": "51-980-43"
+    },
+    {
+      "attributeType": "appType",
+      "attributeValue": "Gas Water Heating"
+    },
+    {
+      "attributeType": "appSubType",
+      "attributeValue": "Instantaneous Water Heaters (Sink and Singlepoint)"
+    },
+    {
+      "attributeType": "appFuel",
+      "attributeValue": "Gas Appliances"
+    },
+    {
+      "attributeType": "GCVariant",
+      "attributeValue": "A"
+    },
+    {
+      "attributeType": "appVersionStatus",
+      "attributeValue": "Issued"
+    },
+    {
+      "attributeType": "includeInSIS",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "sourceID",
+      "attributeValue": "19957"
+    },
+    {
+      "attributeType": "optidescription",
+      "attributeValue": "celtstarc"
+    }
+  ]
+} }

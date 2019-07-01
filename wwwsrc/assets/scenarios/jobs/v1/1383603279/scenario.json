@@ -1,0 +1,157 @@
+{
+    "status": 200,
+    "data": {
+        "data": {
+            "job": {
+                "id": "1383603279",
+                "engineerId": "0007502",
+                "customer": {
+                    "id": "020165332",
+                    "initials": "",
+                    "lastName": "Mr Jeff Mainstone",
+                    "address": {
+                        "houseNumber": "64",
+                        "line": ["New Queen Street"],
+                        "county": "Bristol",
+                        "postCodeIn": "1DF",
+                        "postCodeOut": "BS15"
+                    }
+                },
+                "premises": {
+                    "id": "1529915",
+                    "address": {
+                        "houseNumber": "77",
+                        "line": ["Charlton Road"],
+                        "town": "Keynsham",
+                        "county": "Bristol",
+                        "postCodeIn": "2JN",
+                        "postCodeOut": "BS31"
+                    },
+                    "previousVisitCount": 0,
+                    "contact": {
+                        "id": "024856790",
+                        "initials": "",
+                        "lastName": "The Tenant",
+                        "workPhone": "07766912808"
+                    },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2019-01-02"
+                    },
+                    "unsafeDetail": {
+                        "report": "gas escape at meter inlet.",
+                        "conditionAsLeft": "ID",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": false,
+                        "signatureObtained": true,
+                        "letterLeft": true,
+                        "reasons": ["PDL8", "GMET"]
+                    }
+                },
+                "visit": {
+                    "id": "WMW01643633",
+                    "date": "2019-01-03T00:00:00Z",
+                    "earliestStartTime": "2019-01-03T08:00:00Z",
+                    "latestStartTime": "2019-01-03T10:00:00Z",
+                    "specialInstructions": "1st call"
+                },
+                "tasks": [{
+                    "id": "1383603279001",
+                    "applianceId": "244658727",
+                    "jobType": "AS",
+                    "applianceType": "INS",
+                    "chargeType": "NCHLI",
+                    "status": "C",
+                    "skill": "LS",
+                    "sequence": 1,
+                    "activities": [{
+                        "date": "2019-01-02",
+                        "status": "C",
+                        "engineerName": "GLEN JENNINGS",
+                        "chargeableTime": 38,
+                        "sequence": 1,
+                        "report": "CODE0 landlords check. gas escape at meter inlet. passed to w & w",
+                        "workDuration": 38
+                    }]
+                }, {
+                    "id": "1383603279002",
+                    "applianceId": "591767",
+                    "jobType": "AS",
+                    "applianceType": "CHB",
+                    "chargeType": "NCHCNI1",
+                    "status": "C",
+                    "skill": "GS",
+                    "sequence": 1,
+                    "activities": [{
+                        "date": "2019-01-02",
+                        "status": "C",
+                        "engineerName": "GLEN JENNINGS",
+                        "chargeableTime": 66,
+                        "sequence": 1,
+                        "report": "CODE0 Asv boiler. door seal worn",
+                        "workDuration": 66
+                    }]
+                }, {
+                    "id": "1383603279003",
+                    "applianceId": "591767",
+                    "jobType": "IB",
+                    "applianceType": "CHB",
+                    "chargeType": "NCHCNI1",
+                    "status": "D",
+                    "skill": "GR",
+                    "sequence": 2,
+                    "activities": [{
+                        "date": "2019-01-02",
+                        "status": "IP",
+                        "engineerName": "GLEN JENNINGS",
+                        "chargeableTime": 47,
+                        "sequence": 1,
+                        "report": "CODE0 door foam damaged",
+                        "workDuration": 47,
+                        "parts": [{
+                            "orderDate": "2019-01-02",
+                            "status": "AP",
+                            "requisitionNumber": "SOJ00073032211",
+                            "description": "Badge",
+                            "charge": 1317,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "H28657"
+                        }, {
+                            "orderDate": "2019-01-02",
+                            "status": "AP",
+                            "requisitionNumber": "SOJ00073032211",
+                            "description": "Cover Boiler 720x440mm",
+                            "charge": 15074,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "H28656"
+                        }]
+                    }, {
+                        "status": "D",
+                        "sequence": 2,
+                        "parts": [{
+                            "orderDate": "2019-01-02",
+                            "status": "FP",
+                            "requisitionNumber": "SOJ00073032211",
+                            "description": "Badge",
+                            "charge": 1317,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "H28657"
+                        }, {
+                            "orderDate": "2019-01-02",
+                            "status": "FP",
+                            "requisitionNumber": "SOJ00073032211",
+                            "description": "Cover Boiler 720x440mm",
+                            "charge": 15074,
+                            "quantity": 1,
+                            "quantityCharged": 1,
+                            "stockReferenceId": "H28656"
+                        }]
+                    }]
+                }]
+            }
+        }
+    }
+}

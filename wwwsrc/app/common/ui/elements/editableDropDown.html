@@ -1,0 +1,22 @@
+<template>
+    <div class="dropdown-container">
+        <input type.bind="textbox"
+               value.bind="value"
+               class="form-control"
+               disabled.bind="disabled"
+               input.delegate="search()"
+               placeholder.bind="disabled ? '': placeholder"
+               blur.trigger="blurListener()"
+        />
+        <!-- do not modify id of caret, required in backend clickCheck function -->
+        <span id="editable-dropdown-caret" if.bind="!disabled"
+              class="editable-dropdown-caret dd-caret fa ${isOpen? 'fa-caret-down' : 'fa-close'}"
+              click.trigger="toggleCaret()">
+        </span>
+        <div if.bind="!disabled" class="lookup-items">
+            <div repeat.for="item of filterList" click.trigger="select(item, $index, $event)">
+                <span>${item}</span>
+            </div>
+        </div>
+    </div>
+</template>

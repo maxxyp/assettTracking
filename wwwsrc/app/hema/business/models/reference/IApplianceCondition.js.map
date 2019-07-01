@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IApplianceCondition.ts"],"names":[],"mappings":"","file":"IApplianceCondition.js","sourcesContent":["export interface IApplianceCondition {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

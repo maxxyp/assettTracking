@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ITableIndex.ts"],"names":[],"mappings":"","file":"ITableIndex.js","sourcesContent":["export interface ITableIndex {\n    type: string;\n    eTag: string;\n    lastModifiedDate: string;\n    indexes: string;\n    sourceDocument: string;\n    canItBeEmpty: boolean;\n}\n"],"sourceRoot":"../../../.."}

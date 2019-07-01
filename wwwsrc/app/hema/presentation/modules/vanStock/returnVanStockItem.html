@@ -1,0 +1,80 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>Return - ${viewModel.material.description}</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="van-stock-item-dialog-body">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Stock Reference ID</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>${viewModel.material.stockReferenceId}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Available Quantity</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <label>${viewModel.material.quantity - viewModel.material.quantityToBeReturned}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>How many are you returning?</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <number-adjuster value.bind="viewModel.quantityToReturn"
+                                         max-value.bind="availableReturnQuantity"
+                                         min-value.bind="minReturnQuantity"
+                                         show-missing-item-label.bind="false"
+                                         show-max.bind="true">
+                        </number-adjuster>
+                        <span
+                            class="label label-warning"
+                            style="display:inline"
+                            if.bind="viewModel.material.quantityOutboundReservation">
+                            Note:
+                            ${viewModel.material.quantityOutboundReservation}
+                            part(s) are currently reserved.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-6">
+                        <label>Return Reason</label>
+                    </div>
+                    <div class="col-xs-6">
+                        <drop-down
+                            value.bind="viewModel.returnReason"
+                            format-text-value="${partsNotUsedReasonDescription}"
+                            values.bind="materialReturnReasonsCatalog"
+                            value-property="partsNotUsedReasonDescription"
+                            text-property="partsNotUsedReasonDescription"
+                            no-filter="true">
+                            <template replace-part="option-template">
+                                <div>
+                                    ${item.partsNotUsedReasonDescription}
+                                </div>
+                            </template>
+                        </drop-down>
+                    </div>
+                </div>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <div class="action-group">
+                <button class="btn btn-primary" click.trigger="submit()">Return</button>
+                <button class="btn btn-secondary" click.trigger="controller.cancel()">Cancel</button>
+            </div>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

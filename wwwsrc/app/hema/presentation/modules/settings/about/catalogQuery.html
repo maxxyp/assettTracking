@@ -1,0 +1,47 @@
+<template>
+    <div class="card row">
+        <div class="card-header card-title" click.trigger="toggleExpanded()">Query Reference Data
+            <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+        </div>
+        <div show.bind="isExpanded" class="card-block fade-in-content">
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Catalog</label>
+                </div>
+                <div class="col-xs-9">
+                    <drop-down value.bind="selectedCatalog" placeholder="Select catalog" values.bind="catalogs" value-property="code" text-property="description"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Indexes</label>
+                </div>
+                <div class="col-xs-9">
+                    <drop-down disabled.bind="noIndexes" value.bind="selectedIndexName" placeholder="Select index" values.bind="indexNames" value-property="code" text-property="description"/>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3">
+                    <label>Index Value</label>
+                </div>
+                <div class="col-xs-3">
+                    <text-box disabled.bind="noIndexes" value.bind="indexValue"></text-box>
+                </div>
+                <div class="col-xs-3">
+                    Total Items: <strong>${itemsFound}</strong>
+                </div>
+            </div>
+            <div class="row">
+                <button class="btn btn-primary" disabled.bind="!selectedCatalog" click.trigger="queryIndex()">
+                    Query
+                </button>
+                <button class="btn secondary" click.trigger="clear()">Cancel</button>
+            </div>
+            <div class="row json-viewer pretty-print">
+                <pre>
+                    ${queryResult}
+                </pre>
+            </div>
+        </div>
+    </div>
+</template>

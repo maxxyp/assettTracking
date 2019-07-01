@@ -1,0 +1,14 @@
+<template>
+    <div class="toast-container ${toastPosition}">
+        <div repeat.for="toast of toasts" class="toast-item ${toast.style}">
+            <a tabindex="1" href class="close-button pull-right" click.trigger="closeToast(toast)"><i class="${toast.style.indexOf('success') > -1 ? 'successIconClass' : 'failIconClass'}"></i></a>
+            <div class="title">${toast.title}</div>
+            <div class="content" innerhtml.bind="toast.content | htmlFormat"></div>
+            <div class="btn-details" if.bind="toast.toastAction">
+                <button class="btn btn-secondary" click.trigger="toast.toastAction.action(toast)">${toast.toastAction.label}<i show.bind="toast.toastAction.isExpanded !== undefined" class="${toast.toastAction.isExpanded ? 'arrowUpClass' : 'arrowDownClass'}"></i></button>
+                <hr if.bind="toast.toastAction.isExpanded" />
+                <div if.bind="toast.toastAction.isExpanded" class="details" innerhtml.bind="toast.toastAction.details | htmlFormat"></div>
+            </div>
+        </div>
+    </div>
+</template>

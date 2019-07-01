@@ -1,0 +1,243 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-11-17T12:36:26Z",
+      "modifiedTimestamp": "2017-11-17T12:52:43Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1341497001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1311908001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1311908001002",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1371218001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1371218001002",
+          "jobType": "AS",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1386808001001",
+          "jobType": "FV",
+          "applianceType": "BBF",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1306887001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1311118001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "54CODEgass jobbbb"
+            }
+          ]
+        },
+        {
+          "id": "1311118001002",
+          "jobType": "AS",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-11-08",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "54CODEradical duder"
+            }
+          ]
+        },
+        {
+          "id": "1341908001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-10-31",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "CODEZZFIRST RFA KEEP"
+            }
+          ]
+        },
+        {
+          "id": "1341908001002",
+          "jobType": "AS",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-10-31",
+              "status": "C",
+              "engineerName": "NAVIN",
+              "report": "CODE3Second RFA"
+            }
+          ]
+        },
+        {
+          "id": "1367697001001",
+          "jobType": "IB",
+          "applianceType": "BBF",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-10-05",
+              "status": "C",
+              "engineerName": "ROBERT CARAVELLI",
+              "report": "CODE3fitted burner",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Burner Boiler - Aeromatic AC02/011421",
+                  "quantity": 1,
+                  "stockReferenceId": "384807"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202235609",
+          "serialId": "ttttt gg",
+          "gcCode": "4407750",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-08-21",
+          "applianceType": "BBF",
+          "description": "BERMUDA 552 CAT 1N - NG",
+          "flueType": "O",
+          "boilerSize": 19,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "lounge",
+          "condition": 1,
+          "numberOfRadiators": 10,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2012,
+          "systemDesignCondition": 2,
+          "systemType": 2,
+          "linkId": "202235609",
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "AR",
+            "report": "gas rate reading is 0"
+          },
+          "chirp": {
+            "iaciCode": "B",
+            "iaciDate": "2017-11-08"
+          }
+        },
+        {
+          "id": "202235610",
+          "gcCode": "3700000",
+          "category": "A",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-08-21",
+          "applianceType": "FRB",
+          "description": "fire",
+          "locationDescription": "lounge",
+          "installationYear": 1980,
+          "linkId": "202235609",
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "T",
+            "noticeStatus": "A",
+            "noticeType": "AR",
+            "report": "it is at risk"
+          }
+        }
+      ]
+    }
+  }
+}

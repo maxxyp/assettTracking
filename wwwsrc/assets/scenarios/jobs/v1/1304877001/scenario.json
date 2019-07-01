@@ -1,0 +1,96 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-15T15:42:09Z",
+      "modifiedTimestamp": "2017-08-16T10:58:50Z"
+    },
+    "data": {
+      "job": {
+        "id": "1304877001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022209704",
+          "initials": "",
+          "lastName": "Mrs Any Bias",
+          "address": {
+            "houseNumber": "28a",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L277454",
+          "address": {
+            "houseNumber": "28A",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022209704",
+            "initials": "",
+            "lastName": "Mrs Any Bias"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-15"
+          },
+          "risks": [
+            {
+              "reason": "R1",
+              "report": "Doggy is ther",
+              "date": "2017-08-15"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00212612",
+          "date": "2017-08-16T00:00:00Z",
+          "earliestStartTime": "2017-08-16T08:00:00Z",
+          "latestStartTime": "2017-08-16T18:00:00Z",
+          "specialInstructions": "Next visit details"
+        },
+        "tasks": [
+          {
+            "id": "1304877001001",
+            "applianceId": "202232103",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP3SIS",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 3,
+            "activities": [
+              {
+                "date": "2017-08-15",
+                "status": "IA",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "54CODEReport holds better information",
+                "workDuration": 5
+              },
+              {
+                "status": "IZ",
+                "sequence": 2
+              },
+              {
+                "status": "D",
+                "sequence": 3
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

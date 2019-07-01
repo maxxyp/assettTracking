@@ -1,0 +1,15 @@
+<template>
+    <div>
+        <span click.trigger="decrement()">
+            <i class.bind="disableMin ? 'disabled': 'active'" class="plus-minus-button fa fa-2x fa-minus-circle"></i>
+        </span>
+        <label class="display-number">${displayValue}</label>
+        <span click.trigger="increment()">
+            <i class.bind="disableMax ? 'disabled': 'active'" class="plus-minus-button fa fa-2x fa-plus-circle"></i>
+        </span>
+        <br>
+        <span>
+            ${missingItemLabel}
+        </span>
+    </div>
+</template>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/history/IHistoryResponse.ts"],"names":[],"mappings":"","file":"IHistoryResponse.js","sourcesContent":["import {IMeta} from \"../../IMeta\";\nimport {IJobHistory} from \"./IJobHistory\";\n\nexport interface IHistoryResponse {\n    meta: IMeta;\n    data: IJobHistory;\n}\n"],"sourceRoot":"../../../../../.."}

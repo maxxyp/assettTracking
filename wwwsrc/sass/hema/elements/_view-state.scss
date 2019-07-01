@@ -1,0 +1,45 @@
+view-state {
+  .panel {
+    width: 100%;
+    min-height: 250px;
+    background: white;
+    padding: 20px;
+    border-bottom: 5px solid $blue-2;
+
+    h1 {
+      border-bottom: 1px solid #eee;
+      font-weight: bold;
+    }
+  }
+}
+
+.save-status {
+    
+    font-size: 1.5em;
+
+    &.dock-bottom {
+      position: fixed;
+      bottom: 0.5em; 
+      right: 1.5em;
+    }
+
+    &.dock-to-viewstate {
+      position: fixed;
+      right: 1.5em;
+    }
+
+    .aurelia-hide {
+       opacity: 0;
+    }
+
+    .save-success {
+        opacity: 1;
+        animation: fade 1s linear;
+    }
+
+    @keyframes fade {
+      0%,100% { opacity: 0 }
+      50% { opacity: 1 }
+    }
+  }
+

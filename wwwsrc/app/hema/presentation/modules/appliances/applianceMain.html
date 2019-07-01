@@ -1,0 +1,55 @@
+<template>
+    <require from="../../../../common/ui/attributes/swipe"></require>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div swipe="callback.bind: swipeFunction; scope.bind: $this;" class="swipeable" ref="card">
+            <div show.bind="!isNew">
+                <div id="appliance-details-nav-header" class="job-details-header" fix-header="is-alt.bind:isFullScreen;">
+                    <span class="title">${applianceType}</span>
+                    <span class="title" show.bind="description">- ${description}</span>
+                    <span class="title">
+                        <a show.bind="gcCode" class="btn btn-secondary" click.trigger="launchAdapt(gcCode)">
+                            ${gcCode}
+                        </a>
+                    </span>
+                    <prev-next-buttons values.bind="applianceIds" param-id="applianceId" />
+                </div>
+                <div class="job-details-header">
+                    <span class="title">${applianceType}</span>
+                    <span class="title" show.bind="description">- ${description}</span>
+                    <span class="title">
+                        <a show.bind="gcCode" class="btn btn-secondary" click.trigger="launchAdapt(gcCode)">
+                            ${gcCode}
+                        </a>
+                    </span>
+                    <prev-next-buttons values.bind="applianceIds" param-id="applianceId" />
+                </div>
+                <div id="appliance-child-tabs"class="child-tabs" fix-header="is-alt.bind:isFullScreen;">
+                    <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}" click.trigger="navigateToRoute(row.config.name)"
+                        show.bind="((canEdit || row.settings.alwaysShow) || !canEdit)
+                        && (!row.settings.applianceSafetyType || row.settings.applianceSafetyType === applianceSafetyType)
+                        && (!row.settings.hideIfInstPrem || (row.settings.hideIfInstPrem && !isInstPremAppliance))">
+                        <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>
+                            ${row.title}
+                        </span>
+                </div>
+                <div class="child-tabs">
+                    <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}" click.trigger="navigateToRoute(row.config.name)"
+                        show.bind="((canEdit || row.settings.alwaysShow) || !canEdit)
+                        && (!row.settings.applianceSafetyType || row.settings.applianceSafetyType === applianceSafetyType)
+                        && (!row.settings.hideIfInstPrem || (row.settings.hideIfInstPrem && !isInstPremAppliance))">
+                        <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>
+                            ${row.title}
+                        </span>
+                </div>
+            </div>
+            <div show.bind="isNew">
+                <div class="job-details-header">
+                    <span class="title">${labels.newAppliance}</span>
+                </div>
+            </div>
+            <div class="details-card">
+                <router-view></router-view>
+            </div>
+        </div>
+    </view-state>
+</template>

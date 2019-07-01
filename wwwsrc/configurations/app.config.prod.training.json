@@ -1,0 +1,289 @@
+{
+    "applicationTitle": "Engineer Workbench - Training",
+    "applicationBadge": "Training",
+    "organisationId": "BGS",
+    "applicationId": "AS123123",
+    "fftServiceEndpoint": {
+        "clients": [
+            {
+                "name": "simulation",
+                "type": "simulation"
+            }
+        ],
+        "routes": [
+            {
+                "route": "engineer_requestwork",
+                "client": "simulation",
+                "path": "engineers/v1/{engineerId}/requestwork"
+            },
+            {
+                "route": "engineer_worklist",
+                "client": "simulation",
+                "path": "engineers/v1/{engineerId}/worklist"
+            },
+            {
+                "route": "engineer_status",
+                "client": "simulation",
+                "path": "engineers/v1/{engineerId}/status"
+            },
+            {
+                "route": "engineer_status_eod",
+                "client": "simulation",
+                "path": "engineers/v1/{engineerId}/status"
+            },
+            {
+                "route": "engineer_orderconsumables",
+                "client": "simulation",
+                "path": "engineers/v1/{engineerId}/orderconsumables"
+            },
+            {
+                "route": "job",
+                "client": "simulation",
+                "path": "jobs/v1/{jobId}"
+            },
+            {
+                "route": "job_history",
+                "client": "simulation",
+                "path": "jobs/v1/{jobId}/history"
+            },
+            {
+                "route": "job_update",
+                "client": "simulation",
+                "path": "jobs/v1/{jobId}/jobupdate"
+            },
+            {
+                "route": "job_order_parts",
+                "client": "simulation",
+                "path": "jobs/v1/{jobId}/order"
+            },
+            {
+                "route": "job_status",
+                "path": "jobs/v1/{jobId}/status",
+                "client": "simulation"
+            },
+            {
+                "route": "reference_index",
+                "path": "engineers/v1/referencedata/list",
+                "client": "simulation"
+            },
+            {
+                "route": "reference_catalog",
+                "path": "engineers/v1/referencedata/{catalog}",
+                "client": "simulation",
+                "successLoggingMode": 1
+            },
+            {
+                "route": "reference_update",
+                "path": "engineers/v1/referencedata/engineerdata",
+                "client": "simulation"
+            },
+            {
+                "route": "parts_collection",
+                "path": "jobs/v1/{jobId}/parts",
+                "client": "simulation"
+            },
+            {
+                "route": "contractor_info",
+                "client": "simulation",
+                "path": "engineers/v1/contract/{engineerId}"
+            }
+        ],
+        "sendAnalyticsOnSuccess": true
+    },
+    "whoAmIServiceEndpoint": {
+        "clients": [
+            {
+                "name": "prod",
+                "details": "For test we need to verify the logged in user, via NTLM.",
+                "type": "http",
+                "root": "https://pulse.britishgas.co.uk/"
+            }
+        ],
+        "routes": [
+            {
+                "route": "whoAmI",
+                "path": "whoami/v1",
+                "client": "prod"
+            }
+        ],
+        "sendAnalyticsOnSuccess": true
+    },
+    "adaptServiceEndpoint": {
+        "clients": [
+            {
+                "name": "bridge",
+                "type": "http",
+                "root": "http://localhost:60012/"
+            }
+        ],
+        "routes": [
+            {
+                "route": "models",
+                "path": "ewb/adapt/models/{gcNumber}",
+                "client": "bridge"
+            },
+            {
+                "route": "attributes",
+                "path": "ewb/adapt/attributes/{modelId}",
+                "client": "bridge"
+            },
+            {
+                "route": "parts",
+                "path": "ewb/adapt/parts",
+                "client": "bridge",
+                "successLoggingMode": 2
+            },
+            {
+                "route": "settings",
+                "path": "ewb/adapt/usersettings",
+                "client": "bridge"
+            },
+            {
+                "route": "customerDetails",
+                "path": "ewb/quote/customerDetails",
+                "client": "bridge"
+            },
+            {
+                "route": "status",
+                "path": "ewb/status",
+                "client": "bridge"
+            },
+            {
+                "route": "version",
+                "path": "ewb/version",
+                "client": "bridge"
+            }
+        ]
+    },
+    "assetTrackingEndpoint": {
+        "clients": [
+          {
+              "name": "simulation",
+              "type": "simulation"
+          }
+        ],
+        "routes": [
+          {
+            "route": "materials",
+            "path": "engineer/{engineerId}/materials",
+            "client": "simulation"
+          },
+          {
+            "route": "actions",
+            "path": "engineer/{engineerId}/actions",
+            "client": "simulation"
+          },
+          {
+            "route": "search",
+            "path": "material/{materialCode}",
+            "client": "simulation"
+          },
+          {
+            "route": "highvaluetools",
+            "path": "material/hvt",
+            "client": "simulation"
+          },
+          {
+            "route": "zone",
+            "path": "material/{materialCode}/zone",
+            "client": "simulation"
+          },
+          {
+            "route": "receipt",
+            "path": "material/{materialCode}/receipt",
+            "client": "simulation"
+          },
+          {
+            "route": "return",
+            "path": "material/{materialCode}/return",
+            "client": "simulation"
+          },
+          {
+            "route": "reservation",
+            "path": "material/{materialCode}/reservation",
+            "client": "simulation"
+          },
+          {
+            "route": "transfer",
+            "path": "material/{materialCode}/transfer",
+            "client": "simulation"
+          },
+          {
+            "route": "consumption",
+            "path": "material/{materialCode}/consumption",
+            "client": "simulation"
+          }
+        ]
+      },
+    "activeDirectoryRoles": [
+        "d-Field-Engineer",
+        "d-Field-Apprentice",
+        "d-Field-Admin",
+        "g-Field-Engineer",
+        "g-Field-Apprentice",
+        "g-Field-Admin"
+    ],
+    "referenceDataStaleMinutes": 1440,
+    "targetReferenceDataTypes": [
+      "business",
+      "goods",
+      "jobcodes",
+      "lookups",
+      "config"
+    ],
+    "workListPostRequestWorkPollingIntervals": [1],
+    "workListPollingInterval": 0,
+    "adaptPollingInterval": 5000,
+    "adaptLaunchUri": "launch-adapt:",
+    "customerInfoAutoLaunch": false,
+    "customerInfoReOpenExpiryMinutes": 30,
+    "googleClientKey": "AIzaSyB4KKT7xveEVRvprawRR--RwE2vmJoptyc",
+    "googleApiVersion": "3",
+    "alwaysAllowSignOff": false,
+    "maxDaysArchiveRetrival": 1,
+    "analyticsTrackingId": "UA-113361615-1",
+    "analyticsEnabled": false,
+    "logGeoLocation": false,
+    "logLevel": "info",
+    "maxLogFileAgeDays": 42,
+    "simulation": [
+      {
+            "firstName": "Gas Upskill",
+            "lastName": "Engineer",
+            "engineerId": "0000001"
+      },
+      {
+            "firstName": "Electrical Upskill",
+            "lastName": "Engineer",
+            "engineerId": "0000002"
+      },
+      {
+            "firstName": "Gas New Starter",
+            "lastName": "Engineer",
+            "engineerId": "0000003"
+      },
+      {
+            "firstName": "Electrical New Starter",
+            "lastName": "Engineer",
+            "engineerId": "0000004"
+      }
+    ],
+    "trainingMode": true,
+    "notificationPosition": 4,
+    "notificationDisplayTime": 5,
+    "dropdownType": 1,
+    "minItemsToCategoriseSmashButtons": 24,
+    "soundEnabled": true,
+    "logJobOnEverySave": true,
+    "resilienceRertyIntervals": [
+        1000,
+        1000,
+        1000
+    ],
+    "whoAmITimeoutRetries": 2,
+    "whoAmITimeoutMs": 60000,
+    "resilienceSendAnalyticsOnSuccess": true,
+    "assetTrackingSearchStaleMinutes": 0.125,
+    "assetTrackingPollingIntervalMinutes": 1,
+    "assetTrackingCacheRefreshTimeHHmm": "05:00"
+}

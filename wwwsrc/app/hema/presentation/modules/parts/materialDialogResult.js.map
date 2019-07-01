@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/presentation/modules/parts/materialDialogResult.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,2BAAC;IAAD,CAHA,AAGC,IAAA;IAHY,oDAAoB","file":"materialDialogResult.js","sourcesContent":["export class MaterialDialogResult {\r\n    public quantity: number;\r\n    public partOrderStatus: \"V\" | \"O\";\r\n}\r\n"],"sourceRoot":"../../../.."}

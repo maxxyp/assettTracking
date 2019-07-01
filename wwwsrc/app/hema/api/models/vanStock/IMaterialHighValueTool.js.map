@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/vanStock/IMaterialHighValueTool.ts"],"names":[],"mappings":"","file":"IMaterialHighValueTool.js","sourcesContent":["export interface IMaterialHighValueTool {\n    materialCode: string;\n    materialDescription: string;\n}\n"],"sourceRoot":"../../../.."}

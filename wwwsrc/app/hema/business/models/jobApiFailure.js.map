@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/jobApiFailure.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAIA,CAAC;QAAD,oBAAC;IAAD,CAJA,AAIC,IAAA;IAJY,sCAAa","file":"jobApiFailure.js","sourcesContent":["export class JobApiFailure {\r\n    public id: string;\r\n    public position: number;\r\n    public workType: \"job\" | \"partsCollection\";\r\n}\r\n"],"sourceRoot":"../../.."}

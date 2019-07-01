@@ -1,0 +1,6 @@
+<template>
+    <div class="card row job-summary ${isDone ? 'done' : ''} ${jobSummaryViewModel.viewCount === 2 ? '' : 'not-ready'}">
+        <compose view-model="../jobDetails/jobDetailsHead" model.bind="{clickable: true, job: job, jobSummary: jobSummaryViewModel}"></compose>
+        <compose view-model="./jobSummary" model.bind="jobSummaryViewModel"></compose>
+    </div>
+</template>

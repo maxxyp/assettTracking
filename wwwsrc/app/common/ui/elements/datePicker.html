@@ -1,0 +1,56 @@
+<template>
+    <div class="calendar-control ${disabled ? 'disabled': ''}" ref="mainControl">
+        <div if.bind="!calendarOnly" class="text-box-container">
+            <div class="input-group">
+                <input type="text" readonly.bind="readonlyInput" value.bind="selectedDateString"
+                       placeholder.bind="disabled ? '' : dateFormat" click.trigger="calendarTextClick()" class="form-control"
+                       aria-label="..." disabled.bind="disabled">
+                <div class="input-group-btn">
+                    <button click.trigger="toggleCalender()" type="button" class="btn btn-primary ${disabled ? 'disabled': ''}"><i
+                            class="fa fa-calendar" disabled.bind="disabled"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div show.bind="showCalendar" class="cal-container card fade-in-content ${calendarOnly ? 'notpopup' : 'popup'}"
+             ref="popup">
+            <div class="selected-date text-xs-center card-header">&nbsp;${selectedDateString ? selectedDateString :
+                'Please Select.'}&nbsp;</div>
+            <div class="card-block row">
+                <div class="month-column">
+                    <div class="button-container">
+                        <i class="previous-month-button fa fa-chevron-left" click.trigger="previousMonth()"></i>
+                        <label class="month-container text-xs-center">${currentMonthName} ${currentYear}</label>
+                        <i class="next-month-button fa fa-chevron-right" click.trigger="nextMonth()"></i>
+                    </div>
+                </div>
+                <div class="calendar-column">
+                    <div class="calendar-day-head-container">
+                        <div class="calendar-day-head text-xs-center">S</div>
+                        <div class="calendar-day-head text-xs-center">M</div>
+                        <div class="calendar-day-head text-xs-center">T</div>
+                        <div class="calendar-day-head text-xs-center">W</div>
+                        <div class="calendar-day-head text-xs-center">T</div>
+                        <div class="calendar-day-head text-xs-center">F</div>
+                        <div class="calendar-day-head text-xs-center">S</div>
+                    </div>
+                    <div class="calendar-day-container">
+                        <div class.bind="calendarDaysArray[i].classMembers"
+                            repeat.for="i of calendarDaysArray.length" 
+                            click.trigger="clickedDay(calendarDaysArray[i].dayNumber)">${calendarDaysArray[i].dayNumber > 0 ? calendarDaysArray[i].dayNumber : '&nbsp;'}</div>
+                    </div>
+                </div>
+                <div class="shortcuts-column">
+                    <div class="control-button-container">
+                        <button if.bind="showToday" class="btn btn-secondary" click.trigger="gotoToday()">Today</button>
+                        <button if.bind="showClear" class="btn btn-secondary" click.trigger="clearDate()">Clear</button>
+                        
+                    </div>
+                    <div class="control-button-container">
+                        <button class="btn btn-secondary btn-close" click.trigger="hideCalendar()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

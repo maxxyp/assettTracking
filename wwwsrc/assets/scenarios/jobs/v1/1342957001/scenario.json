@@ -1,0 +1,134 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-07-03T16:12:22Z",
+      "modifiedTimestamp": "2017-07-03T17:07:01Z"
+    },
+    "data": {
+      "job": {
+        "id": "1342957001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022210197",
+          "initials": " ",
+          "lastName": "Mr Charges Customer",
+          "address": {
+            "houseNumber": "4",
+            "line": [
+              "School Road"
+            ],
+            "county": "Biggar",
+            "postCodeIn": "6LT",
+            "postCodeOut": "ML12"
+          }
+        },
+        "premises": {
+          "id": "L277879",
+          "address": {
+            "houseNumber": "4",
+            "line": [
+              "School Road"
+            ],
+            "county": "Biggar",
+            "postCodeIn": "6LT",
+            "postCodeOut": "ML12"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022210197",
+            "initials": " ",
+            "lastName": "Mr Charges Customer"
+          },
+          "safetyDetail": {
+            "lastElectricVisitDate": "2017-07-03"
+          }
+        },
+        "visit": {
+          "id": "WMW00192902",
+          "date": "2017-07-03T00:00:00Z",
+          "earliestStartTime": "2017-07-03T08:00:00Z",
+          "latestStartTime": "2017-07-03T10:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1342957001001",
+            "applianceId": "202232814",
+            "jobType": "BE",
+            "applianceType": "FFR",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "AS",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-07-03",
+                "status": "IF",
+                "engineerName": "NAVIN",
+                "chargeableTime": 20,
+                "sequence": 1,
+                "report": "CODE0Tested check",
+                "workDuration": 20
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1342957001002",
+            "applianceId": "202232815",
+            "jobType": "BE",
+            "applianceType": "FRI",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "AS",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-07-03",
+                "status": "IF",
+                "engineerName": "NAVIN",
+                "chargeableTime": 25,
+                "sequence": 1,
+                "report": "71CODEFf required I'm struck to completete",
+                "workDuration": 25
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          },
+          {
+            "id": "1342957001003",
+            "applianceId": "202232814",
+            "jobType": "KF",
+            "applianceType": "FFR",
+            "chargeType": "SLO2EF",
+            "status": "D",
+            "skill": "AS",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-07-03",
+                "status": "IA",
+                "engineerName": "NAVIN",
+                "chargeableTime": 30,
+                "sequence": 1,
+                "report": "62CODETested charges",
+                "workDuration": 30
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

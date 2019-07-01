@@ -1,0 +1,44 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "jobHistory",
+			"createdTimestamp": "2017-05-05T11:41:45Z"
+		},
+		"data": {
+			"tasks": [{
+				"id": "2018729372001",
+				"jobType": "BE",
+				"applianceType": "EWR",
+				"status": "C",
+				"action code": "55063784",
+                "chargeType": "NCHHEW",
+				"activities": [{
+					"date": "2017-12-28T00:00:00Z",
+					"skill": "ER",
+					"status": "C",
+                    "engineerName": "Mark Millar",
+                    "report": "Made safe. Further work recommended."
+				}]
+			}],
+			"appliances": [{
+				"id": "55063784",
+				"gcCode": "9900000",
+				"category": "A",
+				"applianceType": "EWR",
+				"contractType": "HEW",
+				"contractExpiryDate": "2099-12-31Z",
+				"description": "Wiring",
+				"locationDescription": "House",
+				"installationYear": 2015,
+				"safety": {
+					"applianceSafe": "Y",
+					"flueSafe": "X",
+					"installationSafe": "N",
+					"applianceTightnessTestSafe": "X",
+					"ventilationSafe": "X"
+				}
+			}]
+		}
+	}
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IAppMetaDataService.ts"],"names":[],"mappings":"","file":"IAppMetaDataService.js","sourcesContent":["import { IAppMetaData } from \"./IAppMetaData\";\n\nexport interface IAppMetaDataService {\n    get: () => Promise<IAppMetaData>;\n}\n"],"sourceRoot":"../../.."}

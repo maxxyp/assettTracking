@@ -1,0 +1,16 @@
+<template>
+    <div class="header" click.trigger="toggle() & throttle:animate ? 350 : 0">
+        <span class="acc-heading-text"
+              innerHTML.bind="(!isCollapsed && titleTextExpanded !== '') ? titleTextExpanded : titleText | sanitizeHTML">
+        </span>
+        <div class="icon">
+            <i show.bind="hasHeaderIcons" repeat.for="headerIcon of headerIcons" class="${headerIcon.iconClassName} header-icon"></i>
+            <i class="fa fa-${isCollapsed ? (expandIcon !== '' ? expandIcon : 'plus') : (collapseIcon !== '' ? collapseIcon : 'minus')} pull-right collapser"></i>
+        </div>
+    </div>
+    <div class="content ${animate ? 'animate' : ''}" ref="contentElement">
+        <template replaceable part="collapsible-content-template">
+        </template>
+    </div>
+
+</template>

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/whoAmI/IWhoAmI.ts"],"names":[],"mappings":"","file":"IWhoAmI.js","sourcesContent":["import {IWhoAmIAttributes} from \"./IWhoAmIAttributes\";\n\nexport interface IWhoAmI {\n    userid: string;\n    attributes: IWhoAmIAttributes[];\n    roles: string[];\n}\n"],"sourceRoot":"../../../../.."}

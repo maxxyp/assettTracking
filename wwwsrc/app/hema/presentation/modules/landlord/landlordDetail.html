@@ -1,0 +1,96 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${labels.landlordDetail}</label>
+        </ai-dialog-header>
+        <ai-dialog-body  class="dialog-width">
+            <div class="row">
+                <div class="form-group">
+                    <span class="col-xs-5">
+                        ${labels.landlordName}
+                    </span>
+                    <span class="col-xs-7">
+                        ${contact.title} ${contact.firstName} ${contact.middleName} ${contact.lastName}
+                    </span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.premisesName">
+                <div class="form-group">
+                    <span class="col-xs-5">
+                        ${labels.address}
+                    </span>
+                    <span class="col-xs-7">
+                        ${contact.address.premisesName}
+                    </span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.houseNumber">
+                <div class="form-group">
+                    <span class="col-xs-5">
+                        <span if.bind="!contact.address.premisesName">${labels.address}</span>
+                    </span>
+                    <span class="col-xs-7">${contact.address.houseNumber}</span>
+                </div>
+            </div>            
+            <div class="row" if.bind="contact.address.flatNumber">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${contact.address.flatNumber}</span>
+                </div>
+            </div>                        
+            <div class="row" repeat.for="l of contact.address.line">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${l}</span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.town">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${contact.address.town}</span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.county">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${contact.address.county}</span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.postCode">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${contact.address.postCode}</span>
+                </div>
+            </div>
+            <div class="row" if.bind="contact.address.country">
+                <div class="form-group">
+                    <span class="col-xs-5"></span>
+                    <span class="col-xs-7">${contact.address.country}</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <span class="col-xs-5">
+                        ${labels.homePhone}
+                    </span>
+                    <span class="col-xs-7">
+                        ${contact.homePhone}
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <span class="col-xs-5">
+                        ${labels.workPhone}
+                    </span>
+                    <span class="col-xs-7">
+                        ${contact.workPhone}
+                    </span>
+                </div>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok()">${labels.close}</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

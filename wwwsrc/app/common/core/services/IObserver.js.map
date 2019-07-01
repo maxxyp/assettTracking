@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IObserver.ts"],"names":[],"mappings":"","file":"IObserver.js","sourcesContent":["export interface IObserver<T> {\n    subscribe(callback: (command: T) => void): void;\n    unsubscribe(callback: (command: T) => void): void;\n}\n"],"sourceRoot":"../../.."}

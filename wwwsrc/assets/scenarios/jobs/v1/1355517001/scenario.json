@@ -1,0 +1,109 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "job",
+            "createdTimestamp": "2016-10-17T17:38:38Z"
+        },
+        "data": {
+            "job": {
+                "id": "1355517001",
+                "customer": {
+                    "id": "022188785",
+                    "lastName": "Mr Shafiq Shan",
+                    "address": {
+                        "premisesName": "Elm Place",
+                        "houseNumber": "21",
+                        "line": [
+                            "Gainsborough Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "3DG",
+                        "postCodeOut": "LE2"
+                    }
+                },
+                "premises": {
+                    "id": "L259910",
+                    "address": {
+                        "premisesName": "Elm Place",
+                        "houseNumber": "21",
+                        "line": [
+                            "Gainsborough Road"
+                        ],
+                        "county": "Leicester",
+                        "postCodeIn": "3DG",
+                        "postCodeOut": "LE2"
+                    },
+                    "previousVisitCount": 0,
+                    "contact": {
+                        "id": "022188785",
+                        "initials": " ",
+                        "lastName": "Mr Shafiq Shan",
+                        "homePhone": "0191 221122"
+                    },
+                    "safetyDetail": {
+                        "lastGasVisitDate": "2016-10-17T00:00:00Z",
+                        "lastElectricVisitDate": "2014-12-01T00:00:00Z"
+                    },
+                    "risks": [],
+                    "unsafeDetail": {
+                        "report": "At Risk in the Property",
+                        "conditionAsLeft": "AR",
+                        "labelAttachedOrRemoved": "A",
+                        "cappedOrTurnedOff": "C",
+                        "ownedByCustomer": true,
+                        "signatureObtained": false,
+                        "letterLeft": false,
+                        "ownersNameAndDetails": "**195 AYLESTONE ROAD LEICESTER LE2 7QJ**",
+                        "reasons": [
+                            "ESELI",
+                            "SYSTP",
+                            "GMET",
+                            "PDL8"
+                        ]
+                    }
+                },
+                "visit": {
+                    "id": "WMW00150962",
+                    "date": "2016-10-17T00:00:00Z",
+                    "earliestStartTime": "2016-10-17T18:00:00Z",
+                    "latestStartTime": "2016-10-17T22:00:00Z"
+                },
+                "tasks": [
+                    {
+                        "id": "1355517001001",
+                        "applianceId": "202200738",
+                        "jobType": "AS",
+                        "applianceType": "CHB",
+                        "chargeType": "NCH3ST",
+                        "status": "D",
+                        "skill": "GS",
+                        "sequence": 1,
+                        "activities": [
+                            {
+                                "status": "D",
+                                "sequence": 1
+                            }
+                        ]
+                    },
+                    {
+                        "id": "1355517001002",
+                        "applianceId": "202230077",
+                        "jobType": "IB",
+                        "applianceType": "CHB",
+                        "chargeType": "NCH2SPT",
+                        "status": "X",
+                        "skill": "GR",
+                        "sequence": 2,
+                        "activities": [
+                            {
+                                "status": "D",
+                                "sequence": 1
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,142 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-07T14:30:28Z",
+      "modifiedTimestamp": "2017-08-07T14:44:06Z"
+    },
+    "data": {
+      "job": {
+        "id": "1395677001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022211186",
+          "initials": " ",
+          "lastName": "Mr Tester Razhim",
+          "address": {
+            "houseNumber": "40",
+            "line": [
+              "Balmoral Drive"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AD",
+            "postCodeOut": "LE3"
+          }
+        },
+        "premises": {
+          "id": "L278769",
+          "address": {
+            "houseNumber": "40",
+            "line": [
+              "Balmoral Drive"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AD",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211113",
+            "initials": " ",
+            "lastName": "Mr Tester Johnny"
+          }
+        },
+        "visit": {
+          "id": "WMW00210712",
+          "date": "2017-08-07T00:00:00Z",
+          "earliestStartTime": "2017-08-07T08:00:00Z",
+          "latestStartTime": "2017-08-07T18:00:00Z",
+          "specialInstructions": "test07448120397"
+        },
+        "tasks": [
+          {
+            "id": "1395677001001",
+            "applianceId": "202234752",
+            "jobType": "G1",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "HM",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1395677001002",
+            "applianceId": "202234752",
+            "jobType": "G2",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "HM",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1395677001003",
+            "applianceId": "202234752",
+            "jobType": "G3",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "HM",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1395677001004",
+            "applianceId": "202234752",
+            "jobType": "G4",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "HM",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1395677001005",
+            "applianceId": "202234752",
+            "jobType": "G5",
+            "applianceType": "EWR",
+            "chargeType": "SLONONE",
+            "status": "D",
+            "skill": "HM",
+            "sequence": 1,
+            "specialRequirement": "*PREPAID: USE XP NON-COLLECTION CODE*",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

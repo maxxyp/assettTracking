@@ -1,0 +1,93 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-11-17T12:36:26Z",
+      "modifiedTimestamp": "2017-11-17T12:52:43Z"
+    },
+    "data": {
+      "job": {
+        "id": "1363218001",
+        "engineerId": "0176077",
+        "customer": {
+          "id": "022211795",
+          "lastName": "Mrs Jonah Noah",
+          "address": {
+            "houseNumber": "320",
+            "line": [
+              "Aylestone Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "8BJ",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L279323",
+          "address": {
+            "houseNumber": "320",
+            "line": [
+              "Aylestone Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "8BJ",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022211795",
+            "initials": " ",
+            "lastName": "Mrs Jonah Noah"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-11-17"
+          }
+        },
+        "visit": {
+          "id": "WMW00249332",
+          "date": "2017-11-17T00:00:00Z",
+          "earliestStartTime": "2017-11-17T12:00:00Z",
+          "latestStartTime": "2017-11-17T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1363218001001",
+            "applianceId": "202235609",
+            "jobType": "IB",
+            "applianceType": "BBF",
+            "chargeType": "CPO2SPA",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2017-11-17",
+                "status": "IA",
+                "engineerName": "MANDHAGINI",
+                "chargeableTime": 1,
+                "sequence": 1,
+                "report": "54CODEanandnaanan",
+                "workDuration": 1,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Timer Mechanical EMT 2 TOTE",
+                    "charge": 2838.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "555123"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

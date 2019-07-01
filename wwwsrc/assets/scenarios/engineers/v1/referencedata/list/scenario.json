@@ -1,0 +1,29 @@
+{
+	"status": 200,
+	"disableCache": true,
+	"data": {
+		"data": {
+			"listObjects": [{
+				"documentName": "business.json",
+				"etag": "e6c9f3af2b7f8fb004a16fb6612399ef",
+				"size": "305854bytes",
+				"lastModifiedDate": "2019-03-26T02:01:09Z"
+			}, {
+				"documentName": "goods.json",
+				"etag": "12604fe01090fe2366e461e3107b8acb",
+				"size": "1987940bytes",
+				"lastModifiedDate": "2019-02-28T02:01:16Z"
+			}, {
+				"documentName": "jobcodes.json",
+				"etag": "7dfa858f88bac03c986b4f1fc9d79e16",
+				"size": "16486980bytes",
+				"lastModifiedDate": "2019-03-26T02:02:02Z"
+			}, {
+				"documentName": "lookups.json",
+				"etag": "8834a40e46c392037fad01165e52a869",
+				"size": "143004bytes",
+				"lastModifiedDate": "2018-01-04T02:01:32Z"
+			}]
+		}
+	}
+}

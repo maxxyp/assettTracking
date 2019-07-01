@@ -1,0 +1,78 @@
+{
+  "status": 200,
+  "data": {
+    "meta":{
+      "type":"job",
+      "createdTimestamp":"2017-04-18T10:28:42Z"
+    },
+    "data":{
+      "job":{
+        "id":"1325737001",
+        "customer":{
+          "id":"022208926",
+          "lastName":"Mrs Different Add Rfa",
+          "address":{
+            "houseNumber":"165",
+            "line":[
+              "Heather Road"
+            ],
+            "county":"Birmingham",
+            "postCodeIn":"9TD",
+            "postCodeOut":"B10"
+          }
+        },
+        "premises":{
+          "id":"L276719",
+          "address":{
+            "houseNumber":"165",
+            "line":[
+              "Heather Road"
+            ],
+            "county":"Birmingham",
+            "postCodeIn":"9TD",
+            "postCodeOut":"B10"
+          },
+          "previousVisitCount":68,
+          "contact":{
+            "id":"022208926",
+            "initials":" ",
+            "lastName":"Mrs Different Add Rfa"
+          },
+          "safetyDetail":{
+            "lastGasVisitDate":"2017-04-11",
+            "safetyNoticeNotLeftReason":"TESTING PURPOSE"
+          },
+          "unsafeDetail":{
+            "reasons":[
+              "PDL8"
+            ]
+          }
+        },
+        "visit":{
+          "id":"WMW00170662",
+          "date":"2017-04-18T00:00:00Z",
+          "earliestStartTime":"2017-04-18T18:00:00Z",
+          "latestStartTime":"2017-04-18T22:00:00Z"
+        },
+        "tasks":[
+          {
+            "id":"1325737001001",
+            "applianceId":"202230971",
+            "jobType":"AS",
+            "applianceType":"FOOBAR",
+            "chargeType":"NCH1S",
+            "status":"D",
+            "skill":"GS",
+            "sequence":1,
+            "activities":[
+              {
+                "status":"D",
+                "sequence":1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

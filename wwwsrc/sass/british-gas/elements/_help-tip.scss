@@ -1,0 +1,78 @@
+help-tip {
+  display: inline;
+  float: right;
+ 
+   a:focus{
+    outline: none !important;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #005eb8;
+    border-radius: 20px;
+   }
+  .help-tip-overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+    z-index: 20;
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+
+  .help-tip-icon {
+    display: inline-block;
+    text-align: center;
+    background-color: $nav-bg-color;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #fff;
+    line-height: 23px;
+    float: right;
+    margin-right:20px;
+  }
+
+  .help-tip-popup {
+    display: none;
+    text-align: left;
+    background-color: $nav-bg-dark-color;
+    padding: 10px;
+    width: 280px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    color: #FFF;
+    font-size: 13px;
+    line-height: 1.4;
+    z-index: 100;
+    position: relative;
+    left: -260px;
+    top: 0px;
+    margin-top: 2px;
+    float: left;
+    font-weight: normal;
+
+    &.visible {
+      display: block;
+      transform-origin: 100% 0%;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.help-tip-container {
+  /* this is a dummy style to identiy the scrolling container for help-tips */
+}

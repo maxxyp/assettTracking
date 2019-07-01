@@ -1,0 +1,72 @@
+[
+	{
+		"key": "1",
+		"id": "IA",
+		"category": "preliminary",
+		"description": "Inst not available",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "NC",
+		"category": "preliminary",
+		"description": "Not affected combustion",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "NO",
+		"category": "preliminary",
+		"description": "Inst not operable",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "PI",
+		"category": "preliminary",
+		"description": "Point inaccessible",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"id": "TN",
+		"category": "preliminary",
+		"description": "Test not required",
+		"ctlgEntDelnMkr": "N"
+	},{
+		"key": "6",
+		"id": "IS",
+		"category": "supplementary",
+		"description": "Inst not available",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"id": "CS",
+		"category": "supplementary",
+		"description": "Not affected combustion",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"id": "NS",
+		"category": "supplementary",
+		"description": "Inst not operable",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"id": "PS",
+		"category": "supplementary",
+		"description": "Point inaccessible",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "10",
+		"id": "TS",
+		"category": "supplementary",
+		"description": "Test not required",
+		"ctlgEntDelnMkr": "N"
+	}
+
+]

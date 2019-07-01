@@ -1,0 +1,32 @@
+<template>
+    <div class="details-list-item no-pointer no-hover blue-content hook-list-data-item-container">
+        <div class="col-xs-2 details-list-item-col ">
+            ${part.stockReferenceId}
+        </div>
+        <div class="col-xs-4  details-list-item-col wrap">
+            ${part.description}
+        </div>
+        <div class="col-xs-2 details-list-item-col" style="font-size: larger;">
+            <span if.bind="part.quantityCollected < part.quantityExpected">
+                ${part.quantityCollected} of
+            </span>
+            <span>${part.quantityExpected}</span>
+        </div>
+
+
+        <div class="col-xs-2  details-list-item-col wrap">
+            ${part.area}
+        </div>
+        <div class="col-xs-2  details-list-item-col">
+            <span class="btn" click.trigger="editVanStock()">
+                <i class="fa fa-edit fa-lg"></i>
+            </span>
+        </div>
+        <div class="col-xs-1  details-list-item-col">
+            <i class="fa fa-2x ${part.verified ? 'fa-check-circle' : 'fa-plus-circle'}"
+               show.bind="show"
+               style.bind="part.verified ? 'color:green; cursor: pointer;' : 'color:lightgrey; cursor: pointer;'"
+               click.trigger="toggleVerified()"></i>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,35 @@
+{
+  "status" : 200,
+  "data" : {
+    "parts": [{
+      "stockReferenceId": "555051",
+      "timestamp": "2019-06-13T08:00:00Z",
+      "description": "3 Wire Electronic Thermostat",
+      "price": 1056
+    },
+    {
+      "stockReferenceId": "555053",
+      "timestamp": "2019-06-13T08:00:00Z",
+      "description": "Electronic Timeswitch Single Channel",
+      "price": 1056
+    },
+    {
+      "stockReferenceId": "555054",
+      "timestamp": "2019-06-13T08:00:00Z",
+      "description": "Electronic Programmer Dual Channel",
+      "price": 1056
+    },
+    {
+      "stockReferenceId": "555055",
+      "timestamp": "2019-06-13T08:00:00Z",
+      "description": "Wireless Thermostat Non Programmable",
+      "price": 1056
+    },
+    {
+      "stockReferenceId": "555056",
+      "timestamp": "2019-06-13T08:00:00Z",
+      "description": "Wireless Receiver use with 555055",
+      "price": 1056
+    }]
+  }
+}

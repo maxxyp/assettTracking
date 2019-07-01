@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IElectricalApplianceType.ts"],"names":[],"mappings":"","file":"IElectricalApplianceType.js","sourcesContent":["export interface IElectricalApplianceType {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

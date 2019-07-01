@@ -1,0 +1,33 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "parts",
+      "createdTimestamp": "2018-04-05T11:46:10Z"
+    },
+    "data": {
+      "customer": {
+        "lastName": "Mr Joe Blog",
+        "address": [
+          "123 Penman Way",
+          "Spinneyside",
+          "Leicester",
+          "LE19 1SZ"
+        ]
+      },
+      "list": [
+        {
+          "stockReferenceId": "357552",
+          "description": "Gasket - Cover Plate",
+          "quantity": "5"
+        },
+        {
+          "stockReferenceId": "357964",
+          "description": "Seal - Silicone Cord",
+          "quantity": "3"
+        }
+      ]
+    }
+  }
+}

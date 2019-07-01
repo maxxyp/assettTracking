@@ -1,0 +1,40 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-11-17T11:41:45Z"
+  },
+  "data": {
+    "appliances": [
+      {
+        "id": "55063779",
+        "gcCode": "4407750",
+        "category": "X",
+        "contractType": "3FIS",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "BBF",
+        "description": "Baxi Bermuda 552",
+        "locationDescription": "Lounge",
+        "installationYear": 2010,
+        "linkId": "55063779",
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2017-03-03"
+        }
+      },
+      {
+        "id": "55063780",
+        "gcCode": "3707716",
+        "category": "A",
+        "contractType": "3FIS",
+        "contractExpiryDate": "2099-12-31Z",
+        "applianceType": "FRB",
+        "description": "Baxi Bermuda LFE3 Super",
+        "locationDescription": "Lounge",
+        "linkId": "55063779"
+      }
+    ]
+  }
+}
+}

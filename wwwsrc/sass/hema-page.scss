@@ -1,0 +1,80 @@
+.hema-page {
+    margin: -8px -8px 10px -8px;
+    .hema-page-page-title {
+        padding: 0.5rem 0 1rem 1rem;
+        height: 4rem;
+        h2 {
+            font-size: 1.25em;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+        button {
+            float: left;
+        }
+    }
+    .hema-page-card {
+        background: rgba(255, 255, 255, 0.9);
+        padding: 0;
+        margin: 0;
+        color: $blue-2;
+        label {
+            font-weight: bold !important;
+        }
+        .hema-page-heading {
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 1rem 0 1rem 0.5rem;
+        }
+    }
+    .hema-page-list-item {
+        width: 100%;
+        padding: 1rem 0 1rem 3rem;
+        height: 4rem;
+        border-bottom: 1px solid $slate-1;
+        .btn-primary {
+            margin: 0;
+        }
+    }
+    .hema-page-header {
+        background: white;
+        margin: 0;
+        padding: 0.5rem;
+        color: black;
+        border-bottom: 1px solid $slate-1;
+        h2 {
+            padding: 0.75rem 0 0 0.5rem;
+            font-size: 1.5em;
+        }
+    }
+}
+
+.hema-page-nav-btns {
+    text-align: right;
+}
+
+.hema-page-nav-btn {
+    background: none !important;
+    border: 1px solid $slate-1;
+    width: 2rem;
+    padding: 0.25rem;
+}
+
+.hema-page-btns {
+    text-align: right;
+    background: $blue-2;
+    i {
+        font-size: 0.8em !important;
+    }
+}
+
+.parent-appliance {
+    position: relative;
+}
+
+.child-appliance {
+    position: relative;
+}
+
+.parent-child-header {
+    position: relative;
+}

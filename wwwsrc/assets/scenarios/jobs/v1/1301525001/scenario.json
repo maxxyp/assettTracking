@@ -1,0 +1,96 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T05:53:14Z",
+      "modifiedTimestamp": "2018-08-14T05:53:24Z"
+    },
+    "data": {
+      "job": {
+        "id": "1301525001",
+        "engineerId": "5050505",
+        "customer": {
+          "id": "022201823",
+          "initials": " ",
+          "lastName": "Mr Test Inc Data Six",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "Pendleton Close"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AB",
+            "postCodeOut": "LE7"
+          }
+        },
+        "premises": {
+          "id": "L271306",
+          "address": {
+            "houseNumber": "3",
+            "line": [
+              "Pendleton Close"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AB",
+            "postCodeOut": "LE7"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201823",
+            "initials": " ",
+            "lastName": "Mr Test Inc Data Six"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          },
+          "risks": [
+          ]
+        },
+        "visit": {
+          "id": "WMW00057432",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1301525001001",
+            "applianceId": "202224153",
+            "jobType": "CB",
+            "applianceType": "CHB",
+            "chargeType": "NCH2SIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1301525001002",
+            "applianceId": "202224153",
+            "jobType": "HU",
+            "applianceType": "CHB",
+            "chargeType": "ALP2SIS",
+            "status": "D",
+            "skill": "LD",
+            "fixedPriceQuotationAmount": "014000",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

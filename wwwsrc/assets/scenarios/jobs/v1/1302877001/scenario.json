@@ -1,0 +1,61 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-14T15:53:16Z"
+    },
+    "data": {
+      "job": {
+        "id": "1302877001",
+        "customer": {
+          "id": "022211435",
+          "lastName": "Miss Amend Task Scenario Two",
+          "address": {}
+        },
+        "premises": {
+          "id": "L278031",
+          "address": {
+            "houseNumber": "117",
+            "line": ["Upperton Road"],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211435",
+            "initials": " ",
+            "lastName": "Miss Amend Task Scenario Two"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-11"
+          },
+          "unsafeDetail": {
+            "reasons": ["PDL8"]
+          }
+        },
+        "visit": {
+          "id": "WMW00212322",
+          "date": "2017-08-14T00:00:00Z",
+          "earliestStartTime": "2017-08-14T08:00:00Z",
+          "latestStartTime": "2017-08-14T18:00:00Z"
+        },
+        "tasks": [{
+          "id": "1302877001001",
+          "applianceId": "202235082",
+          "jobType": "AS",
+          "applianceType": "WAU",
+          "chargeType": "NCH3SIS",
+          "status": "D",
+          "skill": "GS",
+          "sequence": 1,
+          "activities": [{
+            "status": "D",
+            "sequence": 1
+          }]
+        }]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/core/services/IUriSchemeService.ts"],"names":[],"mappings":"","file":"IUriSchemeService.js","sourcesContent":["export interface IUriSchemeService {\n    registerPlatform(callback: (path: string) => void): void;\n    navigateToInitialRoute?(): void;\n}\n"],"sourceRoot":"../../.."}

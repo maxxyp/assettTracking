@@ -1,0 +1,90 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "job",
+			"createdTimestamp": "2018-02-16T8:00:00Z",
+			"modifiedTimestamp": "2018-02-14T12:00:00Z"
+		},
+		"data": {
+			"job": {
+				"id": "2018729372",
+				"customer": {
+					"id": "100002909",
+					"password": "Bilbo",
+					"initials": "J",
+					"title": "Mr",
+					"lastName": "Gibb",
+					"homePhone": "07711465535",
+					"address": {
+						"line": ["The Dovecote"],
+						"houseNumber": "3",
+						"town": "Southampton",
+						"county": "Hamps",
+						"postCodeIn": "8TR",
+						"postCodeOut": "SO14"
+					}
+				},
+				"premises": {
+					"id": "8391161",
+					"address": {
+						"line": ["The Dovecote"],
+						"houseNumber": "3",
+						"town": "Southampton",
+						"county": "Hamps",
+						"postCodeIn": "8TR",
+						"postCodeOut": "SO14"
+					},
+					"contact": {
+						"id": "100002909",
+						"password": "Bilbo",
+						"initials": "J",
+						"title": "Mr",
+						"lastName": "Gibb",
+						"homePhone": "07711465535",
+						"requesterName": "Mr GIBB"
+					}
+				},
+				"visit": {
+					"id": "MW01233216",
+					"date": "2018-02-16T22:33:44Z",
+					"status": "D",
+					"earliestStartTime": "2018-02-16T8:00:00Z",
+					"latestStartTime": "2018-02-16T18:00:00Z",
+					"specialInstructions": "Vulnerable customer"
+				},
+				"tasks": [{
+					"id": "2018729372001",
+					"applianceId": "55290916",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"chargeType": "NCH3SIS",
+					"status": "D",
+					"skill": "GS",
+					"sequence": 1,
+					"supportingText": "Intermittent ignition fault",
+					"activities": [{
+						"date": "2018-02-14",
+						"status": "D",
+						"sequence": 1
+					}]
+				}, {
+					"id": "2018729372002",
+					"applianceId": "55063888",
+					"jobType": "LD",
+					"applianceType": "CHB",
+					"chargeType": "NCH3SIS",
+					"status": "D",
+					"skill": "GS",
+					"sequence": 1,
+					"supportingText": "Powerflush; cold spots",
+					"activities": [{
+						"date": "2018-02-14",
+						"status": "D",
+						"sequence": 1
+					}]
+				}]
+			}
+		}
+	}
+}

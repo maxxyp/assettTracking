@@ -1,0 +1,7 @@
+<template>
+    <input type="number" value.bind="inputValue" class="form-control ${classes}"
+           disabled.bind="disabled" readonly.bind="readonly || disabled"
+           numeric-only="allow-float.bind: floatAllowed; max-length.bind: maxLength; decimal-places.bind: decimalPlaces; whole-places.bind: wholePlaces;"
+           hide-keyboard-on-enter.bind="hideKeyboardOnEnter" cancel-default-submit.bind="cancelDefaultSubmit"
+           placeholder.bind="disabled ? '' : placeholder || defaultPlaceholder" blur.trigger="blur()" disable-form-manager="true" />
+</template>

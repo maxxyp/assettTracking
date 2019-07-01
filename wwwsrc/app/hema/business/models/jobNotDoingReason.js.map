@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/jobNotDoingReason.ts"],"names":[],"mappings":"","file":"jobNotDoingReason.js","sourcesContent":["export const enum JobNotDoingReason {\n    taskNoAccessed = 1,\n    allTasksCancelled\n}\n"],"sourceRoot":"../../.."}

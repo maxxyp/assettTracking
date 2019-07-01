@@ -1,0 +1,1192 @@
+[
+	{
+		"key": "1",
+		"code": "L1",
+		"fieldAppCode": "1 BED EICR",
+		"description": "Landlord EICR for 1 Bed property ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"code": "L3",
+		"fieldAppCode": "3 BED EICR",
+		"description": "Landlord EICR for 3 Bed property ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"code": "L5",
+		"fieldAppCode": "5 BED EICR",
+		"description": "Landlord EICR for 5 Bed property ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"code": "AV",
+		"fieldAppCode": "ADAPT VST",
+		"description": "Adaptor Visit – Installation of an appliance adaptor for customers on our priority register who struggle to turn on/off their gas appliances",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "5",
+		"code": "IP",
+		"fieldAppCode": "APP/POINT",
+		"description": "Install with Point – Chargeable installation of gas cooker inclusive of up to 1m of pipe and point",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "6",
+		"code": "G2",
+		"fieldAppCode": "APT MAX 10",
+		"description": "EICR APP TEST 6-10 APPLIANCES",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "7",
+		"code": "G3",
+		"fieldAppCode": "APT MAX 15",
+		"description": "EICR APP TEST 11-15 APPLIANCES",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "8",
+		"code": "G4",
+		"fieldAppCode": "APT MAX 20",
+		"description": "EICR APP TEST 16-20 APPLIANCES",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "9",
+		"code": "G1",
+		"fieldAppCode": "APT MAX 5",
+		"description": "EICR APP TES  1-5 APPLIANCES",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "10",
+		"code": "AW",
+		"fieldAppCode": "AW FREE IB",
+		"description": "Affordable Warmth (GOV) Breakdown",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "11",
+		"code": "AL",
+		"fieldAppCode": "AW FREE LD",
+		"description": "Affordable Warmth (GOV) Long Duration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "12",
+		"code": "Z1",
+		"fieldAppCode": "AXAASSIST",
+		"description": "AXA Insurance EWR Assistance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "13",
+		"code": "AD",
+		"fieldAppCode": "B APP DISC",
+		"description": "Bulk Housing Services Breakdown",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "14",
+		"code": "BB",
+		"fieldAppCode": "B BUILD WR",
+		"description": "Bulk Housing Services Building Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "15",
+		"code": "BC",
+		"fieldAppCode": "B CUS COMP",
+		"description": "Bulk Housing Services Complaint",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "16",
+		"code": "EF",
+		"fieldAppCode": "B FORCE EN",
+		"description": "Bulk Housing Services Forced Entry",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "17",
+		"code": "UB",
+		"fieldAppCode": "B HEAT UPG",
+		"description": "No Charge (df) - Bulk Heating Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "18",
+		"code": "PI",
+		"fieldAppCode": "B IN APP P",
+		"description": "Bulk Housing Services Install Appliance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "19",
+		"code": "AI",
+		"fieldAppCode": "B INST APP",
+		"description": "Bulk Housing Services Installation",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "20",
+		"code": "BD",
+		"fieldAppCode": "B ON DEM",
+		"description": "Bulk Housing Services On demand Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "21",
+		"code": "QQ",
+		"fieldAppCode": "B QUOTE",
+		"description": "Bulk Housing Services Quote",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "22",
+		"code": "RA",
+		"fieldAppCode": "B REC APP",
+		"description": "Bulk Housing Services Reconnect Appliance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "23",
+		"code": "BW",
+		"fieldAppCode": "B RECT WOR",
+		"description": "Bulk Housing Services Rectifying Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "24",
+		"code": "BF",
+		"fieldAppCode": "B REM FLUE",
+		"description": "Bulk Housing Services Remedial Flue Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "25",
+		"code": "BV",
+		"fieldAppCode": "B REM VENT",
+		"description": "Bulk Housing Services Remedial Vent Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "26",
+		"code": "TR",
+		"fieldAppCode": "B TRACE&R",
+		"description": "Bulk Trace & Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "27",
+		"code": "AQ",
+		"fieldAppCode": "BGSM QUOTE",
+		"description": "Electrical BGSM Quote",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "28",
+		"code": "SZ",
+		"fieldAppCode": "BGSM REP",
+		"description": "No Charge  - HEC BGSM repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "29",
+		"code": "SB",
+		"fieldAppCode": "BLR CHECK",
+		"description": "Free C/H Safety Check – Free safety check on central heating appliance for employees",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "30",
+		"code": "BR",
+		"fieldAppCode": "BOIL REPNT",
+		"description": "Boiler Replacement – Free of charge boiler replacement under 7 or 10 year rule in Terms & Conditions",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "31",
+		"code": "ET",
+		"fieldAppCode": "BUS. ECAR",
+		"description": "Electric Car Charge point for Business",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "32",
+		"code": "CN",
+		"fieldAppCode": "CANNON",
+		"description": "Cannon Fire Attendance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "33",
+		"code": "SJ",
+		"fieldAppCode": "CHI SPIKE",
+		"description": "ES/CHI Install of Earth Spike",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "34",
+		"code": "PV",
+		"fieldAppCode": "CHI SURVEY",
+		"description": "Electrical Solar Panel Pre-Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "35",
+		"code": "FD",
+		"fieldAppCode": "COD ON 1ST",
+		"description": "Sainsbury's Energy - Installation of CO-Detector with First Visit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "36",
+		"code": "FD",
+		"fieldAppCode": "COD ON IST",
+		"description": "COD Fitted during First Visit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "37",
+		"code": "CO",
+		"fieldAppCode": "COMPLAINT",
+		"description": "Complaint Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "38",
+		"code": "DC",
+		"fieldAppCode": "DAM CLAIM",
+		"description": "Insurance Damage Claim",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "39",
+		"code": "DA",
+		"fieldAppCode": "DISCON/APP",
+		"description": "Disconnect Appliance – Chargeable disconnection of gas appliance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "40",
+		"code": "V1",
+		"fieldAppCode": "DIXON WTY",
+		"description": "No Charge - HEC Dixons Warranty Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "41",
+		"code": "V2",
+		"fieldAppCode": "DIXONWTYLJ",
+		"description": "No Charge - HEC Dixons Warranty Long Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "42",
+		"code": "DF",
+		"fieldAppCode": "DUAL F OCR",
+		"description": "Dual Fuel Customer Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "43",
+		"code": "V3",
+		"fieldAppCode": "DXNEXT WTY",
+		"description": "No Charge - HEC Dixons Extended Warranty Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "44",
+		"code": "V4",
+		"fieldAppCode": "DXNEXWTYLJ",
+		"description": "No Charge - HEC Dixons Extended Warranty Long Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "45",
+		"code": "H1",
+		"fieldAppCode": "EHI 1HR UP",
+		"description": "Electrical Heating Installation 1hr Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "46",
+		"code": "H2",
+		"fieldAppCode": "EHI 2HR UP",
+		"description": "Electrical Heating Installation 2hr Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "47",
+		"code": "H0",
+		"fieldAppCode": "EHI 30M UP",
+		"description": "Electrical Heating Installation 30min Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "48",
+		"code": "H3",
+		"fieldAppCode": "EHI 3HR UP",
+		"description": "Electrical Heating Installation 3hr Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "49",
+		"code": "H4",
+		"fieldAppCode": "EHI 4HR UP",
+		"description": "Electrical Heating Installation 4hr Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "50",
+		"code": "FN",
+		"fieldAppCode": "EHI FIN QT",
+		"description": "Electrical Installation Finance Documentation Collection",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "51",
+		"code": "H5",
+		"fieldAppCode": "EHI SMK UP",
+		"description": "Electrical Heating Installation Smoke Alarm Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "52",
+		"code": "ER",
+		"fieldAppCode": "ELC REPAIR",
+		"description": "Electrical Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "53",
+		"code": "EQ",
+		"fieldAppCode": "ELEC QUOTE",
+		"description": "Electrical Quote",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "54",
+		"code": "EU",
+		"fieldAppCode": "ELEC UPGRD",
+		"description": "Electrical Upgrade Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "55",
+		"code": "GU",
+		"fieldAppCode": "ENSAV UPGD",
+		"description": "Energy Saving Upgrade (5% VAT)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "56",
+		"code": "Z2",
+		"fieldAppCode": "ES TRIAL",
+		"description": "No Charge ES Trail ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "57",
+		"code": "EZ",
+		"fieldAppCode": "ES TRIAL Z",
+		"description": "Electrical Services Trial",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "58",
+		"code": "EA",
+		"fieldAppCode": "EU ASSIST",
+		"description": "Electrical - Europe-assist Insurance - Repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "59",
+		"code": "FR",
+		"fieldAppCode": "F P REPAIR",
+		"description": "Priority Response, Friends & Family – Discounted chargeable repairs for friends & family of Priority Response customers",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "60",
+		"code": "FS",
+		"fieldAppCode": "F SAFE CHK",
+		"description": "Free Gas Safety Check – Free safety check on gas appliances and installation for eligible customers on our priority register",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "61",
+		"code": "FF",
+		"fieldAppCode": "FIRST FIX",
+		"description": "First Fix- Fixed price repair element of Repair & Cover for customers who have an existing breakdown and are taking out a cover contract",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "62",
+		"code": "FV",
+		"fieldAppCode": "FIRST VST",
+		"description": "First Visit – Initial inspection visit for customers who have recently purchased a HomeCare contract for their boiler, possibly including full central heating system",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "63",
+		"code": "FB",
+		"fieldAppCode": "FST FIX 79",
+		"description": "First Repair at reduced price of £79",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "64",
+		"code": "QG",
+		"fieldAppCode": "GLAZE QUT",
+		"description": "Electrical Glazing Fabric Quote - SLO??",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "65",
+		"code": "HK",
+		"fieldAppCode": "HAUK",
+		"description": "Electrical Repair HAUK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "66",
+		"code": "HV",
+		"fieldAppCode": "HEALTH CHK",
+		"description": "Electrical Health Check",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "67",
+		"code": "HF",
+		"fieldAppCode": "HEC 1ST VI",
+		"description": "Home Electrical Cover/care? First Visit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "68",
+		"code": "PO",
+		"fieldAppCode": "HI PEB INS",
+		"description": "ES/CHI Install of PEB",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "69",
+		"code": "HL",
+		"fieldAppCode": "HM ASIS LD",
+		"description": "Home Assist Long Duration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "70",
+		"code": "HA",
+		"fieldAppCode": "HOME ASSIS",
+		"description": "Home Assist Breakdown",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "71",
+		"code": "EV",
+		"fieldAppCode": "HOME ECAR",
+		"description": "Electric Car Charge point for Domestic Customers",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "72",
+		"code": "HM",
+		"fieldAppCode": "HOME MOVE",
+		"description": "Home Move Safety Check",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "73",
+		"code": "HC",
+		"fieldAppCode": "HTG CHECK",
+		"description": "Chargeable Heating Check",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "74",
+		"code": "WU",
+		"fieldAppCode": "HTG EAGA",
+		"description": "Heating Upgrade – Chargeable work to bring system up to current standards.",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "75",
+		"code": "HU",
+		"fieldAppCode": "HTG UP'GRD",
+		"description": "Heating Upgrade – Chargeable work for system improvements",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "76",
+		"code": "WU",
+		"fieldAppCode": "HU EAGA",
+		"description": "Heating Upgrade – Chargeable work to bring system up to current standards",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "77",
+		"code": "BE",
+		"fieldAppCode": "IB ELEC",
+		"description": "Breakdown Electrical – Repair work for Home Electrical Cover and Kitchen Appliance Cover contracts",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "78",
+		"code": "BX",
+		"fieldAppCode": "IDEAL",
+		"description": "Ideal Exercise",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "79",
+		"code": "IA",
+		"fieldAppCode": "INST APP",
+		"description": "Install Appliance – Used mainly for installation of COD and Cookers",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "80",
+		"code": "SI",
+		"fieldAppCode": "INST ASSIT",
+		"description": "No Charge - assistance job for CHB install",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "81",
+		"code": "IV",
+		"fieldAppCode": "INSUR WORK",
+		"description": "Insurance Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "82",
+		"code": "IB",
+		"fieldAppCode": "INT B'DOWN",
+		"description": "Interim Breakdown – Repair work for gas HomeCare products",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "83",
+		"code": "CI",
+		"fieldAppCode": "IQ BLR #00",
+		"description": "IQ Boiler (Connected Boiler) Install No Charge",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "84",
+		"code": "JD",
+		"fieldAppCode": "JLEWIS LD",
+		"description": "Electrical Long Duration for John Lewis",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "85",
+		"code": "Z7",
+		"fieldAppCode": "JLEWISBEKO",
+		"description": "John Lewis Beko KAC repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "86",
+		"code": "JL",
+		"fieldAppCode": "JOHNLEWIS",
+		"description": "Electrical Repair for John Lewis",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "87",
+		"code": "KF",
+		"fieldAppCode": "KAC FOL/ON",
+		"description": "Follow On Job for KAC",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "88",
+		"code": "LE",
+		"fieldAppCode": "L DUR ELEC",
+		"description": "Electrical Long Duration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "89",
+		"code": "LP",
+		"fieldAppCode": "L DUR PLUM",
+		"description": "Long Duration for Plumbing Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "90",
+		"code": "ZD",
+		"fieldAppCode": "LD-AXA",
+		"description": "AXA Insurance EWR Long Duration Assistance",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "91",
+		"code": "ED",
+		"fieldAppCode": "LDEUASSIST",
+		"description": "Electrical - Europe-assist Insurance - Long Duration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "92",
+		"code": "HD",
+		"fieldAppCode": "LDHAUK",
+		"description": "Electrical Long Duration HAUK",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "93",
+		"code": "Z8",
+		"fieldAppCode": "LEISURERM",
+		"description": "Leisure/Range KAC repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "94",
+		"code": "G5",
+		"fieldAppCode": "LL APT CH",
+		"description": "Recall Visit for G1/2/3/4",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "95",
+		"code": "G6",
+		"fieldAppCode": "LL APT NCH",
+		"description": "Recall Visit for G1/2/3/4",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "96",
+		"code": "LK",
+		"fieldAppCode": "LL BULK",
+		"description": "Electrical Landlords Inspection for Bulk Housing Services",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "97",
+		"code": "LL",
+		"fieldAppCode": "LL INSP",
+		"description": "Electrical Landlords Inspection",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "98",
+		"code": "XL",
+		"fieldAppCode": "LL OCA TIR",
+		"description": "Landlord 3 Tier Chargeable Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "99",
+		"code": "LD",
+		"fieldAppCode": "LONG DUR",
+		"description": "Long Duration – Longer jobs that qualify for LD code such as Cylinders, Primary HEX, Rads requiring pipe change, etc.",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "100",
+		"code": "LJ",
+		"fieldAppCode": "LONG JOB",
+		"description": "Long Job – Work that does not fall under LD criteria, but will take longer than 90 mins",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "101",
+		"code": "AS",
+		"fieldAppCode": "MAINT INSP",
+		"description": "Annual Service Visit included as part of customer's HomeCare agreement",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "102",
+		"code": "MQ",
+		"fieldAppCode": "MANF VISIT",
+		"description": "Manufactures Joint Visit - Only raised by Engineer Help Desk",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "103",
+		"code": "XW",
+		"fieldAppCode": "MIS WIRING",
+		"description": "No Charge Misc. installation wiring",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "104",
+		"code": "OD",
+		"fieldAppCode": "MISC WORK",
+		"description": "On Demand/Misc Work – Chargeable work identified by engineer whilst on site that can be completed within 60 minutes and up to £50 of parts, can be raised by engineer on site",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "105",
+		"code": "OR",
+		"fieldAppCode": "MISC WORK",
+		"description": "Key Collection Travel Allowance for Landlords Jobs",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "106",
+		"code": "NE",
+		"fieldAppCode": "NEST SRVS",
+		"description": "NEST Service",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "107",
+		"code": "CS",
+		"fieldAppCode": "O/C SER CS",
+		"description": "Chargeable one-off Service",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "108",
+		"code": "MU",
+		"fieldAppCode": "O/C SER MU",
+		"description": "Chargeable one-off Service – Can only be used in conjunction with FS or AV jobs listed above, discounted one-off service for Free Gas Safety check customers offered by engineer only, not sold by Call Centre.",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "109",
+		"code": "BP",
+		"fieldAppCode": "OCA REPAIR",
+		"description": "On Call Assistance Repair Labour Only",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "110",
+		"code": "XR",
+		"fieldAppCode": "OCA TIERED",
+		"description": "3 Tier Chargeable Job – one-off chargeable repair for customers without a HomeCare contract",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "111",
+		"code": "OE",
+		"fieldAppCode": "OD ELEC",
+		"description": "Electrical On Demand/Misc Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "112",
+		"code": "H6",
+		"fieldAppCode": "OD USB FLT",
+		"description": "ES Fault on USB socket",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "113",
+		"code": "H7",
+		"fieldAppCode": "OD USB UPG",
+		"description": "ES Upgrade to USB socket",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "114",
+		"code": "OL",
+		"fieldAppCode": "ONLINE COD",
+		"description": "Install CO Detector - raised online by customer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "115",
+		"code": "EE",
+		"fieldAppCode": "ONSITE REP",
+		"description": "Additional onsite ad-hoc repair",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "116",
+		"code": "PT",
+		"fieldAppCode": "PIRAN JOB",
+		"description": "Central Heating Installation Marker Job Trial",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "117",
+		"code": "PJ",
+		"fieldAppCode": "PLUMB LJ",
+		"description": "Long Job Plumbing Work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "118",
+		"code": "PR",
+		"fieldAppCode": "PLUMB REP",
+		"description": "On Call Assistance Plumbing Repair All Parts and Labour",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "119",
+		"code": "PU",
+		"fieldAppCode": "PLUMB UPG",
+		"description": "Heating Upgrade - Chargeable work to bring system up to current standards",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "120",
+		"code": "PL",
+		"fieldAppCode": "PRTS & LAB",
+		"description": "On Call Assistance Repair All Parts and Labour",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "121",
+		"code": "P3",
+		"fieldAppCode": "PV ONLY",
+		"description": "Electrical Solar Panel Install - PV RUN ONLY",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "122",
+		"code": "P5",
+		"fieldAppCode": "PV-B",
+		"description": "Electrical Solar Panel Install - PV RUN & BONDING",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "123",
+		"code": "P0",
+		"fieldAppCode": "PV-B-VP",
+		"description": "Electrical Solar Panel Install - PV RUN, BONDING & VPHASE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "124",
+		"code": "P1",
+		"fieldAppCode": "PV-FBB",
+		"description": "Electrical Solar Panel Install - FBB & PV RUN",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "125",
+		"code": "P6",
+		"fieldAppCode": "PV-FBB-ISO",
+		"description": "Electrical Solar Panel Install - FBB & PV RUN & ISO",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "126",
+		"code": "P8",
+		"fieldAppCode": "PV-FBB-VP",
+		"description": "Electrical Solar Panel Install - FBB & PV RUN & V-PHASE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "127",
+		"code": "P7",
+		"fieldAppCode": "PV-HB-SB",
+		"description": "Electrical Solar Panel Install - HENLEY BLOCK & SUB BOARD",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "128",
+		"code": "P2",
+		"fieldAppCode": "PV-RCD-FS",
+		"description": "Electrical Solar Panel Install - RCD FS & PV RUN",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "129",
+		"code": "P4",
+		"fieldAppCode": "PV-RCD-FSB",
+		"description": "Electrical Solar Panel Install - RCD FS & PV RUN & BONDING",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "130",
+		"code": "P9",
+		"fieldAppCode": "PV-VPHASE",
+		"description": "Electrical Solar Panel Install - PV RUN & VPHASE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "131",
+		"code": "IQ",
+		"fieldAppCode": "QUOTE",
+		"description": "Issue Quotation – Quote code used when issuing Quote for Heating Upgrade job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "132",
+		"code": "RS",
+		"fieldAppCode": "REMDL SFTY",
+		"description": "No Charge - Remedial Safety during FV - Where a FV fails due to a quick/cheap (<30min/<£50) fix job is used to carry out fix to get cust on contract ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "133",
+		"code": "PA",
+		"fieldAppCode": "RENT AROOF",
+		"description": "Electrical Solar Panel Install Rent-A-Roof Job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "134",
+		"code": "RB",
+		"fieldAppCode": "REP & CARE",
+		"description": "Repair and Care - None contract no charge SR/ES",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "135",
+		"code": "RP",
+		"fieldAppCode": "REPLACE",
+		"description": "Replace COD – Used when replacing a faulty COD covered under the 5 or 6 year product warranty",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "136",
+		"code": "RI",
+		"fieldAppCode": "RHC CHARGE",
+		"description": "HIVE install Chargeable",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "137",
+		"code": "RH",
+		"fieldAppCode": "RHC NCH",
+		"description": "HIVE install No Charge",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "138",
+		"code": "RF",
+		"fieldAppCode": "RMDL FLUE",
+		"description": "Chargeable Ventilation Upgrades – Used to upgrade ventilation, fixed prices for compartment and external ventilation work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "139",
+		"code": "RV",
+		"fieldAppCode": "RMDL VENT",
+		"description": "Chargeable Ventilation Upgrades – Used to upgrade ventilation, fixed prices for compartment and external ventilation work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "140",
+		"code": "Z0",
+		"fieldAppCode": "S&R APP IB",
+		"description": "ES repair at Gas eng request",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "141",
+		"code": "Z3",
+		"fieldAppCode": "S&R APP LD",
+		"description": "ES Long Duration at Gas eng request",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "142",
+		"code": "1Z",
+		"fieldAppCode": "SAFETY RC",
+		"description": "Electrical Recall to address safety issue",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "143",
+		"code": "XX",
+		"fieldAppCode": "SAIN 3TIER",
+		"description": "Sainsbury's Energy 3 Tier Chargeable Job - Repairs to gas appliance or system with a 3 tier charge dependant on work required and duration",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "144",
+		"code": "CX",
+		"fieldAppCode": "SAIN COMP",
+		"description": "Complaint Job for Sainsbury's Energy Customers",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "145",
+		"code": "HX",
+		"fieldAppCode": "SAIN TCA",
+		"description": "Trace and Repair for Sainsbury's Energy Customers",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "146",
+		"code": "PC",
+		"fieldAppCode": "SCHOOL1",
+		"description": "Electrical Solar Panel Install School Job 1",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "147",
+		"code": "PD",
+		"fieldAppCode": "SCHOOL2",
+		"description": "Electrical Solar Panel Install School Job 2",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "148",
+		"code": "PE",
+		"fieldAppCode": "SCHOOL3",
+		"description": "Electrical Solar Panel Install School Job 3",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "149",
+		"code": "PF",
+		"fieldAppCode": "SCHOOL4",
+		"description": "Electrical Solar Panel Install School Job 4",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "150",
+		"code": "PG",
+		"fieldAppCode": "SCHOOL5",
+		"description": "Electrical Solar Panel Install School Job 5",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "151",
+		"code": "SA",
+		"fieldAppCode": "SCTY ALARM",
+		"description": "No Charge to attend security alarm",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "152",
+		"code": "X1",
+		"fieldAppCode": "SE OCA 1",
+		"description": "Sainsbury's HEC On Demand",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "153",
+		"code": "SG",
+		"fieldAppCode": "SERV ASSIT",
+		"description": "No Charge - assistance job for service work",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "154",
+		"code": "SN",
+		"fieldAppCode": "SERV VISIT",
+		"description": "SLO/PP - Service Visit for E0PR LoS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "155",
+		"code": "SV",
+		"fieldAppCode": "SERV VISIT",
+		"description": "Boiler Service for Priority Response Customer – Discounted gas appliance service for Priority Response customer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "156",
+		"code": "SD",
+		"fieldAppCode": "SHRT DUR G",
+		"description": "Short Duration – Chargeable work of a short duration nature, up to 20 minutes labour and £20 cost of parts. Can be raised by engineer",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "157",
+		"code": "SM",
+		"fieldAppCode": "SMART MTR",
+		"description": "No Charge  - S&R + ES eng visit to repair issue with appliance following a BGSM install",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "158",
+		"code": "SC",
+		"fieldAppCode": "SONIC CLN",
+		"description": "Sonic Clean – Cleaning of heat exchangers using Sonic Clean machine, only trained engineers with machine can use this job code",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "159",
+		"code": "S1",
+		"fieldAppCode": "SPEC EX 1",
+		"description": "No Charge job reserved for quick trials",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "160",
+		"code": "S2",
+		"fieldAppCode": "SPEC EX 2",
+		"description": "No Charge job reserved for quick trials",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "161",
+		"code": "S3",
+		"fieldAppCode": "SPEC EX 3",
+		"description": "No Charge job reserved for quick trials",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "162",
+		"code": "S4",
+		"fieldAppCode": "SPEC EX 4",
+		"description": "No Charge job reserved for quick trials",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "163",
+		"code": "TS",
+		"fieldAppCode": "TECH SRVC",
+		"description": "No Charge - Technical Service Visit",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "164",
+		"code": "UE",
+		"fieldAppCode": "UPGRAD EGA",
+		"description": "No Charge - EAGA Upgrade",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "165",
+		"code": "VR",
+		"fieldAppCode": "VISIT REQ",
+		"description": "Visit required – Repair work for Plumbing and Drains contracts",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "166",
+		"code": "VI",
+		"fieldAppCode": "VOID IN",
+		"description": "Bulk Void in - turn of and test",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "167",
+		"code": "VE",
+		"fieldAppCode": "VOID OUT",
+		"description": "Bulk Void out - turn of and test",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "168",
+		"code": "RC",
+		"fieldAppCode": "WARR CBACK",
+		"description": "Recall Visit – Non chargeable Recall visit following chargeable work job",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "169",
+		"code": "WL",
+		"fieldAppCode": "WATER LEAK",
+		"description": "Water leak on electric boiler ",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "170",
+		"code": "C1",
+		"fieldAppCode": "WSTR EXER",
+		"description": "Worchester Safety Exercise",
+		"ctlgEntDelnMkr": "N"
+	}
+]

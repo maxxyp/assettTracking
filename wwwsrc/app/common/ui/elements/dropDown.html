@@ -1,0 +1,58 @@
+<template>
+    <div class="dropdown-container ${disabled ? 'disabled' : ''}">
+        <div class="input-base selected-items form-control ${disabled ? 'disabled' : ''}"
+             click.trigger="toggleDropdown()">
+            <div class="selection-container">
+                <div class="input-container">
+                    <div class="select search-box" if.bind="noFilter">${valueText ? valueText : placeholder}</div>
+                    <input if.bind="!noFilter" class="select search-box" autocomplete="off"
+                           placeholder.bind="disabled ? '' : placeholder"
+                           value.bind="valueText" blur.trigger="blurListener()" focus.trigger="focusListener()"
+                           disabled.bind="disabled"
+                           readonly.bind="readonly || disabled">
+                </div>
+                <a href class="dd-caret fa ${showDropDown ? crossClass : caretClass} ${disabled ? 'disabled' : ''}"
+                   blur.trigger="blurListener()"
+                   focus.trigger="focusListener()"></a>
+            </div>
+        </div>
+        <div class="lookup-items ${showDropDown ? 'open' : 'close'}" ref="lookupItems">
+            <div repeat.for="item of filteredValues | limit: limit" class="${selectedId === $index? 'selected' : ''}"
+                 click.trigger="select(item._id)">
+                <template replaceable part="option-template">
+                    <div>${item[textProperty]}</div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <div class="smash-buttons-fader" if.bind="showSmash"></div>
+    <div class="card row smash-button-container fade-in-content" if.bind="showSmash">
+        <div class="col-xs-12 smash-button-header card-header">
+            <h1>${placeholder}</h1>
+        </div>
+        <div class="col-xs-12 smash-button-body">
+            <button repeat.for="item of filteredValues" class="btn btn-smash-button wrap" style.bind="heightStyle"
+                    click.trigger="smashButtonsSetValue(item[valueProperty])">
+                <span>
+                         <template replaceable part="option-template">
+                            <div>${item[textProperty]}</div>
+                        </template>
+                 </span>
+            </button>
+        </div>
+        <div class="col-xs-12 smash-button-footer smash-button-footer-alphabet smash buttons" if.bind="showCategories">
+            <span repeat.for="alphabet of alphabetKeys"
+                  class="smash-buttons-category${currentAlphabetLetter === alphabet ? '-selected' :
+                      (alphabets[alphabet] && alphabets[alphabet].length > 0) || alphabet === 'All'  ? '' : '-disabled'}"
+                  click.trigger="selectAlphabetLetter(alphabet)">
+            ${alphabet}
+            </span>
+        </div>
+        <div class="col-xs-12 smash-button-footer">
+            <button class="btn btn-primary  pull-right" click.trigger="cancel()">Cancel</button>
+        </div>
+    </div>
+    <div show.bind="showErrorMessage && errorMsg">
+        <span>${errorMessage}</span>
+    </div>
+</template>

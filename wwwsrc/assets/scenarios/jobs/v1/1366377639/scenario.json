@@ -1,0 +1,134 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-07-02T00:51:57Z",
+      "modifiedTimestamp": "2018-08-03T01:02:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "1366377639",
+        "engineerId": "0096407",
+        "customer": {
+          "id": "009220262",
+          "initials": "",
+          "lastName": "Mr Neil Parkinson",
+          "address": {
+            "premisesName": "",
+            "houseNumber": "6",
+            "line": [
+              "Lanchester Close"
+            ],
+            "town": "Knypersley",
+            "county": "Stoke-On-Trent",
+            "postCodeIn": "6SB",
+            "postCodeOut": "ST8"
+          }
+        },
+        "premises": {
+          "id": "8590931",
+          "address": {
+            "houseNumber": "6",
+            "line": [
+              "Lanchester Close"
+            ],
+            "town": "Knypersley",
+            "county": "Stoke-on-trent",
+            "postCodeIn": "6SB",
+            "postCodeOut": "ST8"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "009220262",
+            "initials": "",
+            "lastName": "Mr Neil Parkinson",
+            "homePhone": "01782519162",
+            "workPhone": "01782519162"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-02"
+          }
+        },
+        "visit": {
+          "id": "WMW07077085",
+          "date": "2018-08-03T00:00:00Z",
+          "earliestStartTime": "2018-08-03T12:00:00Z",
+          "latestStartTime": "2018-08-03T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1366377639001",
+            "applianceId": "201469938",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCHCNI1",
+            "status": "C",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-02",
+                "status": "C",
+                "engineerName": "PAUL CLARK",
+                "chargeableTime": 52,
+                "sequence": 1,
+                "report": "CODE1 CODE6 Seal ok/3amp/<1ohm/fan-5.1/name badge missing at risk/adv hive",
+                "workDuration": 52
+              }
+            ]
+          },
+          {
+            "id": "1366377639002",
+            "applianceId": "201469938",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "NCHCNI1",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2018-08-02",
+                "status": "IP",
+                "engineerName": "PAUL CLARK",
+                "chargeableTime": 15,
+                "sequence": 1,
+                "report": "CODE1 Case not fully sealed need part",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-02",
+                    "status": "AP",
+                    "requisitionNumber": "SOJ00071588042",
+                    "description": "Badge",
+                    "charge": 526,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "H07906"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-02",
+                    "status": "FP",
+                    "requisitionNumber": "SOJ00071588042",
+                    "description": "Badge",
+                    "charge": 526,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "H07906"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/INotificationService.ts"],"names":[],"mappings":"","file":"INotificationService.js","sourcesContent":["export interface INotificationService {\n    initRouterBadgeEventSubs(): void;\n    updateInitialRouterBadgeCounts(): Promise<void>;\n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,9 @@
+<template bindable="catalog, code">
+    <span if.bind="code">
+        <catalog-lookup catalog="${catalog.JC_APPLIANCE_CODE}"
+                        key-field="${catalog.JC_APPLIANCE_CODE_ID}"
+                        description-field="${catalog.JC_APPLIANCE_CODE_DESCRIPTION}"
+                        value.bind="code">
+        </catalog-lookup>
+    </span>
+</template>

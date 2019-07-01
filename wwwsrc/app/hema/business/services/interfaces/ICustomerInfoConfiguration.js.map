@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ICustomerInfoConfiguration.ts"],"names":[],"mappings":"","file":"ICustomerInfoConfiguration.js","sourcesContent":["export interface ICustomerInfoConfiguration {\r\n    customerInfoAutoLaunch: boolean;\r\n    customerInfoReOpenExpiryMinutes: number;\r\n}\r\n"],"sourceRoot":"../../../.."}

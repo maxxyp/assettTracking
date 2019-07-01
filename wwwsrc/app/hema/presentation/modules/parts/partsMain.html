@@ -1,0 +1,21 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="fade-in-content">
+            <div id="parts-main" fix-header="is-alt.bind:isFullScreen;" class="child-tabs">
+                <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}" click.trigger="navigateToRoute(row.config.name)"
+                    show.bind="row.settings.alwaysShow">
+                    <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>                ${row.title}
+                </span>
+            </div>
+            <div class="child-tabs">
+                <span repeat.for="row of router.navigation" class="child-tabs-item ${row.isActive ? 'active' : ''}" click.trigger="navigateToRoute(row.config.name)"
+                    show.bind="row.settings.alwaysShow">
+                    <span class="child-tabs-state-indicator ${row.settings.currentDataState || row.settings.dataState | dataStateStyle:canEdit}"></span>                ${row.title}
+                </span>
+            </div>
+            <div class="details-card">
+                <router-view></router-view>
+            </div>
+        </div>
+    </view-state>
+</template>

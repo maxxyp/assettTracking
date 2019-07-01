@@ -1,0 +1,75 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T16:03:38Z"
+    },
+    "data": {
+      "job": {
+        "id": "2020510372",
+        "customer": {
+          "id": "100000257",
+          "initials": "V",
+          "title": "Mrs",
+          "lastName": "Graham",
+          "address": {
+            "houseNumber": "10",
+            "line": [
+              "Finland Road"
+            ],
+            "town": "Stockport",
+            "county": "Manchester",
+            "postCodeIn": "5RG",
+            "postCodeOut": "SK1"
+          }
+        },
+        "premises": {
+          "id": 8391123,
+          "address": {
+            "houseNumber": "10",
+            "line": [
+              "Finland Road"
+            ],
+            "town": "Stockport",
+            "county": "Manchester",
+            "postCodeIn": "5RG",
+            "postCodeOut": "SK1"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "100000257",
+            "initials": "V",
+            "title": "Mrs",
+            "lastName": "Graham",
+            "homePhone": "7711475553"
+          }
+        },
+        "visit": {
+          "id": "WMW00163502",
+          "date": "2017-07-21T00:00:00Z",
+          "earliestStartTime": "2017-07-21T08:00:00Z",
+          "latestStartTime": "2017-07-21T12:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "2020510372001",
+            "applianceId": "55063779",
+            "jobType": "FV",
+            "applianceType": "BBF",
+            "chargeType": "NCH3FIS",
+            "status": "D",
+            "skill": "FV",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

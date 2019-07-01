@@ -1,0 +1,117 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-14T22:33:44Z",
+      "modifiedTimestamp": "2018-02-14T22:33:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "2000510372",
+        "customer": {
+          "id": "100000264",
+          "initials": "A",
+          "title": "Mr",
+          "lastName": "Watt",
+          "homePhone": "01453798698",
+          "work phone number": "01453584755",
+          "address": {
+            "houseNumber": "77",
+            "line": [
+              "The Causeway"
+            ],
+            "town": "Staines",
+            "county": "Middlsx",
+            "postCodeIn": "3BY",
+            "postCodeOut": "TW18"
+          }
+        },
+        "premises": {
+          "id": "8391129",
+          "address": {
+            "houseNumber": "77",
+            "line": [
+              "The Causeway"
+            ],
+            "town": "Staines",
+            "county": "Middlsex",
+            "postCodeIn": "3BY",
+            "postCodeOut": "TW18"
+          },
+          "contact": {
+            "id": "100000264",
+            "initials": "A",
+            "title": "Mr",
+            "lastName": "Watt",
+            "homePhone": "01453798698"
+          }
+        },
+        "visit": {
+          "id": "MW08391129",
+          "date": "2018-02-14T22:33:44Z",
+          "earliestStartTime": "2018-02-14T14:00:44Z",
+          "latestStartTime": "2018-02-14T18:00:44Z"
+        },
+        "tasks": [
+          {
+            "id": "2000510372001",
+            "applianceId": "30885272",
+            "jobType": "LE",
+            "applianceType": "EWR",
+            "chargeType": "NCHHEWM",
+            "status": "D",
+            "skill": "LE",
+            "sequence": 2,
+            "supportingText": "Fit new RCD. Call 564321 for details",
+            "activities": [
+              {
+                "date": "2018-01-28",
+                "id": "2000510372002",
+                "jobType": "LE",
+                "applianceType": "EWR",
+                "status": "IA",
+                "chargeableTime": 45,
+                "skill": "LE",
+                "sequence": 1,
+                "engineerName": "Sue Hull 570212",
+                "supportingText": "F36719 ordered",
+                "report": "Fitted temp 30amp trip",
+                "workDuration": 45,
+                "parts": [
+                  {
+                    "orderDate": "2018-01-28",
+                    "status": "AP",
+                    "requisitionNumber": "SOJ00016795866",
+                    "description": "RCD 100Ma S Type",
+                    "charge": 1926,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "F36719"
+                  }
+                ]
+              },
+              {
+                "date": "2018-01-28",
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-01-28",
+                    "status": "FP",
+                    "requisitionNumber": "SOJ00016795866",
+                    "description": "RCD 100Ma S Type",
+                    "charge": 1926,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "F36719"
+                  }
+                ]
+              }              
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": 200,
+  "data": {
+  "meta": {
+    "type": "job",
+    "createdTimestamp": "2017-05-12T14:20:53Z"
+  },
+  "data": {
+    "job": {
+      "id": "1334547001",
+      "engineerId": "0000050",
+      "customer": {
+        "id": "022208830",
+        "lastName": "Mr Scenario Nine",
+        "address": {
+          "houseNumber": "4",
+          "line": [
+            "Vine Close"
+          ],
+          "county": "Staines-Upon-Thames",
+          "postCodeIn": "6BE",
+          "postCodeOut": "TW19"
+        }
+      },
+      "premises": {
+        "id": "L276661",
+        "address": {
+          "houseNumber": "4",
+          "line": [
+            "Vine Close"
+          ],
+          "county": "Staines-Upon-Thames",
+          "postCodeIn": "6BE",
+          "postCodeOut": "TW19"
+        },
+        "previousVisitCount": 0,
+        "contact": {
+          "id": "022208830",
+          "initials": " ",
+          "lastName": "Mr Scenario Nine"
+        },
+        "safetyDetail": {
+          "lastElectricVisitDate": "2017-04-25"
+        }
+      },
+      "visit": {
+        "id": "WMW00176812",
+        "date": "2017-05-12T00:00:00Z",
+        "earliestStartTime": "2017-05-12T18:00:00Z",
+        "latestStartTime": "2017-05-12T22:00:00Z"
+      },
+      "tasks": [
+        {
+          "id": "1334547001001",
+          "applianceId": "202230913",
+          "jobType": "BE",
+          "applianceType": "DW",
+          "chargeType": "NCH2E1I",
+          "status": "D",
+          "skill": "ER",
+          "sequence": 1,
+          "activities": [
+            {
+              "status": "D",
+              "sequence": 1
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
+  }

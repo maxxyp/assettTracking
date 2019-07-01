@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IEnergyControls.ts"],"names":[],"mappings":"","file":"IEnergyControls.js","sourcesContent":["export interface IEnergyControls {\n   energyControl: string;\n   energyControlDescription: string;\n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'HemaIcons';
+  src:  url('../fonts/hema-icons/hema-icons.eot?str5ln');
+  src:  url('../fonts/hema-icons/hema-icons.eot?str5ln#iefix') format('embedded-opentype'),
+    url('../fonts/hema-icons/hema-icons.ttf?str5ln') format('truetype'),
+    url('../fonts/hema-icons/hema-icons.woff?str5ln') format('woff'),
+    url('../fonts/hema-icons/hema-icons.svg?str5ln#hemaicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.hi, [class^="hema-icon-"], [class*=" hema-icon-"], [class^="job-state-"], [class*=" job-state-"], [class^="circle-arrow-"], [class*=" circle-arrow-"]{
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'HemaIcons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.hema-icon-en-route:before {
+  content: "\e999";
+}
+.hema-icon-arrived:before {
+  content: "\e998";
+}
+.hema-icon-deselect:before {
+  content: "\e997";
+}
+.hema-icon-complete:before {
+  content: "\e996";
+}
+.hema-icon-no-access:before {
+  content: "\e995";
+}
+.hema-icon-circle-plus:before {
+  content: "\e994";
+}
+.hema-icon-circle-minus:before {
+  content: "\e993";
+}
+.hema-icon-circle-arrow-left:before {
+  content: "\e992";
+}
+.hema-icon-circle-arrow-right:before {
+  content: "\e991";
+}
+.hema-icon-hamburger:before {
+  content: "\e990";
+}
+.hema-icon-connection:before {
+  content: "\e989";
+}
+.hema-icon-error-adapt:before {
+  content: "\e988";
+}
+.hema-icon-adapt-fo:before {
+  content: "\e987";
+}
+.hema-icon-adapt-na:before {
+  content: "\e986";
+}
+.hema-icon-adapt-no:before {
+  content: "\e985";
+}
+.hema-icon-adapt-rsl:before {
+  content: "\e984";
+}
+.hema-icon-adapt-safety:before {
+  content: "\e983";
+}
+.hema-icon-adapt-sl:before {
+  content: "\e982";
+}
+.hema-icon-adapt-w:before {
+  content: "\e981";
+}
+.hema-icon-arrow-down:before {
+  content: "\e980";
+}
+.hema-icon-arrow-left:before {
+  content: "\e979";
+}
+.hema-icon-arrow-right:before {
+  content: "\e978";
+}
+.hema-icon-arrow-up:before {
+  content: "\e918";
+}
+.hema-icon-cross:before {
+  content: "\e900";
+}
+.hema-icon-plus:before {
+  content: "\e901";
+}
+.hema-icon-minus:before {
+  content: "\e902";
+}
+.hema-icon-indent:before {
+  content: "\e903";
+}
+.hema-icon-sign-in:before {
+  content: "\e905";
+}
+.hema-icon-sign-out:before {
+  content: "\e906";
+}
+.hema-icon-appointment:before {
+  content: "\e911";
+}
+.hema-icon-collecting-parts:before {
+  content: "\e907";
+}
+.hema-icon-lunch:before {
+  content: "\e90b";
+}
+.hema-icon-meeting:before {
+  content: "\e90d";
+}
+.icon-hema-superuser:before {
+  content: "\e908";
+}
+.icon-hema-vehicle-maintenance:before {
+  content: "\e90a";
+}
+.hema-icon-assistance:before {
+  content: "\e909";
+}
+.hema-icon-working:before {
+  content: "\e90c";
+}
+.hema-icon-not-working:before {
+  content: "\e929";
+}
+.hema-icon-vanstock:before {
+  content: "\e912";
+}
+.hema-icon-tick:before {
+  content: "\e913";
+}
+.hema-icon-landlord:before {
+  content: "\e90e";
+}
+.hema-icon-parts-basket:before {
+  content: "\e904";
+}
+.hema-icon-status-other:before {
+  content: "\e910";
+}
+.hema-icon-question-mark-circle:before {
+  content: "\e914";
+}
+.hema-icon-question-mark-circle-active:before {
+  content: "\e915";
+}
+.hema-icon-calendar:before {
+  content: "\e90f";
+}
+.hema-icon-jobs-done:before {
+  content: "\e916";
+}
+.hema-icon-notification:before {
+  content: "\e917";
+}
+.hema-icon-settings:before {
+  content: "\e919";
+}
+.hema-icon-linked-appliance:before {
+  content: "\e91a";
+}
+.hema-icon-bridge-service:before {
+  content: "\e91b";
+}

@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EWB</title>
+    <meta name="apple-mobile-web-app-title" content="EWB">
+    <meta name="application-name" content="EWB">
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="assets/favicon/manifest.json">
+    <link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#005eb8">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#005eb8">
+    <meta name="msapplication-TileImage" content="assets/favicon/mstile-144x144.png">
+    <meta name="msapplication-config" content="assets/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#005eb8">
+</head>
+<body aurelia-app="main">
+<div class="container text-xs-center wait-container">
+    <div class="bg-logo large-margin"></div>
+    <h2>Loading, please wait...</h2>
+    <br/>
+    <div class="fa fa-circle-o-notch fa-spin fa-3x spinner"></div>
+    <br/>
+    <br/>
+</div>
+<script>
+    if (!!~navigator.appVersion.indexOf("MSAppHost")) {
+        Windows.Graphics.Display.DisplayInformation.autoRotationPreferences = Windows.Graphics.Display.DisplayOrientations.landscape;
+    }
+    document.addEventListener('selectstart', function (e) { e.preventDefault(); });
+    function initSchemeHandler() {
+        window.handleOpenURL = function(uri) {
+            if (uri.indexOf(":/") > -1) {
+                var parts = uri.split(":/");
+                window.initialRoute = parts[1].replace("/#", "").replace(/\/$/, "");
+            }
+        };
+        var isWindows = /MSAppHost/.test(navigator.appVersion);
+        var webUIApi = isWindows && Windows && Windows.UI && Windows.UI.WebUI && Windows.UI.WebUI.WebUIApplication;
+        if (webUIApi) {
+            var activatedListener = webUIApi.addEventListener("activated", function (args) {
+                var activatedEvent = args.detail.find(function(x){ return !!x; });
+                if (!!activatedEvent.uri) {
+                    var rawUri = activatedEvent.uri.rawUri;
+                    var scheme = activatedEvent.uri.schemeName + "://";
+                    var includesRoute = (rawUri !== scheme);
+                    if (includesRoute) {
+                        var path = activatedEvent.uri.rawUri.replace(scheme, "").replace("/#", "");
+                        if (path) {
+                            window.initialRoute = path;
+                            Windows.UI.WebUI.WebUIApplication.removeEventListener("activated", activatedListener);
+                        }
+                    }
+                }
+            });
+        }
+    }
+    initSchemeHandler();
+</script>
+        <script src="node_modules/bluebird/js/browser/bluebird.min.js"></script>
+        <script src="node_modules/requirejs/require.js"></script>
+        <script>
+        var baseUrl = window.location.origin + window.location.pathname.replace("index.html", "");
+        require.config({
+           baseUrl: baseUrl + "app",
+           paths: {
+               'aurelia-animator-css': '../node_modules/aurelia-animator-css/dist/amd/aurelia-animator-css',
+               'aurelia-binding': '../node_modules/aurelia-binding/dist/amd/aurelia-binding',
+               'aurelia-bootstrapper': '../node_modules/aurelia-bootstrapper/dist/amd/aurelia-bootstrapper',
+               'aurelia-dependency-injection': '../node_modules/aurelia-dependency-injection/dist/amd/aurelia-dependency-injection',
+               'aurelia-event-aggregator': '../node_modules/aurelia-event-aggregator/dist/amd/aurelia-event-aggregator',
+               'aurelia-fetch-client': '../node_modules/aurelia-fetch-client/dist/amd/aurelia-fetch-client',
+               'aurelia-http-client': '../node_modules/aurelia-http-client/dist/amd/aurelia-http-client',
+               'aurelia-framework': '../node_modules/aurelia-framework/dist/amd/aurelia-framework',
+               'aurelia-history': '../node_modules/aurelia-history/dist/amd/aurelia-history',
+               'aurelia-history-browser': '../node_modules/aurelia-history-browser/dist/amd/aurelia-history-browser',
+               'aurelia-loader': '../node_modules/aurelia-loader/dist/amd/aurelia-loader',
+               'aurelia-loader-default': '../node_modules/aurelia-loader-default/dist/amd/aurelia-loader-default',
+               'aurelia-logging': '../node_modules/aurelia-logging/dist/amd/aurelia-logging',
+               'aurelia-logging-console': '../node_modules/aurelia-logging-console/dist/amd/aurelia-logging-console',
+               'aurelia-metadata': '../node_modules/aurelia-metadata/dist/amd/aurelia-metadata',
+               'aurelia-pal': '../node_modules/aurelia-pal/dist/amd/aurelia-pal',
+               'aurelia-pal-browser': '../node_modules/aurelia-pal-browser/dist/amd/aurelia-pal-browser',
+               'aurelia-path': '../node_modules/aurelia-path/dist/amd/aurelia-path',
+               'aurelia-polyfills': '../node_modules/aurelia-polyfills/dist/amd/aurelia-polyfills',
+               'aurelia-route-recognizer': '../node_modules/aurelia-route-recognizer/dist/amd/aurelia-route-recognizer',
+               'aurelia-router': '../node_modules/aurelia-router/dist/amd/aurelia-router',
+               'aurelia-task-queue': '../node_modules/aurelia-task-queue/dist/amd/aurelia-task-queue',
+               'aurelia-templating': '../node_modules/aurelia-templating/dist/amd/aurelia-templating',
+               'aurelia-templating-binding': '../node_modules/aurelia-templating-binding/dist/amd/aurelia-templating-binding',
+               'moment': '../node_modules/moment/min/moment.min',
+               'whatwg-fetch': '../node_modules/whatwg-fetch/fetch',
+               'text': '../node_modules/text/text',
+               'tv4': '../node_modules/tv4/tv4',
+               'bignumber': '../node_modules/bignumber.js/bignumber.min',
+               'universal-ga': '../node_modules/universal-ga/lib/analytics.min',
+               'noUiSlider': '../node_modules/nouislider/distribute/nouislider.min',
+               'wNumb': '../node_modules/wnumb/wNumb'
+           },
+           packages: [
+               {
+                  name: 'aurelia-dialog',
+                  location: '../node_modules/aurelia-dialog/dist/amd',
+                  main: 'aurelia-dialog'
+               },
+               {
+                  name: 'aurelia-templating-resources',
+                  location: '../node_modules/aurelia-templating-resources/dist/amd',
+                  main: 'aurelia-templating-resources'
+               },
+               {
+                  name: 'aurelia-templating-router',
+                  location: '../node_modules/aurelia-templating-router/dist/amd',
+                  main: 'aurelia-templating-router'
+               },
+               {
+                  name: 'aurelia-validation',
+                  location: '../node_modules/aurelia-validation/dist/amd',
+                  main: 'index'
+               }
+           ]
+        });
+        Promise.config({
+            warnings: false,
+            longStackTraces: true
+        });
+        window.appIsDevelopment = true;
+        window.appIsSource = true;
+        window.appBuildType = 'dev';
+        window.isFullScreen = false;
+        window.appVersion = '8.0.0.0';
+        require(["aurelia-bootstrapper"]);
+    </script>
+
+</body>
+</html>

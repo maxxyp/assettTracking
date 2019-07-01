@@ -1,0 +1,259 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-25T12:34:44Z",
+      "modifiedTimestamp": "2017-08-25T15:06:38Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1309247001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1309247001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1326977001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1303677001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-08-04",
+              "status": "NA",
+              "engineerName": "MANDHAGINI",
+              "report": "report extended"
+            }
+          ]
+        },
+        {
+          "id": "1368347001001",
+          "jobType": "IB",
+          "applianceType": "BBC",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1386337001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1379927001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1379927001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1384977001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1346977001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1356977001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-08-21",
+              "status": "IA",
+              "engineerName": "MANDHAGINI",
+              "report": "54CODETesting report Mandhaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1372877001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1320977001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-08-17",
+              "status": "NA",
+              "engineerName": "MANDHAGINI",
+              "report": "Interim breakdown"
+            },
+            {
+              "date": "2017-08-18",
+              "status": "C",
+              "engineerName": "MANDHAGINI",
+              "report": "62CODEChirp code activity report",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "quantityCharged": 0,
+                  "stockReferenceId": "555123"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1399927001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-03-09",
+              "status": "XC",
+              "engineerName": "VALID ENGINEER"
+            }
+          ]
+        },
+        {
+          "id": "1399927001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-03-09",
+              "status": "XC",
+              "engineerName": "VALID ENGINEER"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202230867",
+          "gcCode": "4192233",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-03-08",
+          "applianceType": "CHB",
+          "description": "ALLEN ALPHA 2/12",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-03-09"
+          }
+        },
+        {
+          "id": "202230867",
+          "gcCode": "4192233",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-03-08",
+          "applianceType": "CHB",
+          "description": "ALLEN ALPHA 2/12",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-03-09"
+          }
+        }
+      ]
+    }
+  }
+}

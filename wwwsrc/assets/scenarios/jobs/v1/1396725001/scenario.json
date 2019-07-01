@@ -1,0 +1,75 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-23T10:18:33Z"
+    },
+    "data": {
+      "job": {
+        "id": "1396725001",
+        "customer": {
+          "id": "022201903",
+          "lastName": "Mrs Ghhjkkkk Sasasasas",
+          "address": {
+            "houseNumber": "15",
+            "line": [
+              "Bracken Close"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AQ",
+            "postCodeOut": "LE3"
+          }
+        },
+        "premises": {
+          "id": "L271404",
+          "address": {
+            "premisesName": "19,Adsdsd",
+            "houseNumber": "15",
+            "line": [
+              "Bracken Close"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "3AQ",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022201903",
+            "initials": " ",
+            "lastName": "Mrs Ghhjkkkk Sasasasas",
+            "homePhone": "01234567890",
+            "workPhone": "01234567890"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-23"
+          }
+        },
+        "visit": {
+          "id": "WMW00057724",
+          "date": "2018-08-23T00:00:00Z",
+          "earliestStartTime": "2018-08-23T08:00:00Z",
+          "latestStartTime": "2018-08-23T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1396725001001",
+            "applianceId": "202224315",
+            "jobType": "FV",
+            "applianceType": "CHB",
+            "chargeType": "NCH3ST",
+            "status": "D",
+            "skill": "FV",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

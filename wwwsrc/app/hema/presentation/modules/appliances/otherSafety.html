@@ -1,0 +1,177 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label>${labels.didYouWorkOnAppliance}</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <button-list items.bind="didYouWorkOnApplianceLookup" value.bind="otherSafetyViewModel.workedOnAppliance" multi-select.bind="false"
+                                    button-width="30%" disabled.bind="!canEdit">
+                                </button-list>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label>${labels.didYouVisuallyCheck}</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <button-list items.bind="didYouVisuallyCheckLookup" value.bind="otherSafetyViewModel.didYouVisuallyCheck" multi-select.bind="false"
+                                    button-width="30%" disabled.bind="!canEdit">
+                                </button-list>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label>${labels.isApplianceSafe}</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <button-list items.bind="isApplianceSafeLookup" value.bind="otherSafetyViewModel.isApplianceSafe" multi-select.bind="false"
+                                    button-width="30%" disabled.bind="disableApplianceSafe || !canEdit">
+                                </button-list>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-4">
+                                <label>${labels.toCurrentStandards}</label>
+                            </div>
+                            <div class="col-xs-8">
+                                <button-list items.bind="toCurrentStandardsLookup" value.bind="otherSafetyViewModel.toCurrentStandards" multi-select.bind="false"
+                                    button-width="30%" disabled.bind="!canEdit || disableToCurrentStandards">
+                                </button-list>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <hr if.bind="unsafeReasons.length > 0" />
+
+                    <div class="card details-card" show.bind="unsafeReasons.length > 0">
+                        <div class="row">
+                            <span class=" col-xs-12">
+                                <span repeat.for="unsafeReason of unsafeReasons">
+                                    <span class="unsafe-block">
+                                        ${unsafeReason.label}
+                                    </span>
+                            </span>
+                            </span>
+                        </div>
+                        <div class="card-block">
+                            <div class="row">
+                                <div class="col-xs-4">
+                                    <label><strong>${labels.unsafetySituationHeader}</strong></label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.report}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <text-area value.bind="otherUnsafeViewModel.report" disabled.bind="!canEdit" placeholder="${validationRules['otherUnsafeViewModel.report'].maxLength} ${labels.characterLimitSuffix}"
+                                            maxlength.bind="validationRules['otherUnsafeViewModel.report'].maxLength"></text-area>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.conditionAsLeft}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="conditionAsLeftLookup" value.bind="otherUnsafeViewModel.conditionAsLeft" multi-select.bind="false"
+                                            button-width="30%" button-height="100px" disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.cappedTurnedOff}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="cappedTurnedOffLookup" value.bind="otherUnsafeViewModel.cappedTurnedOff" multi-select.bind="false"
+                                            button-width="30%" disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.labelAttachedRemoved}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="labelAttachedRemovedLookup" value.bind="otherUnsafeViewModel.labelAttachedRemoved" multi-select.bind="false"
+                                            button-width="30%" disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.ownedByCustomer}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="ownedByCustomerLookup" value.bind="otherUnsafeViewModel.ownedByCustomer" multi-select.bind="false"
+                                            button-width="30%" disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.letterLeft}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="letterLeftLookup" value.bind="otherUnsafeViewModel.letterLeft" multi-select.bind="false" button-width="30%"
+                                            disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-xs-4">
+                                        <label>${labels.signatureObtained}</label>
+                                    </div>
+                                    <div class="col-xs-8">
+                                        <button-list items.bind="signatureObtainedLookup" value.bind="otherUnsafeViewModel.signatureObtained" multi-select.bind="false"
+                                            button-width="30%" disabled.bind="!canEdit">
+                                        </button-list>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="action-group">
+                    <button if.bind="unsafeReasons.length === 0 && canEdit" class="btn btn-primary" click.trigger="unsafeSituation()">
+                        ${labels.unsafeSituation}
+                    </button>
+                    <button class="btn btn-secondary" click.trigger="undo()" if.bind="canEdit">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn-tertiary arrow-blue-right" click.trigger="clear()" if.bind="canEdit">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

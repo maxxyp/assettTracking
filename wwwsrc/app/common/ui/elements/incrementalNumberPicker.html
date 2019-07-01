@@ -1,0 +1,44 @@
+<template>
+    <div show.bind="eachSide" class="each-side-buttons">
+
+        <div class="picker-buttons" show.bind="!disabled">
+            <a href class="picker-buttons-minus ${buttonMinusClasses}" click.trigger="subtract()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+        </div>
+
+        <div>
+            <number-box
+                   value.bind="value"
+                   disabled.bind="disabled"
+                   readonly.bind="readOnly"
+                   numeric-only="true"
+                   blur.trigger="blur()"
+                   hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                   cancel-default-submit.bind="cancelDefaultSubmit" />
+        </div>
+
+        <div class="picker-buttons" show.bind="!disabled">
+            <a href class="picker-buttons-plus ${buttonPlusClasses}" click.trigger="add()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+
+        </div>
+    </div>
+    <div show.bind="!eachSide" >
+        <span>
+            <number-box
+                    value.bind="value"
+                    disabled.bind="disabled"
+                    readonly.bind="readOnly"
+                    numeric-only="true"
+                    blur.trigger="blur()"
+                    hide-keyboard-on-enter.bind="hideKeyboardOnEnter"
+                   cancel-default-submit.bind="cancelDefaultSubmit" />
+        </span>
+        <span class="picker-buttons" show.bind="!disabled">
+            <a href class="picker-buttons-minus ${buttonMinusClasses}" click.trigger="subtract()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+            <a href class="picker-buttons-plus ${buttonPlusClasses}" click.trigger="add()" blur.trigger="blur()" focus.trigger="focus()">
+            </a>
+        </span>
+    </div>
+</template>

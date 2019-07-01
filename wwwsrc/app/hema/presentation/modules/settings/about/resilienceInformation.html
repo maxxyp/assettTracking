@@ -1,0 +1,45 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${title} ${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+                <div if.bind="unsentCalls.length === 0">${labels.noUnsent}</div>
+                <div if.bind="unsentCalls.length > 0">
+                <div class="details-list-item disabled">
+                        <div class="col-xs-2 col-xs-offset-10">
+                            <button class="btn btn-primary"
+                                    click.trigger="retryAll()"
+                                    disabled.bind="isRetryInProgress">
+                                    ${isRetryInProgress ? labels.retryingAll : labels.retryAll}
+                            </button>
+                        </div>
+                    </div>
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-2">${labels.type}</div>
+                        <div class="col-xs-2 col-centered">${labels.id}</div>
+                        <div class="col-xs-2">${labels.lastRetryTime}</div>
+                        <div class="col-xs-2">${labels.expiryTime}</div>
+                        <div class="col-xs-3">${labels.status}</div>
+                    </div>
+                    <div repeat.for="unsentCall of unsentCalls" class="details-list-item disabled">
+                        <div class="col-xs-2">${unsentCall.type}</div>
+                        <div class="col-xs-2 col-centered"><button class="btn btn-secondary" click.trigger="navigateToJob(unsentCall.id)" disabled.bind="unsentCall.id === labels.notApplicable">${unsentCall.id}</button></div>
+                        <div class="col-xs-2">${unsentCall.payload.lastRetryTime | dateTimeFormat : 'D MMM YYYY [at] HH:mm'}</div>
+                        <div class="col-xs-2">${unsentCall.payload.expiryTime | dateTimeFormat : 'D MMM YYYY [at] HH:mm' }</div>
+                        <div class="col-xs-1">${unsentCall.payload.isRetrying ? labels.retrying : labels.notSent}
+                        </div>
+                        <div class="col-xs-1">
+                            <button class="btn btn-secondary"
+                                if.bind="!isRetryInProgress && unsentCall.payload.lastFailureMessage"
+                                click.trigger="showDetail(unsentCall.payload)">${labels.errorDetails}&nbsp;
+                                <i class="fa fa-exclamation-circle resilient-alert"></i> </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

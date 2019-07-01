@@ -1,0 +1,31 @@
+<template bindable="task, labels">
+    <div>
+        <div class="row" style="padding-top: 0.8em" if.bind="task.supportingText">
+            <strong>${labels.supportingtext}: </strong>
+        </div>
+        <div class="row" if.bind="task.supportingText">
+            <span class="wrap">${task.supportingText}</span>
+        </div>
+        <div style="padding-top: 0.8em" class="row" if.bind="task.specialRequirement">
+            <strong>${labels.specialrequirement}: </strong>
+        </div>
+        <div class="row" if.bind="task.specialRequirement">
+            <span class="wrap">${task.specialRequirement}</span>
+        </div>
+        <div class="row" style="padding-top: 0.8em"
+             if.bind="task.problemDesc || task.applianceErrorDesc || task.applianceErrorCode">
+            <div class="row" if.bind="task.problemDesc">
+                <strong>Customer Reported Fault: </strong> <br />
+                <span>${task.problemDesc}</span>
+            </div>
+            <div class="row" if.bind="task.applianceErrorCode">
+                <span>Error:</span> <br />
+                <span>${task.applianceErrorCode}</span><span class="wrap" if.bind="task.applianceErrorDesc"> - ${task.applianceErrorDesc}</span>            
+            </div>
+            <div class="row" if.bind="task.applianceMake">
+                <span>Appliance:</span> <br />
+                <span>${task.applianceMake}</span><span if.bind="task.applianceModel"> - ${task.applianceModel}</span>
+            </div>            
+        </div>
+    </div>
+</template>

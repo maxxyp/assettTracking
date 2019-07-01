@@ -1,0 +1,23 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+
+                <div class="row">
+                    <div class="col-xs-4 details-list-item-col">
+                        <h4>Asset Tracking</h4>
+                    </div>
+                    <div class="col-xs-4 details-list-item-col">
+                        <label class="btn btn-toggle ${assetTrackingIsEnabled ? 'active' : 'false'}">${assetTrackingIsEnabled ?
+                            'On' :
+                            'Off'}</label>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</template>

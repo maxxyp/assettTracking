@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IApplianceSystemType.ts"],"names":[],"mappings":"","file":"IApplianceSystemType.js","sourcesContent":["export interface IApplianceSystemType {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

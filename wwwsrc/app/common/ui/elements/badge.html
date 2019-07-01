@@ -1,0 +1,9 @@
+<template>
+    <div class=" badge-container fade-in-content" show.bind="newValue > 0">
+        <div class="holder ${animationClass}">
+            <div class="holder-text ${showCount ? '': 'inner-circle'}">
+                <span if.bind="showCount">${newValue}</span>
+            </div>
+        </div>
+    </div>
+</template>

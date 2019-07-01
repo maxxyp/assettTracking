@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{90b1a466-afa2-f0d6-3045-dde8d6f7252e}</ProjectGuid>
+    <TypeScriptToolsVersion>2.3</TypeScriptToolsVersion>
+    <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptEmitDecoratorMetadata>true</TypeScriptEmitDecoratorMetadata>
+    <TypeScriptExperimentalDecorators>true</TypeScriptExperimentalDecorators>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptNoImplicitAny>true</TypeScriptNoImplicitAny>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0'">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>$(VersionNumberMajor).$(VersionNumberMinor)</MinimumVisualStudioVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>ewb_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.develop.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="*.pfx" />
+    <Content Include="res\**\*.png" />
+    <Content Include="wwwsrc\app.config.json" />
+    <Content Include="wwwsrc\index.html" />
+    <Content Include="wwwsrc\assets\**\*" />
+    <Content Include="wwwsrc\fonts\**\*" />
+    <Content Include="wwwsrc\css\**\*" />
+    <Content Include="wwwsrc\app\**\*.html" />
+    <Content Include="wwwsrc\app\**\*.js" />
+    <Content Include="wwwsrc\app\**\*.js.map" />
+    <TypeScriptCompile Include="wwwsrc\app\**\*.ts" />
+    <TypeScriptCompile Include="wwwsrc\typings\**\*.ts" />
+    <TypeScriptCompile Include="wwwsrc\tests\e2e\**\*.ts" />
+    <Content Include="wwwsrc\node_modules\bluebird\js\browser\bluebird.min.js" />
+    <Content Include="wwwsrc\node_modules\requirejs\require.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dependency-injection\dist\amd\aurelia-dependency-injection.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-binding\dist\amd\aurelia-binding.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-animator-css\dist\amd\aurelia-animator-css.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-http-client\dist\amd\aurelia-http-client.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-bootstrapper\dist\amd\aurelia-bootstrapper.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-history-browser\dist\amd\aurelia-history-browser.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-event-aggregator\dist\amd\aurelia-event-aggregator.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-loader-default\dist\amd\aurelia-loader-default.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-loader\dist\amd\aurelia-loader.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-logging\dist\amd\aurelia-logging.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-metadata\dist\amd\aurelia-metadata.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-fetch-client\dist\amd\aurelia-fetch-client.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-framework\dist\amd\aurelia-framework.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-logging-console\dist\amd\aurelia-logging-console.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-history\dist\amd\aurelia-history.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-polyfills\dist\amd\aurelia-polyfills.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-path\dist\amd\aurelia-path.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-task-queue\dist\amd\aurelia-task-queue.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-pal-browser\dist\amd\aurelia-pal-browser.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-route-recognizer\dist\amd\aurelia-route-recognizer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-pal\dist\amd\aurelia-pal.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-router\dist\amd\aurelia-router.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-binding\dist\amd\aurelia-templating-binding.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating\dist\amd\aurelia-templating.js" />
+    <Content Include="wwwsrc\node_modules\moment\min\moment.min.js" />
+    <Content Include="wwwsrc\node_modules\blob-polyfill\Blob.js" />
+    <Content Include="wwwsrc\node_modules\whatwg-fetch\fetch.js" />
+    <Content Include="wwwsrc\node_modules\text\text.js" />
+    <Content Include="wwwsrc\node_modules\wnumb\wNumb.js" />
+    <Content Include="wwwsrc\node_modules\bignumber.js\bignumber.min.js" />
+    <Content Include="wwwsrc\node_modules\tv4\tv4.js" />
+    <Content Include="wwwsrc\node_modules\nouislider\distribute\nouislider.min.js" />
+    <Content Include="wwwsrc\node_modules\universal-ga\lib\analytics.min.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-router\dist\amd\aurelia-templating-router.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-router\dist\amd\index.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-router\dist\amd\route-href.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-router\dist\amd\route-loader.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-router\dist\amd\router-view.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\ai-dialog-body.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\ai-dialog-footer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\ai-dialog-header.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\ai-dialog.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\attach-focus.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\aurelia-dialog.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-configuration.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-controller.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-options.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-renderer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-result.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\dialog-service.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\index.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\lifecycle.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-dialog\dist\amd\renderer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\abstract-repeater.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\analyze-view-factory.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\array-repeat-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\attr-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\aurelia-hide-style.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\aurelia-templating-resources.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\binding-mode-behaviors.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\binding-signaler.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\compose.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\css-resource.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\debounce-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\dynamic-element.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\else.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\focus.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\hide.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\html-resource-plugin.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\html-sanitizer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\if-core.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\if.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\index.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\map-repeat-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\null-repeat-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\number-repeat-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\repeat-strategy-locator.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\repeat-utilities.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\repeat.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\replaceable.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\sanitize-html.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\self-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\set-repeat-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\show.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\signal-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\throttle-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\update-trigger-binding-behavior.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-templating-resources\dist\amd\with.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\debouncer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\decorators.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\index.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\path-observer.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\utilities.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validate-custom-attribute.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-config.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-group-builder.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-group.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-locale.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-property.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-result.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-rules-collection.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-rules.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation-view-strategy.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\validation.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\bg-BG.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\ca-ES.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\da-DK.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\de-DE.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\en-US.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\es-MX.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\fr-FR.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\ja-JP.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\nb-NO.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\nl-BE.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\nl-NL.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\nn-NO.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\pt-BR.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\sv-SE.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\tr-TR.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\resources\zh-CN.js" />
+    <Content Include="wwwsrc\node_modules\aurelia-validation\dist\amd\strategies\twbootstrap-view-strategy.js" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-animator-css\dist\amd\aurelia-animator-css\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-binding\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-bootstrapper\dist\amd\aurelia-bootstrapper\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-dependency-injection\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-dialog\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-event-aggregator\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-fetch-client\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-http-client\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-framework\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-history\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-history-browser\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-loader\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-loader-default\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-logging\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-logging-console\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-metadata\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-pal\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-pal-browser\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-path\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-polyfills\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-route-recognizer\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-router\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-task-queue\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-templating\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-templating-binding\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-templating-resources\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-templating-router\dist\**\*.d.ts" />
+    <TypeScriptCompile Include="wwwsrc\node_modules\aurelia-validation\dist\aurelia-validation.d.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{4a0dddb5-7a95-4fbf-97cc-616d07737a77}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Uap.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.jsproj.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+  <Target Name="BeforeBuild">
+    <Exec Command="node_modules\.bin\gulp typescript-compile" WorkingDirectory="wwwsrc" />
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

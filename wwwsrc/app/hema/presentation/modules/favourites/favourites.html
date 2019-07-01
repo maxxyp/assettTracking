@@ -1,0 +1,48 @@
+<template>
+    <div class="card-block fade-in-content">
+        <div show.bind="favouriteList.favourites.length > 0">
+            <div class="details-list-item details-list-item-header">
+                <div class="col-xs-2">${labels.stockReferenceCode}</div>
+                <div class="col-xs-4">${labels.partDescription}</div>
+                <div class="col-xs-4"></div>
+                <div class="col-xs-2"></div>
+            </div>
+           <!--consumables -->
+            <div show.bind="item.referenceId" class="details-list-item no-pointer no-hover blue-content" repeat.for="item of favouriteList.favourites">
+                <div class="col-xs-2 details-list-item-col ">
+                    ${item.referenceId}
+                </div>
+                <div class="col-xs-4 details-list-item-col ">
+                    ${item.description}
+                </div>
+                <div class="col-xs-4 details-list-item-col ">
+                    <button class="btn btn-secondary" click.trigger="reorderConsumableItem(item)">${labels.addToConsumables}</button>
+                </div>
+                <div class="col-xs-2 details-list-item-col text-right">
+                        <button class="btn btn-secondary cross-blue au-target" click.trigger="deleteItem($index)"> ${labels.delete}</button>
+                </div>
+            </div>
+             <!--parts -->
+           <div show.bind="item.stockReferenceId" class="details-list-item no-pointer no-hover blue-content" repeat.for="item of favouriteList.favourites">
+                <div class="col-xs-2 details-list-item-col ">
+                    ${item. stockReferenceId}
+                </div>
+                <div class="col-xs-4 details-list-item-col ">
+                    ${item.description}
+                </div>
+                <div class="col-xs-4 details-list-item-col ">
+                    <button class="btn btn-secondary" show.bind="showAddToPartsBasketButton" click.trigger="reorderPartItem(item)">${labels.addToPartsBasket}</button>
+                </div>
+                <div class="col-xs-2 details-list-item-col text-right" >
+                    <button class="btn btn-secondary cross-blue au-target" click.trigger="deleteItem($index)"> ${labels.delete}</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-list-item disabled" show.bind="favouriteList.favourites.length === 0">
+            <div class="col-xs-12 details-list-item-col">
+                ${labels.noRecords}
+            </div>
+        </div>
+    </div>
+</template>

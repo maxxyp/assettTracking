@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/IReferenceDataConfiguration.ts"],"names":[],"mappings":"","file":"IReferenceDataConfiguration.js","sourcesContent":["export interface IReferenceDataConfiguration {\n    referenceDataStaleMinutes?: number;\n    targetReferenceDataTypes: string[];\n}\n"],"sourceRoot":"../../../.."}

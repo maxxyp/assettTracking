@@ -1,0 +1,67 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="fade-in-content">
+        <div class="card details-card" if.bind="canEdit && !riskMessageRead">
+            <div class="card-block">
+                <div class="card details-card">
+                    <div class="row">
+                        <div class="col-xs-12 text-xs-center">
+                            <p class="text-center">
+                                <h1>${labels.reminder}</h1>
+                            </p>
+                            <p class="text-center">
+                                ${labels.riskMessage}
+                            </p>
+                        </div>
+                        <div class="col-xs-12 text-xs-center" if.bind="canEdit">
+                            <button class="btn btn-primary text-center" click.trigger="accept()">
+                        ${labels.markAsRead}
+                    </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card  details-card details-list" if.bind="riskMessageRead || !canEdit">
+            <div class="card-block">
+                <form form-manager>
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-4">${labels.reason}</div>
+                        <div class="col-xs-6">${labels.report}</div>
+                        <div class="col-xs-2 with-button">
+                            <button show.bind="canEdit" class="btn btn-secondary plus" disabled.bind="!canEdit"
+                                click.delegate="newRisk()">${labels.new}</button>
+                        </div>
+                    </div>
+
+                    <div repeat.for="riskViewModel of riskViewModels" show.bind="riskViewModels.length > 0" class="details-list-item" click.trigger="navigateToRisk(riskViewModel.risk.id)">
+                        <div class="col-xs-4 details-list-item-col  ${riskViewModel.risk.dataState | dataStateStyle:canEdit}">
+
+                            <catalog-lookup if.bind="!riskViewModel.risk.isHazard && riskViewModel.risk.reason" catalog="${catalog.SAFETY_REASON_CAT}" key-field="${catalog.SAFETY_REASON_CAT_GROUP}|${catalog.SAFETY_REASON_CAT_ID}"
+                                description-field="${catalog.SAFETY_REASON_CAT_DESCRIPTION}" value="${catalog.SAFETY_REASON_CAT_GROUP_RISK_REASON}|${riskViewModel.risk.reason}"></catalog-lookup>
+
+                            <span if.bind="!riskViewModel.risk.isHazard && !riskViewModel.risk.reason">${labels.incomplete}</span>
+
+                            <span if.bind="riskViewModel.risk.isHazard">${labels.hazard}</span>
+
+                        </div>
+                        <div class="col-xs-6 details-list-item-col wrap">
+                            ${riskViewModel.risk.report}
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <button class="btn btn-secondary cross-blue" click.trigger="deleteRisk($event, riskViewModel.risk.id)" show.bind="canEdit"
+                                disabled.bind="!canEdit">${labels.delete}
+                        </button>
+                        </div>
+                    </div>
+                    <div class="details-list-item disabled" show.bind="riskViewModels.length < 1">
+                        <div class="col-xs-12 details-list-item-col">
+                            ${canEdit ? labels.noDataCanEdit : labels.noData}
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+    </view-state>
+</template>

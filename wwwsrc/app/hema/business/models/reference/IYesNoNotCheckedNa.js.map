@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IYesNoNotCheckedNa.ts"],"names":[],"mappings":"","file":"IYesNoNotCheckedNa.js","sourcesContent":["export interface IYesNoNotCheckedNa {\n   key: string;\n   id: string;\n   description: string;\n   ctlgEntDelnMkr: string;\n}\n"],"sourceRoot":"../../../.."}

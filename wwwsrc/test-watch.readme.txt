@@ -1,0 +1,7 @@
+This is experimental playing about with typescript watch compilation and unit testing without necessarily unsing gulp with piping etc.
+
+Given a typescript background watch process is running (typescript version >=2.6):
+    > start powershell "tsc -w --sourceMap -p test-watch-tsconfig.json" -WindowStyle Minimized;
+
+Running the following should keep unit tests running in watch mode with 2-3 second execution feedback:
+    > karma start test-watch-karma.conf.js --grep stateButtons

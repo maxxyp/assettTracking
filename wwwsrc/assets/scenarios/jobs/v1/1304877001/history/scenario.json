@@ -1,0 +1,223 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "jobHistory",
+			"createdTimestamp": "2017-08-15T15:42:09Z",
+			"modifiedTimestamp": "2017-08-16T10:58:50Z"
+		},
+		"data": {
+			"tasks": [
+				{
+					"id": "1392877001001",
+					"jobType": "FV",
+					"applianceType": "CHB",
+					"status": "I",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"status": "D"
+						}
+					]
+				},
+				{
+					"id": "1331677001001",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"status": "I",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-08-03",
+							"status": "IA",
+							"engineerName": "WENDY",
+							"report": "54CODEGfjvjhvhnvhnvhnvhmbjmb jbjmbjmhjkhjkj"
+						},
+						{
+							"status": "D"
+						}
+					]
+				},
+				{
+					"id": "1399377001001",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"status": "C",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-07-28",
+							"status": "C",
+							"engineerName": "MANDHAGINI",
+							"report": "71CODEtttttttttttttttttttttttttttttttttttttttttttttttttt"
+						}
+					]
+				},
+				{
+					"id": "1399377001002",
+					"jobType": "FV",
+					"applianceType": "CHB",
+					"status": "I",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-07-28",
+							"status": "IA",
+							"engineerName": "MANDHAGINI",
+							"report": "62CODEyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+						},
+						{
+							"status": "D"
+						}
+					]
+				},
+				{
+					"id": "1392677001001",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"status": "C",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-08-04",
+							"status": "C",
+							"engineerName": "MANDHAGINI",
+							"report": "62CODEttttttttttttttttttttttttttttttttt"
+						}
+					]
+				},
+				{
+					"id": "1392677001002",
+					"jobType": "SD",
+					"applianceType": "CHB",
+					"status": "I",
+					"chargeType": "SLO3SIS",
+					"activities": [
+						{
+							"date": "2017-08-04",
+							"status": "IP",
+							"engineerName": "MANDHAGINI",
+							"report": "62CODEyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+						}
+					]
+				},
+				{
+					"id": "1361677001001",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"status": "C",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-08-03",
+							"status": "C",
+							"engineerName": "WENDY",
+							"report": "CODE0Reporrt time"
+						}
+					]
+				},
+				{
+					"id": "1361677001002",
+					"jobType": "SD",
+					"applianceType": "CHB",
+					"status": "I",
+					"chargeType": "SLO3SIS",
+					"activities": [
+						{
+							"date": "2017-08-03",
+							"status": "IP",
+							"engineerName": "WENDY",
+							"report": "62CODE77777777777777777777777"
+						},
+						{
+							"status": "D"
+						}
+					]
+				},
+				{
+					"id": "1317777001001",
+					"jobType": "IB",
+					"applianceType": "CHB",
+					"status": "X",
+					"chargeType": "NCH3SIS",
+					"activities": [
+						{
+							"date": "2017-08-10",
+							"status": "XB",
+							"engineerName": "MANDHAGINI",
+							"report": "Cancelled by BGS"
+						}
+					]
+				},
+				{
+					"id": "1379257001001",
+					"jobType": "HU",
+					"applianceType": "CHB",
+					"status": "C",
+					"chargeType": "ALP3SIS",
+					"activities": [
+						{
+							"date": "2017-06-16",
+							"status": "C",
+							"engineerName": "WENDY",
+							"report": "CODE3Reports are not ready yet"
+						}
+					]
+				}
+			],
+			"appliances": [
+				{
+					"id": "202232103",
+					"gcCode": "4106004",
+					"category": "X",
+					"contractType": "3SIS",
+					"contractExpiryDate": "2018-06-12",
+					"applianceType": "CHB",
+					"description": "RAYPAK BOILER 250/200  >",
+					"boilerSize": 0,
+					"numberOfSpecialRadiators": 0,
+					"installationYear": 2015,
+					"safety": {
+						"applianceSafe": false,
+						"ventilationSafe": false,
+						"actionCode": "C",
+						"noticeStatus": "R",
+						"noticeType": "ID",
+						"report": "Reports are very confusing"
+					},
+					"chirp": {
+						"iaciCode": "D",
+						"iaciDate": "2017-06-13"
+					}
+				},
+				{
+					"id": "202232104",
+					"category": "A",
+					"contractType": "2DI",
+					"contractExpiryDate": "2018-06-12",
+					"applianceType": "DRA",
+					"boilerSize": 0,
+					"numberOfSpecialRadiators": 0
+				},
+				{
+					"id": "202232105",
+					"category": "A",
+					"contractType": "2PI",
+					"contractExpiryDate": "2018-06-12",
+					"applianceType": "PLB",
+					"boilerSize": 0,
+					"numberOfSpecialRadiators": 0
+				},
+				{
+					"id": "202232106",
+					"category": "A",
+					"contractType": "HEWI",
+					"contractExpiryDate": "2018-06-12",
+					"applianceType": "EWR",
+					"boilerSize": 0,
+					"numberOfSpecialRadiators": 0
+				}
+			]
+		}
+	}
+}

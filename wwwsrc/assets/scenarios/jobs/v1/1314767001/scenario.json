@@ -1,0 +1,96 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-07-17T10:49:02Z"
+    },
+    "data": {
+      "job": {
+        "id": "1314767001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022210501",
+          "lastName": "Mr Test Onshoredata",
+          "address": {
+            "houseNumber": "12-14",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L278164",
+          "address": {
+            "premisesName": "Flat 8",
+            "houseNumber": "12-14",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022210501",
+            "initials": " ",
+            "lastName": "Mr Test Onshoredata"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-07-13",
+            "safetyNoticeNotLeftReason": "Reason why chosen fully"
+          },
+          "risks": [
+            {
+              "reason": "R3",
+              "report": "Risk in premise",
+              "date": "2017-07-13"
+            }
+          ],
+          "unsafeDetail": {
+            "report": "Property unsafe",
+            "conditionAsLeft": "ID",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "T",
+            "ownedByCustomer": false,
+            "signatureObtained": true,
+            "letterLeft": false,
+            "reasons": [
+              "PDL8",
+              "GMET"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00200582",
+          "date": "2017-07-17T00:00:00Z",
+          "earliestStartTime": "2017-07-17T08:00:00Z",
+          "latestStartTime": "2017-07-17T18:00:00Z",
+          "specialInstructions": "testtstststtststststststsstts07448265595"
+        },
+        "tasks": [
+          {
+            "id": "1314767001001",
+            "applianceId": "202233385",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "EXS3FIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

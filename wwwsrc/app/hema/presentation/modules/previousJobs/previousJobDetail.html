@@ -1,0 +1,109 @@
+<template>
+    <require from="../../../../common/ui/attributes/swipe"></require>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div swipe="callback.bind: swipeFunction; scope.bind: $this;" class="swipeable" ref="card">
+            <div class="job-details-header">
+                <span class="title">${labels.jobId}: ${previousJobViewModel.id}</span>
+                <prev-next-buttons values.bind="previousJobIds" param-id="previousJobId" />
+            </div>
+            <div class="card details-card">
+                <div repeat.for="task of previousJobViewModel.tasks | sort:'date':'descending'">
+                    <div class="card-block">
+                        <div class="row">
+                            <h1>${labels.task} ${$index + 1}</h1>
+                            <div class="form-group">
+                                <div class="col-xs-2">
+                                    <label>${labels.applianceType}</label>
+                                </div>
+                                <div class="col-xs-10">
+                                    <catalog-lookup catalog="${catalog.OBJECT_TYPE}" key-field="${catalog.OBJECT_TYPE_ID}" description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                        value.bind="task.applianceType"></catalog-lookup>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-2"><label>${labels.jobType}</label></div>
+                                <div class="col-xs-10">
+                                    <catalog-lookup catalog="${catalog.ACTION_TYPE}" key-field="${catalog.ACTION_TYPE_ID}" description-field="${catalog.ACTION_TYPE_DESCRIPTION}"
+                                        value.bind="task.jobType"></catalog-lookup>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-xs-2"><label>${labels.chargeType}</label></div>
+                                <div class="col-xs-10">
+                                    <catalog-lookup catalog="${catalog.CHARGE_TYPE}" key-field="${catalog.CHARGE_TYPE_ID}" description-field="${catalog.CHARGE_TYPE_DESCRIPTION}"
+                                        value.bind="task.chargeType"></catalog-lookup>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-block">
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1>${labels.activities}</h1>
+
+                                <div repeat.for="activity of task.activities | sort:'date':'descending'">
+                                    <div show.bind="activity.date" class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.date}</label>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            ${activity.date | dateTimeFormat: 'D MMM YYYY'}
+                                        </div>
+                                    </div>
+                                    <div show.bind="activity.status" class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.status}</label>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            <catalog-lookup catalog="${catalog.ACTIVITY_COMPONENT_VISIT_STATUS}" key-field="${catalog.ACTIVITY_COMPONENT_VISIT_STATUS_ID}"
+                                                description-field="${catalog.ACTIVITY_COMPONENT_VISIT_STATUS_DESCRIPTION}" value.bind="activity.status"></catalog-lookup>
+                                        </div>
+                                    </div>
+                                    <div show.bind="activity.engineerName" class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.engineerName}</label>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            ${activity.engineerName}
+                                        </div>
+                                    </div>
+                                    <div show.bind="activity.report" class="form-group">
+                                        <div class="col-xs-2">
+                                            <label>${labels.report}</label>
+                                        </div>
+                                        <div class="col-xs-10">
+                                            ${activity.report}
+                                        </div>
+                                        <br/>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-xs-12">
+                                            <div show.bind="activity.parts.length > 0">
+                                                <div class="row table-header">
+                                                    <div class="col-xs-2">${labels.reportStockRef}</div>
+                                                    <div class="col-xs-6">${labels.description}</div>
+                                                    <div class="col-xs-2">${labels.status}</div>
+                                                    <div class="col-xs-2">${labels.quantity}</div>
+                                                </div>
+                                                <div class="row" repeat.for="part of activity.parts">
+                                                    <div class="col-xs-2">${ part.stockReferenceId }</div>
+                                                    <div class="col-xs-6">${ part.description }</div>
+                                                    <div class="col-xs-2">${ part.status }</div>
+                                                    <div class="col-xs-2">${ part.quantity }</div>
+                                                </div>
+                                            </div>
+                                            <hr/>
+                                            <br/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="job-details-separator" if.bind="previousJobViewModel.tasks.indexOf(task) < previousJobViewModel.tasks.length - 1"
+                    />
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

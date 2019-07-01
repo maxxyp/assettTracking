@@ -1,0 +1,220 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "2032052721001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2015-07-20T00:00:00Z",
+              "status": "D",
+              "engineerName": "Mike Coulter",
+              "report": "Poor ignition. Cleaned and adjusted spark electrode."
+            }
+          ]
+        },
+        {
+          "id": "2032052721002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2015-07-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Mike Coulter",
+              "report": "Boiler and system checked OK after ignition fault repair."
+            }
+          ]
+        },
+        {
+          "id": "2033969621001",
+          "jobType": "BE",
+          "applianceType": "CKE",
+          "status": "C",
+          "chargeType": "NCH2E3",
+          "activities": [
+            {
+              "date": "2015-12-01T00:00:00Z",
+              "status": "D",
+              "engineerName": "Phil Appleby",
+              "report": "Door seal damaged but fixed on visit."
+            }
+          ]
+        },
+        {
+          "id": "2039701721001",
+          "jobType": "BE",
+          "applianceType": "CKE",
+          "status": "C",
+          "chargeType": "NCH2E3",
+          "activities": [
+            {
+              "date": "2016-07-13T00:00:00Z",
+              "status": "D",
+              "engineerName": "Mark Millar",
+              "report": "Fan vibration. Lubricated and adjusted OK."
+            }
+          ]
+        },
+        {
+          "id": "2098701721001",
+          "jobType": "AS",
+          "applianceType": "KAC",
+          "status": "C",
+          "chargeType": "NCHMIE",
+          "activities": [
+            {
+              "date": "2016-11-19T00:00:00Z",
+              "status": "C",
+              "engineerName": "Rob Allen",
+              "report": "Maintenance inspection. All OK."
+            }
+          ]
+        },
+        {
+          "id": "2043969621001",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2016-12-18T00:00:00Z",
+              "status": "C",
+              "engineerName": "Phil Appleby",
+              "report": "Checked Applaince and system all OK."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "79441459",
+          "gcCode": "9999990",
+          "category": "A",
+          "contractType": "MIE",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "KAC",
+          "description": "Appliance Care",
+          "locationDescription": "House",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": false,
+            "ventilationSafe": false,
+            "installationSafe": true,
+            "installationTightnessTestSafe": false
+          }
+        },
+        {
+          "id": "79441460",
+          "gcCode": "1126306",
+          "category": "A",
+          "contractType": "MIE",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "CKE",
+          "linkId": "79441459",
+          "description": "Stoves ES550 WL",
+          "locationDescription": "KITCHEN",
+          "installationYear": 2009,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": false,
+            "ventilationSafe": false,
+            "installationSafe": true,
+            "installationTightnessTestSafe": false
+          }
+        },
+        {
+          "id": "79441457",
+          "serialId": "G281252ULT",
+          "bgInstallationIndicator": true,
+          "gcCode": "4701903",
+          "category": "X",
+          "contractType": "3SG1",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "CHB",
+          "description": "Glowworm Ultracom 38CXi",
+          "flueType": "R",
+          "boilerSize": 25,
+          "cylinderType": 0,
+          "energyControl": "TS",
+          "locationDescription": "Kitchen",
+          "condition": 1,
+          "numberOfRadiators": 11,
+          "systemInstallationYear": 2000,
+          "installationYear": 2016,
+          "systemDesignCondition": 1,
+          "systemType": 17,
+          "numberofSpecialRadiators": 1,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": true,
+            "installationSafe": true,
+            "installationTightnessTestSafe": true
+          }
+        },
+        {
+          "id": "79441458",
+          "gcCode": "3203209",
+          "bgInstallationIndicator": true,
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "FRE",
+          "description": "Valor Adorn BR622",
+          "flueType": "O",
+          "locationDescription": "Lounge",
+          "installationYear": 2005,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": true,
+            "installationSafe": false,
+            "installationTightnessTestSafe": true
+          }
+        },
+        {
+          "id": "79441456",
+          "gcCode": "8888888",
+          "category": "A",
+          "applianceType": "HAZ",
+          "description": "Asbestos",
+          "locationDescription": "Hall Fuse Panel",
+          "notes": "Sampled by Square Root 20/8/12.Removed.Certificate Ref:SR/290961/Type1",
+          "installationYear": 2012
+        },
+        {
+          "id": "79441461",
+          "serialid": 110214895,
+          "gcCode": "7334219",
+          "category": "A",
+          "contractType": "MIE",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "WM",
+          "linkId": "79441459",
+          "description": "Aquarius WML540GUK",
+          "locationDescription": "KITCHEN",
+          "installationYear": 2011,
+          "safety": {
+            "applianceSafe": true,
+            "flueSafe": false,
+            "ventilationSafe": false,
+            "installationSafe": true,
+            "installationTightnessTestSafe": false
+          }
+        }
+      ]
+    }
+  }
+}

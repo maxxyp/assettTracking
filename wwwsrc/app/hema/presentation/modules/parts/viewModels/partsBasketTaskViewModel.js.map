@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/presentation/modules/parts/viewModels/partsBasketTaskViewModel.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,+BAAC;IAAD,CAHA,AAGC,IAAA;IAHY,4DAAwB","file":"partsBasketTaskViewModel.js","sourcesContent":["export class PartsBasketTaskViewModel {\n    public taskId: string;\n    public activity: string;\n}\n"],"sourceRoot":"../../../../.."}

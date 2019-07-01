@@ -1,0 +1,6 @@
+<template>
+    <a repeat.for="r of ratingTexts"
+         class="star-rating-stars fa ${$index <= value ? 'fa-star fa-2x' : 'fa-star-o fa-2x'}"
+         click.trigger="ratingClick($index)"></a>
+    <div>${valueText}</div>
+</template>

@@ -1,0 +1,43 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+                <div>
+                    <label>${labels.lastSuccessfulSyncTime}:</label>
+                    <span>${lastSuccessfulSyncTime | dateTimeFormat}</span>
+                </div>
+                <br/>
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-4">${labels.table}</div>
+                    <div class="col-xs-4">${labels.lastDateModified}</div>
+                    <div class="col-xs-4">${labels.version}</div>
+                    <div class="col-xs-4">${labels.source}</div>
+                </div>
+                <div repeat.for="referenceVersion of referenceVersions" 
+                    class="details-list-item disabled ${!referenceVersion.majorVersion && !referenceVersion.minorVersion && !referenceVersion.sequence && !referenceVersion.isLocal? 'error error-text' : ''}">
+                    <div class="col-xs-4">${referenceVersion.table}</div>
+                    <div class="col-xs-4">
+                        <span>
+                            ${referenceVersion.lastModifiedDate | dateTimeFormat : 'D MMM YYYY [at] HH:mm'}
+                        </span>
+                        <span if.bind="referenceVersion.lastAttemptFailed" class="label label-warning">
+                            Failed
+                        </span>
+                    </div>
+                    <div class="col-xs-4">
+                        <span if.bind="!referenceVersion.isLocal">
+                            ${referenceVersion.majorVersion}.${referenceVersion.minorVersion}.${referenceVersion.sequence}
+                        </span>
+                    </div>
+                    <div class="col-xs-4">
+                        ${referenceVersion.isLocal ? labels.local : labels.remote} <span if.bind="!referenceVersion.isLocal"> - ${referenceVersion.source}</span>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</template>

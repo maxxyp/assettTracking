@@ -1,0 +1,46 @@
+{
+  "disableCache": true,
+  "status": 200,
+  "data": {
+    "data": {
+      "list": [
+        {
+          "id": "1333527001",
+          "status": "allocated",
+          "workType": "job"
+        },
+        {
+            "id": "1300000001",
+            "status": "allocated",
+            "workType": "job"
+        },
+        {
+            "id": "1300000002",
+            "status": "allocated",
+            "workType": "job"
+        },
+        {
+          "id": "1343527001",
+          "status": "allocated",
+          "workType": "job"
+        },
+        {
+          "id": "1333527002",
+          "status": "allocated",
+          "workType": "job"
+        }
+      ],
+      "memoList": [
+        { "id": "1", "memo": "Please Ring Control"},
+        { "id": "2", "memo": "Please Ring Control with lunch Message"},
+        { "id": "3", "memo": "Please Ring Control with Absence Message"},
+        { "id": "4", "memo": "There are no more tasks for this site"},
+        { "id": "5", "memo": "Have a safe journey"},
+        { "id": "6", "memo": "Absence also INCLUDES your lunch duration. Please take lunch DURING or AFTER this absence"},
+        { "id": "7", "memo": "Please ignore previous lunch memo. A new memo will be issued"},
+        { "id": "8", "memo": "<Task Identifier> also includes your lunch duration. Please take lunch during or after this job"},
+        { "id": "90", "memo": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries...."}
+      ]
+    }
+  }
+}

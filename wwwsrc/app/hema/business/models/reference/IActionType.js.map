@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IActionType.ts"],"names":[],"mappings":"","file":"IActionType.js","sourcesContent":["export interface IActionType {\n   jobType: string;\n   jobTypeDescription: string;\n   jobSafetyNotRequired: string;\n   completedJobTypeDescription: string;\n   jobTypeDummyCode: string;\n}\n"],"sourceRoot":"../../../.."}

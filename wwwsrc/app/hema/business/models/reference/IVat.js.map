@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IVat.ts"],"names":[],"mappings":"","file":"IVat.js","sourcesContent":["export interface IVat {\n   vatCode: string;\n   vatDescription: string;\n   vatRate: number;\n   vatStartDate: string;\n   vatEndDate: string;\n}\n"],"sourceRoot":"../../../.."}

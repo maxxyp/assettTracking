@@ -1,0 +1,118 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-06-26T10:29:09Z"
+    },
+    "data": {
+      "job": {
+        "id": "1304557001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022209504",
+          "lastName": "Mrs Berly John",
+          "address": {
+            "houseNumber": "2",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L277257",
+          "address": {
+            "houseNumber": "2",
+            "line": [
+              "St. Albans Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "1GE",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022209504",
+            "initials": " ",
+            "lastName": "Mrs Berly John"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-06-16",
+            "safetyNoticeNotLeftReason": "San isleft"
+          },
+          "unsafeDetail": {
+            "report": "Property unsafe",
+            "conditionAsLeft": "XC",
+            "labelAttachedOrRemoved": "A",
+            "cappedOrTurnedOff": "NT",
+            "ownedByCustomer": true,
+            "signatureObtained": true,
+            "letterLeft": true,
+            "reasons": [
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00188402",
+          "date": "2017-06-26T00:00:00Z",
+          "earliestStartTime": "2017-06-26T18:00:00Z",
+          "latestStartTime": "2017-06-26T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1304557001001",
+            "applianceId": "202231780",
+            "jobType": "AS",
+            "applianceType": "BBF",
+            "chargeType": "NCH3SIS",
+            "status": "D",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1304557001002",
+            "applianceId": "202231782",
+            "jobType": "AS",
+            "applianceType": "FRE",
+            "chargeType": "NCH1S",
+            "status": "D",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1304557001003",
+            "applianceId": "202231783",
+            "jobType": "IB",
+            "applianceType": "HOB",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

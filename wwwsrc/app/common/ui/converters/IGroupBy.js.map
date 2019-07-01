@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/converters/IGroupBy.ts"],"names":[],"mappings":"","file":"IGroupBy.js","sourcesContent":["export interface IGroupBy {\n    group: string;\n    values: any;\n}\n"],"sourceRoot":"../../.."}

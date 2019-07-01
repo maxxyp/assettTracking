@@ -1,0 +1,13 @@
+<template bindable="catalog, task, index, totalTasks">
+    <div style="color: #555555">
+        <div style="font-weight: bolder; font-size: larger">
+            <span if.bind="totalTasks > 1">${index}.</span>
+            <task-action catalog.one-way="catalog" code.one-way="task.jobType"></task-action>
+            <span if.bind="task.applianceType">-</span>
+            <task-appliance catalog.one-way="catalog" code.one-way="task.applianceType"></task-appliance>
+        </div>
+        <div class="row" if.bind="task.visitCount" style="padding-top: 0.2em">
+            <strong><span style="padding-right: 0.5em">no. of visits</span><span class="visit-count-badge">${task.visitCount}</span></strong>
+        </div>
+    </div>
+</template>

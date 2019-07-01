@@ -1,0 +1,174 @@
+{
+  "status": 200,
+  "data":{
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-13T14:25:25Z",
+      "modifiedTimestamp": "2018-08-14T04:55:54Z"
+    },
+    "data": {
+      "job": {
+        "id": "1359425001",
+        "engineerId": "5050505",
+        "customer": {
+          "id": "022201839",
+          "lastName": "Mr Mills Charge",
+          "address": {
+            "houseNumber": "40",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          }
+        },
+        "premises": {
+          "id": "L271320",
+          "address": {
+            "houseNumber": "40",
+            "line": [
+              "Frome Avenue"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "4GB",
+            "postCodeOut": "LE2"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201839",
+            "initials": " ",
+            "lastName": "Mr Mills Charge"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-13"
+          }
+        },
+        "visit": {
+          "id": "WMW00057426",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1359425001001",
+            "applianceId": "202224193",
+            "jobType": "PL",
+            "applianceType": "WAW",
+            "chargeType": "ALPNONE",
+            "status": "D",
+            "skill": "OC",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "IP",
+                "engineerName": "GEORGE",
+                "chargeableTime": 10,
+                "sequence": 1,
+                "report": "62CODE Complete the 1st job in visit 1",
+                "workDuration": 10,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "AP",
+                    "description": "Wax Sensor",
+                    "charge": 2672,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "108014"
+                  },
+                  {
+                    "status": "CP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 0,
+                    "quantity": 1,
+                    "stockReferenceId": "E66527"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Fan-105 Assy c/w Impeller 75Watt",
+                    "charge": 10782,
+                    "quantity": 1,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E66527"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-13",
+                    "status": "FP",
+                    "description": "Wax Sensor",
+                    "charge": 2672,
+                    "quantity": 3,
+                    "quantityCharged": 3,
+                    "stockReferenceId": "108014"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1359425001002",
+            "applianceId": "202224192",
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "NCH3SIS",
+            "status": "C",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "C",
+                "engineerName": "GEORGE",
+                "chargeableTime": 9,
+                "sequence": 1,
+                "report": "62CODE Complete the job in visit 1",
+                "workDuration": 9
+              }
+            ]
+          },
+          {
+            "id": "1359425001003",
+            "applianceId": "202224195",
+            "jobType": "IA",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-13",
+                "status": "C",
+                "engineerName": "GEORGE",
+                "chargeableTime": 9,
+                "sequence": 1,
+                "report": "54CODE Complete the job in visit 1",
+                "workDuration": 9,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

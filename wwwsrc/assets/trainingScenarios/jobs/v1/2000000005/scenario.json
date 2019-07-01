@@ -1,0 +1,82 @@
+{
+	"status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-10T22:33:44Z",
+      "modifiedTimestamp": "2018-02-10T22:33:44Z"
+    },
+    "data": {
+      "job": {
+        "id": "2088052721",
+        "customer": {
+          "id": "001162070",
+          "title": "Miss",
+          "initial": "D",
+          "lastName": "Smith",
+          "password": "SPECIALK",
+          "homePhone": "7762476666",
+          "workphone": "01530510964",
+          "address": {
+            "houseNumber": "236",
+            "line": ["Anglesey Road"],
+            "town": "Uddingstone",
+            "county": "Glasgow",
+            "postCodeIn": "8BB",
+            "postCodeOut": "G65"
+          }
+        },
+        "premises": {
+          "id": "1160035",
+          "address": {
+            "houseNumber": "236",
+            "line": ["Anglesey Road"],
+            "town": "Uddingstone",
+            "county": "Glasgow",
+            "postCodeIn": "8BB",
+            "postCodeOut": "G65"
+          },
+          "contact": {
+            "id": "100000260",
+            "title": "Miss",
+            "initial": "D",
+            "lastName": "Smith",
+            "homePhone": "07761475535",
+            "workphone": "01530510964"
+          },
+          "risks": [{
+            "reason": "R3",
+            "report": "Unpredictable due to dementia",
+            "date": "2016-01-01"
+          }]
+        },
+        "visit": {
+          "date": "2017-07-24T22:33:44Z",
+          "earliestStartTime": "2016-01-01T8:00:00Z",
+          "latestStartTime": "2016-01-01T18:00:00Z",
+          "visit status": "D",
+          "specialInstructions": "Knock loudly"
+        },
+        "tasks": [{
+          "id": "2088052721001",
+          "applianceId": "79441461",
+          "jobType": "BE",
+          "applianceType": "WM",
+          "chargeType": "NCH2E3",
+          "status": "D",
+          "skill": "ER",
+          "sequence": 1
+        }, {
+          "id": "2088052721002",
+          "applianceId": "79441462",
+          "jobType": "BE",
+          "applianceType": "MW",
+          "chargeType": "NCH2E3",
+          "status": "D",
+          "skill": "ER",
+          "sequence": 1
+        }]
+      }
+    }
+  }
+}

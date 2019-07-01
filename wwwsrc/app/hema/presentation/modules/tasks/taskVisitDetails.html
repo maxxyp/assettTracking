@@ -1,0 +1,39 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card-block" if.bind="noData">
+            ${labels.noData}
+        </div>
+        <div class="card details-card" if.bind="!noData">
+            <div class="card-block">
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-2">${labels.date}</div>
+                    <div class="col-xs-2">${labels.status}</div>
+                    <div class="col-xs-3">${labels.engineer}</div>
+                    <div class="col-xs-3">${labels.report}</div>
+                    <div class="col-xs-3">${labels.chargeableTime}</div>
+                    <div class="col-xs-3">${labels.workDuration}</div>
+                </div>
+                <div repeat.for="visit of visits" class="details-list-item details-list-item-dark no-pointer">
+                    <div class="col-xs-2  details-list-item-col">
+                        ${visit.date | dateTimeFormat: 'D MMM YYYY'}
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        ${statuses[visit.status]}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col">
+                        ${visit.engineerName}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col wrap">
+                        ${visit.report}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col wrap">
+                        ${visit.chargeableTime}
+                    </div>
+                    <div class="col-xs-3  details-list-item-col wrap">
+                        ${visit.workDuration}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

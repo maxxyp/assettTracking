@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/IConsumable.ts"],"names":[],"mappings":"","file":"IConsumable.js","sourcesContent":["export interface IConsumable {\n    quantityOrdered: number;\n    stockReferenceId: string;\n}\n"],"sourceRoot":"../../../../.."}

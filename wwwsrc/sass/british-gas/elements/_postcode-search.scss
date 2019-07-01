@@ -1,0 +1,11 @@
+postcode-search {
+  .gps-button {
+    color: $green-3;
+  }
+
+  .no-gps {
+    color: red;
+    display: inline-block;
+    margin-right: 7px;
+  }
+}

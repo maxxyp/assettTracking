@@ -1,0 +1,114 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-02-18T12:00:00Z",
+      "modifiedTimestamp": "2018-02-181T18:00:00Z"
+    },
+    "data": {
+      "job": {
+        "id": "0001025743",
+        "customer": {
+          "id": "001162071",
+          "initials": "L",
+          "title": "Mrs",
+          "lastName": "Davis",
+          "homePhone": "07711475555",
+          "address": {
+            "line": ["Kimberley Street"],
+            "houseNumber": "69",
+            "town": "Cardiff",
+            "county": "Wales",
+            "postCodeIn": "5TT",
+            "postCodeOut": "CF10"
+          }
+        },
+        "premises": {
+          "id": "1160036",
+          "address": {
+            "line": ["Kimberley Street"],
+            "houseNumber": "69",
+            "town": "Cardiff",
+            "county": "Wales",
+            "postCodeIn": "5TT",
+            "postCodeOut": "CF10"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "001162071",
+            "initials": "L",
+            "title": "Mrs",
+            "lastName": "Davis",
+            "homePhone": "07711475555",
+            "requesterName": "Mrs Davis"
+          },
+          "risks": [
+            {
+              "reason": "R5",
+              "report": "Cockroach behind appliance",
+              "date": "2018-01-01"
+            }
+          ]
+        },
+        "visit": {
+          "id": "2063062072001",
+          "date": "2017-03-01T12:00:00Z",
+          "status": "D",
+          "earliestStartTime": "2017-03-01T12:00:00Z",
+          "latestStartTime": "2018-03-01T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "0001025743002",
+            "applianceId": "79441498",
+            "jobType": "KF",
+            "applianceType": "DW",
+            "chargeType": "NCH2E3",
+            "status": "D",
+            "skill": "ER",
+            "supportingText": "Could not complete. Customer request.",
+            "sequence": 2,
+            "activities": [
+              {
+                "date": "2018-02-16",
+                "status": "IA",
+                "sequence": 1,
+                "engineerName": "Sue Hull 570212",
+                "report": "Part ordered",
+                "workDuration": 40,
+                "parts": [
+                  {
+                    "orderDate": "2018-02-10",
+                    "status": "AP",
+                    "description": "Actuator",
+                    "charge": 3305,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E29206"
+                  }
+                ]
+              },
+              {
+                "date": "2019-06-01",
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-02-10",
+                    "status": "FP",
+                    "description": "Actuator",
+                    "charge": 3305,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E29206"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

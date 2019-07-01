@@ -1,0 +1,70 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${summary}</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="transfer-van-stock-dialog-body">
+            <div class="card details-card details-list">
+                <div class="card-block hook-list-data-container">
+
+                    <div class="details-list-item no-hover blue-content hook-list-data-item-container row"
+                        repeat.for="part of model">
+
+                        <div class="col-xs-5 details-list-item-col">
+                            ${part.engineerName}
+                            <help-tip>
+                                <span>Payroll: ${part.engineerId} <br /> Phone: ${part.engineerPhone}</span>
+                            </help-tip>
+                        </div>
+
+                        <div class="col-xs-3 details-list-item-col">
+                            <span if.bind="part.distanceInMiles === 'UNKNOWN'">
+                                unknown
+                                <help-tip>
+                                    <span>The engineer's distance cannot be calculated at the moment</span>
+                                </help-tip>
+                            </span>
+                            <span  if.bind="part.distanceInMiles !== 'UNKNOWN'">
+                                ${part.distanceInMiles} miles
+                                <help-tip>
+                                    <span>Crow flies distance</span>
+                                </help-tip>
+                            </span>
+                        </div>
+
+                        <div class="col-xs-4 details-list-item-col">
+                            <div class="pull-left">
+                                <number-adjuster value.bind="part.quantityRequested"
+                                    max-value.bind="part.availableQuantity" min-value.bind="0"
+                                    show-missing-item-label.bind="false" show-max.bind="true">
+                                </number-adjuster>
+                            </div>
+                            <div class="pull-right">
+                                <help-tip if.bind="part.reservationQuantity" icon.one-time="'!'" class="help-tip-alert">
+                                    <span>
+                                        <span if.bind="part.availableQuantity === 1">
+                                            This part may be reserved already,
+                                        </span>
+                                        <span if.bind="part.availableQuantity > 1 && part.availableQuantity === part.reservationQuantity">
+                                            These parts may be reserved already,
+                                        </span>
+                                        <span if.bind="part.availableQuantity > 1 && part.availableQuantity !== part.reservationQuantity">
+                                            ${part.reservationQuantity} of these parts may be reserved already,
+                                        </span>
+                                        please check with the engineer.
+                                    </span>
+                                </help-tip>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" disabled.bind="!isValid" click.trigger="controller.ok(model)">Reserve
+            </button>
+            <button class="btn btn-secondary" click.trigger="controller.cancel()">Cancel</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

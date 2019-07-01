@@ -1,0 +1,62 @@
+<template>
+    <div class="job-details-head ${isDone ? 'done' : ''} ${clickable ? 'pointer' : ''}" click.trigger="headerClicked()">
+        <div class="clearfix header-container">
+            <div class="col-xs-4">
+                <div class="de-tab">
+                    <div class="job-address">${viewModel.shortAddress}
+                        <span class="job-risk is-risk-${safetyStatusCssClass}">
+                            <a href show.bind="safetyStatusCssClass" click.trigger="showRisks(viewModel.jobNumber, $event)" class="job-critical">
+                                <i class="fa fa-exclamation-circle risk-${safetyStatusCssClass}"></i>
+                            </a>
+                        </span>
+                        <span class="job-address ${job.isLandlordJob ? 'is-activated-landlord' : ''}">
+                            <a click.trigger="showLandlordDetails(viewModel.jobNumber, $event)">
+                                <i class="hema-icon-landlord ${job.isLandlordJob ? 'is-landlord-job' : ''}"></i>
+                            </a>
+                        </span>
+                    </div>
+                    <div class="job-id">${viewModel.contactName}</div>
+                    <div class="job-id">${labels.jobNumberPrefix}: ${viewModel.jobNumber}
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-8 action-container-spacer">
+                <div show.bind="viewModel.earliestStartTime || viewModel.latestStartTime" class="job-appointment">
+                    ${labels.appointment}: ${viewModel.earliestStartTime | dateTimeFormat: 'HH:mm'} - ${viewModel.latestStartTime | dateTimeFormat:
+                    'HH:mm'}
+                </div>
+                <div class="job-time" show.bind="startTime">
+                    ${labels.startTime}: ${startTime | dateTimeFormat:'HH:mm'}
+                </div>
+                <div class="job-time" show.bind="elapsedTime >= 0">
+                    ${labels.elapsedTime}: ${elapsedTime} ${labels.minutes}
+                </div>
+            </div>
+            <div class="action-container">
+                <div class="job-shortcut-container">
+                    <!--<a show.bind="job.isLandlordJob" class="btn arrow-right ${isDone? 'btn-slate' : 'btn-primary'} ${landlordDialogOpen === true ? 'inactive' : 'active' } btn-block"
+                        click.trigger="showLandlordDetails(viewModel.jobNumber, $event)">
+                        <span class="btn-label">${labels.btnLandlordDetails}</span>
+                    </a>-->
+                    <a class="btn ${isDone ? 'btn-slate':'btn-primary'} ${trainingMode === true ? 'disabled' : '' } active btn-block arrow-right"  click.trigger="launchCustomerInfo($event)">
+                        <span class="btn-label">${labels.btnCustomerInfo}</span>
+                    </a>
+                    <a class="btn ${isDone ? 'btn-slate':'btn-primary'} ${trainingMode === true ? 'disabled' : ''} active btn-block arrow-right" click.trigger="exportCustomerDetails($event, viewModel.jobNumber)">
+                        <span class="btn-label">${labels.btnGenerateQuote}</span>
+                    </a>
+                    <a class="btn ${isDone ? 'btn-slate':'btn-primary'} active btn-block arrow-right" click.trigger="navigateToAppointmentBooking($event)">
+                        ${labels.bookAppointment}
+                    </a>
+                </div>
+                <div show.bind="!isDone && !job.isBadlyFormed.isBadlyFormed" class="status-buttons-container">
+                    <div class="my-job-state">Status : ${jobState}</div>
+                    <state-buttons job-id.bind="viewModel.jobNumber" class="de-tab"></state-buttons>
+                </div>
+                <div show.bind="job.isBadlyFormed.isBadlyFormed" class="status-buttons-container status-buttons-container-failed-sanity-check">
+                    <div class="my-job-state">Call dispatch: ${job.isBadlyFormed.reason}</div>
+                    <i class="fa fa-warning"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

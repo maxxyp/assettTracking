@@ -1,0 +1,94 @@
+{
+  "status": 200,
+  "data": {
+    "meta":{
+      "type":"job",
+      "createdTimestamp":"2017-04-13T13:44:12Z"
+    },
+    "data":{
+      "job":{
+        "id":"1382737001",
+        "customer":{
+          "id":"022208285",
+          "lastName":"Mr Datafor Private",
+          "address":{
+            "houseNumber":"20",
+            "line":[
+              "Lennymuir"
+            ],
+            "county":"Edinburgh",
+            "postCodeIn":"0AP",
+            "postCodeOut":"EH12"
+          }
+        },
+        "premises":{
+          "id":"L276178",
+          "address":{
+            "houseNumber":"12",
+            "line":[
+              "Clerwood Gardens"
+            ],
+            "county":"Edinburgh",
+            "postCodeIn":"8PT",
+            "postCodeOut":"EH12"
+          },
+          "previousVisitCount":0,
+          "contact":{
+            "id":"022208286",
+            "initials":" ",
+            "lastName":"Miss Resi Data"
+          },
+          "safetyDetail":{
+            "lastGasVisitDate":"2017-04-13",
+            "safetyNoticeNotLeftReason":"testjjjjjjjj"
+          },
+          "unsafeDetail":{
+            "reasons":[
+              "PDL8"
+            ]
+          }
+        },
+        "visit":{
+          "id":"WMW00170502",
+          "date":"2017-04-13T00:00:00Z",
+          "earliestStartTime":"2017-04-13T08:00:00Z",
+          "latestStartTime":"2017-04-13T18:00:00Z"
+        },
+        "tasks":[
+          {
+            "id":"1382737001001",
+            "applianceId":"202230305",
+            "jobType":"FV",
+            "applianceType":"CHB",
+            "chargeType":"NCH2SIS",
+            "status":"D",
+            "skill":"FV",
+            "sequence":1,
+            "activities":[
+              {
+                "status":"D",
+                "sequence":1
+              }
+            ]
+          },
+          {
+            "id":"1382737001002",
+            "applianceId":"202230306",
+            "jobType":"AS",
+            "applianceType":"INS",
+            "chargeType":"NCHLI",
+            "status":"D",
+            "skill":"LS",
+            "sequence":1,
+            "activities":[
+              {
+                "status":"D",
+                "sequence":1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

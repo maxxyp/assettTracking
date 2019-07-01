@@ -1,0 +1,1225 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-14T10:18:15Z",
+      "modifiedTimestamp": "2018-08-14T10:42:24Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1354425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1354425001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1354425001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "I",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1354425001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1330425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-07",
+              "status": "IA",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job..",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1380425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-07",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job..",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-07",
+              "status": "IA",
+              "engineerName": "AMEND",
+              "report": "71CODE dfsgfhdfhjghjkdfhjdtyjhjd",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "CP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 2,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "WA",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Wax Sensor",
+                  "quantity": 4,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6"
+            }
+          ]
+        },
+        {
+          "id": "1373425001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 1,
+                  "stockReferenceId": "555055"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1373425001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1373425001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                },
+                {
+                  "status": "UD",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1365325001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 4,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1365325001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 2,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1365325001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1365325001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1324425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "WA",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Wax Sensor",
+                  "quantity": 4,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1324425001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 2,
+                  "stockReferenceId": "555055"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1324425001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1324425001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-09",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                },
+                {
+                  "status": "UD",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1368425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "WA",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE DSDSDSDSDSDS",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Universal Ball Valve Service Kit",
+                  "quantity": 4,
+                  "stockReferenceId": "F31878"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE DSDDDDDDDDDDDDDDD",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Universal Ball Valve Service Kit",
+                  "quantity": 4,
+                  "stockReferenceId": "F31878"
+                },
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1368425001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE DSDSDSDSSSSSSSSSSSSSS",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "dsdsds",
+                  "quantity": 2,
+                  "stockReferenceId": "E99379"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1368425001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE DSDDDDDDDDDDDDDDD",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "V -Carbon Brush Pair (L) TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "E07067"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1368425001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE DSDSSSSSSSSSSSSSSS",
+              "parts": [
+                {
+                  "status": "CP",
+                  "quantity": 1,
+                  "stockReferenceId": "E61448"
+                },
+                {
+                  "status": "UP",
+                  "description": "sdsds",
+                  "quantity": 1,
+                  "stockReferenceId": "E61448"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1391425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "CODE6 scenario4sddd",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 4,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ testtsttsttstst",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 4,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "Electronic Timeswitch Single Channel",
+                  "quantity": 1,
+                  "stockReferenceId": "555053"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1391425001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEAA sssssssssssss",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wireless Thermostat Non Programmable",
+                  "quantity": 2,
+                  "stockReferenceId": "555055"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1391425001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ ssssssssssssssssssssssssssss",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1391425001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODEZZ cxccxczczxcxzczxczxcxzc",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                },
+                {
+                  "status": "UP",
+                  "description": "Gasket 56 X 60mm Dia",
+                  "quantity": 1,
+                  "stockReferenceId": "109014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1360425001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-07",
+              "status": "IP",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-07",
+              "status": "IA",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "NU",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 2,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-07",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing A SMAPLE JOB.."
+            }
+          ]
+        },
+        {
+          "id": "1354325001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "WA",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job.",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a Charge JOB...",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 3,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1354325001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job..",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 2,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1354325001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job...",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1354325001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job...",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Electrode - Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E89070"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1355325001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "WA",
+              "engineerName": "AMEND",
+              "report": "CODE0 Testing a Charge job.",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE0 Testing a sample job.",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 3,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1355325001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE0 Testing a charge job.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1355325001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1355325001004",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Electrode - Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E89070"
+                },
+                {
+                  "status": "UP",
+                  "description": "Electrode - Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E89070"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1398225001001",
+          "jobType": "PL",
+          "applianceType": "WAW",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing a sample job.",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "stockReferenceId": "108014"
+                },
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-02",
+              "status": "WA",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job.",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Wax Sensor",
+                  "quantity": 2,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1398225001002",
+          "jobType": "DA",
+          "applianceType": "FRE",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing a sample.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 2,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1398225001003",
+          "jobType": "DC",
+          "applianceType": "CKR",
+          "status": "C",
+          "chargeType": "EXSGNI2",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1398225001004",
+          "jobType": "CB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3ST",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202224161",
+          "serialId": "1221121",
+          "gcCode": "4306605",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "WAW",
+          "description": "BSD 19-25 WH AIR HEATER",
+          "flueType": "R",
+          "boilerSize": 50,
+          "cylinderType": 0,
+          "energyControl": "NC",
+          "locationDescription": "LONDON",
+          "condition": 3,
+          "numberOfRadiators": 40,
+          "numberOfSpecialRadiators": 3,
+          "installationYear": 2012,
+          "systemDesignCondition": 8,
+          "systemType": 18,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "N",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "N",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "ID",
+            "report": "DSSSSSSSSSSSSSSSSSSSSSS"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-09"
+          }
+        },
+        {
+          "id": "202224160",
+          "serialId": "1221233213",
+          "gcCode": "3200105",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "FRE",
+          "description": "ULTRAFLAME SIDE FLUE WIT",
+          "flueType": "R",
+          "boilerSize": 0,
+          "locationDescription": "LONDON",
+          "condition": 5,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2017,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "202224159",
+          "serialId": "46456453535",
+          "gcCode": "1110807",
+          "category": "A",
+          "contractType": "GNI2",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CKR",
+          "description": "NET632CGB/03 HOB",
+          "locationDescription": "LONDON",
+          "condition": 1,
+          "installationYear": 2014,
+          "safety": {
+            "applianceSafe": "N",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y",
+            "actionCode": "C",
+            "noticeStatus": "A",
+            "noticeType": "XC",
+            "report": "SDDSDSDSDSDS"
+          }
+        },
+        {
+          "id": "202224175",
+          "serialId": "654321",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "Testing Carbon Detector",
+          "locationDescription": "LONDON",
+          "condition": 1,
+          "installationYear": 2013,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "ventilationSafe": "X",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "X"
+          }
+        },
+        {
+          "id": "202224158",
+          "serialId": "5365465",
+          "gcCode": "4707502",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2019-08-01",
+          "applianceType": "CHB",
+          "description": "BAHAMA 100 HONEYWELL",
+          "flueType": "R",
+          "boilerSize": 1,
+          "cylinderType": 0,
+          "energyControl": "PR",
+          "locationDescription": "LONDON",
+          "condition": 1,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 3,
+          "installationYear": 2012,
+          "systemDesignCondition": 8,
+          "systemType": 8,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-03"
+          }
+        },
+        {
+          "id": "202224162",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "WAC",
+          "flueType": "R",
+          "boilerSize": 50,
+          "cylinderType": 3,
+          "energyControl": "NC",
+          "numberOfRadiators": 40,
+          "numberOfSpecialRadiators": 3,
+          "systemDesignCondition": 8,
+          "systemType": 18
+        }
+      ]
+    }
+  }
+}

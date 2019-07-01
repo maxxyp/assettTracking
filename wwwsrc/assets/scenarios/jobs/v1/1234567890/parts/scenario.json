@@ -1,0 +1,28 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "parts",
+      "createdTimestamp": "2018-04-05T11:46:10Z"
+    },
+    "data": {
+      "customer": {
+        "lastName": "Mr Stephan Stachow",
+        "address": [
+          "0 Great Horton Road",
+          "",
+          "Bradford",
+          "BD7 4ER"
+        ]
+      },
+      "list": [
+        {
+          "stockReferenceId": "555123",
+          "description": "Timer Mechanical EMT 2 TOTE",
+          "quantity": "1"
+        }
+      ]
+    }
+  }
+}

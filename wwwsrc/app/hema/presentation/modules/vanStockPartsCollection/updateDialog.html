@@ -1,0 +1,74 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${part.description}</label>
+        </ai-dialog-header>
+        <ai-dialog-body class="van-stock-item-dialog-body">
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label>Stock Ref. ID</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <label>${part.stockReferenceId}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row" if.bind="part.jobId">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label>W/R No.</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <label>${part.jobId}</label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label>Received</label>
+                    </div>
+                    <div class="col-xs-4">
+                        <number-adjuster value.bind="part.quantityCollected"
+                                         max-value.bind="part.quantityExpected"
+                                         show-max.bind="true"
+                                         disabled.bind="false"
+                                         show-missing-item-label="true">
+                        </number-adjuster>
+                    </div>
+                    <div class="col-xs-4">
+                        <span><i class="fa fa-2x"
+                                 class.bind="isEmptyQuantity ? 'fa-toggle-on' : 'fa-toggle-off'"
+                                 click.trigger="toggleNoPartsCollected()"></i></span>
+
+                        <span class="van-stock-parts-collection-none-received">
+                            None received
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-xs-4">
+                        <label>Area</label>
+                    </div>
+                    <div class="col-xs-8">
+                        <editable-drop-down value.bind="part.area"
+                                            items.bind="myVanAreas"
+                                            disabled.bind="isEmptyQuantity">
+                        </editable-drop-down>
+                    </div>
+                </div>
+                <div class="col-xs-8 col-xs-offset-4" style="color:red" if.bind="!isAreaValid">
+                    Please only use conventional alphanumeric characters.
+                </div>
+            </div>
+
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button class="btn btn-primary" click.trigger="controller.ok(part)" disabled.bind="!isAreaValid">Save</button>
+            <button class="btn btn-secondary" click.trigger="controller.cancel()">Cancel</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

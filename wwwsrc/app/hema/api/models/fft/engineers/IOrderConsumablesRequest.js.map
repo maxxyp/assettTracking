@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/engineers/IOrderConsumablesRequest.ts"],"names":[],"mappings":"","file":"IOrderConsumablesRequest.js","sourcesContent":["import { IOrderConsumables } from \"./IOrderConsumables\";\n\nexport interface IOrderConsumablesRequest {\n    data: IOrderConsumables;\n}\n"],"sourceRoot":"../../../../.."}

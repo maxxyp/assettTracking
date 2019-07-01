@@ -1,0 +1,14 @@
+<template>
+    <div class="console" if.bind="logs && logs.length > 0">
+        <div repeat.for="l of logs" class.bind="l.logLevel">
+            <span class="console-text">${l.logText}</span>
+        </div>
+        <div>
+            <textarea ref="hiddenText" style="width: 0; height: 0; border: 0;margin: 0; padding: 0.1px;"></textarea>
+        </div>
+    </div>
+    <div if.bind="logs && logs.length > 0">
+        <button class="btn btn-secondary fa fa-clipboard" click.trigger="copy()"></button>
+        <button class="btn btn-secondary fa fa-trash" click.trigger="clear()"></button>
+    </div>
+</template>

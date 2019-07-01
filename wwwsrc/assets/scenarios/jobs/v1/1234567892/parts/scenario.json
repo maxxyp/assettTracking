@@ -1,0 +1,22 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "parts",
+      "createdTimestamp": "2018-04-06T11:46:10Z"
+    },
+    "data": {
+      "customer": {
+        "lastName": "Mr No Parts",
+        "address": [
+          "123 Penman Way",
+          "Spinneyside",
+          "Leicester",
+          "LE19 1SZ"
+        ]
+      },
+      "list": []
+    }
+  }
+}

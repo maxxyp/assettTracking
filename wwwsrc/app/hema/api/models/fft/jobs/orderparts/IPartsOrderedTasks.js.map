@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/orderparts/IPartsOrderedTasks.ts"],"names":[],"mappings":"","file":"IPartsOrderedTasks.js","sourcesContent":["import {IPartsOrderedForTask} from \"./IPartsOrderedForTask\";\n\nexport interface IPartsOrderedTasks {\n    tasks: IPartsOrderedForTask[];\n}\n"],"sourceRoot":"../../../../../.."}

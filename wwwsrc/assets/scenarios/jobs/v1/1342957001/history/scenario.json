@@ -1,0 +1,135 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-02-20T09:56:07Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1390827001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-20",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 5",
+              "report": "TEST JOB 3"
+            }
+          ]
+        },
+        {
+          "id": "1321827001001",
+          "jobType": "LJ",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-20",
+              "status": "C",
+              "engineerName": "EMPLOYEE 4",
+              "report": "TESTING JOBSS 4"
+            }
+          ]
+        },
+        {
+          "id": "1311827001001",
+          "jobType": "LD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-19",
+              "status": "C",
+              "engineerName": "EMPLOYEE 4",
+              "report": "TESTING REPORT 4"
+            }
+          ]
+        },
+        {
+          "id": "1348727001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-17",
+              "status": "C",
+              "engineerName": "EMPLOYEE 3",
+              "report": "TEST JOBS 2"
+            }
+          ]
+        },
+        {
+          "id": "1331827001001",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLO3SIS",
+          "activities": [
+            {
+              "date": "2017-02-20",
+              "status": "C",
+              "engineerName": "EMPLOYEE 2",
+              "report": "REPORT SHOUL DBE OK"
+            }
+          ]
+        },
+        {
+          "id": "1322827001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-20",
+              "status": "C",
+              "engineerName": "EMPLOYEE 4",
+              "report": "testing jobs 566"
+            }
+          ]
+        },
+        {
+          "id": "1327727001001",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2017-02-17",
+              "status": "C",
+              "engineerName": "Employee 20"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202230774",
+          "gcCode": "500",
+          "category": "X",
+          "contractType": "3SIS",
+          "contractExpiryDate": "2018-02-15",
+          "applianceType": "CHB",
+          "description": ".Unknown-Default",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-02-16"
+          }
+        }
+      ]
+    }
+  }
+}

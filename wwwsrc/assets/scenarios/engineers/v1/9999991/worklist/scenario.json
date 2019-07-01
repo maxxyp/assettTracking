@@ -1,0 +1,64 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "modifiedTimestamp": "foo"
+    },
+    "data": {
+      "list": [
+        {
+          "id": "1351525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1389425001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1332525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1362525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1342525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+
+        {
+          "id": "1301525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1359425001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        },
+        {
+          "id": "1321525001",
+          "status": "allocated",
+          "workType": "job",
+          "timestamp": "foo"
+        }
+      ],
+      "memoList": [
+      ]
+    }
+  }
+}

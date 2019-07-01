@@ -1,0 +1,97 @@
+{
+    "status": 200,
+    "data": {
+        "meta": {
+            "type": "jobHistory",
+            "createdTimestamp": "2016-10-17T16:38:40Z"
+        },
+        "data": {
+            "tasks": [{
+                "id": "1348317001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "chargeType": "NCHLI",
+                "status": "I",
+                "activities": [{
+                    "report": "No Visit Details"
+                }]
+            }, {
+                "id": "1328317001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SIS",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1364417001001",
+                "jobType": "AS",
+                "applianceType": "INS",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1398317001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SIS",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }, {
+                "id": "1391517001001",
+                "jobType": "FV",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SIS",
+                "status": "X",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "IZ"
+                }]
+            }, {
+                "id": "1338317001001",
+                "jobType": "IB",
+                "applianceType": "CHB",
+                "chargeType": "NCH2SIS",
+                "status": "I",
+                "activities": [{
+                    "date": "2016-10-17T00:00:00Z",
+                    "status": "D"
+                }]
+            }],
+            "appliances": [{
+                "id": "202200738",
+                "gcCode": "4707508",
+                "category": "X",
+                "contractType": "2SIS",
+                "contractExpiryDate": "2017-09-29T00:00:00Z",
+                "applianceType": "CHB",
+                "description": "COMBI 105E",
+                "boilerSize": 0,
+                "numberOfSpecialRadiators": 0,
+                "locationDescription": "KITCHEN",
+                "installationYear": 2014,
+                "chirp": {
+                    "iaciCode": "D",
+                    "iaciDate": "2016-09-30T00:00:00Z"
+                }
+            }, {
+                "id": "202230077",
+                "gcCode": "9999999",
+                "category": "A",
+                "contractType": "LI",
+                "contractExpiryDate": "2017-09-29T00:00:00Z",
+                "applianceType": "INS",
+                "description": "Installation",
+                "locationDescription": "PREMISES"
+            }],
+            "id": "1335517001"
+        }
+    }
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/services/IMutationObserverProvider.ts"],"names":[],"mappings":"","file":"IMutationObserverProvider.js","sourcesContent":["export interface IMutationObserverProvider {\n    create(callback: (mutations: MutationRecord[], observer: MutationObserver) => void): MutationObserver;\n}\n"],"sourceRoot":"../../.."}

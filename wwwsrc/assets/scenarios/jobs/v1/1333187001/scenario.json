@@ -1,0 +1,73 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-31T11:03:20Z"
+    },
+    "data": {
+      "job": {
+        "id": "1333187001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022211435",
+          "lastName": "Miss Amend Task Scenario Two",
+          "address": {}
+        },
+        "premises": {
+          "id": "L278031",
+          "address": {
+            "houseNumber": "117",
+            "line": [
+              "Upperton Road"
+            ],
+            "county": "Leicester",
+            "postCodeIn": "0HE",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 66,
+          "chirpAICode": "202235082",
+          "contact": {
+            "id": "022211435",
+            "initials": " ",
+            "lastName": "Miss Amend Task Scenario Two"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-08-30"
+          },
+          "risks": [
+            {
+              "reason": "R1",
+              "report": "Wild animal",
+              "date": "2017-08-30"
+            }
+          ]
+        },
+        "visit": {
+          "id": "WMW00215322",
+          "date": "2017-08-31T00:00:00Z",
+          "earliestStartTime": "2017-08-31T08:00:00Z",
+          "latestStartTime": "2017-08-31T18:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1333187001001",
+            "applianceId": "202235081",
+            "jobType": "AS",
+            "applianceType": "CHB",
+            "chargeType": "NCH2SIS",
+            "status": "D",
+            "skill": "GS",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

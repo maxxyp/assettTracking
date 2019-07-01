@@ -1,0 +1,26 @@
+[
+	{
+		"key": "1",
+		"id": "UNABLE TO CHECK",
+		"description": "Unable to check",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "TNS",
+		"description": "TNS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "TNCS(PME)",
+		"description": "TNCS (PME)",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "4",
+		"id": "TT",
+		"description": "TT",
+		"ctlgEntDelnMkr": "N"
+	}
+]

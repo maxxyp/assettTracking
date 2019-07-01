@@ -1,0 +1,1691 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-14T07:39:44Z",
+      "modifiedTimestamp": "2018-08-14T08:12:15Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1317425001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1341425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1339225001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1339225001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "V4044C1288 Use 555412 Head 555320",
+                  "quantity": 3,
+                  "stockReferenceId": "392755"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1339225001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "O Ring 80.87x76.91x2.66mm",
+                  "quantity": 3,
+                  "stockReferenceId": "E92735"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1339225001004",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "SPPNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Gasket EP709 - Dab",
+                  "quantity": 1,
+                  "stockReferenceId": "E92736"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1364715001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1364715001002",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1364715001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1370125001001",
+          "jobType": "XX",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1370125001002",
+          "jobType": "RH",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCFNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1370125001003",
+          "jobType": "PL",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1370125001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1390425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1390425001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "V4044C1288 Use 555412 Head 555320",
+                  "quantity": 3,
+                  "stockReferenceId": "392755"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1390425001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "CODE4 Testing purpose",
+              "parts": [
+                {
+                  "status": "OP",
+                  "description": "O Ring 80.87x76.91x2.66mm",
+                  "quantity": 3,
+                  "stockReferenceId": "E92735"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1390425001004",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "SPPNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODE1 Test purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Gasket EP709 - Dab",
+                  "quantity": 1,
+                  "stockReferenceId": "E92736"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1390815001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1390815001002",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1390815001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1390815001004",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALFNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1381525001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1319225001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1319225001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1319225001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1321125001001",
+          "jobType": "XX",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1321125001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1321125001003",
+          "jobType": "PL",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1321125001004",
+          "jobType": "IV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE Testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1351815001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1351815001002",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1351815001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1351815001004",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALFNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1394325001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                },
+                {
+                  "status": "UD",
+                  "description": "Timer Mechanical EMT 2 TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "555123"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1394325001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 3,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 3,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1394325001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 6",
+              "parts": [
+                {
+                  "status": "UD",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1317715001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1317715001002",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1317715001003",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1390125001001",
+          "jobType": "XX",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE TESTING A SAMPLE JOB.."
+            }
+          ]
+        },
+        {
+          "id": "1390125001002",
+          "jobType": "RH",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCFNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE TESTING A SAMPLE JOB.."
+            }
+          ]
+        },
+        {
+          "id": "1390125001003",
+          "jobType": "PL",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE TESTING A SAMPLE JOB",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1390125001004",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE TESTING A SAMPLE JOB.."
+            }
+          ]
+        },
+        {
+          "id": "1329425001001",
+          "jobType": "RB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE dsdsdsdsdsds",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1329425001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE dsdsdsdssssssssssss",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "1 Gang Socket Switched TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F34858"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE dsdsssssssssssss",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "1 Gang Socket Switched TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F34858"
+                },
+                {
+                  "status": "NU",
+                  "description": "1 Gang Socket Switched TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F34858"
+                },
+                {
+                  "status": "UP",
+                  "description": "dsdsds",
+                  "quantity": 3,
+                  "stockReferenceId": "E07293"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1329425001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "62CODE rtcvghhbhbhbhh",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "DSDSDS",
+                  "quantity": 2,
+                  "stockReferenceId": "E21975"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE dssssssssssssssssssssss",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "DSDSDS",
+                  "quantity": 2,
+                  "stockReferenceId": "E21975"
+                },
+                {
+                  "status": "UP",
+                  "description": "DSDSDSDSDS",
+                  "quantity": 1,
+                  "stockReferenceId": "E21975"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1329425001004",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "SPPNONE",
+          "activities": [
+            {
+              "date": "2018-08-13",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE dsdsdsdsdsds",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1371425001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE Test purpose"
+            }
+          ]
+        },
+        {
+          "id": "1371425001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "54CODE Test purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "O Ring - Pack of 10 14.4x9.6x2.5 mm",
+                  "quantity": 3,
+                  "stockReferenceId": "E77199"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Test purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "O Ring - Pack of 10 14.4x9.6x2.5 mm",
+                  "quantity": 3,
+                  "stockReferenceId": "E77199"
+                },
+                {
+                  "status": "NU",
+                  "description": "O Ring - Pack of 10 14.4x9.6x2.5 mm",
+                  "quantity": 2,
+                  "stockReferenceId": "E77199"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pulley Drum 5 Spoke D275mm (L)",
+                  "quantity": 3,
+                  "stockReferenceId": "789295"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1371425001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "54CODE Test purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "Valve Body Flow Switch",
+                  "quantity": 3,
+                  "stockReferenceId": "E39696"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Test Purpose",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "Valve Body Flow Switch",
+                  "quantity": 3,
+                  "stockReferenceId": "E39696"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1371425001004",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "SPPNONE",
+          "activities": [
+            {
+              "date": "2018-08-08",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Test puprose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Primary heat exchanger",
+                  "quantity": 1,
+                  "stockReferenceId": "E23731"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1385325001001",
+          "jobType": "RH",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCFNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1385325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-06",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "CODE0 Complete the job in Visit 2",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "NU",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1385325001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1395325001001",
+          "jobType": "PL",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "CODE0 Testing a sample job..",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1383325001001",
+          "jobType": "RH",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCFNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Complete the first job in visit 1"
+            }
+          ]
+        },
+        {
+          "id": "1383325001002",
+          "jobType": "HU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALPNONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "IP",
+              "engineerName": "EMPLOYEE 1",
+              "report": "71CODE Complete the job in visit 2",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODE0 Complete the job in Visit 2",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "NU",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1383325001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-02",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "CODE0 Complete the 3rd job in visit 1",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1364325001001",
+          "jobType": "RB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE dsdsdsdsdsdsdsds"
+            }
+          ]
+        },
+        {
+          "id": "1364325001002",
+          "jobType": "RI",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLFNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE DSDDDDDDDDDDDDDDDDDDDDDDDD",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE dsdsdsdsddddddddddd",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 3,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "NU",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 2,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 3,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1364325001003",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "IP",
+              "engineerName": "GEORGE",
+              "report": "62CODE DSDSDDDDDDDDDDDDDDDDDD",
+              "parts": [
+                {
+                  "status": "AP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                }
+              ]
+            },
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE dsssssssssssssssssssssss",
+              "parts": [
+                {
+                  "status": "FP",
+                  "description": "22mm Speedfit Tank Connector TOTE",
+                  "quantity": 1,
+                  "stockReferenceId": "F00006"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1364325001004",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "SPPNONE",
+          "activities": [
+            {
+              "date": "2018-08-03",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE dsdsdssssssssssssssssss",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1375225001001",
+          "jobType": "GU",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "ALFNONE",
+          "activities": [
+            {
+              "date": "2018-08-01",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "54CODE Complete the first RFA job for testing purpose",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1375225001002",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "date": "2018-08-01",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "62CODE Complete the 2nd RFA for testing purpose",
+              "parts": [
+                {
+                  "status": "CP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                },
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1375225001003",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-01",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE Complete the 3rd RFA for testing purpose"
+            }
+          ]
+        },
+        {
+          "id": "1357225001001",
+          "jobType": "SD",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-08-01",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE testing a sample job",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Pcb-Ignition",
+                  "quantity": 1,
+                  "stockReferenceId": "E01561"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1322125001001",
+          "jobType": "XX",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE testing a sample job.",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1340125001001",
+          "jobType": "XX",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "SLONONE",
+          "activities": [
+            {
+              "date": "2018-07-28",
+              "status": "C",
+              "engineerName": "EMPLOYEE 1",
+              "report": "54CODE Testing Purpose",
+              "parts": [
+                {
+                  "status": "UP",
+                  "description": "Fan-105 Assy c/w Impeller 75Watt",
+                  "quantity": 1,
+                  "stockReferenceId": "E66527"
+                },
+                {
+                  "status": "UP",
+                  "description": "Wax Sensor",
+                  "quantity": 1,
+                  "stockReferenceId": "108014"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1370815001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1337715001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1368615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1338615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1304615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1392615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1332615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1361615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1362615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1391615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1302615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312615001001",
+          "jobType": "HE",
+          "applianceType": "CHB",
+          "status": "X",
+          "chargeType": "NCHNONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202223992",
+          "serialId": "1111111",
+          "gcCode": "4728333",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "CHB",
+          "description": "ECOMFORT PLUS 30 HE-EV (",
+          "flueType": "R",
+          "boilerSize": 10,
+          "cylinderType": 0,
+          "energyControl": "TRV",
+          "locationDescription": "LONDON",
+          "condition": 3,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 3,
+          "installationYear": 2014,
+          "systemDesignCondition": 9,
+          "systemType": 16,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-03"
+          }
+        },
+        {
+          "id": "202223992",
+          "serialId": "1111111",
+          "gcCode": "4728333",
+          "category": "X",
+          "contractType": "NONE",
+          "applianceType": "CHB",
+          "description": "ECOMFORT PLUS 30 HE-EV (",
+          "flueType": "R",
+          "boilerSize": 10,
+          "cylinderType": 0,
+          "energyControl": "TRV",
+          "locationDescription": "LONDON",
+          "condition": 3,
+          "numberOfRadiators": 5,
+          "numberOfSpecialRadiators": 3,
+          "installationYear": 2014,
+          "systemDesignCondition": 9,
+          "systemType": 16,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "ventilationSafe": "Y",
+            "installationSafe": "X",
+            "installationTightnessTestSafe": "Y"
+          },
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2018-08-03"
+          }
+        },
+        {
+          "id": "202224166",
+          "serialId": "123456",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "Carbon Monoxide Detector",
+          "locationDescription": "Living Room",
+          "installationYear": 2010,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        },
+        {
+          "id": "202224166",
+          "serialId": "123456",
+          "gcCode": "9999999",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "Carbon Monoxide Detector",
+          "locationDescription": "Living Room",
+          "installationYear": 2010,
+          "safety": {
+            "applianceSafe": "Y",
+            "installationSafe": "Y"
+          }
+        }
+      ]
+    }
+  }
+}

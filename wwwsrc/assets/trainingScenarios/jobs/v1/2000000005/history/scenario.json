@@ -1,0 +1,228 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-05-05T11:41:45Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "2032052721001",
+          "jobType": "HB",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2015-07-20T00:00:00Z",
+              "status": "D",
+              "engineerName": "Mike Coulter",
+              "report": "Poor ignition. Replaced capacitor."
+            }
+          ]
+        },
+        {
+          "id": "2033969621001",
+          "jobType": "BE",
+          "applianceType": "CKE",
+          "status": "C",
+          "chargeType": "NCH2E3",
+          "activities": [
+            {
+              "date": "2015-12-01T00:00:00Z",
+              "status": "D",
+              "engineerName": "Phil Appleby",
+              "report": "Door seal damaged but fixed on visit."
+            }
+          ]
+        },
+        {
+          "id": "2039701721001",
+          "jobType": "BE",
+          "applianceType": "CKE",
+          "status": "C",
+          "chargeType": "NCH2E3",
+          "activities": [
+            {
+              "date": "2016-07-13T00:00:00Z",
+              "status": "D",
+              "engineerName": "Mark Millar",
+              "report": "Fan vibration. Stabilised OK."
+            }
+          ]
+        },
+        {
+          "id": "2098701721001",
+          "jobType": "IB",
+          "applianceType": "DW",
+          "status": "C",
+          "chargeType": "NCH2E3",
+          "activities": [
+            {
+              "date": "2014-11-19T00:00:00Z",
+              "status": "C",
+              "engineerName": "Rob Allen",
+              "report": "Clear Drain Pump, Tested All OK."
+            }
+          ]
+        },
+        {
+          "id": "2043969621001",
+          "jobType": "AS",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2016-12-18T00:00:00Z",
+              "status": "C",
+              "engineerName": "Phil Appleby",
+              "report": "Serviced Boiler, tested All OK."
+            }
+          ]
+        },
+        {
+          "id": "2032052721002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "C",
+          "chargeType": "NCH3SIS",
+          "activities": [
+            {
+              "date": "2015-07-20T00:00:00Z",
+              "status": "C",
+              "engineerName": "Mike Coulter",
+              "report": "Boiler checked OK after ignition fault repair."
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "79441459",
+          "gcCode": "9999990",
+          "category": "A",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "KAC",
+          "contractType": "MIE",
+          "description": "Appliance Cover",
+          "locationDescription": "House",
+          "installationYear": 2015,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "installationSafe": "Y",
+            "ventilationSafe": "X"
+          }
+        },
+        {
+          "id": "79441460",
+          "gcCode": "1126306",
+          "category": "A",
+          "applianceType": "CKE",
+          "contractType": "2E3",
+          "contractExpiryDate": "2099-12-31Z",
+          "description": "Stoves ES550 WL",
+          "locationDescription": "Kitchen",
+          "installationYear": 2009,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "X",
+            "ventilationSafe": "X"
+          }
+        },
+        {
+          "id": "79441457",
+          "gcCode": "4701903",
+          "category": "X",
+          "applianceType": "CHB",
+          "bgInstallationIndicator": "1",
+          "serialId": "G281252ULT",
+          "contractExpiryDate": "2099-12-31Z",
+          "condition": 1,
+          "boilerSize": 25,
+          "numberOfRadiators": 11,
+          "energyControl": "TS",
+          "systemType": 17,
+          "systemDesignCondition": 1,
+          "cylinderType": 0,
+          "numberOfSpecialRadiators": 1,
+          "contractType": "3SIS",
+          "flueType": "R",
+          "description": "Glowworm Ultracom 38CXi",
+          "locationDescription": "Kitchen",
+          "installationYear": 2016,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "79441458",
+          "gcCode": "3203209",
+          "category": "A",
+          "applianceType": "FRE",
+          "bgInstallationIndicator": "1",
+          "contractExpiryDate": "2099-12-31Z",
+          "contractType": "1S",
+          "flueType": "O",
+          "description": "Valor Adorn BR622",
+          "locationDescription": "Lounge",
+          "installationYear": 2005,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "Y",
+            "installationSafe": "N",
+            "installationTightnessTestSafe": "Y"
+          }
+        },
+        {
+          "id": "79441456",
+          "gcCode": "8888888",
+          "category": "A",
+          "applianceType": "HAZ",
+          "description": "Asbestos",
+          "locationDescription": "Hall Fuse Panel",
+          "installationYear": 2012,
+          "safety": {
+          }
+        },
+        {
+          "id": "79441461",
+          "gcCode": "WM34219",
+          "category": "A",
+          "applianceType": "WM",
+          "contractType": "2E3",
+          "description": "Aquarius WML540GUK",
+          "locationDescription": "Kitchen",
+          "serialId": "110214895",
+          "contractExpiryDate": "2099-12-31Z",
+          "installationYear": 2011,
+          "safety": {
+            "applianceSafe": "Y",
+            "flueSafe": "X",
+            "installationSafe": "Y",
+            "installationTightnessTestSafe": "X",
+            "ventilationSafe": "X"
+          }
+        },
+        {
+          "id": "79441462",
+          "gcCode": "9999999",
+          "category": "A",
+          "applianceType": "MW",
+          "contractType": "2E5",
+          "description": "Panasonic NN-C703B",
+          "locationDescription": "Kitchen",
+          "installationYear": 2012,
+          "contractExpiryDate": "2099-12-31Z"
+        }
+      ]
+    }
+  }
+}

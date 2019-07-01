@@ -1,0 +1,15 @@
+<template>
+    <compose if.bind="!isInitialised" class="fade-in-content" view-model.bind="appInitViewModel"></compose>
+     <div if.bind="isInitialised" class="fade-in-content">
+        <nav-bar class="hide-top de-tab"></nav-bar>
+        <div class="main-container  full-screen">
+            <icon-nav-bar class="hide-left de-tab"></icon-nav-bar>
+            <router-view ref="routerView" class="main-router help-tip-container" scroll.trigger="handleScrollEvent()"></router-view>
+        </div>
+        <toast-manager></toast-manager>
+        <div class="save-status ${ !!isScrolledBottom ? 'dock-to-viewstate' : 'dock-bottom' }" css="${ !!isScrolledBottom ? 'top: ' + saveOffsetTop + 'px': '' }">
+            <i show.bind="!!saving" class="fa fa-floppy-o save-success"></i>
+        </div>
+    </div>
+    <help-overlay-admin></help-overlay-admin>
+</template>

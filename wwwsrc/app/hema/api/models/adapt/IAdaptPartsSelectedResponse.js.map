@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/adapt/IAdaptPartsSelectedResponse.ts"],"names":[],"mappings":"","file":"IAdaptPartsSelectedResponse.js","sourcesContent":["import {IAdaptPartSelected} from \"./IAdaptPartSelected\";\n\nexport interface IAdaptPartsSelectedResponse {\n    parts: IAdaptPartSelected[];\n}\n"],"sourceRoot":"../../../.."}

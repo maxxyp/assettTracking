@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/ISimulation.ts"],"names":[],"mappings":"","file":"ISimulation.js","sourcesContent":["export interface ISimulation {\n    firstName: string;\n    lastName: string;\n    engineerId: string;\n}\n"],"sourceRoot":"../../../.."}

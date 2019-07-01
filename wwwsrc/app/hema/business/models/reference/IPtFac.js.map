@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/IPtFac.ts"],"names":[],"mappings":"","file":"IPtFac.js","sourcesContent":["export interface IPtFac {\n   productGroupCode: string;\n   partTypeCode: string;\n   faultActionCode: string;\n}\n"],"sourceRoot":"../../../.."}

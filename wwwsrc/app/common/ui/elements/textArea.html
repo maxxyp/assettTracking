@@ -1,0 +1,19 @@
+<template>
+    <div if.bind="maxLengthSet && !disabled">
+        ${charactersLeft}
+        <span if.bind="maxLength2Set" class="text-area-max-length-2-text">
+            ${charactersLeft2}
+        </span>
+    </div>
+    <textarea value.bind="value"
+              class="form-control ${classes}"
+              disabled.bind="disabled"
+              readonly.bind="readonly"
+              placeholder.bind="disabled ? '' : placeholder"
+              autocomplete="off"
+              autocorrect="off"
+              autocapitalize="off"
+              maxlength.bind="maxlength"
+              spellcheck.bind="spellCheck" blur.trigger="blur()"
+              disable-form-manager="true"></textarea>
+</template>

@@ -1,0 +1,178 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2018-08-14T10:29:34Z",
+      "modifiedTimestamp": "2018-08-14T10:29:34Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1367125001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1368415001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1373225001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1301215001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "I",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1312915001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-07-24",
+              "status": "C",
+              "engineerName": "Test Gof",
+              "report": "testing a sample job"
+            }
+          ]
+        },
+        {
+          "id": "1332915001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-07-24",
+              "status": "C",
+              "engineerName": "Test Gof",
+              "report": "sdfdfbhdbfjdfbkd;osls'ljfhdfhdjksf"
+            }
+          ]
+        },
+        {
+          "id": "1353225001001",
+          "jobType": "OL",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-08-01",
+              "status": "IA",
+              "engineerName": "JOHN HENRY",
+              "report": "54CODE kmjoniubhgutyfg"
+            },
+            {
+              "date": "2018-08-01",
+              "status": "C",
+              "engineerName": "JOHN HENRY",
+              "report": "54CODE Gfhhjngyvjhf"
+            }
+          ]
+        },
+        {
+          "id": "1397125001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-07-30",
+              "status": "C",
+              "engineerName": "GEORGE",
+              "report": "71CODE hhssjslshgagsalhbslhalssjs"
+            }
+          ]
+        },
+        {
+          "id": "1358615001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-07-18",
+              "status": "C",
+              "engineerName": "AMEND",
+              "report": "71CODE For Testing Purpose"
+            }
+          ]
+        },
+        {
+          "id": "1372115001001",
+          "jobType": "IA",
+          "applianceType": "COD",
+          "status": "C",
+          "chargeType": "CPONONE",
+          "activities": [
+            {
+              "date": "2018-06-27",
+              "status": "C",
+              "engineerName": "EMPLOYEE 2",
+              "report": "71CODE For Testing Purpose"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202223853",
+          "gcCode": "4100000",
+          "category": "A",
+          "contractType": "NONE",
+          "applianceType": "COD",
+          "description": "Carbon Monoxide Detector",
+          "locationDescription": "Royal Bank",
+          "installationYear": 2011,
+          "safety": {
+            "applianceSafe": "N",
+            "installationSafe": "N",
+            "actionCode": "C",
+            "noticeStatus": "N",
+            "noticeType": "XC",
+            "report": "Testing a sample job"
+          }
+        }
+      ]
+    }
+  }
+}

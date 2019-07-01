@@ -1,0 +1,698 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card fade-in-content">
+            <div class="card-block">
+                <form form-manager class="validation-state-indicator ${currentDataState | dataStateStyle:canEdit}">
+
+                    <div class="row">
+                        <div class="form-group">
+                            <div class="col-xs-3">
+                                <label>${labels.applianceType}</label>
+                            </div>
+                            <div class="col-xs-3">
+                                <drop-down value.bind="viewModel.electricalApplianceType" values.bind="jobTypeCatalog" value-property.bind="catalog.ELECTRICAL_APPLIANCE_TYPE_ID"
+                                    text-property.bind="catalog.ELECTRICAL_APPLIANCE_TYPE_DESCRIPTION" search-properties.bind="[catalog.ELECTRICAL_APPLIANCE_TYPE_DESCRIPTION, catalog.ELECTRICAL_APPLIANCE_TYPE_ID]"
+                                    disabled.bind="!canEdit" class="three-thirds" style="width: 90%" no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                           min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                    <template replace-part="option-template">
+                                        <div>
+                                            ${item[catalog.ELECTRICAL_APPLIANCE_TYPE_DESCRIPTION]}
+                                        </div>
+                                    </template>
+                                </drop-down>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div show.bind="!viewModel.systemType && viewModel.electricalApplianceType === businessRules.applianceTypeElectrical">
+                        <div class="card details-card">
+                            <div class="card-block">
+                                For Electrical Wiring appliances, the property safety screen must be completed first.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div hide.bind="!viewModel.systemType && viewModel.electricalApplianceType === businessRules.applianceTypeElectrical">
+
+                        <div class="row" show.bind="viewModel.mainEarthCheckedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.mainEarthChecked}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="mainEarthCheckedLookup" value.bind="viewModel.mainEarthChecked" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.gasBondingCheckedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.gasBondingChecked}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="gasBondingCheckedLookup" value.bind="viewModel.gasBondingChecked" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.waterBondingCheckedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.waterBondingChecked}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="waterBondingCheckedLookup" value.bind="viewModel.waterBondingChecked" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.otherBondingCheckedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.otherBondingChecked}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="otherBondingCheckedLookup" value.bind="viewModel.otherBondingChecked" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.supplementaryBondingOrFullRcdProtectionCheckedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.supplementaryBondingOrFullRcdProtectionChecked}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="supplementaryBondingOrFullRcdProtectionCheckedLookup" value.bind="viewModel.supplementaryBondingOrFullRcdProtectionChecked"
+                                                 multi-select.bind="false" disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.ringContinuityReadingDoneVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.ringContinuityReadingDone}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="ringContinuityReadingDoneLookup" value.bind="viewModel.ringContinuityReadingDone" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.leInsulationResistanceVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.leInsulationResistance}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.leInsulationResistance" max-length.bind="businessRules.leInsulationResistanceMaxLength" float-allowed="true" decimal-places="2" reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showLeInsulationResistanceReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleLeInsulationResistanceShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showLeInsulationResistanceReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="viewModel.leInsulationResistanceReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.leInsulationResistanceReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="leInsulationResistanceReasonWhyNotLookup" value.bind="viewModel.leInsulationResistanceReasonWhyNot"
+                                        multi-select.bind="false" disabled.bind="!canEdit" button-height="100px" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.neInsulationResistanceVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.neInsulationResistance}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.neInsulationResistance" max-length.bind="businessRules.neInsulationResistanceMaxLength" float-allowed="true" decimal-places="2" reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showNeInsulationResistanceReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleNeInsulationResistanceShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showNeInsulationResistanceReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.neInsulationResistanceReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.neInsulationResistanceReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="neInsulationResistanceReasonWhyNotLookup" value.bind="viewModel.neInsulationResistanceReasonWhyNot"
+                                        multi-select.bind="false" disabled.bind="!canEdit" button-height="100px" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.lnInsulationResistanceVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.lnInsulationResistance}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.lnInsulationResistance" max-length.bind="businessRules.lnInsulationResistanceMaxLength" float-allowed="true" decimal-places="2"  reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showLnInsulationResistanceReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleLnInsulationResistanceShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showLnInsulationResistanceReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.lnInsulationResistanceReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.lnInsulationResistanceReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="lnInsulationResistanceReasonWhyNotLookup" value.bind="viewModel.lnInsulationResistanceReasonWhyNot"
+                                        multi-select.bind="false" disabled.bind="!canEdit" button-width="30%" button-height="100px">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.systemTypeVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.systemType}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <catalog-lookup catalog="${catalog.ELECTRICAL_SYSTEM_TYPE}" key-field="${catalog.ELECTRICAL_SYSTEM_TYPE_ID}" description-field="${catalog.ELECTRICAL_SYSTEM_TYPE_DESCRIPTION}"
+                                                    value.bind="viewModel.systemType"></catalog-lookup>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="viewModel.finalEliReadingDoneVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.finalEliReadingDone}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="finalEliReadingDoneLookup" value.bind="viewModel.finalEliReadingDone" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.finalEliReadingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.finalEliReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.finalEliReading" max-length.bind="businessRules.finalEliReadingMaxLength" float-allowed="true" decimal-places="2" reset-value-for-validation.bind="true"></number-box>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.readingSafeAccordingToTopsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.readingSafeAccordingToTops}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="readingSafeAccordingToTopsLookup" value.bind="viewModel.readingSafeAccordingToTops" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.isRcdPresentVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.isRcdPresent}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="isRcdPresentLookup" value.bind="viewModel.isRcdPresent" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.circuitRcdRcboProtectedVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.circuitRcdRcboProtected}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="circuitRcdRcboProtectedLookup" value.bind="viewModel.circuitRcdRcboProtected" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%" button-height="100px">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.rcdTripTimeReadingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.rcdTripTimeReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.rcdTripTimeReading" max-length.bind="businessRules.rcdTripTimeReadingMaxLength" float-allowed="true" decimal-places="2"  reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                                <div class="col-xs-offset-3" show.bind="viewModel.rcdTripTimeReadingMessageVisible">
+                                    <span class="unsafe-message">${labels.rcdTripTimeReadingMessage}</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.rcboTripTimeReadingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.rcboTripTimeReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.rcboTripTimeReading" float-allowed="true" decimal-places="2"  reset-value-for-validation.bind="true" >
+                                    </number-box>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceEarthContinuityReadingDoneVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceEarthContinuityReadingDone}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="applianceEarthContinuityReadingDoneLookup" value.bind="viewModel.applianceEarthContinuityReadingDone"
+                                                 multi-select.bind="false" disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceEarthContinuityReadingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceEarthContinuityReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.applianceEarthContinuityReading" float-allowed="true" decimal-places="2"  reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceEarthContinuityReadingMessageVisible">
+                            <div class="col-xs-offset-3">
+                                <strong>${labels.applianceEarthContinuityReadingMessage}</strong>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.isApplianceHardWiredVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.isApplianceHardWired}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="isApplianceHardWiredLookup" value.bind="viewModel.isApplianceHardWired" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.mcbFuseRatingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.mcbFuseRating}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <drop-down value.bind="viewModel.mcbFuseRating" values.bind="mcbFuseRatingCatalog" value-property.bind="catalog.SAFETY_READING_CAT_ID"
+                                        text-property.bind="catalog.SAFETY_READING_CAT_DESCRIPTION" search-properties.bind="[catalog.SAFETY_READING_CAT_DESCRIPTION, catalog.SAFETY_READING_CAT_ID]"
+                                        disabled.bind="!canEdit" no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                               min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.SAFETY_READING_CAT_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showMcbFuseRatingReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleMcbFuseRatingShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showMcbFuseRatingReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.mcbFuseRatingReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.mcbFuseRatingReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="mcbFuseRatingReasonWhyNotLookup" value.bind="viewModel.mcbFuseRatingReasonWhyNot" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-height="100px" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceFuseRatingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceFuseRating}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <drop-down value.bind="viewModel.applianceFuseRating" values.bind="applianceFuseRatingCatalog" value-property.bind="catalog.SAFETY_READING_CAT_ID"
+                                        text-property.bind="catalog.SAFETY_READING_CAT_DESCRIPTION" search-properties.bind="[catalog.SAFETY_READING_CAT_DESCRIPTION, catalog.SAFETY_READING_CAT_ID]"
+                                        disabled.bind="!canEdit" no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                               min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.SAFETY_READING_CAT_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showApplianceFuseRatingReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleApplianceFuseRatingShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showApplianceFuseRatingReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row" show.bind="viewModel.applianceFuseRatingReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceFuseRatingReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="applianceFuseRatingReasonWhyNotLookup" value.bind="viewModel.applianceFuseRatingReasonWhyNot" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-height="100px" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.isPartPVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.isPartP}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="isPartPLookup" value.bind="viewModel.isPartP" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.partPReasonVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.partPReason}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <drop-down value.bind="viewModel.partPReason" values.bind="partPReasonCatalog" value-property.bind="catalog.SAFETY_REASON_CAT_ID"
+                                        text-property.bind="catalog.SAFETY_REASON_CAT_DESCRIPTION" search-properties.bind="[catalog.SAFETY_REASON_CAT_DESCRIPTION, catalog.SAFETY_REASON_CAT_ID]"
+                                        disabled.bind="!canEdit" no-filter="true" dropdown-type.bind="appSettings.dropdownType"
+                                               min-items-to-categorise-smash-buttons.bind="appSettings.minItemsToCategoriseSmashButtons">
+                                        <template replace-part="option-template">
+                                            <div>
+                                                ${item[catalog.SAFETY_REASON_CAT_DESCRIPTION]}
+                                            </div>
+                                        </template>
+                                    </drop-down>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.workedOnLightingCircuitVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.workedOnLightingCircuit}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="workedOnLightingCircuitLookup" value.bind="viewModel.workedOnLightingCircuit" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.cpcInLightingCircuitOkVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.cpcInLightingCircuitOk}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="cpcInLightingCircuitOkLookup" value.bind="viewModel.cpcInLightingCircuitOk" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.installationSatisfactoryVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.installationSatisfactory}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="installationSatisfactoryLookup" value.bind="viewModel.installationSatisfactory" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceSafeVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceSafe}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="applianceSafeLookup" value.bind="viewModel.applianceSafe" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.applianceInstallationSatisfactoryVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.applianceInstallationSatisfactory}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="applianceInstallationSatisfactoryLookup" value.bind="viewModel.applianceInstallationSatisfactory"
+                                                 multi-select.bind="false" disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.microwaveLeakageReadingVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.microwaveLeakageReading}</label>
+                                </div>
+                                <div class="col-xs-3">
+                                    <number-box disabled.bind="!canEdit" value.bind="viewModel.microwaveLeakageReading" float-allowed="true" decimal-places="2"  reset-value-for-validation.bind="true">
+                                    </number-box>
+                                </div>
+                                <div class="col-xs-3">
+                                    <button class="${viewModel.showMicrowaveLeakageReadingReasonWhyNot ? 'btn btn-secondary active' : 'btn btn-secondary'}" click.trigger="toggleMicrowaveLeakageReadingShowReasonWhyNot()"
+                                            disabled.bind="!canEdit">
+                                        ${labels.showMicrowaveLeakageReadingReasonWhyNot}
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.microwaveLeakageReadingMessageVisible">
+                            <div class="col-xs-offset-3">
+                                <strong>${labels.microwaveLeakageReadingMessage}</strong>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.microwaveLeakageReadingReasonWhyNotVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.microwaveLeakageReadingReasonWhyNot}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="microwaveLeakageReadingReasonWhyNotLookup" value.bind="viewModel.microwaveLeakageReadingReasonWhyNot"
+                                        multi-select.bind="false" disabled.bind="!canEdit" button-width="30%" button-height="100px">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr if.bind="viewModel.unsafeReasons && viewModel.unsafeReasons.length > 0"/>
+
+                        <div class="row">
+                            <span class=" col-xs-12">
+                        <span repeat.for="unsafeReason of viewModel.unsafeReasons">
+                            <span class="unsafe-block">
+                                ${labels[unsafeReason.field + "Unsafe"]}
+                                <span hide.bind="unsafeReason.mandatory">
+                                    ${labels.nonMandatory}
+                                </span>
+                            </span>
+                            </span>
+                            </span>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.report}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <text-area disabled.bind="!canEdit" value.bind="viewModel.report & debounce:500"
+                                               maxlength.bind="validationRules['viewModel.report'].maxLength"
+                                               placeholder="${validationRules['viewModel.report'].maxLength} ${labels.characterLimitSuffix}" maxlength-text="characters left">
+                                    </text-area>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.conditionAsLeft}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="conditionAsLeftLookup" value.bind="viewModel.conditionAsLeft" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%" button-height="100px">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.cappedTurnedOff}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="cappedTurnedOffLookup" value.bind="viewModel.cappedTurnedOff" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.labelAttachedRemoved}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="labelAttachedRemovedLookup" value.bind="viewModel.labelAttachedRemoved" multi-select.bind="false"
+                                                 disabled.bind="!canEdit" button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.ownedByCustomer}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="ownedByCustomerLookup" value.bind="viewModel.ownedByCustomer" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.letterLeft}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="letterLeftLookup" value.bind="viewModel.letterLeft" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.signatureObtained}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <button-list items.bind="signatureObtainedLookup" value.bind="viewModel.signatureObtained" multi-select.bind="false" disabled.bind="!canEdit"
+                                                 button-width="30%">
+                                    </button-list>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row" show.bind="viewModel.reportFieldsVisible">
+                            <div class="form-group">
+                                <div class="col-xs-3">
+                                    <label>${labels.ownerNameAddressPhone}</label>
+                                </div>
+                                <div class="col-xs-9">
+                                    <text-area disabled.bind="!canEdit" value.bind="viewModel.ownerNameAddressPhone & debounce:500" maxlength.bind="businessRules.ownerNameAddressPhoneMaxLength"
+                                        placeholder="${businessRules.ownerNameAddressPhoneMaxLength} ${labels.characterLimitSuffix}"
+                                        maxlength-text="characters left">
+                                    </text-area>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+                <div class="action-group" if.bind="canEdit">
+                    <button class="btn btn-secondary" click.trigger="undo()">
+                        ${labels.undo}
+                    </button>
+                    <button class="btn btn-tertiary arrow-blue-right" click.trigger="clear()">
+                        ${labels.clear}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>

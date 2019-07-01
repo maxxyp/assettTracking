@@ -1,0 +1,20 @@
+[
+	{
+		"key": "1",
+		"id": "ACC",
+		"description": "Accepted",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "2",
+		"id": "DEC",
+		"description": "Declined",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": "3",
+		"id": "NOR",
+		"description": "Not required",
+		"ctlgEntDelnMkr": "N"
+	}
+]

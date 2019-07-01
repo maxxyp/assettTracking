@@ -1,0 +1,38 @@
+{
+  "status": 200,
+  "disableCache": true,
+  "data": {
+    "meta": {
+      "type": "parts",
+      "createdTimestamp": "2018-04-05T11:46:10Z"
+    },
+    "data": {
+      "customer": {
+        "lastName": "Mr Kiran Josh",
+        "address": [
+          "The Plantation",
+          "",
+          "Leicester",
+          "5ST LE8"
+        ]
+      },
+      "list": [
+        {
+          "stockReferenceId": "E57954",
+          "description": "Manifest Kit",
+          "quantity": "1"
+        },
+        {
+          "stockReferenceId": "308536",
+          "description": "Fan",
+          "quantity": "1"
+        },
+        {
+          "stockReferenceId": "379398",
+          "description": "Pressure Relief Valve",
+          "quantity": "1"
+        }
+      ]
+    }
+  }
+}

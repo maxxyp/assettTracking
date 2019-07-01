@@ -1,0 +1,408 @@
+{
+  "ourStuff": {
+    "visitStatuses": "C,IA,IF,IP,WA,IH",
+    "excludePartStatusPrevious": "AP,NU,CP"
+  },
+  "activityComponentVisitStatus": [
+          {
+            "status": "QP",
+            "statusDescription": "QUOTATION PRODUCED",
+            "jobStatusCategory": "I"
+          },
+          {
+            "status": "D",
+            "statusDescription": "DO TODAY",
+            "jobStatusCategory": "D"
+          },
+          {
+            "status": "IZ",
+            "statusDescription": "INCOMPLETE",
+            "jobStatusCategory": "I"
+          },
+    {
+      "status": "C",
+      "statusDescription": "COMPLETE",
+      "jobStatusCategory": "C"
+    },
+    {
+      "status": "IA",
+      "statusDescription": "ANOTHER VISIT REQ'D",
+      "jobStatusCategory": "I"
+    },
+    {
+      "status": "IF",
+      "statusDescription": "FIELD MANAGER REQ'D",
+      "jobStatusCategory": "I"
+    },
+    {
+      "status": "IH",
+      "statusDescription": "TECHNICAL HELP REQ'D",
+      "jobStatusCategory": "I"
+    },
+          {
+            "status": "IP",
+            "statusDescription": "PARTS REQUIRED",
+            "jobStatusCategory": "I"
+          },
+          {
+            "status": "NA",
+            "statusDescription": "NO ACCESS",
+            "jobStatusCategory": "N"
+          },
+          {
+            "status": "VO",
+            "statusDescription": "NOT VISITED/OTHER",
+            "jobStatusCategory": "V"
+          },
+    {
+      "status": "WA",
+      "statusDescription": "WAIT ADVICE",
+      "jobStatusCategory": "I"
+    },
+          {
+            "status": "XB",
+            "statusDescription": "CANCELLED/B G S",
+            "jobStatusCategory": "X"
+          },
+          {
+            "status": "XC",
+            "statusDescription": "CANCELLED/CUSTOMER",
+            "jobStatusCategory": "X"
+          },
+          {
+            "status": "CX",
+            "statusDescription": "COMPLETE/CANCELLED",
+            "jobStatusCategory": "C"
+          },
+          {
+            "status": "PD",
+            "statusDescription": "PRE DIAGNOSTICS",
+            "jobStatusCategory": "I"
+          }
+  ],
+  "goodsItemStatus": [
+    {
+      "goodsItemNotFindIndicator": "N",
+      "description": "TO FIT/FITTED",
+      "status": "FP"
+    },
+    {
+      "goodsItemNotFindIndicator": "N",
+      "description": "USED VAN STOCK",
+      "status": "UP"
+    },
+    {
+      "goodsItemNotFindIndicator": "N",
+      "description": "USED LOCAL PURC",
+      "status": "UL"
+    },
+    {
+      "goodsItemNotFindIndicator": "N",
+      "description": "USED DISTRICT",
+      "status": "UD"
+    },
+    {
+      "goodsItemNotFindIndicator": "Y",
+      "description": "ORDER PART",
+      "status": "OP"
+    },
+            {
+              "goodsItemNotFindIndicator": "Y",
+              "description": "CLAIM PART",
+              "status": "CP"
+            },
+            {
+              "goodsItemNotFindIndicator": "Y",
+              "description": "NOT USED PART",
+              "status": "NU"
+            },
+            {
+              "goodsItemNotFindIndicator": "Y",
+              "description": "AVAILABLE PART",
+              "status": "AP"
+            },
+    {
+      "goodsItemNotFindIndicator": "N",
+      "description": "HOLD PART",
+      "status": "HP"
+    }
+  ],
+  "jobs": [
+    {
+      "jobId": "1301387001",
+      "tasks": [
+        {
+          "taskId": "1301387001002",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1302077001",
+      "tasks": [
+        {
+          "taskId": "1302077001001",
+          "statuses": [
+            "IP-AP,AP",
+            "NA-AP,AP,UP,UP",
+            "D-FP,FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1307677001",
+      "tasks": [
+        {
+          "taskId": "1307677001002",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1311087001",
+      "tasks": [
+        {
+          "taskId": "1311087001001",
+          "statuses": [
+            "IA-CP,UP,UP,UP,UP,UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1315737001",
+      "tasks": [
+        {
+          "taskId": "1315737001001",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1315747001",
+      "tasks": [
+        {
+          "taskId": "1315747001001",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1316087001",
+      "tasks": [
+        {
+          "taskId": "1316087001001",
+          "statuses": [
+            "IP-AP,CP,UP",
+            "IA-FP,CP,CP,UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1319877001",
+      "tasks": [
+        {
+          "taskId": "1319877001001",
+          "statuses": [
+            "IA-UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1336857001",
+      "tasks": [
+        {
+          "taskId": "1336857001002",
+          "statuses": [
+            "IP-AP,AP,AP,AP",
+            "D-FP,FP,FP,FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1339487001",
+      "tasks": [
+        {
+          "taskId": "1339487001001",
+          "statuses": [
+            "IP-AP",
+            "IP-FP,AP,AP",
+            "D-FP,FP"
+          ]
+        },
+        {
+          "taskId": "1339487001002",
+          "statuses": [
+            "C-UP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1349787001",
+      "tasks": [
+        {
+          "taskId": "1349787001001",
+          "statuses": [
+            "IA-CP,UP,UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1352418001",
+      "tasks": [
+        {
+          "taskId": "1352418001002",
+          "statuses": [
+            "IF-UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1360787001",
+      "tasks": [
+        {
+          "taskId": "1360787001001",
+          "statuses": [
+            "NA-UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1363218001",
+      "tasks": [
+        {
+          "taskId": "1363218001001",
+          "statuses": [
+            "IA-UP",
+            "D-"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1368487001",
+      "tasks": [
+        {
+          "taskId": "1368487001001",
+          "statuses": [
+            "IP-AP,AP",
+            "IP-FP,FP,NU,AP,AP,UP",
+            "D-FP,FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1375517001",
+      "tasks": [
+        {
+          "taskId": "1375517001001",
+          "statuses": [
+            "IA-",
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1382737002",
+      "tasks": [
+        {
+          "taskId": "1382737002001",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1391557001",
+      "tasks": [
+        {
+          "taskId": "1391557001002",
+          "statuses": [
+            "IP-AP",
+            "D-FP"
+          ]
+        }
+      ]
+    },
+
+
+    {
+      "jobId": "1393877001",
+      "tasks": [
+        {
+          "taskId": "1393877001006",
+          "statuses": [
+            "NA-UP",
+            "NA-",
+            "D-"
+          ]
+        }
+      ]
+    }
+  ]
+}

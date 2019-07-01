@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/simulation/models/schema.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAIA,CAAC;QAAD,aAAC;IAAD,CAJA,AAIC,IAAA;IAJY,wBAAM","file":"schema.js","sourcesContent":["export class Schema {\n    public valid: boolean;\n    public error: any[];\n    public missing: any[];\n}\n"],"sourceRoot":"../../.."}

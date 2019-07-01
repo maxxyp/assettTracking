@@ -1,0 +1,13 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${model.header}</label>
+        </ai-dialog-header>
+        <ai-dialog-body>
+            <div innerhtml.bind="model.infoMessage | htmlFormat"></div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button click.trigger="controller.ok()">OK</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

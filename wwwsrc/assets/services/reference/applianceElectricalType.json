@@ -1,0 +1,320 @@
+[
+	{
+		"key": 1,
+		"id": "AC",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 2,
+		"id": "ACE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 3,
+		"id": "ACH",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 4,
+		"id": "ACI",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 5,
+		"id": "CTV",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 6,
+		"id": "DAM",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 7,
+		"id": "DES",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 8,
+		"id": "DL",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 9,
+		"id": "DMS",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 10,
+		"id": "EBD",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 11,
+		"id": "ECH",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 12,
+		"id": "EF",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 13,
+		"id": "EHS",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 14,
+		"id": "ERA",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 15,
+		"id": "ESP",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 16,
+		"id": "ETD",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 17,
+		"id": "ETR",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 18,
+		"id": "EUF",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 19,
+		"id": "EWH",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 20,
+		"id": "EWR",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 21,
+		"id": "EXL",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 22,
+		"id": "HIW",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 23,
+		"id": "SA",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 24,
+		"id": "SEC",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 25,
+		"id": "SHE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 26,
+		"id": "SOA",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 27,
+		"id": "SPE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 28,
+		"id": "VAC",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 29,
+		"id": "WAE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 30,
+		"id": "WDE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 31,
+		"id": "WLS",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 32,
+		"id": "WRD",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 33,
+		"id": "WSE",
+		"applianceElectricalType": "ELECTRICAL",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 101,
+		"id": "MW",
+		"applianceElectricalType": "MICROWAVE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 102,
+		"id": "MWO",
+		"applianceElectricalType": "MICROWAVE",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 201,
+		"id": "CKE",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 202,
+		"id": "DW",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 203,
+		"id": "EHO",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 204,
+		"id": "EOB",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 205,
+		"id": "EOV",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 206,
+		"id": "EPH",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 207,
+		"id": "EPL",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 208,
+		"id": "FFR",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 209,
+		"id": "FRI",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 210,
+		"id": "FZR",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 211,
+		"id": "HOE",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 212,
+		"id": "KAC",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 213,
+		"id": "SD",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 214,
+		"id": "TDE",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 215,
+		"id": "WD",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 216,
+		"id": "WM",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 217,
+		"id": "WMO",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	},
+	{
+		"key": 218,
+		"id": "WMT",
+		"applianceElectricalType": "WHITEGOODS",
+		"ctlgEntDelnMkr": "N"
+	}
+]

@@ -1,0 +1,15 @@
+<template>
+    <ai-dialog>
+        <ai-dialog-header>
+            <label>${model.header}</label>
+        </ai-dialog-header>
+        <ai-dialog-body>
+            <div class="form-group">
+                <label class="help-block">${model.infoMessage}</label>
+            </div>
+        </ai-dialog-body>
+        <ai-dialog-footer>
+            <button click.trigger="controller.ok()">OK</button>
+        </ai-dialog-footer>
+    </ai-dialog>
+</template>

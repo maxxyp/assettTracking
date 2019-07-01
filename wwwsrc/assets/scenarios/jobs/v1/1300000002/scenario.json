@@ -1,0 +1,7 @@
+{
+    "status": 404,
+    "data": {
+        "status": "404",
+        "error": "Real 404 error?"
+    }
+}

@@ -1,0 +1,26 @@
+.validation-state-indicator {
+    border-left: 6px solid;
+    margin-right: 8px;
+    margin-left: 2px;
+    border-color: transparent;
+
+    &.state-none {
+      border-color: transparent;
+    }
+
+    &.state-invalid {
+      border-color: $stateInvalidColor;
+    }
+
+    &.state-valid {
+      border-color: $stateValidColor;
+    }
+
+    &.state-not-visited {
+      border-color: $stateNotVisitedColor;
+    }
+
+    &.state-dont-care {
+      border-color: $stateDontCareColor;
+    }
+}

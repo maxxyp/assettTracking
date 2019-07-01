@@ -1,0 +1,16 @@
+<template>
+    <span>${myStatusLabel}</span>
+    <drop-down value.bind="engineerState"
+               values.bind="engineerStatuses"
+               value-property.bind="catalog.FIELD_OPERATIVE_STATUS_ID"
+               text-property.bind="catalog.FIELD_OPERATIVE_STATUS_DESCRIPTION"
+               placeholder.bind="placeholder"
+               disabled.bind="engineerService.isPartCollectionInProgress || !canChangeEngineerStatus || !userSettingsComplete" no-filter="true" is-smash-buttons="true" dropdownType="1">
+        <template replace-part="option-template">
+            <div class="engineer-state-item">
+                <i class="engineer-state-icon fa ${item[catalog.FIELD_OPERATIVE_STATUS_ID] | engineerStatusStyle} "></i>
+                <span class="engineer-state-description">${item[catalog.FIELD_OPERATIVE_STATUS_DESCRIPTION]}</span>
+            </div>
+        </template>
+    </drop-down>
+</template>

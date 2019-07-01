@@ -1,0 +1,22 @@
+<template>
+    <div class="card">
+        <div class="details-card">
+            <div class="card-header card-title" click.trigger="toggleExpanded()">${labels.title}
+                <i class="card-toggle fa ${isExpanded ? 'fa-chevron-up' : 'fa-chevron-down'}"></i>
+            </div>
+            <div show.bind="isExpanded" class="card-block fade-in-content">
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-4">${labels.routeName}</div>
+                    <div class="col-xs-4">${labels.client}</div>
+                    <div class="col-xs-4">${labels.path}</div>
+                </div>
+                <div repeat.for="endpoint of endpoints" class="details-list-item disabled">
+                    <div class="col-xs-4">${endpoint.routeName}</div>
+                    <div class="col-xs-4">${endpoint.client}</div>
+                    <div class="col-xs-4">${endpoint.path}</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</template>

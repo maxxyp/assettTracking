@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/parts/ICustomer.ts"],"names":[],"mappings":"","file":"ICustomer.js","sourcesContent":["export interface ICustomer {\n    title: string;\n    firstName: string;\n    middleName: string;\n    lastName: string;\n    address: string [];\n}\n"],"sourceRoot":"../../../../../.."}

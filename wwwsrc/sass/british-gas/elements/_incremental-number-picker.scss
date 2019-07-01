@@ -1,0 +1,40 @@
+incremental-number-picker {
+  display: flex;
+  .each-side-buttons {
+    display: flex;
+    align-items: center;
+    a {
+      display: inline !important;
+    }
+  }
+  input.form-control {
+    display: inline-block;
+    width: auto;
+  }
+  span {
+    align-self: center;
+  }
+  .picker-buttons {
+    align-self: center;
+    white-space: nowrap;
+
+    .picker-buttons-minus,
+    .picker-buttons-plus{
+        background-image: none !important;
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0px 0px 0px 0px;
+    }
+    .picker-buttons-minus {
+      padding: 0 10px 0 0 !important;
+    }
+    .picker-buttons-plus {
+      padding: 0 0 0 10px !important;
+    }
+    .picker-buttons-minus:before,
+    .picker-buttons-plus:before {
+      margin: 5px;
+    }
+  }
+}

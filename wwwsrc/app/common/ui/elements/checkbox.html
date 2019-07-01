@@ -1,0 +1,4 @@
+<template>
+    <button class.bind="classes"  class="${isChecked? 'active' : ''}" value.bind="value" disabled.bind="disabled" checked.bind="isChecked" click.trigger="click()" blur.trigger="blur()" disable-form-manager="true">
+     <i class="tick-area  ${isChecked? 'active' : ''} fa fa-check"></i></button>
+</template>

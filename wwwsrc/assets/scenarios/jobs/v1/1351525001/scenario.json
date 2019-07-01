@@ -1,0 +1,187 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2018-08-14T06:27:24Z",
+      "modifiedTimestamp": "2018-08-14T06:53:54Z"
+    },
+    "data": {
+      "job": {
+        "id": "1351525001",
+        "engineerId": "5050505",
+        "customer": {
+          "id": "022201826",
+          "lastName": "Mr Scenario One Redo Madhavi",
+          "address": {
+            "houseNumber": "10",
+            "line": [
+              "Station Road"
+            ],
+            "county": "Dingwall",
+            "postCodeIn": "8AA",
+            "postCodeOut": "IV7"
+          }
+        },
+        "premises": {
+          "id": "L271309",
+          "address": {
+            "houseNumber": "10",
+            "line": [
+              "Station Road"
+            ],
+            "county": "Dingwall",
+            "postCodeIn": "8AA",
+            "postCodeOut": "IV7"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022201826",
+            "initials": " ",
+            "lastName": "Mr Scenario One Redo Madhavi"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2018-08-14"
+          }
+        },
+        "visit": {
+          "id": "WMW00057445",
+          "date": "2018-08-14T00:00:00Z",
+          "earliestStartTime": "2018-08-14T08:00:00Z",
+          "latestStartTime": "2018-08-14T18:00:00Z",
+          "specialInstructions": "special instructions for engineer ",
+          "engineerInstructions": "instructions for engineer"
+        },
+        "tasks": [
+          {
+            "id": "1351525001001",
+            "applianceId": "202224163",
+            "jobType": "FV",
+            "applianceType": "WAU",
+            "chargeType": "NCHCNI1",
+            "status": "D",
+            "skill": "FV",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "GEORGE",
+                "chargeableTime": 50,
+                "sequence": 1,
+                "report": "54CODE Test Act rep",
+                "workDuration": 50,
+                "parts": [
+                  {
+                    "status": "UP",
+                    "description": "Pcb-Ignition",
+                    "charge": 9694,
+                    "quantity": 3,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E01561"
+                  }
+                ],
+                "problemDesc": "Boiler is failing to startup",
+                "applianceMake": "PD",
+                "applianceModel": "Numbered Models-Default",
+                "applianceErrorCode": "AB",
+                "applianceErrorDesc": "Error Description"
+              }
+            ]
+          },
+          {
+            "id": "1351525001002",
+            "applianceId": "202224165",
+            "jobType": "HU",
+            "applianceType": "WH",
+            "chargeType": "ALP2API",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "supportingText": "THIS JOB IS A RECALL",
+            "problemDesc": "Boiler is not starting, unusual noise coming from Fan",
+            "applianceMake": "Bosch Worcester",
+            "applianceModel": "330e",
+            "applianceErrorCode": "22",
+            "applianceErrorDesc": "Problem with fan",
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "IP",
+                "engineerName": "GEORGE",
+                "chargeableTime": 30,
+                "sequence": 1,
+                "report": "62CODE Test Act Rep",
+                "workDuration": 30,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "AP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2018-08-14",
+                    "status": "FP",
+                    "description": "22mm Speedfit Tank Connector TOTE",
+                    "charge": 321,
+                    "quantity": 2,
+                    "quantityCharged": 2,
+                    "stockReferenceId": "F00006"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "1351525001003",
+            "applianceId": "202224167",
+            "jobType": "IA",
+            "applianceType": "COD",
+            "chargeType": "CPONONE",
+            "status": "C",
+            "skill": "OC",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2018-08-14",
+                "status": "C",
+                "engineerName": "GEORGE",
+                "chargeableTime": 50,
+                "sequence": 1,
+                "report": "71CODE Test Act Rep",
+                "workDuration": 50,
+                "parts": [
+                  {
+                    "status": "CP",
+                    "description": "Pcb-Ignition",
+                    "charge": 0,
+                    "quantity": 2,
+                    "stockReferenceId": "E01561"
+                  },
+                  {
+                    "status": "UP",
+                    "description": "Pcb-Ignition",
+                    "charge": 9694,
+                    "quantity": 2,
+                    "quantityCharged": 0,
+                    "stockReferenceId": "E01561"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

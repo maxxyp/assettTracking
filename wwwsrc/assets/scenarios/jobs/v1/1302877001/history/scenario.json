@@ -1,0 +1,193 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-14T15:53:16Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "1391877001001",
+        "jobType": "FV",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "NCH2SIS",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1367777001001",
+        "jobType": "FV",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "NCH2SIS",
+        "activities": [{
+          "status": "D"
+        }]
+      }, {
+        "id": "1329777001001",
+        "jobType": "HU",
+        "applianceType": "CHB",
+        "status": "I",
+        "chargeType": "ALP2SIS",
+        "activities": [{
+          "date": "2017-08-11",
+          "status": "NA",
+          "engineerName": "WENDY",
+          "report": "Vbdghchvjbkbnkjbk"
+        }]
+      }, {
+        "id": "1321467001001",
+        "jobType": "AS",
+        "applianceType": "FRE",
+        "status": "C",
+        "chargeType": "NCH2API",
+        "activities": [{
+          "date": "2017-07-07",
+          "status": "C",
+          "engineerName": "NEIL",
+          "report": "CODE0testingggggggg"
+        }]
+      }, {
+        "id": "1339777001001",
+        "jobType": "FV",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "NCH2SIS",
+        "activities": [{
+          "date": "2017-08-11",
+          "status": "C",
+          "engineerName": "NEIL",
+          "report": "CODE0saarah test"
+        }]
+      }, {
+        "id": "1339777001002",
+        "jobType": "FV",
+        "applianceType": "WAU",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [{
+          "date": "2017-08-11",
+          "status": "C",
+          "engineerName": "NEIL",
+          "report": "62CODEresrsrrsrsrsrsrsrsrsrs"
+        }]
+      }, {
+        "id": "1347777001001",
+        "jobType": "HU",
+        "applianceType": "CHB",
+        "status": "C",
+        "chargeType": "ALP2SIS",
+        "activities": [{
+          "date": "2017-08-10",
+          "status": "C",
+          "engineerName": "WENDY",
+          "report": "CODEAAReport changes to chargable",
+          "parts": [{
+            "status": "UP",
+            "description": "Safe nets",
+            "quantity": 1,
+            "stockReferenceId": "147541"
+          }]
+        }]
+      }, {
+        "id": "1347777001002",
+        "jobType": "FV",
+        "applianceType": "WAU",
+        "status": "C",
+        "chargeType": "NCH3SIS",
+        "activities": [{
+          "date": "2017-08-10",
+          "status": "C",
+          "engineerName": "WENDY",
+          "report": "54CODESecond report complete"
+        }]
+      }, {
+        "id": "1311567001001",
+        "jobType": "AS",
+        "applianceType": "FREeeeeee",
+        "status": "C",
+        "chargeType": "NCH2API",
+        "activities": [{
+          "date": "2017-07-10",
+          "status": "C",
+          "engineerName": "ITF ENGINEER 000005",
+          "report": "54CODEasdasdsadadasd"
+        }]
+      }],
+      "appliances": [{
+        "id": "202235082",
+        "gcCode": "4290502",
+        "category": "X",
+        "contractType": "3SIS",
+        "contractExpiryDate": "2018-08-09",
+        "applianceType": "WAU",
+        "description": "PROTOTYPE ADG (NEG)",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2014,
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "ventilationSafe": true
+        },
+        "chirp": {
+          "iaciCode": "D",
+          "iaciDate": "2017-08-10"
+        }
+      }, {
+        "id": "202233100",
+        "gcCode": "3224802",
+        "category": "A",
+        "contractType": "2API",
+        "contractExpiryDate": "2018-07-06",
+        "applianceType": "FRE",
+        "description": "BECTON 7",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2015
+      }, {
+        "id": "202235081",
+        "serialId": "48171822",
+        "gcCode": "4102408",
+        "category": "X",
+        "contractType": "2SIS",
+        "contractExpiryDate": "2018-08-09",
+        "applianceType": "CHB",
+        "description": "*C*CONDENSAGAZ 300",
+        "flueType": "F",
+        "boilerSize": 2,
+        "cylinderType": 3,
+        "energyControl": "NC",
+        "locationDescription": "freejudo",
+        "condition": 3,
+        "numberOfRadiators": 9,
+        "numberOfSpecialRadiators": 7,
+        "installationYear": 2000,
+        "systemDesignCondition": 1,
+        "systemType": 2,
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "ventilationSafe": true,
+          "installationTightnessTestSafe": true
+        },
+        "chirp": {
+          "iaciCode": "C",
+          "iaciDate": "2017-08-10"
+        }
+      }, {
+        "id": "202235083",
+        "gcCode": "1108606",
+        "category": "A",
+        "contractType": "1S",
+        "contractExpiryDate": "2018-08-09",
+        "applianceType": "CKR",
+        "description": "FARMHOUSE MODEL-912",
+        "boilerSize": 0,
+        "numberOfSpecialRadiators": 0,
+        "installationYear": 2013
+      }]
+    }
+  }
+}

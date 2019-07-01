@@ -1,0 +1,12 @@
+{
+    "status": 200,
+    "data": {
+        "payrollId": "0039644",
+        "mobileNo": "123456789",
+        "patch": "74L2",
+        "businessArea": "Servicedd And Repair",
+        "region": "74L",
+        "email": "a@a.com",
+        "confirmPayrollId": "0039644"
+    }
+}

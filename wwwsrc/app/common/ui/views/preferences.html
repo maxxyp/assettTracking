@@ -1,0 +1,17 @@
+<template>
+    <div class="card">
+        <div repeat.for="preference of preferences">
+            <compose view="${preference.view}.html" view-model.bind="preference.viewModel"></compose>
+            <div>&nbsp;</div>
+        </div>
+        <div class="form-group has-warning" if.bind="errorMessage.length > 0">
+            <label class="help-block">${errorMessage}</label>
+        </div>
+        <div class="form-group has-success" if.bind="successMessage.length > 0">
+            <label class="help-block">${successMessage}</label>
+        </div>
+
+        <button type="submit" class="btn btn-default btn-primary" click.trigger="validateAndSavePreferences()">Save</button>
+        <button class="btn btn-secondary" click.trigger="reset()">Reset</button>
+    </div>
+</template>

@@ -1,0 +1,12 @@
+{
+  "status" : 200,
+  "data" : {
+    "models": [
+      {
+        "imModKey": 6431,
+        "Description": "NETAHEAT ELECTRONIC 10/16",
+        "manufacturer": "POTTERTON MYSON LTD"
+      }
+    ]
+  }
+}

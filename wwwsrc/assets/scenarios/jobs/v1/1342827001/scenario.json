@@ -1,0 +1,79 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-02-20T09:56:07Z"
+    },
+    "data": {
+      "job": {
+        "id": "1342827001",
+        "customer": {
+          "id": "022208693",
+          "lastName": "Mr Test Userr",
+          "address": {
+            "houseNumber": "9",
+            "line": [
+              "Oak Lane"
+            ],
+            "county": "Carlisle",
+            "postCodeIn": "3SW",
+            "postCodeOut": "CA1"
+          }
+        },
+        "premises": {
+          "id": "L276546",
+          "address": {
+            "houseNumber": "9",
+            "line": [
+              "Oak Lane"
+            ],
+            "county": "Carlisle",
+            "postCodeIn": "3SW",
+            "postCodeOut": "CA1"
+          },
+          "previousVisitCount": 99,
+          "contact": {
+            "id": "022208693",
+            "initials": " ",
+            "lastName": "Mr Test Userr"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-02-17"
+          },
+          "unsafeDetail": {
+            "reasons": [
+              "PDL8"
+            ]
+          }
+        },
+        "visit": {
+          "id": "WMW00162732",
+          "date": "2017-02-20T00:00:00Z",
+          "earliestStartTime": "2017-02-20T08:00:00Z",
+          "latestStartTime": "2017-02-20T18:00:00Z",
+          "specialInstructions": "56testing is bein progressed all the tim"
+        },
+        "tasks": [
+          {
+            "id": "1342827001001",
+            "applianceId": "202230774",
+            "jobType": "FV",
+            "applianceType": "CHB",
+            "chargeType": "NCH3SIS",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 1,
+            "supportingText": "THIS JOB IS A RECALL",
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

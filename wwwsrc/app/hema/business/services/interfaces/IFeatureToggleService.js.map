@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/IFeatureToggleService.ts"],"names":[],"mappings":"","file":"IFeatureToggleService.js","sourcesContent":["export interface IFeatureToggleService {\n    initialise(engineerId: string): Promise<void>;\n    isAssetTrackingEnabled(): boolean;\n}\n"],"sourceRoot":"../../../.."}

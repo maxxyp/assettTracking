@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/geo/google/wua/models/textValue.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAGA,CAAC;QAAD,gBAAC;IAAD,CAHA,AAGC,IAAA;IAHY,8BAAS","file":"textValue.js","sourcesContent":["export class TextValue {\n    public text: string;\n    public value: any;\n}\n"],"sourceRoot":"../../../../.."}

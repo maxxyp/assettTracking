@@ -1,0 +1,42 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-12-28T08:0:00Z",
+      "modifiedTimestamp": "2016-12-28T12:00:00Z"
+    },
+    "data": {
+      "tasks": [{
+        "id": "2018777372",
+        "jobType": "XA",
+        "applicanceType": "FRE",
+        "chargeType": " SLONONE",
+        "status": "D",
+        "activities": [{
+          "date": "2018-02-10Z",
+          "status": "C",
+          "engineerName": "Sue Hull 570212",
+          "report": "Poor ignition. Cleaned and adjusted spark electrode"
+        }]
+      }],
+      "appliances": [{
+        "id": "55063147",
+        "gcCode": "3203209",
+        "bgInstallationIndicator": true,
+        "category": "A",
+        "applianceType": "FRE",
+        "description": "Valor Adorn BR622",
+        "flueType": "O",
+        "locationDescription": "Lounge",
+        "installationYear": 2009,
+        "safety": {
+          "applianceSafe": true,
+          "flueSafe": true,
+          "installationSafe": true,
+          "installationTightnessTestSafe": true
+        }
+      }]
+    }
+  }
+}

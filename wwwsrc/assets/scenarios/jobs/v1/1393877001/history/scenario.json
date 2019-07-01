@@ -1,0 +1,91 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-15T15:51:54Z",
+      "modifiedTimestamp": "2017-08-16T10:59:11Z"
+    },
+    "data": {
+      "appliances": [
+        {
+          "id": "202235202",
+          "gcCode": "4301109",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-08-14",
+          "applianceType": "WAW",
+          "description": "150TG MK 2",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "linkId": "202235202",
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-15"
+          }
+        },
+        {
+          "id": "202235202",
+          "gcCode": "4301109",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-08-14",
+          "applianceType": "WAW",
+          "description": "150TG MK 2",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "linkId": "202235202",
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-15"
+          }
+        },
+        {
+          "id": "202235204",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-08-14",
+          "applianceType": "AGA",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-15"
+          }
+        },
+        {
+          "id": "202235202",
+          "gcCode": "4301109",
+          "category": "X",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-08-14",
+          "applianceType": "WAW",
+          "description": "150TG MK 2",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "linkId": "202235202",
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-15"
+          }
+        },
+        {
+          "id": "202235203",
+          "gcCode": "4532720",
+          "category": "A",
+          "contractType": "2FI1",
+          "contractExpiryDate": "2018-08-14",
+          "applianceType": "WAC",
+          "description": "RAYBURN 380G",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "linkId": "202235202"
+        }
+      ]
+    }
+  }
+}

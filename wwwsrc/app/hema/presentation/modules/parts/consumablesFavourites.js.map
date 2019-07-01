@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/presentation/modules/parts/consumablesFavourites.ts"],"names":[],"mappings":";;;IAAA;QAAA;QAEA,CAAC;QAAD,4BAAC;IAAD,CAFA,AAEC,IAAA;IAFY,sDAAqB","file":"consumablesFavourites.js","sourcesContent":["export class ConsumablesFavourites {\n    \n}\n"],"sourceRoot":"../../../.."}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/services/interfaces/IJobStateService.ts"],"names":[],"mappings":"","file":"IJobStateService.js","sourcesContent":["export interface  IJobStateService {\n\n}\n"],"sourceRoot":"../../../.."}

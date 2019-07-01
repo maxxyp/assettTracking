@@ -1,0 +1,11 @@
+{
+  "status" : 200,
+  "data" :{
+  "models": [
+    {
+      "imModKey": 8207,
+      "description": "SGI3302GB/01 Dishwasher",
+      "manufacturer": "BOSCH"
+    }
+  ]
+} }

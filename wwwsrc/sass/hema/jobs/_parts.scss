@@ -1,0 +1,61 @@
+.vanstock-link-icon{
+    // position: absolute;
+    // top: -16px;
+    // right: 16px;
+    font-size: 45px;
+    cursor: pointer;
+}
+.vanstock-header-icon{
+    font-size: 38px;
+    position: absolute;
+    margin-top:-4px
+}
+.vanstock-heading-text{
+    margin-left:50px;
+}
+.green-tick{
+    color:green;
+    font-size:30px;
+}
+.todays-parts-collapsible{
+    collapsible{
+        .acc-heading-text{
+            width: 150px;
+        }
+    }
+}
+.todays-parts-not-last-item{
+    margin-bottom: 30px;
+}
+.remindAddPart {
+    color: red;
+}
+
+.parts-state {
+    display: flex;
+    padding-top: 10px;
+}
+
+.parts-state-item {
+    flex-basis: 100%;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.floating-date{
+    position: absolute;
+    top: -13px;
+    left: 45%;
+    text-align: center;
+    background-color: #005eb8;
+    color: white;
+    padding: 3px;
+    font-size: 0.6rem;
+}
+.in-warranty{
+    width:120px;
+}
+.part-basket-price
+{
+   margin-top: 12px;
+}

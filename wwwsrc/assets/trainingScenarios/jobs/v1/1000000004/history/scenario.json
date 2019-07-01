@@ -1,0 +1,45 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2016-11-17T11:41:45Z"
+    },
+    "data": {
+      "appliances": [
+        {
+          "id": "55063775",
+          "gcCode": "4731104",
+          "bgInstallationIndicator": false,
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "CHB",
+          "description": "Worcester 350",
+          "locationDescription": "Storeroom",
+          "installationYear": 2004
+        },
+        {
+          "id": "55063776",
+          "gcCode": "9999990",
+          "category": "A",
+          "contractType": "LI",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "INS",
+          "description": "Installation",
+          "locationDescription": "House",
+          "installationYear": 1996
+        },
+        {
+          "id": "55063777",
+          "category": "A",
+          "contractType": "1S",
+          "contractExpiryDate": "2099-12-31Z",
+          "applianceType": "FRE",
+          "locationDescription": "Lounge",
+          "installationYear": 2013
+        }
+      ]
+    }
+  }
+}

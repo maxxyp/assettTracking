@@ -1,0 +1,177 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-06-29T14:04:11Z",
+      "modifiedTimestamp": "2017-06-30T09:38:41Z"
+    },
+    "data": {
+      "job": {
+        "id": "1336857001",
+        "engineerId": "0817348",
+        "customer": {
+          "id": "022202622",
+          "lastName": "Mr Rani Raj 1380",
+          "address": {
+            "houseNumber": "1",
+            "line": [
+              "Darley Close"
+            ],
+            "county": "Addlestone",
+            "postCodeIn": "2NE",
+            "postCodeOut": "KT15"
+          }
+        },
+        "premises": {
+          "id": "L272699",
+          "address": {
+            "houseNumber": "36",
+            "line": [
+              "Parkhead Road"
+            ],
+            "town": "Glen Village",
+            "county": "Falkirk",
+            "postCodeIn": "2AS",
+            "postCodeOut": "FK1"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022204252",
+            "initials": " ",
+            "lastName": "The Tenant"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-06-29"
+          }
+        },
+        "visit": {
+          "id": "WMW00192482",
+          "date": "2017-06-30T00:00:00Z",
+          "earliestStartTime": "2017-06-30T18:00:00Z",
+          "latestStartTime": "2017-06-30T22:00:00Z"
+        },
+        "tasks": [
+          {
+            "id": "1336857001001",
+            "applianceId": "202230913",
+            "jobType": "BE",
+            "applianceType": "DW",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "ER",
+            "sequence": 1,
+            "activities": [
+              {
+                "status": "D",
+                "sequence": 1
+              }
+            ]
+          },
+          {
+            "id": "1336857001002",
+            "applianceId": "202222849",
+            "jobType": "GU",
+            "applianceType": "BBF",
+            "chargeType": "ALF2SIM",
+            "status": "D",
+            "skill": "LD",
+            "sequence": 2,
+            "specialRequirement": "Parts needed in market",
+            "activities": [
+              {
+                "date": "2017-06-29",
+                "status": "IP",
+                "engineerName": "NAVIN",
+                "chargeableTime": 15,
+                "sequence": 1,
+                "report": "71CODEPart neededed",
+                "workDuration": 15,
+                "parts": [
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "AP",
+                    "description": "Valve 28i - Gas - Dungs",
+                    "charge": 8043.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E57959"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "AP",
+                    "description": "Insulation - Side - Avon",
+                    "charge": 282.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E27607"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "AP",
+                    "description": "Tube - Connection",
+                    "charge": 2920.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E76341"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "AP",
+                    "description": "Kit - Gas Valve",
+                    "charge": 16995.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E85892"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "FP",
+                    "description": "Valve 28i - Gas - Dungs",
+                    "charge": 8043.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E57959"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "FP",
+                    "description": "Insulation - Side - Avon",
+                    "charge": 282.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E27607"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "FP",
+                    "description": "Tube - Connection",
+                    "charge": 2920.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E76341"
+                  },
+                  {
+                    "orderDate": "2017-06-29",
+                    "status": "FP",
+                    "description": "Kit - Gas Valve",
+                    "charge": 16995.0,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "E85892"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

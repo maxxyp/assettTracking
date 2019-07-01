@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/geo/google/IGoogleMapsServiceConfiguration.ts"],"names":[],"mappings":"AAAA,qDAAqD","file":"IGoogleMapsServiceConfiguration.js","sourcesContent":["/// <reference path=\"../../../../typings/app.d.ts\" />\n\nexport interface IGoogleMapsServiceConfiguration {\n    googleClientKey: string;\n    googleApiVersion: string;\n}\n"],"sourceRoot":"../../.."}

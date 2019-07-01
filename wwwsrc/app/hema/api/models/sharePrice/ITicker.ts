@@ -1,0 +1,18 @@
+export interface ITicker {
+    c: string; // "+2.40"
+    "c_fix": string; // "2.40"
+    ccol: string; // "chg"
+    cp: string; // "1.05"
+    "cp_fix": string; // "1.05"
+    e: string; // "LON"
+    id: string; // "8003465"
+    l: string; // "230.90"
+    "l_cur": string; // "GBX230.90"
+    "l_fix": string; // "230.90"
+    lt: string; // "Sep 14, 11s45AM GMT+1"
+    "lt_dts": string; // "2016-09-14T11s45s16Z"
+    ltt: string; // "11a45AM GMT+1"
+    "pcls_fix": string; // "228.5"
+    s: string; // "0"
+    t: string; // "CNA"
+}

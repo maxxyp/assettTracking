@@ -1,0 +1,71 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-08-07T14:30:16Z",
+      "modifiedTimestamp": "2017-08-07T14:42:56Z"
+    },
+    "data": {
+      "job": {
+        "id": "1316677001",
+        "engineerId": "0080937",
+        "customer": {
+          "id": "022211220",
+          "lastName": "Mr Ll Sixtynn",
+          "address": {
+            "houseNumber": "29",
+            "line": ["Lavender Road"],
+            "county": "Leicester",
+            "postCodeIn": "1AL",
+            "postCodeOut": "LE3"
+          }
+        },
+        "premises": {
+          "id": "L278857",
+          "address": {
+            "houseNumber": "28",
+            "line": ["Lavender Road"],
+            "county": "Leicester",
+            "postCodeIn": "1AL",
+            "postCodeOut": "LE3"
+          },
+          "previousVisitCount": 0,
+          "contact": {
+            "id": "022211220",
+            "initials": " ",
+            "lastName": "Mr Ll Sixtynn"
+          }
+        },
+        "visit": {
+          "id": "WMW00210702",
+          "date": "2017-08-07T00:00:00Z",
+          "earliestStartTime": "2017-08-07T12:00:00Z",
+          "latestStartTime": "2017-08-07T18:00:00Z"
+        },
+        "tasks": [{
+          "id": "1316677001001",
+          "applianceId": "202234802",
+          "jobType": "AS",
+          "applianceType": "INS",
+          "chargeType": "NCHLI",
+          "status": "D",
+          "skill": "LS",
+          "sequence": 2,
+          "activities": [{
+            "date": "2017-08-07",
+            "status": "NA",
+            "engineerName": "NEIL",
+            "chargeableTime": 0,
+            "sequence": 1,
+            "report": "Hhhhhhhhhhhh",
+            "workDuration": 0
+          }, {
+            "status": "D",
+            "sequence": 2
+          }]
+        }]
+      }
+    }
+  }
+}

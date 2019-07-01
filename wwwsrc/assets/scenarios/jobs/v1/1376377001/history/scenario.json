@@ -1,0 +1,112 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-07-27T15:26:44Z",
+      "modifiedTimestamp": "2017-07-27T15:28:16Z"
+    },
+    "data": {
+      "tasks": [
+        {
+          "id": "1334277001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1334277001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3FI1",
+          "activities": [
+            {
+              "status": "D"
+            }
+          ]
+        },
+        {
+          "id": "1371377001001",
+          "jobType": "IB",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "EXS3FI1",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        },
+        {
+          "id": "1371377001002",
+          "jobType": "FV",
+          "applianceType": "CHB",
+          "status": "I",
+          "chargeType": "NCH3FI1",
+          "activities": [
+            {
+              "report": "No Visit Details"
+            }
+          ]
+        }
+      ],
+      "appliances": [
+        {
+          "id": "202234015",
+          "gcCode": "4143301",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-07-20",
+          "applianceType": "CHB",
+          "description": "MODEL 3",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-21"
+          }
+        },
+        {
+          "id": "202234015",
+          "gcCode": "4143301",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-07-20",
+          "applianceType": "CHB",
+          "description": "MODEL 3",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-21"
+          }
+        },
+        {
+          "id": "202234015",
+          "gcCode": "4143301",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-07-20",
+          "applianceType": "CHB",
+          "description": "MODEL 3",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2016,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-07-21"
+          }
+        }
+      ]
+    }
+  }
+}

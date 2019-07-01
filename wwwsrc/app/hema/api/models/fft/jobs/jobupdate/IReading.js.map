@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/fft/jobs/jobupdate/IReading.ts"],"names":[],"mappings":"","file":"IReading.js","sourcesContent":["export interface IReading {\n    dateTime: string;\n    type: string;\n    value: string;\n    sequenceNumber: number;\n}\n"],"sourceRoot":"../../../../../.."}

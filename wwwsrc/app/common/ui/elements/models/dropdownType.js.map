@@ -1,0 +1,1 @@
+{"version":3,"sources":["common/ui/elements/models/dropdownType.ts"],"names":[],"mappings":";;;IAAA,IAAY,YAGX;IAHD,WAAY,YAAY;QACpB,mDAAU,CAAA;QACV,+DAAgB,CAAA;IACpB,CAAC,EAHW,YAAY,GAAZ,oBAAY,KAAZ,oBAAY,QAGvB","file":"dropdownType.js","sourcesContent":["export enum DropdownType {\n    normal = 1,\n    smashbuttons = 2\n}\n"],"sourceRoot":"../../../.."}

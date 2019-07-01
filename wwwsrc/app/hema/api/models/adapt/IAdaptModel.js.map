@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/api/models/adapt/IAdaptModel.ts"],"names":[],"mappings":"","file":"IAdaptModel.js","sourcesContent":["export interface IAdaptModel {\n    imModKey : number;\n    description : string;\n    manufacturer: string;\n}\n"],"sourceRoot":"../../../.."}

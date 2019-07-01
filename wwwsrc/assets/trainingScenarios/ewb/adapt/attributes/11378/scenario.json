@@ -1,0 +1,42 @@
+{
+  "status" : 200,
+  "data" : {
+  "attributes": [
+    {
+      "attributeType": "GCNumber",
+      "attributeValue": "53-476-28"
+    },
+    {
+      "attributeType": "appType",
+      "attributeValue": "Gas Water Heating"
+    },
+    {
+      "attributeType": "appSubType",
+      "attributeValue": "Storage Water Heaters & Circulators"
+    },
+    {
+      "attributeType": "appFuel",
+      "attributeValue": "Gas Appliances"
+    },
+    {
+      "attributeType": "GCVariant",
+      "attributeValue": "A"
+    },
+    {
+      "attributeType": "appVersionStatus",
+      "attributeValue": "Withdrawn"
+    },
+    {
+      "attributeType": "includeInSIS",
+      "attributeValue": "True"
+    },
+    {
+      "attributeType": "sourceID",
+      "attributeValue": "20436"
+    },
+    {
+      "attributeType": "optidescription",
+      "attributeValue": "carinaewiththornanderson250circfire"
+    }
+  ]
+} }

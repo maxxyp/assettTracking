@@ -1,0 +1,124 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2017-06-23T12:42:51Z",
+      "modifiedTimestamp": "2017-06-26T10:08:18Z"
+    },
+    "data": {
+      "job": {
+        "id": "1391557001",
+        "engineerId": "0111448",
+        "customer": {
+          "id": "022209753",
+          "lastName": "Mr Joel Prince",
+          "address": {
+            "houseNumber": "329",
+            "line": [
+              "Somerville Road"
+            ],
+            "county": "Birmingham",
+            "postCodeIn": "9DT",
+            "postCodeOut": "B10"
+          }
+        },
+        "premises": {
+          "id": "L277503",
+          "address": {
+            "houseNumber": "329",
+            "line": [
+              "Somerville Road"
+            ],
+            "county": "Birmingham",
+            "postCodeIn": "9DT",
+            "postCodeOut": "B10"
+          },
+          "previousVisitCount": 1,
+          "contact": {
+            "id": "022209753",
+            "initials": " ",
+            "lastName": "Mr Joel Prince"
+          },
+          "safetyDetail": {
+            "lastGasVisitDate": "2017-06-23"
+          }
+        },
+        "visit": {
+          "id": "WMW00188392",
+          "date": "2017-06-26T00:00:00Z",
+          "earliestStartTime": "2017-06-26T18:00:00Z",
+          "latestStartTime": "2017-06-26T22:00:00Z",
+          "specialInstructions": "Parts are needed"
+        },
+        "tasks": [
+          {
+            "id": "1391557001001",
+            "applianceId": "202232182",
+            "status": "C",
+            "sequence": 1,
+            "activities": [
+              {
+                "date": "2017-06-23",
+                "status": "C",
+                "engineerName": "WENDY",
+                "chargeableTime": 25,
+                "sequence": 1,
+                "report": "62CODEOne job completed",
+                "workDuration": 25
+              }
+            ]
+          },
+          {
+            "id": "1391557001002",
+            "applianceId": "202232187",
+            "jobType": "IB",
+            "applianceType": "CKR",
+            "chargeType": "NCH2E1I",
+            "status": "D",
+            "skill": "GR",
+            "sequence": 2,
+            "specialRequirement": "Nothing except parts",
+            "activities": [
+              {
+                "date": "2017-06-23",
+                "status": "IP",
+                "engineerName": "WENDY",
+                "chargeableTime": 5,
+                "sequence": 1,
+                "report": "62CODEParts required to complete the job",
+                "workDuration": 5,
+                "parts": [
+                  {
+                    "orderDate": "2017-06-23",
+                    "status": "AP",
+                    "description": "Pipe - Feed - Vertical - c/w Seal",
+                    "charge": 3380,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "676597"
+                  }
+                ]
+              },
+              {
+                "status": "D",
+                "sequence": 2,
+                "parts": [
+                  {
+                    "orderDate": "2017-06-23",
+                    "status": "FP",
+                    "description": "Pipe - Feed - Vertical - c/w Seal",
+                    "charge": 3380,
+                    "quantity": 1,
+                    "quantityCharged": 1,
+                    "stockReferenceId": "676597"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

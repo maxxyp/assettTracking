@@ -1,0 +1,1 @@
+{"version":3,"sources":["hema/business/models/reference/ISafetyAction.ts"],"names":[],"mappings":"","file":"ISafetyAction.js","sourcesContent":["export interface ISafetyAction {\n   actionCode: string;\n   safetyActionDescription: string;\n   safetyActionCategory: string;\n}\n"],"sourceRoot":"../../../.."}

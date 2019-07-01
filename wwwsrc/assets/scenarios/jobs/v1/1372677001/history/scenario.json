@@ -1,0 +1,95 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "jobHistory",
+      "createdTimestamp": "2017-08-04T10:59:30Z"
+    },
+    "data": {
+      "appliances": [
+        {
+          "id": "202234702",
+          "gcCode": "5307101",
+          "category": "X",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "BBC",
+          "description": "66C",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2014,
+          "linkId": "202234702",
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-04"
+          }
+        },
+        {
+          "id": "202234705",
+          "category": "X",
+          "contractType": "LIG",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "CHB",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2013,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-04"
+          }
+        },
+        {
+          "id": "202234704",
+          "gcCode": "4192231",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "CHB",
+          "description": "ALLEN ALPHA 2/0",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-04"
+          }
+        },
+        {
+          "id": "202234704",
+          "gcCode": "4192231",
+          "category": "X",
+          "contractType": "3FI1",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "CHB",
+          "description": "ALLEN ALPHA 2/0",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "installationYear": 2015,
+          "chirp": {
+            "iaciCode": "D",
+            "iaciDate": "2017-08-04"
+          }
+        },
+        {
+          "id": "202234703",
+          "gcCode": "500",
+          "category": "A",
+          "contractType": "3ST",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "FRC",
+          "description": ".Unknown-Default",
+          "boilerSize": 0,
+          "numberOfSpecialRadiators": 0,
+          "linkId": "202234702"
+        },
+        {
+          "id": "202234706",
+          "category": "A",
+          "contractType": "LIG",
+          "contractExpiryDate": "2018-06-06",
+          "applianceType": "INS"
+        }
+      ]
+    }
+  }
+}

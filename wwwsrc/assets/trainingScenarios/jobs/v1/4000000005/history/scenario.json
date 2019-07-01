@@ -1,0 +1,78 @@
+{
+	"status": 200,
+	"data": {
+		"meta": {
+			"type": "jobHistory",
+			"createdTimestamp": "2017-09-29T11:41:45Z"
+		},
+		"data": {
+		"appliances": [{
+			"id": "30885272",
+			"gcCode": "7348068",
+			"serialId": "hht5/33/22/dd/1",
+			"category": "A",
+			"applianceType": "WM",
+			"linkId": "79441700",
+			"contracttype": "2E3",
+			"description": "AEG L16810",
+			"locationDescription": "Kitchen",
+			"installationYear": 2015
+		}, {
+			"id": "30885273",
+			"gcCode": "7045796",
+			"category": "A",
+			"applianceType": "DW",
+			"linkId": "79441700",
+			"contracttype": "2E3",
+			"description": "Whirlpool ADP 4617 SN",
+			"locationDescription": "Kitchen",
+			"installationYear": 2005
+		}, {
+			"id": "79441700",
+			"gcCode": "9999990",
+			"category": "A",
+			"applianceType": "KAC",
+			"contractExpiryDate": "2099-12-31Z",
+			"contracttype": "2E3",
+			"linkId": "79441700",
+			"description": "Appliance Cover",
+			"locationDescription": "Bungalow",
+			"installationYear": 2015,
+			"safety": {
+				"applianceSafe": "Y",
+				"flueSafe": "X",
+				"installationSafe": "Y",
+				"applianceTightnessTestSafe": "X",
+				"ventilationSafe": "X"
+			}
+		}, {
+			"id": "10002745",
+			"gcCode": "4183888",
+			"bgInstallationIndicator": "0",
+			"category": "X",
+			"contractType": "3ST",
+			"contractExpiryDate": "2099-12-31Z",
+			"applianceType": "CHB",
+			"description": "Economist WM 60/80 BF",
+			"flueType": "F",
+			"boilerSize": 25,
+			"cylinderType": 1,
+			"energyControl": "TS",
+			"locationDescription": "Kitchen",
+			"condition": 1,
+			"numberOfRadiators": 8,
+			"numberOfSpecialRadiators": 0,
+			"installationYear": 1991,
+			"systemDesignCondition": 2,
+			"systemType": 6,
+			"systemInstallationYear": 1991,
+			"safety": {
+				"applianceSafe": "Y",
+				"flueSafe": "Y",
+				"installationSafe": "Y",
+				"installationTightnessTestSafe": "Y"
+			}
+		}]
+		}
+	}
+}

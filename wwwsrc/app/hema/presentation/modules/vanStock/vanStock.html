@@ -1,0 +1,87 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card details-list">
+            <br/>
+            <div class="row">
+                <div class="col-xs-12 text-xs-center">
+                    <text-box value.bind="searchText"
+                              placeholder.bind="'Search (Stock Ref., Description, #W/R Number: or @Area:)'"></text-box>
+                </div>
+            </div>
+            <div class="card-block hook-list-data-container" if.bind="material.length > 0">
+                <div class="details-list-item details-list-item-header">
+                    <div class="col-xs-2">Stock Ref. <span class="btn" click.trigger="sortVanStock('stockReferenceId')"
+                                                        style="padding: 0;">
+                            <i class="fa ${ sort.sortOrderAsc ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc' }"></i></span>
+                    </div>
+                    <div class="col-xs-3">Description <span class="btn" click.trigger="sortVanStock('description')"
+                                                            style="padding: 0;">
+                            <i class="fa ${ sort.sortOrderAsc ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc' }"></i></span>
+                    </div>
+                    <div class="col-xs-1">Qty.</div>
+                    <div class="col-xs-2">W/R No. <span class="btn" click.trigger="sortVanStock('jobId')"
+                                                        style="padding: 0;">
+                            <i class="fa ${ sort.sortOrderAsc ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc' }"></i></span>
+                    </div>
+                    <div class="col-xs-3">Area <span class="btn" click.trigger="sortVanStock('area')"
+                                                     style="padding: 0;">
+                            <i class="fa ${ sort.sortOrderAsc ? 'fa-sort-alpha-asc' : 'fa-sort-alpha-desc' }"></i></span>
+                    </div>
+                    <div class="col-xs-1 with-button"></div>
+                </div>
+                <div class="details-list-item no-hover blue-content hook-list-data-item-container"
+                     repeat.for="part of material" click.trigger="setNotEditing()">
+                    <div class="col-xs-2 details-list-item-col">
+                        ${part.stockReferenceId}
+                    </div>
+                    <div class="col-xs-3 details-list-item-col wrap-text">
+                        ${part.description}
+                    </div>
+                    <div class="col-xs-1 details-list-item-col ">
+                        ${part.quantity - part.quantityToBeReturned}
+                    </div>
+                    <div class="col-xs-2  details-list-item-col">
+                        ${part.jobId}
+                    </div>
+                    <div class="col-xs-3 details-list-item-col wrap-text">
+                        ${part.area}
+                    </div>
+                    <div class="col-xs-1 details-list-item-col">
+                        <div class="van-stock-menu-container">
+                            <div class="menu" class="van-stock-menu-elipses" click.delegate="setEditingRow($index)">
+                                <span class="fa fa-ellipsis-h"></span>
+                            </div>
+                            <div if.bind="isEditing && (selectedRow === $index)" class="van-stock-menu">
+                                <ul class="van-stock-menu-list">
+                                    <li class="btn van-stock-menu-item" click.trigger="editVanStock(part)">
+                                        Edit
+                                    </li>
+                                    <li class="btn van-stock-menu-item" click.trigger="returnVanStock(part)"
+                                        if.bind="!part.jobId && part.quantity !== part.quantityToBeReturned">
+                                        Return
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row" hide.bind="hideLoadMore">
+                <div class="col-xs-12 text-xs-center">
+                    <button class="btn btn-primary text-center" click.trigger="loadMore()">Load more</button>
+                </div>
+            </div>
+        </div>
+        <div class="card-block hook-list-data-container" if.bind="material.length === 0">
+            <div class="row">
+                <div class="col-xs-12 text-xs-center">
+                    <p class="text-center">
+                        No records
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </view-state>
+</template>

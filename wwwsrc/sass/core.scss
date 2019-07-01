@@ -1,0 +1,14 @@
+@import "british-gas/variables";
+
+$enable-rounded: false;
+$enable-shadows: true;
+$body-bg: #eee;
+$font-family-base: "BGFlame", Helvetica, Arial, sans-serif;
+$brand-primary: $blue-2;
+@import "bootstrap/bootstrap";
+
+$fa-font-path: "../fonts";
+@import "font-awesome/font-awesome";
+@import "aurelia/aurelia";
+
+@import "british-gas/british-gas";

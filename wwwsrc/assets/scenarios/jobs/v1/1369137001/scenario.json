@@ -1,0 +1,161 @@
+{
+  "status": 200,
+  "data": {
+    "meta": {
+      "type": "job",
+      "createdTimestamp": "2016-10-18T11:13:40Z"
+    },
+    "data": {
+      "job": {
+        "status": {
+          "code": "04",
+          "timestamp": "2017-03-22T09:53:25Z"
+        },
+        "sourceSystem": "W",
+        "engineerId": "0000050",
+        "dispatchTime": "2017-03-22T09:36:38Z",
+        "enrouteTime": "2017-03-22T09:37:44Z",
+        "onsiteTime": "2017-03-22T09:39:33Z",
+        "completionTime": "2017-03-22T09:53:25Z",
+        "premises": {
+          "id": "J516724",
+          "address": {
+            "postCodeIn": "4TG"
+          },
+          "contact": {
+            "id": "008512727",
+            "contactUpdatedMarker": "I",
+            "initials": "J ",
+            "title": "Mrs",
+            "firstName": "J",
+            "lastName": "Taylor",
+            "homePhone": "01274123456",
+            "workPhone": "07825123456"
+          },
+          "safety": {
+            "gasELIReading": "<1",
+            "safetyNoticeNotLeftReason": "",
+            "gasInstallationTightnessTestDone": false,
+            "gasMeterInstallationSafe": "Y",
+            "jobPartLJReportable": false
+          },
+          "unsafeDetail": {
+            "reasons": []
+          }
+        },
+        "tasks": [
+          {
+            "id": "1369137001001",
+            "newWork": false,
+            "jobType": "IB",
+            "applianceType": "CHB",
+            "chargeType": "NCH3SIS",
+            "sequence": 1,
+            "applianceId": "180907279",
+            "status": "C",
+            "chargeableTime": 5,
+            "componentEndTime": "2017-03-22T09:55:00Z",
+            "componentStartTime": "2017-03-22T09:50:00Z",
+            "report": "Visit Report Added",
+            "workDuration": 5,
+            "energyEfficiencyOutcome": "NOR",
+            "workedOnCode": "AP",
+            "visitActivityCode": "CED",
+            "faultActionCode": "BCO",
+            "partsCharged": [],
+            "partsUsed": [],
+            "partsNotUsed": [],
+            "partsClaimedUnderWarranty": [],
+            "jobStatusCategory": "C",
+            "vatAmount": 0,
+            "chargeExcludingVAT": 0,
+            "vatCode": "D"
+          }
+        ]
+      },
+      "appliances": [
+        {
+          "applianceType": "CHB",
+          "id": "180907279",
+          "bgInstallationIndicator": "0",
+          "installationYear": 2005,
+          "description": "*C*ISTOR M120",
+          "flueType": "R",
+          "gcCode": "4139414",
+          "locationDescription": "2ND FLOOR LANDING",
+          "serialId": "UZ158971000049810534",
+          "updateMarker": "A",
+          "condition": "1",
+          "boilerSize": 34,
+          "numberOfRadiators": 17,
+          "energyControl": "PR",
+          "systemInstallationYear": 2005,
+          "systemType": "4",
+          "systemDesignCondition": "1",
+          "cylinderType": "5",
+          "numberofSpecialRadiators": 0,
+          "contractInspectionFailedIndicator": true,
+          "readings": [],
+          "safety": {
+            "applianceSafe": true,
+            "installationSafe": "F",
+            "detailsDate": "2017-03-22T09:53:25Z",
+            "supplementaryBurnerFitted": true,
+            "workedOnAppliance": false,
+            "gasMeterInstallationSafe": "Y",
+            "visuallyCheckRelight": "Y",
+            "suppBurnerUnmeteredLPGAppliance": false,
+            "jobType": "IB"
+          }
+        },
+        {
+          "applianceType": "PLB",
+          "id": "180907277",
+          "updateMarker": "I",
+          "readings": [],
+          "safety": {
+            "detailsDate": "2017-03-22T09:53:25Z",
+            "visuallyCheckRelight": "N"
+          }
+        },
+        {
+          "applianceType": "DRA",
+          "id": "180907278",
+          "updateMarker": "I",
+          "readings": [],
+          "safety": {
+            "detailsDate": "2017-03-22T09:53:25Z",
+            "visuallyCheckRelight": "N"
+          }
+        },
+        {
+          "applianceType": "EWR",
+          "id": "180907280",
+          "updateMarker": "I",
+          "readings": [],
+          "safety": {
+            "installationSafe": "F",
+            "detailsDate": "2017-03-22T09:53:25Z",
+            "ringContinuityReadingDone": false
+          }
+        },
+        {
+          "applianceType": "COD",
+          "id": "208844537",
+          "bgInstallationIndicator": "0",
+          "installationYear": 2012,
+          "description": "INSTALLATION GAS",
+          "flueType": "F",
+          "gcCode": "9900000",
+          "locationDescription": "LANDING",
+          "updateMarker": "I",
+          "readings": [],
+          "safety": {
+            "detailsDate": "2017-03-22T09:53:25Z",
+            "visuallyCheckRelight": "N"
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,53 @@
+<template>
+    <view-state view-state.bind="viewState" view-state-text.bind="viewStateText">
+        <div class="card details-card details-list fade-in-content">
+            <div class="card-block">
+                <div if.bind="!parts.length">
+                    ${labels.noPartsMessage}
+                </div>
+                <div if.bind="parts.length">
+                    <div class="details-list-item details-list-item-header" id="previously-fitted-parts-header"
+                         fix-header="is-alt.bind:isFullScreen;">
+                        <div class="col-xs-3">${labels.partDescription}</div>
+                        <div class="col-xs-2">${labels.dateFitted}</div>
+                        <div class="col-xs-2">${labels.quantity}</div>
+                        <div class="col-xs-5">${labels.associatedWithTask}</div>
+                    </div>
+                    <div class="details-list-item details-list-item-header">
+                        <div class="col-xs-3">${labels.partDescription}</div>
+                        <div class="col-xs-2">${labels.dateFitted}</div>
+                        <div class="col-xs-2">${labels.quantity}</div>
+                        <div class="col-xs-5">${labels.associatedWithTask}</div>
+                    </div>
+                    <div repeat.for="part of parts" class="details-list-item">
+                        <div class="col-xs-3 details-list-item-col">
+                            <p><span>${part.part.stockReferenceId}</span></p>
+                            <p><span>${part.part.description}</span></p>
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <p><span>${part.part.fittedDate | dateFormat }</span></p>
+                        </div>
+                        <div class="col-xs-2 details-list-item-col">
+                            <p><span>${part.part.quantity}</span></p>
+                        </div>
+                        <div class="col-xs-5 details-list-item-col">
+                            <catalog-lookup catalog="${catalog.ACTION_TYPE}" key-field="${catalog.ACTION_TYPE_ID}"
+                                            description-field="${catalog.ACTION_TYPE_DESCRIPTION}"
+                                            value.bind="part.task.jobType"></catalog-lookup>
+                            -
+                            <catalog-lookup catalog="${catalog.OBJECT_TYPE}" key-field="${catalog.OBJECT_TYPE_ID}"
+                                            description-field="${catalog.OBJECT_TYPE_DESCRIPTION}"
+                                            value.bind="part.task.applianceType"></catalog-lookup>
+                            <br/>
+                            <catalog-lookup catalog="${catalog.CHARGE_TYPE}" key-field="${catalog.CHARGE_TYPE_ID}"
+                                            description-field="${catalog.CHARGE_TYPE_DESCRIPTION}"
+                                            value.bind="part.task.chargeType"></catalog-lookup>
+                            <br/>
+                            ${part.part.taskId}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </view-state>
+</template>
